@@ -1,4 +1,4 @@
-This subdirectory contains `Magma` code and datafiles related to Sections 3, 5, 6 and Appendix B of the paper *l-adic images of Galois for elliptic curves over Q*, by Jeremy Rouse, Andrew V. Sutherland, and David Zureick-Brown.
+This subdirectory contains `Magma` code and datafiles related to Sections 3, 5, 6 and Appendix B of the paper [*l-adic images of Galois for elliptic curves over Q*](https://arxiv.org/abs/2106.11141).
 
 - `gl2.m` defines `Magma` intrinsics prefixed by `GL2` for working with open subgroups H of GL(2,Zhat) that are represented by their projections to GL(2,Z/NZ) such that H is the full inverse image of its projection.  For more details see comments at the top of the file.  Use `Attach("gl2.m")` to make these functions available in `Magma`.
 
