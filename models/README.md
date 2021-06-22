@@ -1,5 +1,5 @@
 This folder contains Magma scripts and output files for computing models
-of modular curves. The main scripts are `model.m` and `whichtwist2.m`.
+of modular curves as described in Section 7 of the paper [*l-adic images of Galois for elliptic curves over Q*](https://arxiv.org/abs/2106.11141). The main scripts are `model.m` and `whichtwist2.m`.
 
 - `model.m`: This script takes a command line parameter `N.i.g.n` indicating the label of
 the subgroup *H* (with *-I* in *H*) for which the modular curve *X\_H* should be
