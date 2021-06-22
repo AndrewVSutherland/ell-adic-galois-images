@@ -1,0 +1,4 @@
+x := DD.1;
+z := DD.2;
+map3_3_0_1to1_1_0_1 := map<DD -> CC | [x^3,z^3]>;
+return map3_3_0_1to1_1_0_1;

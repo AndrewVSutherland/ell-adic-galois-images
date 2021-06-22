@@ -1,0 +1,4 @@
+x := DD.1;
+z := DD.2;
+map5_12_0_1to5_6_0_1 := map<DD -> CC | [x^2 - 6*x*z - z^2,x*z]>;
+return map5_12_0_1to5_6_0_1;

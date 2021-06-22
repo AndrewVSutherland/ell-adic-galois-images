@@ -1,0 +1,239 @@
+The degree of that covering map is 2.
+Setting subsub to be subgroup 1 of index 1.
+The space of Eisenstein series has dimension 11.
+Computing action of generators of subsub intersect SL_2 on Eisenstein series for
+Gamma(5).
+Finding vectors invariant under subsub intersect SL_2.
+The dimension of the space of Eisenstein series for subsub intersect SL_2 is 5.
+Computing the action of the generators of subsub on the Q-vector space of 
+dimension 20.
+Finding vectors invariant under subsub.
+The dimension is 5.
+The index of subsub in covergp is 2.
+Form try attempt 1. Number of images is 2.
+The element [ 1, 0, 0, 0, 0 ] works. It was number 1.
+Computing Weierstrass p-function Fourier expansions.
+Computing Fourier expansion 1.
+Computing Fourier expansion 2.
+Symmetrizing.
+Done!
+Call to ratfunc with m = 0.
+Call to ratfuncrep with deg = 16.
+Building last 17 rows of the matrix.
+Using coefficients 0 to 33/5.
+Time taken was 0.040.
+Building the first 17 rows of the matrix.
+Time taken was 0.020.
+Solving the linear system of size 34x34.
+Time taken was 0.000.
+Null space has dimension 3.
+Result has degree 14.
+Call to ratfunc with m = 1.
+Call to ratfuncrep with deg = 8.
+Building last 9 rows of the matrix.
+Using coefficients 0 to 17/5.
+Time taken was 0.010.
+Building the first 9 rows of the matrix.
+Time taken was 0.000.
+Solving the linear system of size 18x18.
+Time taken was 0.000.
+Null space has dimension 3.
+Result has degree 6.
+Curve equation is y^2 + (-24*x^6 + 168*x^5 + 240*x^4 - 1200*x^3 - 2040*x^2 - 
+8952*x - 2016)/(x^6 + 2*x^5 - x^4 + 8*x^3 + 91*x^2 + 70*x + 45)*y + (144*x^14 - 
+2592*x^13 - 22464*x^12 - 79488*x^11 + 251424*x^10 + 3374784*x^9 + 9309888*x^8 + 
+55296*x^7 - 79984368*x^6 - 336210336*x^5 - 742172544*x^4 - 1058030208*x^3 - 
+1018518336*x^2 - 338176512*x - 34919424)/(x^14 - 30*x^12 - 60*x^11 + 135*x^10 - 
+564*x^9 - 5140*x^8 - 7320*x^7 - 705*x^6 - 47720*x^5 - 189726*x^4 - 261420*x^3 - 
+232615*x^2 - 108900*x - 32400).
+Finding maximal order finite in function field extension. This may take a while.
+ring_ext_maximal_order_flags: called with algo_flag: 0
+no algorithm selected
+nothing about algebra-splitting selected
+nothing about reduced-discriminant selected
+nothing about dedekind-test selected
+ring_ext_maximal_order: checking control-devices
+ring_ext_maximal_order_flags: calling ring_ext_maximal_order_flags_sub
+ring_ext_maximal_order_flags_sub: called with algo_flag: 40
+no algorithm selected
+no algebra-splitting selected
+no reduced-discriminant selected
+nothing about dedekind-test selected
+Factorization of discriminant: 
+t + 2^2
+t + 3^2
+t^2 - 4*t - 16^1
+t^2 - 4*t - 1^2
+t^2 + t + 4^2
+factors with (possibly) not maximal overorder:
+t + 2^2
+t + 3^2
+t^2 - 4*t - 1^2
+t^2 + t + 4^2
+-----------------------
+ring_ext_rnd2_max_p_sub called:
+prime: t + 2, prime_bound: 2, algo_flag: 40
+-----------------------
+no algorithm selected
+no algebra-splitting selected
+nothing about dedekind-test selected
+nothing about pauli selected
+---------------------------
+ring_ext_rnd2_max_p_sub_sub called:
+prime: t + 2, prime_bound: 2, algo_flag: 169
+---------------------------
+round2 selected
+no algebra-splitting selected
+no dedekind-test selected
+nothing about pauli selected
+No split performed ...
+(due to user advice or impossible) ... 
+standard algorithm.
+----------------------------
+ring_ext_rnd2_max_p_rnd2 called:
+prime: t + 2, prime_bound: 2, algo_flag: 169
+----------------------------
+no dedekind-test selected
+transformation for t + 2...
+index of order: t + 2
+-----------------------
+ring_ext_rnd2_max_p_sub called:
+prime: t + 3, prime_bound: 2, algo_flag: 40
+-----------------------
+no algorithm selected
+no algebra-splitting selected
+nothing about dedekind-test selected
+nothing about pauli selected
+---------------------------
+ring_ext_rnd2_max_p_sub_sub called:
+prime: t + 3, prime_bound: 2, algo_flag: 169
+---------------------------
+round2 selected
+no algebra-splitting selected
+no dedekind-test selected
+nothing about pauli selected
+No split performed ...
+(due to user advice or impossible) ... 
+standard algorithm.
+----------------------------
+ring_ext_rnd2_max_p_rnd2 called:
+prime: t + 3, prime_bound: 2, algo_flag: 169
+----------------------------
+no dedekind-test selected
+transformation for t + 3...
+index of order: t + 3
+-----------------------
+ring_ext_rnd2_max_p_sub called:
+prime: t^2 - 4*t - 1, prime_bound: 2, algo_flag: 40
+-----------------------
+no algorithm selected
+no algebra-splitting selected
+nothing about dedekind-test selected
+nothing about pauli selected
+---------------------------
+ring_ext_rnd2_max_p_sub_sub called:
+prime: t^2 - 4*t - 1, prime_bound: 2, algo_flag: 169
+---------------------------
+round2 selected
+no algebra-splitting selected
+no dedekind-test selected
+nothing about pauli selected
+No split performed ...
+(due to user advice or impossible) ... 
+standard algorithm.
+----------------------------
+ring_ext_rnd2_max_p_rnd2 called:
+prime: t^2 - 4*t - 1, prime_bound: 2, algo_flag: 169
+----------------------------
+no dedekind-test selected
+transformation for t^2 - 4*t - 1...
+index of order: t^2 - 4*t - 1
+-----------------------
+ring_ext_rnd2_max_p_sub called:
+prime: t^2 + t + 4, prime_bound: 2, algo_flag: 40
+-----------------------
+no algorithm selected
+no algebra-splitting selected
+nothing about dedekind-test selected
+nothing about pauli selected
+---------------------------
+ring_ext_rnd2_max_p_sub_sub called:
+prime: t^2 + t + 4, prime_bound: 2, algo_flag: 169
+---------------------------
+round2 selected
+no algebra-splitting selected
+no dedekind-test selected
+nothing about pauli selected
+No split performed ...
+(due to user advice or impossible) ... 
+standard algorithm.
+----------------------------
+ring_ext_rnd2_max_p_rnd2 called:
+prime: t^2 + t + 4, prime_bound: 2, algo_flag: 169
+----------------------------
+no dedekind-test selected
+transformation for t^2 + t + 4...
+index of order: t^2 + t + 4
+Time taken was 0.050.
+Iteration 1.
+mlist = [ 6, 8 ].
+Updating...
+Done.
+Iteration 2.
+mlist = [ 6, 7 ].
+Working with basis of size 3.
+Simplest element defining the field has index 3.
+Using tvals = [ -1, 0, 1, 2, 3, 4, 5 ].
+Computing specialization 1 of 7.
+Computing LLLed maximal order.
+Computing specialization 2 of 7.
+Computing LLLed maximal order.
+Computing specialization 3 of 7.
+Computing LLLed maximal order.
+Computing specialization 4 of 7.
+Computing LLLed maximal order.
+Computing specialization 5 of 7.
+Computing LLLed maximal order.
+Computing specialization 6 of 7.
+Computing LLLed maximal order.
+Computing specialization 7 of 7.
+Computing LLLed maximal order.
+Clearing denominators.
+Saturating.
+LLLing. (Just for fun. It's not real yet.)
+Changing coordinates.
+Changing coordinates.
+Minimal size model has 21 characters. Index is 2.
+Simplified equation is y^2 - 1/4*x^2 + x + 4.
+In this equation, Q(x) is the function field of the modular curve with label 
+5.15.0.1.
+And Q(x,y) is the function field of the modular curve with label 5.30.0.1.
+Searching for a non-singular rational point with bound 10.
+Parametrizing the curve.
+Found it!
+We have X = (-5/2*x^2 - 2*x - 26)/(x^2 - 4).
+We have Y = (-1/4*x^2 - 9*x - 1)/(x^2 - 4).
+Computing uniformizer coefficients.
+Computing uniformizer...
+Initial covering map is (13/2*x^2 + 2*x + 10)/(x^2 - 4).
+Call to supersimplify.
+Entering simplification iteration. Current size = 31.
+Size after scaling = 30.
+Translation check done. New size = 30.
+Doing up to 5 rounds of substitutions.
+After round 1 size = 17.
+Doing two more random checks.
+Final size is 17.
+Entering simplification iteration. Current size = 17.
+Size after scaling = 17.
+Translation check done. New size = 17.
+Doing up to 5 rounds of substitutions.
+Doing two more random checks.
+Final size is 17.
+The final model is y = (x^2 + 2*x + 5)/x.
+Here Q(y) is the function field of 5.30.0.1, and Q(x) is the
+function field of 5.15.0.1.
+Fourier expansion of hauptmodul written to modfunc5.30.0.1.txt. Done with model 
+computation.
+
+Total time: 18.190 seconds, Total memory usage: 32.09MB

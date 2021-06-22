@@ -1,0 +1,164 @@
+Working on subgroup 3.8.0.2.
+Covering group is 3.4.0.1.
+j-invariant map for 3.8.0.2 is (t^4 + 24*t^3)/(t - 3).
+Multfac = t - 3.
+Divfac = 3*$.1^3 + 36*$.1^2 - 216*$.1.
+New model is Elliptic Curve defined by y^2 = x^3 + (-3*t^2 - 72*t)*x + (-2*t^3 -
+72*t^2 - 432*t + 3456) over Univariate rational function field over Rational 
+Field.
+The discriminant is 2985984*$.1^3 + 134369280*$.1^2 + 1289945088*$.1 - 
+5159780352.
+There are 4 squarefree divisors of the discriminant.
+Option 1 is 1.
+Option 2 is zz - 3.
+Option 3 is zz + 24.
+Option 4 is zz^2 + 21*zz - 72.
+The order of G is 12.
+The level is 3.8.0.2.
+There are 6 conjugacy classes of G.
+Their sizes are [ 1, 1, 3, 3, 2, 2 ].
+Using t = 1.
+Working on curve [ 0, 0, 0, -75, 2950 ].
+Enumerating points of order 3.
+Selecting which conjugate of G we should use.
+Testing choice 1. For choice 1, we get error 0.3240425555.
+Testing choice 2. For choice 2, we get error 2.169411120E17.
+Testing choice 3. For choice 3, we get error 2.261250152E-982.
+Testing choice 4. For choice 4, we get error 7.436090912E16.
+Choice 3 is best.
+Gfine has 1 conjugates inside Gtilde.
+Computing fpolynomial.
+Maximal error on fpolynomial was 7.264216868E-977.
+Maximal coefficient size of f polynomial was 8.676253264E22.
+Working on class 1. Maximal error on polynomial was 3.768788365E-987.
+Maximal coefficient size was 3.180518865E12.
+Working on class 2. Maximal error on polynomial was 2.122743736E-987.
+Maximal coefficient size was 3.226953735E12.
+Working on class 3. Maximal error on polynomial was 2.060247931E-963.
+Maximal coefficient size was 1.921014696E36.
+Working on class 4. Maximal error on polynomial was 1.834944624E-963.
+Maximal coefficient size was 2.311981949E36.
+Working on class 5. Maximal error on polynomial was 8.644520396E-976.
+Maximal coefficient size was 8.302311112E23.
+Working on class 6. Maximal error on polynomial was 8.822762466E-976.
+Maximal coefficient size was 9.801070602E23.
+Maximal error was 2.060247931E-963.
+We have p = 3.
+The prime 7 divides the resultant of 2 and 5.
+For pp = 11, we have the following.
+Element is [1 0]
+[1 2].
+For conjugate 1, chival = 1.
+Old possibilities [ 1, 2, 3, 5, 6, 10, 15, 30, -1, -2, -3, -5, -6, -10, -15, -30
+].
+Possibilities now [ 1, 3, 5, 15, -2, -6, -10, -30 ].
+For pp = 13, we have the following.
+Element is [0 2]
+[1 2].
+For conjugate 1, chival = 1.
+Old possibilities [ 1, 3, 5, 15, -2, -6, -10, -30 ].
+Possibilities now [ 1, 3, -10, -30 ].
+For pp = 17, we have the following.
+Element is [1 0]
+[1 2].
+For conjugate 1, chival = 1.
+Old possibilities [ 1, 3, -10, -30 ].
+Possibilities now [ 1, -30 ].
+The prime 19 divides the resultant of 5 and 6.
+For pp = 23, we have the following.
+Element is [1 0]
+[1 2].
+For conjugate 1, chival = 1.
+For pp = 29, we have the following.
+Element is [1 0]
+[1 2].
+For conjugate 1, chival = 1.
+For pp = 31, we have the following.
+Element is [0 2]
+[1 2].
+For conjugate 1, chival = 1.
+For pp = 37, we have the following.
+Element is [1 0]
+[0 1].
+For conjugate 1, chival = 1.
+For pp = 41, we have the following.
+Element is [1 0]
+[1 2].
+For conjugate 1, chival = 1.
+Old possibilities [ 1, -30 ].
+Possibilities now [ 1 ].
+For conjugate 1, the unique twist is 1.
+After t = 1, the options lists were the following.
+For divisor 1, options = [ 1 ].
+For divisor zz - 3, options = [ -2 ].
+For divisor zz + 24, options = [ 1 ].
+For divisor zz^2 + 21*zz - 72, options = [ -2 ].
+Using t = 2.
+Working on curve [ 0, 0, 0, -156, 2288 ].
+Enumerating points of order 3.
+Selecting which conjugate of G we should use.
+Testing choice 1. For choice 1, we get error 0.3611130571.
+Testing choice 2. For choice 2, we get error 2.658698170E17.
+Testing choice 3. For choice 3, we get error 1.703472233E-981.
+Testing choice 4. For choice 4, we get error 2.161680883E17.
+Choice 3 is best.
+Gfine has 1 conjugates inside Gtilde.
+Computing fpolynomial.
+Maximal error on fpolynomial was 7.021537302E-977.
+Maximal coefficient size of f polynomial was 2.537529304E22.
+Working on class 1. Maximal error on polynomial was 1.719561664E-987.
+Maximal coefficient size was 2.114189611E12.
+Working on class 2. Maximal error on polynomial was 1.675408537E-987.
+Maximal coefficient size was 2.189053766E12.
+Working on class 3. Maximal error on polynomial was 4.308319577E-963.
+Maximal coefficient size was 3.515309168E36.
+Working on class 4. Maximal error on polynomial was 2.507435858E-963.
+Maximal coefficient size was 4.094619372E36.
+Working on class 5. Maximal error on polynomial was 2.532231737E-975.
+Maximal coefficient size was 1.929911708E24.
+Working on class 6. Maximal error on polynomial was 2.176492412E-975.
+Maximal coefficient size was 2.160517861E24.
+Maximal error was 4.308319577E-963.
+We have p = 3.
+The prime 5 divides the resultant of 1 and 2.
+For pp = 7, we have the following.
+Element is [0 1]
+[2 1].
+For conjugate 1, chival = -1.
+Old possibilities [ 1, 2, 3, 6, 13, 26, 39, 78, -1, -2, -3, -6, -13, -26, -39, 
+-78 ].
+Possibilities now [ 3, 6, 13, 26, -1, -2, -39, -78 ].
+For pp = 11, we have the following.
+Element is [1 0]
+[1 2].
+For conjugate 1, chival = 1.
+Old possibilities [ 3, 6, 13, 26, -1, -2, -39, -78 ].
+Possibilities now [ 3, 26, -2, -39 ].
+For pp = 17, we have the following.
+Element is [1 0]
+[1 2].
+For conjugate 1, chival = 1.
+Old possibilities [ 3, 26, -2, -39 ].
+Possibilities now [ 26, -2 ].
+For pp = 19, we have the following.
+Element is [1 0]
+[0 1].
+For conjugate 1, chival = 1.
+For pp = 23, we have the following.
+Element is [1 0]
+[1 2].
+For conjugate 1, chival = 1.
+Old possibilities [ 26, -2 ].
+Possibilities now [ 26 ].
+For conjugate 1, the unique twist is 26.
+After t = 2, the options lists were the following.
+For divisor 1, options = [].
+For divisor zz - 3, options = [].
+For divisor zz + 24, options = [ 1 ].
+For divisor zz^2 + 21*zz - 72, options = [].
+We should have found all of the models!
+Model option 1 is Elliptic Curve defined by y^2 = x^3 + (-3*t^4 - 216*t^3 - 
+5184*t^2 - 41472*t)*x + (-2*t^6 - 216*t^5 - 9072*t^4 - 179712*t^3 - 1492992*t^2 
++ 47775744) over Univariate rational function field over Rational Field.
+
+Total time: 0.540 seconds, Total memory usage: 32.09MB

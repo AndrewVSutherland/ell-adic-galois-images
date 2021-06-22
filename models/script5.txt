@@ -1,0 +1,22 @@
+magma l:=5.5.0.1 model.m
+magma l:=5.6.0.1 model.m
+magma l:=5.10.0.1 model.m
+magma l:=5.12.0.1 model.m
+magma l:=5.12.0.2 model.m
+magma l:=5.15.0.1 model.m
+magma l:=5.30.0.1 model.m
+magma l:=5.30.0.2 model.m
+magma l:=5.60.0.1 model.m
+magma l:=25.30.0.1 model.m
+magma l:=25.50.2.1 model.m
+magma l:=25.60.0.1 model.m
+magma l:=25.60.0.2 model.m
+magma l:=25.75.2.1 model.m
+magma l:=25.150.4.1 model.m
+magma l:=25.150.4.2 model.m
+magma l:=25.150.4.5 model.m
+magma l:=25.150.4.6 model.m
+magma l:=25.150.4.7 model.m
+magma l:=25.150.4.8 model.m
+magma l:=25.150.4.9 model.m
+

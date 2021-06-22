@@ -1,0 +1,873 @@
+The degree of that covering map is 27.
+Setting subsub to be subgroup 1 of index 1.
+The space of Eisenstein series has dimension 35.
+Computing action of generators of subsub intersect SL_2 on Eisenstein series for
+Gamma(9).
+Finding vectors invariant under subsub intersect SL_2.
+The dimension of the space of Eisenstein series for subsub intersect SL_2 is 2.
+Computing the action of the generators of subsub on the Q-vector space of 
+dimension 12.
+Finding vectors invariant under subsub.
+The dimension is 2.
+The index of subsub in covergp is 27.
+Form try attempt 1. Number of images is 27.
+The element [ 1, 0 ] works. It was number 1.
+Computing Weierstrass p-function Fourier expansions.
+Computing Fourier expansion 1.
+Computing Fourier expansion 2.
+Computing Fourier expansion 3.
+Computing Fourier expansion 4.
+Computing Fourier expansion 5.
+Computing Fourier expansion 6.
+Computing Fourier expansion 7.
+Computing Fourier expansion 8.
+Computing Fourier expansion 9.
+Computing Fourier expansion 10.
+Computing Fourier expansion 11.
+Computing Fourier expansion 12.
+Computing Fourier expansion 13.
+Computing Fourier expansion 14.
+Computing Fourier expansion 15.
+Computing Fourier expansion 16.
+Computing Fourier expansion 17.
+Computing Fourier expansion 18.
+Computing Fourier expansion 19.
+Computing Fourier expansion 20.
+Computing Fourier expansion 21.
+Computing Fourier expansion 22.
+Computing Fourier expansion 23.
+Computing Fourier expansion 24.
+Computing Fourier expansion 25.
+Computing Fourier expansion 26.
+Computing Fourier expansion 27.
+Symmetrizing.
+Done!
+Call to ratfunc with m = 0.
+Call to ratfuncrep with deg = 27.
+Building last 28 rows of the matrix.
+Using coefficients -27 to 28.
+Time taken was 0.170.
+Building the first 28 rows of the matrix.
+Time taken was 0.040.
+Solving the linear system of size 56x56.
+Time taken was 0.140.
+Null space has dimension 16.
+Result has degree 12.
+Call to ratfunc with m = 1.
+Call to ratfuncrep with deg = 26.
+Building last 27 rows of the matrix.
+Using coefficients -26 to 27.
+Time taken was 0.160.
+Building the first 27 rows of the matrix.
+Time taken was 0.040.
+Solving the linear system of size 54x54.
+Time taken was 0.110.
+Null space has dimension 15.
+Result has degree 12.
+Call to ratfunc with m = 2.
+Call to ratfuncrep with deg = 25.
+Building last 26 rows of the matrix.
+Using coefficients -25 to 26.
+Time taken was 0.140.
+Building the first 26 rows of the matrix.
+Time taken was 0.030.
+Solving the linear system of size 52x52.
+Time taken was 0.100.
+Null space has dimension 14.
+Result has degree 12.
+Call to ratfunc with m = 3.
+Call to ratfuncrep with deg = 24.
+Building last 25 rows of the matrix.
+Using coefficients -24 to 25.
+Time taken was 0.120.
+Building the first 25 rows of the matrix.
+Time taken was 0.030.
+Solving the linear system of size 50x50.
+Time taken was 0.100.
+Null space has dimension 13.
+Result has degree 12.
+Call to ratfunc with m = 4.
+Call to ratfuncrep with deg = 23.
+Building last 24 rows of the matrix.
+Using coefficients -23 to 24.
+Time taken was 0.110.
+Building the first 24 rows of the matrix.
+Time taken was 0.030.
+Solving the linear system of size 48x48.
+Time taken was 0.090.
+Null space has dimension 13.
+Result has degree 11.
+Call to ratfunc with m = 5.
+Call to ratfuncrep with deg = 22.
+Building last 23 rows of the matrix.
+Using coefficients -22 to 23.
+Time taken was 0.100.
+Building the first 23 rows of the matrix.
+Time taken was 0.030.
+Solving the linear system of size 46x46.
+Time taken was 0.070.
+Null space has dimension 12.
+Result has degree 11.
+Call to ratfunc with m = 6.
+Call to ratfuncrep with deg = 21.
+Building last 22 rows of the matrix.
+Using coefficients -21 to 22.
+Time taken was 0.090.
+Building the first 22 rows of the matrix.
+Time taken was 0.010.
+Solving the linear system of size 44x44.
+Time taken was 0.080.
+Null space has dimension 12.
+Result has degree 10.
+Call to ratfunc with m = 7.
+Call to ratfuncrep with deg = 20.
+Building last 21 rows of the matrix.
+Using coefficients -20 to 21.
+Time taken was 0.080.
+Building the first 21 rows of the matrix.
+Time taken was 0.020.
+Solving the linear system of size 42x42.
+Time taken was 0.060.
+Null space has dimension 11.
+Result has degree 10.
+Call to ratfunc with m = 8.
+Call to ratfuncrep with deg = 19.
+Building last 20 rows of the matrix.
+Using coefficients -19 to 20.
+Time taken was 0.070.
+Building the first 20 rows of the matrix.
+Time taken was 0.010.
+Solving the linear system of size 40x40.
+Time taken was 0.050.
+Null space has dimension 11.
+Result has degree 9.
+Call to ratfunc with m = 9.
+Call to ratfuncrep with deg = 18.
+Building last 19 rows of the matrix.
+Using coefficients -18 to 19.
+Time taken was 0.060.
+Building the first 19 rows of the matrix.
+Time taken was 0.010.
+Solving the linear system of size 38x38.
+Time taken was 0.050.
+Null space has dimension 10.
+Result has degree 9.
+Call to ratfunc with m = 10.
+Call to ratfuncrep with deg = 17.
+Building last 18 rows of the matrix.
+Using coefficients -17 to 18.
+Time taken was 0.050.
+Building the first 18 rows of the matrix.
+Time taken was 0.010.
+Solving the linear system of size 36x36.
+Time taken was 0.040.
+Null space has dimension 10.
+Result has degree 8.
+Call to ratfunc with m = 11.
+Call to ratfuncrep with deg = 16.
+Building last 17 rows of the matrix.
+Using coefficients -16 to 17.
+Time taken was 0.050.
+Building the first 17 rows of the matrix.
+Time taken was 0.000.
+Solving the linear system of size 34x34.
+Time taken was 0.030.
+Null space has dimension 9.
+Result has degree 8.
+Call to ratfunc with m = 12.
+Call to ratfuncrep with deg = 15.
+Building last 16 rows of the matrix.
+Using coefficients -15 to 16.
+Time taken was 0.030.
+Building the first 16 rows of the matrix.
+Time taken was 0.010.
+Solving the linear system of size 32x32.
+Time taken was 0.030.
+Null space has dimension 9.
+Result has degree 7.
+Call to ratfunc with m = 13.
+Call to ratfuncrep with deg = 14.
+Building last 15 rows of the matrix.
+Using coefficients -14 to 15.
+Time taken was 0.030.
+Building the first 15 rows of the matrix.
+Time taken was 0.010.
+Solving the linear system of size 30x30.
+Time taken was 0.020.
+Null space has dimension 8.
+Result has degree 7.
+Call to ratfunc with m = 14.
+Call to ratfuncrep with deg = 13.
+Building last 14 rows of the matrix.
+Using coefficients -13 to 14.
+Time taken was 0.030.
+Building the first 14 rows of the matrix.
+Time taken was 0.000.
+Solving the linear system of size 28x28.
+Time taken was 0.020.
+Null space has dimension 8.
+Result has degree 6.
+Call to ratfunc with m = 15.
+Call to ratfuncrep with deg = 12.
+Building last 13 rows of the matrix.
+Using coefficients -12 to 13.
+Time taken was 0.020.
+Building the first 13 rows of the matrix.
+Time taken was 0.000.
+Solving the linear system of size 26x26.
+Time taken was 0.010.
+Null space has dimension 7.
+Result has degree 6.
+Call to ratfunc with m = 16.
+Call to ratfuncrep with deg = 11.
+Building last 12 rows of the matrix.
+Using coefficients -11 to 12.
+Time taken was 0.010.
+Building the first 12 rows of the matrix.
+Time taken was 0.000.
+Solving the linear system of size 24x24.
+Time taken was 0.010.
+Null space has dimension 7.
+Result has degree 5.
+Call to ratfunc with m = 17.
+Call to ratfuncrep with deg = 10.
+Building last 11 rows of the matrix.
+Using coefficients -10 to 11.
+Time taken was 0.010.
+Building the first 11 rows of the matrix.
+Time taken was 0.000.
+Solving the linear system of size 22x22.
+Time taken was 0.010.
+Null space has dimension 6.
+Result has degree 5.
+Call to ratfunc with m = 18.
+Call to ratfuncrep with deg = 9.
+Building last 10 rows of the matrix.
+Using coefficients -9 to 10.
+Time taken was 0.010.
+Building the first 10 rows of the matrix.
+Time taken was 0.000.
+Solving the linear system of size 20x20.
+Time taken was 0.000.
+Null space has dimension 6.
+Result has degree 4.
+Call to ratfunc with m = 19.
+Call to ratfuncrep with deg = 8.
+Building last 9 rows of the matrix.
+Using coefficients -8 to 9.
+Time taken was 0.010.
+Building the first 9 rows of the matrix.
+Time taken was 0.000.
+Solving the linear system of size 18x18.
+Time taken was 0.010.
+Null space has dimension 5.
+Result has degree 4.
+Call to ratfunc with m = 20.
+Call to ratfuncrep with deg = 7.
+Building last 8 rows of the matrix.
+Using coefficients -7 to 8.
+Time taken was 0.000.
+Building the first 8 rows of the matrix.
+Time taken was 0.000.
+Solving the linear system of size 16x16.
+Time taken was 0.000.
+Null space has dimension 5.
+Result has degree 3.
+Call to ratfunc with m = 21.
+Call to ratfuncrep with deg = 6.
+Building last 7 rows of the matrix.
+Using coefficients -6 to 7.
+Time taken was 0.000.
+Building the first 7 rows of the matrix.
+Time taken was 0.000.
+Solving the linear system of size 14x14.
+Time taken was 0.000.
+Null space has dimension 4.
+Result has degree 3.
+Call to ratfunc with m = 22.
+Call to ratfuncrep with deg = 5.
+Building last 6 rows of the matrix.
+Using coefficients -5 to 6.
+Time taken was 0.000.
+Building the first 6 rows of the matrix.
+Time taken was 0.000.
+Solving the linear system of size 12x12.
+Time taken was 0.010.
+Null space has dimension 4.
+Result has degree 2.
+Call to ratfunc with m = 23.
+Call to ratfuncrep with deg = 4.
+Building last 5 rows of the matrix.
+Using coefficients -4 to 5.
+Time taken was 0.000.
+Building the first 5 rows of the matrix.
+Time taken was 0.000.
+Solving the linear system of size 10x10.
+Time taken was 0.000.
+Null space has dimension 3.
+Result has degree 2.
+Call to ratfunc with m = 24.
+Call to ratfuncrep with deg = 3.
+Building last 4 rows of the matrix.
+Using coefficients -3 to 4.
+Time taken was 0.000.
+Building the first 4 rows of the matrix.
+Time taken was 0.000.
+Solving the linear system of size 8x8.
+Time taken was 0.000.
+Null space has dimension 3.
+Result has degree 1.
+Call to ratfunc with m = 25.
+Call to ratfuncrep with deg = 2.
+Building last 3 rows of the matrix.
+Using coefficients -2 to 3.
+Time taken was 0.000.
+Building the first 3 rows of the matrix.
+Time taken was 0.000.
+Solving the linear system of size 6x6.
+Time taken was 0.000.
+Null space has dimension 2.
+Result has degree 1.
+Call to ratfunc with m = 26.
+Call to ratfuncrep with deg = 1.
+Result has degree 0.
+Curve equation is y^27 - 34992*x/(x - 1728)*y^25 + 419904*x/(x - 1728)*y^24 + 
+544195584*x^2/(x^2 - 3456*x + 2985984)*y^23 - 13060694016*x^2/(x^2 - 3456*x + 
+2985984)*y^22 + (-4858578173952*x^3 - 9666180459159552*x^2)/(x^3 - 5184*x^2 + 
+8957952*x - 5159780352)*y^21 + 177729924169728*x^3/(x^3 - 5184*x^2 + 8957952*x -
+5159780352)*y^20 + (26659488625459200*x^4 + 158637058555892465664*x^3)/(x^4 - 
+6912*x^3 + 17915904*x^2 - 20639121408*x + 8916100448256)*y^19 + 
+(-1373496853983657984*x^4 + 4495539294732634030080*x^3)/(x^4 - 6912*x^3 + 
+17915904*x^2 - 20639121408*x + 8916100448256)*y^18 + (-87067757091659710464*x^5 
+- 1722918100045784797937664*x^4)/(x^5 - 8640*x^4 + 29859840*x^3 - 
+51597803520*x^2 + 44580502241280*x - 15407021574586368)*y^17 + 
+(6517643530861384040448*x^5 - 79664908112698435241508864*x^4)/(x^5 - 8640*x^4 + 
+29859840*x^3 - 51597803520*x^2 + 44580502241280*x - 15407021574586368)*y^16 + 
+(129556822552389649170432*x^6 + 13924932666916309593910935552*x^5 + 
+3668679047770463950991001649152*x^4)/(x^6 - 10368*x^5 + 44789760*x^4 - 
+103195607040*x^3 + 133741506723840*x^2 - 92442129447518208*x + 
+26623333280885243904)*y^15 + (-18957088616052885439905792*x^6 + 
+706994726877784859663520497664*x^5)/(x^6 - 10368*x^5 + 44789760*x^4 - 
+103195607040*x^3 + 133741506723840*x^2 - 92442129447518208*x + 
+26623333280885243904)*y^14 + (131649519193696714629316608*x^7 - 
+80688787174760349779696698785792*x^6 - 50587741599526121543019468096012288*x^5)\
+/(x^7 - 12096*x^6 + 62705664*x^5 - 180592312320*x^4 + 312063515688960*x^3 - 
+323547453066313728*x^2 + 186363332966196707328*x - 46005119909369701466112)*y^13
++ (30612989959408831001813581824*x^7 - 3912244994894862522648405504688128*x^6 - 
+1741461943172037859238342613597683712*x^5)/(x^7 - 12096*x^6 + 62705664*x^5 - 
+180592312320*x^4 + 312063515688960*x^3 - 323547453066313728*x^2 + 
+186363332966196707328*x - 46005119909369701466112)*y^12 + 
+(-901867518318016201818409795584*x^8 + 325203432427846905046774331668955136*x^7 
+- 108172816521217782820386236239083208704*x^6)/(x^8 - 13824*x^7 + 83607552*x^6 -
+288947699712*x^5 + 624127031377920*x^4 - 862793208176836608*x^3 + 
+745453331864786829312*x^2 - 368040959274957611728896*x + 
+79496847203390844133441536)*y^11 + (-16307105606413536698497851457536*x^8 + 
+14739161559400384663474684119780163584*x^7 + 
+2818747043942510250089271319080801927168*x^6)/(x^8 - 13824*x^7 + 83607552*x^6 - 
+288947699712*x^5 + 624127031377920*x^4 - 862793208176836608*x^3 + 
+745453331864786829312*x^2 - 368040959274957611728896*x + 
+79496847203390844133441536)*y^10 + (1341793207610835278665962680745984*x^9 - 
+909550894647386800541748151472753737728*x^8 + 
+2196257808803926751307189550182296394399744*x^7 - 
+275248911341742301993402486504598488410488832*x^6)/(x^9 - 15552*x^8 + 
+107495424*x^7 - 433421549568*x^6 + 1123428656480256*x^5 - 
+1941284718397882368*x^4 + 2236359995594360487936*x^3 - 
+1656184316737309252780032*x^2 + 715471624830517597200973824*x - 
+137370551967459378662586974208)*y^9 + (-21023727035966482755193545009659904*x^9 
+- 38635346123755558664136737630464128319488*x^8 + 
+67275028310732987228915001475665707220860928*x^7)/(x^9 - 15552*x^8 + 
+107495424*x^7 - 433421549568*x^6 + 1123428656480256*x^5 - 
+1941284718397882368*x^4 + 2236359995594360487936*x^3 - 
+1656184316737309252780032*x^2 + 715471624830517597200973824*x - 
+137370551967459378662586974208)*y^8 + (-380412159586414984102557878801399808*x^\
+10 + 1740644820720573818434471276825450767187968*x^9 - 
+7299322843201353471172431913122008282481819648*x^8 + 
+5022584713569135049601993083093363933601140310016*x^7)/(x^10 - 17280*x^9 + 
+134369280*x^8 - 619173642240*x^7 + 1872381094133760*x^6 - 
+3882569436795764736*x^5 + 5590899988985901219840*x^4 - 
+5520614389124364175933440*x^3 + 3577358124152587986004869120*x^2 - 
+1373705519674593786625869742080*x + 237376313799769806328950291431424)*y^7 + 
+(22937337349180118661940947166590664704*x^10 + 
+70017338530573790366455302784167348497547264*x^9 - 
+312145768033919626111309824622897853053242703872*x^8 + 
+211141449285224647425452827752943929867022922416128*x^7)/(x^10 - 17280*x^9 + 
+134369280*x^8 - 619173642240*x^7 + 1872381094133760*x^6 - 
+3882569436795764736*x^5 + 5590899988985901219840*x^4 - 
+5520614389124364175933440*x^3 + 3577358124152587986004869120*x^2 - 
+1373705519674593786625869742080*x + 237376313799769806328950291431424)*y^6 + 
+(-491143137348380939626907743332964761600*x^11 - 
+2229982321153910189686741112370821511317028864*x^10 + 
+9468014067814190549759211290572645183360075825152*x^9 - 
+13283072384719975892483929894705743573176022252650496*x^8)/(x^11 - 19008*x^10 + 
+164229120*x^9 - 851363758080*x^8 + 2942313147924480*x^7 - 
+7118043967458902016*x^6 + 12299979975768982683648*x^5 - 
+15181689570092001483816960*x^4 + 13116979788559489282017853440*x^3 - 
+7555380358210265826442283581440*x^2 + 2611139451797467869618453205745664*x - 
+410186270246002225336426103593500672)*y^5 + 
+(6230501513790889634124201086852467261440*x^11 - 
+81555838333781566246246100526027257408447840256*x^10 + 
+480466389382896661585603171334667975050704617209856*x^9 - 
+855779424085779251041072197110776722712938601028517888*x^8)/(x^11 - 19008*x^10 +
+164229120*x^9 - 851363758080*x^8 + 2942313147924480*x^7 - 
+7118043967458902016*x^6 + 12299979975768982683648*x^5 - 
+15181689570092001483816960*x^4 + 13116979788559489282017853440*x^3 - 
+7555380358210265826442283581440*x^2 + 2611139451797467869618453205745664*x - 
+410186270246002225336426103593500672)*y^4 + 
+(-50719650160913944805357009928647652409344*x^12 + 
+1700154722150627546502953503614997210653511385088*x^11 - 
+3533435336509078647642631101740843479861463447764992*x^10 - 
+11193372466942696794819988171993163639354818427929755648*x^9 + 
+18517003027762588628901810247532431915783625441437135405056*x^8)/(x^12 - 
+20736*x^11 + 197074944*x^10 - 1135151677440*x^9 + 4413469721886720*x^8 - 
+12202361087072403456*x^7 + 24599959951537965367296*x^6 - 
+36436054968220803561160704*x^5 + 39350939365678467846053560320*x^4 - 
+30221521432841063305769134325760*x^3 + 15666836710784807217710719234473984*x^2 -
+4922235242952026704037113243122008064*x + 
+708801874985091845381344307009569161216)*y^3 + 
+(261883133898583555648377230547917759053824*x^12 + 
+55204063747840802403246489781827978771454954045440*x^11 - 
+262828679872222373960137725646573618440566737465245696*x^10 + 
+144664086154395223663295392558847124342059573761227620352*x^9)/(x^12 - 
+20736*x^11 + 197074944*x^10 - 1135151677440*x^9 + 4413469721886720*x^8 - 
+12202361087072403456*x^7 + 24599959951537965367296*x^6 - 
+36436054968220803561160704*x^5 + 39350939365678467846053560320*x^4 - 
+30221521432841063305769134325760*x^3 + 15666836710784807217710719234473984*x^2 -
+4922235242952026704037113243122008064*x + 
+708801874985091845381344307009569161216)*y^2 + 
+(-785649401695750666945131691643753277161472*x^12 - 
+581370981759947625730268724551319671034547235979264*x^11 - 
+1799929312684894275903270219916211327172616224459718656*x^10)/(x^12 - 20736*x^11
++ 197074944*x^10 - 1135151677440*x^9 + 4413469721886720*x^8 - 
+12202361087072403456*x^7 + 24599959951537965367296*x^6 - 
+36436054968220803561160704*x^5 + 39350939365678467846053560320*x^4 - 
+30221521432841063305769134325760*x^3 + 15666836710784807217710719234473984*x^2 -
+4922235242952026704037113243122008064*x + 
+708801874985091845381344307009569161216)*y + 
+(1047532535594334222593508922191671036215296*x^12 - 
+16536818261819298544043826309881930080253723566669824*x^11)/(x^12 - 20736*x^11 +
+197074944*x^10 - 1135151677440*x^9 + 4413469721886720*x^8 - 
+12202361087072403456*x^7 + 24599959951537965367296*x^6 - 
+36436054968220803561160704*x^5 + 39350939365678467846053560320*x^4 - 
+30221521432841063305769134325760*x^3 + 15666836710784807217710719234473984*x^2 -
+4922235242952026704037113243122008064*x + 
+708801874985091845381344307009569161216).
+Genus is zero, but degree of cover is very high.
+Using the models already computed by Sutherland and Zywina.
+Iteration 1 of 114.
+Number field root finding.
+Done. There were 1 roots. Time taken was 17.870 sec.
+Iteration 2 of 114.
+Number field root finding.
+Done. There were 1 roots. Time taken was 18.500 sec.
+Iteration 3 of 114.
+Number field root finding.
+Done. There were 1 roots. Time taken was 15.100 sec.
+Iteration 4 of 114.
+Number field root finding.
+Done. There were 1 roots. Time taken was 18.910 sec.
+Iteration 5 of 114.
+Number field root finding.
+Done. There were 1 roots. Time taken was 19.630 sec.
+Iteration 6 of 114.
+Number field root finding.
+Done. There were 1 roots. Time taken was 16.150 sec.
+Iteration 7 of 114.
+Number field root finding.
+Done. There were 1 roots. Time taken was 22.790 sec.
+Iteration 8 of 114.
+Number field root finding.
+Done. There were 1 roots. Time taken was 16.720 sec.
+Iteration 9 of 114.
+Number field root finding.
+Done. There were 1 roots. Time taken was 17.550 sec.
+Iteration 10 of 114.
+Number field root finding.
+Done. There were 1 roots. Time taken was 20.800 sec.
+Iteration 11 of 114.
+Number field root finding.
+Done. There were 1 roots. Time taken was 19.810 sec.
+Iteration 12 of 114.
+Number field root finding.
+Done. There were 1 roots. Time taken was 14.900 sec.
+Iteration 13 of 114.
+Number field root finding.
+Done. There were 1 roots. Time taken was 17.160 sec.
+Iteration 14 of 114.
+Number field root finding.
+Done. There were 1 roots. Time taken was 25.750 sec.
+Iteration 15 of 114.
+Number field root finding.
+Done. There were 1 roots. Time taken was 25.470 sec.
+Iteration 16 of 114.
+Number field root finding.
+Done. There were 1 roots. Time taken was 15.080 sec.
+Iteration 17 of 114.
+Number field root finding.
+Done. There were 1 roots. Time taken was 20.840 sec.
+Iteration 18 of 114.
+Number field root finding.
+Done. There were 1 roots. Time taken was 15.650 sec.
+Iteration 19 of 114.
+Number field root finding.
+Done. There were 1 roots. Time taken was 23.250 sec.
+Iteration 20 of 114.
+Number field root finding.
+Done. There were 1 roots. Time taken was 18.990 sec.
+Iteration 21 of 114.
+Number field root finding.
+Done. There were 1 roots. Time taken was 17.960 sec.
+Iteration 22 of 114.
+Number field root finding.
+Done. There were 1 roots. Time taken was 21.420 sec.
+Iteration 23 of 114.
+Number field root finding.
+Done. There were 1 roots. Time taken was 23.750 sec.
+Iteration 24 of 114.
+Number field root finding.
+Done. There were 1 roots. Time taken was 13.990 sec.
+Iteration 25 of 114.
+Number field root finding.
+Done. There were 1 roots. Time taken was 23.320 sec.
+Iteration 26 of 114.
+Number field root finding.
+Done. There were 1 roots. Time taken was 18.770 sec.
+Iteration 27 of 114.
+Number field root finding.
+Done. There were 1 roots. Time taken was 9.720 sec.
+Iteration 28 of 114.
+Number field root finding.
+Done. There were 1 roots. Time taken was 15.590 sec.
+Iteration 29 of 114.
+Number field root finding.
+Done. There were 1 roots. Time taken was 21.520 sec.
+Iteration 30 of 114.
+Number field root finding.
+Done. There were 1 roots. Time taken was 17.700 sec.
+Iteration 31 of 114.
+Number field root finding.
+Done. There were 1 roots. Time taken was 20.690 sec.
+Iteration 32 of 114.
+Number field root finding.
+Done. There were 1 roots. Time taken was 15.410 sec.
+Iteration 33 of 114.
+Number field root finding.
+Done. There were 1 roots. Time taken was 20.830 sec.
+Iteration 34 of 114.
+Number field root finding.
+Done. There were 1 roots. Time taken was 15.330 sec.
+Iteration 35 of 114.
+Number field root finding.
+Done. There were 1 roots. Time taken was 21.660 sec.
+Iteration 36 of 114.
+Number field root finding.
+Done. There were 1 roots. Time taken was 13.330 sec.
+Iteration 37 of 114.
+Number field root finding.
+Done. There were 1 roots. Time taken was 21.770 sec.
+Iteration 38 of 114.
+Number field root finding.
+Done. There were 1 roots. Time taken was 14.560 sec.
+Iteration 39 of 114.
+Number field root finding.
+Done. There were 1 roots. Time taken was 18.740 sec.
+Iteration 40 of 114.
+Number field root finding.
+Done. There were 1 roots. Time taken was 19.350 sec.
+Iteration 41 of 114.
+Number field root finding.
+Done. There were 1 roots. Time taken was 21.200 sec.
+Iteration 42 of 114.
+Number field root finding.
+Done. There were 1 roots. Time taken was 20.720 sec.
+Iteration 43 of 114.
+Number field root finding.
+Done. There were 1 roots. Time taken was 21.870 sec.
+Iteration 44 of 114.
+Number field root finding.
+Done. There were 1 roots. Time taken was 25.410 sec.
+Iteration 45 of 114.
+Number field root finding.
+Done. There were 1 roots. Time taken was 19.170 sec.
+Iteration 46 of 114.
+Number field root finding.
+Done. There were 1 roots. Time taken was 12.830 sec.
+Iteration 47 of 114.
+Number field root finding.
+Done. There were 1 roots. Time taken was 15.170 sec.
+Iteration 48 of 114.
+Number field root finding.
+Done. There were 1 roots. Time taken was 15.210 sec.
+Iteration 49 of 114.
+Number field root finding.
+Done. There were 1 roots. Time taken was 21.820 sec.
+Iteration 50 of 114.
+Number field root finding.
+Done. There were 1 roots. Time taken was 19.990 sec.
+Iteration 51 of 114.
+Number field root finding.
+Done. There were 1 roots. Time taken was 18.950 sec.
+Iteration 52 of 114.
+Number field root finding.
+Done. There were 1 roots. Time taken was 18.650 sec.
+Iteration 53 of 114.
+Number field root finding.
+Done. There were 1 roots. Time taken was 19.960 sec.
+Iteration 54 of 114.
+Number field root finding.
+Done. There were 1 roots. Time taken was 14.380 sec.
+Iteration 55 of 114.
+Number field root finding.
+Done. There were 1 roots. Time taken was 24.460 sec.
+Iteration 56 of 114.
+Number field root finding.
+Done. There were 1 roots. Time taken was 17.480 sec.
+Iteration 57 of 114.
+Number field root finding.
+Done. There were 1 roots. Time taken was 19.120 sec.
+Iteration 58 of 114.
+Number field root finding.
+Done. There were 1 roots. Time taken was 26.880 sec.
+Iteration 59 of 114.
+Number field root finding.
+Done. There were 1 roots. Time taken was 24.140 sec.
+Iteration 60 of 114.
+Number field root finding.
+Done. There were 1 roots. Time taken was 16.490 sec.
+Iteration 61 of 114.
+Number field root finding.
+Done. There were 1 roots. Time taken was 21.190 sec.
+Iteration 62 of 114.
+Number field root finding.
+Done. There were 1 roots. Time taken was 18.850 sec.
+Iteration 63 of 114.
+Number field root finding.
+Done. There were 1 roots. Time taken was 18.350 sec.
+Iteration 64 of 114.
+Number field root finding.
+Done. There were 1 roots. Time taken was 22.150 sec.
+Iteration 65 of 114.
+Number field root finding.
+Done. There were 1 roots. Time taken was 18.800 sec.
+Iteration 66 of 114.
+Number field root finding.
+Done. There were 1 roots. Time taken was 24.080 sec.
+Iteration 67 of 114.
+Number field root finding.
+Done. There were 1 roots. Time taken was 18.730 sec.
+Iteration 68 of 114.
+Number field root finding.
+Done. There were 1 roots. Time taken was 25.960 sec.
+Iteration 69 of 114.
+Number field root finding.
+Done. There were 1 roots. Time taken was 26.900 sec.
+Iteration 70 of 114.
+Number field root finding.
+Done. There were 1 roots. Time taken was 21.510 sec.
+Iteration 71 of 114.
+Number field root finding.
+Done. There were 1 roots. Time taken was 13.030 sec.
+Iteration 72 of 114.
+Number field root finding.
+Done. There were 1 roots. Time taken was 24.300 sec.
+Iteration 73 of 114.
+Number field root finding.
+Done. There were 1 roots. Time taken was 20.190 sec.
+Iteration 74 of 114.
+Number field root finding.
+Done. There were 1 roots. Time taken was 21.370 sec.
+Iteration 75 of 114.
+Number field root finding.
+Done. There were 1 roots. Time taken was 18.700 sec.
+Iteration 76 of 114.
+Number field root finding.
+Done. There were 1 roots. Time taken was 22.220 sec.
+Iteration 77 of 114.
+Number field root finding.
+Done. There were 1 roots. Time taken was 20.170 sec.
+Iteration 78 of 114.
+Number field root finding.
+Done. There were 1 roots. Time taken was 22.150 sec.
+Iteration 79 of 114.
+Number field root finding.
+Done. There were 1 roots. Time taken was 18.470 sec.
+Iteration 80 of 114.
+Number field root finding.
+Done. There were 1 roots. Time taken was 14.070 sec.
+Iteration 81 of 114.
+Number field root finding.
+Done. There were 1 roots. Time taken was 20.300 sec.
+Iteration 82 of 114.
+Number field root finding.
+Done. There were 1 roots. Time taken was 22.560 sec.
+Iteration 83 of 114.
+Number field root finding.
+Done. There were 1 roots. Time taken was 18.930 sec.
+Iteration 84 of 114.
+Number field root finding.
+Done. There were 1 roots. Time taken was 27.960 sec.
+Iteration 85 of 114.
+Number field root finding.
+Done. There were 1 roots. Time taken was 22.320 sec.
+Iteration 86 of 114.
+Number field root finding.
+Done. There were 1 roots. Time taken was 22.440 sec.
+Iteration 87 of 114.
+Number field root finding.
+Done. There were 1 roots. Time taken was 22.230 sec.
+Iteration 88 of 114.
+Number field root finding.
+Done. There were 1 roots. Time taken was 25.260 sec.
+Iteration 89 of 114.
+Number field root finding.
+Done. There were 1 roots. Time taken was 17.230 sec.
+Iteration 90 of 114.
+Number field root finding.
+Done. There were 1 roots. Time taken was 22.770 sec.
+Iteration 91 of 114.
+Number field root finding.
+Done. There were 1 roots. Time taken was 26.850 sec.
+Iteration 92 of 114.
+Number field root finding.
+Done. There were 1 roots. Time taken was 21.100 sec.
+Iteration 93 of 114.
+Number field root finding.
+Done. There were 1 roots. Time taken was 21.510 sec.
+Iteration 94 of 114.
+Number field root finding.
+Done. There were 1 roots. Time taken was 25.430 sec.
+Iteration 95 of 114.
+Number field root finding.
+Done. There were 1 roots. Time taken was 12.280 sec.
+Iteration 96 of 114.
+Number field root finding.
+Done. There were 1 roots. Time taken was 23.000 sec.
+Iteration 97 of 114.
+Number field root finding.
+Done. There were 1 roots. Time taken was 24.430 sec.
+Iteration 98 of 114.
+Number field root finding.
+Done. There were 1 roots. Time taken was 18.710 sec.
+Iteration 99 of 114.
+Number field root finding.
+Done. There were 1 roots. Time taken was 22.700 sec.
+Iteration 100 of 114.
+Number field root finding.
+Done. There were 1 roots. Time taken was 22.340 sec.
+Iteration 101 of 114.
+Number field root finding.
+Done. There were 1 roots. Time taken was 20.150 sec.
+Iteration 102 of 114.
+Number field root finding.
+Done. There were 1 roots. Time taken was 21.640 sec.
+Iteration 103 of 114.
+Number field root finding.
+Done. There were 1 roots. Time taken was 19.560 sec.
+Iteration 104 of 114.
+Number field root finding.
+Done. There were 1 roots. Time taken was 21.520 sec.
+Iteration 105 of 114.
+Number field root finding.
+Done. There were 1 roots. Time taken was 21.100 sec.
+Iteration 106 of 114.
+Number field root finding.
+Done. There were 1 roots. Time taken was 25.130 sec.
+Iteration 107 of 114.
+Number field root finding.
+Done. There were 1 roots. Time taken was 10.630 sec.
+Iteration 108 of 114.
+Number field root finding.
+Done. There were 1 roots. Time taken was 24.490 sec.
+Iteration 109 of 114.
+Number field root finding.
+Done. There were 1 roots. Time taken was 23.230 sec.
+Iteration 110 of 114.
+Number field root finding.
+Done. There were 1 roots. Time taken was 15.810 sec.
+Iteration 111 of 114.
+Number field root finding.
+Done. There were 1 roots. Time taken was 17.450 sec.
+Iteration 112 of 114.
+Number field root finding.
+Done. There were 1 roots. Time taken was 25.640 sec.
+Iteration 113 of 114.
+Number field root finding.
+Done. There were 1 roots. Time taken was 21.280 sec.
+Iteration 114 of 114.
+Number field root finding.
+Done. There were 1 roots. Time taken was 23.710 sec.
+Computing null space 1 of 27.
+ratfuncs 1 of 27. Has degree 44.
+Computing null space 2 of 27.
+ratfuncs 2 of 27. Has degree 45.
+Computing null space 3 of 27.
+ratfuncs 3 of 27. Has degree 46.
+Computing null space 4 of 27.
+ratfuncs 4 of 27. Has degree 46.
+Computing null space 5 of 27.
+ratfuncs 5 of 27. Has degree 46.
+Computing null space 6 of 27.
+ratfuncs 6 of 27. Has degree 47.
+Computing null space 7 of 27.
+ratfuncs 7 of 27. Has degree 47.
+Computing null space 8 of 27.
+ratfuncs 8 of 27. Has degree 47.
+Computing null space 9 of 27.
+ratfuncs 9 of 27. Has degree 48.
+Computing null space 10 of 27.
+ratfuncs 10 of 27. Has degree 48.
+Computing null space 11 of 27.
+ratfuncs 11 of 27. Has degree 48.
+Computing null space 12 of 27.
+ratfuncs 12 of 27. Has degree 49.
+Computing null space 13 of 27.
+ratfuncs 13 of 27. Has degree 49.
+Computing null space 14 of 27.
+ratfuncs 14 of 27. Has degree 49.
+Computing null space 15 of 27.
+ratfuncs 15 of 27. Has degree 50.
+Computing null space 16 of 27.
+ratfuncs 16 of 27. Has degree 50.
+Computing null space 17 of 27.
+ratfuncs 17 of 27. Has degree 50.
+Computing null space 18 of 27.
+ratfuncs 18 of 27. Has degree 51.
+Computing null space 19 of 27.
+ratfuncs 19 of 27. Has degree 51.
+Computing null space 20 of 27.
+ratfuncs 20 of 27. Has degree 51.
+Computing null space 21 of 27.
+ratfuncs 21 of 27. Has degree 52.
+Computing null space 22 of 27.
+ratfuncs 22 of 27. Has degree 52.
+Computing null space 23 of 27.
+ratfuncs 23 of 27. Has degree 52.
+Computing null space 24 of 27.
+ratfuncs 24 of 27. Has degree 53.
+Computing null space 25 of 27.
+ratfuncs 25 of 27. Has degree 53.
+Computing null space 26 of 27.
+ratfuncs 26 of 27. Has degree 53.
+Computing null space 27 of 27.
+ratfuncs 27 of 27. Has degree 54.
+Testing.
+Number field root finding.
+Done. There were 1 roots. Time taken was 19.920 sec.
+Testing worked!
+Doing computation to verify root.
+Root verification complete.
+Writing Fourier expansion of generator to file.
+Fourier expansion of hauptmodul written to modfunc9.27.0.1.txt. Done with model 
+computation.
+Verified the pre-computed covering due to Sutherland and Zywina.
+The map is j = (4374*x^27 + 45927*x^26 + 236196*x^25 + 691092*x^24 + 997272*x^23
+- 301806*x^22 - 3612924*x^21 - 2952450*x^20 + 10064574*x^19 + 20236311*x^18 - 
+15011568*x^17 - 76133844*x^16 - 19372446*x^15 + 170684415*x^14 + 116733312*x^13 
+- 317110626*x^12 - 319730652*x^11 + 451829826*x^10 + 579371292*x^9 - 
+466697052*x^8 - 718783794*x^7 + 366184719*x^6 + 683052588*x^5 - 140877792*x^4 - 
+441599040*x^3 - 50388480*x^2 + 127650816*x + 44789760)/(x^27 - 27*x^25 - 9*x^24 
++ 324*x^23 + 216*x^22 - 2232*x^21 - 2268*x^20 + 9450*x^19 + 13524*x^18 - 
+23814*x^17 - 49518*x^16 + 27342*x^15 + 111132*x^14 + 21438*x^13 - 138474*x^12 - 
+113319*x^11 + 56916*x^10 + 130089*x^9 + 56619*x^8 - 28458*x^7 - 47664*x^6 - 
+28350*x^5 - 9990*x^4 - 2259*x^3 - 324*x^2 - 27*x - 1).
+
+Total time: 5021.590 seconds, Total memory usage: 177.25MB

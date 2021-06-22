@@ -1,0 +1,1353 @@
+The modular forms for this subgroup have a Fourier expansion expressible in 
+terms of q^(1/27).
+Found good field number 1.
+The Fourier coefficients of the modular forms live in the field Number Field 
+with defining polynomial $.1^9 - 18*$.1^8 + 135*$.1^7 - 546*$.1^6 + 1287*$.1^5 -
+1782*$.1^4 + 1386*$.1^3 - 540*$.1^2 + 81*$.1 - 3 over the Rational Field.
+Precision goes up to q^60.
+Subgroup 27.243.12.1 has genus 12. It has 9 cusps and 1 Galois orbits of cusps 
+with sizes [ 9 ].
+The space of Eisenstein series has dimension 323.
+Computing action of generators of subsub intersect SL_2 on Eisenstein series for
+Gamma(27).
+Finding vectors invariant under subsub intersect SL_2.
+The dimension of the space of Eisenstein series for subsub intersect SL_2 is 8.
+Computing the action of the generators of subsub on the Q-vector space of 
+dimension 144.
+Finding vectors invariant under subsub.
+The dimension is 8.
+Computing Weierstrass p-function Fourier expansions.
+Computing expansion 1 of 323.
+Computing expansion 2 of 323.
+Computing expansion 3 of 323.
+Computing expansion 4 of 323.
+Computing expansion 5 of 323.
+Computing expansion 6 of 323.
+Computing expansion 7 of 323.
+Computing expansion 8 of 323.
+Computing expansion 9 of 323.
+Computing expansion 10 of 323.
+Computing expansion 11 of 323.
+Computing expansion 12 of 323.
+Computing expansion 13 of 323.
+Computing expansion 14 of 323.
+Computing expansion 15 of 323.
+Computing expansion 16 of 323.
+Computing expansion 17 of 323.
+Computing expansion 18 of 323.
+Computing expansion 19 of 323.
+Computing expansion 20 of 323.
+Computing expansion 21 of 323.
+Computing expansion 22 of 323.
+Computing expansion 23 of 323.
+Computing expansion 24 of 323.
+Computing expansion 25 of 323.
+Computing expansion 26 of 323.
+Computing expansion 27 of 323.
+Computing expansion 28 of 323.
+Computing expansion 29 of 323.
+Computing expansion 30 of 323.
+Computing expansion 31 of 323.
+Computing expansion 32 of 323.
+Computing expansion 33 of 323.
+Computing expansion 34 of 323.
+Computing expansion 35 of 323.
+Computing expansion 36 of 323.
+Computing expansion 37 of 323.
+Computing expansion 38 of 323.
+Computing expansion 39 of 323.
+Computing expansion 40 of 323.
+Computing expansion 41 of 323.
+Computing expansion 42 of 323.
+Computing expansion 43 of 323.
+Computing expansion 44 of 323.
+Computing expansion 45 of 323.
+Computing expansion 46 of 323.
+Computing expansion 47 of 323.
+Computing expansion 48 of 323.
+Computing expansion 49 of 323.
+Computing expansion 50 of 323.
+Computing expansion 51 of 323.
+Computing expansion 52 of 323.
+Computing expansion 53 of 323.
+Computing expansion 54 of 323.
+Computing expansion 55 of 323.
+Computing expansion 56 of 323.
+Computing expansion 57 of 323.
+Computing expansion 58 of 323.
+Computing expansion 59 of 323.
+Computing expansion 60 of 323.
+Computing expansion 61 of 323.
+Computing expansion 62 of 323.
+Computing expansion 63 of 323.
+Computing expansion 64 of 323.
+Computing expansion 65 of 323.
+Computing expansion 66 of 323.
+Computing expansion 67 of 323.
+Computing expansion 68 of 323.
+Computing expansion 69 of 323.
+Computing expansion 70 of 323.
+Computing expansion 71 of 323.
+Computing expansion 72 of 323.
+Computing expansion 73 of 323.
+Computing expansion 74 of 323.
+Computing expansion 75 of 323.
+Computing expansion 76 of 323.
+Computing expansion 77 of 323.
+Computing expansion 78 of 323.
+Computing expansion 79 of 323.
+Computing expansion 80 of 323.
+Computing expansion 81 of 323.
+Computing expansion 82 of 323.
+Computing expansion 83 of 323.
+Computing expansion 84 of 323.
+Computing expansion 85 of 323.
+Computing expansion 86 of 323.
+Computing expansion 87 of 323.
+Computing expansion 88 of 323.
+Computing expansion 89 of 323.
+Computing expansion 90 of 323.
+Computing expansion 91 of 323.
+Computing expansion 92 of 323.
+Computing expansion 93 of 323.
+Computing expansion 94 of 323.
+Computing expansion 95 of 323.
+Computing expansion 96 of 323.
+Computing expansion 97 of 323.
+Computing expansion 98 of 323.
+Computing expansion 99 of 323.
+Computing expansion 100 of 323.
+Computing expansion 101 of 323.
+Computing expansion 102 of 323.
+Computing expansion 103 of 323.
+Computing expansion 104 of 323.
+Computing expansion 105 of 323.
+Computing expansion 106 of 323.
+Computing expansion 107 of 323.
+Computing expansion 108 of 323.
+Computing expansion 109 of 323.
+Computing expansion 110 of 323.
+Computing expansion 111 of 323.
+Computing expansion 112 of 323.
+Computing expansion 113 of 323.
+Computing expansion 114 of 323.
+Computing expansion 115 of 323.
+Computing expansion 116 of 323.
+Computing expansion 117 of 323.
+Computing expansion 118 of 323.
+Computing expansion 119 of 323.
+Computing expansion 120 of 323.
+Computing expansion 121 of 323.
+Computing expansion 122 of 323.
+Computing expansion 123 of 323.
+Computing expansion 124 of 323.
+Computing expansion 125 of 323.
+Computing expansion 126 of 323.
+Computing expansion 127 of 323.
+Computing expansion 128 of 323.
+Computing expansion 129 of 323.
+Computing expansion 130 of 323.
+Computing expansion 131 of 323.
+Computing expansion 132 of 323.
+Computing expansion 133 of 323.
+Computing expansion 134 of 323.
+Computing expansion 135 of 323.
+Computing expansion 136 of 323.
+Computing expansion 137 of 323.
+Computing expansion 138 of 323.
+Computing expansion 139 of 323.
+Computing expansion 140 of 323.
+Computing expansion 141 of 323.
+Computing expansion 142 of 323.
+Computing expansion 143 of 323.
+Computing expansion 144 of 323.
+Computing expansion 145 of 323.
+Computing expansion 146 of 323.
+Computing expansion 147 of 323.
+Computing expansion 148 of 323.
+Computing expansion 149 of 323.
+Computing expansion 150 of 323.
+Computing expansion 151 of 323.
+Computing expansion 152 of 323.
+Computing expansion 153 of 323.
+Computing expansion 154 of 323.
+Computing expansion 155 of 323.
+Computing expansion 156 of 323.
+Computing expansion 157 of 323.
+Computing expansion 158 of 323.
+Computing expansion 159 of 323.
+Computing expansion 160 of 323.
+Computing expansion 161 of 323.
+Computing expansion 162 of 323.
+Computing expansion 163 of 323.
+Computing expansion 164 of 323.
+Computing expansion 165 of 323.
+Computing expansion 166 of 323.
+Computing expansion 167 of 323.
+Computing expansion 168 of 323.
+Computing expansion 169 of 323.
+Computing expansion 170 of 323.
+Computing expansion 171 of 323.
+Computing expansion 172 of 323.
+Computing expansion 173 of 323.
+Computing expansion 174 of 323.
+Computing expansion 175 of 323.
+Computing expansion 176 of 323.
+Computing expansion 177 of 323.
+Computing expansion 178 of 323.
+Computing expansion 179 of 323.
+Computing expansion 180 of 323.
+Computing expansion 181 of 323.
+Computing expansion 182 of 323.
+Computing expansion 183 of 323.
+Computing expansion 184 of 323.
+Computing expansion 185 of 323.
+Computing expansion 186 of 323.
+Computing expansion 187 of 323.
+Computing expansion 188 of 323.
+Computing expansion 189 of 323.
+Computing expansion 190 of 323.
+Computing expansion 191 of 323.
+Computing expansion 192 of 323.
+Computing expansion 193 of 323.
+Computing expansion 194 of 323.
+Computing expansion 195 of 323.
+Computing expansion 196 of 323.
+Computing expansion 197 of 323.
+Computing expansion 198 of 323.
+Computing expansion 199 of 323.
+Computing expansion 200 of 323.
+Computing expansion 201 of 323.
+Computing expansion 202 of 323.
+Computing expansion 203 of 323.
+Computing expansion 204 of 323.
+Computing expansion 205 of 323.
+Computing expansion 206 of 323.
+Computing expansion 207 of 323.
+Computing expansion 208 of 323.
+Computing expansion 209 of 323.
+Computing expansion 210 of 323.
+Computing expansion 211 of 323.
+Computing expansion 212 of 323.
+Computing expansion 213 of 323.
+Computing expansion 214 of 323.
+Computing expansion 215 of 323.
+Computing expansion 216 of 323.
+Computing expansion 217 of 323.
+Computing expansion 218 of 323.
+Computing expansion 219 of 323.
+Computing expansion 220 of 323.
+Computing expansion 221 of 323.
+Computing expansion 222 of 323.
+Computing expansion 223 of 323.
+Computing expansion 224 of 323.
+Computing expansion 225 of 323.
+Computing expansion 226 of 323.
+Computing expansion 227 of 323.
+Computing expansion 228 of 323.
+Computing expansion 229 of 323.
+Computing expansion 230 of 323.
+Computing expansion 231 of 323.
+Computing expansion 232 of 323.
+Computing expansion 233 of 323.
+Computing expansion 234 of 323.
+Computing expansion 235 of 323.
+Computing expansion 236 of 323.
+Computing expansion 237 of 323.
+Computing expansion 238 of 323.
+Computing expansion 239 of 323.
+Computing expansion 240 of 323.
+Computing expansion 241 of 323.
+Computing expansion 242 of 323.
+Computing expansion 243 of 323.
+Computing expansion 244 of 323.
+Computing expansion 245 of 323.
+Computing expansion 246 of 323.
+Computing expansion 247 of 323.
+Computing expansion 248 of 323.
+Computing expansion 249 of 323.
+Computing expansion 250 of 323.
+Computing expansion 251 of 323.
+Computing expansion 252 of 323.
+Computing expansion 253 of 323.
+Computing expansion 254 of 323.
+Computing expansion 255 of 323.
+Computing expansion 256 of 323.
+Computing expansion 257 of 323.
+Computing expansion 258 of 323.
+Computing expansion 259 of 323.
+Computing expansion 260 of 323.
+Computing expansion 261 of 323.
+Computing expansion 262 of 323.
+Computing expansion 263 of 323.
+Computing expansion 264 of 323.
+Computing expansion 265 of 323.
+Computing expansion 266 of 323.
+Computing expansion 267 of 323.
+Computing expansion 268 of 323.
+Computing expansion 269 of 323.
+Computing expansion 270 of 323.
+Computing expansion 271 of 323.
+Computing expansion 272 of 323.
+Computing expansion 273 of 323.
+Computing expansion 274 of 323.
+Computing expansion 275 of 323.
+Computing expansion 276 of 323.
+Computing expansion 277 of 323.
+Computing expansion 278 of 323.
+Computing expansion 279 of 323.
+Computing expansion 280 of 323.
+Computing expansion 281 of 323.
+Computing expansion 282 of 323.
+Computing expansion 283 of 323.
+Computing expansion 284 of 323.
+Computing expansion 285 of 323.
+Computing expansion 286 of 323.
+Computing expansion 287 of 323.
+Computing expansion 288 of 323.
+Computing expansion 289 of 323.
+Computing expansion 290 of 323.
+Computing expansion 291 of 323.
+Computing expansion 292 of 323.
+Computing expansion 293 of 323.
+Computing expansion 294 of 323.
+Computing expansion 295 of 323.
+Computing expansion 296 of 323.
+Computing expansion 297 of 323.
+Computing expansion 298 of 323.
+Computing expansion 299 of 323.
+Computing expansion 300 of 323.
+Computing expansion 301 of 323.
+Computing expansion 302 of 323.
+Computing expansion 303 of 323.
+Computing expansion 304 of 323.
+Computing expansion 305 of 323.
+Computing expansion 306 of 323.
+Computing expansion 307 of 323.
+Computing expansion 308 of 323.
+Computing expansion 309 of 323.
+Computing expansion 310 of 323.
+Computing expansion 311 of 323.
+Computing expansion 312 of 323.
+Computing expansion 313 of 323.
+Computing expansion 314 of 323.
+Computing expansion 315 of 323.
+Computing expansion 316 of 323.
+Computing expansion 317 of 323.
+Computing expansion 318 of 323.
+Computing expansion 319 of 323.
+Computing expansion 320 of 323.
+Computing expansion 321 of 323.
+Computing expansion 322 of 323.
+Computing expansion 323 of 323.
+Computing actual Eisenstein series.
+Doing series 1.
+Doing series 2.
+Doing series 3.
+Doing series 4.
+Doing series 5.
+Doing series 6.
+Doing series 7.
+Doing series 8.
+LLL-ing Eisenstein series Fourier expansions.
+Nicefying 8x393669 matrix with denominator 624.
+Computing saturation.
+Done.
+Calling LLL.
+Done.
+Trying 3-tuples of the first 8 Eisenstein series.
+Multiplying. Choosing order randomly.
+Doing product 1 of 120. We get basis element 1 of 82.
+Doing product 2 of 120. We get basis element 2 of 82.
+Doing product 3 of 120. We get basis element 3 of 82.
+Doing product 4 of 120. We get basis element 4 of 82.
+Doing product 5 of 120. We get basis element 5 of 82.
+Doing product 6 of 120. We get basis element 6 of 82.
+Doing product 7 of 120. We get basis element 7 of 82.
+Doing product 8 of 120. We get basis element 8 of 82.
+Doing product 9 of 120. We get basis element 9 of 82.
+Doing product 10 of 120. We get basis element 10 of 82.
+Doing product 11 of 120. We get basis element 11 of 82.
+Doing product 12 of 120. We get basis element 12 of 82.
+Doing product 13 of 120. We get basis element 13 of 82.
+Doing product 14 of 120. We get basis element 14 of 82.
+Doing product 15 of 120. We get basis element 15 of 82.
+Doing product 16 of 120. We get basis element 16 of 82.
+Doing product 17 of 120. We get basis element 17 of 82.
+Doing product 18 of 120. We get basis element 18 of 82.
+Doing product 19 of 120. We get basis element 19 of 82.
+Doing product 20 of 120. We get basis element 20 of 82.
+Doing product 21 of 120. We get basis element 21 of 82.
+Doing product 22 of 120. We get basis element 22 of 82.
+Doing product 23 of 120. We get basis element 23 of 82.
+Doing product 24 of 120. We get basis element 24 of 82.
+Doing product 25 of 120. We get basis element 25 of 82.
+Doing product 26 of 120. We get basis element 26 of 82.
+Doing product 27 of 120. We get basis element 27 of 82.
+Doing product 28 of 120. We get basis element 28 of 82.
+Doing product 29 of 120. We get basis element 29 of 82.
+Doing product 30 of 120. We get basis element 30 of 82.
+Doing product 31 of 120. We get basis element 31 of 82.
+Doing product 32 of 120. We get basis element 32 of 82.
+Doing product 33 of 120. We get basis element 33 of 82.
+Doing product 34 of 120. We get basis element 34 of 82.
+Doing product 35 of 120. We get basis element 35 of 82.
+Doing product 36 of 120. We get basis element 36 of 82.
+Doing product 37 of 120. We get basis element 37 of 82.
+Doing product 38 of 120. We get basis element 38 of 82.
+Doing product 39 of 120. We get basis element 39 of 82.
+Doing product 40 of 120. We get basis element 40 of 82.
+Doing product 41 of 120. We get basis element 41 of 82.
+Doing product 42 of 120. We get basis element 42 of 82.
+Doing product 43 of 120. We get basis element 43 of 82.
+Doing product 44 of 120. We get basis element 44 of 82.
+Doing product 45 of 120. We get basis element 45 of 82.
+Doing product 46 of 120. We get basis element 46 of 82.
+Doing product 47 of 120. We get basis element 47 of 82.
+Doing product 48 of 120. We get basis element 48 of 82.
+Doing product 49 of 120. We get basis element 49 of 82.
+Doing product 50 of 120. We get basis element 50 of 82.
+Doing product 51 of 120. We get basis element 51 of 82.
+Doing product 52 of 120. We get basis element 52 of 82.
+Doing product 53 of 120. We get basis element 53 of 82.
+Doing product 54 of 120. We get basis element 54 of 82.
+Doing product 55 of 120. We get basis element 55 of 82.
+Doing product 56 of 120. We get basis element 56 of 82.
+Doing product 57 of 120. We get basis element 57 of 82.
+Doing product 58 of 120. We get basis element 58 of 82.
+Doing product 59 of 120. We get basis element 59 of 82.
+Doing product 60 of 120. We get basis element 60 of 82.
+Doing product 61 of 120. We get basis element 61 of 82.
+Doing product 62 of 120. We get basis element 62 of 82.
+Doing product 63 of 120. We get basis element 63 of 82.
+Doing product 64 of 120. We get basis element 64 of 82.
+Doing product 65 of 120. We get basis element 65 of 82.
+Doing product 66 of 120. We get basis element 66 of 82.
+Doing product 67 of 120. We get basis element 67 of 82.
+Doing product 68 of 120. We get basis element 68 of 82.
+Doing product 69 of 120. We get basis element 69 of 82.
+Doing product 70 of 120. We get basis element 70 of 82.
+Doing product 71 of 120. We get basis element 71 of 82.
+Doing product 72 of 120. We get basis element 72 of 82.
+Doing product 73 of 120. We get basis element 73 of 82.
+Doing product 74 of 120. We get basis element 74 of 82.
+Doing product 75 of 120. We get basis element 75 of 82.
+Doing product 76 of 120. We get basis element 76 of 82.
+Doing product 77 of 120. We get basis element 77 of 82.
+Doing product 78 of 120. We get basis element 78 of 82.
+Doing product 79 of 120. We get basis element 79 of 82.
+Doing product 80 of 120. We get basis element 80 of 82.
+Doing product 81 of 120. We get basis element 81 of 82.
+Doing product 82 of 120. We get basis element 82 of 82.
+Applying T_53.
+Doing form 1. Form 1 hit with T_53 gives us a new basis element in weight 6.
+Doing form 2. Form 2 hit with T_53 gives us a new basis element in weight 6.
+Doing form 3. Form 3 hit with T_53 gives us a new basis element in weight 6.
+Doing form 4. Form 4 hit with T_53 gives us a new basis element in weight 6.
+Doing form 5. Form 5 hit with T_53 gives us a new basis element in weight 6.
+Doing form 6. Form 6 hit with T_53 gives us a new basis element in weight 6.
+Doing form 7. Form 7 hit with T_53 gives us a new basis element in weight 6.
+Doing form 8. Form 8 hit with T_53 gives us a new basis element in weight 6.
+Doing form 9. Form 9 hit with T_53 gives us a new basis element in weight 6.
+Doing form 10. Form 10 hit with T_53 gives us a new basis element in weight 6.
+Doing form 11. Form 11 hit with T_53 gives us a new basis element in weight 6.
+Doing form 12. Form 12 hit with T_53 gives us a new basis element in weight 6.
+Doing form 13. Form 13 hit with T_53 gives us a new basis element in weight 6.
+Doing form 14. Form 14 hit with T_53 gives us a new basis element in weight 6.
+Doing form 15. Form 15 hit with T_53 gives us a new basis element in weight 6.
+Doing form 16. Form 16 hit with T_53 gives us a new basis element in weight 6.
+Doing form 17. Form 17 hit with T_53 gives us a new basis element in weight 6.
+Doing form 18. Form 18 hit with T_53 gives us a new basis element in weight 6.
+Doing form 19. Form 19 hit with T_53 gives us a new basis element in weight 6.
+Doing form 20. We didn't get anything new.
+Doing form 21. We didn't get anything new.
+Doing form 22. We didn't get anything new.
+Doing form 23. We didn't get anything new.
+Doing form 24. We didn't get anything new.
+Doing form 25. We didn't get anything new.
+Doing form 26. We didn't get anything new.
+Doing form 27. We didn't get anything new.
+Doing form 28. We didn't get anything new.
+Doing form 29. We didn't get anything new.
+Doing form 30. We didn't get anything new.
+Doing form 31. We didn't get anything new.
+Doing form 32. We didn't get anything new.
+Doing form 33. We didn't get anything new.
+Doing form 34. We didn't get anything new.
+Doing form 35. We didn't get anything new.
+Doing form 36. We didn't get anything new.
+Doing form 37. We didn't get anything new.
+Doing form 38. We didn't get anything new.
+Doing form 39. We didn't get anything new.
+Doing form 40. We didn't get anything new.
+Doing form 41. We didn't get anything new.
+Doing form 42. We didn't get anything new.
+Doing form 43. We didn't get anything new.
+Doing form 44. We didn't get anything new.
+Doing form 45. We didn't get anything new.
+Doing form 46. We didn't get anything new.
+Doing form 47. We didn't get anything new.
+Doing form 48. We didn't get anything new.
+Doing form 49. We didn't get anything new.
+Doing form 50. We didn't get anything new.
+Doing form 51. We didn't get anything new.
+Doing form 52. We didn't get anything new.
+Doing form 53. We didn't get anything new.
+Doing form 54. We didn't get anything new.
+Doing form 55. We didn't get anything new.
+Doing form 56. We didn't get anything new.
+Doing form 57. We didn't get anything new.
+Doing form 58. We didn't get anything new.
+Doing form 59. We didn't get anything new.
+Doing form 60. We didn't get anything new.
+Doing form 61. We didn't get anything new.
+Doing form 62. We didn't get anything new.
+Doing form 63. We didn't get anything new.
+Doing form 64. We didn't get anything new.
+Doing form 65. We didn't get anything new.
+Doing form 66. We didn't get anything new.
+Doing form 67. We didn't get anything new.
+Doing form 68. We didn't get anything new.
+Doing form 69. We didn't get anything new.
+Doing form 70. We didn't get anything new.
+Doing form 71. We didn't get anything new.
+Doing form 72. We didn't get anything new.
+Doing form 73. We didn't get anything new.
+Doing form 74. We didn't get anything new.
+Doing form 75. We didn't get anything new.
+Doing form 76. We didn't get anything new.
+Doing form 77. We didn't get anything new.
+Doing form 78. We didn't get anything new.
+Doing form 79. We didn't get anything new.
+Doing form 80. We didn't get anything new.
+Doing form 81. We didn't get anything new.
+Doing form 82. We didn't get anything new.
+Done. In the end we got 101 weight 6 forms.
+The dimension of M_6 is 101.
+Computing the subspace of weight 6 cusp forms.
+We get a space of dimension 92. It should be 92.
+Making weight 2 list 1.
+Trying 4-tuples of the first 8 Eisenstein series.
+Multiplying. Choosing order randomly.
+Doing product 1 of 330. We get basis element 1 of 113.
+Doing product 2 of 330. We get basis element 2 of 113.
+Doing product 3 of 330. We get basis element 3 of 113.
+Doing product 4 of 330. We get basis element 4 of 113.
+Doing product 5 of 330. We get basis element 5 of 113.
+Doing product 6 of 330. We get basis element 6 of 113.
+Doing product 7 of 330. We get basis element 7 of 113.
+Doing product 8 of 330. We get basis element 8 of 113.
+Doing product 9 of 330. We get basis element 9 of 113.
+Doing product 10 of 330. We get basis element 10 of 113.
+Doing product 11 of 330. We get basis element 11 of 113.
+Doing product 12 of 330. We get basis element 12 of 113.
+Doing product 13 of 330. We get basis element 13 of 113.
+Doing product 14 of 330. We get basis element 14 of 113.
+Doing product 15 of 330. We get basis element 15 of 113.
+Doing product 16 of 330. We get basis element 16 of 113.
+Doing product 17 of 330. We get basis element 17 of 113.
+Doing product 18 of 330. We get basis element 18 of 113.
+Doing product 19 of 330. We get basis element 19 of 113.
+Doing product 20 of 330. We get basis element 20 of 113.
+Doing product 21 of 330. We get basis element 21 of 113.
+Doing product 22 of 330. We get basis element 22 of 113.
+Doing product 23 of 330. We get basis element 23 of 113.
+Doing product 24 of 330. We get basis element 24 of 113.
+Doing product 25 of 330. We get basis element 25 of 113.
+Doing product 26 of 330. We get basis element 26 of 113.
+Doing product 27 of 330. We get basis element 27 of 113.
+Doing product 28 of 330. We get basis element 28 of 113.
+Doing product 29 of 330. We get basis element 29 of 113.
+Doing product 30 of 330. We get basis element 30 of 113.
+Doing product 31 of 330. We get basis element 31 of 113.
+Doing product 32 of 330. We get basis element 32 of 113.
+Doing product 33 of 330. We get basis element 33 of 113.
+Doing product 34 of 330. We get basis element 34 of 113.
+Doing product 35 of 330. We get basis element 35 of 113.
+Doing product 36 of 330. We get basis element 36 of 113.
+Doing product 37 of 330. We get basis element 37 of 113.
+Doing product 38 of 330. We get basis element 38 of 113.
+Doing product 39 of 330. We get basis element 39 of 113.
+Doing product 40 of 330. We get basis element 40 of 113.
+Doing product 41 of 330. We get basis element 41 of 113.
+Doing product 42 of 330. We get basis element 42 of 113.
+Doing product 43 of 330. We get basis element 43 of 113.
+Doing product 44 of 330. We get basis element 44 of 113.
+Doing product 45 of 330. We get basis element 45 of 113.
+Doing product 46 of 330. We get basis element 46 of 113.
+Doing product 47 of 330. We get basis element 47 of 113.
+Doing product 48 of 330. We get basis element 48 of 113.
+Doing product 49 of 330. We get basis element 49 of 113.
+Doing product 50 of 330. We get basis element 50 of 113.
+Doing product 51 of 330. We get basis element 51 of 113.
+Doing product 52 of 330. We get basis element 52 of 113.
+Doing product 53 of 330. We get basis element 53 of 113.
+Doing product 54 of 330. We get basis element 54 of 113.
+Doing product 55 of 330. We get basis element 55 of 113.
+Doing product 56 of 330. We get basis element 56 of 113.
+Doing product 57 of 330. We get basis element 57 of 113.
+Doing product 58 of 330. We get basis element 58 of 113.
+Doing product 59 of 330. We get basis element 59 of 113.
+Doing product 60 of 330. We get basis element 60 of 113.
+Doing product 61 of 330. We get basis element 61 of 113.
+Doing product 62 of 330. We get basis element 62 of 113.
+Doing product 63 of 330. We get basis element 63 of 113.
+Doing product 64 of 330. We get basis element 64 of 113.
+Doing product 65 of 330. We get basis element 65 of 113.
+Doing product 66 of 330. We get basis element 66 of 113.
+Doing product 67 of 330. We get basis element 67 of 113.
+Doing product 68 of 330. We get basis element 68 of 113.
+Doing product 69 of 330. We get basis element 69 of 113.
+Doing product 70 of 330. We get basis element 70 of 113.
+Doing product 71 of 330. We get basis element 71 of 113.
+Doing product 72 of 330. We get basis element 72 of 113.
+Doing product 73 of 330. We get basis element 73 of 113.
+Doing product 74 of 330. We get basis element 74 of 113.
+Doing product 75 of 330. We get basis element 75 of 113.
+Doing product 76 of 330. We get basis element 76 of 113.
+Doing product 77 of 330. We get basis element 77 of 113.
+Doing product 78 of 330. We get basis element 78 of 113.
+Doing product 79 of 330. We get basis element 79 of 113.
+Doing product 80 of 330. We get basis element 80 of 113.
+Doing product 81 of 330. We get basis element 81 of 113.
+Doing product 82 of 330. We get basis element 82 of 113.
+Doing product 83 of 330. We get basis element 83 of 113.
+Doing product 84 of 330. We get basis element 84 of 113.
+Doing product 85 of 330. We get basis element 85 of 113.
+Doing product 86 of 330. We get basis element 86 of 113.
+Doing product 87 of 330. We get basis element 87 of 113.
+Doing product 88 of 330. We get basis element 88 of 113.
+Doing product 89 of 330. We get basis element 89 of 113.
+Doing product 90 of 330. We get basis element 90 of 113.
+Doing product 91 of 330. We get basis element 91 of 113.
+Doing product 92 of 330. We get basis element 92 of 113.
+Doing product 93 of 330. We get basis element 93 of 113.
+Doing product 94 of 330. We get basis element 94 of 113.
+Doing product 95 of 330. We get basis element 95 of 113.
+Doing product 96 of 330. We get basis element 96 of 113.
+Doing product 97 of 330. We get basis element 97 of 113.
+Doing product 98 of 330. We get basis element 98 of 113.
+Doing product 99 of 330. We get basis element 99 of 113.
+Doing product 100 of 330. We get basis element 100 of 113.
+Doing product 101 of 330. We get basis element 101 of 113.
+Doing product 102 of 330. We get basis element 102 of 113.
+Doing product 103 of 330. We get basis element 103 of 113.
+Doing product 104 of 330. We get basis element 104 of 113.
+Doing product 105 of 330. We get basis element 105 of 113.
+Doing product 106 of 330. We get basis element 106 of 113.
+Doing product 107 of 330. We get basis element 107 of 113.
+Doing product 108 of 330. We get basis element 108 of 113.
+Doing product 109 of 330. We get basis element 109 of 113.
+Doing product 110 of 330. We get basis element 110 of 113.
+Doing product 111 of 330. We get basis element 111 of 113.
+Doing product 112 of 330. We get basis element 112 of 113.
+Doing product 113 of 330. We get basis element 113 of 113.
+Applying T_53.
+Doing form 1. Form 1 hit with T_53 gives us a new basis element in weight 8.
+Doing form 2. Form 2 hit with T_53 gives us a new basis element in weight 8.
+Doing form 3. Form 3 hit with T_53 gives us a new basis element in weight 8.
+Doing form 4. Form 4 hit with T_53 gives us a new basis element in weight 8.
+Doing form 5. Form 5 hit with T_53 gives us a new basis element in weight 8.
+Doing form 6. Form 6 hit with T_53 gives us a new basis element in weight 8.
+Doing form 7. Form 7 hit with T_53 gives us a new basis element in weight 8.
+Doing form 8. Form 8 hit with T_53 gives us a new basis element in weight 8.
+Doing form 9. Form 9 hit with T_53 gives us a new basis element in weight 8.
+Doing form 10. Form 10 hit with T_53 gives us a new basis element in weight 8.
+Doing form 11. Form 11 hit with T_53 gives us a new basis element in weight 8.
+Doing form 12. Form 12 hit with T_53 gives us a new basis element in weight 8.
+Doing form 13. Form 13 hit with T_53 gives us a new basis element in weight 8.
+Doing form 14. Form 14 hit with T_53 gives us a new basis element in weight 8.
+Doing form 15. Form 15 hit with T_53 gives us a new basis element in weight 8.
+Doing form 16. Form 16 hit with T_53 gives us a new basis element in weight 8.
+Doing form 17. Form 17 hit with T_53 gives us a new basis element in weight 8.
+Doing form 18. Form 18 hit with T_53 gives us a new basis element in weight 8.
+Doing form 19. Form 19 hit with T_53 gives us a new basis element in weight 8.
+Doing form 20. Form 20 hit with T_53 gives us a new basis element in weight 8.
+Doing form 21. Form 21 hit with T_53 gives us a new basis element in weight 8.
+Doing form 22. Form 22 hit with T_53 gives us a new basis element in weight 8.
+Doing form 23. Form 23 hit with T_53 gives us a new basis element in weight 8.
+Doing form 24. Form 24 hit with T_53 gives us a new basis element in weight 8.
+Doing form 25. Form 25 hit with T_53 gives us a new basis element in weight 8.
+Doing form 26. Form 26 hit with T_53 gives us a new basis element in weight 8.
+Doing form 27. Form 27 hit with T_53 gives us a new basis element in weight 8.
+Doing form 28. Form 28 hit with T_53 gives us a new basis element in weight 8.
+Doing form 29. Form 29 hit with T_53 gives us a new basis element in weight 8.
+Doing form 30. Form 30 hit with T_53 gives us a new basis element in weight 8.
+Doing form 31. Form 31 hit with T_53 gives us a new basis element in weight 8.
+Doing form 32. Form 32 hit with T_53 gives us a new basis element in weight 8.
+Doing form 33. Form 33 hit with T_53 gives us a new basis element in weight 8.
+Doing form 34. Form 34 hit with T_53 gives us a new basis element in weight 8.
+Doing form 35. Form 35 hit with T_53 gives us a new basis element in weight 8.
+Doing form 36. Form 36 hit with T_53 gives us a new basis element in weight 8.
+Doing form 37. Form 37 hit with T_53 gives us a new basis element in weight 8.
+Doing form 38. Form 38 hit with T_53 gives us a new basis element in weight 8.
+Doing form 39. We didn't get anything new.
+Doing form 40. We didn't get anything new.
+Doing form 41. We didn't get anything new.
+Doing form 42. We didn't get anything new.
+Doing form 43. We didn't get anything new.
+Doing form 44. We didn't get anything new.
+Doing form 45. We didn't get anything new.
+Doing form 46. We didn't get anything new.
+Doing form 47. We didn't get anything new.
+Doing form 48. We didn't get anything new.
+Doing form 49. We didn't get anything new.
+Doing form 50. We didn't get anything new.
+Doing form 51. We didn't get anything new.
+Doing form 52. We didn't get anything new.
+Doing form 53. We didn't get anything new.
+Doing form 54. We didn't get anything new.
+Doing form 55. We didn't get anything new.
+Doing form 56. We didn't get anything new.
+Doing form 57. We didn't get anything new.
+Doing form 58. We didn't get anything new.
+Doing form 59. We didn't get anything new.
+Doing form 60. We didn't get anything new.
+Doing form 61. We didn't get anything new.
+Doing form 62. We didn't get anything new.
+Doing form 63. We didn't get anything new.
+Doing form 64. We didn't get anything new.
+Doing form 65. We didn't get anything new.
+Doing form 66. We didn't get anything new.
+Doing form 67. We didn't get anything new.
+Doing form 68. We didn't get anything new.
+Doing form 69. We didn't get anything new.
+Doing form 70. We didn't get anything new.
+Doing form 71. We didn't get anything new.
+Doing form 72. We didn't get anything new.
+Doing form 73. We didn't get anything new.
+Doing form 74. We didn't get anything new.
+Doing form 75. We didn't get anything new.
+Doing form 76. We didn't get anything new.
+Doing form 77. We didn't get anything new.
+Doing form 78. We didn't get anything new.
+Doing form 79. We didn't get anything new.
+Doing form 80. We didn't get anything new.
+Doing form 81. We didn't get anything new.
+Doing form 82. We didn't get anything new.
+Doing form 83. We didn't get anything new.
+Doing form 84. We didn't get anything new.
+Doing form 85. We didn't get anything new.
+Doing form 86. We didn't get anything new.
+Doing form 87. We didn't get anything new.
+Doing form 88. We didn't get anything new.
+Doing form 89. We didn't get anything new.
+Doing form 90. We didn't get anything new.
+Doing form 91. We didn't get anything new.
+Doing form 92. We didn't get anything new.
+Doing form 93. We didn't get anything new.
+Doing form 94. We didn't get anything new.
+Doing form 95. We didn't get anything new.
+Doing form 96. We didn't get anything new.
+Doing form 97. We didn't get anything new.
+Doing form 98. We didn't get anything new.
+Doing form 99. We didn't get anything new.
+Doing form 100. We didn't get anything new.
+Doing form 101. We didn't get anything new.
+Doing form 102. We didn't get anything new.
+Doing form 103. We didn't get anything new.
+Doing form 104. We didn't get anything new.
+Doing form 105. We didn't get anything new.
+Doing form 106. We didn't get anything new.
+Doing form 107. We didn't get anything new.
+Doing form 108. We didn't get anything new.
+Doing form 109. We didn't get anything new.
+Doing form 110. We didn't get anything new.
+Doing form 111. We didn't get anything new.
+Doing form 112. We didn't get anything new.
+Doing form 113. We didn't get anything new.
+Done. In the end we got 151 weight 8 forms.
+The dimension of M_8 is 151.
+Computing the subspace of weight 8 cusp forms.
+We get a space of dimension 142. It should be 142.
+Making weight 2 list 2.
+Nicefying 12x279 matrix with denominator 243.
+Computing saturation.
+Done.
+Calling LLL.
+Done.
+The dimension of S_2 is 12. We got 12 forms in S_2.
+Building canonical model.
+Multiplying.
+Done.
+Matricizing.
+Done.
+Nicefying 45x78 matrix with denominator 13616457816.
+Computing saturation.
+Done.
+Calling LLL.
+Done.
+
+In file "canmodel.m", line 1051, column 18:
+>>     relat := &+[ newrelationmat2[i][j]*monlist2[j] : j in [1..#tuplist2]];
+                    ^
+User error: Identifier 'newrelationmat2' has not been declared or assigned
+The curve C is defined by [
+4*a^2 - 3*a*b + a*c + a*d - 4*a*f - 2*a*g + a*i - 2*a*j + 2*a*k + b^2 + b*c + 
+b*d - 2*b*g + b*i + b*j + e*j + e*k - f*i - f*j - f*l + g*h - g*j - g*l + h^2 - 
+h*i - h*j + 2*h*k + i*k - j*l - k^2 + k*l,
+-2*a^2 + 2*a*b - 4*a*c + 2*a*d - 6*a*e - 2*a*f - a*g + a*h - 2*a*i - 3*a*j + 
+3*a*k + 2*a*l + b*c - e*i + f^2 - f*g - 2*f*h + f*i + 2*f*j - 2*f*l + g^2 - 
+3*g*h - g*i + g*j - 2*g*l + h*i - 4*h*j - 5*h*l - i*k + 2*i*l + j^2 - j*l - k^2 
+- 3*k*l - 3*l^2,
+2*a^2 + 6*a*b - 2*a*c + 2*a*d - 2*a*e - a*f - a*g - 3*a*h + a*i + a*j + 2*a*k + 
+4*a*l + b*c + 2*b*e - 2*e*h - e*i - 2*e*k - 2*e*l + f^2 - 2*f*g + 2*f*i + 3*f*j 
+- f*l + g*i + g*k - 3*h^2 - 2*h*j - 3*h*k - 3*h*l + i*j + i*k + i*l + j^2 - k*l 
+- 2*l^2,
+4*a^2 - 2*a*b + 7*a*c + a*d + 3*a*e - 6*a*h + 2*a*i + 2*a*j - a*k + 2*b^2 - 
+2*b*c + b*e - 2*e*h + 2*e*j + 2*e*k - f*g + 3*f*h - f*i - f*k - f*l - g^2 + 
+2*g*h - g*j - h^2 - h*i + h*j - h*k - 2*h*l - i*j + 3*i*k + i*l + 3*k*l,
+4*a^2 + 2*a*c - a*d + 3*a*e - 2*a*h + a*i + 3*a*j - 2*a*k + a*l - b^2 - 4*b*c - 
+2*b*d + b*e + b*f + 2*b*g + b*h - b*i - b*j - e*h + e*j + 2*e*k - e*l + f*g + 
+f*h - f*k + 2*f*l - g^2 + g*i + 2*g*j - 2*g*k + 2*g*l - h^2 + 2*h*j - h*l - i*j 
++ i*k + i*l + j*l + 3*k*l + l^2,
+a^2 - 2*a*b + a*d + a*g + a*h - 3*a*i - a*k + 2*b^2 - 3*b*c - 3*b*d - 2*b*e - 
+b*f + b*g - b*i + e*l + f*h - f*i - f*j - f*l - 2*g*h - 2*g*i + g*j - g*l + h^2 
++ 2*h*i - h*k - 2*i*j - i*k + i*l,
+a*b - 2*a*c + a*e - a*f + 3*a*h + 2*a*l - b^2 + b*c - b*i + b*k - e*h + 2*e*i - 
+e*j - 3*e*k + e*l - f*g + f*h - f*i - 2*f*l + 2*g*h - g*i - g*j + g*k - g*l - 
+3*h*k + 3*h*l + i*j - i*k - 2*i*l - 2*k*l,
+-3*a^2 - 3*a*b + 4*a*c + 2*a*d + a*e + 3*a*f + a*g - a*i - a*j - 2*a*k - 2*a*l +
+2*b^2 - 3*b*c - b*d - 2*b*e + b*f + b*g - b*k - e*h - e*j - 2*e*l + f*h + f*j - 
+f*k + 2*f*l - g*h + g*k + g*l + h*j - 2*h*k - i*k - j*k + k^2 - k*l,
+a^2 - a*b + a*c + 2*a*d + a*g + a*h - a*i + 2*a*k - a*l - 2*b^2 + 2*b*c + 2*b*e 
+- b*f + b*g - b*j + b*k - e*i + e*j + 2*e*k + f*i + f*l - 3*g*h + g*i + g*j - 
+g*k + h^2 + h*j + h*k - 2*h*l - i*j + i*k + i*l + j*k + k*l,
+-a^2 - 2*a*b - a*g + 2*a*h - a*i - 2*a*j + a*k - b^2 - b*g + 2*b*h - b*i - 2*b*j
++ b*k + g*i - g*j - g*l + h*i + 2*h*j + 2*h*l - i^2 - i*j + 2*i*k - j^2 + j*k + 
+k*l + l^2,
+4*a*b + 2*a*d - 2*a*e + 2*a*f + 3*a*g - a*h + a*i + 2*a*j + a*l - 2*b^2 + b*c + 
+2*b*e + b*g + b*i - b*j + b*l + e*h - e*i + e*k - 2*f*h + f*i + f*j + f*k - g*h 
++ g*j - 2*g*k + g*l - h^2 - h*i + h*j + h*k - 2*h*l + i^2 - i*k + j*k + j*l - 
+l^2,
+2*a^2 + 2*a*c - 3*a*d + a*e + a*f - 4*a*h + 2*a*i + 2*a*j - 2*a*k - 4*a*l + 
+2*b^2 - b*c + b*d - b*h + 2*b*j - b*k + c^2 + e*i + e*j + e*k + e*l - f^2 + f*g 
++ f*h - f*i - 2*f*j + f*l + g*h + g*i + g*k + 2*g*l + h^2 + h*k + h*l - i^2 + 
+i*k - i*l - j*k + k^2 + 2*k*l + l^2,
+4*a^2 + 2*a*b - 4*a*c + 2*a*d - a*e - 4*a*f - a*g - a*i - a*j + 2*a*k + 3*a*l - 
+b^2 + 2*b*c - b*d + b*e - b*f - b*g - b*j - b*k - c^2 - e*h - 2*e*k - e*l + f^2 
+- f*g - f*h + f*i + f*j + f*k - f*l - g*k - 2*h*j + h*k - k^2 - l^2,
+4*a^2 + a*b - 3*a*c + 2*a*d - 3*a*e - 4*a*f - 2*a*g - a*i - 2*a*j + 2*a*k + 
+3*a*l + b^2 - b*c - 2*b*d + 2*b*f - 2*b*g + 2*b*h - b*k - b*l - c^2 + c*d - 
+2*e*h + e*j - 2*e*k - 2*e*l + f^2 - f*g - f*h + 2*f*j - f*l + g*i + g*k - 2*h^2 
++ h*i - 2*h*j - h*k - 2*h*l - i^2 + j^2 - j*k - j*l - 2*l^2,
+-a^2 + a*b + a*c - 2*a*d + a*e + a*f - 2*a*h + a*j - 2*a*k - a*l - b*c - b*e + 
+b*f + b*g + b*h - b*i - b*k + b*l + c*d - e*l + f*g - f*h + f*i + 2*f*l + g^2 - 
+g*h + g*j + 2*g*l + h*k - h*l - i*k - j*k + j*l,
+3*a^2 + a*b + 2*a*c + a*d + 2*a*e + a*f + a*g - 3*a*h + 3*a*i + 3*a*j - 2*a*k + 
+a*l - 2*b^2 - 2*b*c + 2*b*e + b*f + 2*b*g - b*j - c^2 - 2*c*d + c*e - 2*e*h + 
+e*i + e*k - e*l + f*h + f*j - f*k + f*l - g^2 + 2*g*h + g*j - 2*g*k + 2*g*l - 
+h^2 - 2*h*i + h*j - h*k - h*l + i^2 + i*j + j*l + k*l,
+-4*a^2 - a*b + a*d - 2*a*e + a*f + 2*a*g + a*h - 2*a*i - a*j - 2*b*c - 2*b*d + 
+b*g - b*i - b*j + b*k - b*l - c^2 - c*d - e*h + 2*e*i - 3*e*k + e*l - f*i - f*l 
+- g*h + g*j + g*k + 2*h*i - h*j - 2*h*k - i^2 - 2*i*k - i*l + k^2 - 2*k*l - l^2,
+-a^2 + 3*a*b + 3*a*d - 3*a*e + 3*a*f + a*g + a*i + a*j + 2*a*k + 2*a*l - b*d + 
+3*b*e - 2*b*f + b*g - b*h + b*i + b*j + 2*c^2 - c*e - 2*e*h - e*k - 2*e*l + f*i 
++ f*j + f*l - 3*g*h + g*i + g*j + g*k + g*l - h^2 + h*i - h*j - 2*h*k - 3*h*l + 
+i*j - i*k + i*l + j^2 + k^2 - k*l - l^2,
+-2*a^2 + 3*a*b - 3*a*c - 3*a*e - 2*a*f + 2*a*h - 2*a*j + 3*a*k + a*l + b*c + 
+2*b*d - b*g + b*h + b*k - c*d + c*e - e*k + e*l - 2*f*h + f*i + f*k - f*l + g^2 
+- 2*g*h + g*i + g*k - g*l + h^2 - h*i - h*j - h*k + i*j - i*l + j*k - 2*k*l - 
+l^2,
+-2*a^2 - 2*a*b - a*d - 3*a*e - a*f - 3*a*g + a*i - 2*a*j - a*k - a*l - b^2 + b*d
++ b*f - b*g - b*i - b*l - c*d - c*e - e*h + 2*e*i + e*l - f*i - f*k - f*l + g^2 
++ g*h - g*i - g*j - g*l + 2*h^2 - 3*h*j + 2*h*k - h*l - i^2 + i*j - j*k - j*l - 
+k^2 - k*l - l^2,
+-2*a^2 + 2*a*b + 2*a*c + 2*a*f + 3*a*g - 3*a*h + a*j + b^2 + b*c + b*d + b*f - 
+b*g + b*i - b*k - c^2 - c*e - e*i - e*l - f*g + f*h + f*j - g^2 + 2*g*h + g*i - 
+g*j - 2*h^2 - h*i + h*j + i*k + k^2 + k*l,
+-2*a^2 + 4*a*b - a*c - a*e - a*h + a*i + a*j + a*k + 4*a*l + b*c + 2*b*e - 2*b*f
+- b*h + b*i + c*d + c*g - e*h + e*j - e*k + f^2 - f*g + f*j - 2*f*l - g*h - g*i 
++ g*k - g*l - 2*h^2 - 2*h*j - 3*h*k - 4*h*l + i^2 + i*j - i*k + i*l + j^2 - 
+2*k*l - 2*l^2,
+3*a^2 + a*b + a*c + 2*a*d + 2*a*e - 3*a*h - a*i + 2*a*j + a*l + b^2 + 2*b*c - 
+b*d + b*e - 2*b*f - b*g - b*h - c*g + c*h - e*h - e*i + e*j - 2*e*k - 2*f*g + 
+2*f*h + f*i + f*k - 2*f*l + g*h - g*i - 2*g*j + g*k - g*l - h^2 + h*i - i*j + 
+2*i*k + i*l + 2*k*l,
+-2*a^2 + 2*a*b - 2*a*c - 3*a*e + a*f + a*g - 2*a*i - 2*a*l - b^2 + 2*b*c - b*f +
+b*g - b*h - b*i - c*h + c*i + e*h - e*j - e*k + e*l - f*h + f*i + f*k + g^2 - 
+2*g*h - g*i + g*j + h^2 + h*i - 2*h*j + h*k - h*l - 2*i*k - 2*k*l - l^2,
+2*a^2 + 2*a*b + 2*a*c - a*d + 4*a*e + a*g - 3*a*h + 4*a*j - a*k + 2*a*l - b^2 - 
+b*c - b*d + 2*b*e - b*f + 2*b*g - b*h - b*i - b*j + b*k - c*d - c*e + c*k - e*h 
+- e*i + e*j + e*k - f*g + 3*f*h + f*i - f*k - g^2 + g*i + g*j - g*k - h^2 + h*j 
+- h*k - h*l - i*j + 3*i*k + 2*i*l + j*k + j*l + 3*k*l + l^2,
+-3*a*b - 2*a*d + a*e + a*f - a*g + a*h + a*i - a*j - a*k - 3*a*l + 2*b^2 - b*c +
+b*d - 2*b*e + b*i + 2*b*j - b*k + b*l + 2*c^2 + c*e - c*g + c*j - c*k + e*h + 
+2*e*k - f^2 + 2*f*g - f*i - 2*f*j + 2*f*l + g*l + 2*h^2 + h*j + 2*h*k + 2*h*l - 
+j*k + k*l + 2*l^2,
+a*b - a*e - 2*a*f - a*g + 2*a*h + a*i - a*j + a*k + a*l + 2*b*c + b*d - b*g + 
+b*j + b*k + b*l + c^2 - c*e - c*f + c*l + e*i - 2*e*k - f*i - f*j - f*l + g^2 + 
+g*i - g*j + 2*g*k - g*l + h^2 - h*j + 2*h*l - i^2 + i*j - i*l - k*l,
+-a^2 + 4*a*b - a*c - a*d + a*f - 3*a*h + a*i + 3*a*j + 2*a*l - b^2 - b*c - b*d +
+2*b*e + b*g + b*k - b*l + c*d + c*f - c*h - e*h + e*j - e*k + e*l + f*i + f*j - 
+g*h + g*i + g*j + g*l - h^2 - h*j - h*k - 3*h*l + i*j + j^2 + j*l - l^2,
+4*a^2 + a*c + 3*a*d - 3*a*f + a*g - 2*a*h + a*j + a*k + 2*a*l - b*d + b*e - 
+2*b*f + b*g - b*h + b*i - b*j - c^2 - 2*c*d + c*e - c*f - c*i - c*l - e*h - e*i 
++ e*j + 2*e*k + e*l + f^2 - f*g + f*h - 2*f*l - g^2 - g*h - g*i + g*j - 2*g*k - 
+g*l + h^2 - h*i - h*j - 3*h*l + i^2 - i*j + i*k + 2*i*l + j*k - k^2 + k*l - l^2,
+3*a^2 + a*c + 2*a*e - 2*a*f + a*g - a*h + 2*a*i + a*j + a*k + 3*a*l - 2*b^2 + 
+b*c + 2*b*e + b*f - b*g + b*h - b*j - b*l - c^2 - c*e + c*h - 2*e*h + e*i + e*j 
+- e*k - 2*e*l + f*l + g*h + g*l - h^2 - 2*h*i + i^2 + i*j - i*k - i*l + k*l,
+a^2 - 2*a*b + 3*a*c + 2*a*d - a*g + a*i - a*j - a*l + 2*b^2 + b*c + b*d - b*e + 
+b*f - 2*b*g + b*h + b*i + b*j + b*k + b*l - c^2 - c*e + c*g - c*h - c*k - c*l - 
+e*i - 2*e*l - f*g + f*h - f*i + 2*g*h - 2*g*j + g*k - g*l - h^2 - h*i + h*j + 
+h*l + i*k - j*l,
+3*a^2 - 2*a*b + 3*a*e - a*f - a*g - a*i - a*l + b^2 - b*c - b*d - b*e - 2*b*f + 
+b*h - b*k + b*l - c^2 + c*e - c*g - c*j + 2*f*g - 2*f*j + f*k + f*l - g*h + g*l 
++ h^2 + h*i + 2*h*j + h*k + 2*h*l - i*j - j^2 + j*l + 2*k*l + 2*l^2,
+2*a^2 + 2*a*b - 4*a*c - 2*a*e - 2*a*f - a*g + 2*a*h - 2*a*i - a*j - 2*a*l + b^2 
+- 2*b*e - b*f + b*g - b*i + b*j - b*k + b*l + c*e + d^2 + 2*e*h - e*i - e*j + 
+e*k + e*l + f*g - 2*f*h + f*i - f*j + f*k + g^2 - 3*g*h - g*i + 2*g*j + h^2 + 
+2*h*i - h*j - i*j - i*k + i*l - k*l,
+6*a^2 + a*b - a*c + 3*a*d + a*e - 4*a*f + 2*a*h + a*i + a*k + a*l - b^2 + b*c - 
+b*d + b*e + b*f + b*l - c^2 - c*d - c*e - c*k + d*e - e*k - 2*e*l - f*h + f*k + 
+f*l + g*i + g*j - g*k + g*l - h*i + h*k + 2*h*l - i*k - i*l,
+2*a^2 - 3*a*c + 2*a*e - a*f - a*g + 3*a*h - a*i + b^2 - b*e - 2*b*f - b*h + b*i 
++ b*j - b*k + c^2 + c*g - c*h - d*e + e*h - e*i - e*j - e*l + f*g - f*h + f*i - 
+f*j + f*k + 2*f*l - 2*g*h + g*j + g*l + h^2 + 2*h*l + i^2 - i*k + l^2,
+a^2 - 4*a*c - 3*a*e - a*f + 3*a*h - a*i - a*j + a*k + a*l - b^2 + b*c - 2*b*d - 
+b*g + b*h + b*i + b*l - c*e + d*f + e*h - e*i - e*k - 2*e*l + f*g - 2*f*h - f*j 
++ f*k + f*l + g^2 - 2*g*h + g*j + h*i - h*j + 3*h*k - 2*i*k + i*l,
+a^2 - 2*a*b + 3*a*c + a*d + 3*a*e - a*f + a*g - 2*a*h + a*j - a*k - a*l - b^2 + 
+b*f + b*g - b*i - c^2 - c*e - c*j + d*g - e*h + e*i + 2*f*h - f*i - f*k + g*h - 
+g*i - h*l - i*k - j*k,
+a*c + a*e + 2*a*f + 2*a*g - 2*a*i + a*j - a*k + b^2 - 2*b*d - 2*b*e + b*g - b*i 
++ c*d - c*e + c*h + c*j + d*h + e*h - e*i - e*j - e*k - e*l + f*i + 2*f*l - g*h 
++ g*j + g*l + h*i + h*j + 2*h*l - i*j - i*k + j*l + l^2,
+-a^2 - 3*a*b - a*c - 2*a*e - a*f - 2*a*g + 4*a*h + a*i - 3*a*j - a*l + b^2 - b*c
+- b*e + b*f - b*g + b*i + b*j + b*l + c*d - c*l + d*k + e*h + 2*e*i - e*k + f*g 
+- f*h - 3*f*i - f*j - f*l + 2*g*h - g*j + g*k + h*i + 2*h*l - i^2 + i*j - 2*i*k 
+- 2*i*l - j*k - j*l - 2*k*l,
+-a*b - 2*a*c - a*d - a*e - 4*a*f - a*g + a*h - 3*a*j + 2*a*k - a*l + b*d - b*e +
+2*b*f - b*g + b*i + b*j - b*k - c*i + d*l + e*h - e*j - e*k - e*l + f*g - 2*f*h 
++ f*l + g*h + 2*g*i + g*j + g*l - 2*h*j + 2*h*k + h*l - i^2 + i*j - i*k - i*l - 
+j*k - j*l - k*l,
+2*a*b + a*d + 2*a*e + 2*a*f + a*g + a*h + a*i + 2*a*j - 2*a*k + a*l - b*d - b*e 
++ b*g - b*h + b*l + c*d - c*e + c*h + c*i + d*i + 2*e*h - e*i - e*j - e*l + f*l 
+- g*i - h^2 + 2*h*j - h*k + 2*h*l + i^2 - 2*i*k + j*l - k*l + l^2,
+-4*a^2 + 3*a*b - 2*a*c - a*d - 2*a*e + a*f + a*h - a*i - a*j - a*l - b^2 + b*c +
+b*d - b*f - b*i - 2*b*j + b*k + b*l + c*d + c*f + c*g + c*j + d*e + d*j + 2*e*h 
+- e*j - 2*e*k + e*l - 2*f*h + f*i + f*k + g^2 - g*h + g*i + h*i + 2*h*l - i^2 - 
+i*l - j^2 + j*k + j*l - 2*k*l,
+2*a^2 + 2*a*b + 2*a*c + 2*a*d + a*e - a*h - a*i + a*j + a*k + a*l + 2*b^2 - b*e 
+- b*f - b*i + b*k + c^2 + e*f - e*h - 2*e*i - e*l - 2*f*g + 2*f*h + 2*f*i + f*j 
+- g*h + g*i - g*j + g*k - g*l - h*i + h*j - 2*h*k - i*j + 3*i*k + i*l + j*k + 
+k*l,
+-a^2 - 2*a*c - a*d - 3*a*e - 2*a*f - 2*a*g - 2*a*h - 2*a*j + a*k + a*l + b^2 + 
+2*b*c + b*d - b*f - 2*b*g - b*h + b*i - b*k - c^2 - c*d - c*f + c*h + e*g - e*i 
++ e*j + e*k + f^2 - f*g - 2*f*l + g*h - g*i - g*j - 2*g*l - 3*h*j + 2*h*k - 
+2*h*l + i*k + 2*i*l - j*l - k^2 - l^2,
+a^2 - 2*a*b - a*c - a*d - 2*a*e - a*f - a*g - a*h - 2*a*j + a*k + b*d - b*g + 
+b*h - b*i - b*j + c*d + c*f + c*g + e^2 - 2*e*h + 2*e*i + 2*e*j + 2*e*k + e*l - 
+f*g + f*h - 2*f*i - f*k - 2*f*l + g*h - g*i - g*j - g*k - g*l + h^2 - h*j + h*k 
+- 2*h*l - i^2 - i*j + 2*i*k - j*l - k^2 + k*l - l^2
+].
+Setting maxd = 6.
+Working on weight 4 forms. Need 33.
+Product <1,1> gives us element 1 of 33 for d = 2.
+Product <2,1> gives us element 2 of 33 for d = 2.
+Product <3,1> gives us element 3 of 33 for d = 2.
+Product <4,1> gives us element 4 of 33 for d = 2.
+Product <5,1> gives us element 5 of 33 for d = 2.
+Product <6,1> gives us element 6 of 33 for d = 2.
+Product <7,1> gives us element 7 of 33 for d = 2.
+Product <8,1> gives us element 8 of 33 for d = 2.
+Product <9,1> gives us element 9 of 33 for d = 2.
+Product <10,1> gives us element 10 of 33 for d = 2.
+Product <11,1> gives us element 11 of 33 for d = 2.
+Product <12,1> gives us element 12 of 33 for d = 2.
+Product <2,2> gives us element 13 of 33 for d = 2.
+Product <3,2> gives us element 14 of 33 for d = 2.
+Product <4,2> gives us element 15 of 33 for d = 2.
+Product <5,2> gives us element 16 of 33 for d = 2.
+Product <6,2> gives us element 17 of 33 for d = 2.
+Product <7,2> gives us element 18 of 33 for d = 2.
+Product <8,2> gives us element 19 of 33 for d = 2.
+Product <9,2> gives us element 20 of 33 for d = 2.
+Product <10,2> gives us element 21 of 33 for d = 2.
+Product <11,2> gives us element 22 of 33 for d = 2.
+Product <12,2> gives us element 23 of 33 for d = 2.
+Product <3,3> gives us element 24 of 33 for d = 2.
+Product <4,3> gives us element 25 of 33 for d = 2.
+Product <5,3> gives us element 26 of 33 for d = 2.
+Product <6,3> gives us element 27 of 33 for d = 2.
+Product <7,3> gives us element 28 of 33 for d = 2.
+Product <8,3> gives us element 29 of 33 for d = 2.
+Product <9,3> gives us element 30 of 33 for d = 2.
+Product <10,3> gives us element 31 of 33 for d = 2.
+Product <12,3> gives us element 32 of 33 for d = 2.
+Product <5,5> gives us element 33 of 33 for d = 2.
+Working on weight 6 forms. Need 55.
+Product <1,1> gives us element 1 of 55 for d = 3.
+Product <2,1> gives us element 2 of 55 for d = 3.
+Product <3,1> gives us element 3 of 55 for d = 3.
+Product <4,1> gives us element 4 of 55 for d = 3.
+Product <5,1> gives us element 5 of 55 for d = 3.
+Product <6,1> gives us element 6 of 55 for d = 3.
+Product <7,1> gives us element 7 of 55 for d = 3.
+Product <8,1> gives us element 8 of 55 for d = 3.
+Product <9,1> gives us element 9 of 55 for d = 3.
+Product <10,1> gives us element 10 of 55 for d = 3.
+Product <11,1> gives us element 11 of 55 for d = 3.
+Product <12,1> gives us element 12 of 55 for d = 3.
+Product <2,2> gives us element 13 of 55 for d = 3.
+Product <3,2> gives us element 14 of 55 for d = 3.
+Product <4,2> gives us element 15 of 55 for d = 3.
+Product <5,2> gives us element 16 of 55 for d = 3.
+Product <6,2> gives us element 17 of 55 for d = 3.
+Product <7,2> gives us element 18 of 55 for d = 3.
+Product <8,2> gives us element 19 of 55 for d = 3.
+Product <9,2> gives us element 20 of 55 for d = 3.
+Product <10,2> gives us element 21 of 55 for d = 3.
+Product <11,2> gives us element 22 of 55 for d = 3.
+Product <12,2> gives us element 23 of 55 for d = 3.
+Product <3,3> gives us element 24 of 55 for d = 3.
+Product <4,3> gives us element 25 of 55 for d = 3.
+Product <5,3> gives us element 26 of 55 for d = 3.
+Product <6,3> gives us element 27 of 55 for d = 3.
+Product <7,3> gives us element 28 of 55 for d = 3.
+Product <8,3> gives us element 29 of 55 for d = 3.
+Product <9,3> gives us element 30 of 55 for d = 3.
+Product <10,3> gives us element 31 of 55 for d = 3.
+Product <12,3> gives us element 32 of 55 for d = 3.
+Product <5,5> gives us element 33 of 55 for d = 3.
+Product <2,13> gives us element 34 of 55 for d = 3.
+Product <3,13> gives us element 35 of 55 for d = 3.
+Product <4,13> gives us element 36 of 55 for d = 3.
+Product <5,13> gives us element 37 of 55 for d = 3.
+Product <6,13> gives us element 38 of 55 for d = 3.
+Product <7,13> gives us element 39 of 55 for d = 3.
+Product <8,13> gives us element 40 of 55 for d = 3.
+Product <9,13> gives us element 41 of 55 for d = 3.
+Product <10,13> gives us element 42 of 55 for d = 3.
+Product <11,13> gives us element 43 of 55 for d = 3.
+Product <12,13> gives us element 44 of 55 for d = 3.
+Product <3,14> gives us element 45 of 55 for d = 3.
+Product <4,14> gives us element 46 of 55 for d = 3.
+Product <5,14> gives us element 47 of 55 for d = 3.
+Product <6,14> gives us element 48 of 55 for d = 3.
+Product <7,14> gives us element 49 of 55 for d = 3.
+Product <8,14> gives us element 50 of 55 for d = 3.
+Product <9,14> gives us element 51 of 55 for d = 3.
+Product <10,14> gives us element 52 of 55 for d = 3.
+Product <5,16> gives us element 53 of 55 for d = 3.
+Product <3,24> gives us element 54 of 55 for d = 3.
+Product <4,24> gives us element 55 of 55 for d = 3.
+Working on weight 8 forms. Need 77.
+Product <1,1> gives us element 1 of 77 for d = 4.
+Product <2,1> gives us element 2 of 77 for d = 4.
+Product <3,1> gives us element 3 of 77 for d = 4.
+Product <4,1> gives us element 4 of 77 for d = 4.
+Product <5,1> gives us element 5 of 77 for d = 4.
+Product <6,1> gives us element 6 of 77 for d = 4.
+Product <7,1> gives us element 7 of 77 for d = 4.
+Product <8,1> gives us element 8 of 77 for d = 4.
+Product <9,1> gives us element 9 of 77 for d = 4.
+Product <10,1> gives us element 10 of 77 for d = 4.
+Product <11,1> gives us element 11 of 77 for d = 4.
+Product <12,1> gives us element 12 of 77 for d = 4.
+Product <2,2> gives us element 13 of 77 for d = 4.
+Product <3,2> gives us element 14 of 77 for d = 4.
+Product <4,2> gives us element 15 of 77 for d = 4.
+Product <5,2> gives us element 16 of 77 for d = 4.
+Product <6,2> gives us element 17 of 77 for d = 4.
+Product <7,2> gives us element 18 of 77 for d = 4.
+Product <8,2> gives us element 19 of 77 for d = 4.
+Product <9,2> gives us element 20 of 77 for d = 4.
+Product <10,2> gives us element 21 of 77 for d = 4.
+Product <11,2> gives us element 22 of 77 for d = 4.
+Product <12,2> gives us element 23 of 77 for d = 4.
+Product <3,3> gives us element 24 of 77 for d = 4.
+Product <4,3> gives us element 25 of 77 for d = 4.
+Product <5,3> gives us element 26 of 77 for d = 4.
+Product <6,3> gives us element 27 of 77 for d = 4.
+Product <7,3> gives us element 28 of 77 for d = 4.
+Product <8,3> gives us element 29 of 77 for d = 4.
+Product <9,3> gives us element 30 of 77 for d = 4.
+Product <10,3> gives us element 31 of 77 for d = 4.
+Product <12,3> gives us element 32 of 77 for d = 4.
+Product <5,5> gives us element 33 of 77 for d = 4.
+Product <2,13> gives us element 34 of 77 for d = 4.
+Product <3,13> gives us element 35 of 77 for d = 4.
+Product <4,13> gives us element 36 of 77 for d = 4.
+Product <5,13> gives us element 37 of 77 for d = 4.
+Product <6,13> gives us element 38 of 77 for d = 4.
+Product <7,13> gives us element 39 of 77 for d = 4.
+Product <8,13> gives us element 40 of 77 for d = 4.
+Product <9,13> gives us element 41 of 77 for d = 4.
+Product <10,13> gives us element 42 of 77 for d = 4.
+Product <11,13> gives us element 43 of 77 for d = 4.
+Product <12,13> gives us element 44 of 77 for d = 4.
+Product <3,14> gives us element 45 of 77 for d = 4.
+Product <4,14> gives us element 46 of 77 for d = 4.
+Product <5,14> gives us element 47 of 77 for d = 4.
+Product <6,14> gives us element 48 of 77 for d = 4.
+Product <7,14> gives us element 49 of 77 for d = 4.
+Product <8,14> gives us element 50 of 77 for d = 4.
+Product <9,14> gives us element 51 of 77 for d = 4.
+Product <10,14> gives us element 52 of 77 for d = 4.
+Product <5,16> gives us element 53 of 77 for d = 4.
+Product <3,24> gives us element 54 of 77 for d = 4.
+Product <4,24> gives us element 55 of 77 for d = 4.
+Product <2,34> gives us element 56 of 77 for d = 4.
+Product <3,34> gives us element 57 of 77 for d = 4.
+Product <4,34> gives us element 58 of 77 for d = 4.
+Product <5,34> gives us element 59 of 77 for d = 4.
+Product <6,34> gives us element 60 of 77 for d = 4.
+Product <7,34> gives us element 61 of 77 for d = 4.
+Product <8,34> gives us element 62 of 77 for d = 4.
+Product <9,34> gives us element 63 of 77 for d = 4.
+Product <10,34> gives us element 64 of 77 for d = 4.
+Product <11,34> gives us element 65 of 77 for d = 4.
+Product <12,34> gives us element 66 of 77 for d = 4.
+Product <3,35> gives us element 67 of 77 for d = 4.
+Product <4,35> gives us element 68 of 77 for d = 4.
+Product <5,35> gives us element 69 of 77 for d = 4.
+Product <6,35> gives us element 70 of 77 for d = 4.
+Product <7,35> gives us element 71 of 77 for d = 4.
+Product <8,35> gives us element 72 of 77 for d = 4.
+Product <9,35> gives us element 73 of 77 for d = 4.
+Product <10,35> gives us element 74 of 77 for d = 4.
+Product <5,37> gives us element 75 of 77 for d = 4.
+Product <3,54> gives us element 76 of 77 for d = 4.
+Product <4,54> gives us element 77 of 77 for d = 4.
+Working on weight 10 forms. Need 99.
+Product <1,1> gives us element 1 of 99 for d = 5.
+Product <2,1> gives us element 2 of 99 for d = 5.
+Product <3,1> gives us element 3 of 99 for d = 5.
+Product <4,1> gives us element 4 of 99 for d = 5.
+Product <5,1> gives us element 5 of 99 for d = 5.
+Product <6,1> gives us element 6 of 99 for d = 5.
+Product <7,1> gives us element 7 of 99 for d = 5.
+Product <8,1> gives us element 8 of 99 for d = 5.
+Product <9,1> gives us element 9 of 99 for d = 5.
+Product <10,1> gives us element 10 of 99 for d = 5.
+Product <11,1> gives us element 11 of 99 for d = 5.
+Product <12,1> gives us element 12 of 99 for d = 5.
+Product <2,2> gives us element 13 of 99 for d = 5.
+Product <3,2> gives us element 14 of 99 for d = 5.
+Product <4,2> gives us element 15 of 99 for d = 5.
+Product <5,2> gives us element 16 of 99 for d = 5.
+Product <6,2> gives us element 17 of 99 for d = 5.
+Product <7,2> gives us element 18 of 99 for d = 5.
+Product <8,2> gives us element 19 of 99 for d = 5.
+Product <9,2> gives us element 20 of 99 for d = 5.
+Product <10,2> gives us element 21 of 99 for d = 5.
+Product <11,2> gives us element 22 of 99 for d = 5.
+Product <12,2> gives us element 23 of 99 for d = 5.
+Product <3,3> gives us element 24 of 99 for d = 5.
+Product <4,3> gives us element 25 of 99 for d = 5.
+Product <5,3> gives us element 26 of 99 for d = 5.
+Product <6,3> gives us element 27 of 99 for d = 5.
+Product <7,3> gives us element 28 of 99 for d = 5.
+Product <8,3> gives us element 29 of 99 for d = 5.
+Product <9,3> gives us element 30 of 99 for d = 5.
+Product <10,3> gives us element 31 of 99 for d = 5.
+Product <12,3> gives us element 32 of 99 for d = 5.
+Product <5,5> gives us element 33 of 99 for d = 5.
+Product <2,13> gives us element 34 of 99 for d = 5.
+Product <3,13> gives us element 35 of 99 for d = 5.
+Product <4,13> gives us element 36 of 99 for d = 5.
+Product <5,13> gives us element 37 of 99 for d = 5.
+Product <6,13> gives us element 38 of 99 for d = 5.
+Product <7,13> gives us element 39 of 99 for d = 5.
+Product <8,13> gives us element 40 of 99 for d = 5.
+Product <9,13> gives us element 41 of 99 for d = 5.
+Product <10,13> gives us element 42 of 99 for d = 5.
+Product <11,13> gives us element 43 of 99 for d = 5.
+Product <12,13> gives us element 44 of 99 for d = 5.
+Product <3,14> gives us element 45 of 99 for d = 5.
+Product <4,14> gives us element 46 of 99 for d = 5.
+Product <5,14> gives us element 47 of 99 for d = 5.
+Product <6,14> gives us element 48 of 99 for d = 5.
+Product <7,14> gives us element 49 of 99 for d = 5.
+Product <8,14> gives us element 50 of 99 for d = 5.
+Product <9,14> gives us element 51 of 99 for d = 5.
+Product <10,14> gives us element 52 of 99 for d = 5.
+Product <5,16> gives us element 53 of 99 for d = 5.
+Product <3,24> gives us element 54 of 99 for d = 5.
+Product <4,24> gives us element 55 of 99 for d = 5.
+Product <2,34> gives us element 56 of 99 for d = 5.
+Product <3,34> gives us element 57 of 99 for d = 5.
+Product <4,34> gives us element 58 of 99 for d = 5.
+Product <5,34> gives us element 59 of 99 for d = 5.
+Product <6,34> gives us element 60 of 99 for d = 5.
+Product <7,34> gives us element 61 of 99 for d = 5.
+Product <8,34> gives us element 62 of 99 for d = 5.
+Product <9,34> gives us element 63 of 99 for d = 5.
+Product <10,34> gives us element 64 of 99 for d = 5.
+Product <11,34> gives us element 65 of 99 for d = 5.
+Product <12,34> gives us element 66 of 99 for d = 5.
+Product <3,35> gives us element 67 of 99 for d = 5.
+Product <4,35> gives us element 68 of 99 for d = 5.
+Product <5,35> gives us element 69 of 99 for d = 5.
+Product <6,35> gives us element 70 of 99 for d = 5.
+Product <7,35> gives us element 71 of 99 for d = 5.
+Product <8,35> gives us element 72 of 99 for d = 5.
+Product <9,35> gives us element 73 of 99 for d = 5.
+Product <10,35> gives us element 74 of 99 for d = 5.
+Product <5,37> gives us element 75 of 99 for d = 5.
+Product <3,54> gives us element 76 of 99 for d = 5.
+Product <4,54> gives us element 77 of 99 for d = 5.
+Product <2,56> gives us element 78 of 99 for d = 5.
+Product <3,56> gives us element 79 of 99 for d = 5.
+Product <4,56> gives us element 80 of 99 for d = 5.
+Product <5,56> gives us element 81 of 99 for d = 5.
+Product <6,56> gives us element 82 of 99 for d = 5.
+Product <7,56> gives us element 83 of 99 for d = 5.
+Product <8,56> gives us element 84 of 99 for d = 5.
+Product <9,56> gives us element 85 of 99 for d = 5.
+Product <10,56> gives us element 86 of 99 for d = 5.
+Product <11,56> gives us element 87 of 99 for d = 5.
+Product <12,56> gives us element 88 of 99 for d = 5.
+Product <3,57> gives us element 89 of 99 for d = 5.
+Product <4,57> gives us element 90 of 99 for d = 5.
+Product <5,57> gives us element 91 of 99 for d = 5.
+Product <6,57> gives us element 92 of 99 for d = 5.
+Product <7,57> gives us element 93 of 99 for d = 5.
+Product <8,57> gives us element 94 of 99 for d = 5.
+Product <9,57> gives us element 95 of 99 for d = 5.
+Product <10,57> gives us element 96 of 99 for d = 5.
+Product <5,59> gives us element 97 of 99 for d = 5.
+Product <3,76> gives us element 98 of 99 for d = 5.
+Product <4,76> gives us element 99 of 99 for d = 5.
+Working on weight 12 forms. Need 121.
+Product <1,1> gives us element 1 of 121 for d = 6.
+Product <2,1> gives us element 2 of 121 for d = 6.
+Product <3,1> gives us element 3 of 121 for d = 6.
+Product <4,1> gives us element 4 of 121 for d = 6.
+Product <5,1> gives us element 5 of 121 for d = 6.
+Product <6,1> gives us element 6 of 121 for d = 6.
+Product <7,1> gives us element 7 of 121 for d = 6.
+Product <8,1> gives us element 8 of 121 for d = 6.
+Product <9,1> gives us element 9 of 121 for d = 6.
+Product <10,1> gives us element 10 of 121 for d = 6.
+Product <11,1> gives us element 11 of 121 for d = 6.
+Product <12,1> gives us element 12 of 121 for d = 6.
+Product <2,2> gives us element 13 of 121 for d = 6.
+Product <3,2> gives us element 14 of 121 for d = 6.
+Product <4,2> gives us element 15 of 121 for d = 6.
+Product <5,2> gives us element 16 of 121 for d = 6.
+Product <6,2> gives us element 17 of 121 for d = 6.
+Product <7,2> gives us element 18 of 121 for d = 6.
+Product <8,2> gives us element 19 of 121 for d = 6.
+Product <9,2> gives us element 20 of 121 for d = 6.
+Product <10,2> gives us element 21 of 121 for d = 6.
+Product <11,2> gives us element 22 of 121 for d = 6.
+Product <12,2> gives us element 23 of 121 for d = 6.
+Product <3,3> gives us element 24 of 121 for d = 6.
+Product <4,3> gives us element 25 of 121 for d = 6.
+Product <5,3> gives us element 26 of 121 for d = 6.
+Product <6,3> gives us element 27 of 121 for d = 6.
+Product <7,3> gives us element 28 of 121 for d = 6.
+Product <8,3> gives us element 29 of 121 for d = 6.
+Product <9,3> gives us element 30 of 121 for d = 6.
+Product <10,3> gives us element 31 of 121 for d = 6.
+Product <12,3> gives us element 32 of 121 for d = 6.
+Product <5,5> gives us element 33 of 121 for d = 6.
+Product <2,13> gives us element 34 of 121 for d = 6.
+Product <3,13> gives us element 35 of 121 for d = 6.
+Product <4,13> gives us element 36 of 121 for d = 6.
+Product <5,13> gives us element 37 of 121 for d = 6.
+Product <6,13> gives us element 38 of 121 for d = 6.
+Product <7,13> gives us element 39 of 121 for d = 6.
+Product <8,13> gives us element 40 of 121 for d = 6.
+Product <9,13> gives us element 41 of 121 for d = 6.
+Product <10,13> gives us element 42 of 121 for d = 6.
+Product <11,13> gives us element 43 of 121 for d = 6.
+Product <12,13> gives us element 44 of 121 for d = 6.
+Product <3,14> gives us element 45 of 121 for d = 6.
+Product <4,14> gives us element 46 of 121 for d = 6.
+Product <5,14> gives us element 47 of 121 for d = 6.
+Product <6,14> gives us element 48 of 121 for d = 6.
+Product <7,14> gives us element 49 of 121 for d = 6.
+Product <8,14> gives us element 50 of 121 for d = 6.
+Product <9,14> gives us element 51 of 121 for d = 6.
+Product <10,14> gives us element 52 of 121 for d = 6.
+Product <5,16> gives us element 53 of 121 for d = 6.
+Product <3,24> gives us element 54 of 121 for d = 6.
+Product <4,24> gives us element 55 of 121 for d = 6.
+Product <2,34> gives us element 56 of 121 for d = 6.
+Product <3,34> gives us element 57 of 121 for d = 6.
+Product <4,34> gives us element 58 of 121 for d = 6.
+Product <5,34> gives us element 59 of 121 for d = 6.
+Product <6,34> gives us element 60 of 121 for d = 6.
+Product <7,34> gives us element 61 of 121 for d = 6.
+Product <8,34> gives us element 62 of 121 for d = 6.
+Product <9,34> gives us element 63 of 121 for d = 6.
+Product <10,34> gives us element 64 of 121 for d = 6.
+Product <11,34> gives us element 65 of 121 for d = 6.
+Product <12,34> gives us element 66 of 121 for d = 6.
+Product <3,35> gives us element 67 of 121 for d = 6.
+Product <4,35> gives us element 68 of 121 for d = 6.
+Product <5,35> gives us element 69 of 121 for d = 6.
+Product <6,35> gives us element 70 of 121 for d = 6.
+Product <7,35> gives us element 71 of 121 for d = 6.
+Product <8,35> gives us element 72 of 121 for d = 6.
+Product <9,35> gives us element 73 of 121 for d = 6.
+Product <10,35> gives us element 74 of 121 for d = 6.
+Product <5,37> gives us element 75 of 121 for d = 6.
+Product <3,54> gives us element 76 of 121 for d = 6.
+Product <4,54> gives us element 77 of 121 for d = 6.
+Product <2,56> gives us element 78 of 121 for d = 6.
+Product <3,56> gives us element 79 of 121 for d = 6.
+Product <4,56> gives us element 80 of 121 for d = 6.
+Product <5,56> gives us element 81 of 121 for d = 6.
+Product <6,56> gives us element 82 of 121 for d = 6.
+Product <7,56> gives us element 83 of 121 for d = 6.
+Product <8,56> gives us element 84 of 121 for d = 6.
+Product <9,56> gives us element 85 of 121 for d = 6.
+Product <10,56> gives us element 86 of 121 for d = 6.
+Product <11,56> gives us element 87 of 121 for d = 6.
+Product <12,56> gives us element 88 of 121 for d = 6.
+Product <3,57> gives us element 89 of 121 for d = 6.
+Product <4,57> gives us element 90 of 121 for d = 6.
+Product <5,57> gives us element 91 of 121 for d = 6.
+Product <6,57> gives us element 92 of 121 for d = 6.
+Product <7,57> gives us element 93 of 121 for d = 6.
+Product <8,57> gives us element 94 of 121 for d = 6.
+Product <9,57> gives us element 95 of 121 for d = 6.
+Product <10,57> gives us element 96 of 121 for d = 6.
+Product <5,59> gives us element 97 of 121 for d = 6.
+Product <3,76> gives us element 98 of 121 for d = 6.
+Product <4,76> gives us element 99 of 121 for d = 6.
+Product <2,78> gives us element 100 of 121 for d = 6.
+Product <3,78> gives us element 101 of 121 for d = 6.
+Product <4,78> gives us element 102 of 121 for d = 6.
+Product <5,78> gives us element 103 of 121 for d = 6.
+Product <6,78> gives us element 104 of 121 for d = 6.
+Product <7,78> gives us element 105 of 121 for d = 6.
+Product <8,78> gives us element 106 of 121 for d = 6.
+Product <9,78> gives us element 107 of 121 for d = 6.
+Product <10,78> gives us element 108 of 121 for d = 6.
+Product <11,78> gives us element 109 of 121 for d = 6.
+Product <12,78> gives us element 110 of 121 for d = 6.
+Product <3,79> gives us element 111 of 121 for d = 6.
+Product <4,79> gives us element 112 of 121 for d = 6.
+Product <5,79> gives us element 113 of 121 for d = 6.
+Product <6,79> gives us element 114 of 121 for d = 6.
+Product <7,79> gives us element 115 of 121 for d = 6.
+Product <8,79> gives us element 116 of 121 for d = 6.
+Product <9,79> gives us element 117 of 121 for d = 6.
+Product <10,79> gives us element 118 of 121 for d = 6.
+Product <5,81> gives us element 119 of 121 for d = 6.
+Product <3,98> gives us element 120 of 121 for d = 6.
+Product <4,98> gives us element 121 of 121 for d = 6.
+Searching for E4.
+Dimension of null space is 18.
+Searching for E6.
+Dimension of null space is 9.
+Nicefying 18x154 matrix with denominator 
+7638561993902086801248735476667309473880000.
+Computing saturation.
+Done.
+Calling LLL.
+Done.
+Nicefying 9x176 matrix with denominator 435666809366621943242511499564373054986\
+7880000.
+Computing saturation.
+Done.
+Calling LLL.
+Done.
+
+Total time: 652.559 seconds, Total memory usage: 322.66MB

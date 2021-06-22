@@ -1,0 +1,105 @@
+The degree of that covering map is 2.
+Setting subsub to be subgroup 2 of index 3.
+The space of Eisenstein series has dimension 35.
+Computing action of generators of subsub intersect SL_2 on Eisenstein series for
+Gamma(9).
+Finding vectors invariant under subsub intersect SL_2.
+The dimension of the space of Eisenstein series for subsub intersect SL_2 is 11.
+Computing the action of the generators of subsub on the Q-vector space of 
+dimension 66.
+Finding vectors invariant under subsub.
+The dimension is 11.
+The index of subsub in covergp is 6.
+Form try attempt 1. Number of images is 6.
+The element [ 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ] works. It was number 1.
+Computing Weierstrass p-function Fourier expansions.
+Computing Fourier expansion 1.
+Computing Fourier expansion 2.
+Computing Fourier expansion 3.
+Computing Fourier expansion 4.
+Computing Fourier expansion 5.
+Computing Fourier expansion 6.
+Symmetrizing.
+Doing term 1 of 6.
+Doing term 2 of 6.
+Doing term 3 of 6.
+Doing term 4 of 6.
+Doing term 5 of 6.
+Doing term 6 of 6.
+Done!
+Call to ratfunc with m = 0.
+Call to ratfuncrep with deg = 12.
+Building last 13 rows of the matrix.
+Using coefficients 0 to 25/9.
+Time taken was 0.000.
+Building the first 13 rows of the matrix.
+Time taken was 0.010.
+Solving the linear system of size 26x26.
+Time taken was 0.000.
+Null space has dimension 4.
+Result has degree 9.
+Call to ratfunc with m = 1.
+Call to ratfuncrep with deg = 6.
+Building last 7 rows of the matrix.
+Using coefficients 0 to 13/9.
+Time taken was 0.000.
+Building the first 7 rows of the matrix.
+Time taken was 0.000.
+Solving the linear system of size 14x14.
+Time taken was 0.000.
+Null space has dimension 1.
+Result has degree 6.
+Curve equation is y^2 + (-486*x^6 - 2916*x^3 + 30618)/(x^6 - 6*x^3 - 27)*y + 
+(59049*x^9 + 1240029*x^6 + 8680203*x^3 - 17537553)/(x^9 - 3*x^6 - 45*x^3 - 81).
+Finding maximal order finite in function field extension. This may take a while.
+ring_ext_maximal_order_flags: called with algo_flag: 0
+no algorithm selected
+nothing about algebra-splitting selected
+nothing about reduced-discriminant selected
+nothing about dedekind-test selected
+ring_ext_maximal_order: checking control-devices
+ring_ext_maximal_order_flags: calling ring_ext_maximal_order_flags_sub
+ring_ext_maximal_order_flags_sub: called with algo_flag: 40
+no algorithm selected
+no algebra-splitting selected
+no reduced-discriminant selected
+nothing about dedekind-test selected
+Factorization of discriminant: 
+t^6 - 18*t^3 - 27^1
+There are no factors with not maximal overorder!
+Time taken was 0.050.
+Iteration 1.
+mlist = [ 0, 6 ].
+Updating...
+Done.
+Iteration 2.
+mlist = [ 0, 3 ].
+Working with basis of size 5.
+Simplest element defining the field has index 5.
+Using tvals = [ -2, -1, 1, 2, 3, 4, 5 ].
+Computing specialization 1 of 7.
+Computing LLLed maximal order.
+Computing specialization 2 of 7.
+Computing LLLed maximal order.
+Computing specialization 3 of 7.
+Computing LLLed maximal order.
+Computing specialization 4 of 7.
+Computing LLLed maximal order.
+Computing specialization 5 of 7.
+Computing LLLed maximal order.
+Computing specialization 6 of 7.
+Computing LLLed maximal order.
+Computing specialization 7 of 7.
+Computing LLLed maximal order.
+Clearing denominators.
+Saturating.
+LLLing. (Just for fun. It's not real yet.)
+Changing coordinates.
+Changing coordinates.
+Minimal size model has 31 characters. Index is 5.
+Simplified equation is y^2 + 3/4*x^6 - 27/2*x^3 - 81/4.
+In this equation, Q(x) is the function field of the modular curve with label 
+9.18.0.2.
+And Q(x,y) is the function field of the modular curve with label 9.36.2.1.
+
+Total time: 2.459 seconds, Total memory usage: 32.09MB

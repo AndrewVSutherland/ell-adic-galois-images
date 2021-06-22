@@ -1,0 +1,7 @@
+This directory contains `Magma` code and data that verifies the decomposition of the J\_H for the group 121.605.41.1, as described at the end of Section 6 of the paper.  This verification was needed because we were not able to compute all of the weight 2 newforms of level 11^4 and character of conductor 11^2.  We were able to compute all the newforms that appear in the decomposition of J\_H, and we verify this by comparing coefficients up to the Sturm bound, rather than finding a provably unique solution to a complete linear system as we did for all other arithmetically maximal groups.
+
+- `121.605.41.1.CheckLpolynomialAt11.m` uses Eran Assaf's ModFrmGL2.spec package available at https://github.com/assaferan/ModFrmGL2 to verify that the L-polynomial of X\_H at 11 is 1.
+
+- `cmf_14641.2.a.a.txt` and `cmf_14641.2.a.c` contains precomputed modular form data for the two Galois orbits of newforms of level 11^4 that appear as isogeny factors of J_H including L-polynomials for all primes p up to the Sturm bound B = 322102 for S\_2(Gamma\_1(11^2) cap Gamma\_0(11^4)).
+
+- `121.605.41.1.VerifyDecomposition.m` uses the algorithm described in Section 5 (implemented in `gl2.m` in the `groups` directory) to compute #X\_H(F\_q) for all prime powers q &le; B not divisible by 11, and then computes corresponding L-polynomial coefficients and compares them to those obtained by taking the product of the L-polynomials for the newforms 121.2.a.b, 14641.2.a.a, and 14641.2.a.c.

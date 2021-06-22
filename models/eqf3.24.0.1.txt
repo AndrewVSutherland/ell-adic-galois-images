@@ -1,0 +1,4 @@
+F<t> := FunctionField(Rationals());
+X3_24_0_1 := EllipticCurve([0,0,0,-3*t^4 - 36*t^3 - 162*t^2 - 972*t - 
+2187,-2*t^6 - 36*t^5 - 270*t^4 + 7290*t^2 + 26244*t + 39366]);
+return X3_24_0_1;

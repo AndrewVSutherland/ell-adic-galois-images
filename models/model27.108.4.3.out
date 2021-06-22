@@ -1,0 +1,157 @@
+The degree of that covering map is 3.
+Setting subsub to be subgroup 1 of index 1.
+The space of Eisenstein series has dimension 323.
+Computing action of generators of subsub intersect SL_2 on Eisenstein series for
+Gamma(27).
+Finding vectors invariant under subsub intersect SL_2.
+The dimension of the space of Eisenstein series for subsub intersect SL_2 is 11.
+Computing the action of the generators of subsub on the Q-vector space of 
+dimension 198.
+Finding vectors invariant under subsub.
+The dimension is 11.
+The index of subsub in covergp is 3.
+Form try attempt 1. Number of images is 1.
+Form try attempt 2. Number of images is 1.
+Form try attempt 3. Number of images is 1.
+Form try attempt 4. Number of images is 1.
+Form try attempt 5. Number of images is 1.
+Form try attempt 6. Number of images is 1.
+Form try attempt 7. Number of images is 3.
+The element [ 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0 ] works. It was number 7.
+Computing Weierstrass p-function Fourier expansions.
+Computing Fourier expansion 1.
+Computing Fourier expansion 2.
+Computing Fourier expansion 3.
+Symmetrizing.
+Done!
+Call to ratfunc with m = 0.
+Call to ratfuncrep with deg = 54.
+Building last 55 rows of the matrix.
+Using coefficients 0 to 109/9.
+Time taken was 4.530.
+Building the first 55 rows of the matrix.
+Time taken was 3.760.
+Solving the linear system of size 110x110.
+Time taken was 0.160.
+Null space has dimension 1.
+Result has degree 54.
+Call to ratfunc with m = 1.
+Call to ratfuncrep with deg = 36.
+Result has degree 0.
+Call to ratfunc with m = 2.
+Call to ratfuncrep with deg = 18.
+Result has degree 0.
+Curve equation is y^3 + (-27070533154944/357911*x^51 + 
+628195607625024/357911*x^50 - 6606521465114880/357911*x^49 + 
+41103023108595264/357911*x^48 - 163052444188533888/357911*x^47 + 
+392459848096651200/357911*x^46 - 315533941604717184/357911*x^45 - 
+1608710440945107456/357911*x^44 + 7736266108534084992/357911*x^43 - 
+17075710050991224768/357911*x^42 + 16592947312273910784/357911*x^41 + 
+22836668792278734720/357911*x^40 - 125333272387592615808/357911*x^39 + 
+253153193545498712832/357911*x^38 - 253445330314547008128/357911*x^37 - 
+93240199061552570688/357911*x^36 + 852871018950843867648/357911*x^35 - 
+1658022742607890872960/357911*x^34 + 1696127187741163615872/357911*x^33 - 
+243322169573468189952/357911*x^32 - 2468439616518599348736/357911*x^31 + 
+4853734784498795226048/357911*x^30 - 4798126560857919698304/357911*x^29 + 
+1429134905511613999296/357911*x^28 + 3652391099207479033728/357911*x^27 - 
+7133392845326484642816/357911*x^26 + 6495421504199668005888/357911*x^25 - 
+2152415297244657327552/357911*x^24 - 2833615624023195667200/357911*x^23 + 
+5276524113160739142336/357911*x^22 - 4280850858830427078912/357911*x^21 + 
+1442843643101542019136/357911*x^20 + 951237509266472126976/357911*x^19 - 
+1747317254397367256064/357911*x^18 + 1272704600747426613120/357911*x^17 - 
+461824794594197059392/357911*x^16 - 54870150031264963584/357911*x^15 + 
+188998940510678943360/357911*x^14 - 129052296958771488384/357911*x^13 + 
+47355820429771191168/357911*x^12 - 5182097053484980224/357911*x^11 - 
+72912106251337536/5041*x^10 + 3897485774422443648/357911*x^9 - 
+1542204612455258304/357911*x^8 + 411668903921095296/357911*x^7 - 
+76820762293088256/357911*x^6 + 9711670856417280/357911*x^5 - 
+752401583277120/357911*x^4 + 27070533154944/357911*x^3)/(x^54 - 1404/71*x^53 + 
+921618/5041*x^52 - 379608138/357911*x^51 + 1582551783/357911*x^50 - 
+5240039526/357911*x^49 + 15079095603/357911*x^48 - 40121923860/357911*x^47 + 
+99472119984/357911*x^46 - 223453419720/357911*x^45 + 445942414008/357911*x^44 - 
+796260882060/357911*x^43 + 1292343569136/357911*x^42 - 1864853685756/357911*x^41
++ 2115860815584/357911*x^40 - 1075482683172/357911*x^39 - 
+2533164598026/357911*x^38 + 9411584557464/357911*x^37 - 
+19164020240004/357911*x^36 + 30640637274012/357911*x^35 - 
+40634508727494/357911*x^34 + 38299126450824/357911*x^33 - 
+1682197889634/357911*x^32 - 87862038477048/357911*x^31 + 
+210295372531194/357911*x^30 - 283498149892068/357911*x^29 + 
+200579415342624/357911*x^28 + 72138306592816/357911*x^27 - 
+418550632559298/357911*x^26 + 615678497709120/357911*x^25 - 
+494449229341530/357911*x^24 + 88758993288384/357911*x^23 + 
+368974799595531/357911*x^22 - 613664724388572/357911*x^21 + 
+534526122308022/357911*x^20 - 230453896499406/357911*x^19 - 
+91868088429969/357911*x^18 + 271351170430506/357911*x^17 - 
+274633726920849/357911*x^16 + 170941881597264/357911*x^15 - 
+53248595557194/357911*x^14 - 22139159854284/357911*x^13 + 
+47273105235816/357911*x^12 - 41279235579108/357911*x^11 + 
+25674552200574/357911*x^10 - 12578268067296/357911*x^9 + 
+5013766254474/357911*x^8 - 1641164521428/357911*x^7 + 439908170679/357911*x^6 - 
+95407415784/357911*x^5 + 16379882370/357911*x^4 - 2147746770/357911*x^3 + 
+2852037/5041*x^2 - 2430/71*x + 1).
+Finding maximal order finite in function field extension. This may take a while.
+ring_ext_maximal_order_flags: called with algo_flag: 0
+no algorithm selected
+nothing about algebra-splitting selected
+nothing about reduced-discriminant selected
+nothing about dedekind-test selected
+ring_ext_maximal_order: checking control-devices
+ring_ext_maximal_order_flags: calling ring_ext_maximal_order_flags_sub
+ring_ext_maximal_order_flags_sub: called with algo_flag: 40
+no algorithm selected
+no algebra-splitting selected
+no reduced-discriminant selected
+nothing about dedekind-test selected
+Factorization of discriminant: 
+t - 2^2
+t - 1^6
+t - 1/2^2
+t^6
+t + 1^2
+t^3 - 3*t^2 + 1^4
+t^3 - 3*t + 1^6
+t^9 - 72/17*t^8 + 135/17*t^7 - 165/17*t^6 + 99/17*t^5 + 54/17*t^4 - 192/17*t^3 +
+    171/17*t^2 - 81/17*t + 1^6
+factors with (possibly) not maximal overorder:
+t - 2^2
+t - 1^6
+t - 1/2^2
+t^6
+t + 1^2
+t^3 - 3*t^2 + 1^4
+t^3 - 3*t + 1^6
+t^9 - 72/17*t^8 + 135/17*t^7 - 165/17*t^6 + 99/17*t^5 + 54/17*t^4 - 192/17*t^3 +
+    171/17*t^2 - 81/17*t + 1^6
+Time taken was 0.050.
+Iteration 1.
+mlist = [ 29, 32, 32 ].
+Working with basis of size 6.
+Simplest element defining the field has index 5.
+Using tvals = [ -2, 3, 4, 5, 6, 7, 8 ].
+Computing specialization 1 of 7.
+Computing LLLed maximal order.
+Computing specialization 2 of 7.
+Computing LLLed maximal order.
+Computing specialization 3 of 7.
+Computing LLLed maximal order.
+Computing specialization 4 of 7.
+Computing LLLed maximal order.
+Computing specialization 5 of 7.
+Computing LLLed maximal order.
+Computing specialization 6 of 7.
+Computing LLLed maximal order.
+Computing specialization 7 of 7.
+Computing LLLed maximal order.
+Clearing denominators.
+Saturating.
+LLLing. (Just for fun. It's not real yet.)
+Changing coordinates.
+Changing coordinates.
+Minimal size model has 84 characters. Index is 5.
+Simplified equation is y^3 - 6*x^9 + 45*x^8 - 99*x^7 + 9*x^6 + 171*x^5 - 90*x^4 
+- 72*x^3 + 45*x^2 + 9*x - 6.
+In this equation, Q(x) is the function field of the modular curve with label 
+9.36.0.5.
+And Q(x,y) is the function field of the modular curve with label 27.108.4.3.
+
+Total time: 64.599 seconds, Total memory usage: 221.75MB

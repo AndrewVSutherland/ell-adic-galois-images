@@ -1,0 +1,389 @@
+The degree of that covering map is 3.
+Setting subsub to be subgroup 9 of index 9.
+The space of Eisenstein series has dimension 323.
+Computing action of generators of subsub intersect SL_2 on Eisenstein series for
+Gamma(27).
+Finding vectors invariant under subsub intersect SL_2.
+The dimension of the space of Eisenstein series for subsub intersect SL_2 is 17.
+Computing the action of the generators of subsub on the Q-vector space of 
+dimension 306.
+Finding vectors invariant under subsub.
+The dimension is 17.
+The index of subsub in covergp is 27.
+Form try attempt 1. Number of images is 27.
+The element [ 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ] works. It was 
+number 1.
+Computing Weierstrass p-function Fourier expansions.
+Computing Fourier expansion 1.
+Computing Fourier expansion 2.
+Computing Fourier expansion 3.
+Computing Fourier expansion 4.
+Computing Fourier expansion 5.
+Computing Fourier expansion 6.
+Computing Fourier expansion 7.
+Computing Fourier expansion 8.
+Computing Fourier expansion 9.
+Computing Fourier expansion 10.
+Computing Fourier expansion 11.
+Computing Fourier expansion 12.
+Computing Fourier expansion 13.
+Computing Fourier expansion 14.
+Computing Fourier expansion 15.
+Computing Fourier expansion 16.
+Computing Fourier expansion 17.
+Computing Fourier expansion 18.
+Computing Fourier expansion 19.
+Computing Fourier expansion 20.
+Computing Fourier expansion 21.
+Computing Fourier expansion 22.
+Computing Fourier expansion 23.
+Computing Fourier expansion 24.
+Computing Fourier expansion 25.
+Computing Fourier expansion 26.
+Computing Fourier expansion 27.
+Symmetrizing.
+Doing term 1 of 108.
+Doing term 2 of 108.
+Doing term 3 of 108.
+Doing term 4 of 108.
+Doing term 5 of 108.
+Doing term 6 of 108.
+Doing term 7 of 108.
+Doing term 8 of 108.
+Doing term 9 of 108.
+Doing term 10 of 108.
+Doing term 11 of 108.
+Doing term 12 of 108.
+Doing term 13 of 108.
+Doing term 14 of 108.
+Doing term 15 of 108.
+Doing term 16 of 108.
+Doing term 17 of 108.
+Doing term 18 of 108.
+Doing term 19 of 108.
+Doing term 20 of 108.
+Doing term 21 of 108.
+Doing term 22 of 108.
+Doing term 23 of 108.
+Doing term 24 of 108.
+Doing term 25 of 108.
+Doing term 26 of 108.
+Doing term 27 of 108.
+Doing term 28 of 108.
+Doing term 29 of 108.
+Doing term 30 of 108.
+Doing term 31 of 108.
+Doing term 32 of 108.
+Doing term 33 of 108.
+Doing term 34 of 108.
+Doing term 35 of 108.
+Doing term 36 of 108.
+Doing term 37 of 108.
+Doing term 38 of 108.
+Doing term 39 of 108.
+Doing term 40 of 108.
+Doing term 41 of 108.
+Doing term 42 of 108.
+Doing term 43 of 108.
+Doing term 44 of 108.
+Doing term 45 of 108.
+Doing term 46 of 108.
+Doing term 47 of 108.
+Doing term 48 of 108.
+Doing term 49 of 108.
+Doing term 50 of 108.
+Doing term 51 of 108.
+Doing term 52 of 108.
+Doing term 53 of 108.
+Doing term 54 of 108.
+Doing term 55 of 108.
+Doing term 56 of 108.
+Doing term 57 of 108.
+Doing term 58 of 108.
+Doing term 59 of 108.
+Doing term 60 of 108.
+Doing term 61 of 108.
+Doing term 62 of 108.
+Doing term 63 of 108.
+Doing term 64 of 108.
+Doing term 65 of 108.
+Doing term 66 of 108.
+Doing term 67 of 108.
+Doing term 68 of 108.
+Doing term 69 of 108.
+Doing term 70 of 108.
+Doing term 71 of 108.
+Doing term 72 of 108.
+Doing term 73 of 108.
+Doing term 74 of 108.
+Doing term 75 of 108.
+Doing term 76 of 108.
+Doing term 77 of 108.
+Doing term 78 of 108.
+Doing term 79 of 108.
+Doing term 80 of 108.
+Doing term 81 of 108.
+Doing term 82 of 108.
+Doing term 83 of 108.
+Doing term 84 of 108.
+Doing term 85 of 108.
+Doing term 86 of 108.
+Doing term 87 of 108.
+Doing term 88 of 108.
+Doing term 89 of 108.
+Doing term 90 of 108.
+Doing term 91 of 108.
+Doing term 92 of 108.
+Doing term 93 of 108.
+Doing term 94 of 108.
+Doing term 95 of 108.
+Doing term 96 of 108.
+Doing term 97 of 108.
+Doing term 98 of 108.
+Doing term 99 of 108.
+Doing term 100 of 108.
+Doing term 101 of 108.
+Doing term 102 of 108.
+Doing term 103 of 108.
+Doing term 104 of 108.
+Doing term 105 of 108.
+Doing term 106 of 108.
+Doing term 107 of 108.
+Doing term 108 of 108.
+Done!
+Call to ratfunc with m = 0.
+Call to ratfuncrep with deg = 12.
+Building last 13 rows of the matrix.
+Using coefficients -4/3 to 13/9.
+Time taken was 0.010.
+Building the first 13 rows of the matrix.
+Time taken was 0.000.
+Solving the linear system of size 26x26.
+Time taken was 0.010.
+Null space has dimension 1.
+Result has degree 12.
+Call to ratfunc with m = 1.
+Call to ratfuncrep with deg = 8.
+Building last 9 rows of the matrix.
+Using coefficients -8/9 to 1.
+Time taken was 0.000.
+Building the first 9 rows of the matrix.
+Time taken was 0.010.
+Solving the linear system of size 18x18.
+Time taken was 0.000.
+Null space has dimension 3.
+Result has degree 6.
+Call to ratfunc with m = 2.
+Call to ratfuncrep with deg = 4.
+Building last 5 rows of the matrix.
+Using coefficients -4/9 to 5/9.
+Time taken was 0.000.
+Building the first 5 rows of the matrix.
+Time taken was 0.000.
+Solving the linear system of size 10x10.
+Time taken was 0.000.
+Null space has dimension 2.
+Result has degree 3.
+Curve equation is y^3 + (-8188128*x^3 - 5038848*x^2 - 23619600*x - 
+24564384)/(x^3 + 3)*y^2 + (22348480048128*x^6 + 27461741755392*x^5 + 
+136956070038528*x^4 + 212641159274496*x^3 + 264512113705728*x^2 + 
+383230148990976*x + 201136320433152)/(x^6 + 6*x^3 + 9)*y + 
+(-20332468359946469376*x^12 - 37416597046454956032*x^11 - 
+197851585797117296640*x^10 - 950464745440841097216*x^9 - 
+1796349020499498958848*x^8 - 6763105540455656878080*x^7 - 
+12507405236244519727104*x^6 - 23060650413885593038848*x^5 - 
+39871181494852893794304*x^4 - 45238255572555761725440*x^3 - 
+49090243785644106915840*x^2 - 41970007945029209223168*x - 
+14822369434400976175104)/(x^12 + 36*x^9 + 270*x^6 + 756*x^3 + 729).
+Finding maximal order finite in function field extension. This may take a while.
+ring_ext_maximal_order_flags: called with algo_flag: 0
+no algorithm selected
+nothing about algebra-splitting selected
+nothing about reduced-discriminant selected
+nothing about dedekind-test selected
+ring_ext_maximal_order: checking control-devices
+ring_ext_maximal_order_flags: calling ring_ext_maximal_order_flags_sub
+ring_ext_maximal_order_flags_sub: called with algo_flag: 40
+no algorithm selected
+no algebra-splitting selected
+no reduced-discriminant selected
+nothing about dedekind-test selected
+Factorization of discriminant: 
+t^2
+t + 3^4
+t^2 - 3*t + 9^4
+t^10 - 1704*t^9 - 10194*t^8 - 61874*t^7 - 278943*t^6 - 828684*t^5 - 2510487*t^4 
+    - 5011794*t^3 - 7431426*t^2 - 11179944*t + 59049^2
+factors with (possibly) not maximal overorder:
+t^2
+t + 3^4
+t^2 - 3*t + 9^4
+t^10 - 1704*t^9 - 10194*t^8 - 61874*t^7 - 278943*t^6 - 828684*t^5 - 2510487*t^4 
+    - 5011794*t^3 - 7431426*t^2 - 11179944*t + 59049^2
+-----------------------
+ring_ext_rnd2_max_p_sub called:
+prime: t, prime_bound: 2, algo_flag: 40
+-----------------------
+no algorithm selected
+no algebra-splitting selected
+nothing about dedekind-test selected
+nothing about pauli selected
+---------------------------
+ring_ext_rnd2_max_p_sub_sub called:
+prime: t, prime_bound: 2, algo_flag: 169
+---------------------------
+round2 selected
+no algebra-splitting selected
+no dedekind-test selected
+nothing about pauli selected
+No split performed ...
+(due to user advice or impossible) ... 
+standard algorithm.
+----------------------------
+ring_ext_rnd2_max_p_rnd2 called:
+prime: t, prime_bound: 2, algo_flag: 169
+----------------------------
+no dedekind-test selected
+Order is already t-maximal.
+-----------------------
+ring_ext_rnd2_max_p_sub called:
+prime: t + 3, prime_bound: 4, algo_flag: 40
+-----------------------
+no algorithm selected
+no algebra-splitting selected
+nothing about dedekind-test selected
+nothing about pauli selected
+---------------------------
+ring_ext_rnd2_max_p_sub_sub called:
+prime: t + 3, prime_bound: 4, algo_flag: 169
+---------------------------
+round2 selected
+no algebra-splitting selected
+no dedekind-test selected
+nothing about pauli selected
+No split performed ...
+(due to user advice or impossible) ... 
+standard algorithm.
+----------------------------
+ring_ext_rnd2_max_p_rnd2 called:
+prime: t + 3, prime_bound: 4, algo_flag: 169
+----------------------------
+no dedekind-test selected
+transformation for t + 3...
+index of order: t + 3
+-----------------------
+ring_ext_rnd2_max_p_sub called:
+prime: t^2 - 3*t + 9, prime_bound: 4, algo_flag: 40
+-----------------------
+no algorithm selected
+no algebra-splitting selected
+nothing about dedekind-test selected
+nothing about pauli selected
+---------------------------
+ring_ext_rnd2_max_p_sub_sub called:
+prime: t^2 - 3*t + 9, prime_bound: 4, algo_flag: 169
+---------------------------
+round2 selected
+no algebra-splitting selected
+no dedekind-test selected
+nothing about pauli selected
+No split performed ...
+(due to user advice or impossible) ... 
+standard algorithm.
+----------------------------
+ring_ext_rnd2_max_p_rnd2 called:
+prime: t^2 - 3*t + 9, prime_bound: 4, algo_flag: 169
+----------------------------
+no dedekind-test selected
+transformation for t^2 - 3*t + 9...
+index of order: t^2 - 3*t + 9
+-----------------------
+ring_ext_rnd2_max_p_sub called:
+prime: t^10 - 1704*t^9 - 10194*t^8 - 61874*t^7 - 278943*t^6 - 828684*t^5 - 
+    2510487*t^4 - 5011794*t^3 - 7431426*t^2 - 11179944*t + 59049, prime_bound: 
+2, algo_flag: 40
+-----------------------
+no algorithm selected
+no algebra-splitting selected
+nothing about dedekind-test selected
+nothing about pauli selected
+---------------------------
+ring_ext_rnd2_max_p_sub_sub called:
+prime: t^10 - 1704*t^9 - 10194*t^8 - 61874*t^7 - 278943*t^6 - 828684*t^5 - 
+    2510487*t^4 - 5011794*t^3 - 7431426*t^2 - 11179944*t + 59049, prime_bound: 
+2, algo_flag: 169
+---------------------------
+round2 selected
+no algebra-splitting selected
+no dedekind-test selected
+nothing about pauli selected
+No split performed ...
+(due to user advice or impossible) ... 
+standard algorithm.
+----------------------------
+ring_ext_rnd2_max_p_rnd2 called:
+prime: t^10 - 1704*t^9 - 10194*t^8 - 61874*t^7 - 278943*t^6 - 828684*t^5 - 
+    2510487*t^4 - 5011794*t^3 - 7431426*t^2 - 11179944*t + 59049, prime_bound: 
+2, algo_flag: 169
+----------------------------
+no dedekind-test selected
+transformation for t^10 - 1704*t^9 - 10194*t^8 - 61874*t^7 - 278943*t^6 - 
+    828684*t^5 - 2510487*t^4 - 5011794*t^3 - 7431426*t^2 - 11179944*t + 59049...
+index of order: t^10 - 1704*t^9 - 10194*t^8 - 61874*t^7 - 278943*t^6 - 
+    828684*t^5 - 2510487*t^4 - 5011794*t^3 - 7431426*t^2 - 11179944*t + 59049
+Time taken was 0.070.
+Iteration 1.
+mlist = [ 13, 19, 18 ].
+Updating...
+Done.
+Iteration 2.
+mlist = [ 13, 18, 18 ].
+Updating...
+Done.
+Iteration 3.
+mlist = [ 13, 18, 17 ].
+Updating...
+Done.
+Iteration 4.
+mlist = [ 13, 17, 17 ].
+Updating...
+Done.
+Iteration 5.
+mlist = [ 13, 17, 16 ].
+Updating...
+Done.
+Iteration 6.
+mlist = [ 13, 16, 16 ].
+Updating...
+Done.
+Iteration 7.
+mlist = [ 13, 16, 15 ].
+Working with basis of size 7.
+Simplest element defining the field has index 5.
+Using tvals = [ -2, -1, 1, 2, 3, 4, 5 ].
+Computing specialization 1 of 7.
+Computing LLLed maximal order.
+Computing specialization 2 of 7.
+Computing LLLed maximal order.
+Computing specialization 3 of 7.
+Computing LLLed maximal order.
+Computing specialization 4 of 7.
+Computing LLLed maximal order.
+Computing specialization 5 of 7.
+Computing LLLed maximal order.
+Computing specialization 6 of 7.
+Computing LLLed maximal order.
+Computing specialization 7 of 7.
+Computing LLLed maximal order.
+Clearing denominators.
+Saturating.
+LLLing. (Just for fun. It's not real yet.)
+Changing coordinates.
+Changing coordinates.
+Minimal size model has 33 characters. Index is 5.
+Simplified equation is y^3 + x^5 + 3*x^4 + 27*x^2 + 81*x.
+In this equation, Q(x) is the function field of the modular curve with label 
+9.12.0.2.
+And Q(x,y) is the function field of the modular curve with label 27.36.3.1.
+
+Total time: 263.180 seconds, Total memory usage: 381.09MB

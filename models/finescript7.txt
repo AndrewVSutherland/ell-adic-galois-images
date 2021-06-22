@@ -1,0 +1,8 @@
+magma m:=7.16.0.1 whichtwist2.txt
+magma m:=7.16.0.2 whichtwist2.txt
+magma m:=7.48.0.1 whichtwist2.txt
+magma m:=7.48.0.2 whichtwist2.txt
+magma m:=7.48.0.3 whichtwist2.txt
+magma m:=7.48.0.4 whichtwist2.txt
+magma m:=7.48.0.5 whichtwist2.txt
+magma m:=7.48.0.6 whichtwist2.txt

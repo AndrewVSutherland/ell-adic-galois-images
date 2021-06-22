@@ -1,0 +1,268 @@
+subdata := 
+<
+    <
+"7.8.0.1"        ,
+
+        MatrixGroup<2, IntegerRing(7) |
+            Matrix(IntegerRing(7), 2, 2, [ 5, 6, 0, 3 ]),
+            Matrix(IntegerRing(7), 2, 2, [ 3, 3, 0, 1 ])
+                /* order = 252 = 2^2 * 3^2 * 7 */ >,
+
+"1.1.0.1"
+    >,
+
+    <
+"7.16.0.2"        ,
+
+        MatrixGroup<2, IntegerRing(7) |
+            Matrix(IntegerRing(7), 2, 2, [ 3, 4, 0, 4 ]),
+            Matrix(IntegerRing(7), 2, 2, [ 6, 6, 0, 2 ])
+                /* order = 126 = 2 * 3^2 * 7 */ >,
+
+"7.8.0.1"
+    >,
+
+    <
+"7.16.0.1"        ,
+
+        MatrixGroup<2, IntegerRing(7) |
+            Matrix(IntegerRing(7), 2, 2, [ 2, 6, 0, 6 ]),
+            Matrix(IntegerRing(7), 2, 2, [ 4, 6, 0, 2 ])
+                /* order = 126 = 2 * 3^2 * 7 */ >,
+
+"7.8.0.1"
+    >,
+
+    <
+"7.21.0.1"        ,
+
+        MatrixGroup<2, IntegerRing(7) |
+            DiagonalMatrix(IntegerRing(7), [4, 3]),
+            Matrix(IntegerRing(7), 2, 2, [ 6, 6, 4, 6 ])
+                /* order = 96 = 2^5 * 3 */ >,
+
+"1.1.0.1"
+    >,
+
+    <
+"7.24.0.2"        ,
+
+        MatrixGroup<2, IntegerRing(7) |
+            Matrix(IntegerRing(7), 2, 2, [ 5, 1, 0, 6 ]),
+            Matrix(IntegerRing(7), 2, 2, [ 2, 6, 0, 6 ])
+                /* order = 84 = 2^2 * 3 * 7 */ >,
+
+"7.8.0.1"
+    >,
+
+    <
+"7.24.0.3"        ,
+
+        MatrixGroup<2, IntegerRing(7) |
+            Matrix(IntegerRing(7), 2, 2, [ 4, 2, 0, 3 ]),
+            Matrix(IntegerRing(7), 2, 2, [ 3, 1, 0, 3 ])
+                /* order = 84 = 2^2 * 3 * 7 */ >,
+
+"7.8.0.1"
+    >,
+
+    <
+"7.24.0.1"        ,
+
+        MatrixGroup<2, IntegerRing(7) |
+            DiagonalMatrix(IntegerRing(7), [6, 5]),
+            Matrix(IntegerRing(7), 2, 2, [ 1, 1, 0, 6 ])
+                /* order = 84 = 2^2 * 3 * 7 */ >,
+
+"7.8.0.1"
+    >,
+
+    <
+"7.28.0.1"        ,
+
+        MatrixGroup<2, IntegerRing(7) |
+            DiagonalMatrix(IntegerRing(7), [1, 5]),
+            Matrix(IntegerRing(7), 2, 2, [ 0, 4, 2, 0 ])
+                /* order = 72 = 2^3 * 3^2 */ >,
+
+"1.1.0.1"
+    >,
+
+    <
+"7.42.1.1"        ,
+
+        MatrixGroup<2, IntegerRing(7) |
+            Matrix(IntegerRing(7), 2, 2, [ 0, 4, 2, 0 ]),
+            Matrix(IntegerRing(7), 2, 2, [ 1, 4, 5, 1 ])
+                /* order = 48 = 2^4 * 3 */ >,
+
+"7.21.0.1"
+    >,
+
+    <
+"7.48.0.1"        ,
+
+        MatrixGroup<2, IntegerRing(7) |
+            Matrix(IntegerRing(7), 2, 2, [ 1, 6, 0, 2 ]),
+            Matrix(IntegerRing(7), 2, 2, [ 1, 2, 0, 5 ])
+                /* order = 42 = 2 * 3 * 7 */ >,
+
+"7.24.0.1"
+    >,
+
+    <
+"7.48.0.5"        ,
+
+        MatrixGroup<2, IntegerRing(7) |
+            Matrix(IntegerRing(7), 2, 2, [ 2, 4, 0, 1 ]),
+            DiagonalMatrix(IntegerRing(7), [6, 1])
+                /* order = 42 = 2 * 3 * 7 */ >,
+
+"7.24.0.2"
+    >,
+
+    <
+"7.48.0.6"        ,
+
+        MatrixGroup<2, IntegerRing(7) |
+            Matrix(IntegerRing(7), 2, 2, [ 2, 3, 0, 2 ]),
+            DiagonalMatrix(IntegerRing(7), [6, 1])
+                /* order = 42 = 2 * 3 * 7 */ >,
+
+"7.24.0.3"
+    >,
+
+    <
+"7.48.0.3"        ,
+
+        MatrixGroup<2, IntegerRing(7) |
+            Matrix(IntegerRing(7), 2, 2, [ 2, 3, 0, 5 ]),
+            Matrix(IntegerRing(7), 2, 2, [ 1, 5, 0, 1 ])
+                /* order = 42 = 2 * 3 * 7 */ >,
+
+"7.24.0.3"
+    >,
+
+    <
+"7.48.0.4"        ,
+
+        MatrixGroup<2, IntegerRing(7) |
+            Matrix(IntegerRing(7), 2, 2, [ 6, 5, 0, 2 ]),
+            Matrix(IntegerRing(7), 2, 2, [ 6, 2, 0, 1 ])
+                /* order = 42 = 2 * 3 * 7 */ >,
+
+"7.24.0.1"
+    >,
+
+    <
+"7.48.0.2"        ,
+
+        MatrixGroup<2, IntegerRing(7) |
+            Matrix(IntegerRing(7), 2, 2, [ 2, 3, 0, 1 ]),
+            Matrix(IntegerRing(7), 2, 2, [ 1, 4, 0, 6 ])
+                /* order = 42 = 2 * 3 * 7 */ >,
+
+"7.24.0.2"
+    >,
+
+    <
+"7.56.1.1"        ,
+
+        MatrixGroup<2, IntegerRing(7) |
+            DiagonalMatrix(IntegerRing(7), [4, 3]),
+            DiagonalMatrix(IntegerRing(7), [5, 3])
+                /* order = 36 = 2^2 * 3^2 */ >,
+
+"7.28.0.1"
+    >,
+
+    <
+"7.56.1.2"        ,
+
+        MatrixGroup<2, IntegerRing(7) |
+            DiagonalMatrix(IntegerRing(7), [6, 5]),
+            Matrix(IntegerRing(7), 2, 2, [ 0, 6, 3, 0 ])
+                /* order = 36 = 2^2 * 3^2 */ >,
+
+"7.28.0.1"
+    >,
+
+    <
+"49.56.1.1"        ,
+
+        MatrixGroup<2, IntegerRing(49) |
+            Matrix(IntegerRing(49), 2, 2, [ 33, 2, 0, 33 ]),
+            Matrix(IntegerRing(49), 2, 2, [ 5, 19, 0, 15 ])
+                /* order = 86436 = 2^2 * 3^2 * 7^4 */ >,
+
+"7.8.0.1"
+    >,
+
+    <
+"49.147.9.1"        ,
+
+        MatrixGroup<2, IntegerRing(49) |
+            Matrix(IntegerRing(49), 2, 2, [ 13, 30, 27, 34 ]),
+            Matrix(IntegerRing(49), 2, 2, [ 16, 7, 28, 19 ])
+                /* order = 32928 = 2^5 * 3 * 7^3 */ >,
+
+"7.21.0.1"
+    >,
+
+    <
+"49.168.12.2"        ,
+
+        MatrixGroup<2, IntegerRing(49) |
+            Matrix(IntegerRing(49), 2, 2, [ 38, 40, 14, 11 ]),
+            Matrix(IntegerRing(49), 2, 2, [ 4, 33, 7, 17 ])
+                /* order = 28812 = 2^2 * 3 * 7^4 */ >,
+
+"7.24.0.3"
+    >,
+
+    <
+"49.168.12.1"        ,
+
+        MatrixGroup<2, IntegerRing(49) |
+            Matrix(IntegerRing(49), 2, 2, [ 45, 13, 21, 38 ]),
+            Matrix(IntegerRing(49), 2, 2, [ 8, 25, 28, 20 ])
+                /* order = 28812 = 2^2 * 3 * 7^4 */ >,
+
+"7.24.0.3"
+    >,
+
+    <
+"49.196.9.1"        ,
+
+        MatrixGroup<2, IntegerRing(49) |
+            Matrix(IntegerRing(49), 2, 2, [ 36, 0, 35, 47 ]),
+            Matrix(IntegerRing(49), 2, 2, [ 28, 11, 37, 14 ])
+                /* order = 24696 = 2^3 * 3^2 * 7^3 */ >,
+
+"7.28.0.1"
+    >,
+
+    <
+"49.1029.69.1"        ,
+
+        MatrixGroup<2, IntegerRing(49) |
+            Matrix(IntegerRing(49), 2, 2, [ 19, 30, 22, 30 ]),
+            Matrix(IntegerRing(49), 2, 2, [ 32, 23, 29, 17 ])
+                /* order = 4704 = 2^5 * 3 * 7^2 */ >,
+
+"7.21.0.1"
+    >,
+
+    <
+"49.1372.94.1"        ,
+
+        MatrixGroup<2, IntegerRing(49) |
+            Matrix(IntegerRing(49), 2, 2, [ 0, 4, 4, 0 ]),
+            DiagonalMatrix(IntegerRing(49), [24, 23])
+                /* order = 3528 = 2^3 * 3^2 * 7^2 */ >,
+
+"7.28.0.1"
+    >
+>
+;
+return subdata;

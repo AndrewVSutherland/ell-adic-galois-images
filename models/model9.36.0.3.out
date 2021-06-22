@@ -1,0 +1,243 @@
+The degree of that covering map is 2.
+Setting subsub to be subgroup 1 of index 1.
+The space of Eisenstein series has dimension 35.
+Computing action of generators of subsub intersect SL_2 on Eisenstein series for
+Gamma(9).
+Finding vectors invariant under subsub intersect SL_2.
+The dimension of the space of Eisenstein series for subsub intersect SL_2 is 7.
+Computing the action of the generators of subsub on the Q-vector space of 
+dimension 42.
+Finding vectors invariant under subsub.
+The dimension is 7.
+The index of subsub in covergp is 2.
+Form try attempt 1. Number of images is 2.
+The element [ 1, 0, 0, 0, 0, 0, 0 ] works. It was number 1.
+Computing Weierstrass p-function Fourier expansions.
+Computing Fourier expansion 1.
+Computing Fourier expansion 2.
+Symmetrizing.
+Done!
+Call to ratfunc with m = 0.
+Call to ratfuncrep with deg = 18.
+Building last 19 rows of the matrix.
+Using coefficients 0 to 37/3.
+Time taken was 0.110.
+Building the first 19 rows of the matrix.
+Time taken was 0.060.
+Solving the linear system of size 38x38.
+Time taken was 0.010.
+Null space has dimension 1.
+Result has degree 18.
+Call to ratfunc with m = 1.
+Call to ratfuncrep with deg = 9.
+Building last 10 rows of the matrix.
+Using coefficients 0 to 19/3.
+Time taken was 0.010.
+Building the first 10 rows of the matrix.
+Time taken was 0.000.
+Solving the linear system of size 20x20.
+Time taken was 0.000.
+Null space has dimension 4.
+Result has degree 6.
+Curve equation is y^2 + (54*x^6 - 108*x^4 - 24*x^3 + 54*x^2 + 24*x)/(x^6 - 2*x^4
+- 2/3*x^3 + x^2 + 2/3*x + 4/27)*y + (729*x^18 - 4374*x^16 - 648*x^15 + 
+10935*x^14 + 3240*x^13 - 14436*x^12 - 6480*x^11 + 10359*x^10 + 6480*x^9 - 
+3510*x^8 - 3240*x^7 + 153*x^6 + 648*x^5 + 144*x^4)/(x^18 - 6*x^16 - 4/3*x^15 + 
+15*x^14 + 20/3*x^13 - 524/27*x^12 - 40/3*x^11 + 341/27*x^10 + 40/3*x^9 - 
+22/9*x^8 - 20/3*x^7 - 1063/729*x^6 + 4/3*x^5 + 560/729*x^4 + 64/2187*x^3 - 
+64/729*x^2 - 64/2187*x - 64/19683).
+Finding maximal order finite in function field extension. This may take a while.
+ring_ext_maximal_order_flags: called with algo_flag: 0
+no algorithm selected
+nothing about algebra-splitting selected
+nothing about reduced-discriminant selected
+nothing about dedekind-test selected
+ring_ext_maximal_order: checking control-devices
+ring_ext_maximal_order_flags: calling ring_ext_maximal_order_flags_sub
+ring_ext_maximal_order_flags_sub: called with algo_flag: 40
+no algorithm selected
+no algebra-splitting selected
+no reduced-discriminant selected
+nothing about dedekind-test selected
+Factorization of discriminant: 
+t - 1^2
+t^2
+t + 1^2
+t^2 - 4/3^1
+t^3 - t - 4/9^2
+factors with (possibly) not maximal overorder:
+t - 1^2
+t^2
+t + 1^2
+t^3 - t - 4/9^2
+-----------------------
+ring_ext_rnd2_max_p_sub called:
+prime: t - 1, prime_bound: 2, algo_flag: 40
+-----------------------
+no algorithm selected
+no algebra-splitting selected
+nothing about dedekind-test selected
+nothing about pauli selected
+---------------------------
+ring_ext_rnd2_max_p_sub_sub called:
+prime: t - 1, prime_bound: 2, algo_flag: 169
+---------------------------
+round2 selected
+no algebra-splitting selected
+no dedekind-test selected
+nothing about pauli selected
+No split performed ...
+(due to user advice or impossible) ... 
+standard algorithm.
+----------------------------
+ring_ext_rnd2_max_p_rnd2 called:
+prime: t - 1, prime_bound: 2, algo_flag: 169
+----------------------------
+no dedekind-test selected
+transformation for t - 1...
+index of order: t - 1
+-----------------------
+ring_ext_rnd2_max_p_sub called:
+prime: t, prime_bound: 2, algo_flag: 40
+-----------------------
+no algorithm selected
+no algebra-splitting selected
+nothing about dedekind-test selected
+nothing about pauli selected
+---------------------------
+ring_ext_rnd2_max_p_sub_sub called:
+prime: t, prime_bound: 2, algo_flag: 169
+---------------------------
+round2 selected
+no algebra-splitting selected
+no dedekind-test selected
+nothing about pauli selected
+No split performed ...
+(due to user advice or impossible) ... 
+standard algorithm.
+----------------------------
+ring_ext_rnd2_max_p_rnd2 called:
+prime: t, prime_bound: 2, algo_flag: 169
+----------------------------
+no dedekind-test selected
+transformation for t...
+index of order: t
+-----------------------
+ring_ext_rnd2_max_p_sub called:
+prime: t + 1, prime_bound: 2, algo_flag: 40
+-----------------------
+no algorithm selected
+no algebra-splitting selected
+nothing about dedekind-test selected
+nothing about pauli selected
+---------------------------
+ring_ext_rnd2_max_p_sub_sub called:
+prime: t + 1, prime_bound: 2, algo_flag: 169
+---------------------------
+round2 selected
+no algebra-splitting selected
+no dedekind-test selected
+nothing about pauli selected
+No split performed ...
+(due to user advice or impossible) ... 
+standard algorithm.
+----------------------------
+ring_ext_rnd2_max_p_rnd2 called:
+prime: t + 1, prime_bound: 2, algo_flag: 169
+----------------------------
+no dedekind-test selected
+transformation for t + 1...
+index of order: t + 1
+-----------------------
+ring_ext_rnd2_max_p_sub called:
+prime: t^3 - t - 4/9, prime_bound: 2, algo_flag: 40
+-----------------------
+no algorithm selected
+no algebra-splitting selected
+nothing about dedekind-test selected
+nothing about pauli selected
+---------------------------
+ring_ext_rnd2_max_p_sub_sub called:
+prime: t^3 - t - 4/9, prime_bound: 2, algo_flag: 169
+---------------------------
+round2 selected
+no algebra-splitting selected
+no dedekind-test selected
+nothing about pauli selected
+No split performed ...
+(due to user advice or impossible) ... 
+standard algorithm.
+----------------------------
+ring_ext_rnd2_max_p_rnd2 called:
+prime: t^3 - t - 4/9, prime_bound: 2, algo_flag: 169
+----------------------------
+no dedekind-test selected
+transformation for t^3 - t - 4/9...
+index of order: t^3 - t - 4/9
+Time taken was 0.060.
+Iteration 1.
+mlist = [ 5, 9 ].
+Updating...
+Done.
+Iteration 2.
+mlist = [ 5, 7 ].
+Updating...
+Done.
+Iteration 3.
+mlist = [ 5, 6 ].
+Working with basis of size 3.
+Simplest element defining the field has index 3.
+Using tvals = [ -2, 2, 3, 4, 5, 6, 7 ].
+Computing specialization 1 of 7.
+Computing LLLed maximal order.
+Computing specialization 2 of 7.
+Computing LLLed maximal order.
+Computing specialization 3 of 7.
+Computing LLLed maximal order.
+Computing specialization 4 of 7.
+Computing LLLed maximal order.
+Computing specialization 5 of 7.
+Computing LLLed maximal order.
+Computing specialization 6 of 7.
+Computing LLLed maximal order.
+Computing specialization 7 of 7.
+Computing LLLed maximal order.
+Clearing denominators.
+Saturating.
+LLLing. (Just for fun. It's not real yet.)
+Changing coordinates.
+Changing coordinates.
+Minimal size model has 17 characters. Index is 3.
+Simplified equation is y^2 + 3/4*x^2 - 1.
+In this equation, Q(x) is the function field of the modular curve with label 
+9.18.0.1.
+And Q(x,y) is the function field of the modular curve with label 9.36.0.3.
+Searching for a non-singular rational point with bound 10.
+Parametrizing the curve.
+Found it!
+We have X = (x^2 + 4/3*x - 4/3)/(x^2 + 4/3).
+We have Y = (-1/2*x^2 + 2*x + 2/3)/(x^2 + 4/3).
+Computing uniformizer coefficients.
+Computing uniformizer...
+Initial covering map is (x^2 + 4/3*x - 4/3)/(x^2 + 4/3).
+Call to supersimplify.
+Entering simplification iteration. Current size = 31.
+Size after scaling = 31.
+Translation check done. New size = 29.
+Doing up to 5 rounds of substitutions.
+After round 1 size = 13.
+Doing two more random checks.
+Final size is 13.
+Entering simplification iteration. Current size = 13.
+Size after scaling = 13.
+Translation check done. New size = 13.
+Doing up to 5 rounds of substitutions.
+Doing two more random checks.
+Final size is 13.
+The final model is y = 4*x/(x^2 + 3).
+Here Q(y) is the function field of 9.36.0.3, and Q(x) is the
+function field of 9.18.0.1.
+Fourier expansion of hauptmodul written to modfunc9.36.0.3.txt. Done with model 
+computation.
+
+Total time: 5.009 seconds, Total memory usage: 32.09MB

@@ -1,0 +1,305 @@
+The degree of that covering map is 8.
+Setting subsub to be subgroup 1 of index 1.
+The space of Eisenstein series has dimension 23.
+Computing action of generators of subsub intersect SL_2 on Eisenstein series for
+Gamma(7).
+Finding vectors invariant under subsub intersect SL_2.
+The dimension of the space of Eisenstein series for subsub intersect SL_2 is 1.
+Computing the action of the generators of subsub on the Q-vector space of 
+dimension 6.
+Finding vectors invariant under subsub.
+The dimension is 1.
+The index of subsub in covergp is 8.
+Form try attempt 1. Number of images is 8.
+The element [ 1 ] works. It was number 1.
+Computing Weierstrass p-function Fourier expansions.
+Computing Fourier expansion 1.
+Computing Fourier expansion 2.
+Computing Fourier expansion 3.
+Computing Fourier expansion 4.
+Computing Fourier expansion 5.
+Computing Fourier expansion 6.
+Computing Fourier expansion 7.
+Computing Fourier expansion 8.
+Symmetrizing.
+Done!
+Call to ratfunc with m = 0.
+Call to ratfuncrep with deg = 8.
+Building last 9 rows of the matrix.
+Using coefficients -8 to 9.
+Time taken was 0.000.
+Building the first 9 rows of the matrix.
+Time taken was 0.000.
+Solving the linear system of size 18x18.
+Time taken was 0.000.
+Null space has dimension 5.
+Result has degree 4.
+Call to ratfunc with m = 1.
+Call to ratfuncrep with deg = 7.
+Building last 8 rows of the matrix.
+Using coefficients -7 to 8.
+Time taken was 0.010.
+Building the first 8 rows of the matrix.
+Time taken was 0.000.
+Solving the linear system of size 16x16.
+Time taken was 0.000.
+Null space has dimension 5.
+Result has degree 3.
+Call to ratfunc with m = 2.
+Call to ratfuncrep with deg = 6.
+Building last 7 rows of the matrix.
+Using coefficients -6 to 7.
+Time taken was 0.000.
+Building the first 7 rows of the matrix.
+Time taken was 0.000.
+Solving the linear system of size 14x14.
+Time taken was 0.000.
+Null space has dimension 4.
+Result has degree 3.
+Call to ratfunc with m = 3.
+Call to ratfuncrep with deg = 5.
+Building last 6 rows of the matrix.
+Using coefficients -5 to 6.
+Time taken was 0.000.
+Building the first 6 rows of the matrix.
+Time taken was 0.000.
+Solving the linear system of size 12x12.
+Time taken was 0.000.
+Null space has dimension 4.
+Result has degree 2.
+Call to ratfunc with m = 4.
+Call to ratfuncrep with deg = 4.
+Building last 5 rows of the matrix.
+Using coefficients -4 to 5.
+Time taken was 0.000.
+Building the first 5 rows of the matrix.
+Time taken was 0.000.
+Solving the linear system of size 10x10.
+Time taken was 0.000.
+Null space has dimension 3.
+Result has degree 2.
+Call to ratfunc with m = 5.
+Call to ratfuncrep with deg = 3.
+Building last 4 rows of the matrix.
+Using coefficients -3 to 4.
+Time taken was 0.000.
+Building the first 4 rows of the matrix.
+Time taken was 0.000.
+Solving the linear system of size 8x8.
+Time taken was 0.000.
+Null space has dimension 3.
+Result has degree 1.
+Call to ratfunc with m = 6.
+Call to ratfuncrep with deg = 2.
+Building last 3 rows of the matrix.
+Using coefficients -2 to 3.
+Time taken was 0.000.
+Building the first 3 rows of the matrix.
+Time taken was 0.000.
+Solving the linear system of size 6x6.
+Time taken was 0.000.
+Null space has dimension 2.
+Result has degree 1.
+Call to ratfunc with m = 7.
+Call to ratfuncrep with deg = 1.
+Result has degree 0.
+Curve equation is y^8 - 2268*x/(x - 1728)*y^6 - 81648*x/(x - 1728)*y^5 - 
+1377810*x^2/(x^2 - 3456*x + 2985984)*y^4 - 13226976*x^2/(x^2 - 3456*x + 
+2985984)*y^3 + (-74401740*x^3 + 106662334464*x^2)/(x^3 - 5184*x^2 + 8957952*x - 
+5159780352)*y^2 - 229582512*x^3/(x^3 - 5184*x^2 + 8957952*x - 5159780352)*y - 
+301327047*x^4/(x^4 - 6912*x^3 + 17915904*x^2 - 20639121408*x + 8916100448256).
+Finding maximal order finite in function field extension. This may take a while.
+ring_ext_maximal_order_flags: called with algo_flag: 0
+no algorithm selected
+nothing about algebra-splitting selected
+nothing about reduced-discriminant selected
+nothing about dedekind-test selected
+ring_ext_maximal_order: checking control-devices
+ring_ext_maximal_order_flags: calling ring_ext_maximal_order_flags_sub
+ring_ext_maximal_order_flags_sub: called with algo_flag: 40
+no algorithm selected
+no algebra-splitting selected
+no reduced-discriminant selected
+nothing about dedekind-test selected
+Factorization of discriminant: 
+t - 2268945/128^2
+t - 1728^28
+t^20
+factors with (possibly) not maximal overorder:
+t - 2268945/128^2
+t - 1728^28
+t^20
+-----------------------
+ring_ext_rnd2_max_p_sub called:
+prime: t - 2268945/128, prime_bound: 2, algo_flag: 40
+-----------------------
+no algorithm selected
+no algebra-splitting selected
+nothing about dedekind-test selected
+nothing about pauli selected
+---------------------------
+ring_ext_rnd2_max_p_sub_sub called:
+prime: t - 2268945/128, prime_bound: 2, algo_flag: 169
+---------------------------
+round2 selected
+no algebra-splitting selected
+no dedekind-test selected
+nothing about pauli selected
+No split performed ...
+(due to user advice or impossible) ... 
+standard algorithm.
+----------------------------
+ring_ext_rnd2_max_p_rnd2 called:
+prime: t - 2268945/128, prime_bound: 2, algo_flag: 169
+----------------------------
+no dedekind-test selected
+transformation for t - 2268945/128...
+index of order: t - 2268945/128
+-----------------------
+ring_ext_rnd2_max_p_sub called:
+prime: t - 1728, prime_bound: 28, algo_flag: 40
+-----------------------
+no algorithm selected
+no algebra-splitting selected
+nothing about dedekind-test selected
+nothing about pauli selected
+---------------------------
+ring_ext_rnd2_max_p_sub_sub called:
+prime: t - 1728, prime_bound: 28, algo_flag: 169
+---------------------------
+round2 selected
+no algebra-splitting selected
+no dedekind-test selected
+nothing about pauli selected
+No split performed ...
+(due to user advice or impossible) ... 
+standard algorithm.
+----------------------------
+ring_ext_rnd2_max_p_rnd2 called:
+prime: t - 1728, prime_bound: 28, algo_flag: 169
+----------------------------
+no dedekind-test selected
+transformation for t - 1728...
+index of order: t^12 - 20736*t^11 + 197074944*t^10 - 1135151677440*t^9 + 
+    4413469721886720*t^8 - 12202361087072403456*t^7 + 
+    24599959951537965367296*t^6 - 36436054968220803561160704*t^5 + 
+    39350939365678467846053560320*t^4 - 30221521432841063305769134325760*t^3 + 
+    15666836710784807217710719234473984*t^2 - 
+    4922235242952026704037113243122008064*t + 
+    708801874985091845381344307009569161216
+-----------------------
+ring_ext_rnd2_max_p_sub called:
+prime: t, prime_bound: 20, algo_flag: 40
+-----------------------
+no algorithm selected
+no algebra-splitting selected
+nothing about dedekind-test selected
+nothing about pauli selected
+---------------------------
+ring_ext_rnd2_max_p_sub_sub called:
+prime: t, prime_bound: 20, algo_flag: 169
+---------------------------
+round2 selected
+no algebra-splitting selected
+no dedekind-test selected
+nothing about pauli selected
+No split performed ...
+(due to user advice or impossible) ... 
+standard algorithm.
+----------------------------
+ring_ext_rnd2_max_p_rnd2 called:
+prime: t, prime_bound: 20, algo_flag: 169
+----------------------------
+no dedekind-test selected
+transformation for t...
+index of order: t^8
+Time taken was 0.170.
+Iteration 1.
+mlist = [ 4, 5, 5, 5, 5, 6, 5, 5 ].
+Updating...
+Done.
+Iteration 2.
+mlist = [ 4, 5, 5, 5, 5, 5, 5, 5 ].
+Working with basis of size 9.
+Simplest element defining the field has index 3.
+Using tvals = [ -2, -1, 1, 2, 3, 4, 5 ].
+Computing specialization 1 of 7.
+Computing LLLed maximal order.
+Computing specialization 2 of 7.
+Computing LLLed maximal order.
+Computing specialization 3 of 7.
+Computing LLLed maximal order.
+Computing specialization 4 of 7.
+Computing LLLed maximal order.
+Computing specialization 5 of 7.
+Computing LLLed maximal order.
+Computing specialization 6 of 7.
+Computing LLLed maximal order.
+Computing specialization 7 of 7.
+Computing LLLed maximal order.
+Clearing denominators.
+Saturating.
+LLLing. (Just for fun. It's not real yet.)
+Changing coordinates.
+Changing coordinates.
+Minimal size model has 84 characters. Index is 4.
+Simplified equation is y^8 - 224*x^2*y^5 + 14*x^3*y^4 + (7*x^5 + 448*x^4)*y^2 + 
+(-x^6 + 160*x^5)*y + 49*x^6.
+In this equation, Q(x) is the function field of the modular curve with label 
+1.1.0.1.
+And Q(x,y) is the function field of the modular curve with label 7.8.0.1.
+Searching for a non-singular rational point with bound 10.
+Searching for a non-singular rational point with bound 20.
+Searching for a non-singular rational point with bound 40.
+Parametrizing the curve.
+Found it!
+We have X = (-9/5*x^8 + 8169/323*x^7 - 982086679/8346320*x^6 + 
+1915496582643/10783445440*x^5 + 362829572101521/22291538413568*x^4 + 
+329222426622755211/72001669075824640*x^3 - 
+2622566793986665972551/372104625783861739520*x^2 + 
+118231614407359223186049/96151835302549873491968*x - 
+611005969287833204754306729/9938253696871554924129812480)/(x^8 + 672/1615*x^7 + 
+486157/8346320*x^6 + 3603691/5391722720*x^5 - 16383765321/22291538413568*x^4 - 
+340307906617/3600083453791232*x^3 - 2060037446194399/372104625783861739520*x^2 -
+39311731099041033/240379588256374683729920*x - 
+19637917539587463011/9938253696871554924129812480).
+We have Y = (9*x^6 - 107031/1292*x^5 + 1210552159/6677056*x^4 + 
+180492994407/4313378176*x^3 + 393800195191863/44583076827136*x^2 - 
+347801896944342279/57601335260659712*x + 
+147387437089658014977/297683700627089391616)/(x^6 + 597/1292*x^5 + 
+594015/6677056*x^4 + 39402995/4313378176*x^3 + 23523588015/44583076827136*x^2 + 
+936238802997/57601335260659712*x + 62103840598801/297683700627089391616).
+Computing uniformizer coefficients.
+Computing uniformizer...
+Initial covering map is (-9/5*x^8 + 8169/323*x^7 - 982086679/8346320*x^6 + 
+1915496582643/10783445440*x^5 + 362829572101521/22291538413568*x^4 + 
+329222426622755211/72001669075824640*x^3 - 
+2622566793986665972551/372104625783861739520*x^2 + 
+118231614407359223186049/96151835302549873491968*x - 
+611005969287833204754306729/9938253696871554924129812480)/(x^8 + 672/1615*x^7 + 
+486157/8346320*x^6 + 3603691/5391722720*x^5 - 16383765321/22291538413568*x^4 - 
+340307906617/3600083453791232*x^3 - 2060037446194399/372104625783861739520*x^2 -
+39311731099041033/240379588256374683729920*x - 
+19637917539587463011/9938253696871554924129812480).
+Call to supersimplify.
+Entering simplification iteration. Current size = 604.
+Size after scaling = 373.
+Translation check done. New size = 109.
+Doing up to 5 rounds of substitutions.
+After round 1 size = 66.
+Doing two more random checks.
+Final size is 66.
+Entering simplification iteration. Current size = 66.
+Size after scaling = 66.
+Translation check done. New size = 66.
+Doing up to 5 rounds of substitutions.
+Doing two more random checks.
+Final size is 66.
+The final model is y = (x^8 - 4*x^7 - 14*x^6 + 315*x^4 - 1134*x^2 - 1188*x - 
+351)/(x - 4).
+Here Q(y) is the function field of 7.8.0.1, and Q(x) is the
+function field of 1.1.0.1.
+Fourier expansion of hauptmodul written to modfunc7.8.0.1.txt. Done with model 
+computation.
+
+Total time: 49.479 seconds, Total memory usage: 32.09MB

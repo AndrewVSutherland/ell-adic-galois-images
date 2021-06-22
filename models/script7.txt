@@ -1,0 +1,12 @@
+magma l:=7.8.0.1 model.m
+magma l:=7.21.0.1 model.m
+magma l:=7.24.0.1 model.m
+magma l:=7.24.0.2 model.m
+magma l:=7.24.0.3 model.m
+magma l:=7.28.0.1 model.m
+magma l:=7.42.1.1 model.m
+magma l:=7.56.1.1 model.m
+magma l:=7.56.1.2 model.m
+magma l:=49.56.1.1 model.m
+magma l:=49.147.9.1 model.m
+magma l:=49.196.9.1 model.m

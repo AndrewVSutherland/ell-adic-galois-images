@@ -1,0 +1,4 @@
+P2<X,Y,Z> := ProjectiveSpace(Rationals(),2);
+X := Curve(P2,[ Y^7 + 7*X*Y^3*Z^3 - 14*Y^4*Z^3 - 14*X*Y^2*Z^4 + 28*Y^3*Z^4 + 
+X^2*Z^5 - 14*Y^2*Z^5 + 13*X*Z^6 - 28*Y*Z^6 + 45*Z^7 ]);
+return X;

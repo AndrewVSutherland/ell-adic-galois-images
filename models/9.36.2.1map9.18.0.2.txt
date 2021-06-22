@@ -1,0 +1,5 @@
+x := DD.1;
+y := DD.2;
+z := DD.3;
+map9_36_2_1to9_18_0_2 := map<DD -> CC | [x,z]>;
+return map9_36_2_1to9_18_0_2;

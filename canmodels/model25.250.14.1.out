@@ -1,0 +1,539 @@
+The modular forms for this subgroup have a Fourier expansion expressible in 
+terms of q^(1/25).
+Found good field number 1.
+The Fourier coefficients of the modular forms live in the field Number Field 
+with defining polynomial $.1^10 - 20*$.1^9 + 170*$.1^8 - 800*$.1^7 + 2275*$.1^6 
+- 4005*$.1^5 + 4300*$.1^4 - 2675*$.1^3 + 875*$.1^2 - 125*$.1 + 5 over the 
+Rational Field.
+Precision goes up to q^60.
+Subgroup 25.250.14.1 has genus 14. It has 10 cusps and 1 Galois orbits of cusps 
+with sizes [ 10 ].
+The space of Eisenstein series has dimension 299.
+Computing action of generators of subsub intersect SL_2 on Eisenstein series for
+Gamma(25).
+Finding vectors invariant under subsub intersect SL_2.
+The dimension of the space of Eisenstein series for subsub intersect SL_2 is 9.
+Computing the action of the generators of subsub on the Q-vector space of 
+dimension 180.
+Finding vectors invariant under subsub.
+The dimension is 9.
+Computing Weierstrass p-function Fourier expansions.
+Computing expansion 1 of 299.
+Computing expansion 2 of 299.
+Computing expansion 3 of 299.
+Computing expansion 4 of 299.
+Computing expansion 5 of 299.
+Computing expansion 6 of 299.
+Computing expansion 7 of 299.
+Computing expansion 8 of 299.
+Computing expansion 9 of 299.
+Computing expansion 10 of 299.
+Computing expansion 11 of 299.
+Computing expansion 12 of 299.
+Computing expansion 13 of 299.
+Computing expansion 14 of 299.
+Computing expansion 15 of 299.
+Computing expansion 16 of 299.
+Computing expansion 17 of 299.
+Computing expansion 18 of 299.
+Computing expansion 19 of 299.
+Computing expansion 20 of 299.
+Computing expansion 21 of 299.
+Computing expansion 22 of 299.
+Computing expansion 23 of 299.
+Computing expansion 24 of 299.
+Computing expansion 25 of 299.
+Computing expansion 26 of 299.
+Computing expansion 27 of 299.
+Computing expansion 28 of 299.
+Computing expansion 29 of 299.
+Computing expansion 30 of 299.
+Computing expansion 31 of 299.
+Computing expansion 32 of 299.
+Computing expansion 33 of 299.
+Computing expansion 34 of 299.
+Computing expansion 35 of 299.
+Computing expansion 36 of 299.
+Computing expansion 37 of 299.
+Computing expansion 38 of 299.
+Computing expansion 39 of 299.
+Computing expansion 40 of 299.
+Computing expansion 41 of 299.
+Computing expansion 42 of 299.
+Computing expansion 43 of 299.
+Computing expansion 44 of 299.
+Computing expansion 45 of 299.
+Computing expansion 46 of 299.
+Computing expansion 47 of 299.
+Computing expansion 48 of 299.
+Computing expansion 49 of 299.
+Computing expansion 50 of 299.
+Computing expansion 51 of 299.
+Computing expansion 52 of 299.
+Computing expansion 53 of 299.
+Computing expansion 54 of 299.
+Computing expansion 55 of 299.
+Computing expansion 56 of 299.
+Computing expansion 57 of 299.
+Computing expansion 58 of 299.
+Computing expansion 59 of 299.
+Computing expansion 60 of 299.
+Computing expansion 61 of 299.
+Computing expansion 62 of 299.
+Computing expansion 63 of 299.
+Computing expansion 64 of 299.
+Computing expansion 65 of 299.
+Computing expansion 66 of 299.
+Computing expansion 67 of 299.
+Computing expansion 68 of 299.
+Computing expansion 69 of 299.
+Computing expansion 70 of 299.
+Computing expansion 71 of 299.
+Computing expansion 72 of 299.
+Computing expansion 73 of 299.
+Computing expansion 74 of 299.
+Computing expansion 75 of 299.
+Computing expansion 76 of 299.
+Computing expansion 77 of 299.
+Computing expansion 78 of 299.
+Computing expansion 79 of 299.
+Computing expansion 80 of 299.
+Computing expansion 81 of 299.
+Computing expansion 82 of 299.
+Computing expansion 83 of 299.
+Computing expansion 84 of 299.
+Computing expansion 85 of 299.
+Computing expansion 86 of 299.
+Computing expansion 87 of 299.
+Computing expansion 88 of 299.
+Computing expansion 89 of 299.
+Computing expansion 90 of 299.
+Computing expansion 91 of 299.
+Computing expansion 92 of 299.
+Computing expansion 93 of 299.
+Computing expansion 94 of 299.
+Computing expansion 95 of 299.
+Computing expansion 96 of 299.
+Computing expansion 97 of 299.
+Computing expansion 98 of 299.
+Computing expansion 99 of 299.
+Computing expansion 100 of 299.
+Computing expansion 101 of 299.
+Computing expansion 102 of 299.
+Computing expansion 103 of 299.
+Computing expansion 104 of 299.
+Computing expansion 105 of 299.
+Computing expansion 106 of 299.
+Computing expansion 107 of 299.
+Computing expansion 108 of 299.
+Computing expansion 109 of 299.
+Computing expansion 110 of 299.
+Computing expansion 111 of 299.
+Computing expansion 112 of 299.
+Computing expansion 113 of 299.
+Computing expansion 114 of 299.
+Computing expansion 115 of 299.
+Computing expansion 116 of 299.
+Computing expansion 117 of 299.
+Computing expansion 118 of 299.
+Computing expansion 119 of 299.
+Computing expansion 120 of 299.
+Computing expansion 121 of 299.
+Computing expansion 122 of 299.
+Computing expansion 123 of 299.
+Computing expansion 124 of 299.
+Computing expansion 125 of 299.
+Computing expansion 126 of 299.
+Computing expansion 127 of 299.
+Computing expansion 128 of 299.
+Computing expansion 129 of 299.
+Computing expansion 130 of 299.
+Computing expansion 131 of 299.
+Computing expansion 132 of 299.
+Computing expansion 133 of 299.
+Computing expansion 134 of 299.
+Computing expansion 135 of 299.
+Computing expansion 136 of 299.
+Computing expansion 137 of 299.
+Computing expansion 138 of 299.
+Computing expansion 139 of 299.
+Computing expansion 140 of 299.
+Computing expansion 141 of 299.
+Computing expansion 142 of 299.
+Computing expansion 143 of 299.
+Computing expansion 144 of 299.
+Computing expansion 145 of 299.
+Computing expansion 146 of 299.
+Computing expansion 147 of 299.
+Computing expansion 148 of 299.
+Computing expansion 149 of 299.
+Computing expansion 150 of 299.
+Computing expansion 151 of 299.
+Computing expansion 152 of 299.
+Computing expansion 153 of 299.
+Computing expansion 154 of 299.
+Computing expansion 155 of 299.
+Computing expansion 156 of 299.
+Computing expansion 157 of 299.
+Computing expansion 158 of 299.
+Computing expansion 159 of 299.
+Computing expansion 160 of 299.
+Computing expansion 161 of 299.
+Computing expansion 162 of 299.
+Computing expansion 163 of 299.
+Computing expansion 164 of 299.
+Computing expansion 165 of 299.
+Computing expansion 166 of 299.
+Computing expansion 167 of 299.
+Computing expansion 168 of 299.
+Computing expansion 169 of 299.
+Computing expansion 170 of 299.
+Computing expansion 171 of 299.
+Computing expansion 172 of 299.
+Computing expansion 173 of 299.
+Computing expansion 174 of 299.
+Computing expansion 175 of 299.
+Computing expansion 176 of 299.
+Computing expansion 177 of 299.
+Computing expansion 178 of 299.
+Computing expansion 179 of 299.
+Computing expansion 180 of 299.
+Computing expansion 181 of 299.
+Computing expansion 182 of 299.
+Computing expansion 183 of 299.
+Computing expansion 184 of 299.
+Computing expansion 185 of 299.
+Computing expansion 186 of 299.
+Computing expansion 187 of 299.
+Computing expansion 188 of 299.
+Computing expansion 189 of 299.
+Computing expansion 190 of 299.
+Computing expansion 191 of 299.
+Computing expansion 192 of 299.
+Computing expansion 193 of 299.
+Computing expansion 194 of 299.
+Computing expansion 195 of 299.
+Computing expansion 196 of 299.
+Computing expansion 197 of 299.
+Computing expansion 198 of 299.
+Computing expansion 199 of 299.
+Computing expansion 200 of 299.
+Computing expansion 201 of 299.
+Computing expansion 202 of 299.
+Computing expansion 203 of 299.
+Computing expansion 204 of 299.
+Computing expansion 205 of 299.
+Computing expansion 206 of 299.
+Computing expansion 207 of 299.
+Computing expansion 208 of 299.
+Computing expansion 209 of 299.
+Computing expansion 210 of 299.
+Computing expansion 211 of 299.
+Computing expansion 212 of 299.
+Computing expansion 213 of 299.
+Computing expansion 214 of 299.
+Computing expansion 215 of 299.
+Computing expansion 216 of 299.
+Computing expansion 217 of 299.
+Computing expansion 218 of 299.
+Computing expansion 219 of 299.
+Computing expansion 220 of 299.
+Computing expansion 221 of 299.
+Computing expansion 222 of 299.
+Computing expansion 223 of 299.
+Computing expansion 224 of 299.
+Computing expansion 225 of 299.
+Computing expansion 226 of 299.
+Computing expansion 227 of 299.
+Computing expansion 228 of 299.
+Computing expansion 229 of 299.
+Computing expansion 230 of 299.
+Computing expansion 231 of 299.
+Computing expansion 232 of 299.
+Computing expansion 233 of 299.
+Computing expansion 234 of 299.
+Computing expansion 235 of 299.
+Computing expansion 236 of 299.
+Computing expansion 237 of 299.
+Computing expansion 238 of 299.
+Computing expansion 239 of 299.
+Computing expansion 240 of 299.
+Computing expansion 241 of 299.
+Computing expansion 242 of 299.
+Computing expansion 243 of 299.
+Computing expansion 244 of 299.
+Computing expansion 245 of 299.
+Computing expansion 246 of 299.
+Computing expansion 247 of 299.
+Computing expansion 248 of 299.
+Computing expansion 249 of 299.
+Computing expansion 250 of 299.
+Computing expansion 251 of 299.
+Computing expansion 252 of 299.
+Computing expansion 253 of 299.
+Computing expansion 254 of 299.
+Computing expansion 255 of 299.
+Computing expansion 256 of 299.
+Computing expansion 257 of 299.
+Computing expansion 258 of 299.
+Computing expansion 259 of 299.
+Computing expansion 260 of 299.
+Computing expansion 261 of 299.
+Computing expansion 262 of 299.
+Computing expansion 263 of 299.
+Computing expansion 264 of 299.
+Computing expansion 265 of 299.
+Computing expansion 266 of 299.
+Computing expansion 267 of 299.
+Computing expansion 268 of 299.
+Computing expansion 269 of 299.
+Computing expansion 270 of 299.
+Computing expansion 271 of 299.
+Computing expansion 272 of 299.
+Computing expansion 273 of 299.
+Computing expansion 274 of 299.
+Computing expansion 275 of 299.
+Computing expansion 276 of 299.
+Computing expansion 277 of 299.
+Computing expansion 278 of 299.
+Computing expansion 279 of 299.
+Computing expansion 280 of 299.
+Computing expansion 281 of 299.
+Computing expansion 282 of 299.
+Computing expansion 283 of 299.
+Computing expansion 284 of 299.
+Computing expansion 285 of 299.
+Computing expansion 286 of 299.
+Computing expansion 287 of 299.
+Computing expansion 288 of 299.
+Computing expansion 289 of 299.
+Computing expansion 290 of 299.
+Computing expansion 291 of 299.
+Computing expansion 292 of 299.
+Computing expansion 293 of 299.
+Computing expansion 294 of 299.
+Computing expansion 295 of 299.
+Computing expansion 296 of 299.
+Computing expansion 297 of 299.
+Computing expansion 298 of 299.
+Computing expansion 299 of 299.
+Computing actual Eisenstein series.
+Doing series 1.
+Doing series 2.
+Doing series 3.
+Doing series 4.
+Doing series 5.
+Doing series 6.
+Doing series 7.
+Doing series 8.
+Doing series 9.
+LLL-ing Eisenstein series Fourier expansions.
+Nicefying 9x375010 matrix with denominator 266.
+Computing saturation.
+Done.
+Calling LLL.
+Done.
+Trying 3-tuples of the first 9 Eisenstein series.
+Multiplying. Choosing order randomly.
+Doing product 1 of 165. We get basis element 1 of 95.
+Doing product 2 of 165. We get basis element 2 of 95.
+Doing product 3 of 165. We get basis element 3 of 95.
+Doing product 4 of 165. We get basis element 4 of 95.
+Doing product 5 of 165. We get basis element 5 of 95.
+Doing product 6 of 165. We get basis element 6 of 95.
+Doing product 7 of 165. We get basis element 7 of 95.
+Doing product 8 of 165. We get basis element 8 of 95.
+Doing product 9 of 165. We get basis element 9 of 95.
+Doing product 10 of 165. We get basis element 10 of 95.
+Doing product 11 of 165. We get basis element 11 of 95.
+Doing product 12 of 165. We get basis element 12 of 95.
+Doing product 13 of 165. We get basis element 13 of 95.
+Doing product 14 of 165. We get basis element 14 of 95.
+Doing product 15 of 165. We get basis element 15 of 95.
+Doing product 16 of 165. We get basis element 16 of 95.
+Doing product 17 of 165. We get basis element 17 of 95.
+Doing product 18 of 165. We get basis element 18 of 95.
+Doing product 19 of 165. We get basis element 19 of 95.
+Doing product 20 of 165. We get basis element 20 of 95.
+Doing product 21 of 165. We get basis element 21 of 95.
+Doing product 22 of 165. We get basis element 22 of 95.
+Doing product 23 of 165. We get basis element 23 of 95.
+Doing product 24 of 165. We get basis element 24 of 95.
+Doing product 25 of 165. We get basis element 25 of 95.
+Doing product 26 of 165. We get basis element 26 of 95.
+Doing product 27 of 165. We get basis element 27 of 95.
+Doing product 28 of 165. We get basis element 28 of 95.
+Doing product 29 of 165. We get basis element 29 of 95.
+Doing product 30 of 165. We get basis element 30 of 95.
+Doing product 31 of 165. We get basis element 31 of 95.
+Doing product 32 of 165. We get basis element 32 of 95.
+Doing product 33 of 165. We get basis element 33 of 95.
+Doing product 34 of 165. We get basis element 34 of 95.
+Doing product 35 of 165. We get basis element 35 of 95.
+Doing product 36 of 165. We get basis element 36 of 95.
+Doing product 37 of 165. We get basis element 37 of 95.
+Doing product 38 of 165. We get basis element 38 of 95.
+Doing product 39 of 165. We get basis element 39 of 95.
+Doing product 40 of 165. We get basis element 40 of 95.
+Doing product 41 of 165. We get basis element 41 of 95.
+Doing product 42 of 165. We get basis element 42 of 95.
+Doing product 43 of 165. We get basis element 43 of 95.
+Doing product 44 of 165. We get basis element 44 of 95.
+Doing product 45 of 165. We get basis element 45 of 95.
+Doing product 46 of 165. We get basis element 46 of 95.
+Doing product 47 of 165. We get basis element 47 of 95.
+Doing product 48 of 165. We get basis element 48 of 95.
+Doing product 49 of 165. We get basis element 49 of 95.
+Doing product 50 of 165. We get basis element 50 of 95.
+Doing product 51 of 165. We get basis element 51 of 95.
+Doing product 52 of 165. We get basis element 52 of 95.
+Doing product 53 of 165. We get basis element 53 of 95.
+Doing product 54 of 165. We get basis element 54 of 95.
+Doing product 55 of 165. We get basis element 55 of 95.
+Doing product 56 of 165. We get basis element 56 of 95.
+Doing product 57 of 165. We get basis element 57 of 95.
+Doing product 58 of 165. We get basis element 58 of 95.
+Doing product 59 of 165. We get basis element 59 of 95.
+Doing product 60 of 165. We get basis element 60 of 95.
+Doing product 61 of 165. We get basis element 61 of 95.
+Doing product 62 of 165. We get basis element 62 of 95.
+Doing product 63 of 165. We get basis element 63 of 95.
+Doing product 64 of 165. We get basis element 64 of 95.
+Doing product 65 of 165. We get basis element 65 of 95.
+Doing product 66 of 165. We get basis element 66 of 95.
+Doing product 67 of 165. We get basis element 67 of 95.
+Doing product 68 of 165. We get basis element 68 of 95.
+Doing product 69 of 165. We get basis element 69 of 95.
+Doing product 70 of 165. We get basis element 70 of 95.
+Doing product 71 of 165. We get basis element 71 of 95.
+Doing product 72 of 165. We get basis element 72 of 95.
+Doing product 73 of 165. We get basis element 73 of 95.
+Doing product 74 of 165. We get basis element 74 of 95.
+Doing product 75 of 165. We get basis element 75 of 95.
+Doing product 76 of 165. We get basis element 76 of 95.
+Doing product 77 of 165. We get basis element 77 of 95.
+Doing product 78 of 165. We get basis element 78 of 95.
+Doing product 79 of 165. We get basis element 79 of 95.
+Doing product 80 of 165. We get basis element 80 of 95.
+Doing product 81 of 165. We get basis element 81 of 95.
+Doing product 82 of 165. We get basis element 82 of 95.
+Doing product 83 of 165. We get basis element 83 of 95.
+Doing product 84 of 165. We get basis element 84 of 95.
+Doing product 85 of 165. We get basis element 85 of 95.
+Doing product 86 of 165. We get basis element 86 of 95.
+Doing product 87 of 165. We get basis element 87 of 95.
+Doing product 88 of 165. We get basis element 88 of 95.
+Doing product 89 of 165. We get basis element 89 of 95.
+Doing product 90 of 165. We get basis element 90 of 95.
+Doing product 91 of 165. We get basis element 91 of 95.
+Doing product 92 of 165. We get basis element 92 of 95.
+Doing product 93 of 165. We get basis element 93 of 95.
+Doing product 94 of 165. We get basis element 94 of 95.
+Doing product 95 of 165. We get basis element 95 of 95.
+Applying T_101.
+Doing form 1. Form 1 hit with T_101 gives us a new basis element in weight 6.
+Doing form 2. Form 2 hit with T_101 gives us a new basis element in weight 6.
+Doing form 3. Form 3 hit with T_101 gives us a new basis element in weight 6.
+Doing form 4. Form 4 hit with T_101 gives us a new basis element in weight 6.
+Doing form 5. Form 5 hit with T_101 gives us a new basis element in weight 6.
+Doing form 6. Form 6 hit with T_101 gives us a new basis element in weight 6.
+Doing form 7. Form 7 hit with T_101 gives us a new basis element in weight 6.
+Doing form 8. Form 8 hit with T_101 gives us a new basis element in weight 6.
+Doing form 9. Form 9 hit with T_101 gives us a new basis element in weight 6.
+Doing form 10. Form 10 hit with T_101 gives us a new basis element in weight 6.
+Doing form 11. Form 11 hit with T_101 gives us a new basis element in weight 6.
+Doing form 12. Form 12 hit with T_101 gives us a new basis element in weight 6.
+Doing form 13. We didn't get anything new.
+Doing form 14. We didn't get anything new.
+Doing form 15. We didn't get anything new.
+Doing form 16. We didn't get anything new.
+Doing form 17. We didn't get anything new.
+Doing form 18. We didn't get anything new.
+Doing form 19. We didn't get anything new.
+Doing form 20. We didn't get anything new.
+Doing form 21. We didn't get anything new.
+Doing form 22. We didn't get anything new.
+Doing form 23. We didn't get anything new.
+Doing form 24. We didn't get anything new.
+Doing form 25. We didn't get anything new.
+Doing form 26. We didn't get anything new.
+Doing form 27. We didn't get anything new.
+Doing form 28. We didn't get anything new.
+Doing form 29. We didn't get anything new.
+Doing form 30. We didn't get anything new.
+Doing form 31. We didn't get anything new.
+Doing form 32. We didn't get anything new.
+Doing form 33. We didn't get anything new.
+Doing form 34. We didn't get anything new.
+Doing form 35. We didn't get anything new.
+Doing form 36. We didn't get anything new.
+Doing form 37. We didn't get anything new.
+Doing form 38. We didn't get anything new.
+Doing form 39. We didn't get anything new.
+Doing form 40. We didn't get anything new.
+Doing form 41. We didn't get anything new.
+Doing form 42. We didn't get anything new.
+Doing form 43. We didn't get anything new.
+Doing form 44. We didn't get anything new.
+Doing form 45. We didn't get anything new.
+Doing form 46. We didn't get anything new.
+Doing form 47. We didn't get anything new.
+Doing form 48. We didn't get anything new.
+Doing form 49. We didn't get anything new.
+Doing form 50. We didn't get anything new.
+Doing form 51. We didn't get anything new.
+Doing form 52. We didn't get anything new.
+Doing form 53. We didn't get anything new.
+Doing form 54. We didn't get anything new.
+Doing form 55. We didn't get anything new.
+Doing form 56. We didn't get anything new.
+Doing form 57. We didn't get anything new.
+Doing form 58. We didn't get anything new.
+Doing form 59. We didn't get anything new.
+Doing form 60. We didn't get anything new.
+Doing form 61. We didn't get anything new.
+Doing form 62. We didn't get anything new.
+Doing form 63. We didn't get anything new.
+Doing form 64. We didn't get anything new.
+Doing form 65. We didn't get anything new.
+Doing form 66. We didn't get anything new.
+Doing form 67. We didn't get anything new.
+Doing form 68. We didn't get anything new.
+Doing form 69. We didn't get anything new.
+Doing form 70. We didn't get anything new.
+Doing form 71. We didn't get anything new.
+Doing form 72. We didn't get anything new.
+Doing form 73. We didn't get anything new.
+Doing form 74. We didn't get anything new.
+Doing form 75. We didn't get anything new.
+Doing form 76. We didn't get anything new.
+Doing form 77. We didn't get anything new.
+Doing form 78. We didn't get anything new.
+Doing form 79. We didn't get anything new.
+Doing form 80. We didn't get anything new.
+Doing form 81. We didn't get anything new.
+Doing form 82. We didn't get anything new.
+Doing form 83. We didn't get anything new.
+Doing form 84. We didn't get anything new.
+Doing form 85. We didn't get anything new.
+Doing form 86. We didn't get anything new.
+Doing form 87. We didn't get anything new.
+Doing form 88. We didn't get anything new.
+Doing form 89. We didn't get anything new.
+Doing form 90. We didn't get anything new.
+Doing form 91. We didn't get anything new.
+Doing form 92. We didn't get anything new.
+Doing form 93. We didn't get anything new.
+Doing form 94. We didn't get anything new.
+Doing form 95. We didn't get anything new.
+Done. In the end we got 107 weight 6 forms.
+The dimension of M_6 is 107.
+Computing the subspace of weight 6 cusp forms.
+We get a space of dimension 97. It should be 97.
+Making weight 2 list 1.
+Trying 4-tuples of the first 9 Eisenstein series.
+Multiplying. Choosing order randomly.
+Doing product 1 of 495. 
+[Interrupt twice in half a second; exiting]
+
+Total time: 210.930 seconds, Total memory usage: 271.31MB

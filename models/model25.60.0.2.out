@@ -1,0 +1,220 @@
+The degree of that covering map is 2.
+Setting subsub to be subgroup 1 of index 1.
+The space of Eisenstein series has dimension 299.
+Computing action of generators of subsub intersect SL_2 on Eisenstein series for
+Gamma(25).
+Finding vectors invariant under subsub intersect SL_2.
+The dimension of the space of Eisenstein series for subsub intersect SL_2 is 11.
+Computing the action of the generators of subsub on the Q-vector space of 
+dimension 220.
+Finding vectors invariant under subsub.
+The dimension is 11.
+The index of subsub in covergp is 2.
+Form try attempt 1. Number of images is 2.
+The element [ 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ] works. It was number 1.
+Computing Weierstrass p-function Fourier expansions.
+Computing Fourier expansion 1.
+Computing Fourier expansion 2.
+Symmetrizing.
+Done!
+Call to ratfunc with m = 0.
+Call to ratfuncrep with deg = 30.
+Building last 31 rows of the matrix.
+Using coefficients -6/5 to 31/25.
+Time taken was 0.040.
+Building the first 31 rows of the matrix.
+Time taken was 0.030.
+Solving the linear system of size 62x62.
+Time taken was 0.030.
+Null space has dimension 1.
+Result has degree 30.
+Call to ratfunc with m = 1.
+Call to ratfuncrep with deg = 15.
+Building last 16 rows of the matrix.
+Using coefficients -3/5 to 16/25.
+Time taken was 0.000.
+Building the first 16 rows of the matrix.
+Time taken was 0.010.
+Solving the linear system of size 32x32.
+Time taken was 0.010.
+Null space has dimension 6.
+Result has degree 10.
+Curve equation is y^2 + (-150*x^10 - 1500*x^8 - 5250*x^6 + 1800*x^5 - 7500*x^4 +
+9000*x^3 - 3750*x^2 + 9000*x - 2400)/(x^10 + 10*x^8 + 35*x^6 - 18*x^5 + 50*x^4 -
+90*x^3 + 25*x^2 - 90*x + 76)*y + (-34875*x^30 - 1046250*x^28 - 14124375*x^26 + 
+1728000*x^25 - 113343750*x^24 + 43200000*x^23 - 601593750*x^22 + 475200000*x^21 
+- 2255681250*x^20 + 3024000000*x^19 - 6511359375*x^18 + 12312000000*x^17 - 
+16624406250*x^16 + 33767280000*x^15 - 40959843750*x^14 + 65869200000*x^13 - 
+87877968750*x^12 + 101455200000*x^11 - 139637334375*x^10 + 138402000000*x^9 - 
+153065531250*x^8 + 156276000000*x^7 - 123880921875*x^6 + 115231248000*x^5 - 
+80730000000*x^4 + 46416240000*x^3 - 30240000000*x^2 + 10506240000*x - 
+1248768000)/(x^30 + 30*x^28 + 405*x^26 - 36*x^25 + 3250*x^24 - 900*x^23 + 
+17250*x^22 - 9900*x^21 + 64230*x^20 - 63000*x^19 + 177725*x^18 - 256500*x^17 + 
+400350*x^16 - 700380*x^15 + 815250*x^14 - 1325700*x^13 + 1498250*x^12 - 
+1834200*x^11 + 2180805*x^10 - 2029500*x^9 + 2210550*x^8 - 1858500*x^7 + 
+1484425*x^6 - 1203444*x^5 + 684000*x^4 - 414720*x^3 + 192000*x^2 - 54720*x + 
+23104).
+Finding maximal order finite in function field extension. This may take a while.
+ring_ext_maximal_order_flags: called with algo_flag: 0
+no algorithm selected
+nothing about algebra-splitting selected
+nothing about reduced-discriminant selected
+nothing about dedekind-test selected
+ring_ext_maximal_order: checking control-devices
+ring_ext_maximal_order_flags: calling ring_ext_maximal_order_flags_sub
+ring_ext_maximal_order_flags_sub: called with algo_flag: 40
+no algorithm selected
+no algebra-splitting selected
+no reduced-discriminant selected
+nothing about dedekind-test selected
+Factorization of discriminant: 
+t - 1^2
+t^2 + 4^1
+t^4 + t^3 + 6*t^2 + 6*t + 11^2
+t^10 + 10*t^8 + 35*t^6 - 12*t^5 + 50*t^4 - 60*t^3 + 25*t^2 - 60*t + 16^2
+factors with (possibly) not maximal overorder:
+t - 1^2
+t^4 + t^3 + 6*t^2 + 6*t + 11^2
+t^10 + 10*t^8 + 35*t^6 - 12*t^5 + 50*t^4 - 60*t^3 + 25*t^2 - 60*t + 16^2
+-----------------------
+ring_ext_rnd2_max_p_sub called:
+prime: t - 1, prime_bound: 2, algo_flag: 40
+-----------------------
+no algorithm selected
+no algebra-splitting selected
+nothing about dedekind-test selected
+nothing about pauli selected
+---------------------------
+ring_ext_rnd2_max_p_sub_sub called:
+prime: t - 1, prime_bound: 2, algo_flag: 169
+---------------------------
+round2 selected
+no algebra-splitting selected
+no dedekind-test selected
+nothing about pauli selected
+No split performed ...
+(due to user advice or impossible) ... 
+standard algorithm.
+----------------------------
+ring_ext_rnd2_max_p_rnd2 called:
+prime: t - 1, prime_bound: 2, algo_flag: 169
+----------------------------
+no dedekind-test selected
+transformation for t - 1...
+index of order: t - 1
+-----------------------
+ring_ext_rnd2_max_p_sub called:
+prime: t^4 + t^3 + 6*t^2 + 6*t + 11, prime_bound: 2, algo_flag: 40
+-----------------------
+no algorithm selected
+no algebra-splitting selected
+nothing about dedekind-test selected
+nothing about pauli selected
+---------------------------
+ring_ext_rnd2_max_p_sub_sub called:
+prime: t^4 + t^3 + 6*t^2 + 6*t + 11, prime_bound: 2, algo_flag: 169
+---------------------------
+round2 selected
+no algebra-splitting selected
+no dedekind-test selected
+nothing about pauli selected
+No split performed ...
+(due to user advice or impossible) ... 
+standard algorithm.
+----------------------------
+ring_ext_rnd2_max_p_rnd2 called:
+prime: t^4 + t^3 + 6*t^2 + 6*t + 11, prime_bound: 2, algo_flag: 169
+----------------------------
+no dedekind-test selected
+transformation for t^4 + t^3 + 6*t^2 + 6*t + 11...
+index of order: t^4 + t^3 + 6*t^2 + 6*t + 11
+-----------------------
+ring_ext_rnd2_max_p_sub called:
+prime: t^10 + 10*t^8 + 35*t^6 - 12*t^5 + 50*t^4 - 60*t^3 + 25*t^2 - 60*t + 16, 
+prime_bound: 2, algo_flag: 40
+-----------------------
+no algorithm selected
+no algebra-splitting selected
+nothing about dedekind-test selected
+nothing about pauli selected
+---------------------------
+ring_ext_rnd2_max_p_sub_sub called:
+prime: t^10 + 10*t^8 + 35*t^6 - 12*t^5 + 50*t^4 - 60*t^3 + 25*t^2 - 60*t + 16, 
+prime_bound: 2, algo_flag: 169
+---------------------------
+round2 selected
+no algebra-splitting selected
+no dedekind-test selected
+nothing about pauli selected
+No split performed ...
+(due to user advice or impossible) ... 
+standard algorithm.
+----------------------------
+ring_ext_rnd2_max_p_rnd2 called:
+prime: t^10 + 10*t^8 + 35*t^6 - 12*t^5 + 50*t^4 - 60*t^3 + 25*t^2 - 60*t + 16, 
+prime_bound: 2, algo_flag: 169
+----------------------------
+no dedekind-test selected
+transformation for t^10 + 10*t^8 + 35*t^6 - 12*t^5 + 50*t^4 - 60*t^3 + 25*t^2 - 
+    60*t + 16...
+index of order: t^10 + 10*t^8 + 35*t^6 - 12*t^5 + 50*t^4 - 60*t^3 + 25*t^2 - 
+    60*t + 16
+Time taken was 0.050.
+Iteration 1.
+mlist = [ 15, 16 ].
+Working with basis of size 3.
+Simplest element defining the field has index 3.
+Using tvals = [ -2, 0, 2, 3, 5, 6, 7 ].
+Computing specialization 1 of 7.
+Computing LLLed maximal order.
+Computing specialization 2 of 7.
+Computing LLLed maximal order.
+Computing specialization 3 of 7.
+Computing LLLed maximal order.
+Computing specialization 4 of 7.
+Computing LLLed maximal order.
+Computing specialization 5 of 7.
+Computing LLLed maximal order.
+Computing specialization 6 of 7.
+Computing LLLed maximal order.
+Computing specialization 7 of 7.
+Computing LLLed maximal order.
+Clearing denominators.
+Saturating.
+LLLing. (Just for fun. It's not real yet.)
+Changing coordinates.
+Changing coordinates.
+Minimal size model has 17 characters. Index is 3.
+Simplified equation is y^2 - 5/4*x^2 - 5.
+In this equation, Q(x) is the function field of the modular curve with label 
+25.30.0.1.
+And Q(x,y) is the function field of the modular curve with label 25.60.0.2.
+Searching for a non-singular rational point with bound 10.
+Parametrizing the curve.
+Found it!
+We have X = (4*x^2 + 8*x + 16/5)/(x^2 - 4/5).
+We have Y = (5*x^2 + 8*x + 4)/(x^2 - 4/5).
+Computing uniformizer coefficients.
+Computing uniformizer...
+Initial covering map is (4*x^2 + 8*x + 16/5)/(x^2 - 4/5).
+Call to supersimplify.
+Entering simplification iteration. Current size = 32.
+Size after scaling = 31.
+Translation check done. New size = 31.
+Doing up to 5 rounds of substitutions.
+After round 1 size = 25.
+Doing two more random checks.
+Final size is 25.
+Entering simplification iteration. Current size = 25.
+Size after scaling = 25.
+Translation check done. New size = 25.
+Doing up to 5 rounds of substitutions.
+Doing two more random checks.
+Final size is 25.
+The final model is y = (x^2 - 5)/(x^2 + 5*x + 5).
+Here Q(y) is the function field of 25.60.0.2, and Q(x) is the
+function field of 25.30.0.1.
+Fourier expansion of hauptmodul written to modfunc25.60.0.2.txt. Done with model
+computation.
+
+Total time: 86.670 seconds, Total memory usage: 295.00MB

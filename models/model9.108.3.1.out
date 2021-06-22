@@ -1,0 +1,482 @@
+The degree of that covering map is 3.
+Setting subsub to be subgroup 1 of index 1.
+The space of Eisenstein series has dimension 35.
+Computing action of generators of subsub intersect SL_2 on Eisenstein series for
+Gamma(9).
+Finding vectors invariant under subsub intersect SL_2.
+The dimension of the space of Eisenstein series for subsub intersect SL_2 is 11.
+Computing the action of the generators of subsub on the Q-vector space of 
+dimension 66.
+Finding vectors invariant under subsub.
+The dimension is 11.
+The index of subsub in covergp is 3.
+Form try attempt 1. Number of images is 3.
+The element [ 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ] works. It was number 1.
+Computing Weierstrass p-function Fourier expansions.
+Computing Fourier expansion 1.
+Computing Fourier expansion 2.
+Computing Fourier expansion 3.
+Symmetrizing.
+Done!
+Call to ratfunc with m = 0.
+Call to ratfuncrep with deg = 54.
+Building last 55 rows of the matrix.
+Using coefficients 0 to 109/9.
+Time taken was 4.320.
+Building the first 55 rows of the matrix.
+Time taken was 3.610.
+Solving the linear system of size 110x110.
+Time taken was 0.120.
+Null space has dimension 1.
+Result has degree 54.
+Call to ratfunc with m = 1.
+Call to ratfuncrep with deg = 36.
+Building last 37 rows of the matrix.
+Using coefficients 0 to 73/9.
+Time taken was 1.110.
+Building the first 37 rows of the matrix.
+Time taken was 0.950.
+Solving the linear system of size 74x74.
+Time taken was 0.030.
+Null space has dimension 1.
+Result has degree 36.
+Call to ratfunc with m = 2.
+Call to ratfuncrep with deg = 18.
+Building last 19 rows of the matrix.
+Using coefficients 0 to 37/9.
+Time taken was 0.090.
+Building the first 19 rows of the matrix.
+Time taken was 0.090.
+Solving the linear system of size 38x38.
+Time taken was 0.010.
+Null space has dimension 1.
+Result has degree 18.
+Curve equation is y^3 + (-405/11*x^18 + 5103/11*x^17 - 111537/44*x^16 + 
+85050/11*x^15 - 309825/22*x^14 + 28431/2*x^13 - 96471/44*x^12 - 178605/11*x^11 +
+1117557/44*x^10 - 377055/22*x^9 + 26973/44*x^8 + 98415/11*x^7 - 323919/44*x^6 + 
+44469/22*x^5 + 10935/22*x^4 - 2430/11*x^3 - 12393/44*x^2 + 2187/11*x - 
+405/11)/(x^18 - 162/11*x^17 + 3987/44*x^16 - 3336/11*x^15 + 1161/2*x^14 - 
+1071/2*x^13 - 5847/44*x^12 + 9666/11*x^11 - 34731/44*x^10 + 1979/22*x^9 + 
+12393/44*x^8 - 2304/11*x^7 + 3981/44*x^6 - 189/22*x^5 - 99/2*x^4 + 444/11*x^3 - 
+27/4*x^2 - 36/11*x + 1)*y^2 + (-236925/121*x^36 + 648810/11*x^35 - 
+201596931/242*x^34 + 1766859075/242*x^33 - 85661090325/1936*x^32 + 
+2147248359/11*x^31 - 310027375503/484*x^30 + 753846089283/484*x^29 - 
+2602808811153/968*x^28 + 676648984203/242*x^27 - 89691076683/968*x^26 - 
+1315215039753/242*x^25 + 18930359965401/1936*x^24 - 3503284412769/484*x^23 - 
+109497882753/44*x^22 + 5387934085965/484*x^21 - 19046914630119/1936*x^20 + 
+47268464247/242*x^19 + 6941975568399/968*x^18 - 1377921788505/242*x^17 - 
+495804878199/1936*x^16 + 1491005426157/484*x^15 - 723721027419/484*x^14 - 
+285022251225/484*x^13 + 1514116216233/1936*x^12 - 14725812393/242*x^11 - 
+215417087739/968*x^10 + 17621210853/242*x^9 + 37707465951/968*x^8 - 
+11542768029/484*x^7 - 1287337455/484*x^6 + 471945123/121*x^5 - 
+117699237/1936*x^4 - 111991167/242*x^3 + 1798443/22*x^2 + 1436130/121*x - 
+382725/121)/(x^36 - 324/11*x^35 + 96345/242*x^34 - 396339/121*x^33 + 
+35437689/1936*x^32 - 8848809/121*x^31 + 102939015/484*x^30 - 214642035/484*x^29 
++ 590713785/968*x^28 - 86741257/242*x^27 - 528184557/968*x^26 + 
+199514718/121*x^25 - 3556528389/1936*x^24 + 244322973/484*x^23 + 
+656403939/484*x^22 - 973260405/484*x^21 + 1995435891/1936*x^20 + 
+41057334/121*x^19 - 873704607/968*x^18 + 78163137/121*x^17 - 294326325/1936*x^16
+- 88595253/484*x^15 + 120436227/484*x^14 - 5607009/44*x^13 - 738999/176*x^12 + 
+5763069/121*x^11 - 30745629/968*x^10 + 2255063/242*x^9 + 217323/88*x^8 - 
+2367315/484*x^7 + 111525/44*x^6 - 2619/11*x^5 - 614943/1936*x^4 + 1374/11*x^3 - 
+675/242*x^2 - 72/11*x + 1)*y + (-273375/11*x^54 + 1512802575/1331*x^53 - 
+11992556655/484*x^52 + 911153930193/2662*x^51 - 71527991406057/21296*x^50 + 
+529592860246959/21296*x^49 - 12263235090843123/85184*x^48 + 
+7089046216493229/10648*x^47 - 105984390112748901/42592*x^46 + 
+321069694574295801/42592*x^45 - 1564496701273964187/85184*x^44 + 
+746675024403730311/21296*x^43 - 4156145703452240919/85184*x^42 + 
+1587656883388879845/42592*x^41 + 528118546062383523/21296*x^40 - 
+707947317673497477/5324*x^39 + 18795178685686900005/85184*x^38 - 
+1926679622188389543/10648*x^37 - 125821295890557147/3872*x^36 + 
+405676881397989486/1331*x^35 - 17159411639489240799/42592*x^34 + 
+252853210701223272/1331*x^33 + 16250325744680965827/85184*x^32 - 
+4360630459494023703/10648*x^31 + 5875483859028867285/21296*x^30 + 
+2457960159528925371/42592*x^29 - 22579663735272670245/85184*x^28 + 
+34153258001224059/176*x^27 + 1041252355827844515/85184*x^26 - 
+5367205482354683685/42592*x^25 + 1767111179361050097/21296*x^24 + 
+110036585390378013/10648*x^23 - 3940430739988843701/85184*x^22 + 
+114634385598118473/5324*x^21 + 348747695574527241/42592*x^20 - 
+66318720556534749/5324*x^19 + 108007144248821751/42592*x^18 + 
+35180686361692665/10648*x^17 - 180199138741747155/85184*x^16 - 
+677658619749213/2662*x^15 + 14798789195794083/21296*x^14 - 
+6373855242561339/42592*x^13 - 10916447203592127/85184*x^12 + 
+1449442494344835/21296*x^11 + 868640773645341/85184*x^10 - 
+656257637763711/42592*x^9 + 63640654878627/42592*x^8 + 22836160601865/10648*x^7 
+- 54144672447627/85184*x^6 - 2939311945233/21296*x^5 + 1854319467087/21296*x^4 -
+363665295/2662*x^3 - 40849606125/5324*x^2 + 223894125/121*x - 
+192729375/1331)/(x^54 - 486/11*x^53 + 446499/484*x^52 - 16119747/1331*x^51 + 
+2387974689/21296*x^50 - 8282948247/10648*x^49 + 356790777867/85184*x^48 - 
+95105231055/5324*x^47 + 2593524965805/42592*x^46 - 7048029096255/42592*x^45 + 
+29943914945247/85184*x^44 - 2932341880383/5324*x^43 + 44101184906619/85184*x^42 
++ 4760939856951/42592*x^41 - 30597520526865/21296*x^40 + 5340602329839/1936*x^39
+- 224552961861453/85184*x^38 + 2802676914225/21296*x^37 + 
+152879175448107/42592*x^36 - 116271092565387/21296*x^35 + 
+140951720638467/42592*x^34 + 1400310078867/968*x^33 - 408868522118487/85184*x^32
++ 2022808241871/484*x^31 - 199559414493/242*x^30 - 87675387936507/42592*x^29 + 
+221787778014441/85184*x^28 - 28201347917645/21296*x^27 - 
+18955344962475/85184*x^26 + 3709807920315/3872*x^25 - 8287371434205/10648*x^24 +
+286261958574/1331*x^23 + 15721630366725/85184*x^22 - 2677102188957/10648*x^21 + 
+505508544549/3872*x^20 - 134077120965/21296*x^19 - 1948345920021/42592*x^18 + 
+829229354883/21296*x^17 - 1139900839281/85184*x^16 - 70823360349/21296*x^15 + 
+136596934791/21296*x^14 - 143512563861/42592*x^13 + 46638836847/85184*x^12 + 
+5267141721/10648*x^11 - 38915324397/85184*x^10 + 6866076777/42592*x^9 + 
+332556921/42592*x^8 - 83482785/2662*x^7 + 83514933/7744*x^6 + 857871/5324*x^5 - 
+1977237/1936*x^4 + 290934/1331*x^3 + 5751/484*x^2 - 108/11*x + 1).
+Finding maximal order finite in function field extension. This may take a while.
+ring_ext_maximal_order_flags: called with algo_flag: 0
+no algorithm selected
+nothing about algebra-splitting selected
+nothing about reduced-discriminant selected
+nothing about dedekind-test selected
+ring_ext_maximal_order: checking control-devices
+ring_ext_maximal_order_flags: calling ring_ext_maximal_order_flags_sub
+ring_ext_maximal_order_flags_sub: called with algo_flag: 40
+no algorithm selected
+no algebra-splitting selected
+no reduced-discriminant selected
+nothing about dedekind-test selected
+Factorization of discriminant: 
+t - 2^2
+t - 1/2^6
+t + 1^2
+t^2 - t + 1^6
+t^3 - 6*t^2 + 12*t - 5^6
+t^3 - 3*t^2 + 1^2
+t^3 - 3/2*t^2 - 3/2*t - 1/2^6
+t^3 - 3/5*t^2 - 3/5*t + 2/5^6
+t^3 - 3*t + 1^2
+t^10 - 11*t^9 + 48*t^8 - 106*t^7 + 193/2*t^6 + 48*t^5 - 337/2*t^4 + 46*t^3 + 
+    225/2*t^2 - 21*t - 51/2^2
+factors with (possibly) not maximal overorder:
+t - 2^2
+t - 1/2^6
+t + 1^2
+t^2 - t + 1^6
+t^3 - 6*t^2 + 12*t - 5^6
+t^3 - 3*t^2 + 1^2
+t^3 - 3/2*t^2 - 3/2*t - 1/2^6
+t^3 - 3/5*t^2 - 3/5*t + 2/5^6
+t^3 - 3*t + 1^2
+t^10 - 11*t^9 + 48*t^8 - 106*t^7 + 193/2*t^6 + 48*t^5 - 337/2*t^4 + 46*t^3 + 
+    225/2*t^2 - 21*t - 51/2^2
+-----------------------
+ring_ext_rnd2_max_p_sub called:
+prime: t - 2, prime_bound: 2, algo_flag: 40
+-----------------------
+no algorithm selected
+no algebra-splitting selected
+nothing about dedekind-test selected
+nothing about pauli selected
+---------------------------
+ring_ext_rnd2_max_p_sub_sub called:
+prime: t - 2, prime_bound: 2, algo_flag: 169
+---------------------------
+round2 selected
+no algebra-splitting selected
+no dedekind-test selected
+nothing about pauli selected
+No split performed ...
+(due to user advice or impossible) ... 
+standard algorithm.
+----------------------------
+ring_ext_rnd2_max_p_rnd2 called:
+prime: t - 2, prime_bound: 2, algo_flag: 169
+----------------------------
+no dedekind-test selected
+Order is already t - 2-maximal.
+-----------------------
+ring_ext_rnd2_max_p_sub called:
+prime: t - 1/2, prime_bound: 6, algo_flag: 40
+-----------------------
+no algorithm selected
+no algebra-splitting selected
+nothing about dedekind-test selected
+nothing about pauli selected
+---------------------------
+ring_ext_rnd2_max_p_sub_sub called:
+prime: t - 1/2, prime_bound: 6, algo_flag: 169
+---------------------------
+round2 selected
+no algebra-splitting selected
+no dedekind-test selected
+nothing about pauli selected
+No split performed ...
+(due to user advice or impossible) ... 
+standard algorithm.
+----------------------------
+ring_ext_rnd2_max_p_rnd2 called:
+prime: t - 1/2, prime_bound: 6, algo_flag: 169
+----------------------------
+no dedekind-test selected
+transformation for t - 1/2...
+index of order: t^3 - 3/2*t^2 + 3/4*t - 1/8
+-----------------------
+ring_ext_rnd2_max_p_sub called:
+prime: t + 1, prime_bound: 2, algo_flag: 40
+-----------------------
+no algorithm selected
+no algebra-splitting selected
+nothing about dedekind-test selected
+nothing about pauli selected
+---------------------------
+ring_ext_rnd2_max_p_sub_sub called:
+prime: t + 1, prime_bound: 2, algo_flag: 169
+---------------------------
+round2 selected
+no algebra-splitting selected
+no dedekind-test selected
+nothing about pauli selected
+No split performed ...
+(due to user advice or impossible) ... 
+standard algorithm.
+----------------------------
+ring_ext_rnd2_max_p_rnd2 called:
+prime: t + 1, prime_bound: 2, algo_flag: 169
+----------------------------
+no dedekind-test selected
+Order is already t + 1-maximal.
+-----------------------
+ring_ext_rnd2_max_p_sub called:
+prime: t^2 - t + 1, prime_bound: 6, algo_flag: 40
+-----------------------
+no algorithm selected
+no algebra-splitting selected
+nothing about dedekind-test selected
+nothing about pauli selected
+---------------------------
+ring_ext_rnd2_max_p_sub_sub called:
+prime: t^2 - t + 1, prime_bound: 6, algo_flag: 169
+---------------------------
+round2 selected
+no algebra-splitting selected
+no dedekind-test selected
+nothing about pauli selected
+No split performed ...
+(due to user advice or impossible) ... 
+standard algorithm.
+----------------------------
+ring_ext_rnd2_max_p_rnd2 called:
+prime: t^2 - t + 1, prime_bound: 6, algo_flag: 169
+----------------------------
+no dedekind-test selected
+transformation for t^2 - t + 1...
+index of order: t^6 - 3*t^5 + 6*t^4 - 7*t^3 + 6*t^2 - 3*t + 1
+-----------------------
+ring_ext_rnd2_max_p_sub called:
+prime: t^3 - 6*t^2 + 12*t - 5, prime_bound: 6, algo_flag: 40
+-----------------------
+no algorithm selected
+no algebra-splitting selected
+nothing about dedekind-test selected
+nothing about pauli selected
+---------------------------
+ring_ext_rnd2_max_p_sub_sub called:
+prime: t^3 - 6*t^2 + 12*t - 5, prime_bound: 6, algo_flag: 169
+---------------------------
+round2 selected
+no algebra-splitting selected
+no dedekind-test selected
+nothing about pauli selected
+No split performed ...
+(due to user advice or impossible) ... 
+standard algorithm.
+----------------------------
+ring_ext_rnd2_max_p_rnd2 called:
+prime: t^3 - 6*t^2 + 12*t - 5, prime_bound: 6, algo_flag: 169
+----------------------------
+no dedekind-test selected
+transformation for t^3 - 6*t^2 + 12*t - 5...
+index of order: t^9 - 18*t^8 + 144*t^7 - 663*t^6 + 1908*t^5 - 3492*t^4 + 
+    3963*t^3 - 2610*t^2 + 900*t - 125
+-----------------------
+ring_ext_rnd2_max_p_sub called:
+prime: t^3 - 3*t^2 + 1, prime_bound: 2, algo_flag: 40
+-----------------------
+no algorithm selected
+no algebra-splitting selected
+nothing about dedekind-test selected
+nothing about pauli selected
+---------------------------
+ring_ext_rnd2_max_p_sub_sub called:
+prime: t^3 - 3*t^2 + 1, prime_bound: 2, algo_flag: 169
+---------------------------
+round2 selected
+no algebra-splitting selected
+no dedekind-test selected
+nothing about pauli selected
+No split performed ...
+(due to user advice or impossible) ... 
+standard algorithm.
+----------------------------
+ring_ext_rnd2_max_p_rnd2 called:
+prime: t^3 - 3*t^2 + 1, prime_bound: 2, algo_flag: 169
+----------------------------
+no dedekind-test selected
+Order is already t^3 - 3*t^2 + 1-maximal.
+-----------------------
+ring_ext_rnd2_max_p_sub called:
+prime: t^3 - 3/2*t^2 - 3/2*t - 1/2, prime_bound: 6, algo_flag: 40
+-----------------------
+no algorithm selected
+no algebra-splitting selected
+nothing about dedekind-test selected
+nothing about pauli selected
+---------------------------
+ring_ext_rnd2_max_p_sub_sub called:
+prime: t^3 - 3/2*t^2 - 3/2*t - 1/2, prime_bound: 6, algo_flag: 169
+---------------------------
+round2 selected
+no algebra-splitting selected
+no dedekind-test selected
+nothing about pauli selected
+No split performed ...
+(due to user advice or impossible) ... 
+standard algorithm.
+----------------------------
+ring_ext_rnd2_max_p_rnd2 called:
+prime: t^3 - 3/2*t^2 - 3/2*t - 1/2, prime_bound: 6, algo_flag: 169
+----------------------------
+no dedekind-test selected
+transformation for t^3 - 3/2*t^2 - 3/2*t - 1/2...
+index of order: t^9 - 9/2*t^8 + 9/4*t^7 + 69/8*t^6 + 9/8*t^5 - 9*t^4 - 75/8*t^3 
+    - 9/2*t^2 - 9/8*t - 1/8
+-----------------------
+ring_ext_rnd2_max_p_sub called:
+prime: t^3 - 3/5*t^2 - 3/5*t + 2/5, prime_bound: 6, algo_flag: 40
+-----------------------
+no algorithm selected
+no algebra-splitting selected
+nothing about dedekind-test selected
+nothing about pauli selected
+---------------------------
+ring_ext_rnd2_max_p_sub_sub called:
+prime: t^3 - 3/5*t^2 - 3/5*t + 2/5, prime_bound: 6, algo_flag: 169
+---------------------------
+round2 selected
+no algebra-splitting selected
+no dedekind-test selected
+nothing about pauli selected
+No split performed ...
+(due to user advice or impossible) ... 
+standard algorithm.
+----------------------------
+ring_ext_rnd2_max_p_rnd2 called:
+prime: t^3 - 3/5*t^2 - 3/5*t + 2/5, prime_bound: 6, algo_flag: 169
+----------------------------
+no dedekind-test selected
+transformation for t^3 - 3/5*t^2 - 3/5*t + 2/5...
+index of order: t^9 - 9/5*t^8 - 18/25*t^7 + 393/125*t^6 - 126/125*t^5 - 
+    207/125*t^4 + 141/125*t^3 + 18/125*t^2 - 36/125*t + 8/125
+-----------------------
+ring_ext_rnd2_max_p_sub called:
+prime: t^3 - 3*t + 1, prime_bound: 2, algo_flag: 40
+-----------------------
+no algorithm selected
+no algebra-splitting selected
+nothing about dedekind-test selected
+nothing about pauli selected
+---------------------------
+ring_ext_rnd2_max_p_sub_sub called:
+prime: t^3 - 3*t + 1, prime_bound: 2, algo_flag: 169
+---------------------------
+round2 selected
+no algebra-splitting selected
+no dedekind-test selected
+nothing about pauli selected
+No split performed ...
+(due to user advice or impossible) ... 
+standard algorithm.
+----------------------------
+ring_ext_rnd2_max_p_rnd2 called:
+prime: t^3 - 3*t + 1, prime_bound: 2, algo_flag: 169
+----------------------------
+no dedekind-test selected
+transformation for t^3 - 3*t + 1...
+index of order: t^3 - 3*t + 1
+-----------------------
+ring_ext_rnd2_max_p_sub called:
+prime: t^10 - 11*t^9 + 48*t^8 - 106*t^7 + 193/2*t^6 + 48*t^5 - 337/2*t^4 + 
+    46*t^3 + 225/2*t^2 - 21*t - 51/2, prime_bound: 2, algo_flag: 40
+-----------------------
+no algorithm selected
+no algebra-splitting selected
+nothing about dedekind-test selected
+nothing about pauli selected
+---------------------------
+ring_ext_rnd2_max_p_sub_sub called:
+prime: t^10 - 11*t^9 + 48*t^8 - 106*t^7 + 193/2*t^6 + 48*t^5 - 337/2*t^4 + 
+    46*t^3 + 225/2*t^2 - 21*t - 51/2, prime_bound: 2, algo_flag: 169
+---------------------------
+round2 selected
+no algebra-splitting selected
+no dedekind-test selected
+nothing about pauli selected
+No split performed ...
+(due to user advice or impossible) ... 
+standard algorithm.
+----------------------------
+ring_ext_rnd2_max_p_rnd2 called:
+prime: t^10 - 11*t^9 + 48*t^8 - 106*t^7 + 193/2*t^6 + 48*t^5 - 337/2*t^4 + 
+    46*t^3 + 225/2*t^2 - 21*t - 51/2, prime_bound: 2, algo_flag: 169
+----------------------------
+no dedekind-test selected
+transformation for t^10 - 11*t^9 + 48*t^8 - 106*t^7 + 193/2*t^6 + 48*t^5 - 
+    337/2*t^4 + 46*t^3 + 225/2*t^2 - 21*t - 51/2...
+index of order: t^10 - 11*t^9 + 48*t^8 - 106*t^7 + 193/2*t^6 + 48*t^5 - 
+    337/2*t^4 + 46*t^3 + 225/2*t^2 - 21*t - 51/2
+Time taken was 0.100.
+Iteration 1.
+mlist = [ 37, 43, 42 ].
+Updating...
+Done.
+Iteration 2.
+mlist = [ 37, 42, 42 ].
+Updating...
+Done.
+Iteration 3.
+mlist = [ 37, 42, 41 ].
+Updating...
+Done.
+Iteration 4.
+mlist = [ 37, 41, 41 ].
+Updating...
+Done.
+Iteration 5.
+mlist = [ 37, 41, 40 ].
+Updating...
+Done.
+Iteration 6.
+mlist = [ 37, 40, 40 ].
+Updating...
+Done.
+Iteration 7.
+mlist = [ 37, 40, 39 ].
+Working with basis of size 7.
+Simplest element defining the field has index 5.
+Using tvals = [ -2, 0, 1, 3, 4, 5, 6 ].
+Computing specialization 1 of 7.
+Computing LLLed maximal order.
+Computing specialization 2 of 7.
+Computing LLLed maximal order.
+Computing specialization 3 of 7.
+Computing LLLed maximal order.
+Computing specialization 4 of 7.
+Computing LLLed maximal order.
+Computing specialization 5 of 7.
+Computing LLLed maximal order.
+Computing specialization 6 of 7.
+Computing LLLed maximal order.
+Computing specialization 7 of 7.
+Computing LLLed maximal order.
+Clearing denominators.
+Saturating.
+LLLing. (Just for fun. It's not real yet.)
+Changing coordinates.
+Changing coordinates.
+Minimal size model has 52 characters. Index is 5.
+Simplified equation is y^3 + 3*x^6 - 18*x^5 + 27*x^4 + 15*x^3 - 45*x^2 + 12.
+In this equation, Q(x) is the function field of the modular curve with label 
+9.36.0.8.
+And Q(x,y) is the function field of the modular curve with label 9.108.3.1.
+
+Total time: 14.390 seconds, Total memory usage: 32.09MB

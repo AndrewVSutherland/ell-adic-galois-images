@@ -1,0 +1,4 @@
+F<t> := FunctionField(Rationals());
+X5_24_0_1 := EllipticCurve([0,0,0,-27*t^4 + 324*t^3 - 378*t^2 - 324*t - 
+27,54*t^6 - 972*t^5 + 4050*t^4 + 4050*t^2 + 972*t + 54]);
+return X5_24_0_1;

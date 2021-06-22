@@ -1,0 +1,616 @@
+The modular forms for this subgroup have a Fourier expansion expressible in 
+terms of q^(1/13).
+Found good field number 1.
+The Fourier coefficients of the modular forms live in the field Number Field 
+with defining polynomial $.1^3 - 13*$.1^2 + 26*$.1 - 13 over the Rational Field.
+Precision goes up to q^120.
+Subgroup 13.91.3.2 has genus 3. It has 7 cusps and 2 Galois orbits of cusps with
+sizes [ 3, 4 ].
+The space of Eisenstein series has dimension 83.
+Computing action of generators of subsub intersect SL_2 on Eisenstein series for
+Gamma(13).
+Finding vectors invariant under subsub intersect SL_2.
+The dimension of the space of Eisenstein series for subsub intersect SL_2 is 6.
+Computing the action of the generators of subsub on the Q-vector space of 
+dimension 72.
+Finding vectors invariant under subsub.
+The dimension is 6.
+Computing Weierstrass p-function Fourier expansions.
+Computing expansion 1 of 83.
+Computing expansion 2 of 83.
+Computing expansion 3 of 83.
+Computing expansion 4 of 83.
+Computing expansion 5 of 83.
+Computing expansion 6 of 83.
+Computing expansion 7 of 83.
+Computing expansion 8 of 83.
+Computing expansion 9 of 83.
+Computing expansion 10 of 83.
+Computing expansion 11 of 83.
+Computing expansion 12 of 83.
+Computing expansion 13 of 83.
+Computing expansion 14 of 83.
+Computing expansion 15 of 83.
+Computing expansion 16 of 83.
+Computing expansion 17 of 83.
+Computing expansion 18 of 83.
+Computing expansion 19 of 83.
+Computing expansion 20 of 83.
+Computing expansion 21 of 83.
+Computing expansion 22 of 83.
+Computing expansion 23 of 83.
+Computing expansion 24 of 83.
+Computing expansion 25 of 83.
+Computing expansion 26 of 83.
+Computing expansion 27 of 83.
+Computing expansion 28 of 83.
+Computing expansion 29 of 83.
+Computing expansion 30 of 83.
+Computing expansion 31 of 83.
+Computing expansion 32 of 83.
+Computing expansion 33 of 83.
+Computing expansion 34 of 83.
+Computing expansion 35 of 83.
+Computing expansion 36 of 83.
+Computing expansion 37 of 83.
+Computing expansion 38 of 83.
+Computing expansion 39 of 83.
+Computing expansion 40 of 83.
+Computing expansion 41 of 83.
+Computing expansion 42 of 83.
+Computing expansion 43 of 83.
+Computing expansion 44 of 83.
+Computing expansion 45 of 83.
+Computing expansion 46 of 83.
+Computing expansion 47 of 83.
+Computing expansion 48 of 83.
+Computing expansion 49 of 83.
+Computing expansion 50 of 83.
+Computing expansion 51 of 83.
+Computing expansion 52 of 83.
+Computing expansion 53 of 83.
+Computing expansion 54 of 83.
+Computing expansion 55 of 83.
+Computing expansion 56 of 83.
+Computing expansion 57 of 83.
+Computing expansion 58 of 83.
+Computing expansion 59 of 83.
+Computing expansion 60 of 83.
+Computing expansion 61 of 83.
+Computing expansion 62 of 83.
+Computing expansion 63 of 83.
+Computing expansion 64 of 83.
+Computing expansion 65 of 83.
+Computing expansion 66 of 83.
+Computing expansion 67 of 83.
+Computing expansion 68 of 83.
+Computing expansion 69 of 83.
+Computing expansion 70 of 83.
+Computing expansion 71 of 83.
+Computing expansion 72 of 83.
+Computing expansion 73 of 83.
+Computing expansion 74 of 83.
+Computing expansion 75 of 83.
+Computing expansion 76 of 83.
+Computing expansion 77 of 83.
+Computing expansion 78 of 83.
+Computing expansion 79 of 83.
+Computing expansion 80 of 83.
+Computing expansion 81 of 83.
+Computing expansion 82 of 83.
+Computing expansion 83 of 83.
+Computing actual Eisenstein series.
+Doing series 1.
+Doing series 2.
+Doing series 3.
+Doing series 4.
+Doing series 5.
+Doing series 6.
+LLL-ing Eisenstein series Fourier expansions.
+Nicefying 6x60843 matrix with denominator 292.
+Computing saturation.
+Done.
+Calling LLL.
+Done.
+Trying 3-tuples of the first 6 Eisenstein series.
+Multiplying. Choosing order randomly.
+Doing product 1 of 56. We get basis element 1 of 31.
+Doing product 2 of 56. We get basis element 2 of 31.
+Doing product 3 of 56. We get basis element 3 of 31.
+Doing product 4 of 56. We get basis element 4 of 31.
+Doing product 5 of 56. We get basis element 5 of 31.
+Doing product 6 of 56. We get basis element 6 of 31.
+Doing product 7 of 56. We get basis element 7 of 31.
+Doing product 8 of 56. We get basis element 8 of 31.
+Doing product 9 of 56. We get basis element 9 of 31.
+Doing product 10 of 56. We get basis element 10 of 31.
+Doing product 11 of 56. We get basis element 11 of 31.
+Doing product 12 of 56. We get basis element 12 of 31.
+Doing product 13 of 56. We get basis element 13 of 31.
+Doing product 14 of 56. We get basis element 14 of 31.
+Doing product 15 of 56. We get basis element 15 of 31.
+Doing product 16 of 56. We get basis element 16 of 31.
+Doing product 17 of 56. We get basis element 17 of 31.
+Doing product 18 of 56. We get basis element 18 of 31.
+Doing product 19 of 56. We get basis element 19 of 31.
+Doing product 20 of 56. We get basis element 20 of 31.
+Doing product 21 of 56. We get basis element 21 of 31.
+Doing product 22 of 56. We get basis element 22 of 31.
+Doing product 23 of 56. We get basis element 23 of 31.
+Doing product 24 of 56. We get basis element 24 of 31.
+Doing product 25 of 56. We get basis element 25 of 31.
+Doing product 26 of 56. We get basis element 26 of 31.
+Doing product 27 of 56. We get basis element 27 of 31.
+Doing product 28 of 56. We get basis element 28 of 31.
+Doing product 29 of 56. We get basis element 29 of 31.
+Doing product 30 of 56. We get basis element 30 of 31.
+Doing product 31 of 56. We get basis element 31 of 31.
+Applying T_53.
+Doing form 1. Form 1 hit with T_53 gives us a new basis element in weight 6.
+Doing form 2. Form 2 hit with T_53 gives us a new basis element in weight 6.
+Doing form 3. Form 3 hit with T_53 gives us a new basis element in weight 6.
+Doing form 4. Form 4 hit with T_53 gives us a new basis element in weight 6.
+Doing form 5. Form 5 hit with T_53 gives us a new basis element in weight 6.
+Doing form 6. Form 6 hit with T_53 gives us a new basis element in weight 6.
+Doing form 7. Form 7 hit with T_53 gives us a new basis element in weight 6.
+Doing form 8. Form 8 hit with T_53 gives us a new basis element in weight 6.
+Doing form 9. Form 9 hit with T_53 gives us a new basis element in weight 6.
+Doing form 10. Form 10 hit with T_53 gives us a new basis element in weight 6.
+Doing form 11. Form 11 hit with T_53 gives us a new basis element in weight 6.
+Doing form 12. We didn't get anything new.
+Doing form 13. We didn't get anything new.
+Doing form 14. We didn't get anything new.
+Doing form 15. We didn't get anything new.
+Doing form 16. We didn't get anything new.
+Doing form 17. We didn't get anything new.
+Doing form 18. We didn't get anything new.
+Doing form 19. We didn't get anything new.
+Doing form 20. We didn't get anything new.
+Doing form 21. We didn't get anything new.
+Doing form 22. We didn't get anything new.
+Doing form 23. We didn't get anything new.
+Doing form 24. We didn't get anything new.
+Doing form 25. We didn't get anything new.
+Doing form 26. We didn't get anything new.
+Doing form 27. We didn't get anything new.
+Doing form 28. We didn't get anything new.
+Doing form 29. We didn't get anything new.
+Doing form 30. We didn't get anything new.
+Doing form 31. We didn't get anything new.
+Done. In the end we got 42 weight 6 forms.
+The dimension of M_6 is 42.
+Computing the subspace of weight 6 cusp forms.
+We get a space of dimension 35. It should be 35.
+Making weight 2 list 1.
+Trying 4-tuples of the first 6 Eisenstein series.
+Multiplying. Choosing order randomly.
+Doing product 1 of 126. We get basis element 1 of 42.
+Doing product 2 of 126. We get basis element 2 of 42.
+Doing product 3 of 126. We get basis element 3 of 42.
+Doing product 4 of 126. We get basis element 4 of 42.
+Doing product 5 of 126. We get basis element 5 of 42.
+Doing product 6 of 126. We get basis element 6 of 42.
+Doing product 7 of 126. We get basis element 7 of 42.
+Doing product 8 of 126. We get basis element 8 of 42.
+Doing product 9 of 126. We get basis element 9 of 42.
+Doing product 10 of 126. We get basis element 10 of 42.
+Doing product 11 of 126. We get basis element 11 of 42.
+Doing product 12 of 126. We get basis element 12 of 42.
+Doing product 13 of 126. We get basis element 13 of 42.
+Doing product 14 of 126. We get basis element 14 of 42.
+Doing product 15 of 126. We get basis element 15 of 42.
+Doing product 16 of 126. We get basis element 16 of 42.
+Doing product 17 of 126. We get basis element 17 of 42.
+Doing product 18 of 126. We get basis element 18 of 42.
+Doing product 19 of 126. We get basis element 19 of 42.
+Doing product 20 of 126. We get basis element 20 of 42.
+Doing product 21 of 126. We get basis element 21 of 42.
+Doing product 22 of 126. We get basis element 22 of 42.
+Doing product 23 of 126. We get basis element 23 of 42.
+Doing product 24 of 126. We get basis element 24 of 42.
+Doing product 25 of 126. We get basis element 25 of 42.
+Doing product 26 of 126. We get basis element 26 of 42.
+Doing product 27 of 126. We get basis element 27 of 42.
+Doing product 28 of 126. We get basis element 28 of 42.
+Doing product 29 of 126. We get basis element 29 of 42.
+Doing product 30 of 126. We get basis element 30 of 42.
+Doing product 31 of 126. We get basis element 31 of 42.
+Doing product 32 of 126. We get basis element 32 of 42.
+Doing product 33 of 126. We get basis element 33 of 42.
+Doing product 34 of 126. We get basis element 34 of 42.
+Doing product 35 of 126. We get basis element 35 of 42.
+Doing product 36 of 126. We get basis element 36 of 42.
+Doing product 37 of 126. We get basis element 37 of 42.
+Doing product 38 of 126. We get basis element 38 of 42.
+Doing product 39 of 126. We get basis element 39 of 42.
+Doing product 40 of 126. We get basis element 40 of 42.
+Doing product 41 of 126. We get basis element 41 of 42.
+Doing product 42 of 126. We get basis element 42 of 42.
+Applying T_53.
+Doing form 1. Form 1 hit with T_53 gives us a new basis element in weight 8.
+Doing form 2. Form 2 hit with T_53 gives us a new basis element in weight 8.
+Doing form 3. Form 3 hit with T_53 gives us a new basis element in weight 8.
+Doing form 4. Form 4 hit with T_53 gives us a new basis element in weight 8.
+Doing form 5. Form 5 hit with T_53 gives us a new basis element in weight 8.
+Doing form 6. Form 6 hit with T_53 gives us a new basis element in weight 8.
+Doing form 7. Form 7 hit with T_53 gives us a new basis element in weight 8.
+Doing form 8. Form 8 hit with T_53 gives us a new basis element in weight 8.
+Doing form 9. Form 9 hit with T_53 gives us a new basis element in weight 8.
+Doing form 10. Form 10 hit with T_53 gives us a new basis element in weight 8.
+Doing form 11. Form 11 hit with T_53 gives us a new basis element in weight 8.
+Doing form 12. Form 12 hit with T_53 gives us a new basis element in weight 8.
+Doing form 13. Form 13 hit with T_53 gives us a new basis element in weight 8.
+Doing form 14. Form 14 hit with T_53 gives us a new basis element in weight 8.
+Doing form 15. We didn't get anything new.
+Doing form 16. We didn't get anything new.
+Doing form 17. We didn't get anything new.
+Doing form 18. We didn't get anything new.
+Doing form 19. We didn't get anything new.
+Doing form 20. We didn't get anything new.
+Doing form 21. We didn't get anything new.
+Doing form 22. We didn't get anything new.
+Doing form 23. We didn't get anything new.
+Doing form 24. We didn't get anything new.
+Doing form 25. We didn't get anything new.
+Doing form 26. We didn't get anything new.
+Doing form 27. We didn't get anything new.
+Doing form 28. We didn't get anything new.
+Doing form 29. We didn't get anything new.
+Doing form 30. We didn't get anything new.
+Doing form 31. We didn't get anything new.
+Doing form 32. We didn't get anything new.
+Doing form 33. We didn't get anything new.
+Doing form 34. We didn't get anything new.
+Doing form 35. We didn't get anything new.
+Doing form 36. We didn't get anything new.
+Doing form 37. We didn't get anything new.
+Doing form 38. We didn't get anything new.
+Doing form 39. We didn't get anything new.
+Doing form 40. We didn't get anything new.
+Doing form 41. We didn't get anything new.
+Doing form 42. We didn't get anything new.
+Done. In the end we got 56 weight 8 forms.
+The dimension of M_8 is 56.
+Computing the subspace of weight 8 cusp forms.
+We get a space of dimension 49. It should be 49.
+Making weight 2 list 2.
+Nicefying 3x90 matrix with denominator 5.
+Computing saturation.
+Done.
+Calling LLL.
+Done.
+The dimension of S_2 is 3. We got 3 forms in S_2.
+Building canonical model.
+Multiplying.
+Done.
+Matricizing.
+Done.
+Nicefying 1x15 matrix with denominator 3.
+Computing saturation.
+Done.
+Calling LLL.
+Done.
+
+In file "canmodel.m", line 1051, column 18:
+>>     relat := &+[ newrelationmat2[i][j]*monlist2[j] : j in [1..#tuplist2]];
+                    ^
+User error: Identifier 'newrelationmat2' has not been declared or assigned
+The curve C is defined by [
+3*a^4 + 8*a^3*b + 5*a^3*c + 6*a^2*b^2 + 11*a^2*b*c + 9*a^2*c^2 + a*b^3 + 
+4*a*b^2*c + 5*a*b*c^2 + 2*a*c^3 - 4*b^3*c - 3*b^2*c^2 - 3*b*c^3
+].
+Setting maxd = 12.
+Working on weight 4 forms. Need 6.
+Product <1,1> gives us element 1 of 6 for d = 2.
+Product <2,1> gives us element 2 of 6 for d = 2.
+Product <3,1> gives us element 3 of 6 for d = 2.
+Product <2,2> gives us element 4 of 6 for d = 2.
+Product <3,2> gives us element 5 of 6 for d = 2.
+Product <3,3> gives us element 6 of 6 for d = 2.
+Working on weight 6 forms. Need 10.
+Product <1,1> gives us element 1 of 10 for d = 3.
+Product <2,1> gives us element 2 of 10 for d = 3.
+Product <3,1> gives us element 3 of 10 for d = 3.
+Product <2,2> gives us element 4 of 10 for d = 3.
+Product <3,2> gives us element 5 of 10 for d = 3.
+Product <3,3> gives us element 6 of 10 for d = 3.
+Product <2,4> gives us element 7 of 10 for d = 3.
+Product <3,4> gives us element 8 of 10 for d = 3.
+Product <3,5> gives us element 9 of 10 for d = 3.
+Product <3,6> gives us element 10 of 10 for d = 3.
+Working on weight 8 forms. Need 14.
+Product <1,1> gives us element 1 of 14 for d = 4.
+Product <2,1> gives us element 2 of 14 for d = 4.
+Product <3,1> gives us element 3 of 14 for d = 4.
+Product <2,2> gives us element 4 of 14 for d = 4.
+Product <3,2> gives us element 5 of 14 for d = 4.
+Product <3,3> gives us element 6 of 14 for d = 4.
+Product <2,4> gives us element 7 of 14 for d = 4.
+Product <3,4> gives us element 8 of 14 for d = 4.
+Product <3,5> gives us element 9 of 14 for d = 4.
+Product <3,6> gives us element 10 of 14 for d = 4.
+Product <2,7> gives us element 11 of 14 for d = 4.
+Product <3,7> gives us element 12 of 14 for d = 4.
+Product <3,8> gives us element 13 of 14 for d = 4.
+Product <3,10> gives us element 14 of 14 for d = 4.
+Working on weight 10 forms. Need 18.
+Product <1,1> gives us element 1 of 18 for d = 5.
+Product <2,1> gives us element 2 of 18 for d = 5.
+Product <3,1> gives us element 3 of 18 for d = 5.
+Product <2,2> gives us element 4 of 18 for d = 5.
+Product <3,2> gives us element 5 of 18 for d = 5.
+Product <3,3> gives us element 6 of 18 for d = 5.
+Product <2,4> gives us element 7 of 18 for d = 5.
+Product <3,4> gives us element 8 of 18 for d = 5.
+Product <3,5> gives us element 9 of 18 for d = 5.
+Product <3,6> gives us element 10 of 18 for d = 5.
+Product <2,7> gives us element 11 of 18 for d = 5.
+Product <3,7> gives us element 12 of 18 for d = 5.
+Product <3,8> gives us element 13 of 18 for d = 5.
+Product <3,10> gives us element 14 of 18 for d = 5.
+Product <2,11> gives us element 15 of 18 for d = 5.
+Product <3,11> gives us element 16 of 18 for d = 5.
+Product <3,12> gives us element 17 of 18 for d = 5.
+Product <3,14> gives us element 18 of 18 for d = 5.
+Working on weight 12 forms. Need 22.
+Product <1,1> gives us element 1 of 22 for d = 6.
+Product <2,1> gives us element 2 of 22 for d = 6.
+Product <3,1> gives us element 3 of 22 for d = 6.
+Product <2,2> gives us element 4 of 22 for d = 6.
+Product <3,2> gives us element 5 of 22 for d = 6.
+Product <3,3> gives us element 6 of 22 for d = 6.
+Product <2,4> gives us element 7 of 22 for d = 6.
+Product <3,4> gives us element 8 of 22 for d = 6.
+Product <3,5> gives us element 9 of 22 for d = 6.
+Product <3,6> gives us element 10 of 22 for d = 6.
+Product <2,7> gives us element 11 of 22 for d = 6.
+Product <3,7> gives us element 12 of 22 for d = 6.
+Product <3,8> gives us element 13 of 22 for d = 6.
+Product <3,10> gives us element 14 of 22 for d = 6.
+Product <2,11> gives us element 15 of 22 for d = 6.
+Product <3,11> gives us element 16 of 22 for d = 6.
+Product <3,12> gives us element 17 of 22 for d = 6.
+Product <3,14> gives us element 18 of 22 for d = 6.
+Product <2,15> gives us element 19 of 22 for d = 6.
+Product <3,15> gives us element 20 of 22 for d = 6.
+Product <3,16> gives us element 21 of 22 for d = 6.
+Product <3,18> gives us element 22 of 22 for d = 6.
+Working on weight 14 forms. Need 26.
+Product <1,1> gives us element 1 of 26 for d = 7.
+Product <2,1> gives us element 2 of 26 for d = 7.
+Product <3,1> gives us element 3 of 26 for d = 7.
+Product <2,2> gives us element 4 of 26 for d = 7.
+Product <3,2> gives us element 5 of 26 for d = 7.
+Product <3,3> gives us element 6 of 26 for d = 7.
+Product <2,4> gives us element 7 of 26 for d = 7.
+Product <3,4> gives us element 8 of 26 for d = 7.
+Product <3,5> gives us element 9 of 26 for d = 7.
+Product <3,6> gives us element 10 of 26 for d = 7.
+Product <2,7> gives us element 11 of 26 for d = 7.
+Product <3,7> gives us element 12 of 26 for d = 7.
+Product <3,8> gives us element 13 of 26 for d = 7.
+Product <3,10> gives us element 14 of 26 for d = 7.
+Product <2,11> gives us element 15 of 26 for d = 7.
+Product <3,11> gives us element 16 of 26 for d = 7.
+Product <3,12> gives us element 17 of 26 for d = 7.
+Product <3,14> gives us element 18 of 26 for d = 7.
+Product <2,15> gives us element 19 of 26 for d = 7.
+Product <3,15> gives us element 20 of 26 for d = 7.
+Product <3,16> gives us element 21 of 26 for d = 7.
+Product <3,18> gives us element 22 of 26 for d = 7.
+Product <2,19> gives us element 23 of 26 for d = 7.
+Product <3,19> gives us element 24 of 26 for d = 7.
+Product <3,20> gives us element 25 of 26 for d = 7.
+Product <3,22> gives us element 26 of 26 for d = 7.
+Working on weight 16 forms. Need 30.
+Product <1,1> gives us element 1 of 30 for d = 8.
+Product <2,1> gives us element 2 of 30 for d = 8.
+Product <3,1> gives us element 3 of 30 for d = 8.
+Product <2,2> gives us element 4 of 30 for d = 8.
+Product <3,2> gives us element 5 of 30 for d = 8.
+Product <3,3> gives us element 6 of 30 for d = 8.
+Product <2,4> gives us element 7 of 30 for d = 8.
+Product <3,4> gives us element 8 of 30 for d = 8.
+Product <3,5> gives us element 9 of 30 for d = 8.
+Product <3,6> gives us element 10 of 30 for d = 8.
+Product <2,7> gives us element 11 of 30 for d = 8.
+Product <3,7> gives us element 12 of 30 for d = 8.
+Product <3,8> gives us element 13 of 30 for d = 8.
+Product <3,10> gives us element 14 of 30 for d = 8.
+Product <2,11> gives us element 15 of 30 for d = 8.
+Product <3,11> gives us element 16 of 30 for d = 8.
+Product <3,12> gives us element 17 of 30 for d = 8.
+Product <3,14> gives us element 18 of 30 for d = 8.
+Product <2,15> gives us element 19 of 30 for d = 8.
+Product <3,15> gives us element 20 of 30 for d = 8.
+Product <3,16> gives us element 21 of 30 for d = 8.
+Product <3,18> gives us element 22 of 30 for d = 8.
+Product <2,19> gives us element 23 of 30 for d = 8.
+Product <3,19> gives us element 24 of 30 for d = 8.
+Product <3,20> gives us element 25 of 30 for d = 8.
+Product <3,22> gives us element 26 of 30 for d = 8.
+Product <2,23> gives us element 27 of 30 for d = 8.
+Product <3,23> gives us element 28 of 30 for d = 8.
+Product <3,24> gives us element 29 of 30 for d = 8.
+Product <3,26> gives us element 30 of 30 for d = 8.
+Working on weight 18 forms. Need 34.
+Product <1,1> gives us element 1 of 34 for d = 9.
+Product <2,1> gives us element 2 of 34 for d = 9.
+Product <3,1> gives us element 3 of 34 for d = 9.
+Product <2,2> gives us element 4 of 34 for d = 9.
+Product <3,2> gives us element 5 of 34 for d = 9.
+Product <3,3> gives us element 6 of 34 for d = 9.
+Product <2,4> gives us element 7 of 34 for d = 9.
+Product <3,4> gives us element 8 of 34 for d = 9.
+Product <3,5> gives us element 9 of 34 for d = 9.
+Product <3,6> gives us element 10 of 34 for d = 9.
+Product <2,7> gives us element 11 of 34 for d = 9.
+Product <3,7> gives us element 12 of 34 for d = 9.
+Product <3,8> gives us element 13 of 34 for d = 9.
+Product <3,10> gives us element 14 of 34 for d = 9.
+Product <2,11> gives us element 15 of 34 for d = 9.
+Product <3,11> gives us element 16 of 34 for d = 9.
+Product <3,12> gives us element 17 of 34 for d = 9.
+Product <3,14> gives us element 18 of 34 for d = 9.
+Product <2,15> gives us element 19 of 34 for d = 9.
+Product <3,15> gives us element 20 of 34 for d = 9.
+Product <3,16> gives us element 21 of 34 for d = 9.
+Product <3,18> gives us element 22 of 34 for d = 9.
+Product <2,19> gives us element 23 of 34 for d = 9.
+Product <3,19> gives us element 24 of 34 for d = 9.
+Product <3,20> gives us element 25 of 34 for d = 9.
+Product <3,22> gives us element 26 of 34 for d = 9.
+Product <2,23> gives us element 27 of 34 for d = 9.
+Product <3,23> gives us element 28 of 34 for d = 9.
+Product <3,24> gives us element 29 of 34 for d = 9.
+Product <3,26> gives us element 30 of 34 for d = 9.
+Product <2,27> gives us element 31 of 34 for d = 9.
+Product <3,27> gives us element 32 of 34 for d = 9.
+Product <3,28> gives us element 33 of 34 for d = 9.
+Product <3,30> gives us element 34 of 34 for d = 9.
+Working on weight 20 forms. Need 38.
+Product <1,1> gives us element 1 of 38 for d = 10.
+Product <2,1> gives us element 2 of 38 for d = 10.
+Product <3,1> gives us element 3 of 38 for d = 10.
+Product <2,2> gives us element 4 of 38 for d = 10.
+Product <3,2> gives us element 5 of 38 for d = 10.
+Product <3,3> gives us element 6 of 38 for d = 10.
+Product <2,4> gives us element 7 of 38 for d = 10.
+Product <3,4> gives us element 8 of 38 for d = 10.
+Product <3,5> gives us element 9 of 38 for d = 10.
+Product <3,6> gives us element 10 of 38 for d = 10.
+Product <2,7> gives us element 11 of 38 for d = 10.
+Product <3,7> gives us element 12 of 38 for d = 10.
+Product <3,8> gives us element 13 of 38 for d = 10.
+Product <3,10> gives us element 14 of 38 for d = 10.
+Product <2,11> gives us element 15 of 38 for d = 10.
+Product <3,11> gives us element 16 of 38 for d = 10.
+Product <3,12> gives us element 17 of 38 for d = 10.
+Product <3,14> gives us element 18 of 38 for d = 10.
+Product <2,15> gives us element 19 of 38 for d = 10.
+Product <3,15> gives us element 20 of 38 for d = 10.
+Product <3,16> gives us element 21 of 38 for d = 10.
+Product <3,18> gives us element 22 of 38 for d = 10.
+Product <2,19> gives us element 23 of 38 for d = 10.
+Product <3,19> gives us element 24 of 38 for d = 10.
+Product <3,20> gives us element 25 of 38 for d = 10.
+Product <3,22> gives us element 26 of 38 for d = 10.
+Product <2,23> gives us element 27 of 38 for d = 10.
+Product <3,23> gives us element 28 of 38 for d = 10.
+Product <3,24> gives us element 29 of 38 for d = 10.
+Product <3,26> gives us element 30 of 38 for d = 10.
+Product <2,27> gives us element 31 of 38 for d = 10.
+Product <3,27> gives us element 32 of 38 for d = 10.
+Product <3,28> gives us element 33 of 38 for d = 10.
+Product <3,30> gives us element 34 of 38 for d = 10.
+Product <2,31> gives us element 35 of 38 for d = 10.
+Product <3,31> gives us element 36 of 38 for d = 10.
+Product <3,32> gives us element 37 of 38 for d = 10.
+Product <3,34> gives us element 38 of 38 for d = 10.
+Working on weight 22 forms. Need 42.
+Product <1,1> gives us element 1 of 42 for d = 11.
+Product <2,1> gives us element 2 of 42 for d = 11.
+Product <3,1> gives us element 3 of 42 for d = 11.
+Product <2,2> gives us element 4 of 42 for d = 11.
+Product <3,2> gives us element 5 of 42 for d = 11.
+Product <3,3> gives us element 6 of 42 for d = 11.
+Product <2,4> gives us element 7 of 42 for d = 11.
+Product <3,4> gives us element 8 of 42 for d = 11.
+Product <3,5> gives us element 9 of 42 for d = 11.
+Product <3,6> gives us element 10 of 42 for d = 11.
+Product <2,7> gives us element 11 of 42 for d = 11.
+Product <3,7> gives us element 12 of 42 for d = 11.
+Product <3,8> gives us element 13 of 42 for d = 11.
+Product <3,10> gives us element 14 of 42 for d = 11.
+Product <2,11> gives us element 15 of 42 for d = 11.
+Product <3,11> gives us element 16 of 42 for d = 11.
+Product <3,12> gives us element 17 of 42 for d = 11.
+Product <3,14> gives us element 18 of 42 for d = 11.
+Product <2,15> gives us element 19 of 42 for d = 11.
+Product <3,15> gives us element 20 of 42 for d = 11.
+Product <3,16> gives us element 21 of 42 for d = 11.
+Product <3,18> gives us element 22 of 42 for d = 11.
+Product <2,19> gives us element 23 of 42 for d = 11.
+Product <3,19> gives us element 24 of 42 for d = 11.
+Product <3,20> gives us element 25 of 42 for d = 11.
+Product <3,22> gives us element 26 of 42 for d = 11.
+Product <2,23> gives us element 27 of 42 for d = 11.
+Product <3,23> gives us element 28 of 42 for d = 11.
+Product <3,24> gives us element 29 of 42 for d = 11.
+Product <3,26> gives us element 30 of 42 for d = 11.
+Product <2,27> gives us element 31 of 42 for d = 11.
+Product <3,27> gives us element 32 of 42 for d = 11.
+Product <3,28> gives us element 33 of 42 for d = 11.
+Product <3,30> gives us element 34 of 42 for d = 11.
+Product <2,31> gives us element 35 of 42 for d = 11.
+Product <3,31> gives us element 36 of 42 for d = 11.
+Product <3,32> gives us element 37 of 42 for d = 11.
+Product <3,34> gives us element 38 of 42 for d = 11.
+Product <2,35> gives us element 39 of 42 for d = 11.
+Product <3,35> gives us element 40 of 42 for d = 11.
+Product <3,36> gives us element 41 of 42 for d = 11.
+Product <3,38> gives us element 42 of 42 for d = 11.
+Working on weight 24 forms. Need 46.
+Product <1,1> gives us element 1 of 46 for d = 12.
+Product <2,1> gives us element 2 of 46 for d = 12.
+Product <3,1> gives us element 3 of 46 for d = 12.
+Product <2,2> gives us element 4 of 46 for d = 12.
+Product <3,2> gives us element 5 of 46 for d = 12.
+Product <3,3> gives us element 6 of 46 for d = 12.
+Product <2,4> gives us element 7 of 46 for d = 12.
+Product <3,4> gives us element 8 of 46 for d = 12.
+Product <3,5> gives us element 9 of 46 for d = 12.
+Product <3,6> gives us element 10 of 46 for d = 12.
+Product <2,7> gives us element 11 of 46 for d = 12.
+Product <3,7> gives us element 12 of 46 for d = 12.
+Product <3,8> gives us element 13 of 46 for d = 12.
+Product <3,10> gives us element 14 of 46 for d = 12.
+Product <2,11> gives us element 15 of 46 for d = 12.
+Product <3,11> gives us element 16 of 46 for d = 12.
+Product <3,12> gives us element 17 of 46 for d = 12.
+Product <3,14> gives us element 18 of 46 for d = 12.
+Product <2,15> gives us element 19 of 46 for d = 12.
+Product <3,15> gives us element 20 of 46 for d = 12.
+Product <3,16> gives us element 21 of 46 for d = 12.
+Product <3,18> gives us element 22 of 46 for d = 12.
+Product <2,19> gives us element 23 of 46 for d = 12.
+Product <3,19> gives us element 24 of 46 for d = 12.
+Product <3,20> gives us element 25 of 46 for d = 12.
+Product <3,22> gives us element 26 of 46 for d = 12.
+Product <2,23> gives us element 27 of 46 for d = 12.
+Product <3,23> gives us element 28 of 46 for d = 12.
+Product <3,24> gives us element 29 of 46 for d = 12.
+Product <3,26> gives us element 30 of 46 for d = 12.
+Product <2,27> gives us element 31 of 46 for d = 12.
+Product <3,27> gives us element 32 of 46 for d = 12.
+Product <3,28> gives us element 33 of 46 for d = 12.
+Product <3,30> gives us element 34 of 46 for d = 12.
+Product <2,31> gives us element 35 of 46 for d = 12.
+Product <3,31> gives us element 36 of 46 for d = 12.
+Product <3,32> gives us element 37 of 46 for d = 12.
+Product <3,34> gives us element 38 of 46 for d = 12.
+Product <2,35> gives us element 39 of 46 for d = 12.
+Product <3,35> gives us element 40 of 46 for d = 12.
+Product <3,36> gives us element 41 of 46 for d = 12.
+Product <3,38> gives us element 42 of 46 for d = 12.
+Product <2,39> gives us element 43 of 46 for d = 12.
+Product <3,39> gives us element 44 of 46 for d = 12.
+Product <3,40> gives us element 45 of 46 for d = 12.
+Product <3,42> gives us element 46 of 46 for d = 12.
+Searching for E4.
+Dimension of null space is 1.
+Searching for E6.
+Dimension of null space is 2.
+Nicefying 1x52 matrix with denominator 9541954296495103700250.
+Computing saturation.
+Done.
+Calling LLL.
+Done.
+Nicefying 2x80 matrix with denominator 5238143013124558486589821391019349782493\
+9229563470455979416105839500.
+Computing saturation.
+Done.
+Calling LLL.
+Done.
+
+Total time: 91.060 seconds, Total memory usage: 73.81MB

@@ -1,0 +1,432 @@
+Working on subgroup 9.72.0.3.
+Covering group is 9.36.0.2.
+j-invariant map for 9.72.0.3 is (-19683*t^36 + 26244*t^33 - 16038*t^30 + 
+6588*t^27 - 2133*t^24 + 552*t^21 - 116*t^18 + 184/9*t^15 - 79/27*t^12 + 
+244/729*t^9 - 22/729*t^6 + 4/2187*t^3 - 1/19683)/(t^27 - t^24 + 4/9*t^21 - 
+1/9*t^18 + 4/243*t^15 - 1/729*t^12 + 1/19683*t^9).
+Multfac = t^27 - t^24 + 4/9*t^21 - 1/9*t^18 + 4/243*t^15 - 1/729*t^12 + 
+1/19683*t^9.
+Divfac = 14348907*$.1^30 - 15943230*$.1^27 + 7971615*$.1^24 - 2125764*$.1^21 + 
+275562*$.1^18 - 10206*$.1^12 + 2916*$.1^9 - 405*$.1^6 + 30*$.1^3 - 1.
+New model is Elliptic Curve defined by y^2 = x^3 + (-2187*t^12 + 972*t^9 - 
+162*t^6 + 36*t^3 - 3)*x + (39366*t^18 - 26244*t^15 + 7290*t^12 - 270*t^6 + 
+36*t^3 - 2) over Univariate rational function field over Rational Field.
+The discriminant is -58773123072*$.1^27 + 58773123072*$.1^24 - 
+26121388032*$.1^21 + 6530347008*$.1^18 - 967458816*$.1^15 + 80621568*$.1^12 - 
+2985984*$.1^9.
+There are 4 squarefree divisors of the discriminant.
+Option 1 is 1.
+Option 2 is zz.
+Option 3 is zz^6 - 1/3*zz^3 + 1/27.
+Option 4 is zz^7 - 1/3*zz^4 + 1/27*zz.
+The order of G is 108.
+The level is 9.72.0.3.
+There are 54 conjugacy classes of G.
+Their sizes are [ 1, 1, 3, 3, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2,
+1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3,
+3, 3, 3, 3, 3, 3 ].
+Using t = 1.
+Working on curve [ 0, 0, 0, -1344, 20176 ].
+Enumerating points of order 9.
+Selecting which conjugate of G we should use.
+Testing choice 1. For choice 1, we get error 9.776757771E28.
+Testing choice 2. For choice 2, we get error 2.113397157E26.
+Testing choice 3. For choice 3, we get error 1.911640163E25.
+Testing choice 4. For choice 4, we get error 4.082372909E28.
+Testing choice 5. For choice 5, we get error 2.696761952E27.
+Testing choice 6. For choice 6, we get error 4.903865792E28.
+Testing choice 7. For choice 7, we get error 4.595783725E28.
+Testing choice 8. For choice 8, we get error 5.195259426E28.
+Testing choice 9. For choice 9, we get error 9.267314993E28.
+Testing choice 10. For choice 10, we get error 5.167282711E28.
+Testing choice 11. For choice 11, we get error 4.875386830E28.
+Testing choice 12. For choice 12, we get error 1.273017680E-971.
+Testing choice 13. For choice 13, we get error 3.189865906E27.
+Testing choice 14. For choice 14, we get error 5.185391775E28.
+Testing choice 15. For choice 15, we get error 3.091556626E27.
+Testing choice 16. For choice 16, we get error 2.244599549E26.
+Testing choice 17. For choice 17, we get error 1.513225854E26.
+Testing choice 18. For choice 18, we get error 1.749437205E26.
+Choice 12 is best.
+Gfine has 2 conjugates inside Gtilde.
+Computing fpolynomial.
+Maximal error on fpolynomial was 1.117680981E-2767.
+Maximal coefficient size of f polynomial was 1.612869758E231.
+Working on class 1. Maximal error on polynomial was 3.839036033E-982.
+Maximal coefficient size was 2.739824257E20.
+Working on class 2. Maximal error on polynomial was 2.742168595E-982.
+Maximal coefficient size was 2.743404396E20.
+Working on class 3. Maximal error on polynomial was 1.667667510E-943.
+Maximal coefficient size was 7.914126494E56.
+Working on class 4. Maximal error on polynomial was 7.533357620E-943.
+Maximal coefficient size was 7.978825013E56.
+Working on class 5. Maximal error on polynomial was 2.056626446E-983.
+Maximal coefficient size was 1.526646491E18.
+Working on class 6. Maximal error on polynomial was 7.712349174E-984.
+Maximal coefficient size was 3.392863810E19.
+Working on class 7. Maximal error on polynomial was 4.713102273E-984.
+Maximal coefficient size was 1.605927490E18.
+Working on class 8. Maximal error on polynomial was 1.713855372E-983.
+Maximal coefficient size was 3.380791324E19.
+Working on class 9. Maximal error on polynomial was 5.615967060E-980.
+Maximal coefficient size was 2.754857710E20.
+Working on class 10. Maximal error on polynomial was 1.403990321E-980.
+Maximal coefficient size was 3.372741876E19.
+Working on class 11. Maximal error on polynomial was 5.616108403E-980.
+Maximal coefficient size was 2.755969274E20.
+Working on class 12. Maximal error on polynomial was 4.387771006E-982.
+Maximal coefficient size was 1.888415651E18.
+Working on class 13. Maximal error on polynomial was 7.633329758E-964.
+Maximal coefficient size was 2.698632129E36.
+Working on class 14. Maximal error on polynomial was 1.317360293E-963.
+Maximal coefficient size was 5.429318054E36.
+Working on class 15. Maximal error on polynomial was 2.546447024E-963.
+Maximal coefficient size was 3.515114746E36.
+Working on class 16. Maximal error on polynomial was 6.158676083E-964.
+Maximal coefficient size was 3.947446409E36.
+Working on class 17. Maximal error on polynomial was 3.047429610E-963.
+Maximal coefficient size was 5.953605119E36.
+Working on class 18. Maximal error on polynomial was 1.048199203E-963.
+Maximal coefficient size was 3.133110873E36.
+Working on class 19. Maximal error on polynomial was 5.317315277E-964.
+Maximal coefficient size was 3.299505218E36.
+Working on class 20. Maximal error on polynomial was 2.035696821E-963.
+Maximal coefficient size was 8.066477072E36.
+Working on class 21. Maximal error on polynomial was 2.086634730E-963.
+Maximal coefficient size was 7.773844576E36.
+Working on class 22. Maximal error on polynomial was 3.510143167E-981.
+Maximal coefficient size was 3.371907821E19.
+Working on class 23. Maximal error on polynomial was 2.194805774E-982.
+Maximal coefficient size was 1.557704926E18.
+Working on class 24. Maximal error on polynomial was 3.924728802E-982.
+Maximal coefficient size was 2.758373801E20.
+Working on class 25. Maximal error on polynomial was 3.511287727E-981.
+Maximal coefficient size was 3.363644231E19.
+Working on class 26. Maximal error on polynomial was 5.616030978E-980.
+Maximal coefficient size was 2.759488904E20.
+Working on class 27. Maximal error on polynomial was 6.855421488E-984.
+Maximal coefficient size was 1.917867524E18.
+Working on class 28. Maximal error on polynomial was 3.510466602E-981.
+Maximal coefficient size was 3.383883191E19.
+Working on class 29. Maximal error on polynomial was 2.198015339E-982.
+Maximal coefficient size was 1.637675877E18.
+Working on class 30. Maximal error on polynomial was 7.372799992E-964.
+Maximal coefficient size was 3.104454620E36.
+Working on class 31. Maximal error on polynomial was 6.758044978E-964.
+Maximal coefficient size was 2.747814151E36.
+Working on class 32. Maximal error on polynomial was 1.115454203E-963.
+Maximal coefficient size was 5.404438051E36.
+Working on class 33. Maximal error on polynomial was 5.067939572E-964.
+Maximal coefficient size was 3.271386613E36.
+Working on class 34. Maximal error on polynomial was 1.024477057E-963.
+Maximal coefficient size was 3.913551336E36.
+Working on class 35. Maximal error on polynomial was 2.034346102E-963.
+Maximal coefficient size was 5.929344993E36.
+Working on class 36. Maximal error on polynomial was 1.566538166E-963.
+Maximal coefficient size was 3.566872206E36.
+Working on class 37. Maximal error on polynomial was 1.987648339E-965.
+Maximal coefficient size was 7.837053499E36.
+Working on class 38. Maximal error on polynomial was 1.023606336E-963.
+Maximal coefficient size was 8.077752168E36.
+Working on class 39. Maximal error on polynomial was 2.893235266E-945.
+Maximal coefficient size was 5.046216844E54.
+Working on class 40. Maximal error on polynomial was 2.347563502E-945.
+Maximal coefficient size was 6.550386707E54.
+Working on class 41. Maximal error on polynomial was 3.738137390E-944.
+Maximal coefficient size was 1.307240260E56.
+Working on class 42. Maximal error on polynomial was 6.773171597E-943.
+Maximal coefficient size was 7.131325907E56.
+Working on class 43. Maximal error on polynomial was 2.804036444E-944.
+Maximal coefficient size was 6.449814234E55.
+Working on class 44. Maximal error on polynomial was 4.155561766E-943.
+Maximal coefficient size was 7.744752798E56.
+Working on class 45. Maximal error on polynomial was 4.395889693E-945.
+Maximal coefficient size was 5.026162306E54.
+Working on class 46. Maximal error on polynomial was 3.834496707E-943.
+Maximal coefficient size was 7.674170595E56.
+Working on class 47. Maximal error on polynomial was 2.691961396E-945.
+Maximal coefficient size was 8.746532549E54.
+Working on class 48. Maximal error on polynomial was 2.550316067E-944.
+Maximal coefficient size was 1.040639832E56.
+Working on class 49. Maximal error on polynomial was 5.852708492E-945.
+Maximal coefficient size was 6.682448926E54.
+Working on class 50. Maximal error on polynomial was 6.131033774E-944.
+Maximal coefficient size was 1.321963849E56.
+Working on class 51. Maximal error on polynomial was 3.109974259E-943.
+Maximal coefficient size was 7.085514983E56.
+Working on class 52. Maximal error on polynomial was 4.667348763E-944.
+Maximal coefficient size was 6.530090338E55.
+Working on class 53. Maximal error on polynomial was 2.355748254E-945.
+Maximal coefficient size was 8.618850649E54.
+Working on class 54. Maximal error on polynomial was 3.734152306E-944.
+Maximal coefficient size was 1.026507662E56.
+Maximal error was 7.533357620E-943.
+We have p = 3.
+The prime 5 divides the resultant of 5 and 8.
+The prime 7 divides the resultant of 5 and 11.
+The prime 11 divides the resultant of 12 and 40.
+The prime 13 divides the resultant of 1 and 13.
+The prime 17 divides the resultant of 39 and 44.
+The prime 23 divides the resultant of 8 and 49.
+For pp = 29, we have the following.
+Element is [4 3]
+[4 8].
+For conjugate 1, chival = 1.
+Old possibilities [ 1, 3, 19, 57, -1, -3, -19, -57 ].
+Possibilities now [ 1, 57, -1, -57 ].
+For conjugate 2, chival = -1.
+Old possibilities [ 1, 3, 19, 57, -1, -3, -19, -57 ].
+Possibilities now [ 3, 19, -3, -19 ].
+The prime 31 divides the resultant of 1 and 16.
+The prime 37 divides the resultant of 6 and 14.
+For pp = 41, we have the following.
+Element is [1 0]
+[7 5].
+For conjugate 1, chival = 1.
+For conjugate 2, chival = -1.
+For pp = 43, we have the following.
+Element is [1 6]
+[6 7].
+For conjugate 1, chival = 1.
+Old possibilities [ 1, 57, -1, -57 ].
+Possibilities now [ 1, 57 ].
+For conjugate 2, chival = 1.
+Old possibilities [ 3, 19, -3, -19 ].
+Possibilities now [ -3, -19 ].
+The prime 47 divides the resultant of 25 and 28.
+The prime 53 divides the resultant of 52 and 54.
+The prime 59 divides the resultant of 3 and 11.
+For pp = 61, we have the following.
+Element is [4 3]
+[0 4].
+For conjugate 1, chival = 1.
+For conjugate 2, chival = 1.
+The prime 67 divides the resultant of 13 and 19.
+For pp = 71, we have the following.
+Element is [7 0]
+[1 5].
+For conjugate 1, chival = 1.
+For conjugate 2, chival = -1.
+The prime 73 divides the resultant of 20 and 24.
+For pp = 79, we have the following.
+Element is [1 6]
+[6 7].
+For conjugate 1, chival = 1.
+Old possibilities [ 1, 57 ].
+Possibilities now [ 1 ].
+For conjugate 2, chival = 1.
+Old possibilities [ -3, -19 ].
+Possibilities now [ -3 ].
+For conjugate 1, the unique twist is 1.
+For conjugate 2, the unique twist is -3.
+After t = 1, the options lists were the following.
+For divisor 1, options = [ 1, -3 ].
+For divisor zz, options = [ 1, -3 ].
+For divisor zz^6 - 1/3*zz^3 + 1/27, options = [ 57, -19 ].
+For divisor zz^7 - 1/3*zz^4 + 1/27*zz, options = [ 57, -19 ].
+Using t = 2.
+Working on curve [ 0, 0, 0, -8470371, 9489440158 ].
+Enumerating points of order 9.
+Selecting which conjugate of G we should use.
+Testing choice 1. For choice 1, we get error 3.946819945E43.
+Testing choice 2. For choice 2, we get error 1.020723510E41.
+Testing choice 3. For choice 3, we get error 3.482814640E40.
+Testing choice 4. For choice 4, we get error 2.672621885E42.
+Testing choice 5. For choice 5, we get error 6.487794311E42.
+Testing choice 6. For choice 6, we get error 1.980158299E43.
+Testing choice 7. For choice 7, we get error 1.806637275E43.
+Testing choice 8. For choice 8, we get error 2.152826572E43.
+Testing choice 9. For choice 9, we get error 2.411197485E43.
+Testing choice 10. For choice 10, we get error 2.134395584E43.
+Testing choice 11. For choice 11, we get error 1.963279611E43.
+Testing choice 12. For choice 12, we get error 1.705993660E-956.
+Testing choice 13. For choice 13, we get error 1.734098624E42.
+Testing choice 14. For choice 14, we get error 2.146232206E43.
+Testing choice 15. For choice 15, we get error 3.201538671E42.
+Testing choice 16. For choice 16, we get error 1.832770041E41.
+Testing choice 17. For choice 17, we get error 1.849753078E41.
+Testing choice 18. For choice 18, we get error 1.826143010E41.
+Choice 12 is best.
+Gfine has 2 conjugates inside Gtilde.
+Computing fpolynomial.
+Maximal error on fpolynomial was 1.236821621E-2613.
+Maximal coefficient size of f polynomial was 5.779350161E384.
+Working on class 1. Maximal error on polynomial was 3.087407520E-968.
+Maximal coefficient size was 6.554115421E31.
+Working on class 2. Maximal error on polynomial was 1.543703692E-968.
+Maximal coefficient size was 6.554221551E31.
+Working on class 3. Maximal error on polynomial was 2.906053222E-911.
+Maximal coefficient size was 1.744950917E89.
+Working on class 4. Maximal error on polynomial was 8.740428735E-911.
+Maximal coefficient size was 1.746762329E89.
+Working on class 5. Maximal error on polynomial was 8.262669488E-973.
+Maximal coefficient size was 3.856904190E29.
+Working on class 6. Maximal error on polynomial was 9.648148069E-970.
+Maximal coefficient size was 8.048226423E30.
+Working on class 7. Maximal error on polynomial was 6.030259044E-971.
+Maximal coefficient size was 3.858220012E29.
+Working on class 8. Maximal error on polynomial was 5.788888812E-969.
+Maximal coefficient size was 8.047832443E30.
+Working on class 9. Maximal error on polynomial was 1.061449390E-971.
+Maximal coefficient size was 6.554178325E31.
+Working on class 10. Maximal error on polynomial was 2.894444420E-969.
+Maximal coefficient size was 8.048152442E30.
+Working on class 11. Maximal error on polynomial was 1.543703725E-968.
+Maximal coefficient size was 6.554178865E31.
+Working on class 12. Maximal error on polynomial was 1.206033241E-970.
+Maximal coefficient size was 3.865158359E29.
+Working on class 13. Maximal error on polynomial was 1.505209575E-942.
+Maximal coefficient size was 2.682776646E57.
+Working on class 14. Maximal error on polynomial was 7.063570268E-943.
+Maximal coefficient size was 2.846861738E57.
+Working on class 15. Maximal error on polynomial was 9.009634955E-943.
+Maximal coefficient size was 2.723031161E57.
+Working on class 16. Maximal error on polynomial was 9.543979376E-943.
+Maximal coefficient size was 2.701616850E57.
+Working on class 17. Maximal error on polynomial was 1.195470089E-942.
+Maximal coefficient size was 2.853187314E57.
+Working on class 18. Maximal error on polynomial was 1.041394051E-942.
+Maximal coefficient size was 2.667903836E57.
+Working on class 19. Maximal error on polynomial was 1.494129565E-942.
+Maximal coefficient size was 2.672124839E57.
+Working on class 20. Maximal error on polynomial was 8.318642376E-944.
+Maximal coefficient size was 2.811316564E57.
+Working on class 21. Maximal error on polynomial was 2.993560028E-943.
+Maximal coefficient size was 2.751329079E57.
+Working on class 22. Maximal error on polynomial was 9.648148110E-970.
+Maximal coefficient size was 8.047562765E30.
+Working on class 23. Maximal error on polynomial was 7.452964683E-974.
+Maximal coefficient size was 3.857845157E29.
+Working on class 24. Maximal error on polynomial was 7.718519833E-969.
+Maximal coefficient size was 6.554284452E31.
+Working on class 25. Maximal error on polynomial was 9.648159279E-970.
+Maximal coefficient size was 8.047882750E30.
+Working on class 26. Maximal error on polynomial was 2.315555551E-968.
+Maximal coefficient size was 6.554284993E31.
+Working on class 27. Maximal error on polynomial was 1.206018538E-970.
+Maximal coefficient size was 3.866098656E29.
+Working on class 28. Maximal error on polynomial was 4.442450013E-973.
+Maximal coefficient size was 8.047956738E30.
+Working on class 29. Maximal error on polynomial was 1.206021980E-970.
+Maximal coefficient size was 3.859161171E29.
+Working on class 30. Maximal error on polynomial was 6.883345019E-943.
+Maximal coefficient size was 2.665079839E57.
+Working on class 31. Maximal error on polynomial was 1.015880465E-942.
+Maximal coefficient size was 2.687173928E57.
+Working on class 32. Maximal error on polynomial was 6.262703178E-943.
+Maximal coefficient size was 2.845269592E57.
+Working on class 33. Maximal error on polynomial was 7.716297243E-943.
+Maximal coefficient size was 2.669319864E57.
+Working on class 34. Maximal error on polynomial was 3.552859714E-943.
+Maximal coefficient size was 2.698770203E57.
+Working on class 35. Maximal error on polynomial was 3.132075353E-943.
+Maximal coefficient size was 2.851609766E57.
+Working on class 36. Maximal error on polynomial was 9.300712620E-943.
+Maximal coefficient size was 2.727455600E57.
+Working on class 37. Maximal error on polynomial was 3.439227175E-943.
+Maximal coefficient size was 2.755782937E57.
+Working on class 38. Maximal error on polynomial was 4.106924994E-943.
+Maximal coefficient size was 2.809773562E57.
+Working on class 39. Maximal error on polynomial was 5.853967766E-913.
+Maximal coefficient size was 1.080203147E87.
+Working on class 40. Maximal error on polynomial was 2.046398182E-913.
+Maximal coefficient size was 1.105555783E87.
+Working on class 41. Maximal error on polynomial was 2.726875625E-912.
+Maximal coefficient size was 2.161784092E88.
+Working on class 42. Maximal error on polynomial was 7.294034131E-911.
+Maximal coefficient size was 1.770776978E89.
+Working on class 43. Maximal error on polynomial was 1.514116163E-911.
+Maximal coefficient size was 2.191419262E88.
+Working on class 44. Maximal error on polynomial was 1.163307754E-910.
+Maximal coefficient size was 1.741787485E89.
+Working on class 45. Maximal error on polynomial was 7.572357585E-913.
+Maximal coefficient size was 1.080547820E87.
+Working on class 46. Maximal error on polynomial was 6.023498008E-911.
+Maximal coefficient size was 1.739967872E89.
+Working on class 47. Maximal error on polynomial was 7.515835779E-915.
+Maximal coefficient size was 1.095915974E87.
+Working on class 48. Maximal error on polynomial was 1.215157025E-911.
+Maximal coefficient size was 2.189575467E88.
+Working on class 49. Maximal error on polynomial was 5.711624103E-913.
+Maximal coefficient size was 1.105214238E87.
+Working on class 50. Maximal error on polynomial was 6.088468332E-912.
+Maximal coefficient size was 2.165247977E88.
+Working on class 51. Maximal error on polynomial was 4.945879216E-911.
+Maximal coefficient size was 1.768948405E89.
+Working on class 52. Maximal error on polynomial was 1.823088594E-911.
+Maximal coefficient size was 2.194914352E88.
+Working on class 53. Maximal error on polynomial was 4.212440639E-913.
+Maximal coefficient size was 1.096260578E87.
+Working on class 54. Maximal error on polynomial was 6.444788746E-912.
+Maximal coefficient size was 2.186088290E88.
+Maximal error was 1.163307754E-910.
+We have p = 3.
+The prime 5 divides the resultant of 1 and 4.
+The prime 7 divides the resultant of 5 and 11.
+The prime 11 divides the resultant of 5 and 11.
+The prime 13 divides the resultant of 8 and 16.
+The prime 17 divides the resultant of 5 and 39.
+The prime 19 divides the resultant of 15 and 17.
+The prime 23 divides the resultant of 46 and 50.
+The prime 29 divides the resultant of 3 and 46.
+For pp = 31, we have the following.
+Element is [7 6]
+[0 7].
+For conjugate 1, chival = 1.
+Old possibilities [ 1, 2, 3, 6, 1657, 3314, 4971, 9942, -1, -2, -3, -6, -1657, 
+-3314, -4971, -9942 ].
+Possibilities now [ 1, 2, 1657, 3314, -3, -6, -4971, -9942 ].
+For conjugate 2, chival = 1.
+Old possibilities [ 1, 2, 3, 6, 1657, 3314, 4971, 9942, -1, -2, -3, -6, -1657, 
+-3314, -4971, -9942 ].
+Possibilities now [ 1, 2, 1657, 3314, -3, -6, -4971, -9942 ].
+The prime 37 divides the resultant of 6 and 35.
+For pp = 41, we have the following.
+Element is [1 0]
+[7 5].
+For conjugate 1, chival = 1.
+Old possibilities [ 1, 2, 1657, 3314, -3, -6, -4971, -9942 ].
+Possibilities now [ 1, 2, -4971, -9942 ].
+For conjugate 2, chival = -1.
+Old possibilities [ 1, 2, 1657, 3314, -3, -6, -4971, -9942 ].
+Possibilities now [ 1657, 3314, -3, -6 ].
+The prime 43 divides the resultant of 14 and 28.
+The prime 47 divides the resultant of 10 and 28.
+For pp = 53, we have the following.
+Element is [7 3]
+[1 8].
+For conjugate 1, chival = 1.
+Old possibilities [ 1, 2, -4971, -9942 ].
+Possibilities now [ 1, -4971 ].
+For conjugate 2, chival = -1.
+Old possibilities [ 1657, 3314, -3, -6 ].
+Possibilities now [ 1657, -3 ].
+The prime 59 divides the resultant of 29 and 51.
+The prime 61 divides the resultant of 18 and 31.
+The prime 67 divides the resultant of 17 and 18.
+For pp = 71, we have the following.
+Element is [7 6]
+[1 2].
+For conjugate 1, chival = 1.
+Old possibilities [ 1, -4971 ].
+Possibilities now [ 1 ].
+For conjugate 2, chival = -1.
+Old possibilities [ 1657, -3 ].
+Possibilities now [ -3 ].
+For conjugate 1, the unique twist is 1.
+For conjugate 2, the unique twist is -3.
+After t = 2, the options lists were the following.
+For divisor 1, options = [ 1, -3 ].
+For divisor zz, options = [].
+For divisor zz^6 - 1/3*zz^3 + 1/27, options = [].
+For divisor zz^7 - 1/3*zz^4 + 1/27*zz, options = [].
+We should have found all of the models!
+Model option 1 is Elliptic Curve defined by y^2 = x^3 + (-2187*t^12 + 972*t^9 - 
+162*t^6 + 36*t^3 - 3)*x + (39366*t^18 - 26244*t^15 + 7290*t^12 - 270*t^6 + 
+36*t^3 - 2) over Univariate rational function field over Rational Field.
+Model option 2 is Elliptic Curve defined by y^2 = x^3 + (-19683*t^12 + 8748*t^9 
+- 1458*t^6 + 324*t^3 - 27)*x + (-1062882*t^18 + 708588*t^15 - 196830*t^12 + 
+7290*t^6 - 972*t^3 + 54) over Univariate rational function field over Rational 
+Field.
+
+Total time: 4.839 seconds, Total memory usage: 32.09MB

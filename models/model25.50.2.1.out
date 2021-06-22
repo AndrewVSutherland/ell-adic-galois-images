@@ -1,0 +1,998 @@
+The degree of that covering map is 5.
+Setting subsub to be subgroup 2 of index 15.
+The space of Eisenstein series has dimension 299.
+Computing action of generators of subsub intersect SL_2 on Eisenstein series for
+Gamma(25).
+Finding vectors invariant under subsub intersect SL_2.
+The dimension of the space of Eisenstein series for subsub intersect SL_2 is 29.
+Computing the action of the generators of subsub on the Q-vector space of 
+dimension 580.
+Finding vectors invariant under subsub.
+The dimension is 29.
+The index of subsub in covergp is 75.
+Form try attempt 1. Number of images is 75.
+The element [ 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+0, 0, 0, 0, 0, 0, 0 ] works. It was number 1.
+Computing Weierstrass p-function Fourier expansions.
+Computing Fourier expansion 1.
+Computing Fourier expansion 2.
+Computing Fourier expansion 3.
+Computing Fourier expansion 4.
+Computing Fourier expansion 5.
+Computing Fourier expansion 6.
+Computing Fourier expansion 7.
+Computing Fourier expansion 8.
+Computing Fourier expansion 9.
+Computing Fourier expansion 10.
+Computing Fourier expansion 11.
+Computing Fourier expansion 12.
+Computing Fourier expansion 13.
+Computing Fourier expansion 14.
+Computing Fourier expansion 15.
+Computing Fourier expansion 16.
+Computing Fourier expansion 17.
+Computing Fourier expansion 18.
+Computing Fourier expansion 19.
+Computing Fourier expansion 20.
+Computing Fourier expansion 21.
+Computing Fourier expansion 22.
+Computing Fourier expansion 23.
+Computing Fourier expansion 24.
+Computing Fourier expansion 25.
+Computing Fourier expansion 26.
+Computing Fourier expansion 27.
+Computing Fourier expansion 28.
+Computing Fourier expansion 29.
+Computing Fourier expansion 30.
+Computing Fourier expansion 31.
+Computing Fourier expansion 32.
+Computing Fourier expansion 33.
+Computing Fourier expansion 34.
+Computing Fourier expansion 35.
+Computing Fourier expansion 36.
+Computing Fourier expansion 37.
+Computing Fourier expansion 38.
+Computing Fourier expansion 39.
+Computing Fourier expansion 40.
+Computing Fourier expansion 41.
+Computing Fourier expansion 42.
+Computing Fourier expansion 43.
+Computing Fourier expansion 44.
+Computing Fourier expansion 45.
+Computing Fourier expansion 46.
+Computing Fourier expansion 47.
+Computing Fourier expansion 48.
+Computing Fourier expansion 49.
+Computing Fourier expansion 50.
+Computing Fourier expansion 51.
+Computing Fourier expansion 52.
+Computing Fourier expansion 53.
+Computing Fourier expansion 54.
+Computing Fourier expansion 55.
+Computing Fourier expansion 56.
+Computing Fourier expansion 57.
+Computing Fourier expansion 58.
+Computing Fourier expansion 59.
+Computing Fourier expansion 60.
+Computing Fourier expansion 61.
+Computing Fourier expansion 62.
+Computing Fourier expansion 63.
+Computing Fourier expansion 64.
+Computing Fourier expansion 65.
+Computing Fourier expansion 66.
+Computing Fourier expansion 67.
+Computing Fourier expansion 68.
+Computing Fourier expansion 69.
+Computing Fourier expansion 70.
+Computing Fourier expansion 71.
+Computing Fourier expansion 72.
+Computing Fourier expansion 73.
+Computing Fourier expansion 74.
+Computing Fourier expansion 75.
+Symmetrizing.
+Doing term 1 of 525.
+Doing term 2 of 525.
+Doing term 3 of 525.
+Doing term 4 of 525.
+Doing term 5 of 525.
+Doing term 6 of 525.
+Doing term 7 of 525.
+Doing term 8 of 525.
+Doing term 9 of 525.
+Doing term 10 of 525.
+Doing term 11 of 525.
+Doing term 12 of 525.
+Doing term 13 of 525.
+Doing term 14 of 525.
+Doing term 15 of 525.
+Doing term 16 of 525.
+Doing term 17 of 525.
+Doing term 18 of 525.
+Doing term 19 of 525.
+Doing term 20 of 525.
+Doing term 21 of 525.
+Doing term 22 of 525.
+Doing term 23 of 525.
+Doing term 24 of 525.
+Doing term 25 of 525.
+Doing term 26 of 525.
+Doing term 27 of 525.
+Doing term 28 of 525.
+Doing term 29 of 525.
+Doing term 30 of 525.
+Doing term 31 of 525.
+Doing term 32 of 525.
+Doing term 33 of 525.
+Doing term 34 of 525.
+Doing term 35 of 525.
+Doing term 36 of 525.
+Doing term 37 of 525.
+Doing term 38 of 525.
+Doing term 39 of 525.
+Doing term 40 of 525.
+Doing term 41 of 525.
+Doing term 42 of 525.
+Doing term 43 of 525.
+Doing term 44 of 525.
+Doing term 45 of 525.
+Doing term 46 of 525.
+Doing term 47 of 525.
+Doing term 48 of 525.
+Doing term 49 of 525.
+Doing term 50 of 525.
+Doing term 51 of 525.
+Doing term 52 of 525.
+Doing term 53 of 525.
+Doing term 54 of 525.
+Doing term 55 of 525.
+Doing term 56 of 525.
+Doing term 57 of 525.
+Doing term 58 of 525.
+Doing term 59 of 525.
+Doing term 60 of 525.
+Doing term 61 of 525.
+Doing term 62 of 525.
+Doing term 63 of 525.
+Doing term 64 of 525.
+Doing term 65 of 525.
+Doing term 66 of 525.
+Doing term 67 of 525.
+Doing term 68 of 525.
+Doing term 69 of 525.
+Doing term 70 of 525.
+Doing term 71 of 525.
+Doing term 72 of 525.
+Doing term 73 of 525.
+Doing term 74 of 525.
+Doing term 75 of 525.
+Doing term 76 of 525.
+Doing term 77 of 525.
+Doing term 78 of 525.
+Doing term 79 of 525.
+Doing term 80 of 525.
+Doing term 81 of 525.
+Doing term 82 of 525.
+Doing term 83 of 525.
+Doing term 84 of 525.
+Doing term 85 of 525.
+Doing term 86 of 525.
+Doing term 87 of 525.
+Doing term 88 of 525.
+Doing term 89 of 525.
+Doing term 90 of 525.
+Doing term 91 of 525.
+Doing term 92 of 525.
+Doing term 93 of 525.
+Doing term 94 of 525.
+Doing term 95 of 525.
+Doing term 96 of 525.
+Doing term 97 of 525.
+Doing term 98 of 525.
+Doing term 99 of 525.
+Doing term 100 of 525.
+Doing term 101 of 525.
+Doing term 102 of 525.
+Doing term 103 of 525.
+Doing term 104 of 525.
+Doing term 105 of 525.
+Doing term 106 of 525.
+Doing term 107 of 525.
+Doing term 108 of 525.
+Doing term 109 of 525.
+Doing term 110 of 525.
+Doing term 111 of 525.
+Doing term 112 of 525.
+Doing term 113 of 525.
+Doing term 114 of 525.
+Doing term 115 of 525.
+Doing term 116 of 525.
+Doing term 117 of 525.
+Doing term 118 of 525.
+Doing term 119 of 525.
+Doing term 120 of 525.
+Doing term 121 of 525.
+Doing term 122 of 525.
+Doing term 123 of 525.
+Doing term 124 of 525.
+Doing term 125 of 525.
+Doing term 126 of 525.
+Doing term 127 of 525.
+Doing term 128 of 525.
+Doing term 129 of 525.
+Doing term 130 of 525.
+Doing term 131 of 525.
+Doing term 132 of 525.
+Doing term 133 of 525.
+Doing term 134 of 525.
+Doing term 135 of 525.
+Doing term 136 of 525.
+Doing term 137 of 525.
+Doing term 138 of 525.
+Doing term 139 of 525.
+Doing term 140 of 525.
+Doing term 141 of 525.
+Doing term 142 of 525.
+Doing term 143 of 525.
+Doing term 144 of 525.
+Doing term 145 of 525.
+Doing term 146 of 525.
+Doing term 147 of 525.
+Doing term 148 of 525.
+Doing term 149 of 525.
+Doing term 150 of 525.
+Doing term 151 of 525.
+Doing term 152 of 525.
+Doing term 153 of 525.
+Doing term 154 of 525.
+Doing term 155 of 525.
+Doing term 156 of 525.
+Doing term 157 of 525.
+Doing term 158 of 525.
+Doing term 159 of 525.
+Doing term 160 of 525.
+Doing term 161 of 525.
+Doing term 162 of 525.
+Doing term 163 of 525.
+Doing term 164 of 525.
+Doing term 165 of 525.
+Doing term 166 of 525.
+Doing term 167 of 525.
+Doing term 168 of 525.
+Doing term 169 of 525.
+Doing term 170 of 525.
+Doing term 171 of 525.
+Doing term 172 of 525.
+Doing term 173 of 525.
+Doing term 174 of 525.
+Doing term 175 of 525.
+Doing term 176 of 525.
+Doing term 177 of 525.
+Doing term 178 of 525.
+Doing term 179 of 525.
+Doing term 180 of 525.
+Doing term 181 of 525.
+Doing term 182 of 525.
+Doing term 183 of 525.
+Doing term 184 of 525.
+Doing term 185 of 525.
+Doing term 186 of 525.
+Doing term 187 of 525.
+Doing term 188 of 525.
+Doing term 189 of 525.
+Doing term 190 of 525.
+Doing term 191 of 525.
+Doing term 192 of 525.
+Doing term 193 of 525.
+Doing term 194 of 525.
+Doing term 195 of 525.
+Doing term 196 of 525.
+Doing term 197 of 525.
+Doing term 198 of 525.
+Doing term 199 of 525.
+Doing term 200 of 525.
+Doing term 201 of 525.
+Doing term 202 of 525.
+Doing term 203 of 525.
+Doing term 204 of 525.
+Doing term 205 of 525.
+Doing term 206 of 525.
+Doing term 207 of 525.
+Doing term 208 of 525.
+Doing term 209 of 525.
+Doing term 210 of 525.
+Doing term 211 of 525.
+Doing term 212 of 525.
+Doing term 213 of 525.
+Doing term 214 of 525.
+Doing term 215 of 525.
+Doing term 216 of 525.
+Doing term 217 of 525.
+Doing term 218 of 525.
+Doing term 219 of 525.
+Doing term 220 of 525.
+Doing term 221 of 525.
+Doing term 222 of 525.
+Doing term 223 of 525.
+Doing term 224 of 525.
+Doing term 225 of 525.
+Doing term 226 of 525.
+Doing term 227 of 525.
+Doing term 228 of 525.
+Doing term 229 of 525.
+Doing term 230 of 525.
+Doing term 231 of 525.
+Doing term 232 of 525.
+Doing term 233 of 525.
+Doing term 234 of 525.
+Doing term 235 of 525.
+Doing term 236 of 525.
+Doing term 237 of 525.
+Doing term 238 of 525.
+Doing term 239 of 525.
+Doing term 240 of 525.
+Doing term 241 of 525.
+Doing term 242 of 525.
+Doing term 243 of 525.
+Doing term 244 of 525.
+Doing term 245 of 525.
+Doing term 246 of 525.
+Doing term 247 of 525.
+Doing term 248 of 525.
+Doing term 249 of 525.
+Doing term 250 of 525.
+Doing term 251 of 525.
+Doing term 252 of 525.
+Doing term 253 of 525.
+Doing term 254 of 525.
+Doing term 255 of 525.
+Doing term 256 of 525.
+Doing term 257 of 525.
+Doing term 258 of 525.
+Doing term 259 of 525.
+Doing term 260 of 525.
+Doing term 261 of 525.
+Doing term 262 of 525.
+Doing term 263 of 525.
+Doing term 264 of 525.
+Doing term 265 of 525.
+Doing term 266 of 525.
+Doing term 267 of 525.
+Doing term 268 of 525.
+Doing term 269 of 525.
+Doing term 270 of 525.
+Doing term 271 of 525.
+Doing term 272 of 525.
+Doing term 273 of 525.
+Doing term 274 of 525.
+Doing term 275 of 525.
+Doing term 276 of 525.
+Doing term 277 of 525.
+Doing term 278 of 525.
+Doing term 279 of 525.
+Doing term 280 of 525.
+Doing term 281 of 525.
+Doing term 282 of 525.
+Doing term 283 of 525.
+Doing term 284 of 525.
+Doing term 285 of 525.
+Doing term 286 of 525.
+Doing term 287 of 525.
+Doing term 288 of 525.
+Doing term 289 of 525.
+Doing term 290 of 525.
+Doing term 291 of 525.
+Doing term 292 of 525.
+Doing term 293 of 525.
+Doing term 294 of 525.
+Doing term 295 of 525.
+Doing term 296 of 525.
+Doing term 297 of 525.
+Doing term 298 of 525.
+Doing term 299 of 525.
+Doing term 300 of 525.
+Doing term 301 of 525.
+Doing term 302 of 525.
+Doing term 303 of 525.
+Doing term 304 of 525.
+Doing term 305 of 525.
+Doing term 306 of 525.
+Doing term 307 of 525.
+Doing term 308 of 525.
+Doing term 309 of 525.
+Doing term 310 of 525.
+Doing term 311 of 525.
+Doing term 312 of 525.
+Doing term 313 of 525.
+Doing term 314 of 525.
+Doing term 315 of 525.
+Doing term 316 of 525.
+Doing term 317 of 525.
+Doing term 318 of 525.
+Doing term 319 of 525.
+Doing term 320 of 525.
+Doing term 321 of 525.
+Doing term 322 of 525.
+Doing term 323 of 525.
+Doing term 324 of 525.
+Doing term 325 of 525.
+Doing term 326 of 525.
+Doing term 327 of 525.
+Doing term 328 of 525.
+Doing term 329 of 525.
+Doing term 330 of 525.
+Doing term 331 of 525.
+Doing term 332 of 525.
+Doing term 333 of 525.
+Doing term 334 of 525.
+Doing term 335 of 525.
+Doing term 336 of 525.
+Doing term 337 of 525.
+Doing term 338 of 525.
+Doing term 339 of 525.
+Doing term 340 of 525.
+Doing term 341 of 525.
+Doing term 342 of 525.
+Doing term 343 of 525.
+Doing term 344 of 525.
+Doing term 345 of 525.
+Doing term 346 of 525.
+Doing term 347 of 525.
+Doing term 348 of 525.
+Doing term 349 of 525.
+Doing term 350 of 525.
+Doing term 351 of 525.
+Doing term 352 of 525.
+Doing term 353 of 525.
+Doing term 354 of 525.
+Doing term 355 of 525.
+Doing term 356 of 525.
+Doing term 357 of 525.
+Doing term 358 of 525.
+Doing term 359 of 525.
+Doing term 360 of 525.
+Doing term 361 of 525.
+Doing term 362 of 525.
+Doing term 363 of 525.
+Doing term 364 of 525.
+Doing term 365 of 525.
+Doing term 366 of 525.
+Doing term 367 of 525.
+Doing term 368 of 525.
+Doing term 369 of 525.
+Doing term 370 of 525.
+Doing term 371 of 525.
+Doing term 372 of 525.
+Doing term 373 of 525.
+Doing term 374 of 525.
+Doing term 375 of 525.
+Doing term 376 of 525.
+Doing term 377 of 525.
+Doing term 378 of 525.
+Doing term 379 of 525.
+Doing term 380 of 525.
+Doing term 381 of 525.
+Doing term 382 of 525.
+Doing term 383 of 525.
+Doing term 384 of 525.
+Doing term 385 of 525.
+Doing term 386 of 525.
+Doing term 387 of 525.
+Doing term 388 of 525.
+Doing term 389 of 525.
+Doing term 390 of 525.
+Doing term 391 of 525.
+Doing term 392 of 525.
+Doing term 393 of 525.
+Doing term 394 of 525.
+Doing term 395 of 525.
+Doing term 396 of 525.
+Doing term 397 of 525.
+Doing term 398 of 525.
+Doing term 399 of 525.
+Doing term 400 of 525.
+Doing term 401 of 525.
+Doing term 402 of 525.
+Doing term 403 of 525.
+Doing term 404 of 525.
+Doing term 405 of 525.
+Doing term 406 of 525.
+Doing term 407 of 525.
+Doing term 408 of 525.
+Doing term 409 of 525.
+Doing term 410 of 525.
+Doing term 411 of 525.
+Doing term 412 of 525.
+Doing term 413 of 525.
+Doing term 414 of 525.
+Doing term 415 of 525.
+Doing term 416 of 525.
+Doing term 417 of 525.
+Doing term 418 of 525.
+Doing term 419 of 525.
+Doing term 420 of 525.
+Doing term 421 of 525.
+Doing term 422 of 525.
+Doing term 423 of 525.
+Doing term 424 of 525.
+Doing term 425 of 525.
+Doing term 426 of 525.
+Doing term 427 of 525.
+Doing term 428 of 525.
+Doing term 429 of 525.
+Doing term 430 of 525.
+Doing term 431 of 525.
+Doing term 432 of 525.
+Doing term 433 of 525.
+Doing term 434 of 525.
+Doing term 435 of 525.
+Doing term 436 of 525.
+Doing term 437 of 525.
+Doing term 438 of 525.
+Doing term 439 of 525.
+Doing term 440 of 525.
+Doing term 441 of 525.
+Doing term 442 of 525.
+Doing term 443 of 525.
+Doing term 444 of 525.
+Doing term 445 of 525.
+Doing term 446 of 525.
+Doing term 447 of 525.
+Doing term 448 of 525.
+Doing term 449 of 525.
+Doing term 450 of 525.
+Doing term 451 of 525.
+Doing term 452 of 525.
+Doing term 453 of 525.
+Doing term 454 of 525.
+Doing term 455 of 525.
+Doing term 456 of 525.
+Doing term 457 of 525.
+Doing term 458 of 525.
+Doing term 459 of 525.
+Doing term 460 of 525.
+Doing term 461 of 525.
+Doing term 462 of 525.
+Doing term 463 of 525.
+Doing term 464 of 525.
+Doing term 465 of 525.
+Doing term 466 of 525.
+Doing term 467 of 525.
+Doing term 468 of 525.
+Doing term 469 of 525.
+Doing term 470 of 525.
+Doing term 471 of 525.
+Doing term 472 of 525.
+Doing term 473 of 525.
+Doing term 474 of 525.
+Doing term 475 of 525.
+Doing term 476 of 525.
+Doing term 477 of 525.
+Doing term 478 of 525.
+Doing term 479 of 525.
+Doing term 480 of 525.
+Doing term 481 of 525.
+Doing term 482 of 525.
+Doing term 483 of 525.
+Doing term 484 of 525.
+Doing term 485 of 525.
+Doing term 486 of 525.
+Doing term 487 of 525.
+Doing term 488 of 525.
+Doing term 489 of 525.
+Doing term 490 of 525.
+Doing term 491 of 525.
+Doing term 492 of 525.
+Doing term 493 of 525.
+Doing term 494 of 525.
+Doing term 495 of 525.
+Doing term 496 of 525.
+Doing term 497 of 525.
+Doing term 498 of 525.
+Doing term 499 of 525.
+Doing term 500 of 525.
+Doing term 501 of 525.
+Doing term 502 of 525.
+Doing term 503 of 525.
+Doing term 504 of 525.
+Doing term 505 of 525.
+Doing term 506 of 525.
+Doing term 507 of 525.
+Doing term 508 of 525.
+Doing term 509 of 525.
+Doing term 510 of 525.
+Doing term 511 of 525.
+Doing term 512 of 525.
+Doing term 513 of 525.
+Doing term 514 of 525.
+Doing term 515 of 525.
+Doing term 516 of 525.
+Doing term 517 of 525.
+Doing term 518 of 525.
+Doing term 519 of 525.
+Doing term 520 of 525.
+Doing term 521 of 525.
+Doing term 522 of 525.
+Doing term 523 of 525.
+Doing term 524 of 525.
+Doing term 525 of 525.
+Done!
+Call to ratfunc with m = 0.
+Call to ratfuncrep with deg = 20.
+Building last 21 rows of the matrix.
+Using coefficients 0 to 41/5.
+Time taken was 0.390.
+Building the first 21 rows of the matrix.
+Time taken was 0.160.
+Solving the linear system of size 42x42.
+Time taken was 0.250.
+Null space has dimension 6.
+Result has degree 15.
+Call to ratfunc with m = 1.
+Call to ratfuncrep with deg = 16.
+Building last 17 rows of the matrix.
+Using coefficients 0 to 33/5.
+Time taken was 0.140.
+Building the first 17 rows of the matrix.
+Time taken was 0.080.
+Solving the linear system of size 34x34.
+Time taken was 0.120.
+Null space has dimension 5.
+Result has degree 12.
+Call to ratfunc with m = 2.
+Call to ratfuncrep with deg = 12.
+Building last 13 rows of the matrix.
+Using coefficients 0 to 5.
+Time taken was 0.080.
+Building the first 13 rows of the matrix.
+Time taken was 0.030.
+Solving the linear system of size 26x26.
+Time taken was 0.050.
+Null space has dimension 4.
+Result has degree 9.
+Call to ratfunc with m = 3.
+Call to ratfuncrep with deg = 8.
+Building last 9 rows of the matrix.
+Using coefficients 0 to 17/5.
+Time taken was 0.020.
+Building the first 9 rows of the matrix.
+Time taken was 0.000.
+Solving the linear system of size 18x18.
+Time taken was 0.010.
+Null space has dimension 3.
+Result has degree 6.
+Call to ratfunc with m = 4.
+Call to ratfuncrep with deg = 4.
+Building last 5 rows of the matrix.
+Using coefficients 0 to 9/5.
+Time taken was 0.000.
+Building the first 5 rows of the matrix.
+Time taken was 0.000.
+Solving the linear system of size 10x10.
+Time taken was 0.010.
+Null space has dimension 2.
+Result has degree 3.
+Curve equation is y^5 + (1526040000*x^3 - 317358000*x^2 - 224785125*x - 
+55086075/2)/(x^2 + 1/4*x + 1/40)*y^4 + (931519353362400000*x^6 - 
+387440662434750000*x^5 - 234138358961415000*x^4 + 23444481169125000*x^3 + 
+27204142807284750*x^2 + 4953010924974375*x + 303447403915875)/(x^4 + 1/2*x^3 + 
+9/80*x^2 + 1/80*x + 1/1600)*y^3 + (284307232497910552080000000*x^9 - 
+177374943701296214670000000*x^8 - 88747743322260430137000000*x^7 + 
+34303371288434979054750000*x^6 + 19475275040517593161350000*x^5 + 
+20787351986412149737500*x^4 - 1573924786404827292303750*x^3 - 
+391789738150333662690000*x^2 - 81852516241622198443125/2*x - 
+1671570860377200311250)/(x^6 + 3/4*x^5 + 21/80*x^4 + 17/320*x^3 + 21/3200*x^2 + 
+3/6400*x + 1/64000)*y^2 + (43386437779143632567129016000000000*x^12 - 
+36090830909533246453383786000000000*x^11 - 
+14304930467766383448752272200000000*x^10 + 
+11255362217943259549375914300000000*x^9 + 4366818956652109598462963040000000*x^8
+- 1141541497372784534304430736250000*x^7 - 773103493000702059714097369875000*x^6
+- 63946833375342912663082716562500*x^5 + 41510497390810324124108868084375*x^4 + 
+14185651399968666535248540684375*x^3 + 2052116416401439158968091046875*x^2 + 
+601190395023811591578361584375/4*x + 73664104240417077454034356875/16)/(x^8 + 
+x^7 + 19/40*x^6 + 11/80*x^5 + 169/6400*x^4 + 11/3200*x^3 + 19/64000*x^2 + 
+1/64000*x + 1/2560000)*y + (2648378953564545490540821590232960000000000*x^15 - 
+2753802659560458143255292296499600000000000*x^14 - 
+805152888909015914357702618491440000000000*x^13 + 
+1145343518433722942840367718035930000000000*x^12 + 
+292061807514861920543990571968412000000000*x^11 - 
+210556642667751466794678948105791250000000*x^10 - 
+84364410666298640544379169142551775000000*x^9 + 
+11363656241889673003152296835004068750000*x^8 + 
+11554567433246951880725625632475671250000*x^7 + 
+1765680348105485337546203729268571875000*x^6 - 
+357599289800560977324488104647633253125*x^5 - 
+380315413202312063012569160706408796875/2*x^4 - 
+71413815982109165064059169513216234375/2*x^3 - 
+14682750279635779038306447126420684375/4*x^2 - 
+3311715827202679904548486924445203125/16*x - 
+162314308172575148764305821891788125/32)/(x^10 + 5/4*x^9 + 3/4*x^8 + 9/32*x^7 + 
+93/1280*x^6 + 69/5120*x^5 + 93/51200*x^4 + 9/51200*x^3 + 3/256000*x^2 + 
+1/2048000*x + 1/102400000).
+Finding maximal order finite in function field extension. This may take a while.
+ring_ext_maximal_order_flags: called with algo_flag: 0
+no algorithm selected
+nothing about algebra-splitting selected
+nothing about reduced-discriminant selected
+nothing about dedekind-test selected
+ring_ext_maximal_order: checking control-devices
+ring_ext_maximal_order_flags: calling ring_ext_maximal_order_flags_sub
+ring_ext_maximal_order_flags_sub: called with algo_flag: 40
+no algorithm selected
+no algebra-splitting selected
+no reduced-discriminant selected
+nothing about dedekind-test selected
+Factorization of discriminant: 
+t^2 - 1/20^4
+t^2 + 1/3*t + 1/30^2
+t^12 + 2109/850*t^11 + 439487/136000*t^10 + 1128429/425000*t^9 + 
+    20435759/13600000*t^8 + 40110421/68000000*t^7 + 5249247/34000000*t^6 + 
+    27525757/1360000000*t^5 - 302237/136000000*t^4 - 9976301/5440000000*t^3 - 
+    46849179/108800000000*t^2 - 5880781/108800000000*t - 3754511/2176000000000^2
+t^12 + 27/10*t^11 + 27911/8000*t^10 + 69457/25000*t^9 + 1184927/800000*t^8 + 
+    2126993/4000000*t^7 + 472977/4000000*t^6 + 352153/40000000*t^5 - 
+    122843/32000000*t^4 - 511943/320000000*t^3 - 1869347/6400000000*t^2 - 
+    11303/400000000*t - 76613/128000000000^2
+factors with (possibly) not maximal overorder:
+t^2 - 1/20^4
+t^2 + 1/3*t + 1/30^2
+t^12 + 2109/850*t^11 + 439487/136000*t^10 + 1128429/425000*t^9 + 
+    20435759/13600000*t^8 + 40110421/68000000*t^7 + 5249247/34000000*t^6 + 
+    27525757/1360000000*t^5 - 302237/136000000*t^4 - 9976301/5440000000*t^3 - 
+    46849179/108800000000*t^2 - 5880781/108800000000*t - 3754511/2176000000000^2
+t^12 + 27/10*t^11 + 27911/8000*t^10 + 69457/25000*t^9 + 1184927/800000*t^8 + 
+    2126993/4000000*t^7 + 472977/4000000*t^6 + 352153/40000000*t^5 - 
+    122843/32000000*t^4 - 511943/320000000*t^3 - 1869347/6400000000*t^2 - 
+    11303/400000000*t - 76613/128000000000^2
+-----------------------
+ring_ext_rnd2_max_p_sub called:
+prime: t^2 - 1/20, prime_bound: 4, algo_flag: 40
+-----------------------
+no algorithm selected
+no algebra-splitting selected
+nothing about dedekind-test selected
+nothing about pauli selected
+---------------------------
+ring_ext_rnd2_max_p_sub_sub called:
+prime: t^2 - 1/20, prime_bound: 4, algo_flag: 169
+---------------------------
+round2 selected
+no algebra-splitting selected
+no dedekind-test selected
+nothing about pauli selected
+No split performed ...
+(due to user advice or impossible) ... 
+standard algorithm.
+----------------------------
+ring_ext_rnd2_max_p_rnd2 called:
+prime: t^2 - 1/20, prime_bound: 4, algo_flag: 169
+----------------------------
+no dedekind-test selected
+Order is already t^2 - 1/20-maximal.
+-----------------------
+ring_ext_rnd2_max_p_sub called:
+prime: t^2 + 1/3*t + 1/30, prime_bound: 2, algo_flag: 40
+-----------------------
+no algorithm selected
+no algebra-splitting selected
+nothing about dedekind-test selected
+nothing about pauli selected
+---------------------------
+ring_ext_rnd2_max_p_sub_sub called:
+prime: t^2 + 1/3*t + 1/30, prime_bound: 2, algo_flag: 169
+---------------------------
+round2 selected
+no algebra-splitting selected
+no dedekind-test selected
+nothing about pauli selected
+No split performed ...
+(due to user advice or impossible) ... 
+standard algorithm.
+----------------------------
+ring_ext_rnd2_max_p_rnd2 called:
+prime: t^2 + 1/3*t + 1/30, prime_bound: 2, algo_flag: 169
+----------------------------
+no dedekind-test selected
+Order is already t^2 + 1/3*t + 1/30-maximal.
+-----------------------
+ring_ext_rnd2_max_p_sub called:
+prime: t^12 + 2109/850*t^11 + 439487/136000*t^10 + 1128429/425000*t^9 + 
+    20435759/13600000*t^8 + 40110421/68000000*t^7 + 5249247/34000000*t^6 + 
+    27525757/1360000000*t^5 - 302237/136000000*t^4 - 9976301/5440000000*t^3 - 
+    46849179/108800000000*t^2 - 5880781/108800000000*t - 3754511/2176000000000, 
+prime_bound: 2, algo_flag: 40
+-----------------------
+no algorithm selected
+no algebra-splitting selected
+nothing about dedekind-test selected
+nothing about pauli selected
+---------------------------
+ring_ext_rnd2_max_p_sub_sub called:
+prime: t^12 + 2109/850*t^11 + 439487/136000*t^10 + 1128429/425000*t^9 + 
+    20435759/13600000*t^8 + 40110421/68000000*t^7 + 5249247/34000000*t^6 + 
+    27525757/1360000000*t^5 - 302237/136000000*t^4 - 9976301/5440000000*t^3 - 
+    46849179/108800000000*t^2 - 5880781/108800000000*t - 3754511/2176000000000, 
+prime_bound: 2, algo_flag: 169
+---------------------------
+round2 selected
+no algebra-splitting selected
+no dedekind-test selected
+nothing about pauli selected
+No split performed ...
+(due to user advice or impossible) ... 
+standard algorithm.
+----------------------------
+ring_ext_rnd2_max_p_rnd2 called:
+prime: t^12 + 2109/850*t^11 + 439487/136000*t^10 + 1128429/425000*t^9 + 
+    20435759/13600000*t^8 + 40110421/68000000*t^7 + 5249247/34000000*t^6 + 
+    27525757/1360000000*t^5 - 302237/136000000*t^4 - 9976301/5440000000*t^3 - 
+    46849179/108800000000*t^2 - 5880781/108800000000*t - 3754511/2176000000000, 
+prime_bound: 2, algo_flag: 169
+----------------------------
+no dedekind-test selected
+transformation for t^12 + 2109/850*t^11 + 439487/136000*t^10 + 
+    1128429/425000*t^9 + 20435759/13600000*t^8 + 40110421/68000000*t^7 + 
+    5249247/34000000*t^6 + 27525757/1360000000*t^5 - 302237/136000000*t^4 - 
+    9976301/5440000000*t^3 - 46849179/108800000000*t^2 - 5880781/108800000000*t 
+    - 3754511/2176000000000...
+index of order: t^12 + 2109/850*t^11 + 439487/136000*t^10 + 1128429/425000*t^9 +
+    20435759/13600000*t^8 + 40110421/68000000*t^7 + 5249247/34000000*t^6 + 
+    27525757/1360000000*t^5 - 302237/136000000*t^4 - 9976301/5440000000*t^3 - 
+    46849179/108800000000*t^2 - 5880781/108800000000*t - 3754511/2176000000000
+-----------------------
+ring_ext_rnd2_max_p_sub called:
+prime: t^12 + 27/10*t^11 + 27911/8000*t^10 + 69457/25000*t^9 + 
+    1184927/800000*t^8 + 2126993/4000000*t^7 + 472977/4000000*t^6 + 
+    352153/40000000*t^5 - 122843/32000000*t^4 - 511943/320000000*t^3 - 
+    1869347/6400000000*t^2 - 11303/400000000*t - 76613/128000000000, 
+prime_bound: 2, algo_flag: 40
+-----------------------
+no algorithm selected
+no algebra-splitting selected
+nothing about dedekind-test selected
+nothing about pauli selected
+---------------------------
+ring_ext_rnd2_max_p_sub_sub called:
+prime: t^12 + 27/10*t^11 + 27911/8000*t^10 + 69457/25000*t^9 + 
+    1184927/800000*t^8 + 2126993/4000000*t^7 + 472977/4000000*t^6 + 
+    352153/40000000*t^5 - 122843/32000000*t^4 - 511943/320000000*t^3 - 
+    1869347/6400000000*t^2 - 11303/400000000*t - 76613/128000000000, 
+prime_bound: 2, algo_flag: 169
+---------------------------
+round2 selected
+no algebra-splitting selected
+no dedekind-test selected
+nothing about pauli selected
+No split performed ...
+(due to user advice or impossible) ... 
+standard algorithm.
+----------------------------
+ring_ext_rnd2_max_p_rnd2 called:
+prime: t^12 + 27/10*t^11 + 27911/8000*t^10 + 69457/25000*t^9 + 
+    1184927/800000*t^8 + 2126993/4000000*t^7 + 472977/4000000*t^6 + 
+    352153/40000000*t^5 - 122843/32000000*t^4 - 511943/320000000*t^3 - 
+    1869347/6400000000*t^2 - 11303/400000000*t - 76613/128000000000, 
+prime_bound: 2, algo_flag: 169
+----------------------------
+no dedekind-test selected
+transformation for t^12 + 27/10*t^11 + 27911/8000*t^10 + 69457/25000*t^9 + 
+    1184927/800000*t^8 + 2126993/4000000*t^7 + 472977/4000000*t^6 + 
+    352153/40000000*t^5 - 122843/32000000*t^4 - 511943/320000000*t^3 - 
+    1869347/6400000000*t^2 - 11303/400000000*t - 76613/128000000000...
+index of order: t^12 + 27/10*t^11 + 27911/8000*t^10 + 69457/25000*t^9 + 
+    1184927/800000*t^8 + 2126993/4000000*t^7 + 472977/4000000*t^6 + 
+    352153/40000000*t^5 - 122843/32000000*t^4 - 511943/320000000*t^3 - 
+    1869347/6400000000*t^2 - 11303/400000000*t - 76613/128000000000
+Time taken was 0.250.
+Iteration 1.
+mlist = [ 24, 27, 30, 33, 32 ].
+Updating...
+Done.
+Iteration 2.
+mlist = [ 24, 27, 30, 32, 32 ].
+Updating...
+Done.
+Iteration 3.
+mlist = [ 24, 27, 30, 32, 31 ].
+Updating...
+Done.
+Iteration 4.
+mlist = [ 24, 27, 30, 31, 31 ].
+Updating...
+Done.
+Iteration 5.
+mlist = [ 24, 27, 30, 31, 30 ].
+Updating...
+Done.
+Iteration 6.
+mlist = [ 24, 27, 30, 30, 30 ].
+Updating...
+Done.
+Iteration 7.
+mlist = [ 24, 27, 30, 30, 29 ].
+Updating...
+Done.
+Iteration 8.
+mlist = [ 24, 27, 30, 29, 29 ].
+Updating...
+Done.
+Iteration 9.
+mlist = [ 24, 27, 29, 29, 29 ].
+Updating...
+Done.
+Iteration 10.
+mlist = [ 24, 27, 29, 29, 28 ].
+Updating...
+Done.
+Iteration 11.
+mlist = [ 24, 27, 29, 28, 28 ].
+Updating...
+Done.
+Iteration 12.
+mlist = [ 24, 27, 28, 28, 28 ].
+Updating...
+Done.
+Iteration 13.
+mlist = [ 24, 27, 28, 28, 27 ].
+Updating...
+Done.
+Iteration 14.
+mlist = [ 24, 27, 28, 27, 27 ].
+Updating...
+Done.
+Iteration 15.
+mlist = [ 24, 27, 27, 27, 27 ].
+Updating...
+Done.
+Iteration 16.
+mlist = [ 24, 27, 27, 27, 26 ].
+Updating...
+Done.
+Iteration 17.
+mlist = [ 24, 27, 27, 26, 26 ].
+Updating...
+Done.
+Iteration 18.
+mlist = [ 24, 27, 26, 26, 26 ].
+Updating...
+Done.
+Iteration 19.
+mlist = [ 24, 26, 26, 26, 26 ].
+Updating...
+Done.
+Iteration 20.
+mlist = [ 24, 26, 26, 26, 25 ].
+Updating...
+Done.
+Iteration 21.
+mlist = [ 24, 26, 26, 25, 25 ].
+Working with basis of size 9.
+Simplest element defining the field has index 4.
+Using tvals = [ -2, -1, 0, 1, 2, 3, 4 ].
+Computing specialization 1 of 7.
+Computing LLLed maximal order.
+Computing specialization 2 of 7.
+Computing LLLed maximal order.
+Computing specialization 3 of 7.
+Computing LLLed maximal order.
+Computing specialization 4 of 7.
+Computing LLLed maximal order.
+Computing specialization 5 of 7.
+Computing LLLed maximal order.
+Computing specialization 6 of 7.
+Computing LLLed maximal order.
+Computing specialization 7 of 7.
+Computing LLLed maximal order.
+Clearing denominators.
+Saturating.
+LLLing. (Just for fun. It's not real yet.)
+Changing coordinates.
+Changing coordinates.
+Minimal size model has 153 characters. Index is 4.
+Simplified equation is y^5 + (10000*x^3 + 2000*x^2 - 500*x - 100)*y^2 + 
+(150000*x^4 + 40000*x^3 - 5000*x^2 - 2000*x - 125)*y + 600000*x^5 + 200000*x^4 -
+6000*x^2 - 1500*x - 200.
+In this equation, Q(x) is the function field of the modular curve with label 
+5.10.0.1.
+And Q(x,y) is the function field of the modular curve with label 25.50.2.1.
+
+Total time: 2828.130 seconds, Total memory usage: 413.12MB

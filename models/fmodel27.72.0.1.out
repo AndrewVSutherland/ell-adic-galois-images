@@ -1,0 +1,2527 @@
+Working on subgroup 27.72.0.1.
+Covering group is 27.36.0.1.
+j-invariant map for 27.72.0.1 is (t^36 + 36*t^33 + 594*t^30 + 5868*t^27 + 
+38151*t^24 + 169128*t^21 + 512028*t^18 + 1028376*t^15 + 1276479*t^12 + 
+840564*t^9 + 203634*t^6 + 20412*t^3 + 729)/(t^9 + 9*t^6 + 27*t^3).
+Multfac = t^9 + 9*t^6 + 27*t^3.
+Divfac = 3*$.1^30 + 90*$.1^27 + 1215*$.1^24 + 9540*$.1^21 + 47250*$.1^18 + 
+149688*$.1^15 + 292410*$.1^12 + 315900*$.1^9 + 142155*$.1^6 + 6318*$.1^3 - 729.
+New model is Elliptic Curve defined by y^2 = x^3 + (-3*t^12 - 36*t^9 - 162*t^6 -
+252*t^3 - 27)*x + (-2*t^18 - 36*t^15 - 270*t^12 - 1008*t^9 - 1782*t^6 - 972*t^3 
++ 54) over Univariate rational function field over Rational Field.
+The discriminant is 2985984*$.1^9 + 26873856*$.1^6 + 80621568*$.1^3.
+There are 4 squarefree divisors of the discriminant.
+Option 1 is 1.
+Option 2 is zz.
+Option 3 is zz^6 + 9*zz^3 + 27.
+Option 4 is zz^7 + 9*zz^4 + 27*zz.
+The order of G is 8748.
+The level is 27.72.0.1.
+There are 558 conjugacy classes of G.
+Their sizes are [ 1, 1, 27, 27, 1, 1, 2, 2, 2, 3, 3, 3, 3, 3, 3, 1, 1, 2, 2, 2, 
+3, 3, 3, 3, 3, 3, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 
+27, 1, 1, 1, 1, 1, 1, 2, 2, 2, 2, 2, 2, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 6, 
+6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 9,
+9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9,
+9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 1,
+1, 1, 1, 1, 1, 2, 2, 2, 2, 2, 2, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 6, 6, 6, 6,
+6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 9, 9, 9, 9,
+9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9,
+9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 27, 27, 27,
+27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 
+27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 
+27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 
+27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 
+27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 
+27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 
+27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 
+27, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 
+18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 
+18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 
+18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 
+18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 
+18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 
+18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 
+18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 
+18, 18, 18 ].
+Using t = 1.
+Working on curve [ 0, 0, 0, -480, -4016 ].
+Enumerating points of order 27.
+Selecting which conjugate of G we should use.
+Testing choice 1. For choice 1, we get error 4.137647215E34.
+Testing choice 2. For choice 2, we get error 1.430535082E32.
+Testing choice 3. For choice 3, we get error 4.129679525E34.
+Testing choice 4. For choice 4, we get error 4.412579622E34.
+Testing choice 5. For choice 5, we get error 8.937316126E34.
+Testing choice 6. For choice 6, we get error 8.937374151E34.
+Testing choice 7. For choice 7, we get error 7.754721688E34.
+Testing choice 8. For choice 8, we get error 7.754723913E34.
+Testing choice 9. For choice 9, we get error 4.424278950E34.
+Testing choice 10. For choice 10, we get error 6.768142701E33.
+Testing choice 11. For choice 11, we get error 8.263369661E34.
+Testing choice 12. For choice 12, we get error 1.015755647E32.
+Testing choice 13. For choice 13, we get error 8.938969295E34.
+Testing choice 14. For choice 14, we get error 4.416305547E34.
+Testing choice 15. For choice 15, we get error 7.754721561E34.
+Testing choice 16. For choice 16, we get error 4.754180036E34.
+Testing choice 17. For choice 17, we get error 4.103116266E34.
+Testing choice 18. For choice 18, we get error 6.856990887E33.
+Testing choice 19. For choice 19, we get error 4.104169330E34.
+Testing choice 20. For choice 20, we get error 4.423270709E34.
+Testing choice 21. For choice 21, we get error 7.754708806E34.
+Testing choice 22. For choice 22, we get error 4.711693531E34.
+Testing choice 23. For choice 23, we get error 8.283807048E34.
+Testing choice 24. For choice 24, we get error 4.088141461E34.
+Testing choice 25. For choice 25, we get error 7.754719576E34.
+Testing choice 26. For choice 26, we get error 9.021813475E34.
+Testing choice 27. For choice 27, we get error 1.140369022E-1464.
+Testing choice 28. For choice 28, we get error 4.107102076E34.
+Testing choice 29. For choice 29, we get error 4.099490347E34.
+Testing choice 30. For choice 30, we get error 7.754732591E34.
+Testing choice 31. For choice 31, we get error 4.415612137E34.
+Testing choice 32. For choice 32, we get error 8.939227080E34.
+Testing choice 33. For choice 33, we get error 8.905213112E34.
+Testing choice 34. For choice 34, we get error 4.150997343E34.
+Testing choice 35. For choice 35, we get error 4.416629911E34.
+Testing choice 36. For choice 36, we get error 0.1440870835.
+Choice 27 is best.
+Gfine has 1 conjugates inside Gtilde.
+Computing fpolynomial.
+Maximal error on fpolynomial was 5.024125452E-4273.
+Maximal coefficient size of f polynomial was 1.950055958E1726.
+Working on class 1. Maximal error on polynomial was 8.974727021E-1476.
+Maximal coefficient size was 6.329687803E24.
+Working on class 2. Maximal error on polynomial was 8.974726997E-1476.
+Maximal coefficient size was 6.328184773E24.
+Working on class 3. Maximal error on polynomial was 1.624490216E-917.
+Maximal coefficient size was 3.647491175E581.
+Working on class 4. Maximal error on polynomial was 1.006251521E-918.
+Maximal coefficient size was 4.085258787E581.
+Working on class 5. Maximal error on polynomial was 2.139741658E-1482.
+Maximal coefficient size was 5.071952306E21.
+Working on class 6. Maximal error on polynomial was 5.349354145E-1483.
+Maximal coefficient size was 1.151277008E22.
+Working on class 7. Maximal error on polynomial was 2.483598476E-1456.
+Maximal coefficient size was 1.489637763E43.
+Working on class 8. Maximal error on polynomial was 6.466972344E-1459.
+Maximal coefficient size was 6.298992265E41.
+Working on class 9. Maximal error on polynomial was 6.466972344E-1459.
+Maximal coefficient size was 6.792823257E41.
+Working on class 10. Maximal error on polynomial was 1.702897918E-1434.
+Maximal coefficient size was 4.075349470E66.
+Working on class 11. Maximal error on polynomial was 9.816590783E-1434.
+Maximal coefficient size was 9.731823958E66.
+Working on class 12. Maximal error on polynomial was 1.957568044E-1435.
+Maximal coefficient size was 1.104719144E65.
+Working on class 13. Maximal error on polynomial was 9.757557076E-1437.
+Maximal coefficient size was 1.704567673E65.
+Working on class 14. Maximal error on polynomial was 1.254027366E-1436.
+Maximal coefficient size was 8.032614420E63.
+Working on class 15. Maximal error on polynomial was 1.222455491E-1436.
+Maximal coefficient size was 3.158760210E63.
+Working on class 16. Maximal error on polynomial was 1.752876369E-1478.
+Maximal coefficient size was 1.153765063E22.
+Working on class 17. Maximal error on polynomial was 8.764381831E-1479.
+Maximal coefficient size was 5.054493122E21.
+Working on class 18. Maximal error on polynomial was 6.208293450E-1457.
+Maximal coefficient size was 1.498604921E43.
+Working on class 19. Maximal error on polynomial was 6.466972344E-1459.
+Maximal coefficient size was 6.223549053E41.
+Working on class 20. Maximal error on polynomial was 0.0000000000.
+Maximal coefficient size was 6.899749064E41.
+Working on class 21. Maximal error on polynomial was 9.782655083E-1435.
+Maximal coefficient size was 1.108396392E65.
+Working on class 22. Maximal error on polynomial was 3.698516520E-1436.
+Maximal coefficient size was 8.175677946E63.
+Working on class 23. Maximal error on polynomial was 9.212806135E-1437.
+Maximal coefficient size was 3.108934745E63.
+Working on class 24. Maximal error on polynomial was 6.412286525E-1433.
+Maximal coefficient size was 9.809475888E66.
+Working on class 25. Maximal error on polynomial was 2.502738204E-1433.
+Maximal coefficient size was 4.130894875E66.
+Working on class 26. Maximal error on polynomial was 1.955592880E-1435.
+Maximal coefficient size was 1.716359744E65.
+Working on class 27. Maximal error on polynomial was 1.230145282E-924.
+Maximal coefficient size was 8.156704920E574.
+Working on class 28. Maximal error on polynomial was 2.394303582E-924.
+Maximal coefficient size was 1.780265667E575.
+Working on class 29. Maximal error on polynomial was 3.177346554E-917.
+Maximal coefficient size was 3.007337964E582.
+Working on class 30. Maximal error on polynomial was 6.817022125E-920.
+Maximal coefficient size was 1.021696102E580.
+Working on class 31. Maximal error on polynomial was 4.043113434E-917.
+Maximal coefficient size was 3.527062011E582.
+Working on class 32. Maximal error on polynomial was 2.582410052E-925.
+Maximal coefficient size was 1.119735880E574.
+Working on class 33. Maximal error on polynomial was 1.707582020E-922.
+Maximal coefficient size was 5.173230114E576.
+Working on class 34. Maximal error on polynomial was 1.184406259E-913.
+Maximal coefficient size was 7.968203711E585.
+Working on class 35. Maximal error on polynomial was 5.496288851E-925.
+Maximal coefficient size was 7.749064901E574.
+Working on class 36. Maximal error on polynomial was 2.066260400E-924.
+Maximal coefficient size was 1.232016215E575.
+Working on class 37. Maximal error on polynomial was 5.776287064E-917.
+Maximal coefficient size was 3.115692719E582.
+Working on class 38. Maximal error on polynomial was 3.722607071E-919.
+Maximal coefficient size was 1.115231475E580.
+Working on class 39. Maximal error on polynomial was 5.789720138E-917.
+Maximal coefficient size was 3.629148161E582.
+Working on class 40. Maximal error on polynomial was 1.337822877E-925.
+Maximal coefficient size was 1.167924617E574.
+Working on class 41. Maximal error on polynomial was 7.712209601E-923.
+Maximal coefficient size was 4.243755972E576.
+Working on class 42. Maximal error on polynomial was 2.498120050E-913.
+Maximal coefficient size was 7.582639558E585.
+Working on class 43. Maximal error on polynomial was 2.139741658E-1482.
+Maximal coefficient size was 1.781096289E22.
+Working on class 44. Maximal error on polynomial was 5.349354145E-1483.
+Maximal coefficient size was 3.147638897E21.
+Working on class 45. Maximal error on polynomial was 1.711793326E-1481.
+Maximal coefficient size was 7.907800897E23.
+Working on class 46. Maximal error on polynomial was 1.752876367E-1478.
+Maximal coefficient size was 1.176663901E22.
+Working on class 47. Maximal error on polynomial was 1.402301093E-1477.
+Maximal coefficient size was 5.016588162E22.
+Working on class 48. Maximal error on polynomial was 6.376952668E-5977.
+Maximal coefficient size was 9.860338197E22.
+Working on class 49. Maximal error on polynomial was 1.940091703E-1458.
+Maximal coefficient size was 5.997158776E41.
+Working on class 50. Maximal error on polynomial was 6.466972344E-1459.
+Maximal coefficient size was 5.733941806E41.
+Working on class 51. Maximal error on polynomial was 0.0000000000.
+Maximal coefficient size was 6.952172211E41.
+Working on class 52. Maximal error on polynomial was 3.560530119E-1479.
+Maximal coefficient size was 5.917096427E41.
+Working on class 53. Maximal error on polynomial was 6.466972344E-1459.
+Maximal coefficient size was 6.846880611E41.
+Working on class 54. Maximal error on polynomial was 1.298429298E-1458.
+Maximal coefficient size was 7.056336354E41.
+Working on class 55. Maximal error on polynomial was 7.818311095E-1435.
+Maximal coefficient size was 5.260040798E65.
+Working on class 56. Maximal error on polynomial was 1.009635893E-1435.
+Maximal coefficient size was 7.556288500E64.
+Working on class 57. Maximal error on polynomial was 4.895412767E-1436.
+Maximal coefficient size was 1.295546412E64.
+Working on class 58. Maximal error on polynomial was 1.390782324E-1437.
+Maximal coefficient size was 3.107416252E64.
+Working on class 59. Maximal error on polynomial was 6.110252731E-1437.
+Maximal coefficient size was 6.454825870E63.
+Working on class 60. Maximal error on polynomial was 1.156416988E-1435.
+Maximal coefficient size was 7.950319994E64.
+Working on class 61. Maximal error on polynomial was 1.465932111E-1435.
+Maximal coefficient size was 4.247626434E64.
+Working on class 62. Maximal error on polynomial was 9.773369906E-1436.
+Maximal coefficient size was 3.586278828E64.
+Working on class 63. Maximal error on polynomial was 7.454741147E-1440.
+Maximal coefficient size was 6.666825452E63.
+Working on class 64. Maximal error on polynomial was 9.024254764E-1435.
+Maximal coefficient size was 5.993836137E65.
+Working on class 65. Maximal error on polynomial was 9.541057120E-1437.
+Maximal coefficient size was 1.576340344E63.
+Working on class 66. Maximal error on polynomial was 3.054726493E-1437.
+Maximal coefficient size was 1.829975252E63.
+Working on class 67. Maximal error on polynomial was 3.017816421E-1373.
+Maximal coefficient size was 8.118260692E126.
+Working on class 68. Maximal error on polynomial was 2.613234721E-1372.
+Maximal coefficient size was 1.474340380E127.
+Working on class 69. Maximal error on polynomial was 6.432618393E-1372.
+Maximal coefficient size was 7.227004163E127.
+Working on class 70. Maximal error on polynomial was 4.421470213E-1372.
+Maximal coefficient size was 3.027244969E128.
+Working on class 71. Maximal error on polynomial was 9.657779483E-1372.
+Maximal coefficient size was 2.372241192E128.
+Working on class 72. Maximal error on polynomial was 3.398573377E-1374.
+Maximal coefficient size was 3.730095567E126.
+Working on class 73. Maximal error on polynomial was 1.207839494E-1372.
+Maximal coefficient size was 3.350859587E127.
+Working on class 74. Maximal error on polynomial was 4.025809952E-1372.
+Maximal coefficient size was 6.327278394E127.
+Working on class 75. Maximal error on polynomial was 3.332434398E-1371.
+Maximal coefficient size was 6.823020407E128.
+Working on class 76. Maximal error on polynomial was 1.286477237E-1371.
+Maximal coefficient size was 4.812140187E128.
+Working on class 77. Maximal error on polynomial was 2.513915379E-1373.
+Maximal coefficient size was 3.550001332E126.
+Working on class 78. Maximal error on polynomial was 1.929769272E-1371.
+Maximal coefficient size was 3.312938857E128.
+Working on class 79. Maximal error on polynomial was 7.245409211E-1368.
+Maximal coefficient size was 3.696433812E131.
+Working on class 80. Maximal error on polynomial was 1.932255412E-1371.
+Maximal coefficient size was 2.183961768E128.
+Working on class 81. Maximal error on polynomial was 5.028722407E-1374.
+Maximal coefficient size was 3.235907593E126.
+Working on class 82. Maximal error on polynomial was 1.158859515E-1370.
+Maximal coefficient size was 7.093144242E128.
+Working on class 83. Maximal error on polynomial was 6.433448874E-1371.
+Maximal coefficient size was 6.705758863E128.
+Working on class 84. Maximal error on polynomial was 4.893953092E-1370.
+Maximal coefficient size was 1.781723049E129.
+Working on class 85. Maximal error on polynomial was 9.651022645E-1372.
+Maximal coefficient size was 1.738399088E128.
+Working on class 86. Maximal error on polynomial was 1.603606570E-1370.
+Maximal coefficient size was 4.205723320E129.
+Working on class 87. Maximal error on polynomial was 3.517699967E-1373.
+Maximal coefficient size was 3.488162119E126.
+Working on class 88. Maximal error on polynomial was 2.010398758E-1373.
+Maximal coefficient size was 5.842292660E126.
+Working on class 89. Maximal error on polynomial was 9.648925665E-1372.
+Maximal coefficient size was 1.110925851E128.
+Working on class 90. Maximal error on polynomial was 4.466395851E-1373.
+Maximal coefficient size was 3.193868600E127.
+Working on class 91. Maximal error on polynomial was 5.763499529E-1369.
+Maximal coefficient size was 6.981927059E130.
+Working on class 92. Maximal error on polynomial was 3.016426241E-1373.
+Maximal coefficient size was 8.192847297E126.
+Working on class 93. Maximal error on polynomial was 1.029463130E-1369.
+Maximal coefficient size was 6.316209335E129.
+Working on class 94. Maximal error on polynomial was 2.650086625E-1308.
+Maximal coefficient size was 4.571301624E191.
+Working on class 95. Maximal error on polynomial was 4.161339744E-1310.
+Maximal coefficient size was 5.721385259E189.
+Working on class 96. Maximal error on polynomial was 5.456298190E-1305.
+Maximal coefficient size was 5.790074374E194.
+Working on class 97. Maximal error on polynomial was 1.226595338E-1305.
+Maximal coefficient size was 6.868360991E194.
+Working on class 98. Maximal error on polynomial was 3.319510851E-1310.
+Maximal coefficient size was 6.494245480E189.
+Working on class 99. Maximal error on polynomial was 1.482021619E-1307.
+Maximal coefficient size was 1.144356791E192.
+Working on class 100. Maximal error on polynomial was 1.192286331E-1304.
+Maximal coefficient size was 6.948821967E194.
+Working on class 101. Maximal error on polynomial was 1.270257643E-1306.
+Maximal coefficient size was 8.644480220E192.
+Working on class 102. Maximal error on polynomial was 3.324359124E-1310.
+Maximal coefficient size was 2.415852023E190.
+Working on class 103. Maximal error on polynomial was 2.095076367E-1306.
+Maximal coefficient size was 3.713690404E193.
+Working on class 104. Maximal error on polynomial was 1.837854811E-1308.
+Maximal coefficient size was 1.042092541E192.
+Working on class 105. Maximal error on polynomial was 3.308023264E-1310.
+Maximal coefficient size was 2.304644276E190.
+Working on class 106. Maximal error on polynomial was 4.736598820E-1307.
+Maximal coefficient size was 2.608207859E193.
+Working on class 107. Maximal error on polynomial was 1.016110932E-1306.
+Maximal coefficient size was 9.705682597E192.
+Working on class 108. Maximal error on polynomial was 2.384506476E-1308.
+Maximal coefficient size was 1.921828076E191.
+Working on class 109. Maximal error on polynomial was 5.228172884E-1304.
+Maximal coefficient size was 9.541359657E195.
+Working on class 110. Maximal error on polynomial was 7.627481084E-1307.
+Maximal coefficient size was 8.003845848E192.
+Working on class 111. Maximal error on polynomial was 3.355591718E-1310.
+Maximal coefficient size was 2.125888952E190.
+Working on class 112. Maximal error on polynomial was 1.355876828E-1306.
+Maximal coefficient size was 3.153680810E193.
+Working on class 113. Maximal error on polynomial was 5.552427387E-1302.
+Maximal coefficient size was 3.817573058E197.
+Working on class 114. Maximal error on polynomial was 6.817077000E-1310.
+Maximal coefficient size was 2.528340864E190.
+Working on class 115. Maximal error on polynomial was 5.963273644E-1307.
+Maximal coefficient size was 2.625660899E193.
+Working on class 116. Maximal error on polynomial was 5.927388857E-1307.
+Maximal coefficient size was 7.993440768E192.
+Working on class 117. Maximal error on polynomial was 1.626454260E-1304.
+Maximal coefficient size was 1.160150655E195.
+Working on class 118. Maximal error on polynomial was 4.194965528E-1303.
+Maximal coefficient size was 5.492158299E196.
+Working on class 119. Maximal error on polynomial was 1.194455897E-1308.
+Maximal coefficient size was 3.035769466E190.
+Working on class 120. Maximal error on polynomial was 2.315569310E-1309.
+Maximal coefficient size was 2.294840604E190.
+Working on class 121. Maximal error on polynomial was 3.094716598E-1304.
+Maximal coefficient size was 2.567773568E195.
+Working on class 122. Maximal error on polynomial was 1.059765091E-1308.
+Maximal coefficient size was 2.797734662E191.
+Working on class 123. Maximal error on polynomial was 7.409758736E-1308.
+Maximal coefficient size was 6.863585584E191.
+Working on class 124. Maximal error on polynomial was 6.948968614E-1303.
+Maximal coefficient size was 7.900242546E196.
+Working on class 125. Maximal error on polynomial was 1.810428637E-1309.
+Maximal coefficient size was 2.760111974E191.
+Working on class 126. Maximal error on polynomial was 1.653836915E-1309.
+Maximal coefficient size was 2.706524830E190.
+Working on class 127. Maximal error on polynomial was 4.200863793E-1303.
+Maximal coefficient size was 9.627287780E196.
+Working on class 128. Maximal error on polynomial was 1.059521543E-1308.
+Maximal coefficient size was 1.890175700E191.
+Working on class 129. Maximal error on polynomial was 9.968430074E-1310.
+Maximal coefficient size was 1.332034804E190.
+Working on class 130. Maximal error on polynomial was 1.953395864E-1304.
+Maximal coefficient size was 2.088969502E195.
+Working on class 131. Maximal error on polynomial was 3.019853876E-1309.
+Maximal coefficient size was 2.698568346E191.
+Working on class 132. Maximal error on polynomial was 2.981006640E-1309.
+Maximal coefficient size was 3.354251267E190.
+Working on class 133. Maximal error on polynomial was 6.074184209E-1304.
+Maximal coefficient size was 3.476425400E195.
+Working on class 134. Maximal error on polynomial was 2.124955470E-1308.
+Maximal coefficient size was 4.516846554E191.
+Working on class 135. Maximal error on polynomial was 2.981992340E-1309.
+Maximal coefficient size was 3.115229681E190.
+Working on class 136. Maximal error on polynomial was 7.219933341E-1301.
+Maximal coefficient size was 1.607394346E199.
+Working on class 137. Maximal error on polynomial was 3.314440956E-1310.
+Maximal coefficient size was 6.347545173E189.
+Working on class 138. Maximal error on polynomial was 7.414305048E-1308.
+Maximal coefficient size was 9.046795942E191.
+Working on class 139. Maximal error on polynomial was 7.603657862E-1305.
+Maximal coefficient size was 7.237728515E194.
+Working on class 140. Maximal error on polynomial was 8.674292328E-1305.
+Maximal coefficient size was 3.092713487E194.
+Working on class 141. Maximal error on polynomial was 9.532416192E-1308.
+Maximal coefficient size was 9.024218287E191.
+Working on class 142. Maximal error on polynomial was 1.290874272E-1305.
+Maximal coefficient size was 6.604618367E193.
+Working on class 143. Maximal error on polynomial was 4.898920047E-1305.
+Maximal coefficient size was 4.354067071E194.
+Working on class 144. Maximal error on polynomial was 8.328526967E-1310.
+Maximal coefficient size was 1.115112220E190.
+Working on class 145. Maximal error on polynomial was 1.169371356E-1307.
+Maximal coefficient size was 1.052826867E192.
+Working on class 146. Maximal error on polynomial was 4.337768322E-1305.
+Maximal coefficient size was 3.346622828E194.
+Working on class 147. Maximal error on polynomial was 3.309359100E-1310.
+Maximal coefficient size was 4.685148095E189.
+Working on class 148. Maximal error on polynomial was 3.423586653E-1481.
+Maximal coefficient size was 7.911559179E23.
+Working on class 149. Maximal error on polynomial was 1.752876367E-1478.
+Maximal coefficient size was 1.178613083E22.
+Working on class 150. Maximal error on polynomial was 1.402301093E-1477.
+Maximal coefficient size was 5.022649710E22.
+Working on class 151. Maximal error on polynomial was 6.954160388E-1482.
+Maximal coefficient size was 9.850913398E22.
+Working on class 152. Maximal error on polynomial was 1.752876373E-1478.
+Maximal coefficient size was 1.777923965E22.
+Working on class 153. Maximal error on polynomial was 4.382191046E-1479.
+Maximal coefficient size was 3.163253989E21.
+Working on class 154. Maximal error on polynomial was 3.880183406E-1458.
+Maximal coefficient size was 5.721989936E41.
+Working on class 155. Maximal error on polynomial was 3.880183406E-1458.
+Maximal coefficient size was 6.941950952E41.
+Working on class 156. Maximal error on polynomial was 0.0000000000.
+Maximal coefficient size was 7.062448501E41.
+Working on class 157. Maximal error on polynomial was 1.293394469E-1458.
+Maximal coefficient size was 6.052205699E41.
+Working on class 158. Maximal error on polynomial was 1.940091703E-1458.
+Maximal coefficient size was 6.750735925E41.
+Working on class 159. Maximal error on polynomial was 3.286643186E-1479.
+Maximal coefficient size was 5.893878892E41.
+Working on class 160. Maximal error on polynomial was 4.892278066E-1436.
+Maximal coefficient size was 1.272502310E64.
+Working on class 161. Maximal error on polynomial was 1.737429935E-1436.
+Maximal coefficient size was 6.029630463E65.
+Working on class 162. Maximal error on polynomial was 1.528287880E-1437.
+Maximal coefficient size was 1.582448122E63.
+Working on class 163. Maximal error on polynomial was 1.954547578E-1435.
+Maximal coefficient size was 4.316354305E64.
+Working on class 164. Maximal error on polynomial was 5.497418448E-1436.
+Maximal coefficient size was 6.459537390E63.
+Working on class 165. Maximal error on polynomial was 9.093701172E-1436.
+Maximal coefficient size was 5.303485033E65.
+Working on class 166. Maximal error on polynomial was 1.954739100E-1435.
+Maximal coefficient size was 7.448159491E64.
+Working on class 167. Maximal error on polynomial was 1.985580274E-1435.
+Maximal coefficient size was 7.834559852E64.
+Working on class 168. Maximal error on polynomial was 5.373356642E-1438.
+Maximal coefficient size was 3.066992603E64.
+Working on class 169. Maximal error on polynomial was 4.888436248E-1436.
+Maximal coefficient size was 3.646695589E64.
+Working on class 170. Maximal error on polynomial was 3.664741787E-1436.
+Maximal coefficient size was 6.660202809E63.
+Working on class 171. Maximal error on polynomial was 6.108735552E-1437.
+Maximal coefficient size was 1.857070630E63.
+Working on class 172. Maximal error on polynomial was 9.667027330E-1372.
+Maximal coefficient size was 2.226006863E128.
+Working on class 173. Maximal error on polynomial was 2.076692811E-1373.
+Maximal coefficient size was 7.643997367E126.
+Working on class 174. Maximal error on polynomial was 1.288812745E-1371.
+Maximal coefficient size was 4.571562172E128.
+Working on class 175. Maximal error on polynomial was 9.663281015E-1372.
+Maximal coefficient size was 2.313322365E128.
+Working on class 176. Maximal error on polynomial was 2.421324953E-1372.
+Maximal coefficient size was 3.544004357E127.
+Working on class 177. Maximal error on polynomial was 1.930476710E-1371.
+Maximal coefficient size was 3.475818014E128.
+Working on class 178. Maximal error on polynomial was 1.913249046E-1375.
+Maximal coefficient size was 3.208702654E126.
+Working on class 179. Maximal error on polynomial was 5.281926450E-1368.
+Maximal coefficient size was 3.733721785E131.
+Working on class 180. Maximal error on polynomial was 1.088431022E-1370.
+Maximal coefficient size was 4.224342478E129.
+Working on class 181. Maximal error on polynomial was 2.211570179E-1372.
+Maximal coefficient size was 1.431408068E127.
+Working on class 182. Maximal error on polynomial was 1.930871650E-1371.
+Maximal coefficient size was 6.295808172E128.
+Working on class 183. Maximal error on polynomial was 3.218365446E-1372.
+Maximal coefficient size was 5.977112834E127.
+Working on class 184. Maximal error on polynomial was 1.136013274E-1371.
+Maximal coefficient size was 1.136056683E128.
+Working on class 185. Maximal error on polynomial was 1.023843719E-1373.
+Maximal coefficient size was 3.716671994E126.
+Working on class 186. Maximal error on polynomial was 8.017625114E-1372.
+Maximal coefficient size was 2.827937188E128.
+Working on class 187. Maximal error on polynomial was 5.365318977E-1372.
+Maximal coefficient size was 7.171573061E128.
+Working on class 188. Maximal error on polynomial was 2.518847192E-1373.
+Maximal coefficient size was 3.767668383E126.
+Working on class 189. Maximal error on polynomial was 2.020322614E-1372.
+Maximal coefficient size was 3.379303205E127.
+Working on class 190. Maximal error on polynomial was 1.286941521E-1371.
+Maximal coefficient size was 1.846811551E128.
+Working on class 191. Maximal error on polynomial was 5.790377908E-1371.
+Maximal coefficient size was 6.908660669E128.
+Working on class 192. Maximal error on polynomial was 9.673496133E-1370.
+Maximal coefficient size was 7.045059070E130.
+Working on class 193. Maximal error on polynomial was 2.080253962E-1373.
+Maximal coefficient size was 7.711507421E126.
+Working on class 194. Maximal error on polynomial was 3.100477282E-1370.
+Maximal coefficient size was 6.341701928E129.
+Working on class 195. Maximal error on polynomial was 2.316031154E-1370.
+Maximal coefficient size was 1.718414511E129.
+Working on class 196. Maximal error on polynomial was 3.519392686E-1373.
+Maximal coefficient size was 3.709378575E126.
+Working on class 197. Maximal error on polynomial was 5.533071174E-1375.
+Maximal coefficient size was 5.973192957E126.
+Working on class 198. Maximal error on polynomial was 4.824360474E-1372.
+Maximal coefficient size was 6.845547933E127.
+Working on class 199. Maximal error on polynomial was 2.400545944E-1304.
+Maximal coefficient size was 1.173684418E195.
+Working on class 200. Maximal error on polynomial was 4.362703846E-1305.
+Maximal coefficient size was 7.277847477E194.
+Working on class 201. Maximal error on polynomial was 4.961472634E-1310.
+Maximal coefficient size was 6.980694436E189.
+Working on class 202. Maximal error on polynomial was 1.058705452E-1307.
+Maximal coefficient size was 1.068180831E192.
+Working on class 203. Maximal error on polynomial was 7.629771570E-1305.
+Maximal coefficient size was 6.681590148E194.
+Working on class 204. Maximal error on polynomial was 6.827682424E-1307.
+Maximal coefficient size was 9.281069119E192.
+Working on class 205. Maximal error on polynomial was 1.657717784E-1309.
+Maximal coefficient size was 2.411709253E190.
+Working on class 206. Maximal error on polynomial was 1.713935372E-1306.
+Maximal coefficient size was 3.514354362E193.
+Working on class 207. Maximal error on polynomial was 1.587699897E-1307.
+Maximal coefficient size was 1.012740630E192.
+Working on class 208. Maximal error on polynomial was 1.654367951E-1309.
+Maximal coefficient size was 2.308087869E190.
+Working on class 209. Maximal error on polynomial was 1.018764066E-1306.
+Maximal coefficient size was 2.432250414E193.
+Working on class 210. Maximal error on polynomial was 1.902173893E-1307.
+Maximal coefficient size was 1.036540556E193.
+Working on class 211. Maximal error on polynomial was 4.558727389E-1308.
+Maximal coefficient size was 1.852568256E191.
+Working on class 212. Maximal error on polynomial was 1.811171266E-1303.
+Maximal coefficient size was 5.596486861E196.
+Working on class 213. Maximal error on polynomial was 1.654209129E-1309.
+Maximal coefficient size was 2.970503641E190.
+Working on class 214. Maximal error on polynomial was 1.985285550E-1309.
+Maximal coefficient size was 2.122853561E190.
+Working on class 215. Maximal error on polynomial was 9.114106811E-1303.
+Maximal coefficient size was 9.712942085E196.
+Working on class 216. Maximal error on polynomial was 2.646257626E-1308.
+Maximal coefficient size was 2.047422966E191.
+Working on class 217. Maximal error on polynomial was 3.310245318E-1310.
+Maximal coefficient size was 1.220027126E190.
+Working on class 218. Maximal error on polynomial was 8.915350348E-1305.
+Maximal coefficient size was 1.951825645E195.
+Working on class 219. Maximal error on polynomial was 2.646902442E-1308.
+Maximal coefficient size was 2.900235406E191.
+Working on class 220. Maximal error on polynomial was 2.646189262E-1309.
+Maximal coefficient size was 3.122784952E190.
+Working on class 221. Maximal error on polynomial was 4.335469867E-1304.
+Maximal coefficient size was 3.261410886E195.
+Working on class 222. Maximal error on polynomial was 5.292514998E-1308.
+Maximal coefficient size was 4.820122405E191.
+Working on class 223. Maximal error on polynomial was 2.977198673E-1309.
+Maximal coefficient size was 2.901413080E190.
+Working on class 224. Maximal error on polynomial was 1.736262000E-1304.
+Maximal coefficient size was 2.419015988E195.
+Working on class 225. Maximal error on polynomial was 3.175687515E-1308.
+Maximal coefficient size was 3.005182635E191.
+Working on class 226. Maximal error on polynomial was 7.410653329E-1308.
+Maximal coefficient size was 6.592594334E191.
+Working on class 227. Maximal error on polynomial was 2.775281563E-1303.
+Maximal coefficient size was 7.612040406E196.
+Working on class 228. Maximal error on polynomial was 2.677326919E-1308.
+Maximal coefficient size was 2.968582697E191.
+Working on class 229. Maximal error on polynomial was 1.660347101E-1309.
+Maximal coefficient size was 2.509870309E190.
+Working on class 230. Maximal error on polynomial was 1.283046633E-1300.
+Maximal coefficient size was 1.632354204E199.
+Working on class 231. Maximal error on polynomial was 7.450958214E-1310.
+Maximal coefficient size was 6.851830660E189.
+Working on class 232. Maximal error on polynomial was 8.470049347E-1308.
+Maximal coefficient size was 8.407228720E191.
+Working on class 233. Maximal error on polynomial was 3.252664380E-1305.
+Maximal coefficient size was 7.631390294E194.
+Working on class 234. Maximal error on polynomial was 1.030372374E-1304.
+Maximal coefficient size was 3.081938601E194.
+Working on class 235. Maximal error on polynomial was 8.475809146E-1308.
+Maximal coefficient size was 8.394421998E191.
+Working on class 236. Maximal error on polynomial was 1.630237165E-1306.
+Maximal coefficient size was 7.038170059E193.
+Working on class 237. Maximal error on polynomial was 6.617950416E-1310.
+Maximal coefficient size was 6.174524055E189.
+Working on class 238. Maximal error on polynomial was 9.755576415E-1305.
+Maximal coefficient size was 5.848391364E194.
+Working on class 239. Maximal error on polynomial was 1.321797674E-1305.
+Maximal coefficient size was 4.607882250E194.
+Working on class 240. Maximal error on polynomial was 1.323096564E-1309.
+Maximal coefficient size was 1.195108740E190.
+Working on class 241. Maximal error on polynomial was 1.270777511E-1307.
+Maximal coefficient size was 9.824563983E191.
+Working on class 242. Maximal error on polynomial was 5.030931921E-1305.
+Maximal coefficient size was 3.273381136E194.
+Working on class 243. Maximal error on polynomial was 7.485000882E-1310.
+Maximal coefficient size was 5.046711303E189.
+Working on class 244. Maximal error on polynomial was 6.879907977E-1308.
+Maximal coefficient size was 4.185739018E191.
+Working on class 245. Maximal error on polynomial was 3.468381674E-1304.
+Maximal coefficient size was 9.763465231E195.
+Working on class 246. Maximal error on polynomial was 7.620878613E-1307.
+Maximal coefficient size was 8.597613072E192.
+Working on class 247. Maximal error on polynomial was 1.709832151E-1309.
+Maximal coefficient size was 2.121933610E190.
+Working on class 248. Maximal error on polynomial was 6.824465790E-1307.
+Maximal coefficient size was 2.944312124E193.
+Working on class 249. Maximal error on polynomial was 7.214169844E-1302.
+Maximal coefficient size was 3.876923866E197.
+Working on class 250. Maximal error on polynomial was 1.323351247E-1309.
+Maximal coefficient size was 2.529517252E190.
+Working on class 251. Maximal error on polynomial was 6.778922142E-1307.
+Maximal coefficient size was 2.460515310E193.
+Working on class 252. Maximal error on polynomial was 7.625906545E-1307.
+Maximal coefficient size was 8.592704433E192.
+Working on class 253. Maximal error on polynomial was 3.393053891E-922.
+Maximal coefficient size was 1.738545293E577.
+Working on class 254. Maximal error on polynomial was 5.487995191E-917.
+Maximal coefficient size was 2.854018140E582.
+Working on class 255. Maximal error on polynomial was 1.899482132E-926.
+Maximal coefficient size was 2.867426203E573.
+Working on class 256. Maximal error on polynomial was 6.379493046E-921.
+Maximal coefficient size was 1.975442368E578.
+Working on class 257. Maximal error on polynomial was 2.220991454E-915.
+Maximal coefficient size was 8.559642929E583.
+Working on class 258. Maximal error on polynomial was 2.233556892E-923.
+Maximal coefficient size was 1.197977917E576.
+Working on class 259. Maximal error on polynomial was 4.212283889E-924.
+Maximal coefficient size was 4.512696542E575.
+Working on class 260. Maximal error on polynomial was 8.105463303E-917.
+Maximal coefficient size was 4.219720818E582.
+Working on class 261. Maximal error on polynomial was 1.512817942E-925.
+Maximal coefficient size was 3.952628137E574.
+Working on class 262. Maximal error on polynomial was 2.171328965E-921.
+Maximal coefficient size was 1.915956474E578.
+Working on class 263. Maximal error on polynomial was 2.539114019E-920.
+Maximal coefficient size was 8.907354585E578.
+Working on class 264. Maximal error on polynomial was 2.665976766E-922.
+Maximal coefficient size was 2.426622784E577.
+Working on class 265. Maximal error on polynomial was 3.851144701E-918.
+Maximal coefficient size was 3.764901036E582.
+Working on class 266. Maximal error on polynomial was 2.397206135E-920.
+Maximal coefficient size was 8.540088149E578.
+Working on class 267. Maximal error on polynomial was 2.694336483E-927.
+Maximal coefficient size was 1.092771522E572.
+Working on class 268. Maximal error on polynomial was 3.295548108E-921.
+Maximal coefficient size was 2.622935277E578.
+Working on class 269. Maximal error on polynomial was 2.868010762E-915.
+Maximal coefficient size was 8.418940557E583.
+Working on class 270. Maximal error on polynomial was 7.750411784E-927.
+Maximal coefficient size was 2.647881121E572.
+Working on class 271. Maximal error on polynomial was 1.119455136E-924.
+Maximal coefficient size was 4.968598638E574.
+Working on class 272. Maximal error on polynomial was 6.725257070E-919.
+Maximal coefficient size was 6.256225584E580.
+Working on class 273. Maximal error on polynomial was 4.460551335E-923.
+Maximal coefficient size was 3.358430203E576.
+Working on class 274. Maximal error on polynomial was 3.236472893E-925.
+Maximal coefficient size was 1.388165400E574.
+Working on class 275. Maximal error on polynomial was 4.796570761E-920.
+Maximal coefficient size was 2.018698696E579.
+Working on class 276. Maximal error on polynomial was 3.304880368E-923.
+Maximal coefficient size was 1.573777752E576.
+Working on class 277. Maximal error on polynomial was 3.444586959E-925.
+Maximal coefficient size was 1.435725669E574.
+Working on class 278. Maximal error on polynomial was 5.643101130E-920.
+Maximal coefficient size was 4.639706313E579.
+Working on class 279. Maximal error on polynomial was 8.975582742E-924.
+Maximal coefficient size was 4.033730445E575.
+Working on class 280. Maximal error on polynomial was 9.591350459E-920.
+Maximal coefficient size was 5.044971669E579.
+Working on class 281. Maximal error on polynomial was 1.308660931E-923.
+Maximal coefficient size was 3.315900640E575.
+Working on class 282. Maximal error on polynomial was 6.885556218E-925.
+Maximal coefficient size was 5.315629651E574.
+Working on class 283. Maximal error on polynomial was 1.088664381E-918.
+Maximal coefficient size was 6.558410663E580.
+Working on class 284. Maximal error on polynomial was 6.338350856E-923.
+Maximal coefficient size was 2.909994781E576.
+Working on class 285. Maximal error on polynomial was 2.583915497E-925.
+Maximal coefficient size was 1.498854703E574.
+Working on class 286. Maximal error on polynomial was 4.558388254E-920.
+Maximal coefficient size was 2.229628710E579.
+Working on class 287. Maximal error on polynomial was 1.932334503E-923.
+Maximal coefficient size was 1.356902098E576.
+Working on class 288. Maximal error on polynomial was 2.373042191E-922.
+Maximal coefficient size was 2.004108198E577.
+Working on class 289. Maximal error on polynomial was 6.353313690E-917.
+Maximal coefficient size was 4.365284451E582.
+Working on class 290. Maximal error on polynomial was 1.180229819E-926.
+Maximal coefficient size was 1.634113127E573.
+Working on class 291. Maximal error on polynomial was 7.720147986E-923.
+Maximal coefficient size was 2.336432842E576.
+Working on class 292. Maximal error on polynomial was 1.588631320E-917.
+Maximal coefficient size was 1.348317714E582.
+Working on class 293. Maximal error on polynomial was 1.621842218E-925.
+Maximal coefficient size was 8.041635282E573.
+Working on class 294. Maximal error on polynomial was 3.789770244E-921.
+Maximal coefficient size was 7.382039856E577.
+Working on class 295. Maximal error on polynomial was 1.042848854E-916.
+Maximal coefficient size was 3.911953774E582.
+Working on class 296. Maximal error on polynomial was 4.433598729E-923.
+Maximal coefficient size was 4.146385061E576.
+Working on class 297. Maximal error on polynomial was 1.421371530E-920.
+Maximal coefficient size was 1.249421834E579.
+Working on class 298. Maximal error on polynomial was 1.481228481E-920.
+Maximal coefficient size was 5.306777120E578.
+Working on class 299. Maximal error on polynomial was 2.521457257E-928.
+Maximal coefficient size was 1.385147181E571.
+Working on class 300. Maximal error on polynomial was 2.594769312E-919.
+Maximal coefficient size was 9.662245487E579.
+Working on class 301. Maximal error on polynomial was 1.410930265E-920.
+Maximal coefficient size was 4.976594225E578.
+Working on class 302. Maximal error on polynomial was 1.180962608E-927.
+Maximal coefficient size was 5.887663966E571.
+Working on class 303. Maximal error on polynomial was 2.851607973E-920.
+Maximal coefficient size was 2.432882782E579.
+Working on class 304. Maximal error on polynomial was 4.065650884E-919.
+Maximal coefficient size was 2.277780343E580.
+Working on class 305. Maximal error on polynomial was 3.227414218E-926.
+Maximal coefficient size was 1.167319357E573.
+Working on class 306. Maximal error on polynomial was 2.799356483E-925.
+Maximal coefficient size was 1.801781301E574.
+Working on class 307. Maximal error on polynomial was 3.032539213E-917.
+Maximal coefficient size was 5.750626563E581.
+Working on class 308. Maximal error on polynomial was 3.029466202E-923.
+Maximal coefficient size was 1.496277869E576.
+Working on class 309. Maximal error on polynomial was 3.016091594E-925.
+Maximal coefficient size was 1.500184265E574.
+Working on class 310. Maximal error on polynomial was 1.985392880E-918.
+Maximal coefficient size was 1.053567404E581.
+Working on class 311. Maximal error on polynomial was 3.971020517E-918.
+Maximal coefficient size was 1.881533236E581.
+Working on class 312. Maximal error on polynomial was 3.689019118E-921.
+Maximal coefficient size was 4.822012954E578.
+Working on class 313. Maximal error on polynomial was 1.805170258E-919.
+Maximal coefficient size was 7.059554090E579.
+Working on class 314. Maximal error on polynomial was 5.508415881E-923.
+Maximal coefficient size was 2.478059689E576.
+Working on class 315. Maximal error on polynomial was 6.075514224E-924.
+Maximal coefficient size was 5.326256066E575.
+Working on class 316. Maximal error on polynomial was 4.623310202E-917.
+Maximal coefficient size was 4.111752605E582.
+Working on class 317. Maximal error on polynomial was 1.119244589E-924.
+Maximal coefficient size was 3.403300782E574.
+Working on class 318. Maximal error on polynomial was 1.013799889E-921.
+Maximal coefficient size was 1.493530121E577.
+Working on class 319. Maximal error on polynomial was 4.910837814E-917.
+Maximal coefficient size was 2.771288571E582.
+Working on class 320. Maximal error on polynomial was 3.257318271E-926.
+Maximal coefficient size was 2.650897631E573.
+Working on class 321. Maximal error on polynomial was 4.980521857E-921.
+Maximal coefficient size was 2.204199933E578.
+Working on class 322. Maximal error on polynomial was 1.582673077E-915.
+Maximal coefficient size was 8.582775566E583.
+Working on class 323. Maximal error on polynomial was 3.187052339E-923.
+Maximal coefficient size was 1.168728473E576.
+Working on class 324. Maximal error on polynomial was 4.230399226E-920.
+Maximal coefficient size was 1.799252513E579.
+Working on class 325. Maximal error on polynomial was 2.257225813E-920.
+Maximal coefficient size was 8.167837379E578.
+Working on class 326. Maximal error on polynomial was 2.354584467E-927.
+Maximal coefficient size was 1.480116116E572.
+Working on class 327. Maximal error on polynomial was 4.231627566E-921.
+Maximal coefficient size was 3.667400093E578.
+Working on class 328. Maximal error on polynomial was 1.200824224E-920.
+Maximal coefficient size was 3.535828514E578.
+Working on class 329. Maximal error on polynomial was 2.696745017E-927.
+Maximal coefficient size was 1.035777227E572.
+Working on class 330. Maximal error on polynomial was 1.136087025E-920.
+Maximal coefficient size was 7.988091768E578.
+Working on class 331. Maximal error on polynomial was 2.820642422E-920.
+Maximal coefficient size was 1.175115229E579.
+Working on class 332. Maximal error on polynomial was 1.728310220E-925.
+Maximal coefficient size was 6.548270408E573.
+Working on class 333. Maximal error on polynomial was 3.018856866E-925.
+Maximal coefficient size was 2.589799207E574.
+Working on class 334. Maximal error on polynomial was 2.482486676E-919.
+Maximal coefficient size was 9.947370589E579.
+Working on class 335. Maximal error on polynomial was 5.515816065E-922.
+Maximal coefficient size was 1.802973245E577.
+Working on class 336. Maximal error on polynomial was 3.958344410E-926.
+Maximal coefficient size was 4.632213966E573.
+Working on class 337. Maximal error on polynomial was 2.941154715E-919.
+Maximal coefficient size was 1.232842509E580.
+Working on class 338. Maximal error on polynomial was 3.582092807E-923.
+Maximal coefficient size was 1.592080818E576.
+Working on class 339. Maximal error on polynomial was 2.157171961E-925.
+Maximal coefficient size was 2.840104298E574.
+Working on class 340. Maximal error on polynomial was 2.896742337E-918.
+Maximal coefficient size was 5.630096661E581.
+Working on class 341. Maximal error on polynomial was 2.340998491E-923.
+Maximal coefficient size was 8.333860091E575.
+Working on class 342. Maximal error on polynomial was 4.946157630E-921.
+Maximal coefficient size was 2.889993752E578.
+Working on class 343. Maximal error on polynomial was 1.039622875E-916.
+Maximal coefficient size was 4.466932404E582.
+Working on class 344. Maximal error on polynomial was 3.803189065E-926.
+Maximal coefficient size was 1.724283246E573.
+Working on class 345. Maximal error on polynomial was 3.580321299E-923.
+Maximal coefficient size was 1.910043090E576.
+Working on class 346. Maximal error on polynomial was 2.456559879E-917.
+Maximal coefficient size was 1.405977798E582.
+Working on class 347. Maximal error on polynomial was 7.611002720E-926.
+Maximal coefficient size was 8.547119634E573.
+Working on class 348. Maximal error on polynomial was 1.850918202E-921.
+Maximal coefficient size was 6.507917040E577.
+Working on class 349. Maximal error on polynomial was 9.819014644E-917.
+Maximal coefficient size was 4.027623903E582.
+Working on class 350. Maximal error on polynomial was 3.307792165E-923.
+Maximal coefficient size was 4.221587327E576.
+Working on class 351. Maximal error on polynomial was 2.126201544E-920.
+Maximal coefficient size was 1.172642108E579.
+Working on class 352. Maximal error on polynomial was 1.622090731E-920.
+Maximal coefficient size was 6.100856857E578.
+Working on class 353. Maximal error on polynomial was 8.404723068E-929.
+Maximal coefficient size was 1.606536333E571.
+Working on class 354. Maximal error on polynomial was 1.354707638E-919.
+Maximal coefficient size was 8.716020030E579.
+Working on class 355. Maximal error on polynomial was 1.552755544E-920.
+Maximal coefficient size was 5.819907028E578.
+Working on class 356. Maximal error on polynomial was 1.933234921E-927.
+Maximal coefficient size was 6.328115323E571.
+Working on class 357. Maximal error on polynomial was 1.977436543E-920.
+Maximal coefficient size was 2.133401223E579.
+Working on class 358. Maximal error on polynomial was 5.442612787E-919.
+Maximal coefficient size was 2.572084975E580.
+Working on class 359. Maximal error on polynomial was 2.291329261E-926.
+Maximal coefficient size was 1.222268584E573.
+Working on class 360. Maximal error on polynomial was 3.229102704E-925.
+Maximal coefficient size was 1.675277764E574.
+Working on class 361. Maximal error on polynomial was 7.171922685E-918.
+Maximal coefficient size was 4.777404726E581.
+Working on class 362. Maximal error on polynomial was 3.047355605E-923.
+Maximal coefficient size was 1.724567761E576.
+Working on class 363. Maximal error on polynomial was 3.013731441E-925.
+Maximal coefficient size was 1.391348722E574.
+Working on class 364. Maximal error on polynomial was 3.844114136E-919.
+Maximal coefficient size was 1.036873827E581.
+Working on class 365. Maximal error on polynomial was 2.488767525E-919.
+Maximal coefficient size was 2.150459994E581.
+Working on class 366. Maximal error on polynomial was 7.371051929E-922.
+Maximal coefficient size was 4.701268757E578.
+Working on class 367. Maximal error on polynomial was 1.244260259E-919.
+Maximal coefficient size was 6.555769141E579.
+Working on class 368. Maximal error on polynomial was 5.791209795E-923.
+Maximal coefficient size was 2.837321634E576.
+Working on class 369. Maximal error on polynomial was 3.700909203E-915.
+Maximal coefficient size was 7.831103153E583.
+Working on class 370. Maximal error on polynomial was 5.044260055E-927.
+Maximal coefficient size was 2.507492081E572.
+Working on class 371. Maximal error on polynomial was 2.470602582E-921.
+Maximal coefficient size was 2.134161290E578.
+Working on class 372. Maximal error on polynomial was 1.340400996E-920.
+Maximal coefficient size was 7.572438611E578.
+Working on class 373. Maximal error on polynomial was 6.610654357E-922.
+Maximal coefficient size was 2.134207068E577.
+Working on class 374. Maximal error on polynomial was 1.328608275E-916.
+Maximal coefficient size was 4.319667512E582.
+Working on class 375. Maximal error on polynomial was 1.622030020E-920.
+Maximal coefficient size was 7.352820017E578.
+Working on class 376. Maximal error on polynomial was 2.521609193E-927.
+Maximal coefficient size was 1.034060889E572.
+Working on class 377. Maximal error on polynomial was 4.402433445E-926.
+Maximal coefficient size was 1.568016008E574.
+Working on class 378. Maximal error on polynomial was 2.513560135E-920.
+Maximal coefficient size was 1.725046837E579.
+Working on class 379. Maximal error on polynomial was 2.961164945E-920.
+Maximal coefficient size was 9.422310055E578.
+Working on class 380. Maximal error on polynomial was 3.532057641E-927.
+Maximal coefficient size was 1.546554292E572.
+Working on class 381. Maximal error on polynomial was 5.798644290E-922.
+Maximal coefficient size was 3.351270770E578.
+Working on class 382. Maximal error on polynomial was 1.339959396E-920.
+Maximal coefficient size was 4.090856155E578.
+Working on class 383. Maximal error on polynomial was 2.860891441E-927.
+Maximal coefficient size was 1.101849392E572.
+Working on class 384. Maximal error on polynomial was 6.665051602E-921.
+Maximal coefficient size was 6.655571103E578.
+Working on class 385. Maximal error on polynomial was 4.237121702E-920.
+Maximal coefficient size was 1.369749151E579.
+Working on class 386. Maximal error on polynomial was 1.402193339E-925.
+Maximal coefficient size was 6.603094529E573.
+Working on class 387. Maximal error on polynomial was 6.024519201E-925.
+Maximal coefficient size was 2.428580608E574.
+Working on class 388. Maximal error on polynomial was 1.015280472E-919.
+Maximal coefficient size was 9.264474175E579.
+Working on class 389. Maximal error on polynomial was 5.288387545E-922.
+Maximal coefficient size was 2.135393904E577.
+Working on class 390. Maximal error on polynomial was 1.829214080E-925.
+Maximal coefficient size was 4.767511152E573.
+Working on class 391. Maximal error on polynomial was 1.704351074E-919.
+Maximal coefficient size was 1.154954749E580.
+Working on class 392. Maximal error on polynomial was 2.480657432E-923.
+Maximal coefficient size was 1.821578924E576.
+Working on class 393. Maximal error on polynomial was 5.169299081E-925.
+Maximal coefficient size was 2.657389101E574.
+Working on class 394. Maximal error on polynomial was 1.158449016E-917.
+Maximal coefficient size was 5.103787564E581.
+Working on class 395. Maximal error on polynomial was 1.661918504E-923.
+Maximal coefficient size was 9.719625756E575.
+Working on class 396. Maximal error on polynomial was 1.799852930E-922.
+Maximal coefficient size was 1.365847832E577.
+Working on class 397. Maximal error on polynomial was 2.902500847E-1114.
+Maximal coefficient size was 1.763992137E385.
+Working on class 398. Maximal error on polynomial was 1.620455413E-1108.
+Maximal coefficient size was 1.210169365E391.
+Working on class 399. Maximal error on polynomial was 1.509777215E-1116.
+Maximal coefficient size was 1.959113230E383.
+Working on class 400. Maximal error on polynomial was 9.054739188E-1117.
+Maximal coefficient size was 1.058991989E383.
+Working on class 401. Maximal error on polynomial was 6.765542406E-1115.
+Maximal coefficient size was 3.670619755E384.
+Working on class 402. Maximal error on polynomial was 2.130448466E-1118.
+Maximal coefficient size was 9.843019793E380.
+Working on class 403. Maximal error on polynomial was 4.718826445E-1119.
+Maximal coefficient size was 5.460305124E380.
+Working on class 404. Maximal error on polynomial was 1.418105680E-1108.
+Maximal coefficient size was 1.016883980E391.
+Working on class 405. Maximal error on polynomial was 1.583583848E-1110.
+Maximal coefficient size was 1.215071669E389.
+Working on class 406. Maximal error on polynomial was 4.829103583E-1116.
+Maximal coefficient size was 2.075181513E383.
+Working on class 407. Maximal error on polynomial was 4.225955517E-1116.
+Maximal coefficient size was 4.763164709E383.
+Working on class 408. Maximal error on polynomial was 6.043413192E-1116.
+Maximal coefficient size was 1.247097616E384.
+Working on class 409. Maximal error on polynomial was 4.430741578E-1120.
+Maximal coefficient size was 5.473392954E379.
+Working on class 410. Maximal error on polynomial was 1.903958675E-1110.
+Maximal coefficient size was 1.044154946E389.
+Working on class 411. Maximal error on polynomial was 1.732936620E-1112.
+Maximal coefficient size was 1.129444124E387.
+Working on class 412. Maximal error on polynomial was 9.770288169E-1116.
+Maximal coefficient size was 1.097397021E384.
+Working on class 413. Maximal error on polynomial was 2.132945424E-1118.
+Maximal coefficient size was 1.302063014E381.
+Working on class 414. Maximal error on polynomial was 1.429199817E-1108.
+Maximal coefficient size was 1.267936973E391.
+Working on class 415. Maximal error on polynomial was 1.424204378E-1110.
+Maximal coefficient size was 1.108382131E389.
+Working on class 416. Maximal error on polynomial was 2.474062429E-1113.
+Maximal coefficient size was 1.901348388E386.
+Working on class 417. Maximal error on polynomial was 3.394677711E-1115.
+Maximal coefficient size was 4.291188050E384.
+Working on class 418. Maximal error on polynomial was 3.544950818E-1119.
+Maximal coefficient size was 3.295854904E380.
+Working on class 419. Maximal error on polynomial was 1.503343663E-1110.
+Maximal coefficient size was 8.085004724E388.
+Working on class 420. Maximal error on polynomial was 1.922140083E-1110.
+Maximal coefficient size was 1.435802352E389.
+Working on class 421. Maximal error on polynomial was 2.898499389E-1115.
+Maximal coefficient size was 1.601983921E384.
+Working on class 422. Maximal error on polynomial was 1.179134119E-1119.
+Maximal coefficient size was 7.253603904E380.
+Working on class 423. Maximal error on polynomial was 1.280230358E-1110.
+Maximal coefficient size was 1.077627680E389.
+Working on class 424. Maximal error on polynomial was 3.251675041E-1119.
+Maximal coefficient size was 1.630743668E380.
+Working on class 425. Maximal error on polynomial was 2.005903588E-1118.
+Maximal coefficient size was 9.653279005E380.
+Working on class 426. Maximal error on polynomial was 5.324426161E-1119.
+Maximal coefficient size was 4.556285056E380.
+Working on class 427. Maximal error on polynomial was 1.449030346E-1115.
+Maximal coefficient size was 1.442577524E384.
+Working on class 428. Maximal error on polynomial was 2.020460824E-1112.
+Maximal coefficient size was 4.187536027E387.
+Working on class 429. Maximal error on polynomial was 5.312999971E-1119.
+Maximal coefficient size was 6.278347784E380.
+Working on class 430. Maximal error on polynomial was 4.716294730E-1119.
+Maximal coefficient size was 2.105217095E380.
+Working on class 431. Maximal error on polynomial was 1.605526504E-1110.
+Maximal coefficient size was 9.977622881E388.
+Working on class 432. Maximal error on polynomial was 6.187605494E-1114.
+Maximal coefficient size was 4.796809913E385.
+Working on class 433. Maximal error on polynomial was 1.119101447E-1112.
+Maximal coefficient size was 7.792908340E386.
+Working on class 434. Maximal error on polynomial was 4.716925279E-1119.
+Maximal coefficient size was 2.308266974E380.
+Working on class 435. Maximal error on polynomial was 2.037802376E-1108.
+Maximal coefficient size was 1.280180427E391.
+Working on class 436. Maximal error on polynomial was 1.771772929E-1118.
+Maximal coefficient size was 1.050752434E381.
+Working on class 437. Maximal error on polynomial was 5.329402565E-1119.
+Maximal coefficient size was 3.993218723E380.
+Working on class 438. Maximal error on polynomial was 1.085042706E-1113.
+Maximal coefficient size was 8.400687538E385.
+Working on class 439. Maximal error on polynomial was 6.199454928E-1113.
+Maximal coefficient size was 7.546262233E386.
+Working on class 440. Maximal error on polynomial was 4.868291375E-1116.
+Maximal coefficient size was 7.756387647E383.
+Working on class 441. Maximal error on polynomial was 8.504582264E-1114.
+Maximal coefficient size was 4.747240771E385.
+Working on class 442. Maximal error on polynomial was 3.709415289E-1113.
+Maximal coefficient size was 3.463258094E386.
+Working on class 443. Maximal error on polynomial was 7.075275122E-1119.
+Maximal coefficient size was 6.559225872E380.
+Working on class 444. Maximal error on polynomial was 4.722239578E-1118.
+Maximal coefficient size was 1.908747106E381.
+Working on class 445. Maximal error on polynomial was 1.612784881E-1112.
+Maximal coefficient size was 9.230022887E386.
+Working on class 446. Maximal error on polynomial was 2.364562187E-1119.
+Maximal coefficient size was 6.638596022E380.
+Working on class 447. Maximal error on polynomial was 2.318342166E-1113.
+Maximal coefficient size was 8.800058801E385.
+Working on class 448. Maximal error on polynomial was 6.954346378E-1114.
+Maximal coefficient size was 6.306910652E385.
+Working on class 449. Maximal error on polynomial was 5.895489554E-1119.
+Maximal coefficient size was 5.989755880E380.
+Working on class 450. Maximal error on polynomial was 1.444479852E-1110.
+Maximal coefficient size was 9.091862729E388.
+Working on class 451. Maximal error on polynomial was 2.661085636E-1111.
+Maximal coefficient size was 2.033874363E388.
+Working on class 452. Maximal error on polynomial was 9.918744715E-1113.
+Maximal coefficient size was 9.431923563E386.
+Working on class 453. Maximal error on polynomial was 1.159422676E-1113.
+Maximal coefficient size was 5.115849994E385.
+Working on class 454. Maximal error on polynomial was 3.940317624E-1116.
+Maximal coefficient size was 2.846770173E383.
+Working on class 455. Maximal error on polynomial was 2.358568112E-1118.
+Maximal coefficient size was 9.522097969E380.
+Working on class 456. Maximal error on polynomial was 2.023253344E-1118.
+Maximal coefficient size was 4.346153897E381.
+Working on class 457. Maximal error on polynomial was 3.902873530E-1115.
+Maximal coefficient size was 1.526264223E385.
+Working on class 458. Maximal error on polynomial was 2.025471382E-1108.
+Maximal coefficient size was 1.370183517E391.
+Working on class 459. Maximal error on polynomial was 1.827601066E-1108.
+Maximal coefficient size was 1.392974885E391.
+Working on class 460. Maximal error on polynomial was 7.085613411E-1119.
+Maximal coefficient size was 9.193890189E380.
+Working on class 461. Maximal error on polynomial was 1.959142371E-1114.
+Maximal coefficient size was 3.860531480E385.
+Working on class 462. Maximal error on polynomial was 8.724645674E-1115.
+Maximal coefficient size was 8.012912825E384.
+Working on class 463. Maximal error on polynomial was 1.774219977E-1118.
+Maximal coefficient size was 1.399320287E381.
+Working on class 464. Maximal error on polynomial was 3.559109641E-1112.
+Maximal coefficient size was 3.874225363E387.
+Working on class 465. Maximal error on polynomial was 4.366782296E-1115.
+Maximal coefficient size was 3.104652936E384.
+Working on class 466. Maximal error on polynomial was 1.924382655E-1108.
+Maximal coefficient size was 1.079781599E391.
+Working on class 467. Maximal error on polynomial was 1.390942838E-1113.
+Maximal coefficient size was 5.836821813E385.
+Working on class 468. Maximal error on polynomial was 1.584018858E-1110.
+Maximal coefficient size was 1.241285166E389.
+Working on class 469. Maximal error on polynomial was 2.822211258E-1116.
+Maximal coefficient size was 1.648714709E384.
+Working on class 470. Maximal error on polynomial was 9.492903449E-1119.
+Maximal coefficient size was 2.001830969E381.
+Working on class 471. Maximal error on polynomial was 2.128623026E-1118.
+Maximal coefficient size was 9.240916759E380.
+Working on class 472. Maximal error on polynomial was 7.080826129E-1119.
+Maximal coefficient size was 4.241820885E380.
+Working on class 473. Maximal error on polynomial was 1.230689242E-1108.
+Maximal coefficient size was 1.425575267E391.
+Working on class 474. Maximal error on polynomial was 2.210610538E-1119.
+Maximal coefficient size was 9.227587414E379.
+Working on class 475. Maximal error on polynomial was 4.173018999E-1113.
+Maximal coefficient size was 9.896935986E385.
+Working on class 476. Maximal error on polynomial was 1.620731632E-1108.
+Maximal coefficient size was 1.140994082E391.
+Working on class 477. Maximal error on polynomial was 1.239457516E-1118.
+Maximal coefficient size was 4.892609837E381.
+Working on class 478. Maximal error on polynomial was 7.272962519E-1116.
+Maximal coefficient size was 6.693525501E383.
+Working on class 479. Maximal error on polynomial was 7.459967493E-1113.
+Maximal coefficient size was 8.188001612E386.
+Working on class 480. Maximal error on polynomial was 2.730799278E-1116.
+Maximal coefficient size was 2.235739860E383.
+Working on class 481. Maximal error on polynomial was 1.003103607E-1118.
+Maximal coefficient size was 5.426390810E380.
+Working on class 482. Maximal error on polynomial was 1.944160963E-1114.
+Maximal coefficient size was 1.916115240E385.
+Working on class 483. Maximal error on polynomial was 1.522843976E-1115.
+Maximal coefficient size was 3.242935802E384.
+Working on class 484. Maximal error on polynomial was 1.179142291E-1118.
+Maximal coefficient size was 1.050447977E381.
+Working on class 485. Maximal error on polynomial was 1.287265082E-1110.
+Maximal coefficient size was 1.316049526E389.
+Working on class 486. Maximal error on polynomial was 1.414831184E-1118.
+Maximal coefficient size was 9.165724784E380.
+Working on class 487. Maximal error on polynomial was 1.424202485E-1110.
+Maximal coefficient size was 1.348699832E389.
+Working on class 488. Maximal error on polynomial was 1.329595210E-1119.
+Maximal coefficient size was 6.251506943E379.
+Working on class 489. Maximal error on polynomial was 3.462474941E-1112.
+Maximal coefficient size was 3.386481109E387.
+Working on class 490. Maximal error on polynomial was 2.803754184E-1113.
+Maximal coefficient size was 2.957856848E386.
+Working on class 491. Maximal error on polynomial was 1.087124512E-1115.
+Maximal coefficient size was 9.590623943E383.
+Working on class 492. Maximal error on polynomial was 4.650614708E-1114.
+Maximal coefficient size was 6.774087375E385.
+Working on class 493. Maximal error on polynomial was 1.297771746E-1118.
+Maximal coefficient size was 8.007802973E380.
+Working on class 494. Maximal error on polynomial was 4.135120159E-1113.
+Maximal coefficient size was 9.772172619E386.
+Working on class 495. Maximal error on polynomial was 1.835365441E-1108.
+Maximal coefficient size was 1.361219344E391.
+Working on class 496. Maximal error on polynomial was 1.424954605E-1110.
+Maximal coefficient size was 1.193571266E389.
+Working on class 497. Maximal error on polynomial was 3.597666006E-1114.
+Maximal coefficient size was 1.076432376E386.
+Working on class 498. Maximal error on polynomial was 1.085395388E-1113.
+Maximal coefficient size was 7.284763299E385.
+Working on class 499. Maximal error on polynomial was 3.773276106E-1118.
+Maximal coefficient size was 4.495081675E381.
+Working on class 500. Maximal error on polynomial was 3.538413195E-1118.
+Maximal coefficient size was 1.819363863E381.
+Working on class 501. Maximal error on polynomial was 1.635688511E-1108.
+Maximal coefficient size was 1.161627543E391.
+Working on class 502. Maximal error on polynomial was 7.132741276E-1119.
+Maximal coefficient size was 3.750937506E380.
+Working on class 503. Maximal error on polynomial was 6.362228474E-1117.
+Maximal coefficient size was 1.229279392E383.
+Working on class 504. Maximal error on polynomial was 1.651968713E-1118.
+Maximal coefficient size was 8.257208072E380.
+Working on class 505. Maximal error on polynomial was 1.307627272E-1118.
+Maximal coefficient size was 8.580964914E380.
+Working on class 506. Maximal error on polynomial was 9.667187580E-1116.
+Maximal coefficient size was 1.395301333E384.
+Working on class 507. Maximal error on polynomial was 9.174890326E-1109.
+Maximal coefficient size was 9.706843355E390.
+Working on class 508. Maximal error on polynomial was 1.624740434E-1108.
+Maximal coefficient size was 1.227946694E391.
+Working on class 509. Maximal error on polynomial was 4.225667952E-1116.
+Maximal coefficient size was 2.356008431E383.
+Working on class 510. Maximal error on polynomial was 1.429008468E-1110.
+Maximal coefficient size was 9.762346341E388.
+Working on class 511. Maximal error on polynomial was 2.422906259E-1116.
+Maximal coefficient size was 4.091929648E383.
+Working on class 512. Maximal error on polynomial was 1.898910351E-1110.
+Maximal coefficient size was 1.150840054E389.
+Working on class 513. Maximal error on polynomial was 9.056582495E-1117.
+Maximal coefficient size was 3.235425427E383.
+Working on class 514. Maximal error on polynomial was 1.740734863E-1110.
+Maximal coefficient size was 1.126967206E389.
+Working on class 515. Maximal error on polynomial was 2.025483597E-1108.
+Maximal coefficient size was 1.310253470E391.
+Working on class 516. Maximal error on polynomial was 1.473731254E-1118.
+Maximal coefficient size was 5.274664285E380.
+Working on class 517. Maximal error on polynomial was 2.406449114E-1118.
+Maximal coefficient size was 1.474507144E381.
+Working on class 518. Maximal error on polynomial was 2.842207025E-1118.
+Maximal coefficient size was 1.679354054E381.
+Working on class 519. Maximal error on polynomial was 1.256958645E-1113.
+Maximal coefficient size was 2.142812945E386.
+Working on class 520. Maximal error on polynomial was 4.641430351E-1114.
+Maximal coefficient size was 4.277875554E385.
+Working on class 521. Maximal error on polynomial was 7.250713186E-1115.
+Maximal coefficient size was 3.813103702E384.
+Working on class 522. Maximal error on polynomial was 1.823353667E-1108.
+Maximal coefficient size was 1.214025396E391.
+Working on class 523. Maximal error on polynomial was 2.215213475E-1119.
+Maximal coefficient size was 1.062254121E380.
+Working on class 524. Maximal error on polynomial was 3.007249657E-1110.
+Maximal coefficient size was 1.563335104E389.
+Working on class 525. Maximal error on polynomial was 1.062720563E-1118.
+Maximal coefficient size was 6.223024596E380.
+Working on class 526. Maximal error on polynomial was 6.292013640E-1115.
+Maximal coefficient size was 3.516966566E384.
+Working on class 527. Maximal error on polynomial was 1.122191448E-1118.
+Maximal coefficient size was 1.274590620E381.
+Working on class 528. Maximal error on polynomial was 3.276273533E-1119.
+Maximal coefficient size was 1.872980317E380.
+Working on class 529. Maximal error on polynomial was 1.179528683E-1118.
+Maximal coefficient size was 7.243417425E380.
+Working on class 530. Maximal error on polynomial was 4.950579489E-1113.
+Maximal coefficient size was 6.573989021E386.
+Working on class 531. Maximal error on polynomial was 1.703803692E-1115.
+Maximal coefficient size was 1.254452473E384.
+Working on class 532. Maximal error on polynomial was 1.533964999E-1118.
+Maximal coefficient size was 8.438314697E380.
+Working on class 533. Maximal error on polynomial was 1.418099315E-1108.
+Maximal coefficient size was 1.039944678E391.
+Working on class 534. Maximal error on polynomial was 1.263049864E-1114.
+Maximal coefficient size was 7.231748231E384.
+Working on class 535. Maximal error on polynomial was 1.747875043E-1110.
+Maximal coefficient size was 1.083840290E389.
+Working on class 536. Maximal error on polynomial was 2.229450530E-1108.
+Maximal coefficient size was 1.328843187E391.
+Working on class 537. Maximal error on polynomial was 1.539030682E-1115.
+Maximal coefficient size was 1.870475209E384.
+Working on class 538. Maximal error on polynomial was 2.661261289E-1119.
+Maximal coefficient size was 2.601832006E380.
+Working on class 539. Maximal error on polynomial was 9.340684586E-1114.
+Maximal coefficient size was 9.665733448E385.
+Working on class 540. Maximal error on polynomial was 1.555732499E-1112.
+Maximal coefficient size was 3.666935491E387.
+Working on class 541. Maximal error on polynomial was 2.705808186E-1114.
+Maximal coefficient size was 1.970718284E385.
+Working on class 542. Maximal error on polynomial was 7.665170348E-1119.
+Maximal coefficient size was 3.936552164E380.
+Working on class 543. Maximal error on polynomial was 7.758203191E-1119.
+Maximal coefficient size was 3.711596571E380.
+Working on class 544. Maximal error on polynomial was 6.814731379E-1113.
+Maximal coefficient size was 6.524974989E386.
+Working on class 545. Maximal error on polynomial was 9.448610247E-1119.
+Maximal coefficient size was 6.607211902E380.
+Working on class 546. Maximal error on polynomial was 3.920515473E-1114.
+Maximal coefficient size was 5.492219525E385.
+Working on class 547. Maximal error on polynomial was 1.697564369E-1115.
+Maximal coefficient size was 1.088011897E384.
+Working on class 548. Maximal error on polynomial was 1.179694768E-1118.
+Maximal coefficient size was 6.500297966E380.
+Working on class 549. Maximal error on polynomial was 9.903425076E-1118.
+Maximal coefficient size was 4.687528479E381.
+Working on class 550. Maximal error on polynomial was 9.890105435E-1113.
+Maximal coefficient size was 8.014815283E386.
+Working on class 551. Maximal error on polynomial was 1.268159833E-1110.
+Maximal coefficient size was 8.749391653E388.
+Working on class 552. Maximal error on polynomial was 1.392329940E-1113.
+Maximal coefficient size was 1.011813537E386.
+Working on class 553. Maximal error on polynomial was 1.116185067E-1108.
+Maximal coefficient size was 1.091300030E391.
+Working on class 554. Maximal error on polynomial was 8.253718299E-1119.
+Maximal coefficient size was 5.952138124E380.
+Working on class 555. Maximal error on polynomial was 3.547470661E-1119.
+Maximal coefficient size was 2.393876730E380.
+Working on class 556. Maximal error on polynomial was 3.193793243E-1111.
+Maximal coefficient size was 1.865983180E388.
+Working on class 557. Maximal error on polynomial was 9.881614046E-1115.
+Maximal coefficient size was 5.559895370E385.
+Working on class 558. Maximal error on polynomial was 5.449919873E-1114.
+Maximal coefficient size was 5.922168137E385.
+Maximal error was 2.498120050E-913.
+We have p = 3.
+The prime 5 divides the resultant of 3 and 13.
+The prime 7 divides the resultant of 7 and 9.
+The prime 11 divides the resultant of 14 and 16.
+The prime 13 divides the resultant of 9 and 18.
+The prime 17 divides the resultant of 3 and 12.
+The prime 19 divides the resultant of 10 and 22.
+The prime 23 divides the resultant of 100 and 114.
+The prime 29 divides the resultant of 116 and 138.
+The prime 31 divides the resultant of 68 and 86.
+The prime 41 divides the resultant of 28 and 114.
+The prime 43 divides the resultant of 46 and 81.
+The prime 47 divides the resultant of 15 and 103.
+The prime 53 divides the resultant of 15 and 98.
+The prime 59 divides the resultant of 41 and 43.
+The prime 61 divides the resultant of 36 and 37.
+The prime 67 divides the resultant of 74 and 410.
+The prime 71 divides the resultant of 144 and 272.
+The prime 73 divides the resultant of 47 and 49.
+The prime 79 divides the resultant of 68 and 88.
+The prime 83 divides the resultant of 10 and 37.
+The prime 89 divides the resultant of 60 and 201.
+The prime 97 divides the resultant of 192 and 412.
+The prime 101 divides the resultant of 2 and 333.
+The prime 103 divides the resultant of 35 and 114.
+The prime 107 divides the resultant of 99 and 115.
+The prime 109 divides the resultant of 54 and 423.
+For pp = 113, we have the following.
+Element is [10 22]
+[ 9 23].
+For conjugate 1, chival = -1.
+Old possibilities [ 1, 3, 37, 111, -1, -3, -37, -111 ].
+Possibilities now [ 3, 37, -3, -37 ].
+The prime 127 divides the resultant of 157 and 462.
+The prime 131 divides the resultant of 65 and 240.
+The prime 137 divides the resultant of 40 and 201.
+The prime 139 divides the resultant of 19 and 51.
+The prime 149 divides the resultant of 98 and 107.
+The prime 151 divides the resultant of 88 and 455.
+The prime 157 divides the resultant of 46 and 75.
+The prime 163 divides the resultant of 14 and 31.
+The prime 167 divides the resultant of 263 and 303.
+The prime 173 divides the resultant of 30 and 143.
+The prime 179 divides the resultant of 30 and 126.
+The prime 181 divides the resultant of 83 and 403.
+The prime 191 divides the resultant of 148 and 230.
+The prime 193 divides the resultant of 439 and 458.
+For pp = 197, we have the following.
+Element is [7 9]
+[0 5].
+For conjugate 1, chival = -1.
+Old possibilities [ 3, 37, -3, -37 ].
+Possibilities now [ 3, -3 ].
+The prime 199 divides the resultant of 420 and 459.
+For pp = 211, we have the following.
+Element is [22 11]
+[ 9 19].
+For conjugate 1, chival = 1.
+Old possibilities [ 3, -3 ].
+Possibilities now [ -3 ].
+For conjugate 1, the unique twist is -3.
+After t = 1, the options lists were the following.
+For divisor 1, options = [ -3 ].
+For divisor zz, options = [ -3 ].
+For divisor zz^6 + 9*zz^3 + 27, options = [ -111 ].
+For divisor zz^7 + 9*zz^4 + 27*zz, options = [ -111 ].
+Using t = 2.
+Working on curve [ 0, 0, 0, -43131, -3447722 ].
+Enumerating points of order 27.
+Selecting which conjugate of G we should use.
+Testing choice 1. For choice 1, we get error 4.508107966E40.
+Testing choice 2. For choice 2, we get error 1.607241950E40.
+Testing choice 3. For choice 3, we get error 4.429094457E40.
+Testing choice 4. For choice 4, we get error 1.050425982E41.
+Testing choice 5. For choice 5, we get error 2.128495380E41.
+Testing choice 6. For choice 6, we get error 2.128076956E41.
+Testing choice 7. For choice 7, we get error 2.329696107E39.
+Testing choice 8. For choice 8, we get error 2.329696681E39.
+Testing choice 9. For choice 9, we get error 1.049918596E41.
+Testing choice 10. For choice 10, we get error 1.234026762E41.
+Testing choice 11. For choice 11, we get error 9.018535870E40.
+Testing choice 12. For choice 12, we get error 2.061060290E37.
+Testing choice 13. For choice 13, we get error 2.126482263E41.
+Testing choice 14. For choice 14, we get error 1.042503592E41.
+Testing choice 15. For choice 15, we get error 2.329696072E39.
+Testing choice 16. For choice 16, we get error 1.749409672E41.
+Testing choice 17. For choice 17, we get error 2.721664761E40.
+Testing choice 18. For choice 18, we get error 1.230115619E41.
+Testing choice 19. For choice 19, we get error 2.624559392E40.
+Testing choice 20. For choice 20, we get error 1.051220575E41.
+Testing choice 21. For choice 21, we get error 2.329692251E39.
+Testing choice 22. For choice 22, we get error 1.826473165E41.
+Testing choice 23. For choice 23, we get error 7.404102223E40.
+Testing choice 24. For choice 24, we get error 3.489338284E40.
+Testing choice 25. For choice 25, we get error 2.329695370E39.
+Testing choice 26. For choice 26, we get error 1.974000965E41.
+Testing choice 27. For choice 27, we get error 1.697640507E-1458.
+Testing choice 28. For choice 28, we get error 2.570054580E40.
+Testing choice 29. For choice 29, we get error 2.761158847E40.
+Testing choice 30. For choice 30, we get error 2.329699475E39.
+Testing choice 31. For choice 31, we get error 1.046121926E41.
+Testing choice 32. For choice 32, we get error 2.135272543E41.
+Testing choice 33. For choice 33, we get error 1.951512220E41.
+Testing choice 34. For choice 34, we get error 3.722100033E40.
+Testing choice 35. For choice 35, we get error 1.137496901E41.
+Testing choice 36. For choice 36, we get error 0.006491960240.
+Choice 27 is best.
+Gfine has 1 conjugates inside Gtilde.
+Computing fpolynomial.
+Maximal error on fpolynomial was 1.065969404E-3787.
+Maximal coefficient size of f polynomial was 3.707736657E2210.
+Working on class 1. Maximal error on polynomial was 1.051725820E-1477.
+Maximal coefficient size was 4.617368214E30.
+Working on class 2. Maximal error on polynomial was 9.410683333E-1470.
+Maximal coefficient size was 4.617252270E30.
+Working on class 3. Maximal error on polynomial was 3.128696662E-789.
+Maximal coefficient size was 1.238643208E710.
+Working on class 4. Maximal error on polynomial was 2.004192826E-789.
+Maximal coefficient size was 1.866667363E710.
+Working on class 5. Maximal error on polynomial was 5.477738644E-1480.
+Maximal coefficient size was 3.695740694E27.
+Working on class 6. Maximal error on polynomial was 1.281838361E-5972.
+Maximal coefficient size was 8.408765742E27.
+Working on class 7. Maximal error on polynomial was 1.435956319E-1474.
+Maximal coefficient size was 4.769794662E50.
+Working on class 8. Maximal error on polynomial was 2.777543472E-1449.
+Maximal coefficient size was 4.904850847E50.
+Working on class 9. Maximal error on polynomial was 0.0000000000.
+Maximal coefficient size was 4.787089469E50.
+Working on class 10. Maximal error on polynomial was 3.541256298E-1419.
+Maximal coefficient size was 2.250051839E81.
+Working on class 11. Maximal error on polynomial was 3.543217581E-1419.
+Maximal coefficient size was 2.373280540E81.
+Working on class 12. Maximal error on polynomial was 1.203455327E-1421.
+Maximal coefficient size was 1.636750016E78.
+Working on class 13. Maximal error on polynomial was 4.439716037E-1423.
+Maximal coefficient size was 4.603503332E78.
+Working on class 14. Maximal error on polynomial was 6.898803849E-1422.
+Maximal coefficient size was 4.009534709E78.
+Working on class 15. Maximal error on polynomial was 1.375628830E-1421.
+Maximal coefficient size was 1.823978245E78.
+Working on class 16. Maximal error on polynomial was 5.477738644E-1480.
+Maximal coefficient size was 8.410685036E27.
+Working on class 17. Maximal error on polynomial was 1.041471126E-5972.
+Maximal coefficient size was 3.694393887E27.
+Working on class 18. Maximal error on polynomial was 2.083157604E-1449.
+Maximal coefficient size was 4.733185467E50.
+Working on class 19. Maximal error on polynomial was 3.589890798E-1475.
+Maximal coefficient size was 4.737606850E50.
+Working on class 20. Maximal error on polynomial was 1.388771736E-1449.
+Maximal coefficient size was 5.009378281E50.
+Working on class 21. Maximal error on polynomial was 5.660382766E-1423.
+Maximal coefficient size was 1.580473984E78.
+Working on class 22. Maximal error on polynomial was 2.635399073E-1423.
+Maximal coefficient size was 4.197398874E78.
+Working on class 23. Maximal error on polynomial was 1.733486393E-1422.
+Maximal coefficient size was 1.761543468E78.
+Working on class 24. Maximal error on polynomial was 1.408400611E-1418.
+Maximal coefficient size was 2.344666392E81.
+Working on class 25. Maximal error on polynomial was 2.112580210E-1418.
+Maximal coefficient size was 2.221500609E81.
+Working on class 26. Maximal error on polynomial was 1.122431682E-1422.
+Maximal coefficient size was 4.805785944E78.
+Working on class 27. Maximal error on polynomial was 3.971110222E-793.
+Maximal coefficient size was 1.630251909E706.
+Working on class 28. Maximal error on polynomial was 1.628445272E-789.
+Maximal coefficient size was 6.724922344E709.
+Working on class 29. Maximal error on polynomial was 1.606102556E-787.
+Maximal coefficient size was 1.220813333E712.
+Working on class 30. Maximal error on polynomial was 9.170491766E-793.
+Maximal coefficient size was 1.324026505E706.
+Working on class 31. Maximal error on polynomial was 1.761581639E-787.
+Maximal coefficient size was 1.351971758E712.
+Working on class 32. Maximal error on polynomial was 5.727844094E-794.
+Maximal coefficient size was 1.692417101E705.
+Working on class 33. Maximal error on polynomial was 2.129143193E-789.
+Maximal coefficient size was 8.022579277E709.
+Working on class 34. Maximal error on polynomial was 1.609100713E-788.
+Maximal coefficient size was 1.242549270E712.
+Working on class 35. Maximal error on polynomial was 3.360303570E-793.
+Maximal coefficient size was 7.747007324E705.
+Working on class 36. Maximal error on polynomial was 1.071823286E-789.
+Maximal coefficient size was 4.365824750E709.
+Working on class 37. Maximal error on polynomial was 1.768678539E-787.
+Maximal coefficient size was 1.179581101E712.
+Working on class 38. Maximal error on polynomial was 5.512638483E-793.
+Maximal coefficient size was 3.443415560E706.
+Working on class 39. Maximal error on polynomial was 2.566644668E-787.
+Maximal coefficient size was 1.295787790E712.
+Working on class 40. Maximal error on polynomial was 6.127849208E-794.
+Maximal coefficient size was 3.476442335E705.
+Working on class 41. Maximal error on polynomial was 1.878564195E-789.
+Maximal coefficient size was 5.230815043E709.
+Working on class 42. Maximal error on polynomial was 1.766630790E-787.
+Maximal coefficient size was 9.927710097E711.
+Working on class 43. Maximal error on polynomial was 3.676048177E-1472.
+Maximal coefficient size was 1.298518450E28.
+Working on class 44. Maximal error on polynomial was 9.928882155E-5973.
+Maximal coefficient size was 2.302394726E27.
+Working on class 45. Maximal error on polynomial was 1.533766820E-1478.
+Maximal coefficient size was 5.770411410E29.
+Working on class 46. Maximal error on polynomial was 5.477738644E-1480.
+Maximal coefficient size was 8.587727054E27.
+Working on class 47. Maximal error on polynomial was 5.477738644E-1480.
+Maximal coefficient size was 3.661987903E28.
+Working on class 48. Maximal error on polynomial was 7.352096354E-1472.
+Maximal coefficient size was 7.190702222E28.
+Working on class 49. Maximal error on polynomial was 3.589890798E-1475.
+Maximal coefficient size was 4.782195508E50.
+Working on class 50. Maximal error on polynomial was 0.0000000000.
+Maximal coefficient size was 4.880794646E50.
+Working on class 51. Maximal error on polynomial was 0.0000000000.
+Maximal coefficient size was 4.813198486E50.
+Working on class 52. Maximal error on polynomial was 2.083157604E-1449.
+Maximal coefficient size was 4.814359629E50.
+Working on class 53. Maximal error on polynomial was 1.388771736E-1449.
+Maximal coefficient size was 5.011714938E50.
+Working on class 54. Maximal error on polynomial was 0.0000000000.
+Maximal coefficient size was 5.030179545E50.
+Working on class 55. Maximal error on polynomial was 4.413206475E-1420.
+Maximal coefficient size was 2.800801106E80.
+Working on class 56. Maximal error on polynomial was 1.106297897E-1420.
+Maximal coefficient size was 3.611317093E79.
+Working on class 57. Maximal error on polynomial was 2.750762162E-1421.
+Maximal coefficient size was 6.533188656E78.
+Working on class 58. Maximal error on polynomial was 3.438442087E-1421.
+Maximal coefficient size was 6.615938489E78.
+Working on class 59. Maximal error on polynomial was 5.363139467E-1424.
+Maximal coefficient size was 4.190659219E78.
+Working on class 60. Maximal error on polynomial was 1.107769253E-1420.
+Maximal coefficient size was 3.610905870E79.
+Working on class 61. Maximal error on polynomial was 1.072817500E-1422.
+Maximal coefficient size was 1.765906084E79.
+Working on class 62. Maximal error on polynomial was 2.750805938E-1421.
+Maximal coefficient size was 1.762810624E79.
+Working on class 63. Maximal error on polynomial was 1.375669877E-1421.
+Maximal coefficient size was 4.192153884E78.
+Working on class 64. Maximal error on polynomial was 4.403721049E-1420.
+Maximal coefficient size was 2.819616310E80.
+Working on class 65. Maximal error on polynomial was 1.744814701E-1422.
+Maximal coefficient size was 1.092668949E78.
+Working on class 66. Maximal error on polynomial was 3.466935640E-1422.
+Maximal coefficient size was 1.106675186E78.
+Working on class 67. Maximal error on polynomial was 2.548131727E-1343.
+Maximal coefficient size was 1.816346905E156.
+Working on class 68. Maximal error on polynomial was 5.750938381E-1343.
+Maximal coefficient size was 6.587534539E156.
+Working on class 69. Maximal error on polynomial was 1.298770998E-1343.
+Maximal coefficient size was 6.400752388E156.
+Working on class 70. Maximal error on polynomial was 3.567428896E-1342.
+Maximal coefficient size was 3.236532956E157.
+Working on class 71. Maximal error on polynomial was 2.549303646E-1342.
+Maximal coefficient size was 3.184772743E157.
+Working on class 72. Maximal error on polynomial was 2.550577216E-1343.
+Maximal coefficient size was 1.553411562E157.
+Working on class 73. Maximal error on polynomial was 9.567097977E-1344.
+Maximal coefficient size was 2.843900082E156.
+Working on class 74. Maximal error on polynomial was 5.733408233E-1343.
+Maximal coefficient size was 6.792866337E156.
+Working on class 75. Maximal error on polynomial was 2.386852058E-1343.
+Maximal coefficient size was 3.934397214E157.
+Working on class 76. Maximal error on polynomial was 1.020052511E-1342.
+Maximal coefficient size was 3.179095599E157.
+Working on class 77. Maximal error on polynomial was 1.914942835E-1343.
+Maximal coefficient size was 6.047618386E156.
+Working on class 78. Maximal error on polynomial was 5.154959178E-1343.
+Maximal coefficient size was 1.826092918E157.
+Working on class 79. Maximal error on polynomial was 5.158400996E-1343.
+Maximal coefficient size was 2.426657165E157.
+Working on class 80. Maximal error on polynomial was 2.555607856E-1343.
+Maximal coefficient size was 1.978241012E157.
+Working on class 81. Maximal error on polynomial was 5.098714746E-1343.
+Maximal coefficient size was 1.582627684E157.
+Working on class 82. Maximal error on polynomial was 5.783007716E-1344.
+Maximal coefficient size was 7.019725530E156.
+Working on class 83. Maximal error on polynomial was 5.239707159E-1343.
+Maximal coefficient size was 3.836126589E157.
+Working on class 84. Maximal error on polynomial was 5.212983369E-1343.
+Maximal coefficient size was 3.617183197E157.
+Working on class 85. Maximal error on polynomial was 2.669054835E-1343.
+Maximal coefficient size was 1.806821828E157.
+Working on class 86. Maximal error on polynomial was 1.029890560E-1343.
+Maximal coefficient size was 4.438453636E157.
+Working on class 87. Maximal error on polynomial was 3.185228882E-1343.
+Maximal coefficient size was 6.090509441E156.
+Working on class 88. Maximal error on polynomial was 2.551655433E-1343.
+Maximal coefficient size was 1.649339114E157.
+Working on class 89. Maximal error on polynomial was 2.039010163E-1342.
+Maximal coefficient size was 3.726730230E157.
+Working on class 90. Maximal error on polynomial was 3.427113105E-1344.
+Maximal coefficient size was 3.099471251E156.
+Working on class 91. Maximal error on polynomial was 5.184261104E-1343.
+Maximal coefficient size was 4.474935035E156.
+Working on class 92. Maximal error on polynomial was 5.414819362E-1343.
+Maximal coefficient size was 1.902834508E156.
+Working on class 93. Maximal error on polynomial was 8.282474787E-1343.
+Maximal coefficient size was 4.830054914E156.
+Working on class 94. Maximal error on polynomial was 2.844696407E-1264.
+Maximal coefficient size was 4.314751789E235.
+Working on class 95. Maximal error on polynomial was 8.266477124E-1265.
+Maximal coefficient size was 6.822013797E234.
+Working on class 96. Maximal error on polynomial was 9.491344724E-1265.
+Maximal coefficient size was 2.646483422E235.
+Working on class 97. Maximal error on polynomial was 1.237022055E-1262.
+Maximal coefficient size was 1.084089976E238.
+Working on class 98. Maximal error on polynomial was 4.752586748E-1265.
+Maximal coefficient size was 6.713740001E234.
+Working on class 99. Maximal error on polynomial was 2.364077898E-1264.
+Maximal coefficient size was 4.338729143E235.
+Working on class 100. Maximal error on polynomial was 1.662097463E-1262.
+Maximal coefficient size was 1.222733592E237.
+Working on class 101. Maximal error on polynomial was 1.900869669E-1263.
+Maximal coefficient size was 3.186749387E236.
+Working on class 102. Maximal error on polynomial was 9.752311430E-1265.
+Maximal coefficient size was 6.627328992E235.
+Working on class 103. Maximal error on polynomial was 9.087338262E-1263.
+Maximal coefficient size was 1.058536703E237.
+Working on class 104. Maximal error on polynomial was 8.391592589E-1264.
+Maximal coefficient size was 2.957926581E236.
+Working on class 105. Maximal error on polynomial was 3.776671797E-1264.
+Maximal coefficient size was 6.569154217E235.
+Working on class 106. Maximal error on polynomial was 9.069823714E-1263.
+Maximal coefficient size was 1.153760789E237.
+Working on class 107. Maximal error on polynomial was 1.942048229E-1263.
+Maximal coefficient size was 3.299714790E236.
+Working on class 108. Maximal error on polynomial was 1.891860003E-1264.
+Maximal coefficient size was 6.053956564E235.
+Working on class 109. Maximal error on polynomial was 6.083973030E-1263.
+Maximal coefficient size was 6.400093605E236.
+Working on class 110. Maximal error on polynomial was 1.510665895E-1263.
+Maximal coefficient size was 3.204927976E236.
+Working on class 111. Maximal error on polynomial was 2.832710660E-1264.
+Maximal coefficient size was 6.440952061E235.
+Working on class 112. Maximal error on polynomial was 1.511251922E-1262.
+Maximal coefficient size was 1.118440711E237.
+Working on class 113. Maximal error on polynomial was 4.890614915E-1264.
+Maximal coefficient size was 5.587054794E236.
+Working on class 114. Maximal error on polynomial was 1.419439822E-1265.
+Maximal coefficient size was 6.758303321E235.
+Working on class 115. Maximal error on polynomial was 7.563931711E-1263.
+Maximal coefficient size was 1.187334120E237.
+Working on class 116. Maximal error on polynomial was 1.151239806E-1263.
+Maximal coefficient size was 3.236459678E236.
+Working on class 117. Maximal error on polynomial was 2.833503644E-1264.
+Maximal coefficient size was 7.110056334E235.
+Working on class 118. Maximal error on polynomial was 6.441764829E-1261.
+Maximal coefficient size was 1.138905212E239.
+Working on class 119. Maximal error on polynomial was 2.360832120E-1265.
+Maximal coefficient size was 1.153613594E235.
+Working on class 120. Maximal error on polynomial was 7.671374208E-1265.
+Maximal coefficient size was 3.519032264E234.
+Working on class 121. Maximal error on polynomial was 1.944322744E-1261.
+Maximal coefficient size was 8.852275846E238.
+Working on class 122. Maximal error on polynomial was 2.389451346E-1265.
+Maximal coefficient size was 1.167546276E235.
+Working on class 123. Maximal error on polynomial was 7.081916662E-1265.
+Maximal coefficient size was 3.078792460E234.
+Working on class 124. Maximal error on polynomial was 9.792879440E-1262.
+Maximal coefficient size was 8.560599960E238.
+Working on class 125. Maximal error on polynomial was 3.550803782E-1265.
+Maximal coefficient size was 1.190727470E235.
+Working on class 126. Maximal error on polynomial was 1.003435989E-1264.
+Maximal coefficient size was 3.645511397E234.
+Working on class 127. Maximal error on polynomial was 1.971732468E-1261.
+Maximal coefficient size was 1.058318911E239.
+Working on class 128. Maximal error on polynomial was 5.344072512E-1266.
+Maximal coefficient size was 1.221672549E235.
+Working on class 129. Maximal error on polynomial was 1.239231184E-1264.
+Maximal coefficient size was 3.625608984E234.
+Working on class 130. Maximal error on polynomial was 2.302187891E-1262.
+Maximal coefficient size was 7.987446417E238.
+Working on class 131. Maximal error on polynomial was 2.119296339E-1266.
+Maximal coefficient size was 1.288763193E235.
+Working on class 132. Maximal error on polynomial was 1.003478636E-1264.
+Maximal coefficient size was 3.511514919E234.
+Working on class 133. Maximal error on polynomial was 1.217973053E-1261.
+Maximal coefficient size was 8.669544605E238.
+Working on class 134. Maximal error on polynomial was 5.902252077E-1265.
+Maximal coefficient size was 1.219501399E235.
+Working on class 135. Maximal error on polynomial was 1.239290385E-1264.
+Maximal coefficient size was 3.566224932E234.
+Working on class 136. Maximal error on polynomial was 2.430148102E-1262.
+Maximal coefficient size was 1.856752084E238.
+Working on class 137. Maximal error on polynomial was 5.905913603E-1265.
+Maximal coefficient size was 6.799556766E234.
+Working on class 138. Maximal error on polynomial was 1.892021866E-1264.
+Maximal coefficient size was 4.317953870E235.
+Working on class 139. Maximal error on polynomial was 2.432259343E-1262.
+Maximal coefficient size was 1.158925987E238.
+Working on class 140. Maximal error on polynomial was 7.672922092E-1265.
+Maximal coefficient size was 3.649539891E234.
+Working on class 141. Maximal error on polynomial was 1.888955387E-1264.
+Maximal coefficient size was 4.399378552E235.
+Working on class 142. Maximal error on polynomial was 2.419679631E-1262.
+Maximal coefficient size was 1.107987467E238.
+Working on class 143. Maximal error on polynomial was 2.479781563E-1262.
+Maximal coefficient size was 1.093317857E238.
+Working on class 144. Maximal error on polynomial was 4.727364551E-1265.
+Maximal coefficient size was 6.577784770E234.
+Working on class 145. Maximal error on polynomial was 3.783634834E-1264.
+Maximal coefficient size was 4.359164187E235.
+Working on class 146. Maximal error on polynomial was 4.868163341E-1262.
+Maximal coefficient size was 1.309566481E238.
+Working on class 147. Maximal error on polynomial was 7.089730942E-1265.
+Maximal coefficient size was 6.667000117E234.
+Working on class 148. Maximal error on polynomial was 4.382190915E-1479.
+Maximal coefficient size was 5.770701326E29.
+Working on class 149. Maximal error on polynomial was 1.838024088E-1472.
+Maximal coefficient size was 8.589230643E27.
+Working on class 150. Maximal error on polynomial was 3.286643186E-1479.
+Maximal coefficient size was 3.662455493E28.
+Working on class 151. Maximal error on polynomial was 1.369434661E-1479.
+Maximal coefficient size was 7.189975190E28.
+Working on class 152. Maximal error on polynomial was 1.489765332E-5972.
+Maximal coefficient size was 1.298273735E28.
+Working on class 153. Maximal error on polynomial was 1.313358681E-5972.
+Maximal coefficient size was 2.303599279E27.
+Working on class 154. Maximal error on polynomial was 6.943858680E-1450.
+Maximal coefficient size was 4.854093334E50.
+Working on class 155. Maximal error on polynomial was 6.249472812E-1449.
+Maximal coefficient size was 4.797926119E50.
+Working on class 156. Maximal error on polynomial was 1.388771736E-1449.
+Maximal coefficient size was 5.027151264E50.
+Working on class 157. Maximal error on polynomial was 6.943858680E-1450.
+Maximal coefficient size was 4.908830192E50.
+Working on class 158. Maximal error on polynomial was 3.471929340E-1449.
+Maximal coefficient size was 4.824584204E50.
+Working on class 159. Maximal error on polynomial was 2.083157604E-1449.
+Maximal coefficient size was 4.917388709E50.
+Working on class 160. Maximal error on polynomial was 6.876902266E-1421.
+Maximal coefficient size was 6.230396471E78.
+Working on class 161. Maximal error on polynomial was 8.856510405E-1420.
+Maximal coefficient size was 2.880968081E80.
+Working on class 162. Maximal error on polynomial was 1.777681686E-1423.
+Maximal coefficient size was 1.121915917E78.
+Working on class 163. Maximal error on polynomial was 5.501933450E-1421.
+Maximal coefficient size was 1.844602781E79.
+Working on class 164. Maximal error on polynomial was 2.447190555E-1423.
+Maximal coefficient size was 4.168601138E78.
+Working on class 165. Maximal error on polynomial was 8.810359386E-1420.
+Maximal coefficient size was 2.862156840E80.
+Working on class 166. Maximal error on polynomial was 2.201822159E-1420.
+Maximal coefficient size was 3.476187816E79.
+Working on class 167. Maximal error on polynomial was 1.652732380E-1420.
+Maximal coefficient size was 3.475718161E79.
+Working on class 168. Maximal error on polynomial was 9.627623878E-1421.
+Maximal coefficient size was 6.311173450E78.
+Working on class 169. Maximal error on polynomial was 8.255449838E-1421.
+Maximal coefficient size was 1.841422690E79.
+Working on class 170. Maximal error on polynomial was 6.877404092E-1422.
+Maximal coefficient size was 4.169974380E78.
+Working on class 171. Maximal error on polynomial was 2.586426415E-1423.
+Maximal coefficient size was 1.136419374E78.
+Working on class 172. Maximal error on polynomial was 4.077840085E-1342.
+Maximal coefficient size was 2.792276915E157.
+Working on class 173. Maximal error on polynomial was 8.599970157E-1343.
+Maximal coefficient size was 2.540121118E156.
+Working on class 174. Maximal error on polynomial was 1.025779535E-1342.
+Maximal coefficient size was 2.786749666E157.
+Working on class 175. Maximal error on polynomial was 2.548119438E-1342.
+Maximal coefficient size was 2.244075031E157.
+Working on class 176. Maximal error on polynomial was 6.559430132E-1344.
+Maximal coefficient size was 3.058748250E156.
+Working on class 177. Maximal error on polynomial was 2.297698832E-1342.
+Maximal coefficient size was 2.079806542E157.
+Working on class 178. Maximal error on polynomial was 2.572691447E-1343.
+Maximal coefficient size was 1.623268976E157.
+Working on class 179. Maximal error on polynomial was 1.275246716E-1342.
+Maximal coefficient size was 2.134452381E157.
+Working on class 180. Maximal error on polynomial was 2.038743222E-1342.
+Maximal coefficient size was 5.120080507E157.
+Working on class 181. Maximal error on polynomial was 1.913441765E-1343.
+Maximal coefficient size was 5.502130275E156.
+Working on class 182. Maximal error on polynomial was 3.493035169E-1344.
+Maximal coefficient size was 3.365497592E157.
+Working on class 183. Maximal error on polynomial was 7.646363166E-1343.
+Maximal coefficient size was 5.975162685E156.
+Working on class 184. Maximal error on polynomial was 2.154565110E-1344.
+Maximal coefficient size was 3.265195714E157.
+Working on class 185. Maximal error on polynomial was 4.882584899E-1344.
+Maximal coefficient size was 1.594046789E157.
+Working on class 186. Maximal error on polynomial was 2.042477196E-1342.
+Maximal coefficient size was 2.848729050E157.
+Working on class 187. Maximal error on polynomial was 1.023429090E-1342.
+Maximal coefficient size was 4.574001981E157.
+Working on class 188. Maximal error on polynomial was 5.636902477E-1347.
+Maximal coefficient size was 5.012271297E156.
+Working on class 189. Maximal error on polynomial was 9.555612245E-1344.
+Maximal coefficient size was 3.326622160E156.
+Working on class 190. Maximal error on polynomial was 1.529610794E-1342.
+Maximal coefficient size was 2.058147881E157.
+Working on class 191. Maximal error on polynomial was 1.146661606E-1342.
+Maximal coefficient size was 6.120250674E156.
+Working on class 192. Maximal error on polynomial was 6.378281465E-1344.
+Maximal coefficient size was 5.322805641E156.
+Working on class 193. Maximal error on polynomial was 7.007848199E-1343.
+Maximal coefficient size was 2.637108418E156.
+Working on class 194. Maximal error on polynomial was 4.476747141E-1343.
+Maximal coefficient size was 5.980779066E156.
+Working on class 195. Maximal error on polynomial was 5.940397467E-1343.
+Maximal coefficient size was 4.230959418E157.
+Working on class 196. Maximal error on polynomial was 3.199988803E-1343.
+Maximal coefficient size was 5.048709020E156.
+Working on class 197. Maximal error on polynomial was 1.019318682E-1342.
+Maximal coefficient size was 1.684664645E157.
+Working on class 198. Maximal error on polynomial was 1.146712885E-1342.
+Maximal coefficient size was 5.631562226E156.
+Working on class 199. Maximal error on polynomial was 2.832725044E-1264.
+Maximal coefficient size was 7.407701677E235.
+Working on class 200. Maximal error on polynomial was 1.088415635E-1261.
+Maximal coefficient size was 1.289811337E238.
+Working on class 201. Maximal error on polynomial was 2.950977084E-1265.
+Maximal coefficient size was 5.708361390E234.
+Working on class 202. Maximal error on polynomial was 7.081242721E-1264.
+Maximal coefficient size was 3.627352245E235.
+Working on class 203. Maximal error on polynomial was 1.359703815E-1262.
+Maximal coefficient size was 1.032688663E237.
+Working on class 204. Maximal error on polynomial was 4.533224966E-1263.
+Maximal coefficient size was 3.793564386E236.
+Working on class 205. Maximal error on polynomial was 1.894109217E-1264.
+Maximal coefficient size was 6.766009041E235.
+Working on class 206. Maximal error on polynomial was 1.359599147E-1262.
+Maximal coefficient size was 8.857495469E236.
+Working on class 207. Maximal error on polynomial was 3.402925303E-1263.
+Maximal coefficient size was 3.523471710E236.
+Working on class 208. Maximal error on polynomial was 1.892975072E-1264.
+Maximal coefficient size was 6.705386809E235.
+Working on class 209. Maximal error on polynomial was 1.813858982E-1262.
+Maximal coefficient size was 9.734275007E236.
+Working on class 210. Maximal error on polynomial was 4.912985485E-1263.
+Maximal coefficient size was 3.936471851E236.
+Working on class 211. Maximal error on polynomial was 1.893261304E-1264.
+Maximal coefficient size was 6.147705252E235.
+Working on class 212. Maximal error on polynomial was 9.677806628E-1261.
+Maximal coefficient size was 1.001086210E239.
+Working on class 213. Maximal error on polynomial was 1.201005302E-1265.
+Maximal coefficient size was 1.274717333E235.
+Working on class 214. Maximal error on polynomial was 1.240131051E-1264.
+Maximal coefficient size was 4.708724154E234.
+Working on class 215. Maximal error on polynomial was 6.770922447E-1261.
+Maximal coefficient size was 9.215207027E238.
+Working on class 216. Maximal error on polynomial was 4.721473950E-1265.
+Maximal coefficient size was 1.377519709E235.
+Working on class 217. Maximal error on polynomial was 8.853058480E-1265.
+Maximal coefficient size was 4.820281485E234.
+Working on class 218. Maximal error on polynomial was 4.936703829E-1261.
+Maximal coefficient size was 6.923714898E238.
+Working on class 219. Maximal error on polynomial was 9.485190522E-1265.
+Maximal coefficient size was 1.452169072E235.
+Working on class 220. Maximal error on polynomial was 1.298460680E-1264.
+Maximal coefficient size was 4.694295217E234.
+Working on class 221. Maximal error on polynomial was 8.701705680E-1261.
+Maximal coefficient size was 7.532576944E238.
+Working on class 222. Maximal error on polynomial was 2.675672809E-1265.
+Maximal coefficient size was 1.378423011E235.
+Working on class 223. Maximal error on polynomial was 4.725518998E-1265.
+Maximal coefficient size was 4.756097163E234.
+Working on class 224. Maximal error on polynomial was 7.736611173E-1261.
+Maximal coefficient size was 7.694456944E238.
+Working on class 225. Maximal error on polynomial was 2.562956002E-1265.
+Maximal coefficient size was 1.328458171E235.
+Working on class 226. Maximal error on polynomial was 5.312496541E-1265.
+Maximal coefficient size was 4.211984835E234.
+Working on class 227. Maximal error on polynomial was 6.771182913E-1261.
+Maximal coefficient size was 7.430728709E238.
+Working on class 228. Maximal error on polynomial was 2.554399092E-1265.
+Maximal coefficient size was 1.345251543E235.
+Working on class 229. Maximal error on polynomial was 8.261555028E-1265.
+Maximal coefficient size was 4.847942867E234.
+Working on class 230. Maximal error on polynomial was 1.210574893E-1261.
+Maximal coefficient size was 2.148208565E238.
+Working on class 231. Maximal error on polynomial was 5.935968101E-1266.
+Maximal coefficient size was 5.799397289E234.
+Working on class 232. Maximal error on polynomial was 8.971622786E-1264.
+Maximal coefficient size was 3.611695075E235.
+Working on class 233. Maximal error on polynomial was 1.213338864E-1261.
+Maximal coefficient size was 1.376994136E238.
+Working on class 234. Maximal error on polynomial was 5.778585814E-1267.
+Maximal coefficient size was 2.935891335E234.
+Working on class 235. Maximal error on polynomial was 8.499909300E-1264.
+Maximal coefficient size was 3.676530725E235.
+Working on class 236. Maximal error on polynomial was 1.209162914E-1261.
+Maximal coefficient size was 1.314904932E238.
+Working on class 237. Maximal error on polynomial was 1.771041882E-1265.
+Maximal coefficient size was 5.807897958E234.
+Working on class 238. Maximal error on polynomial was 4.626977479E-1264.
+Maximal coefficient size was 2.462268056E235.
+Working on class 239. Maximal error on polynomial was 2.466221457E-1262.
+Maximal coefficient size was 1.300219213E238.
+Working on class 240. Maximal error on polynomial was 2.520001827E-1267.
+Maximal coefficient size was 5.579286597E234.
+Working on class 241. Maximal error on polynomial was 9.918845302E-1264.
+Maximal coefficient size was 3.663827209E235.
+Working on class 242. Maximal error on polynomial was 1.211420031E-1261.
+Maximal coefficient size was 1.535534360E238.
+Working on class 243. Maximal error on polynomial was 2.360640791E-1265.
+Maximal coefficient size was 5.668678584E234.
+Working on class 244. Maximal error on polynomial was 9.914079827E-1264.
+Maximal coefficient size was 3.617928866E235.
+Working on class 245. Maximal error on polynomial was 8.309573218E-1263.
+Maximal coefficient size was 5.344795231E236.
+Working on class 246. Maximal error on polynomial was 4.532283042E-1263.
+Maximal coefficient size was 3.821891535E236.
+Working on class 247. Maximal error on polynomial was 1.907390813E-1264.
+Maximal coefficient size was 6.569664008E235.
+Working on class 248. Maximal error on polynomial was 1.812799167E-1262.
+Maximal coefficient size was 9.425953877E236.
+Working on class 249. Maximal error on polynomial was 8.319071816E-1263.
+Maximal coefficient size was 6.589245167E236.
+Working on class 250. Maximal error on polynomial was 2.833404421E-1264.
+Maximal coefficient size was 6.892214784E235.
+Working on class 251. Maximal error on polynomial was 1.210623445E-1262.
+Maximal coefficient size was 1.004234319E237.
+Working on class 252. Maximal error on polynomial was 4.154615641E-1263.
+Maximal coefficient size was 3.851031628E236.
+Working on class 253. Maximal error on polynomial was 6.887222261E-790.
+Maximal coefficient size was 5.089039333E709.
+Working on class 254. Maximal error on polynomial was 2.722595961E-787.
+Maximal coefficient size was 1.246848538E712.
+Working on class 255. Maximal error on polynomial was 3.818900522E-794.
+Maximal coefficient size was 4.170218692E705.
+Working on class 256. Maximal error on polynomial was 1.001340710E-789.
+Maximal coefficient size was 3.993135768E709.
+Working on class 257. Maximal error on polynomial was 2.253208515E-787.
+Maximal coefficient size was 1.295037698E712.
+Working on class 258. Maximal error on polynomial was 4.012067732E-792.
+Maximal coefficient size was 5.977618181E707.
+Working on class 259. Maximal error on polynomial was 1.314568054E-789.
+Maximal coefficient size was 5.674359989E709.
+Working on class 260. Maximal error on polynomial was 1.923290527E-787.
+Maximal coefficient size was 1.223464175E712.
+Working on class 261. Maximal error on polynomial was 9.343681235E-795.
+Maximal coefficient size was 4.169049163E705.
+Working on class 262. Maximal error on polynomial was 5.945259801E-790.
+Maximal coefficient size was 1.812196748E709.
+Working on class 263. Maximal error on polynomial was 1.003720019E-788.
+Maximal coefficient size was 8.468472996E710.
+Working on class 264. Maximal error on polynomial was 1.026333479E-791.
+Maximal coefficient size was 3.043733577E707.
+Working on class 265. Maximal error on polynomial was 1.876742141E-790.
+Maximal coefficient size was 7.966029851E708.
+Working on class 266. Maximal error on polynomial was 8.007492665E-789.
+Maximal coefficient size was 7.853021264E710.
+Working on class 267. Maximal error on polynomial was 2.691046371E-792.
+Maximal coefficient size was 8.798514625E706.
+Working on class 268. Maximal error on polynomial was 5.942830855E-790.
+Maximal coefficient size was 1.752410696E709.
+Working on class 269. Maximal error on polynomial was 2.234728348E-788.
+Maximal coefficient size was 2.135477038E711.
+Working on class 270. Maximal error on polynomial was 2.749127726E-792.
+Maximal coefficient size was 6.459066678E706.
+Working on class 271. Maximal error on polynomial was 1.126082178E-789.
+Maximal coefficient size was 3.508991708E709.
+Working on class 272. Maximal error on polynomial was 9.616231686E-788.
+Maximal coefficient size was 2.455214835E711.
+Working on class 273. Maximal error on polynomial was 8.607168530E-791.
+Maximal coefficient size was 5.470019770E708.
+Working on class 274. Maximal error on polynomial was 8.758240037E-790.
+Maximal coefficient size was 3.426258533E709.
+Working on class 275. Maximal error on polynomial was 3.755938682E-789.
+Maximal coefficient size was 2.322015979E710.
+Working on class 276. Maximal error on polynomial was 1.564823750E-790.
+Maximal coefficient size was 5.539613048E708.
+Working on class 277. Maximal error on polynomial was 1.063595975E-789.
+Maximal coefficient size was 3.767676232E709.
+Working on class 278. Maximal error on polynomial was 9.008833503E-789.
+Maximal coefficient size was 2.952009612E710.
+Working on class 279. Maximal error on polynomial was 1.567282448E-790.
+Maximal coefficient size was 6.617821500E708.
+Working on class 280. Maximal error on polynomial was 5.508646146E-789.
+Maximal coefficient size was 3.211941116E710.
+Working on class 281. Maximal error on polynomial was 8.512852089E-792.
+Maximal coefficient size was 4.919666599E708.
+Working on class 282. Maximal error on polynomial was 5.074310079E-790.
+Maximal coefficient size was 4.245871581E709.
+Working on class 283. Maximal error on polynomial was 5.010911906E-788.
+Maximal coefficient size was 2.130707957E711.
+Working on class 284. Maximal error on polynomial was 7.897472554E-792.
+Maximal coefficient size was 4.093713067E708.
+Working on class 285. Maximal error on polynomial was 1.192098992E-789.
+Maximal coefficient size was 4.140446518E709.
+Working on class 286. Maximal error on polynomial was 5.254779290E-789.
+Maximal coefficient size was 2.515390802E710.
+Working on class 287. Maximal error on polynomial was 3.520158739E-791.
+Maximal coefficient size was 4.135041812E708.
+Working on class 288. Maximal error on polynomial was 2.006398148E-789.
+Maximal coefficient size was 7.761139785E709.
+Working on class 289. Maximal error on polynomial was 1.924962406E-787.
+Maximal coefficient size was 1.303527631E712.
+Working on class 290. Maximal error on polynomial was 7.636391713E-794.
+Maximal coefficient size was 2.041341352E705.
+Working on class 291. Maximal error on polynomial was 2.129275455E-789.
+Maximal coefficient size was 7.127673159E709.
+Working on class 292. Maximal error on polynomial was 4.003662524E-787.
+Maximal coefficient size was 1.355484185E712.
+Working on class 293. Maximal error on polynomial was 1.244948487E-794.
+Maximal coefficient size was 3.274945655E704.
+Working on class 294. Maximal error on polynomial was 1.126144306E-789.
+Maximal coefficient size was 9.522994400E709.
+Working on class 295. Maximal error on polynomial was 1.765866488E-787.
+Maximal coefficient size was 1.301246112E712.
+Working on class 296. Maximal error on polynomial was 7.463048700E-792.
+Maximal coefficient size was 1.304857447E707.
+Working on class 297. Maximal error on polynomial was 2.191586488E-790.
+Maximal coefficient size was 2.422150509E709.
+Working on class 298. Maximal error on polynomial was 2.165533933E-789.
+Maximal coefficient size was 7.493591291E710.
+Working on class 299. Maximal error on polynomial was 2.344118759E-792.
+Maximal coefficient size was 8.745299484E706.
+Working on class 300. Maximal error on polynomial was 6.409788076E-791.
+Maximal coefficient size was 2.416460303E709.
+Working on class 301. Maximal error on polynomial was 2.159342706E-789.
+Maximal coefficient size was 7.373874522E710.
+Working on class 302. Maximal error on polynomial was 2.566734776E-792.
+Maximal coefficient size was 8.573041908E706.
+Working on class 303. Maximal error on polynomial was 3.494270445E-790.
+Maximal coefficient size was 2.802213055E709.
+Working on class 304. Maximal error on polynomial was 5.310200253E-789.
+Maximal coefficient size was 7.117710143E710.
+Working on class 305. Maximal error on polynomial was 1.351324373E-792.
+Maximal coefficient size was 2.874930997E706.
+Working on class 306. Maximal error on polynomial was 7.506775095E-790.
+Maximal coefficient size was 4.078771997E709.
+Working on class 307. Maximal error on polynomial was 5.504997153E-789.
+Maximal coefficient size was 1.702377958E710.
+Working on class 308. Maximal error on polynomial was 7.045300150E-791.
+Maximal coefficient size was 4.042527016E708.
+Working on class 309. Maximal error on polynomial was 6.882122176E-790.
+Maximal coefficient size was 4.042072922E709.
+Working on class 310. Maximal error on polynomial was 2.102202002E-788.
+Maximal coefficient size was 9.781599952E710.
+Working on class 311. Maximal error on polynomial was 1.622083024E-791.
+Maximal coefficient size was 4.683596396E708.
+Working on class 312. Maximal error on polynomial was 1.626427608E-789.
+Maximal coefficient size was 8.164885637E709.
+Working on class 313. Maximal error on polynomial was 7.053449947E-789.
+Maximal coefficient size was 3.216217008E710.
+Working on class 314. Maximal error on polynomial was 2.920342404E-791.
+Maximal coefficient size was 4.353485324E708.
+Working on class 315. Maximal error on polynomial was 2.513586157E-789.
+Maximal coefficient size was 8.783378268E709.
+Working on class 316. Maximal error on polynomial was 1.450838487E-787.
+Maximal coefficient size was 1.295017215E712.
+Working on class 317. Maximal error on polynomial was 5.735952773E-794.
+Maximal coefficient size was 1.909180445E705.
+Working on class 318. Maximal error on polynomial was 1.751736369E-789.
+Maximal coefficient size was 7.032057450E709.
+Working on class 319. Maximal error on polynomial was 9.613948254E-788.
+Maximal coefficient size was 1.305382434E712.
+Working on class 320. Maximal error on polynomial was 3.062858326E-794.
+Maximal coefficient size was 1.914477510E705.
+Working on class 321. Maximal error on polynomial was 1.252059838E-789.
+Maximal coefficient size was 6.325704391E709.
+Working on class 322. Maximal error on polynomial was 9.613971155E-788.
+Maximal coefficient size was 1.324326882E712.
+Working on class 323. Maximal error on polynomial was 1.515424442E-791.
+Maximal coefficient size was 3.568977474E707.
+Working on class 324. Maximal error on polynomial was 1.101651556E-790.
+Maximal coefficient size was 1.518518295E709.
+Working on class 325. Maximal error on polynomial was 1.301175207E-788.
+Maximal coefficient size was 7.502743924E710.
+Working on class 326. Maximal error on polynomial was 2.565743636E-792.
+Maximal coefficient size was 8.828779477E706.
+Working on class 327. Maximal error on polynomial was 4.762612227E-791.
+Maximal coefficient size was 2.359482789E709.
+Working on class 328. Maximal error on polynomial was 4.035129465E-789.
+Maximal coefficient size was 8.503574798E710.
+Working on class 329. Maximal error on polynomial was 2.565966165E-792.
+Maximal coefficient size was 9.753213757E706.
+Working on class 330. Maximal error on polynomial was 1.907079866E-790.
+Maximal coefficient size was 2.643852518E709.
+Working on class 331. Maximal error on polynomial was 1.003098901E-788.
+Maximal coefficient size was 7.222205757E710.
+Working on class 332. Maximal error on polynomial was 2.321509469E-792.
+Maximal coefficient size was 7.344477534E706.
+Working on class 333. Maximal error on polynomial was 8.780519585E-790.
+Maximal coefficient size was 3.431292248E709.
+Working on class 334. Maximal error on polynomial was 8.023347080E-789.
+Maximal coefficient size was 3.105373314E710.
+Working on class 335. Maximal error on polynomial was 3.541194518E-791.
+Maximal coefficient size was 3.951017398E708.
+Working on class 336. Maximal error on polynomial was 6.881298816E-790.
+Maximal coefficient size was 3.747613512E709.
+Working on class 337. Maximal error on polynomial was 3.756824927E-789.
+Maximal coefficient size was 1.765878511E710.
+Working on class 338. Maximal error on polynomial was 4.775469815E-791.
+Maximal coefficient size was 3.943104341E708.
+Working on class 339. Maximal error on polynomial was 1.004561740E-789.
+Maximal coefficient size was 4.507425299E709.
+Working on class 340. Maximal error on polynomial was 9.085981485E-789.
+Maximal coefficient size was 4.319625088E710.
+Working on class 341. Maximal error on polynomial was 9.803910218E-792.
+Maximal coefficient size was 4.340114400E708.
+Working on class 342. Maximal error on polynomial was 2.223157571E-790.
+Maximal coefficient size was 2.294352954E709.
+Working on class 343. Maximal error on polynomial was 2.882530117E-787.
+Maximal coefficient size was 1.243690242E712.
+Working on class 344. Maximal error on polynomial was 3.058084405E-794.
+Maximal coefficient size was 4.405749520E705.
+Working on class 345. Maximal error on polynomial was 1.127737585E-789.
+Maximal coefficient size was 4.686434868E709.
+Working on class 346. Maximal error on polynomial was 1.288480939E-787.
+Maximal coefficient size was 1.295164625E712.
+Working on class 347. Maximal error on polynomial was 7.690875702E-795.
+Maximal coefficient size was 1.005104258E705.
+Working on class 348. Maximal error on polynomial was 1.627857424E-789.
+Maximal coefficient size was 6.354986628E709.
+Working on class 349. Maximal error on polynomial was 1.123284342E-787.
+Maximal coefficient size was 1.241229824E712.
+Working on class 350. Maximal error on polynomial was 9.943155244E-793.
+Maximal coefficient size was 2.648876128E707.
+Working on class 351. Maximal error on polynomial was 6.257912013E-790.
+Maximal coefficient size was 1.844449056E709.
+Working on class 352. Maximal error on polynomial was 2.001776382E-789.
+Maximal coefficient size was 8.059056411E710.
+Working on class 353. Maximal error on polynomial was 3.180187503E-792.
+Maximal coefficient size was 8.639768653E706.
+Working on class 354. Maximal error on polynomial was 6.890059653E-790.
+Maximal coefficient size was 1.841144952E709.
+Working on class 355. Maximal error on polynomial was 2.100093654E-789.
+Maximal coefficient size was 7.958964425E710.
+Working on class 356. Maximal error on polynomial was 2.565740524E-792.
+Maximal coefficient size was 8.311080359E706.
+Working on class 357. Maximal error on polynomial was 3.753808153E-790.
+Maximal coefficient size was 2.115691550E709.
+Working on class 358. Maximal error on polynomial was 1.070263774E-789.
+Maximal coefficient size was 7.601628668E710.
+Working on class 359. Maximal error on polynomial was 1.345610672E-792.
+Maximal coefficient size was 1.695479195E706.
+Working on class 360. Maximal error on polynomial was 1.001109602E-789.
+Maximal coefficient size was 3.389100034E709.
+Working on class 361. Maximal error on polynomial was 3.257386080E-789.
+Maximal coefficient size was 1.540101050E710.
+Working on class 362. Maximal error on polynomial was 1.176315084E-790.
+Maximal coefficient size was 5.426819133E708.
+Working on class 363. Maximal error on polynomial was 1.219845714E-789.
+Maximal coefficient size was 3.335429263E709.
+Working on class 364. Maximal error on polynomial was 8.007104718E-789.
+Maximal coefficient size was 9.193980560E710.
+Working on class 365. Maximal error on polynomial was 1.721298446E-790.
+Maximal coefficient size was 6.063787023E708.
+Working on class 366. Maximal error on polynomial was 1.626804882E-789.
+Maximal coefficient size was 6.885128268E709.
+Working on class 367. Maximal error on polynomial was 5.007822662E-789.
+Maximal coefficient size was 2.953009845E710.
+Working on class 368. Maximal error on polynomial was 1.175288019E-790.
+Maximal coefficient size was 5.810218401E708.
+Working on class 369. Maximal error on polynomial was 2.482529182E-789.
+Maximal coefficient size was 1.934858701E711.
+Working on class 370. Maximal error on polynomial was 1.466968979E-792.
+Maximal coefficient size was 6.592019714E706.
+Working on class 371. Maximal error on polynomial was 1.879066465E-790.
+Maximal coefficient size was 2.380977843E709.
+Working on class 372. Maximal error on polynomial was 1.202796837E-788.
+Maximal coefficient size was 7.896674165E710.
+Working on class 373. Maximal error on polynomial was 7.829435181E-792.
+Maximal coefficient size was 3.312344962E707.
+Working on class 374. Maximal error on polynomial was 6.568759721E-791.
+Maximal coefficient size was 1.002462469E709.
+Working on class 375. Maximal error on polynomial was 4.316692996E-789.
+Maximal coefficient size was 7.335865966E710.
+Working on class 376. Maximal error on polynomial was 1.715823384E-792.
+Maximal coefficient size was 8.930301016E706.
+Working on class 377. Maximal error on polynomial was 1.003580384E-789.
+Maximal coefficient size was 4.529951691E709.
+Working on class 378. Maximal error on polynomial was 3.444821075E-790.
+Maximal coefficient size was 1.148385330E709.
+Working on class 379. Maximal error on polynomial was 5.106552045E-789.
+Maximal coefficient size was 8.075310755E710.
+Working on class 380. Maximal error on polynomial was 2.695537479E-792.
+Maximal coefficient size was 8.644360571E706.
+Working on class 381. Maximal error on polynomial was 9.077399198E-790.
+Maximal coefficient size was 1.806984603E709.
+Working on class 382. Maximal error on polynomial was 6.041046956E-789.
+Maximal coefficient size was 9.149313358E710.
+Working on class 383. Maximal error on polynomial was 3.422321540E-792.
+Maximal coefficient size was 9.700564946E706.
+Working on class 384. Maximal error on polynomial was 8.445372903E-790.
+Maximal coefficient size was 2.009671473E709.
+Working on class 385. Maximal error on polynomial was 7.059988769E-789.
+Maximal coefficient size was 7.773953768E710.
+Working on class 386. Maximal error on polynomial was 3.054439709E-792.
+Maximal coefficient size was 7.132055436E706.
+Working on class 387. Maximal error on polynomial was 7.194354033E-790.
+Maximal coefficient size was 2.811605092E709.
+Working on class 388. Maximal error on polynomial was 6.012790465E-789.
+Maximal coefficient size was 2.869150580E710.
+Working on class 389. Maximal error on polynomial was 1.564091838E-790.
+Maximal coefficient size was 5.294204518E708.
+Working on class 390. Maximal error on polynomial was 8.758378950E-790.
+Maximal coefficient size was 3.092995644E709.
+Working on class 391. Maximal error on polynomial was 4.756910259E-789.
+Maximal coefficient size was 1.631836630E710.
+Working on class 392. Maximal error on polynomial was 1.407838150E-790.
+Maximal coefficient size was 5.246838133E708.
+Working on class 393. Maximal error on polynomial was 9.429256252E-790.
+Maximal coefficient size was 3.727642076E709.
+Working on class 394. Maximal error on polynomial was 8.210264047E-789.
+Maximal coefficient size was 4.692288657E710.
+Working on class 395. Maximal error on polynomial was 1.487622943E-790.
+Maximal coefficient size was 5.834451039E708.
+Working on class 396. Maximal error on polynomial was 1.751548493E-789.
+Maximal coefficient size was 4.580278211E709.
+Working on class 397. Maximal error on polynomial was 4.897204284E-1028.
+Maximal coefficient size was 1.945781083E472.
+Working on class 398. Maximal error on polynomial was 1.889194157E-1022.
+Maximal coefficient size was 1.059551019E477.
+Working on class 399. Maximal error on polynomial was 4.203424412E-1029.
+Maximal coefficient size was 5.920228796E470.
+Working on class 400. Maximal error on polynomial was 1.080915639E-1028.
+Maximal coefficient size was 6.004138956E470.
+Working on class 401. Maximal error on polynomial was 1.954857883E-1028.
+Maximal coefficient size was 1.640214309E471.
+Working on class 402. Maximal error on polynomial was 1.561979169E-1028.
+Maximal coefficient size was 8.019040926E470.
+Working on class 403. Maximal error on polynomial was 1.177582353E-1027.
+Maximal coefficient size was 3.565538419E472.
+Working on class 404. Maximal error on polynomial was 1.265293599E-1022.
+Maximal coefficient size was 1.083777613E477.
+Working on class 405. Maximal error on polynomial was 2.046785964E-1023.
+Maximal coefficient size was 1.128489511E476.
+Working on class 406. Maximal error on polynomial was 1.200848937E-1029.
+Maximal coefficient size was 7.396374553E469.
+Working on class 407. Maximal error on polynomial was 2.409400146E-1028.
+Maximal coefficient size was 2.012801319E471.
+Working on class 408. Maximal error on polynomial was 1.203172202E-1028.
+Maximal coefficient size was 2.212127805E471.
+Working on class 409. Maximal error on polynomial was 4.340475821E-1028.
+Maximal coefficient size was 1.987783833E471.
+Working on class 410. Maximal error on polynomial was 1.736120776E-1023.
+Maximal coefficient size was 1.111456128E476.
+Working on class 411. Maximal error on polynomial was 1.053579058E-1025.
+Maximal coefficient size was 5.474302773E473.
+Working on class 412. Maximal error on polynomial was 2.411194036E-1028.
+Maximal coefficient size was 2.581961957E471.
+Working on class 413. Maximal error on polynomial was 1.250433624E-1027.
+Maximal coefficient size was 9.721048488E471.
+Working on class 414. Maximal error on polynomial was 8.981924853E-1023.
+Maximal coefficient size was 1.086631563E477.
+Working on class 415. Maximal error on polynomial was 2.676047938E-1023.
+Maximal coefficient size was 1.635324131E476.
+Working on class 416. Maximal error on polynomial was 2.372763677E-1027.
+Maximal coefficient size was 6.279270208E472.
+Working on class 417. Maximal error on polynomial was 1.681161887E-1028.
+Maximal coefficient size was 1.850714308E471.
+Working on class 418. Maximal error on polynomial was 6.018668537E-1028.
+Maximal coefficient size was 2.215050261E471.
+Working on class 419. Maximal error on polynomial was 3.310026686E-1023.
+Maximal coefficient size was 1.327518196E476.
+Working on class 420. Maximal error on polynomial was 2.046428250E-1023.
+Maximal coefficient size was 1.177438090E476.
+Working on class 421. Maximal error on polynomial was 2.162304921E-1028.
+Maximal coefficient size was 2.017705794E471.
+Working on class 422. Maximal error on polynomial was 4.228215081E-1027.
+Maximal coefficient size was 3.514232756E472.
+Working on class 423. Maximal error on polynomial was 2.046605224E-1023.
+Maximal coefficient size was 1.082318142E476.
+Working on class 424. Maximal error on polynomial was 3.362282810E-1028.
+Maximal coefficient size was 1.838330797E471.
+Working on class 425. Maximal error on polynomial was 1.082674909E-1028.
+Maximal coefficient size was 8.742455472E470.
+Working on class 426. Maximal error on polynomial was 9.307462118E-1029.
+Maximal coefficient size was 2.940519273E470.
+Working on class 427. Maximal error on polynomial was 1.681772403E-1028.
+Maximal coefficient size was 2.085378200E471.
+Working on class 428. Maximal error on polynomial was 1.785646065E-1025.
+Maximal coefficient size was 1.479600850E474.
+Working on class 429. Maximal error on polynomial was 3.467661743E-1027.
+Maximal coefficient size was 3.566574525E472.
+Working on class 430. Maximal error on polynomial was 3.122255268E-1028.
+Maximal coefficient size was 2.091726785E471.
+Working on class 431. Maximal error on polynomial was 1.888840805E-1023.
+Maximal coefficient size was 1.182235066E476.
+Working on class 432. Maximal error on polynomial was 1.229691548E-1026.
+Maximal coefficient size was 8.286566861E472.
+Working on class 433. Maximal error on polynomial was 1.372301309E-1025.
+Maximal coefficient size was 8.031470160E473.
+Working on class 434. Maximal error on polynomial was 3.125911892E-1028.
+Maximal coefficient size was 2.031181231E471.
+Working on class 435. Maximal error on polynomial was 1.513590581E-1022.
+Maximal coefficient size was 1.074385539E477.
+Working on class 436. Maximal error on polynomial was 4.611116661E-1027.
+Maximal coefficient size was 4.036848616E472.
+Working on class 437. Maximal error on polynomial was 1.922237589E-1027.
+Maximal coefficient size was 3.403636409E472.
+Working on class 438. Maximal error on polynomial was 3.090749318E-1027.
+Maximal coefficient size was 6.291153370E472.
+Working on class 439. Maximal error on polynomial was 1.352983778E-1025.
+Maximal coefficient size was 9.860409640E473.
+Working on class 440. Maximal error on polynomial was 9.697506492E-1029.
+Maximal coefficient size was 2.198831979E471.
+Working on class 441. Maximal error on polynomial was 7.713414440E-1027.
+Maximal coefficient size was 6.293967840E472.
+Working on class 442. Maximal error on polynomial was 2.091747200E-1025.
+Maximal coefficient size was 1.003678344E474.
+Working on class 443. Maximal error on polynomial was 3.458402845E-1027.
+Maximal coefficient size was 3.630336393E472.
+Working on class 444. Maximal error on polynomial was 1.923650248E-1028.
+Maximal coefficient size was 9.448211570E470.
+Working on class 445. Maximal error on polynomial was 1.602863114E-1025.
+Maximal coefficient size was 1.050553432E474.
+Working on class 446. Maximal error on polynomial was 4.998732805E-1027.
+Maximal coefficient size was 3.559750697E472.
+Working on class 447. Maximal error on polynomial was 9.995385125E-1027.
+Maximal coefficient size was 6.039956536E472.
+Working on class 448. Maximal error on polynomial was 7.706685274E-1027.
+Maximal coefficient size was 6.125037023E472.
+Working on class 449. Maximal error on polynomial was 3.085398174E-1027.
+Maximal coefficient size was 3.600108303E472.
+Working on class 450. Maximal error on polynomial was 2.361111089E-1023.
+Maximal coefficient size was 1.068709711E476.
+Working on class 451. Maximal error on polynomial was 7.389594129E-1025.
+Maximal coefficient size was 3.599682648E474.
+Working on class 452. Maximal error on polynomial was 1.603284158E-1025.
+Maximal coefficient size was 1.017616322E474.
+Working on class 453. Maximal error on polynomial was 6.930942756E-1027.
+Maximal coefficient size was 6.521581959E472.
+Working on class 454. Maximal error on polynomial was 3.050028208E-1029.
+Maximal coefficient size was 4.057536380E470.
+Working on class 455. Maximal error on polynomial was 1.561505601E-1028.
+Maximal coefficient size was 8.603872436E470.
+Working on class 456. Maximal error on polynomial was 5.285876063E-1028.
+Maximal coefficient size was 2.611483505E471.
+Working on class 457. Maximal error on polynomial was 6.148967988E-1027.
+Maximal coefficient size was 5.332307328E472.
+Working on class 458. Maximal error on polynomial was 1.007508975E-1022.
+Maximal coefficient size was 1.088028131E477.
+Working on class 459. Maximal error on polynomial was 1.007959174E-1022.
+Maximal coefficient size was 1.098509179E477.
+Working on class 460. Maximal error on polynomial was 5.095621148E-1029.
+Maximal coefficient size was 3.416202462E472.
+Working on class 461. Maximal error on polynomial was 3.837833119E-1027.
+Maximal coefficient size was 9.612842803E472.
+Working on class 462. Maximal error on polynomial was 4.868534567E-1029.
+Maximal coefficient size was 2.452329154E471.
+Working on class 463. Maximal error on polynomial was 2.762962981E-1028.
+Maximal coefficient size was 1.072841978E471.
+Working on class 464. Maximal error on polynomial was 5.910591267E-1025.
+Maximal coefficient size was 6.283823725E474.
+Working on class 465. Maximal error on polynomial was 1.933595672E-1028.
+Maximal coefficient size was 1.495434578E471.
+Working on class 466. Maximal error on polynomial was 1.007471617E-1022.
+Maximal coefficient size was 1.068619798E477.
+Working on class 467. Maximal error on polynomial was 4.611404728E-1027.
+Maximal coefficient size was 5.998093082E472.
+Working on class 468. Maximal error on polynomial was 2.362914155E-1023.
+Maximal coefficient size was 1.131154085E476.
+Working on class 469. Maximal error on polynomial was 1.802703931E-1028.
+Maximal coefficient size was 6.207277385E470.
+Working on class 470. Maximal error on polynomial was 1.086886870E-1028.
+Maximal coefficient size was 5.459360922E470.
+Working on class 471. Maximal error on polynomial was 2.041533795E-1028.
+Maximal coefficient size was 8.875853476E470.
+Working on class 472. Maximal error on polynomial was 2.281888526E-1028.
+Maximal coefficient size was 8.658779577E470.
+Working on class 473. Maximal error on polynomial was 1.388075305E-1022.
+Maximal coefficient size was 1.082271519E477.
+Working on class 474. Maximal error on polynomial was 4.084578248E-1028.
+Maximal coefficient size was 1.985640612E471.
+Working on class 475. Maximal error on polynomial was 8.251560854E-1028.
+Maximal coefficient size was 2.670631508E472.
+Working on class 476. Maximal error on polynomial was 1.014885679E-1022.
+Maximal coefficient size was 1.094190118E477.
+Working on class 477. Maximal error on polynomial was 1.204080782E-1028.
+Maximal coefficient size was 8.420192743E470.
+Working on class 478. Maximal error on polynomial was 4.082906607E-1028.
+Maximal coefficient size was 1.423003431E471.
+Working on class 479. Maximal error on polynomial was 5.014330365E-1026.
+Maximal coefficient size was 7.864154246E473.
+Working on class 480. Maximal error on polynomial was 1.082179082E-1028.
+Maximal coefficient size was 9.544644556E470.
+Working on class 481. Maximal error on polynomial was 6.917059450E-1027.
+Maximal coefficient size was 3.490920357E472.
+Working on class 482. Maximal error on polynomial was 1.538518783E-1026.
+Maximal coefficient size was 7.009822056E472.
+Working on class 483. Maximal error on polynomial was 3.243310131E-1028.
+Maximal coefficient size was 1.019240059E471.
+Working on class 484. Maximal error on polynomial was 5.398803093E-1027.
+Maximal coefficient size was 3.920561479E472.
+Working on class 485. Maximal error on polynomial was 6.428213630E-1024.
+Maximal coefficient size was 1.422058703E476.
+Working on class 486. Maximal error on polynomial was 6.148685558E-1027.
+Maximal coefficient size was 3.344056373E472.
+Working on class 487. Maximal error on polynomial was 9.452910868E-1024.
+Maximal coefficient size was 1.422199794E476.
+Working on class 488. Maximal error on polynomial was 2.642167461E-1028.
+Maximal coefficient size was 2.314539096E471.
+Working on class 489. Maximal error on polynomial was 1.141516336E-1025.
+Maximal coefficient size was 6.128653703E474.
+Working on class 490. Maximal error on polynomial was 1.598523014E-1025.
+Maximal coefficient size was 7.756804871E473.
+Working on class 491. Maximal error on polynomial was 5.765028878E-1028.
+Maximal coefficient size was 1.680185945E471.
+Working on class 492. Maximal error on polynomial was 1.844485681E-1026.
+Maximal coefficient size was 7.847415548E472.
+Working on class 493. Maximal error on polynomial was 8.411753431E-1029.
+Maximal coefficient size was 6.640465420E470.
+Working on class 494. Maximal error on polynomial was 6.983390408E-1026.
+Maximal coefficient size was 4.228995883E473.
+Working on class 495. Maximal error on polynomial was 1.512152876E-1022.
+Maximal coefficient size was 9.152437464E476.
+Working on class 496. Maximal error on polynomial was 1.199090019E-1024.
+Maximal coefficient size was 2.064264016E476.
+Working on class 497. Maximal error on polynomial was 1.970960348E-1027.
+Maximal coefficient size was 4.050473956E472.
+Working on class 498. Maximal error on polynomial was 1.844558323E-1026.
+Maximal coefficient size was 8.068526324E472.
+Working on class 499. Maximal error on polynomial was 1.622326308E-1028.
+Maximal coefficient size was 6.285865006E470.
+Working on class 500. Maximal error on polynomial was 1.141055325E-1028.
+Maximal coefficient size was 3.673895207E470.
+Working on class 501. Maximal error on polynomial was 1.259647161E-1022.
+Maximal coefficient size was 8.989559559E476.
+Working on class 502. Maximal error on polynomial was 2.426546091E-1028.
+Maximal coefficient size was 2.582375143E471.
+Working on class 503. Maximal error on polynomial was 2.522770959E-1028.
+Maximal coefficient size was 9.715903928E470.
+Working on class 504. Maximal error on polynomial was 1.260960851E-1028.
+Maximal coefficient size was 6.448685543E470.
+Working on class 505. Maximal error on polynomial was 6.604489017E-1029.
+Maximal coefficient size was 6.041324798E470.
+Working on class 506. Maximal error on polynomial was 3.842615177E-1028.
+Maximal coefficient size was 1.292440478E471.
+Working on class 507. Maximal error on polynomial was 1.262630057E-1022.
+Maximal coefficient size was 9.185976353E476.
+Working on class 508. Maximal error on polynomial was 1.762826086E-1022.
+Maximal coefficient size was 9.090509143E476.
+Working on class 509. Maximal error on polynomial was 3.603134526E-1029.
+Maximal coefficient size was 1.802650430E470.
+Working on class 510. Maximal error on polynomial was 4.856693249E-1024.
+Maximal coefficient size was 1.352399634E476.
+Working on class 511. Maximal error on polynomial was 4.323793981E-1028.
+Maximal coefficient size was 1.289090463E471.
+Working on class 512. Maximal error on polynomial was 1.422038366E-1023.
+Maximal coefficient size was 1.364352405E476.
+Working on class 513. Maximal error on polynomial was 8.410243833E-1029.
+Maximal coefficient size was 6.281436226E470.
+Working on class 514. Maximal error on polynomial was 9.948661989E-1024.
+Maximal coefficient size was 1.400147919E476.
+Working on class 515. Maximal error on polynomial was 1.260272553E-1022.
+Maximal coefficient size was 9.217921484E476.
+Working on class 516. Maximal error on polynomial was 1.501060913E-1028.
+Maximal coefficient size was 3.710055127E470.
+Working on class 517. Maximal error on polynomial was 6.728277886E-1028.
+Maximal coefficient size was 1.019460755E472.
+Working on class 518. Maximal error on polynomial was 1.441602510E-1028.
+Maximal coefficient size was 7.078599072E470.
+Working on class 519. Maximal error on polynomial was 1.460422935E-1026.
+Maximal coefficient size was 8.165296598E472.
+Working on class 520. Maximal error on polynomial was 6.463664185E-1027.
+Maximal coefficient size was 1.206090889E473.
+Working on class 521. Maximal error on polynomial was 3.965653647E-1028.
+Maximal coefficient size was 1.163958025E471.
+Working on class 522. Maximal error on polynomial was 1.890138516E-1022.
+Maximal coefficient size was 9.148786101E476.
+Working on class 523. Maximal error on polynomial was 2.404676297E-1028.
+Maximal coefficient size was 2.320682994E471.
+Working on class 524. Maximal error on polynomial was 1.731332035E-1023.
+Maximal coefficient size was 1.484065986E476.
+Working on class 525. Maximal error on polynomial was 5.384742031E-1027.
+Maximal coefficient size was 3.492796653E472.
+Working on class 526. Maximal error on polynomial was 1.543145103E-1028.
+Maximal coefficient size was 2.387514323E471.
+Working on class 527. Maximal error on polynomial was 3.624405802E-1029.
+Maximal coefficient size was 8.161744382E470.
+Working on class 528. Maximal error on polynomial was 1.681233086E-1028.
+Maximal coefficient size was 2.154996988E471.
+Working on class 529. Maximal error on polynomial was 4.229002117E-1027.
+Maximal coefficient size was 3.450398986E472.
+Working on class 530. Maximal error on polynomial was 8.025565431E-1026.
+Maximal coefficient size was 6.188632805E473.
+Working on class 531. Maximal error on polynomial was 4.563645368E-1028.
+Maximal coefficient size was 1.340604153E471.
+Working on class 532. Maximal error on polynomial was 7.205189163E-1029.
+Maximal coefficient size was 6.542585003E470.
+Working on class 533. Maximal error on polynomial was 2.140589964E-1022.
+Maximal coefficient size was 9.073769492E476.
+Working on class 534. Maximal error on polynomial was 4.083894543E-1028.
+Maximal coefficient size was 1.612202388E471.
+Working on class 535. Maximal error on polynomial was 4.805398792E-1024.
+Maximal coefficient size was 1.481511121E476.
+Working on class 536. Maximal error on polynomial was 1.513192780E-1022.
+Maximal coefficient size was 9.240018399E476.
+Working on class 537. Maximal error on polynomial was 3.001741683E-1029.
+Maximal coefficient size was 1.032856845E471.
+Working on class 538. Maximal error on polynomial was 2.403377626E-1028.
+Maximal coefficient size was 2.383085844E471.
+Working on class 539. Maximal error on polynomial was 1.998341918E-1026.
+Maximal coefficient size was 8.255779634E472.
+Working on class 540. Maximal error on polynomial was 1.725994584E-1025.
+Maximal coefficient size was 1.332626615E474.
+Working on class 541. Maximal error on polynomial was 2.362554544E-1027.
+Maximal coefficient size was 2.872969047E472.
+Working on class 542. Maximal error on polynomial was 2.328504317E-1027.
+Maximal coefficient size was 3.288351824E472.
+Working on class 543. Maximal error on polynomial was 7.206540095E-1029.
+Maximal coefficient size was 6.495777781E470.
+Working on class 544. Maximal error on polynomial was 9.853622617E-1026.
+Maximal coefficient size was 7.615668119E473.
+Working on class 545. Maximal error on polynomial was 5.380342766E-1027.
+Maximal coefficient size was 3.489224059E472.
+Working on class 546. Maximal error on polynomial was 2.151935454E-1026.
+Maximal coefficient size was 8.265310526E472.
+Working on class 547. Maximal error on polynomial was 4.323007740E-1028.
+Maximal coefficient size was 1.425556978E471.
+Working on class 548. Maximal error on polynomial was 6.151271946E-1027.
+Maximal coefficient size was 3.551247803E472.
+Working on class 549. Maximal error on polynomial was 2.889272761E-1028.
+Maximal coefficient size was 3.065606034E471.
+Working on class 550. Maximal error on polynomial was 9.879556780E-1026.
+Maximal coefficient size was 8.133717395E473.
+Working on class 551. Maximal error on polynomial was 1.732264571E-1023.
+Maximal coefficient size was 1.681795717E476.
+Working on class 552. Maximal error on polynomial was 1.999259009E-1026.
+Maximal coefficient size was 7.958799274E472.
+Working on class 553. Maximal error on polynomial was 1.387367426E-1022.
+Maximal coefficient size was 9.278782687E476.
+Working on class 554. Maximal error on polynomial was 5.764783465E-1027.
+Maximal coefficient size was 3.528072997E472.
+Working on class 555. Maximal error on polynomial was 3.602619091E-1028.
+Maximal coefficient size was 2.475092629E471.
+Working on class 556. Maximal error on polynomial was 2.522866925E-1025.
+Maximal coefficient size was 2.837679463E474.
+Working on class 557. Maximal error on polynomial was 1.999602703E-1026.
+Maximal coefficient size was 1.060504559E473.
+Working on class 558. Maximal error on polynomial was 1.538352388E-1026.
+Maximal coefficient size was 8.567599915E472.
+Maximal error was 4.003662524E-787.
+We have p = 3.
+The prime 5 divides the resultant of 6 and 14.
+The prime 7 divides the resultant of 7 and 9.
+The prime 11 divides the resultant of 4 and 12.
+The prime 13 divides the resultant of 16 and 20.
+The prime 17 divides the resultant of 27 and 29.
+The prime 19 divides the resultant of 4 and 26.
+The prime 23 divides the resultant of 36 and 57.
+The prime 29 divides the resultant of 25 and 45.
+The prime 31 divides the resultant of 13 and 18.
+The prime 37 divides the resultant of 77 and 425.
+The prime 41 divides the resultant of 142 and 201.
+The prime 43 divides the resultant of 6 and 9.
+The prime 47 divides the resultant of 95 and 102.
+The prime 53 divides the resultant of 4 and 114.
+The prime 59 divides the resultant of 56 and 268.
+The prime 61 divides the resultant of 23 and 63.
+The prime 67 divides the resultant of 417 and 434.
+The prime 71 divides the resultant of 114 and 322.
+The prime 73 divides the resultant of 6 and 11.
+The prime 79 divides the resultant of 452 and 459.
+The prime 83 divides the resultant of 62 and 162.
+The prime 89 divides the resultant of 36 and 130.
+The prime 97 divides the resultant of 44 and 53.
+The prime 101 divides the resultant of 286 and 315.
+The prime 103 divides the resultant of 71 and 410.
+The prime 107 divides the resultant of 21 and 110.
+The prime 109 divides the resultant of 102 and 106.
+The prime 113 divides the resultant of 282 and 303.
+The prime 127 divides the resultant of 77 and 183.
+The prime 131 divides the resultant of 251 and 290.
+The prime 137 divides the resultant of 62 and 65.
+The prime 139 divides the resultant of 43 and 197.
+The prime 149 divides the resultant of 202 and 230.
+The prime 151 divides the resultant of 442 and 455.
+The prime 157 divides the resultant of 412 and 443.
+For pp = 167, we have the following.
+Element is [ 1 10]
+[ 9 14].
+For conjugate 1, chival = -1.
+Old possibilities [ 1, 2, 3, 6, 163, 326, 489, 978, -1, -2, -3, -6, -163, -326, 
+-489, -978 ].
+Possibilities now [ 163, 326, 489, 978, -1, -2, -3, -6 ].
+The prime 173 divides the resultant of 323 and 373.
+The prime 179 divides the resultant of 300 and 320.
+The prime 181 divides the resultant of 453 and 474.
+For pp = 191, we have the following.
+Element is [7 6]
+[0 8].
+For conjugate 1, chival = -1.
+Old possibilities [ 163, 326, 489, 978, -1, -2, -3, -6 ].
+Possibilities now [ -1, -2, -3, -6 ].
+The prime 193 divides the resultant of 83 and 174.
+For pp = 197, we have the following.
+Element is [22 17]
+[18  2].
+For conjugate 1, chival = -1.
+Old possibilities [ -1, -2, -3, -6 ].
+Possibilities now [ -2, -3 ].
+The prime 199 divides the resultant of 425 and 433.
+The prime 211 divides the resultant of 83 and 430.
+The prime 223 divides the resultant of 21 and 49.
+The prime 227 divides the resultant of 41 and 370.
+The prime 229 divides the resultant of 400 and 473.
+The prime 233 divides the resultant of 38 and 329.
+The prime 239 divides the resultant of 111 and 300.
+The prime 241 divides the resultant of 401 and 415.
+The prime 251 divides the resultant of 297 and 326.
+The prime 257 divides the resultant of 62 and 66.
+The prime 263 divides the resultant of 285 and 377.
+The prime 269 divides the resultant of 37 and 335.
+The prime 271 divides the resultant of 158 and 196.
+For pp = 277, we have the following.
+Element is [ 4 26]
+[ 9 13].
+For conjugate 1, chival = 1.
+Old possibilities [ -2, -3 ].
+Possibilities now [ -3 ].
+For conjugate 1, the unique twist is -3.
+After t = 2, the options lists were the following.
+For divisor 1, options = [ -3 ].
+For divisor zz, options = [].
+For divisor zz^6 + 9*zz^3 + 27, options = [].
+For divisor zz^7 + 9*zz^4 + 27*zz, options = [].
+We should have found all of the models!
+Model option 1 is Elliptic Curve defined by y^2 = x^3 + (-27*t^12 - 324*t^9 - 
+1458*t^6 - 2268*t^3 - 243)*x + (54*t^18 + 972*t^15 + 7290*t^12 + 27216*t^9 + 
+48114*t^6 + 26244*t^3 - 1458) over Univariate rational function field over 
+Rational Field.
+
+Total time: 1209.839 seconds, Total memory usage: 64.12MB

@@ -1,0 +1,4792 @@
+The degree of that covering map is 7.
+Setting subsub to be subgroup 4 of index 28.
+The space of Eisenstein series has dimension 1175.
+Computing action of generators of subsub intersect SL_2 on Eisenstein series for
+Gamma(49).
+Finding vectors invariant under subsub intersect SL_2.
+The dimension of the space of Eisenstein series for subsub intersect SL_2 is 83.
+Computing the action of the generators of subsub on the Q-vector space of 
+dimension 3486.
+Finding vectors invariant under subsub.
+The dimension is 83.
+The index of subsub in covergp is 196.
+Form try attempt 1. Number of images is 196.
+The element [ 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+0, 0, 0, 0, 0, 0, 0 ] works. It was number 1.
+Computing Weierstrass p-function Fourier expansions.
+Computing Fourier expansion 1.
+Computing Fourier expansion 2.
+Computing Fourier expansion 3.
+Computing Fourier expansion 4.
+Computing Fourier expansion 5.
+Computing Fourier expansion 6.
+Computing Fourier expansion 7.
+Computing Fourier expansion 8.
+Computing Fourier expansion 9.
+Computing Fourier expansion 10.
+Computing Fourier expansion 11.
+Computing Fourier expansion 12.
+Computing Fourier expansion 13.
+Computing Fourier expansion 14.
+Computing Fourier expansion 15.
+Computing Fourier expansion 16.
+Computing Fourier expansion 17.
+Computing Fourier expansion 18.
+Computing Fourier expansion 19.
+Computing Fourier expansion 20.
+Computing Fourier expansion 21.
+Computing Fourier expansion 22.
+Computing Fourier expansion 23.
+Computing Fourier expansion 24.
+Computing Fourier expansion 25.
+Computing Fourier expansion 26.
+Computing Fourier expansion 27.
+Computing Fourier expansion 28.
+Computing Fourier expansion 29.
+Computing Fourier expansion 30.
+Computing Fourier expansion 31.
+Computing Fourier expansion 32.
+Computing Fourier expansion 33.
+Computing Fourier expansion 34.
+Computing Fourier expansion 35.
+Computing Fourier expansion 36.
+Computing Fourier expansion 37.
+Computing Fourier expansion 38.
+Computing Fourier expansion 39.
+Computing Fourier expansion 40.
+Computing Fourier expansion 41.
+Computing Fourier expansion 42.
+Computing Fourier expansion 43.
+Computing Fourier expansion 44.
+Computing Fourier expansion 45.
+Computing Fourier expansion 46.
+Computing Fourier expansion 47.
+Computing Fourier expansion 48.
+Computing Fourier expansion 49.
+Computing Fourier expansion 50.
+Computing Fourier expansion 51.
+Computing Fourier expansion 52.
+Computing Fourier expansion 53.
+Computing Fourier expansion 54.
+Computing Fourier expansion 55.
+Computing Fourier expansion 56.
+Computing Fourier expansion 57.
+Computing Fourier expansion 58.
+Computing Fourier expansion 59.
+Computing Fourier expansion 60.
+Computing Fourier expansion 61.
+Computing Fourier expansion 62.
+Computing Fourier expansion 63.
+Computing Fourier expansion 64.
+Computing Fourier expansion 65.
+Computing Fourier expansion 66.
+Computing Fourier expansion 67.
+Computing Fourier expansion 68.
+Computing Fourier expansion 69.
+Computing Fourier expansion 70.
+Computing Fourier expansion 71.
+Computing Fourier expansion 72.
+Computing Fourier expansion 73.
+Computing Fourier expansion 74.
+Computing Fourier expansion 75.
+Computing Fourier expansion 76.
+Computing Fourier expansion 77.
+Computing Fourier expansion 78.
+Computing Fourier expansion 79.
+Computing Fourier expansion 80.
+Computing Fourier expansion 81.
+Computing Fourier expansion 82.
+Computing Fourier expansion 83.
+Computing Fourier expansion 84.
+Computing Fourier expansion 85.
+Computing Fourier expansion 86.
+Computing Fourier expansion 87.
+Computing Fourier expansion 88.
+Computing Fourier expansion 89.
+Computing Fourier expansion 90.
+Computing Fourier expansion 91.
+Computing Fourier expansion 92.
+Computing Fourier expansion 93.
+Computing Fourier expansion 94.
+Computing Fourier expansion 95.
+Computing Fourier expansion 96.
+Computing Fourier expansion 97.
+Computing Fourier expansion 98.
+Computing Fourier expansion 99.
+Computing Fourier expansion 100.
+Computing Fourier expansion 101.
+Computing Fourier expansion 102.
+Computing Fourier expansion 103.
+Computing Fourier expansion 104.
+Computing Fourier expansion 105.
+Computing Fourier expansion 106.
+Computing Fourier expansion 107.
+Computing Fourier expansion 108.
+Computing Fourier expansion 109.
+Computing Fourier expansion 110.
+Computing Fourier expansion 111.
+Computing Fourier expansion 112.
+Computing Fourier expansion 113.
+Computing Fourier expansion 114.
+Computing Fourier expansion 115.
+Computing Fourier expansion 116.
+Computing Fourier expansion 117.
+Computing Fourier expansion 118.
+Computing Fourier expansion 119.
+Computing Fourier expansion 120.
+Computing Fourier expansion 121.
+Computing Fourier expansion 122.
+Computing Fourier expansion 123.
+Computing Fourier expansion 124.
+Computing Fourier expansion 125.
+Computing Fourier expansion 126.
+Computing Fourier expansion 127.
+Computing Fourier expansion 128.
+Computing Fourier expansion 129.
+Computing Fourier expansion 130.
+Computing Fourier expansion 131.
+Computing Fourier expansion 132.
+Computing Fourier expansion 133.
+Computing Fourier expansion 134.
+Computing Fourier expansion 135.
+Computing Fourier expansion 136.
+Computing Fourier expansion 137.
+Computing Fourier expansion 138.
+Computing Fourier expansion 139.
+Computing Fourier expansion 140.
+Computing Fourier expansion 141.
+Computing Fourier expansion 142.
+Computing Fourier expansion 143.
+Computing Fourier expansion 144.
+Computing Fourier expansion 145.
+Computing Fourier expansion 146.
+Computing Fourier expansion 147.
+Computing Fourier expansion 148.
+Computing Fourier expansion 149.
+Computing Fourier expansion 150.
+Computing Fourier expansion 151.
+Computing Fourier expansion 152.
+Computing Fourier expansion 153.
+Computing Fourier expansion 154.
+Computing Fourier expansion 155.
+Computing Fourier expansion 156.
+Computing Fourier expansion 157.
+Computing Fourier expansion 158.
+Computing Fourier expansion 159.
+Computing Fourier expansion 160.
+Computing Fourier expansion 161.
+Computing Fourier expansion 162.
+Computing Fourier expansion 163.
+Computing Fourier expansion 164.
+Computing Fourier expansion 165.
+Computing Fourier expansion 166.
+Computing Fourier expansion 167.
+Computing Fourier expansion 168.
+Computing Fourier expansion 169.
+Computing Fourier expansion 170.
+Computing Fourier expansion 171.
+Computing Fourier expansion 172.
+Computing Fourier expansion 173.
+Computing Fourier expansion 174.
+Computing Fourier expansion 175.
+Computing Fourier expansion 176.
+Computing Fourier expansion 177.
+Computing Fourier expansion 178.
+Computing Fourier expansion 179.
+Computing Fourier expansion 180.
+Computing Fourier expansion 181.
+Computing Fourier expansion 182.
+Computing Fourier expansion 183.
+Computing Fourier expansion 184.
+Computing Fourier expansion 185.
+Computing Fourier expansion 186.
+Computing Fourier expansion 187.
+Computing Fourier expansion 188.
+Computing Fourier expansion 189.
+Computing Fourier expansion 190.
+Computing Fourier expansion 191.
+Computing Fourier expansion 192.
+Computing Fourier expansion 193.
+Computing Fourier expansion 194.
+Computing Fourier expansion 195.
+Computing Fourier expansion 196.
+Symmetrizing.
+Doing term 1 of 2646.
+Doing term 2 of 2646.
+Doing term 3 of 2646.
+Doing term 4 of 2646.
+Doing term 5 of 2646.
+Doing term 6 of 2646.
+Doing term 7 of 2646.
+Doing term 8 of 2646.
+Doing term 9 of 2646.
+Doing term 10 of 2646.
+Doing term 11 of 2646.
+Doing term 12 of 2646.
+Doing term 13 of 2646.
+Doing term 14 of 2646.
+Doing term 15 of 2646.
+Doing term 16 of 2646.
+Doing term 17 of 2646.
+Doing term 18 of 2646.
+Doing term 19 of 2646.
+Doing term 20 of 2646.
+Doing term 21 of 2646.
+Doing term 22 of 2646.
+Doing term 23 of 2646.
+Doing term 24 of 2646.
+Doing term 25 of 2646.
+Doing term 26 of 2646.
+Doing term 27 of 2646.
+Doing term 28 of 2646.
+Doing term 29 of 2646.
+Doing term 30 of 2646.
+Doing term 31 of 2646.
+Doing term 32 of 2646.
+Doing term 33 of 2646.
+Doing term 34 of 2646.
+Doing term 35 of 2646.
+Doing term 36 of 2646.
+Doing term 37 of 2646.
+Doing term 38 of 2646.
+Doing term 39 of 2646.
+Doing term 40 of 2646.
+Doing term 41 of 2646.
+Doing term 42 of 2646.
+Doing term 43 of 2646.
+Doing term 44 of 2646.
+Doing term 45 of 2646.
+Doing term 46 of 2646.
+Doing term 47 of 2646.
+Doing term 48 of 2646.
+Doing term 49 of 2646.
+Doing term 50 of 2646.
+Doing term 51 of 2646.
+Doing term 52 of 2646.
+Doing term 53 of 2646.
+Doing term 54 of 2646.
+Doing term 55 of 2646.
+Doing term 56 of 2646.
+Doing term 57 of 2646.
+Doing term 58 of 2646.
+Doing term 59 of 2646.
+Doing term 60 of 2646.
+Doing term 61 of 2646.
+Doing term 62 of 2646.
+Doing term 63 of 2646.
+Doing term 64 of 2646.
+Doing term 65 of 2646.
+Doing term 66 of 2646.
+Doing term 67 of 2646.
+Doing term 68 of 2646.
+Doing term 69 of 2646.
+Doing term 70 of 2646.
+Doing term 71 of 2646.
+Doing term 72 of 2646.
+Doing term 73 of 2646.
+Doing term 74 of 2646.
+Doing term 75 of 2646.
+Doing term 76 of 2646.
+Doing term 77 of 2646.
+Doing term 78 of 2646.
+Doing term 79 of 2646.
+Doing term 80 of 2646.
+Doing term 81 of 2646.
+Doing term 82 of 2646.
+Doing term 83 of 2646.
+Doing term 84 of 2646.
+Doing term 85 of 2646.
+Doing term 86 of 2646.
+Doing term 87 of 2646.
+Doing term 88 of 2646.
+Doing term 89 of 2646.
+Doing term 90 of 2646.
+Doing term 91 of 2646.
+Doing term 92 of 2646.
+Doing term 93 of 2646.
+Doing term 94 of 2646.
+Doing term 95 of 2646.
+Doing term 96 of 2646.
+Doing term 97 of 2646.
+Doing term 98 of 2646.
+Doing term 99 of 2646.
+Doing term 100 of 2646.
+Doing term 101 of 2646.
+Doing term 102 of 2646.
+Doing term 103 of 2646.
+Doing term 104 of 2646.
+Doing term 105 of 2646.
+Doing term 106 of 2646.
+Doing term 107 of 2646.
+Doing term 108 of 2646.
+Doing term 109 of 2646.
+Doing term 110 of 2646.
+Doing term 111 of 2646.
+Doing term 112 of 2646.
+Doing term 113 of 2646.
+Doing term 114 of 2646.
+Doing term 115 of 2646.
+Doing term 116 of 2646.
+Doing term 117 of 2646.
+Doing term 118 of 2646.
+Doing term 119 of 2646.
+Doing term 120 of 2646.
+Doing term 121 of 2646.
+Doing term 122 of 2646.
+Doing term 123 of 2646.
+Doing term 124 of 2646.
+Doing term 125 of 2646.
+Doing term 126 of 2646.
+Doing term 127 of 2646.
+Doing term 128 of 2646.
+Doing term 129 of 2646.
+Doing term 130 of 2646.
+Doing term 131 of 2646.
+Doing term 132 of 2646.
+Doing term 133 of 2646.
+Doing term 134 of 2646.
+Doing term 135 of 2646.
+Doing term 136 of 2646.
+Doing term 137 of 2646.
+Doing term 138 of 2646.
+Doing term 139 of 2646.
+Doing term 140 of 2646.
+Doing term 141 of 2646.
+Doing term 142 of 2646.
+Doing term 143 of 2646.
+Doing term 144 of 2646.
+Doing term 145 of 2646.
+Doing term 146 of 2646.
+Doing term 147 of 2646.
+Doing term 148 of 2646.
+Doing term 149 of 2646.
+Doing term 150 of 2646.
+Doing term 151 of 2646.
+Doing term 152 of 2646.
+Doing term 153 of 2646.
+Doing term 154 of 2646.
+Doing term 155 of 2646.
+Doing term 156 of 2646.
+Doing term 157 of 2646.
+Doing term 158 of 2646.
+Doing term 159 of 2646.
+Doing term 160 of 2646.
+Doing term 161 of 2646.
+Doing term 162 of 2646.
+Doing term 163 of 2646.
+Doing term 164 of 2646.
+Doing term 165 of 2646.
+Doing term 166 of 2646.
+Doing term 167 of 2646.
+Doing term 168 of 2646.
+Doing term 169 of 2646.
+Doing term 170 of 2646.
+Doing term 171 of 2646.
+Doing term 172 of 2646.
+Doing term 173 of 2646.
+Doing term 174 of 2646.
+Doing term 175 of 2646.
+Doing term 176 of 2646.
+Doing term 177 of 2646.
+Doing term 178 of 2646.
+Doing term 179 of 2646.
+Doing term 180 of 2646.
+Doing term 181 of 2646.
+Doing term 182 of 2646.
+Doing term 183 of 2646.
+Doing term 184 of 2646.
+Doing term 185 of 2646.
+Doing term 186 of 2646.
+Doing term 187 of 2646.
+Doing term 188 of 2646.
+Doing term 189 of 2646.
+Doing term 190 of 2646.
+Doing term 191 of 2646.
+Doing term 192 of 2646.
+Doing term 193 of 2646.
+Doing term 194 of 2646.
+Doing term 195 of 2646.
+Doing term 196 of 2646.
+Doing term 197 of 2646.
+Doing term 198 of 2646.
+Doing term 199 of 2646.
+Doing term 200 of 2646.
+Doing term 201 of 2646.
+Doing term 202 of 2646.
+Doing term 203 of 2646.
+Doing term 204 of 2646.
+Doing term 205 of 2646.
+Doing term 206 of 2646.
+Doing term 207 of 2646.
+Doing term 208 of 2646.
+Doing term 209 of 2646.
+Doing term 210 of 2646.
+Doing term 211 of 2646.
+Doing term 212 of 2646.
+Doing term 213 of 2646.
+Doing term 214 of 2646.
+Doing term 215 of 2646.
+Doing term 216 of 2646.
+Doing term 217 of 2646.
+Doing term 218 of 2646.
+Doing term 219 of 2646.
+Doing term 220 of 2646.
+Doing term 221 of 2646.
+Doing term 222 of 2646.
+Doing term 223 of 2646.
+Doing term 224 of 2646.
+Doing term 225 of 2646.
+Doing term 226 of 2646.
+Doing term 227 of 2646.
+Doing term 228 of 2646.
+Doing term 229 of 2646.
+Doing term 230 of 2646.
+Doing term 231 of 2646.
+Doing term 232 of 2646.
+Doing term 233 of 2646.
+Doing term 234 of 2646.
+Doing term 235 of 2646.
+Doing term 236 of 2646.
+Doing term 237 of 2646.
+Doing term 238 of 2646.
+Doing term 239 of 2646.
+Doing term 240 of 2646.
+Doing term 241 of 2646.
+Doing term 242 of 2646.
+Doing term 243 of 2646.
+Doing term 244 of 2646.
+Doing term 245 of 2646.
+Doing term 246 of 2646.
+Doing term 247 of 2646.
+Doing term 248 of 2646.
+Doing term 249 of 2646.
+Doing term 250 of 2646.
+Doing term 251 of 2646.
+Doing term 252 of 2646.
+Doing term 253 of 2646.
+Doing term 254 of 2646.
+Doing term 255 of 2646.
+Doing term 256 of 2646.
+Doing term 257 of 2646.
+Doing term 258 of 2646.
+Doing term 259 of 2646.
+Doing term 260 of 2646.
+Doing term 261 of 2646.
+Doing term 262 of 2646.
+Doing term 263 of 2646.
+Doing term 264 of 2646.
+Doing term 265 of 2646.
+Doing term 266 of 2646.
+Doing term 267 of 2646.
+Doing term 268 of 2646.
+Doing term 269 of 2646.
+Doing term 270 of 2646.
+Doing term 271 of 2646.
+Doing term 272 of 2646.
+Doing term 273 of 2646.
+Doing term 274 of 2646.
+Doing term 275 of 2646.
+Doing term 276 of 2646.
+Doing term 277 of 2646.
+Doing term 278 of 2646.
+Doing term 279 of 2646.
+Doing term 280 of 2646.
+Doing term 281 of 2646.
+Doing term 282 of 2646.
+Doing term 283 of 2646.
+Doing term 284 of 2646.
+Doing term 285 of 2646.
+Doing term 286 of 2646.
+Doing term 287 of 2646.
+Doing term 288 of 2646.
+Doing term 289 of 2646.
+Doing term 290 of 2646.
+Doing term 291 of 2646.
+Doing term 292 of 2646.
+Doing term 293 of 2646.
+Doing term 294 of 2646.
+Doing term 295 of 2646.
+Doing term 296 of 2646.
+Doing term 297 of 2646.
+Doing term 298 of 2646.
+Doing term 299 of 2646.
+Doing term 300 of 2646.
+Doing term 301 of 2646.
+Doing term 302 of 2646.
+Doing term 303 of 2646.
+Doing term 304 of 2646.
+Doing term 305 of 2646.
+Doing term 306 of 2646.
+Doing term 307 of 2646.
+Doing term 308 of 2646.
+Doing term 309 of 2646.
+Doing term 310 of 2646.
+Doing term 311 of 2646.
+Doing term 312 of 2646.
+Doing term 313 of 2646.
+Doing term 314 of 2646.
+Doing term 315 of 2646.
+Doing term 316 of 2646.
+Doing term 317 of 2646.
+Doing term 318 of 2646.
+Doing term 319 of 2646.
+Doing term 320 of 2646.
+Doing term 321 of 2646.
+Doing term 322 of 2646.
+Doing term 323 of 2646.
+Doing term 324 of 2646.
+Doing term 325 of 2646.
+Doing term 326 of 2646.
+Doing term 327 of 2646.
+Doing term 328 of 2646.
+Doing term 329 of 2646.
+Doing term 330 of 2646.
+Doing term 331 of 2646.
+Doing term 332 of 2646.
+Doing term 333 of 2646.
+Doing term 334 of 2646.
+Doing term 335 of 2646.
+Doing term 336 of 2646.
+Doing term 337 of 2646.
+Doing term 338 of 2646.
+Doing term 339 of 2646.
+Doing term 340 of 2646.
+Doing term 341 of 2646.
+Doing term 342 of 2646.
+Doing term 343 of 2646.
+Doing term 344 of 2646.
+Doing term 345 of 2646.
+Doing term 346 of 2646.
+Doing term 347 of 2646.
+Doing term 348 of 2646.
+Doing term 349 of 2646.
+Doing term 350 of 2646.
+Doing term 351 of 2646.
+Doing term 352 of 2646.
+Doing term 353 of 2646.
+Doing term 354 of 2646.
+Doing term 355 of 2646.
+Doing term 356 of 2646.
+Doing term 357 of 2646.
+Doing term 358 of 2646.
+Doing term 359 of 2646.
+Doing term 360 of 2646.
+Doing term 361 of 2646.
+Doing term 362 of 2646.
+Doing term 363 of 2646.
+Doing term 364 of 2646.
+Doing term 365 of 2646.
+Doing term 366 of 2646.
+Doing term 367 of 2646.
+Doing term 368 of 2646.
+Doing term 369 of 2646.
+Doing term 370 of 2646.
+Doing term 371 of 2646.
+Doing term 372 of 2646.
+Doing term 373 of 2646.
+Doing term 374 of 2646.
+Doing term 375 of 2646.
+Doing term 376 of 2646.
+Doing term 377 of 2646.
+Doing term 378 of 2646.
+Doing term 379 of 2646.
+Doing term 380 of 2646.
+Doing term 381 of 2646.
+Doing term 382 of 2646.
+Doing term 383 of 2646.
+Doing term 384 of 2646.
+Doing term 385 of 2646.
+Doing term 386 of 2646.
+Doing term 387 of 2646.
+Doing term 388 of 2646.
+Doing term 389 of 2646.
+Doing term 390 of 2646.
+Doing term 391 of 2646.
+Doing term 392 of 2646.
+Doing term 393 of 2646.
+Doing term 394 of 2646.
+Doing term 395 of 2646.
+Doing term 396 of 2646.
+Doing term 397 of 2646.
+Doing term 398 of 2646.
+Doing term 399 of 2646.
+Doing term 400 of 2646.
+Doing term 401 of 2646.
+Doing term 402 of 2646.
+Doing term 403 of 2646.
+Doing term 404 of 2646.
+Doing term 405 of 2646.
+Doing term 406 of 2646.
+Doing term 407 of 2646.
+Doing term 408 of 2646.
+Doing term 409 of 2646.
+Doing term 410 of 2646.
+Doing term 411 of 2646.
+Doing term 412 of 2646.
+Doing term 413 of 2646.
+Doing term 414 of 2646.
+Doing term 415 of 2646.
+Doing term 416 of 2646.
+Doing term 417 of 2646.
+Doing term 418 of 2646.
+Doing term 419 of 2646.
+Doing term 420 of 2646.
+Doing term 421 of 2646.
+Doing term 422 of 2646.
+Doing term 423 of 2646.
+Doing term 424 of 2646.
+Doing term 425 of 2646.
+Doing term 426 of 2646.
+Doing term 427 of 2646.
+Doing term 428 of 2646.
+Doing term 429 of 2646.
+Doing term 430 of 2646.
+Doing term 431 of 2646.
+Doing term 432 of 2646.
+Doing term 433 of 2646.
+Doing term 434 of 2646.
+Doing term 435 of 2646.
+Doing term 436 of 2646.
+Doing term 437 of 2646.
+Doing term 438 of 2646.
+Doing term 439 of 2646.
+Doing term 440 of 2646.
+Doing term 441 of 2646.
+Doing term 442 of 2646.
+Doing term 443 of 2646.
+Doing term 444 of 2646.
+Doing term 445 of 2646.
+Doing term 446 of 2646.
+Doing term 447 of 2646.
+Doing term 448 of 2646.
+Doing term 449 of 2646.
+Doing term 450 of 2646.
+Doing term 451 of 2646.
+Doing term 452 of 2646.
+Doing term 453 of 2646.
+Doing term 454 of 2646.
+Doing term 455 of 2646.
+Doing term 456 of 2646.
+Doing term 457 of 2646.
+Doing term 458 of 2646.
+Doing term 459 of 2646.
+Doing term 460 of 2646.
+Doing term 461 of 2646.
+Doing term 462 of 2646.
+Doing term 463 of 2646.
+Doing term 464 of 2646.
+Doing term 465 of 2646.
+Doing term 466 of 2646.
+Doing term 467 of 2646.
+Doing term 468 of 2646.
+Doing term 469 of 2646.
+Doing term 470 of 2646.
+Doing term 471 of 2646.
+Doing term 472 of 2646.
+Doing term 473 of 2646.
+Doing term 474 of 2646.
+Doing term 475 of 2646.
+Doing term 476 of 2646.
+Doing term 477 of 2646.
+Doing term 478 of 2646.
+Doing term 479 of 2646.
+Doing term 480 of 2646.
+Doing term 481 of 2646.
+Doing term 482 of 2646.
+Doing term 483 of 2646.
+Doing term 484 of 2646.
+Doing term 485 of 2646.
+Doing term 486 of 2646.
+Doing term 487 of 2646.
+Doing term 488 of 2646.
+Doing term 489 of 2646.
+Doing term 490 of 2646.
+Doing term 491 of 2646.
+Doing term 492 of 2646.
+Doing term 493 of 2646.
+Doing term 494 of 2646.
+Doing term 495 of 2646.
+Doing term 496 of 2646.
+Doing term 497 of 2646.
+Doing term 498 of 2646.
+Doing term 499 of 2646.
+Doing term 500 of 2646.
+Doing term 501 of 2646.
+Doing term 502 of 2646.
+Doing term 503 of 2646.
+Doing term 504 of 2646.
+Doing term 505 of 2646.
+Doing term 506 of 2646.
+Doing term 507 of 2646.
+Doing term 508 of 2646.
+Doing term 509 of 2646.
+Doing term 510 of 2646.
+Doing term 511 of 2646.
+Doing term 512 of 2646.
+Doing term 513 of 2646.
+Doing term 514 of 2646.
+Doing term 515 of 2646.
+Doing term 516 of 2646.
+Doing term 517 of 2646.
+Doing term 518 of 2646.
+Doing term 519 of 2646.
+Doing term 520 of 2646.
+Doing term 521 of 2646.
+Doing term 522 of 2646.
+Doing term 523 of 2646.
+Doing term 524 of 2646.
+Doing term 525 of 2646.
+Doing term 526 of 2646.
+Doing term 527 of 2646.
+Doing term 528 of 2646.
+Doing term 529 of 2646.
+Doing term 530 of 2646.
+Doing term 531 of 2646.
+Doing term 532 of 2646.
+Doing term 533 of 2646.
+Doing term 534 of 2646.
+Doing term 535 of 2646.
+Doing term 536 of 2646.
+Doing term 537 of 2646.
+Doing term 538 of 2646.
+Doing term 539 of 2646.
+Doing term 540 of 2646.
+Doing term 541 of 2646.
+Doing term 542 of 2646.
+Doing term 543 of 2646.
+Doing term 544 of 2646.
+Doing term 545 of 2646.
+Doing term 546 of 2646.
+Doing term 547 of 2646.
+Doing term 548 of 2646.
+Doing term 549 of 2646.
+Doing term 550 of 2646.
+Doing term 551 of 2646.
+Doing term 552 of 2646.
+Doing term 553 of 2646.
+Doing term 554 of 2646.
+Doing term 555 of 2646.
+Doing term 556 of 2646.
+Doing term 557 of 2646.
+Doing term 558 of 2646.
+Doing term 559 of 2646.
+Doing term 560 of 2646.
+Doing term 561 of 2646.
+Doing term 562 of 2646.
+Doing term 563 of 2646.
+Doing term 564 of 2646.
+Doing term 565 of 2646.
+Doing term 566 of 2646.
+Doing term 567 of 2646.
+Doing term 568 of 2646.
+Doing term 569 of 2646.
+Doing term 570 of 2646.
+Doing term 571 of 2646.
+Doing term 572 of 2646.
+Doing term 573 of 2646.
+Doing term 574 of 2646.
+Doing term 575 of 2646.
+Doing term 576 of 2646.
+Doing term 577 of 2646.
+Doing term 578 of 2646.
+Doing term 579 of 2646.
+Doing term 580 of 2646.
+Doing term 581 of 2646.
+Doing term 582 of 2646.
+Doing term 583 of 2646.
+Doing term 584 of 2646.
+Doing term 585 of 2646.
+Doing term 586 of 2646.
+Doing term 587 of 2646.
+Doing term 588 of 2646.
+Doing term 589 of 2646.
+Doing term 590 of 2646.
+Doing term 591 of 2646.
+Doing term 592 of 2646.
+Doing term 593 of 2646.
+Doing term 594 of 2646.
+Doing term 595 of 2646.
+Doing term 596 of 2646.
+Doing term 597 of 2646.
+Doing term 598 of 2646.
+Doing term 599 of 2646.
+Doing term 600 of 2646.
+Doing term 601 of 2646.
+Doing term 602 of 2646.
+Doing term 603 of 2646.
+Doing term 604 of 2646.
+Doing term 605 of 2646.
+Doing term 606 of 2646.
+Doing term 607 of 2646.
+Doing term 608 of 2646.
+Doing term 609 of 2646.
+Doing term 610 of 2646.
+Doing term 611 of 2646.
+Doing term 612 of 2646.
+Doing term 613 of 2646.
+Doing term 614 of 2646.
+Doing term 615 of 2646.
+Doing term 616 of 2646.
+Doing term 617 of 2646.
+Doing term 618 of 2646.
+Doing term 619 of 2646.
+Doing term 620 of 2646.
+Doing term 621 of 2646.
+Doing term 622 of 2646.
+Doing term 623 of 2646.
+Doing term 624 of 2646.
+Doing term 625 of 2646.
+Doing term 626 of 2646.
+Doing term 627 of 2646.
+Doing term 628 of 2646.
+Doing term 629 of 2646.
+Doing term 630 of 2646.
+Doing term 631 of 2646.
+Doing term 632 of 2646.
+Doing term 633 of 2646.
+Doing term 634 of 2646.
+Doing term 635 of 2646.
+Doing term 636 of 2646.
+Doing term 637 of 2646.
+Doing term 638 of 2646.
+Doing term 639 of 2646.
+Doing term 640 of 2646.
+Doing term 641 of 2646.
+Doing term 642 of 2646.
+Doing term 643 of 2646.
+Doing term 644 of 2646.
+Doing term 645 of 2646.
+Doing term 646 of 2646.
+Doing term 647 of 2646.
+Doing term 648 of 2646.
+Doing term 649 of 2646.
+Doing term 650 of 2646.
+Doing term 651 of 2646.
+Doing term 652 of 2646.
+Doing term 653 of 2646.
+Doing term 654 of 2646.
+Doing term 655 of 2646.
+Doing term 656 of 2646.
+Doing term 657 of 2646.
+Doing term 658 of 2646.
+Doing term 659 of 2646.
+Doing term 660 of 2646.
+Doing term 661 of 2646.
+Doing term 662 of 2646.
+Doing term 663 of 2646.
+Doing term 664 of 2646.
+Doing term 665 of 2646.
+Doing term 666 of 2646.
+Doing term 667 of 2646.
+Doing term 668 of 2646.
+Doing term 669 of 2646.
+Doing term 670 of 2646.
+Doing term 671 of 2646.
+Doing term 672 of 2646.
+Doing term 673 of 2646.
+Doing term 674 of 2646.
+Doing term 675 of 2646.
+Doing term 676 of 2646.
+Doing term 677 of 2646.
+Doing term 678 of 2646.
+Doing term 679 of 2646.
+Doing term 680 of 2646.
+Doing term 681 of 2646.
+Doing term 682 of 2646.
+Doing term 683 of 2646.
+Doing term 684 of 2646.
+Doing term 685 of 2646.
+Doing term 686 of 2646.
+Doing term 687 of 2646.
+Doing term 688 of 2646.
+Doing term 689 of 2646.
+Doing term 690 of 2646.
+Doing term 691 of 2646.
+Doing term 692 of 2646.
+Doing term 693 of 2646.
+Doing term 694 of 2646.
+Doing term 695 of 2646.
+Doing term 696 of 2646.
+Doing term 697 of 2646.
+Doing term 698 of 2646.
+Doing term 699 of 2646.
+Doing term 700 of 2646.
+Doing term 701 of 2646.
+Doing term 702 of 2646.
+Doing term 703 of 2646.
+Doing term 704 of 2646.
+Doing term 705 of 2646.
+Doing term 706 of 2646.
+Doing term 707 of 2646.
+Doing term 708 of 2646.
+Doing term 709 of 2646.
+Doing term 710 of 2646.
+Doing term 711 of 2646.
+Doing term 712 of 2646.
+Doing term 713 of 2646.
+Doing term 714 of 2646.
+Doing term 715 of 2646.
+Doing term 716 of 2646.
+Doing term 717 of 2646.
+Doing term 718 of 2646.
+Doing term 719 of 2646.
+Doing term 720 of 2646.
+Doing term 721 of 2646.
+Doing term 722 of 2646.
+Doing term 723 of 2646.
+Doing term 724 of 2646.
+Doing term 725 of 2646.
+Doing term 726 of 2646.
+Doing term 727 of 2646.
+Doing term 728 of 2646.
+Doing term 729 of 2646.
+Doing term 730 of 2646.
+Doing term 731 of 2646.
+Doing term 732 of 2646.
+Doing term 733 of 2646.
+Doing term 734 of 2646.
+Doing term 735 of 2646.
+Doing term 736 of 2646.
+Doing term 737 of 2646.
+Doing term 738 of 2646.
+Doing term 739 of 2646.
+Doing term 740 of 2646.
+Doing term 741 of 2646.
+Doing term 742 of 2646.
+Doing term 743 of 2646.
+Doing term 744 of 2646.
+Doing term 745 of 2646.
+Doing term 746 of 2646.
+Doing term 747 of 2646.
+Doing term 748 of 2646.
+Doing term 749 of 2646.
+Doing term 750 of 2646.
+Doing term 751 of 2646.
+Doing term 752 of 2646.
+Doing term 753 of 2646.
+Doing term 754 of 2646.
+Doing term 755 of 2646.
+Doing term 756 of 2646.
+Doing term 757 of 2646.
+Doing term 758 of 2646.
+Doing term 759 of 2646.
+Doing term 760 of 2646.
+Doing term 761 of 2646.
+Doing term 762 of 2646.
+Doing term 763 of 2646.
+Doing term 764 of 2646.
+Doing term 765 of 2646.
+Doing term 766 of 2646.
+Doing term 767 of 2646.
+Doing term 768 of 2646.
+Doing term 769 of 2646.
+Doing term 770 of 2646.
+Doing term 771 of 2646.
+Doing term 772 of 2646.
+Doing term 773 of 2646.
+Doing term 774 of 2646.
+Doing term 775 of 2646.
+Doing term 776 of 2646.
+Doing term 777 of 2646.
+Doing term 778 of 2646.
+Doing term 779 of 2646.
+Doing term 780 of 2646.
+Doing term 781 of 2646.
+Doing term 782 of 2646.
+Doing term 783 of 2646.
+Doing term 784 of 2646.
+Doing term 785 of 2646.
+Doing term 786 of 2646.
+Doing term 787 of 2646.
+Doing term 788 of 2646.
+Doing term 789 of 2646.
+Doing term 790 of 2646.
+Doing term 791 of 2646.
+Doing term 792 of 2646.
+Doing term 793 of 2646.
+Doing term 794 of 2646.
+Doing term 795 of 2646.
+Doing term 796 of 2646.
+Doing term 797 of 2646.
+Doing term 798 of 2646.
+Doing term 799 of 2646.
+Doing term 800 of 2646.
+Doing term 801 of 2646.
+Doing term 802 of 2646.
+Doing term 803 of 2646.
+Doing term 804 of 2646.
+Doing term 805 of 2646.
+Doing term 806 of 2646.
+Doing term 807 of 2646.
+Doing term 808 of 2646.
+Doing term 809 of 2646.
+Doing term 810 of 2646.
+Doing term 811 of 2646.
+Doing term 812 of 2646.
+Doing term 813 of 2646.
+Doing term 814 of 2646.
+Doing term 815 of 2646.
+Doing term 816 of 2646.
+Doing term 817 of 2646.
+Doing term 818 of 2646.
+Doing term 819 of 2646.
+Doing term 820 of 2646.
+Doing term 821 of 2646.
+Doing term 822 of 2646.
+Doing term 823 of 2646.
+Doing term 824 of 2646.
+Doing term 825 of 2646.
+Doing term 826 of 2646.
+Doing term 827 of 2646.
+Doing term 828 of 2646.
+Doing term 829 of 2646.
+Doing term 830 of 2646.
+Doing term 831 of 2646.
+Doing term 832 of 2646.
+Doing term 833 of 2646.
+Doing term 834 of 2646.
+Doing term 835 of 2646.
+Doing term 836 of 2646.
+Doing term 837 of 2646.
+Doing term 838 of 2646.
+Doing term 839 of 2646.
+Doing term 840 of 2646.
+Doing term 841 of 2646.
+Doing term 842 of 2646.
+Doing term 843 of 2646.
+Doing term 844 of 2646.
+Doing term 845 of 2646.
+Doing term 846 of 2646.
+Doing term 847 of 2646.
+Doing term 848 of 2646.
+Doing term 849 of 2646.
+Doing term 850 of 2646.
+Doing term 851 of 2646.
+Doing term 852 of 2646.
+Doing term 853 of 2646.
+Doing term 854 of 2646.
+Doing term 855 of 2646.
+Doing term 856 of 2646.
+Doing term 857 of 2646.
+Doing term 858 of 2646.
+Doing term 859 of 2646.
+Doing term 860 of 2646.
+Doing term 861 of 2646.
+Doing term 862 of 2646.
+Doing term 863 of 2646.
+Doing term 864 of 2646.
+Doing term 865 of 2646.
+Doing term 866 of 2646.
+Doing term 867 of 2646.
+Doing term 868 of 2646.
+Doing term 869 of 2646.
+Doing term 870 of 2646.
+Doing term 871 of 2646.
+Doing term 872 of 2646.
+Doing term 873 of 2646.
+Doing term 874 of 2646.
+Doing term 875 of 2646.
+Doing term 876 of 2646.
+Doing term 877 of 2646.
+Doing term 878 of 2646.
+Doing term 879 of 2646.
+Doing term 880 of 2646.
+Doing term 881 of 2646.
+Doing term 882 of 2646.
+Doing term 883 of 2646.
+Doing term 884 of 2646.
+Doing term 885 of 2646.
+Doing term 886 of 2646.
+Doing term 887 of 2646.
+Doing term 888 of 2646.
+Doing term 889 of 2646.
+Doing term 890 of 2646.
+Doing term 891 of 2646.
+Doing term 892 of 2646.
+Doing term 893 of 2646.
+Doing term 894 of 2646.
+Doing term 895 of 2646.
+Doing term 896 of 2646.
+Doing term 897 of 2646.
+Doing term 898 of 2646.
+Doing term 899 of 2646.
+Doing term 900 of 2646.
+Doing term 901 of 2646.
+Doing term 902 of 2646.
+Doing term 903 of 2646.
+Doing term 904 of 2646.
+Doing term 905 of 2646.
+Doing term 906 of 2646.
+Doing term 907 of 2646.
+Doing term 908 of 2646.
+Doing term 909 of 2646.
+Doing term 910 of 2646.
+Doing term 911 of 2646.
+Doing term 912 of 2646.
+Doing term 913 of 2646.
+Doing term 914 of 2646.
+Doing term 915 of 2646.
+Doing term 916 of 2646.
+Doing term 917 of 2646.
+Doing term 918 of 2646.
+Doing term 919 of 2646.
+Doing term 920 of 2646.
+Doing term 921 of 2646.
+Doing term 922 of 2646.
+Doing term 923 of 2646.
+Doing term 924 of 2646.
+Doing term 925 of 2646.
+Doing term 926 of 2646.
+Doing term 927 of 2646.
+Doing term 928 of 2646.
+Doing term 929 of 2646.
+Doing term 930 of 2646.
+Doing term 931 of 2646.
+Doing term 932 of 2646.
+Doing term 933 of 2646.
+Doing term 934 of 2646.
+Doing term 935 of 2646.
+Doing term 936 of 2646.
+Doing term 937 of 2646.
+Doing term 938 of 2646.
+Doing term 939 of 2646.
+Doing term 940 of 2646.
+Doing term 941 of 2646.
+Doing term 942 of 2646.
+Doing term 943 of 2646.
+Doing term 944 of 2646.
+Doing term 945 of 2646.
+Doing term 946 of 2646.
+Doing term 947 of 2646.
+Doing term 948 of 2646.
+Doing term 949 of 2646.
+Doing term 950 of 2646.
+Doing term 951 of 2646.
+Doing term 952 of 2646.
+Doing term 953 of 2646.
+Doing term 954 of 2646.
+Doing term 955 of 2646.
+Doing term 956 of 2646.
+Doing term 957 of 2646.
+Doing term 958 of 2646.
+Doing term 959 of 2646.
+Doing term 960 of 2646.
+Doing term 961 of 2646.
+Doing term 962 of 2646.
+Doing term 963 of 2646.
+Doing term 964 of 2646.
+Doing term 965 of 2646.
+Doing term 966 of 2646.
+Doing term 967 of 2646.
+Doing term 968 of 2646.
+Doing term 969 of 2646.
+Doing term 970 of 2646.
+Doing term 971 of 2646.
+Doing term 972 of 2646.
+Doing term 973 of 2646.
+Doing term 974 of 2646.
+Doing term 975 of 2646.
+Doing term 976 of 2646.
+Doing term 977 of 2646.
+Doing term 978 of 2646.
+Doing term 979 of 2646.
+Doing term 980 of 2646.
+Doing term 981 of 2646.
+Doing term 982 of 2646.
+Doing term 983 of 2646.
+Doing term 984 of 2646.
+Doing term 985 of 2646.
+Doing term 986 of 2646.
+Doing term 987 of 2646.
+Doing term 988 of 2646.
+Doing term 989 of 2646.
+Doing term 990 of 2646.
+Doing term 991 of 2646.
+Doing term 992 of 2646.
+Doing term 993 of 2646.
+Doing term 994 of 2646.
+Doing term 995 of 2646.
+Doing term 996 of 2646.
+Doing term 997 of 2646.
+Doing term 998 of 2646.
+Doing term 999 of 2646.
+Doing term 1000 of 2646.
+Doing term 1001 of 2646.
+Doing term 1002 of 2646.
+Doing term 1003 of 2646.
+Doing term 1004 of 2646.
+Doing term 1005 of 2646.
+Doing term 1006 of 2646.
+Doing term 1007 of 2646.
+Doing term 1008 of 2646.
+Doing term 1009 of 2646.
+Doing term 1010 of 2646.
+Doing term 1011 of 2646.
+Doing term 1012 of 2646.
+Doing term 1013 of 2646.
+Doing term 1014 of 2646.
+Doing term 1015 of 2646.
+Doing term 1016 of 2646.
+Doing term 1017 of 2646.
+Doing term 1018 of 2646.
+Doing term 1019 of 2646.
+Doing term 1020 of 2646.
+Doing term 1021 of 2646.
+Doing term 1022 of 2646.
+Doing term 1023 of 2646.
+Doing term 1024 of 2646.
+Doing term 1025 of 2646.
+Doing term 1026 of 2646.
+Doing term 1027 of 2646.
+Doing term 1028 of 2646.
+Doing term 1029 of 2646.
+Doing term 1030 of 2646.
+Doing term 1031 of 2646.
+Doing term 1032 of 2646.
+Doing term 1033 of 2646.
+Doing term 1034 of 2646.
+Doing term 1035 of 2646.
+Doing term 1036 of 2646.
+Doing term 1037 of 2646.
+Doing term 1038 of 2646.
+Doing term 1039 of 2646.
+Doing term 1040 of 2646.
+Doing term 1041 of 2646.
+Doing term 1042 of 2646.
+Doing term 1043 of 2646.
+Doing term 1044 of 2646.
+Doing term 1045 of 2646.
+Doing term 1046 of 2646.
+Doing term 1047 of 2646.
+Doing term 1048 of 2646.
+Doing term 1049 of 2646.
+Doing term 1050 of 2646.
+Doing term 1051 of 2646.
+Doing term 1052 of 2646.
+Doing term 1053 of 2646.
+Doing term 1054 of 2646.
+Doing term 1055 of 2646.
+Doing term 1056 of 2646.
+Doing term 1057 of 2646.
+Doing term 1058 of 2646.
+Doing term 1059 of 2646.
+Doing term 1060 of 2646.
+Doing term 1061 of 2646.
+Doing term 1062 of 2646.
+Doing term 1063 of 2646.
+Doing term 1064 of 2646.
+Doing term 1065 of 2646.
+Doing term 1066 of 2646.
+Doing term 1067 of 2646.
+Doing term 1068 of 2646.
+Doing term 1069 of 2646.
+Doing term 1070 of 2646.
+Doing term 1071 of 2646.
+Doing term 1072 of 2646.
+Doing term 1073 of 2646.
+Doing term 1074 of 2646.
+Doing term 1075 of 2646.
+Doing term 1076 of 2646.
+Doing term 1077 of 2646.
+Doing term 1078 of 2646.
+Doing term 1079 of 2646.
+Doing term 1080 of 2646.
+Doing term 1081 of 2646.
+Doing term 1082 of 2646.
+Doing term 1083 of 2646.
+Doing term 1084 of 2646.
+Doing term 1085 of 2646.
+Doing term 1086 of 2646.
+Doing term 1087 of 2646.
+Doing term 1088 of 2646.
+Doing term 1089 of 2646.
+Doing term 1090 of 2646.
+Doing term 1091 of 2646.
+Doing term 1092 of 2646.
+Doing term 1093 of 2646.
+Doing term 1094 of 2646.
+Doing term 1095 of 2646.
+Doing term 1096 of 2646.
+Doing term 1097 of 2646.
+Doing term 1098 of 2646.
+Doing term 1099 of 2646.
+Doing term 1100 of 2646.
+Doing term 1101 of 2646.
+Doing term 1102 of 2646.
+Doing term 1103 of 2646.
+Doing term 1104 of 2646.
+Doing term 1105 of 2646.
+Doing term 1106 of 2646.
+Doing term 1107 of 2646.
+Doing term 1108 of 2646.
+Doing term 1109 of 2646.
+Doing term 1110 of 2646.
+Doing term 1111 of 2646.
+Doing term 1112 of 2646.
+Doing term 1113 of 2646.
+Doing term 1114 of 2646.
+Doing term 1115 of 2646.
+Doing term 1116 of 2646.
+Doing term 1117 of 2646.
+Doing term 1118 of 2646.
+Doing term 1119 of 2646.
+Doing term 1120 of 2646.
+Doing term 1121 of 2646.
+Doing term 1122 of 2646.
+Doing term 1123 of 2646.
+Doing term 1124 of 2646.
+Doing term 1125 of 2646.
+Doing term 1126 of 2646.
+Doing term 1127 of 2646.
+Doing term 1128 of 2646.
+Doing term 1129 of 2646.
+Doing term 1130 of 2646.
+Doing term 1131 of 2646.
+Doing term 1132 of 2646.
+Doing term 1133 of 2646.
+Doing term 1134 of 2646.
+Doing term 1135 of 2646.
+Doing term 1136 of 2646.
+Doing term 1137 of 2646.
+Doing term 1138 of 2646.
+Doing term 1139 of 2646.
+Doing term 1140 of 2646.
+Doing term 1141 of 2646.
+Doing term 1142 of 2646.
+Doing term 1143 of 2646.
+Doing term 1144 of 2646.
+Doing term 1145 of 2646.
+Doing term 1146 of 2646.
+Doing term 1147 of 2646.
+Doing term 1148 of 2646.
+Doing term 1149 of 2646.
+Doing term 1150 of 2646.
+Doing term 1151 of 2646.
+Doing term 1152 of 2646.
+Doing term 1153 of 2646.
+Doing term 1154 of 2646.
+Doing term 1155 of 2646.
+Doing term 1156 of 2646.
+Doing term 1157 of 2646.
+Doing term 1158 of 2646.
+Doing term 1159 of 2646.
+Doing term 1160 of 2646.
+Doing term 1161 of 2646.
+Doing term 1162 of 2646.
+Doing term 1163 of 2646.
+Doing term 1164 of 2646.
+Doing term 1165 of 2646.
+Doing term 1166 of 2646.
+Doing term 1167 of 2646.
+Doing term 1168 of 2646.
+Doing term 1169 of 2646.
+Doing term 1170 of 2646.
+Doing term 1171 of 2646.
+Doing term 1172 of 2646.
+Doing term 1173 of 2646.
+Doing term 1174 of 2646.
+Doing term 1175 of 2646.
+Doing term 1176 of 2646.
+Doing term 1177 of 2646.
+Doing term 1178 of 2646.
+Doing term 1179 of 2646.
+Doing term 1180 of 2646.
+Doing term 1181 of 2646.
+Doing term 1182 of 2646.
+Doing term 1183 of 2646.
+Doing term 1184 of 2646.
+Doing term 1185 of 2646.
+Doing term 1186 of 2646.
+Doing term 1187 of 2646.
+Doing term 1188 of 2646.
+Doing term 1189 of 2646.
+Doing term 1190 of 2646.
+Doing term 1191 of 2646.
+Doing term 1192 of 2646.
+Doing term 1193 of 2646.
+Doing term 1194 of 2646.
+Doing term 1195 of 2646.
+Doing term 1196 of 2646.
+Doing term 1197 of 2646.
+Doing term 1198 of 2646.
+Doing term 1199 of 2646.
+Doing term 1200 of 2646.
+Doing term 1201 of 2646.
+Doing term 1202 of 2646.
+Doing term 1203 of 2646.
+Doing term 1204 of 2646.
+Doing term 1205 of 2646.
+Doing term 1206 of 2646.
+Doing term 1207 of 2646.
+Doing term 1208 of 2646.
+Doing term 1209 of 2646.
+Doing term 1210 of 2646.
+Doing term 1211 of 2646.
+Doing term 1212 of 2646.
+Doing term 1213 of 2646.
+Doing term 1214 of 2646.
+Doing term 1215 of 2646.
+Doing term 1216 of 2646.
+Doing term 1217 of 2646.
+Doing term 1218 of 2646.
+Doing term 1219 of 2646.
+Doing term 1220 of 2646.
+Doing term 1221 of 2646.
+Doing term 1222 of 2646.
+Doing term 1223 of 2646.
+Doing term 1224 of 2646.
+Doing term 1225 of 2646.
+Doing term 1226 of 2646.
+Doing term 1227 of 2646.
+Doing term 1228 of 2646.
+Doing term 1229 of 2646.
+Doing term 1230 of 2646.
+Doing term 1231 of 2646.
+Doing term 1232 of 2646.
+Doing term 1233 of 2646.
+Doing term 1234 of 2646.
+Doing term 1235 of 2646.
+Doing term 1236 of 2646.
+Doing term 1237 of 2646.
+Doing term 1238 of 2646.
+Doing term 1239 of 2646.
+Doing term 1240 of 2646.
+Doing term 1241 of 2646.
+Doing term 1242 of 2646.
+Doing term 1243 of 2646.
+Doing term 1244 of 2646.
+Doing term 1245 of 2646.
+Doing term 1246 of 2646.
+Doing term 1247 of 2646.
+Doing term 1248 of 2646.
+Doing term 1249 of 2646.
+Doing term 1250 of 2646.
+Doing term 1251 of 2646.
+Doing term 1252 of 2646.
+Doing term 1253 of 2646.
+Doing term 1254 of 2646.
+Doing term 1255 of 2646.
+Doing term 1256 of 2646.
+Doing term 1257 of 2646.
+Doing term 1258 of 2646.
+Doing term 1259 of 2646.
+Doing term 1260 of 2646.
+Doing term 1261 of 2646.
+Doing term 1262 of 2646.
+Doing term 1263 of 2646.
+Doing term 1264 of 2646.
+Doing term 1265 of 2646.
+Doing term 1266 of 2646.
+Doing term 1267 of 2646.
+Doing term 1268 of 2646.
+Doing term 1269 of 2646.
+Doing term 1270 of 2646.
+Doing term 1271 of 2646.
+Doing term 1272 of 2646.
+Doing term 1273 of 2646.
+Doing term 1274 of 2646.
+Doing term 1275 of 2646.
+Doing term 1276 of 2646.
+Doing term 1277 of 2646.
+Doing term 1278 of 2646.
+Doing term 1279 of 2646.
+Doing term 1280 of 2646.
+Doing term 1281 of 2646.
+Doing term 1282 of 2646.
+Doing term 1283 of 2646.
+Doing term 1284 of 2646.
+Doing term 1285 of 2646.
+Doing term 1286 of 2646.
+Doing term 1287 of 2646.
+Doing term 1288 of 2646.
+Doing term 1289 of 2646.
+Doing term 1290 of 2646.
+Doing term 1291 of 2646.
+Doing term 1292 of 2646.
+Doing term 1293 of 2646.
+Doing term 1294 of 2646.
+Doing term 1295 of 2646.
+Doing term 1296 of 2646.
+Doing term 1297 of 2646.
+Doing term 1298 of 2646.
+Doing term 1299 of 2646.
+Doing term 1300 of 2646.
+Doing term 1301 of 2646.
+Doing term 1302 of 2646.
+Doing term 1303 of 2646.
+Doing term 1304 of 2646.
+Doing term 1305 of 2646.
+Doing term 1306 of 2646.
+Doing term 1307 of 2646.
+Doing term 1308 of 2646.
+Doing term 1309 of 2646.
+Doing term 1310 of 2646.
+Doing term 1311 of 2646.
+Doing term 1312 of 2646.
+Doing term 1313 of 2646.
+Doing term 1314 of 2646.
+Doing term 1315 of 2646.
+Doing term 1316 of 2646.
+Doing term 1317 of 2646.
+Doing term 1318 of 2646.
+Doing term 1319 of 2646.
+Doing term 1320 of 2646.
+Doing term 1321 of 2646.
+Doing term 1322 of 2646.
+Doing term 1323 of 2646.
+Doing term 1324 of 2646.
+Doing term 1325 of 2646.
+Doing term 1326 of 2646.
+Doing term 1327 of 2646.
+Doing term 1328 of 2646.
+Doing term 1329 of 2646.
+Doing term 1330 of 2646.
+Doing term 1331 of 2646.
+Doing term 1332 of 2646.
+Doing term 1333 of 2646.
+Doing term 1334 of 2646.
+Doing term 1335 of 2646.
+Doing term 1336 of 2646.
+Doing term 1337 of 2646.
+Doing term 1338 of 2646.
+Doing term 1339 of 2646.
+Doing term 1340 of 2646.
+Doing term 1341 of 2646.
+Doing term 1342 of 2646.
+Doing term 1343 of 2646.
+Doing term 1344 of 2646.
+Doing term 1345 of 2646.
+Doing term 1346 of 2646.
+Doing term 1347 of 2646.
+Doing term 1348 of 2646.
+Doing term 1349 of 2646.
+Doing term 1350 of 2646.
+Doing term 1351 of 2646.
+Doing term 1352 of 2646.
+Doing term 1353 of 2646.
+Doing term 1354 of 2646.
+Doing term 1355 of 2646.
+Doing term 1356 of 2646.
+Doing term 1357 of 2646.
+Doing term 1358 of 2646.
+Doing term 1359 of 2646.
+Doing term 1360 of 2646.
+Doing term 1361 of 2646.
+Doing term 1362 of 2646.
+Doing term 1363 of 2646.
+Doing term 1364 of 2646.
+Doing term 1365 of 2646.
+Doing term 1366 of 2646.
+Doing term 1367 of 2646.
+Doing term 1368 of 2646.
+Doing term 1369 of 2646.
+Doing term 1370 of 2646.
+Doing term 1371 of 2646.
+Doing term 1372 of 2646.
+Doing term 1373 of 2646.
+Doing term 1374 of 2646.
+Doing term 1375 of 2646.
+Doing term 1376 of 2646.
+Doing term 1377 of 2646.
+Doing term 1378 of 2646.
+Doing term 1379 of 2646.
+Doing term 1380 of 2646.
+Doing term 1381 of 2646.
+Doing term 1382 of 2646.
+Doing term 1383 of 2646.
+Doing term 1384 of 2646.
+Doing term 1385 of 2646.
+Doing term 1386 of 2646.
+Doing term 1387 of 2646.
+Doing term 1388 of 2646.
+Doing term 1389 of 2646.
+Doing term 1390 of 2646.
+Doing term 1391 of 2646.
+Doing term 1392 of 2646.
+Doing term 1393 of 2646.
+Doing term 1394 of 2646.
+Doing term 1395 of 2646.
+Doing term 1396 of 2646.
+Doing term 1397 of 2646.
+Doing term 1398 of 2646.
+Doing term 1399 of 2646.
+Doing term 1400 of 2646.
+Doing term 1401 of 2646.
+Doing term 1402 of 2646.
+Doing term 1403 of 2646.
+Doing term 1404 of 2646.
+Doing term 1405 of 2646.
+Doing term 1406 of 2646.
+Doing term 1407 of 2646.
+Doing term 1408 of 2646.
+Doing term 1409 of 2646.
+Doing term 1410 of 2646.
+Doing term 1411 of 2646.
+Doing term 1412 of 2646.
+Doing term 1413 of 2646.
+Doing term 1414 of 2646.
+Doing term 1415 of 2646.
+Doing term 1416 of 2646.
+Doing term 1417 of 2646.
+Doing term 1418 of 2646.
+Doing term 1419 of 2646.
+Doing term 1420 of 2646.
+Doing term 1421 of 2646.
+Doing term 1422 of 2646.
+Doing term 1423 of 2646.
+Doing term 1424 of 2646.
+Doing term 1425 of 2646.
+Doing term 1426 of 2646.
+Doing term 1427 of 2646.
+Doing term 1428 of 2646.
+Doing term 1429 of 2646.
+Doing term 1430 of 2646.
+Doing term 1431 of 2646.
+Doing term 1432 of 2646.
+Doing term 1433 of 2646.
+Doing term 1434 of 2646.
+Doing term 1435 of 2646.
+Doing term 1436 of 2646.
+Doing term 1437 of 2646.
+Doing term 1438 of 2646.
+Doing term 1439 of 2646.
+Doing term 1440 of 2646.
+Doing term 1441 of 2646.
+Doing term 1442 of 2646.
+Doing term 1443 of 2646.
+Doing term 1444 of 2646.
+Doing term 1445 of 2646.
+Doing term 1446 of 2646.
+Doing term 1447 of 2646.
+Doing term 1448 of 2646.
+Doing term 1449 of 2646.
+Doing term 1450 of 2646.
+Doing term 1451 of 2646.
+Doing term 1452 of 2646.
+Doing term 1453 of 2646.
+Doing term 1454 of 2646.
+Doing term 1455 of 2646.
+Doing term 1456 of 2646.
+Doing term 1457 of 2646.
+Doing term 1458 of 2646.
+Doing term 1459 of 2646.
+Doing term 1460 of 2646.
+Doing term 1461 of 2646.
+Doing term 1462 of 2646.
+Doing term 1463 of 2646.
+Doing term 1464 of 2646.
+Doing term 1465 of 2646.
+Doing term 1466 of 2646.
+Doing term 1467 of 2646.
+Doing term 1468 of 2646.
+Doing term 1469 of 2646.
+Doing term 1470 of 2646.
+Doing term 1471 of 2646.
+Doing term 1472 of 2646.
+Doing term 1473 of 2646.
+Doing term 1474 of 2646.
+Doing term 1475 of 2646.
+Doing term 1476 of 2646.
+Doing term 1477 of 2646.
+Doing term 1478 of 2646.
+Doing term 1479 of 2646.
+Doing term 1480 of 2646.
+Doing term 1481 of 2646.
+Doing term 1482 of 2646.
+Doing term 1483 of 2646.
+Doing term 1484 of 2646.
+Doing term 1485 of 2646.
+Doing term 1486 of 2646.
+Doing term 1487 of 2646.
+Doing term 1488 of 2646.
+Doing term 1489 of 2646.
+Doing term 1490 of 2646.
+Doing term 1491 of 2646.
+Doing term 1492 of 2646.
+Doing term 1493 of 2646.
+Doing term 1494 of 2646.
+Doing term 1495 of 2646.
+Doing term 1496 of 2646.
+Doing term 1497 of 2646.
+Doing term 1498 of 2646.
+Doing term 1499 of 2646.
+Doing term 1500 of 2646.
+Doing term 1501 of 2646.
+Doing term 1502 of 2646.
+Doing term 1503 of 2646.
+Doing term 1504 of 2646.
+Doing term 1505 of 2646.
+Doing term 1506 of 2646.
+Doing term 1507 of 2646.
+Doing term 1508 of 2646.
+Doing term 1509 of 2646.
+Doing term 1510 of 2646.
+Doing term 1511 of 2646.
+Doing term 1512 of 2646.
+Doing term 1513 of 2646.
+Doing term 1514 of 2646.
+Doing term 1515 of 2646.
+Doing term 1516 of 2646.
+Doing term 1517 of 2646.
+Doing term 1518 of 2646.
+Doing term 1519 of 2646.
+Doing term 1520 of 2646.
+Doing term 1521 of 2646.
+Doing term 1522 of 2646.
+Doing term 1523 of 2646.
+Doing term 1524 of 2646.
+Doing term 1525 of 2646.
+Doing term 1526 of 2646.
+Doing term 1527 of 2646.
+Doing term 1528 of 2646.
+Doing term 1529 of 2646.
+Doing term 1530 of 2646.
+Doing term 1531 of 2646.
+Doing term 1532 of 2646.
+Doing term 1533 of 2646.
+Doing term 1534 of 2646.
+Doing term 1535 of 2646.
+Doing term 1536 of 2646.
+Doing term 1537 of 2646.
+Doing term 1538 of 2646.
+Doing term 1539 of 2646.
+Doing term 1540 of 2646.
+Doing term 1541 of 2646.
+Doing term 1542 of 2646.
+Doing term 1543 of 2646.
+Doing term 1544 of 2646.
+Doing term 1545 of 2646.
+Doing term 1546 of 2646.
+Doing term 1547 of 2646.
+Doing term 1548 of 2646.
+Doing term 1549 of 2646.
+Doing term 1550 of 2646.
+Doing term 1551 of 2646.
+Doing term 1552 of 2646.
+Doing term 1553 of 2646.
+Doing term 1554 of 2646.
+Doing term 1555 of 2646.
+Doing term 1556 of 2646.
+Doing term 1557 of 2646.
+Doing term 1558 of 2646.
+Doing term 1559 of 2646.
+Doing term 1560 of 2646.
+Doing term 1561 of 2646.
+Doing term 1562 of 2646.
+Doing term 1563 of 2646.
+Doing term 1564 of 2646.
+Doing term 1565 of 2646.
+Doing term 1566 of 2646.
+Doing term 1567 of 2646.
+Doing term 1568 of 2646.
+Doing term 1569 of 2646.
+Doing term 1570 of 2646.
+Doing term 1571 of 2646.
+Doing term 1572 of 2646.
+Doing term 1573 of 2646.
+Doing term 1574 of 2646.
+Doing term 1575 of 2646.
+Doing term 1576 of 2646.
+Doing term 1577 of 2646.
+Doing term 1578 of 2646.
+Doing term 1579 of 2646.
+Doing term 1580 of 2646.
+Doing term 1581 of 2646.
+Doing term 1582 of 2646.
+Doing term 1583 of 2646.
+Doing term 1584 of 2646.
+Doing term 1585 of 2646.
+Doing term 1586 of 2646.
+Doing term 1587 of 2646.
+Doing term 1588 of 2646.
+Doing term 1589 of 2646.
+Doing term 1590 of 2646.
+Doing term 1591 of 2646.
+Doing term 1592 of 2646.
+Doing term 1593 of 2646.
+Doing term 1594 of 2646.
+Doing term 1595 of 2646.
+Doing term 1596 of 2646.
+Doing term 1597 of 2646.
+Doing term 1598 of 2646.
+Doing term 1599 of 2646.
+Doing term 1600 of 2646.
+Doing term 1601 of 2646.
+Doing term 1602 of 2646.
+Doing term 1603 of 2646.
+Doing term 1604 of 2646.
+Doing term 1605 of 2646.
+Doing term 1606 of 2646.
+Doing term 1607 of 2646.
+Doing term 1608 of 2646.
+Doing term 1609 of 2646.
+Doing term 1610 of 2646.
+Doing term 1611 of 2646.
+Doing term 1612 of 2646.
+Doing term 1613 of 2646.
+Doing term 1614 of 2646.
+Doing term 1615 of 2646.
+Doing term 1616 of 2646.
+Doing term 1617 of 2646.
+Doing term 1618 of 2646.
+Doing term 1619 of 2646.
+Doing term 1620 of 2646.
+Doing term 1621 of 2646.
+Doing term 1622 of 2646.
+Doing term 1623 of 2646.
+Doing term 1624 of 2646.
+Doing term 1625 of 2646.
+Doing term 1626 of 2646.
+Doing term 1627 of 2646.
+Doing term 1628 of 2646.
+Doing term 1629 of 2646.
+Doing term 1630 of 2646.
+Doing term 1631 of 2646.
+Doing term 1632 of 2646.
+Doing term 1633 of 2646.
+Doing term 1634 of 2646.
+Doing term 1635 of 2646.
+Doing term 1636 of 2646.
+Doing term 1637 of 2646.
+Doing term 1638 of 2646.
+Doing term 1639 of 2646.
+Doing term 1640 of 2646.
+Doing term 1641 of 2646.
+Doing term 1642 of 2646.
+Doing term 1643 of 2646.
+Doing term 1644 of 2646.
+Doing term 1645 of 2646.
+Doing term 1646 of 2646.
+Doing term 1647 of 2646.
+Doing term 1648 of 2646.
+Doing term 1649 of 2646.
+Doing term 1650 of 2646.
+Doing term 1651 of 2646.
+Doing term 1652 of 2646.
+Doing term 1653 of 2646.
+Doing term 1654 of 2646.
+Doing term 1655 of 2646.
+Doing term 1656 of 2646.
+Doing term 1657 of 2646.
+Doing term 1658 of 2646.
+Doing term 1659 of 2646.
+Doing term 1660 of 2646.
+Doing term 1661 of 2646.
+Doing term 1662 of 2646.
+Doing term 1663 of 2646.
+Doing term 1664 of 2646.
+Doing term 1665 of 2646.
+Doing term 1666 of 2646.
+Doing term 1667 of 2646.
+Doing term 1668 of 2646.
+Doing term 1669 of 2646.
+Doing term 1670 of 2646.
+Doing term 1671 of 2646.
+Doing term 1672 of 2646.
+Doing term 1673 of 2646.
+Doing term 1674 of 2646.
+Doing term 1675 of 2646.
+Doing term 1676 of 2646.
+Doing term 1677 of 2646.
+Doing term 1678 of 2646.
+Doing term 1679 of 2646.
+Doing term 1680 of 2646.
+Doing term 1681 of 2646.
+Doing term 1682 of 2646.
+Doing term 1683 of 2646.
+Doing term 1684 of 2646.
+Doing term 1685 of 2646.
+Doing term 1686 of 2646.
+Doing term 1687 of 2646.
+Doing term 1688 of 2646.
+Doing term 1689 of 2646.
+Doing term 1690 of 2646.
+Doing term 1691 of 2646.
+Doing term 1692 of 2646.
+Doing term 1693 of 2646.
+Doing term 1694 of 2646.
+Doing term 1695 of 2646.
+Doing term 1696 of 2646.
+Doing term 1697 of 2646.
+Doing term 1698 of 2646.
+Doing term 1699 of 2646.
+Doing term 1700 of 2646.
+Doing term 1701 of 2646.
+Doing term 1702 of 2646.
+Doing term 1703 of 2646.
+Doing term 1704 of 2646.
+Doing term 1705 of 2646.
+Doing term 1706 of 2646.
+Doing term 1707 of 2646.
+Doing term 1708 of 2646.
+Doing term 1709 of 2646.
+Doing term 1710 of 2646.
+Doing term 1711 of 2646.
+Doing term 1712 of 2646.
+Doing term 1713 of 2646.
+Doing term 1714 of 2646.
+Doing term 1715 of 2646.
+Doing term 1716 of 2646.
+Doing term 1717 of 2646.
+Doing term 1718 of 2646.
+Doing term 1719 of 2646.
+Doing term 1720 of 2646.
+Doing term 1721 of 2646.
+Doing term 1722 of 2646.
+Doing term 1723 of 2646.
+Doing term 1724 of 2646.
+Doing term 1725 of 2646.
+Doing term 1726 of 2646.
+Doing term 1727 of 2646.
+Doing term 1728 of 2646.
+Doing term 1729 of 2646.
+Doing term 1730 of 2646.
+Doing term 1731 of 2646.
+Doing term 1732 of 2646.
+Doing term 1733 of 2646.
+Doing term 1734 of 2646.
+Doing term 1735 of 2646.
+Doing term 1736 of 2646.
+Doing term 1737 of 2646.
+Doing term 1738 of 2646.
+Doing term 1739 of 2646.
+Doing term 1740 of 2646.
+Doing term 1741 of 2646.
+Doing term 1742 of 2646.
+Doing term 1743 of 2646.
+Doing term 1744 of 2646.
+Doing term 1745 of 2646.
+Doing term 1746 of 2646.
+Doing term 1747 of 2646.
+Doing term 1748 of 2646.
+Doing term 1749 of 2646.
+Doing term 1750 of 2646.
+Doing term 1751 of 2646.
+Doing term 1752 of 2646.
+Doing term 1753 of 2646.
+Doing term 1754 of 2646.
+Doing term 1755 of 2646.
+Doing term 1756 of 2646.
+Doing term 1757 of 2646.
+Doing term 1758 of 2646.
+Doing term 1759 of 2646.
+Doing term 1760 of 2646.
+Doing term 1761 of 2646.
+Doing term 1762 of 2646.
+Doing term 1763 of 2646.
+Doing term 1764 of 2646.
+Doing term 1765 of 2646.
+Doing term 1766 of 2646.
+Doing term 1767 of 2646.
+Doing term 1768 of 2646.
+Doing term 1769 of 2646.
+Doing term 1770 of 2646.
+Doing term 1771 of 2646.
+Doing term 1772 of 2646.
+Doing term 1773 of 2646.
+Doing term 1774 of 2646.
+Doing term 1775 of 2646.
+Doing term 1776 of 2646.
+Doing term 1777 of 2646.
+Doing term 1778 of 2646.
+Doing term 1779 of 2646.
+Doing term 1780 of 2646.
+Doing term 1781 of 2646.
+Doing term 1782 of 2646.
+Doing term 1783 of 2646.
+Doing term 1784 of 2646.
+Doing term 1785 of 2646.
+Doing term 1786 of 2646.
+Doing term 1787 of 2646.
+Doing term 1788 of 2646.
+Doing term 1789 of 2646.
+Doing term 1790 of 2646.
+Doing term 1791 of 2646.
+Doing term 1792 of 2646.
+Doing term 1793 of 2646.
+Doing term 1794 of 2646.
+Doing term 1795 of 2646.
+Doing term 1796 of 2646.
+Doing term 1797 of 2646.
+Doing term 1798 of 2646.
+Doing term 1799 of 2646.
+Doing term 1800 of 2646.
+Doing term 1801 of 2646.
+Doing term 1802 of 2646.
+Doing term 1803 of 2646.
+Doing term 1804 of 2646.
+Doing term 1805 of 2646.
+Doing term 1806 of 2646.
+Doing term 1807 of 2646.
+Doing term 1808 of 2646.
+Doing term 1809 of 2646.
+Doing term 1810 of 2646.
+Doing term 1811 of 2646.
+Doing term 1812 of 2646.
+Doing term 1813 of 2646.
+Doing term 1814 of 2646.
+Doing term 1815 of 2646.
+Doing term 1816 of 2646.
+Doing term 1817 of 2646.
+Doing term 1818 of 2646.
+Doing term 1819 of 2646.
+Doing term 1820 of 2646.
+Doing term 1821 of 2646.
+Doing term 1822 of 2646.
+Doing term 1823 of 2646.
+Doing term 1824 of 2646.
+Doing term 1825 of 2646.
+Doing term 1826 of 2646.
+Doing term 1827 of 2646.
+Doing term 1828 of 2646.
+Doing term 1829 of 2646.
+Doing term 1830 of 2646.
+Doing term 1831 of 2646.
+Doing term 1832 of 2646.
+Doing term 1833 of 2646.
+Doing term 1834 of 2646.
+Doing term 1835 of 2646.
+Doing term 1836 of 2646.
+Doing term 1837 of 2646.
+Doing term 1838 of 2646.
+Doing term 1839 of 2646.
+Doing term 1840 of 2646.
+Doing term 1841 of 2646.
+Doing term 1842 of 2646.
+Doing term 1843 of 2646.
+Doing term 1844 of 2646.
+Doing term 1845 of 2646.
+Doing term 1846 of 2646.
+Doing term 1847 of 2646.
+Doing term 1848 of 2646.
+Doing term 1849 of 2646.
+Doing term 1850 of 2646.
+Doing term 1851 of 2646.
+Doing term 1852 of 2646.
+Doing term 1853 of 2646.
+Doing term 1854 of 2646.
+Doing term 1855 of 2646.
+Doing term 1856 of 2646.
+Doing term 1857 of 2646.
+Doing term 1858 of 2646.
+Doing term 1859 of 2646.
+Doing term 1860 of 2646.
+Doing term 1861 of 2646.
+Doing term 1862 of 2646.
+Doing term 1863 of 2646.
+Doing term 1864 of 2646.
+Doing term 1865 of 2646.
+Doing term 1866 of 2646.
+Doing term 1867 of 2646.
+Doing term 1868 of 2646.
+Doing term 1869 of 2646.
+Doing term 1870 of 2646.
+Doing term 1871 of 2646.
+Doing term 1872 of 2646.
+Doing term 1873 of 2646.
+Doing term 1874 of 2646.
+Doing term 1875 of 2646.
+Doing term 1876 of 2646.
+Doing term 1877 of 2646.
+Doing term 1878 of 2646.
+Doing term 1879 of 2646.
+Doing term 1880 of 2646.
+Doing term 1881 of 2646.
+Doing term 1882 of 2646.
+Doing term 1883 of 2646.
+Doing term 1884 of 2646.
+Doing term 1885 of 2646.
+Doing term 1886 of 2646.
+Doing term 1887 of 2646.
+Doing term 1888 of 2646.
+Doing term 1889 of 2646.
+Doing term 1890 of 2646.
+Doing term 1891 of 2646.
+Doing term 1892 of 2646.
+Doing term 1893 of 2646.
+Doing term 1894 of 2646.
+Doing term 1895 of 2646.
+Doing term 1896 of 2646.
+Doing term 1897 of 2646.
+Doing term 1898 of 2646.
+Doing term 1899 of 2646.
+Doing term 1900 of 2646.
+Doing term 1901 of 2646.
+Doing term 1902 of 2646.
+Doing term 1903 of 2646.
+Doing term 1904 of 2646.
+Doing term 1905 of 2646.
+Doing term 1906 of 2646.
+Doing term 1907 of 2646.
+Doing term 1908 of 2646.
+Doing term 1909 of 2646.
+Doing term 1910 of 2646.
+Doing term 1911 of 2646.
+Doing term 1912 of 2646.
+Doing term 1913 of 2646.
+Doing term 1914 of 2646.
+Doing term 1915 of 2646.
+Doing term 1916 of 2646.
+Doing term 1917 of 2646.
+Doing term 1918 of 2646.
+Doing term 1919 of 2646.
+Doing term 1920 of 2646.
+Doing term 1921 of 2646.
+Doing term 1922 of 2646.
+Doing term 1923 of 2646.
+Doing term 1924 of 2646.
+Doing term 1925 of 2646.
+Doing term 1926 of 2646.
+Doing term 1927 of 2646.
+Doing term 1928 of 2646.
+Doing term 1929 of 2646.
+Doing term 1930 of 2646.
+Doing term 1931 of 2646.
+Doing term 1932 of 2646.
+Doing term 1933 of 2646.
+Doing term 1934 of 2646.
+Doing term 1935 of 2646.
+Doing term 1936 of 2646.
+Doing term 1937 of 2646.
+Doing term 1938 of 2646.
+Doing term 1939 of 2646.
+Doing term 1940 of 2646.
+Doing term 1941 of 2646.
+Doing term 1942 of 2646.
+Doing term 1943 of 2646.
+Doing term 1944 of 2646.
+Doing term 1945 of 2646.
+Doing term 1946 of 2646.
+Doing term 1947 of 2646.
+Doing term 1948 of 2646.
+Doing term 1949 of 2646.
+Doing term 1950 of 2646.
+Doing term 1951 of 2646.
+Doing term 1952 of 2646.
+Doing term 1953 of 2646.
+Doing term 1954 of 2646.
+Doing term 1955 of 2646.
+Doing term 1956 of 2646.
+Doing term 1957 of 2646.
+Doing term 1958 of 2646.
+Doing term 1959 of 2646.
+Doing term 1960 of 2646.
+Doing term 1961 of 2646.
+Doing term 1962 of 2646.
+Doing term 1963 of 2646.
+Doing term 1964 of 2646.
+Doing term 1965 of 2646.
+Doing term 1966 of 2646.
+Doing term 1967 of 2646.
+Doing term 1968 of 2646.
+Doing term 1969 of 2646.
+Doing term 1970 of 2646.
+Doing term 1971 of 2646.
+Doing term 1972 of 2646.
+Doing term 1973 of 2646.
+Doing term 1974 of 2646.
+Doing term 1975 of 2646.
+Doing term 1976 of 2646.
+Doing term 1977 of 2646.
+Doing term 1978 of 2646.
+Doing term 1979 of 2646.
+Doing term 1980 of 2646.
+Doing term 1981 of 2646.
+Doing term 1982 of 2646.
+Doing term 1983 of 2646.
+Doing term 1984 of 2646.
+Doing term 1985 of 2646.
+Doing term 1986 of 2646.
+Doing term 1987 of 2646.
+Doing term 1988 of 2646.
+Doing term 1989 of 2646.
+Doing term 1990 of 2646.
+Doing term 1991 of 2646.
+Doing term 1992 of 2646.
+Doing term 1993 of 2646.
+Doing term 1994 of 2646.
+Doing term 1995 of 2646.
+Doing term 1996 of 2646.
+Doing term 1997 of 2646.
+Doing term 1998 of 2646.
+Doing term 1999 of 2646.
+Doing term 2000 of 2646.
+Doing term 2001 of 2646.
+Doing term 2002 of 2646.
+Doing term 2003 of 2646.
+Doing term 2004 of 2646.
+Doing term 2005 of 2646.
+Doing term 2006 of 2646.
+Doing term 2007 of 2646.
+Doing term 2008 of 2646.
+Doing term 2009 of 2646.
+Doing term 2010 of 2646.
+Doing term 2011 of 2646.
+Doing term 2012 of 2646.
+Doing term 2013 of 2646.
+Doing term 2014 of 2646.
+Doing term 2015 of 2646.
+Doing term 2016 of 2646.
+Doing term 2017 of 2646.
+Doing term 2018 of 2646.
+Doing term 2019 of 2646.
+Doing term 2020 of 2646.
+Doing term 2021 of 2646.
+Doing term 2022 of 2646.
+Doing term 2023 of 2646.
+Doing term 2024 of 2646.
+Doing term 2025 of 2646.
+Doing term 2026 of 2646.
+Doing term 2027 of 2646.
+Doing term 2028 of 2646.
+Doing term 2029 of 2646.
+Doing term 2030 of 2646.
+Doing term 2031 of 2646.
+Doing term 2032 of 2646.
+Doing term 2033 of 2646.
+Doing term 2034 of 2646.
+Doing term 2035 of 2646.
+Doing term 2036 of 2646.
+Doing term 2037 of 2646.
+Doing term 2038 of 2646.
+Doing term 2039 of 2646.
+Doing term 2040 of 2646.
+Doing term 2041 of 2646.
+Doing term 2042 of 2646.
+Doing term 2043 of 2646.
+Doing term 2044 of 2646.
+Doing term 2045 of 2646.
+Doing term 2046 of 2646.
+Doing term 2047 of 2646.
+Doing term 2048 of 2646.
+Doing term 2049 of 2646.
+Doing term 2050 of 2646.
+Doing term 2051 of 2646.
+Doing term 2052 of 2646.
+Doing term 2053 of 2646.
+Doing term 2054 of 2646.
+Doing term 2055 of 2646.
+Doing term 2056 of 2646.
+Doing term 2057 of 2646.
+Doing term 2058 of 2646.
+Doing term 2059 of 2646.
+Doing term 2060 of 2646.
+Doing term 2061 of 2646.
+Doing term 2062 of 2646.
+Doing term 2063 of 2646.
+Doing term 2064 of 2646.
+Doing term 2065 of 2646.
+Doing term 2066 of 2646.
+Doing term 2067 of 2646.
+Doing term 2068 of 2646.
+Doing term 2069 of 2646.
+Doing term 2070 of 2646.
+Doing term 2071 of 2646.
+Doing term 2072 of 2646.
+Doing term 2073 of 2646.
+Doing term 2074 of 2646.
+Doing term 2075 of 2646.
+Doing term 2076 of 2646.
+Doing term 2077 of 2646.
+Doing term 2078 of 2646.
+Doing term 2079 of 2646.
+Doing term 2080 of 2646.
+Doing term 2081 of 2646.
+Doing term 2082 of 2646.
+Doing term 2083 of 2646.
+Doing term 2084 of 2646.
+Doing term 2085 of 2646.
+Doing term 2086 of 2646.
+Doing term 2087 of 2646.
+Doing term 2088 of 2646.
+Doing term 2089 of 2646.
+Doing term 2090 of 2646.
+Doing term 2091 of 2646.
+Doing term 2092 of 2646.
+Doing term 2093 of 2646.
+Doing term 2094 of 2646.
+Doing term 2095 of 2646.
+Doing term 2096 of 2646.
+Doing term 2097 of 2646.
+Doing term 2098 of 2646.
+Doing term 2099 of 2646.
+Doing term 2100 of 2646.
+Doing term 2101 of 2646.
+Doing term 2102 of 2646.
+Doing term 2103 of 2646.
+Doing term 2104 of 2646.
+Doing term 2105 of 2646.
+Doing term 2106 of 2646.
+Doing term 2107 of 2646.
+Doing term 2108 of 2646.
+Doing term 2109 of 2646.
+Doing term 2110 of 2646.
+Doing term 2111 of 2646.
+Doing term 2112 of 2646.
+Doing term 2113 of 2646.
+Doing term 2114 of 2646.
+Doing term 2115 of 2646.
+Doing term 2116 of 2646.
+Doing term 2117 of 2646.
+Doing term 2118 of 2646.
+Doing term 2119 of 2646.
+Doing term 2120 of 2646.
+Doing term 2121 of 2646.
+Doing term 2122 of 2646.
+Doing term 2123 of 2646.
+Doing term 2124 of 2646.
+Doing term 2125 of 2646.
+Doing term 2126 of 2646.
+Doing term 2127 of 2646.
+Doing term 2128 of 2646.
+Doing term 2129 of 2646.
+Doing term 2130 of 2646.
+Doing term 2131 of 2646.
+Doing term 2132 of 2646.
+Doing term 2133 of 2646.
+Doing term 2134 of 2646.
+Doing term 2135 of 2646.
+Doing term 2136 of 2646.
+Doing term 2137 of 2646.
+Doing term 2138 of 2646.
+Doing term 2139 of 2646.
+Doing term 2140 of 2646.
+Doing term 2141 of 2646.
+Doing term 2142 of 2646.
+Doing term 2143 of 2646.
+Doing term 2144 of 2646.
+Doing term 2145 of 2646.
+Doing term 2146 of 2646.
+Doing term 2147 of 2646.
+Doing term 2148 of 2646.
+Doing term 2149 of 2646.
+Doing term 2150 of 2646.
+Doing term 2151 of 2646.
+Doing term 2152 of 2646.
+Doing term 2153 of 2646.
+Doing term 2154 of 2646.
+Doing term 2155 of 2646.
+Doing term 2156 of 2646.
+Doing term 2157 of 2646.
+Doing term 2158 of 2646.
+Doing term 2159 of 2646.
+Doing term 2160 of 2646.
+Doing term 2161 of 2646.
+Doing term 2162 of 2646.
+Doing term 2163 of 2646.
+Doing term 2164 of 2646.
+Doing term 2165 of 2646.
+Doing term 2166 of 2646.
+Doing term 2167 of 2646.
+Doing term 2168 of 2646.
+Doing term 2169 of 2646.
+Doing term 2170 of 2646.
+Doing term 2171 of 2646.
+Doing term 2172 of 2646.
+Doing term 2173 of 2646.
+Doing term 2174 of 2646.
+Doing term 2175 of 2646.
+Doing term 2176 of 2646.
+Doing term 2177 of 2646.
+Doing term 2178 of 2646.
+Doing term 2179 of 2646.
+Doing term 2180 of 2646.
+Doing term 2181 of 2646.
+Doing term 2182 of 2646.
+Doing term 2183 of 2646.
+Doing term 2184 of 2646.
+Doing term 2185 of 2646.
+Doing term 2186 of 2646.
+Doing term 2187 of 2646.
+Doing term 2188 of 2646.
+Doing term 2189 of 2646.
+Doing term 2190 of 2646.
+Doing term 2191 of 2646.
+Doing term 2192 of 2646.
+Doing term 2193 of 2646.
+Doing term 2194 of 2646.
+Doing term 2195 of 2646.
+Doing term 2196 of 2646.
+Doing term 2197 of 2646.
+Doing term 2198 of 2646.
+Doing term 2199 of 2646.
+Doing term 2200 of 2646.
+Doing term 2201 of 2646.
+Doing term 2202 of 2646.
+Doing term 2203 of 2646.
+Doing term 2204 of 2646.
+Doing term 2205 of 2646.
+Doing term 2206 of 2646.
+Doing term 2207 of 2646.
+Doing term 2208 of 2646.
+Doing term 2209 of 2646.
+Doing term 2210 of 2646.
+Doing term 2211 of 2646.
+Doing term 2212 of 2646.
+Doing term 2213 of 2646.
+Doing term 2214 of 2646.
+Doing term 2215 of 2646.
+Doing term 2216 of 2646.
+Doing term 2217 of 2646.
+Doing term 2218 of 2646.
+Doing term 2219 of 2646.
+Doing term 2220 of 2646.
+Doing term 2221 of 2646.
+Doing term 2222 of 2646.
+Doing term 2223 of 2646.
+Doing term 2224 of 2646.
+Doing term 2225 of 2646.
+Doing term 2226 of 2646.
+Doing term 2227 of 2646.
+Doing term 2228 of 2646.
+Doing term 2229 of 2646.
+Doing term 2230 of 2646.
+Doing term 2231 of 2646.
+Doing term 2232 of 2646.
+Doing term 2233 of 2646.
+Doing term 2234 of 2646.
+Doing term 2235 of 2646.
+Doing term 2236 of 2646.
+Doing term 2237 of 2646.
+Doing term 2238 of 2646.
+Doing term 2239 of 2646.
+Doing term 2240 of 2646.
+Doing term 2241 of 2646.
+Doing term 2242 of 2646.
+Doing term 2243 of 2646.
+Doing term 2244 of 2646.
+Doing term 2245 of 2646.
+Doing term 2246 of 2646.
+Doing term 2247 of 2646.
+Doing term 2248 of 2646.
+Doing term 2249 of 2646.
+Doing term 2250 of 2646.
+Doing term 2251 of 2646.
+Doing term 2252 of 2646.
+Doing term 2253 of 2646.
+Doing term 2254 of 2646.
+Doing term 2255 of 2646.
+Doing term 2256 of 2646.
+Doing term 2257 of 2646.
+Doing term 2258 of 2646.
+Doing term 2259 of 2646.
+Doing term 2260 of 2646.
+Doing term 2261 of 2646.
+Doing term 2262 of 2646.
+Doing term 2263 of 2646.
+Doing term 2264 of 2646.
+Doing term 2265 of 2646.
+Doing term 2266 of 2646.
+Doing term 2267 of 2646.
+Doing term 2268 of 2646.
+Doing term 2269 of 2646.
+Doing term 2270 of 2646.
+Doing term 2271 of 2646.
+Doing term 2272 of 2646.
+Doing term 2273 of 2646.
+Doing term 2274 of 2646.
+Doing term 2275 of 2646.
+Doing term 2276 of 2646.
+Doing term 2277 of 2646.
+Doing term 2278 of 2646.
+Doing term 2279 of 2646.
+Doing term 2280 of 2646.
+Doing term 2281 of 2646.
+Doing term 2282 of 2646.
+Doing term 2283 of 2646.
+Doing term 2284 of 2646.
+Doing term 2285 of 2646.
+Doing term 2286 of 2646.
+Doing term 2287 of 2646.
+Doing term 2288 of 2646.
+Doing term 2289 of 2646.
+Doing term 2290 of 2646.
+Doing term 2291 of 2646.
+Doing term 2292 of 2646.
+Doing term 2293 of 2646.
+Doing term 2294 of 2646.
+Doing term 2295 of 2646.
+Doing term 2296 of 2646.
+Doing term 2297 of 2646.
+Doing term 2298 of 2646.
+Doing term 2299 of 2646.
+Doing term 2300 of 2646.
+Doing term 2301 of 2646.
+Doing term 2302 of 2646.
+Doing term 2303 of 2646.
+Doing term 2304 of 2646.
+Doing term 2305 of 2646.
+Doing term 2306 of 2646.
+Doing term 2307 of 2646.
+Doing term 2308 of 2646.
+Doing term 2309 of 2646.
+Doing term 2310 of 2646.
+Doing term 2311 of 2646.
+Doing term 2312 of 2646.
+Doing term 2313 of 2646.
+Doing term 2314 of 2646.
+Doing term 2315 of 2646.
+Doing term 2316 of 2646.
+Doing term 2317 of 2646.
+Doing term 2318 of 2646.
+Doing term 2319 of 2646.
+Doing term 2320 of 2646.
+Doing term 2321 of 2646.
+Doing term 2322 of 2646.
+Doing term 2323 of 2646.
+Doing term 2324 of 2646.
+Doing term 2325 of 2646.
+Doing term 2326 of 2646.
+Doing term 2327 of 2646.
+Doing term 2328 of 2646.
+Doing term 2329 of 2646.
+Doing term 2330 of 2646.
+Doing term 2331 of 2646.
+Doing term 2332 of 2646.
+Doing term 2333 of 2646.
+Doing term 2334 of 2646.
+Doing term 2335 of 2646.
+Doing term 2336 of 2646.
+Doing term 2337 of 2646.
+Doing term 2338 of 2646.
+Doing term 2339 of 2646.
+Doing term 2340 of 2646.
+Doing term 2341 of 2646.
+Doing term 2342 of 2646.
+Doing term 2343 of 2646.
+Doing term 2344 of 2646.
+Doing term 2345 of 2646.
+Doing term 2346 of 2646.
+Doing term 2347 of 2646.
+Doing term 2348 of 2646.
+Doing term 2349 of 2646.
+Doing term 2350 of 2646.
+Doing term 2351 of 2646.
+Doing term 2352 of 2646.
+Doing term 2353 of 2646.
+Doing term 2354 of 2646.
+Doing term 2355 of 2646.
+Doing term 2356 of 2646.
+Doing term 2357 of 2646.
+Doing term 2358 of 2646.
+Doing term 2359 of 2646.
+Doing term 2360 of 2646.
+Doing term 2361 of 2646.
+Doing term 2362 of 2646.
+Doing term 2363 of 2646.
+Doing term 2364 of 2646.
+Doing term 2365 of 2646.
+Doing term 2366 of 2646.
+Doing term 2367 of 2646.
+Doing term 2368 of 2646.
+Doing term 2369 of 2646.
+Doing term 2370 of 2646.
+Doing term 2371 of 2646.
+Doing term 2372 of 2646.
+Doing term 2373 of 2646.
+Doing term 2374 of 2646.
+Doing term 2375 of 2646.
+Doing term 2376 of 2646.
+Doing term 2377 of 2646.
+Doing term 2378 of 2646.
+Doing term 2379 of 2646.
+Doing term 2380 of 2646.
+Doing term 2381 of 2646.
+Doing term 2382 of 2646.
+Doing term 2383 of 2646.
+Doing term 2384 of 2646.
+Doing term 2385 of 2646.
+Doing term 2386 of 2646.
+Doing term 2387 of 2646.
+Doing term 2388 of 2646.
+Doing term 2389 of 2646.
+Doing term 2390 of 2646.
+Doing term 2391 of 2646.
+Doing term 2392 of 2646.
+Doing term 2393 of 2646.
+Doing term 2394 of 2646.
+Doing term 2395 of 2646.
+Doing term 2396 of 2646.
+Doing term 2397 of 2646.
+Doing term 2398 of 2646.
+Doing term 2399 of 2646.
+Doing term 2400 of 2646.
+Doing term 2401 of 2646.
+Doing term 2402 of 2646.
+Doing term 2403 of 2646.
+Doing term 2404 of 2646.
+Doing term 2405 of 2646.
+Doing term 2406 of 2646.
+Doing term 2407 of 2646.
+Doing term 2408 of 2646.
+Doing term 2409 of 2646.
+Doing term 2410 of 2646.
+Doing term 2411 of 2646.
+Doing term 2412 of 2646.
+Doing term 2413 of 2646.
+Doing term 2414 of 2646.
+Doing term 2415 of 2646.
+Doing term 2416 of 2646.
+Doing term 2417 of 2646.
+Doing term 2418 of 2646.
+Doing term 2419 of 2646.
+Doing term 2420 of 2646.
+Doing term 2421 of 2646.
+Doing term 2422 of 2646.
+Doing term 2423 of 2646.
+Doing term 2424 of 2646.
+Doing term 2425 of 2646.
+Doing term 2426 of 2646.
+Doing term 2427 of 2646.
+Doing term 2428 of 2646.
+Doing term 2429 of 2646.
+Doing term 2430 of 2646.
+Doing term 2431 of 2646.
+Doing term 2432 of 2646.
+Doing term 2433 of 2646.
+Doing term 2434 of 2646.
+Doing term 2435 of 2646.
+Doing term 2436 of 2646.
+Doing term 2437 of 2646.
+Doing term 2438 of 2646.
+Doing term 2439 of 2646.
+Doing term 2440 of 2646.
+Doing term 2441 of 2646.
+Doing term 2442 of 2646.
+Doing term 2443 of 2646.
+Doing term 2444 of 2646.
+Doing term 2445 of 2646.
+Doing term 2446 of 2646.
+Doing term 2447 of 2646.
+Doing term 2448 of 2646.
+Doing term 2449 of 2646.
+Doing term 2450 of 2646.
+Doing term 2451 of 2646.
+Doing term 2452 of 2646.
+Doing term 2453 of 2646.
+Doing term 2454 of 2646.
+Doing term 2455 of 2646.
+Doing term 2456 of 2646.
+Doing term 2457 of 2646.
+Doing term 2458 of 2646.
+Doing term 2459 of 2646.
+Doing term 2460 of 2646.
+Doing term 2461 of 2646.
+Doing term 2462 of 2646.
+Doing term 2463 of 2646.
+Doing term 2464 of 2646.
+Doing term 2465 of 2646.
+Doing term 2466 of 2646.
+Doing term 2467 of 2646.
+Doing term 2468 of 2646.
+Doing term 2469 of 2646.
+Doing term 2470 of 2646.
+Doing term 2471 of 2646.
+Doing term 2472 of 2646.
+Doing term 2473 of 2646.
+Doing term 2474 of 2646.
+Doing term 2475 of 2646.
+Doing term 2476 of 2646.
+Doing term 2477 of 2646.
+Doing term 2478 of 2646.
+Doing term 2479 of 2646.
+Doing term 2480 of 2646.
+Doing term 2481 of 2646.
+Doing term 2482 of 2646.
+Doing term 2483 of 2646.
+Doing term 2484 of 2646.
+Doing term 2485 of 2646.
+Doing term 2486 of 2646.
+Doing term 2487 of 2646.
+Doing term 2488 of 2646.
+Doing term 2489 of 2646.
+Doing term 2490 of 2646.
+Doing term 2491 of 2646.
+Doing term 2492 of 2646.
+Doing term 2493 of 2646.
+Doing term 2494 of 2646.
+Doing term 2495 of 2646.
+Doing term 2496 of 2646.
+Doing term 2497 of 2646.
+Doing term 2498 of 2646.
+Doing term 2499 of 2646.
+Doing term 2500 of 2646.
+Doing term 2501 of 2646.
+Doing term 2502 of 2646.
+Doing term 2503 of 2646.
+Doing term 2504 of 2646.
+Doing term 2505 of 2646.
+Doing term 2506 of 2646.
+Doing term 2507 of 2646.
+Doing term 2508 of 2646.
+Doing term 2509 of 2646.
+Doing term 2510 of 2646.
+Doing term 2511 of 2646.
+Doing term 2512 of 2646.
+Doing term 2513 of 2646.
+Doing term 2514 of 2646.
+Doing term 2515 of 2646.
+Doing term 2516 of 2646.
+Doing term 2517 of 2646.
+Doing term 2518 of 2646.
+Doing term 2519 of 2646.
+Doing term 2520 of 2646.
+Doing term 2521 of 2646.
+Doing term 2522 of 2646.
+Doing term 2523 of 2646.
+Doing term 2524 of 2646.
+Doing term 2525 of 2646.
+Doing term 2526 of 2646.
+Doing term 2527 of 2646.
+Doing term 2528 of 2646.
+Doing term 2529 of 2646.
+Doing term 2530 of 2646.
+Doing term 2531 of 2646.
+Doing term 2532 of 2646.
+Doing term 2533 of 2646.
+Doing term 2534 of 2646.
+Doing term 2535 of 2646.
+Doing term 2536 of 2646.
+Doing term 2537 of 2646.
+Doing term 2538 of 2646.
+Doing term 2539 of 2646.
+Doing term 2540 of 2646.
+Doing term 2541 of 2646.
+Doing term 2542 of 2646.
+Doing term 2543 of 2646.
+Doing term 2544 of 2646.
+Doing term 2545 of 2646.
+Doing term 2546 of 2646.
+Doing term 2547 of 2646.
+Doing term 2548 of 2646.
+Doing term 2549 of 2646.
+Doing term 2550 of 2646.
+Doing term 2551 of 2646.
+Doing term 2552 of 2646.
+Doing term 2553 of 2646.
+Doing term 2554 of 2646.
+Doing term 2555 of 2646.
+Doing term 2556 of 2646.
+Doing term 2557 of 2646.
+Doing term 2558 of 2646.
+Doing term 2559 of 2646.
+Doing term 2560 of 2646.
+Doing term 2561 of 2646.
+Doing term 2562 of 2646.
+Doing term 2563 of 2646.
+Doing term 2564 of 2646.
+Doing term 2565 of 2646.
+Doing term 2566 of 2646.
+Doing term 2567 of 2646.
+Doing term 2568 of 2646.
+Doing term 2569 of 2646.
+Doing term 2570 of 2646.
+Doing term 2571 of 2646.
+Doing term 2572 of 2646.
+Doing term 2573 of 2646.
+Doing term 2574 of 2646.
+Doing term 2575 of 2646.
+Doing term 2576 of 2646.
+Doing term 2577 of 2646.
+Doing term 2578 of 2646.
+Doing term 2579 of 2646.
+Doing term 2580 of 2646.
+Doing term 2581 of 2646.
+Doing term 2582 of 2646.
+Doing term 2583 of 2646.
+Doing term 2584 of 2646.
+Doing term 2585 of 2646.
+Doing term 2586 of 2646.
+Doing term 2587 of 2646.
+Doing term 2588 of 2646.
+Doing term 2589 of 2646.
+Doing term 2590 of 2646.
+Doing term 2591 of 2646.
+Doing term 2592 of 2646.
+Doing term 2593 of 2646.
+Doing term 2594 of 2646.
+Doing term 2595 of 2646.
+Doing term 2596 of 2646.
+Doing term 2597 of 2646.
+Doing term 2598 of 2646.
+Doing term 2599 of 2646.
+Doing term 2600 of 2646.
+Doing term 2601 of 2646.
+Doing term 2602 of 2646.
+Doing term 2603 of 2646.
+Doing term 2604 of 2646.
+Doing term 2605 of 2646.
+Doing term 2606 of 2646.
+Doing term 2607 of 2646.
+Doing term 2608 of 2646.
+Doing term 2609 of 2646.
+Doing term 2610 of 2646.
+Doing term 2611 of 2646.
+Doing term 2612 of 2646.
+Doing term 2613 of 2646.
+Doing term 2614 of 2646.
+Doing term 2615 of 2646.
+Doing term 2616 of 2646.
+Doing term 2617 of 2646.
+Doing term 2618 of 2646.
+Doing term 2619 of 2646.
+Doing term 2620 of 2646.
+Doing term 2621 of 2646.
+Doing term 2622 of 2646.
+Doing term 2623 of 2646.
+Doing term 2624 of 2646.
+Doing term 2625 of 2646.
+Doing term 2626 of 2646.
+Doing term 2627 of 2646.
+Doing term 2628 of 2646.
+Doing term 2629 of 2646.
+Doing term 2630 of 2646.
+Doing term 2631 of 2646.
+Doing term 2632 of 2646.
+Doing term 2633 of 2646.
+Doing term 2634 of 2646.
+Doing term 2635 of 2646.
+Doing term 2636 of 2646.
+Doing term 2637 of 2646.
+Doing term 2638 of 2646.
+Doing term 2639 of 2646.
+Doing term 2640 of 2646.
+Doing term 2641 of 2646.
+Doing term 2642 of 2646.
+Doing term 2643 of 2646.
+Doing term 2644 of 2646.
+Doing term 2645 of 2646.
+Doing term 2646 of 2646.
+Done!
+Call to ratfunc with m = 0.
+Call to ratfuncrep with deg = 49.
+Building last 50 rows of the matrix.
+Using coefficients 0 to 99/7.
+Time taken was 8.680.
+Building the first 50 rows of the matrix.
+Time taken was 3.490.
+Solving the linear system of size 100x100.
+Time taken was 1.500.
+Null space has dimension 1.
+Result has degree 49.
+Call to ratfunc with m = 1.
+Call to ratfuncrep with deg = 42.
+Building last 43 rows of the matrix.
+Using coefficients 0 to 85/7.
+Time taken was 5.950.
+Building the first 43 rows of the matrix.
+Time taken was 2.270.
+Solving the linear system of size 86x86.
+Time taken was 0.940.
+Null space has dimension 1.
+Result has degree 42.
+Call to ratfunc with m = 2.
+Call to ratfuncrep with deg = 35.
+Building last 36 rows of the matrix.
+Using coefficients 0 to 71/7.
+Time taken was 2.210.
+Building the first 36 rows of the matrix.
+Time taken was 1.230.
+Solving the linear system of size 72x72.
+Time taken was 0.570.
+Null space has dimension 1.
+Result has degree 35.
+Call to ratfunc with m = 3.
+Call to ratfuncrep with deg = 28.
+Building last 29 rows of the matrix.
+Using coefficients 0 to 57/7.
+Time taken was 1.680.
+Building the first 29 rows of the matrix.
+Time taken was 0.570.
+Solving the linear system of size 58x58.
+Time taken was 0.290.
+Null space has dimension 1.
+Result has degree 28.
+Call to ratfunc with m = 4.
+Call to ratfuncrep with deg = 21.
+Building last 22 rows of the matrix.
+Using coefficients 0 to 43/7.
+Time taken was 0.580.
+Building the first 22 rows of the matrix.
+Time taken was 0.220.
+Solving the linear system of size 44x44.
+Time taken was 0.120.
+Null space has dimension 1.
+Result has degree 21.
+Call to ratfunc with m = 5.
+Call to ratfuncrep with deg = 14.
+Building last 15 rows of the matrix.
+Using coefficients 0 to 29/7.
+Time taken was 0.180.
+Building the first 15 rows of the matrix.
+Time taken was 0.060.
+Solving the linear system of size 30x30.
+Time taken was 0.050.
+Null space has dimension 1.
+Result has degree 14.
+Call to ratfunc with m = 6.
+Call to ratfuncrep with deg = 7.
+Building last 8 rows of the matrix.
+Using coefficients 0 to 15/7.
+Time taken was 0.010.
+Building the first 8 rows of the matrix.
+Time taken was 0.010.
+Solving the linear system of size 16x16.
+Time taken was 0.000.
+Null space has dimension 1.
+Result has degree 7.
+Curve equation is y^7 + (-164329443684/5*x^7 - 72217796616*x^6 + 
+41064274188/5*x^5 + 112751137674*x^4 + 5012553294*x^3 - 266424967368/5*x^2 + 
+41271201972/5*x + 7564532976/5)/(x^7 + 7/5*x^6 + 7/20*x^5 + 7/4*x^4 + 14/5*x^3 -
+14/5*x^2 - 14/5*x + 8/5)*y^6 + (11573213978755973014128/25*x^14 + 
+50860758284759135434176/25*x^13 + 50095333966836209979312/25*x^12 - 
+92116729469864166483024/25*x^11 - 177292614057264200266128/25*x^10 + 
+49612965034115429449776/25*x^9 + 213737541030214482054564/25*x^8 - 
+11105921281206392372088/25*x^7 - 129361021441483586076252/25*x^6 + 
+2897167346090617464144/5*x^5 + 34962874888617199138608/25*x^4 - 
+9262349774260712300304/25*x^3 - 997471205547035176944/25*x^2 + 
+267594609095427820752/25*x + 4904695386281651184/5)/(x^14 + 14/5*x^13 + 
+133/50*x^12 + 112/25*x^11 + 4249/400*x^10 + 693/200*x^9 - 3367/400*x^8 + 
+16/5*x^7 + 14/25*x^6 - 609/25*x^5 - 56/25*x^4 + 616/25*x^3 - 28/25*x^2 - 
+224/25*x + 64/25)*y^5 + (-452814237886023289472706967843008/125*x^21 - 
+2984971438108119244788748501400448/125*x^20 - 
+6219559915002618268199935164734592/125*x^19 + 
+1348010548543191835979438483254176/125*x^18 + 
+22242133616830365435353337310430112/125*x^17 + 
+18694209634402688614933032492124128/125*x^16 - 
+29539808414938284223330940397313104/125*x^15 - 
+44460562027873974101599424571603648/125*x^14 + 
+20134663216852761504552023843228064/125*x^13 + 
+1994532102897023961578642938530984/5*x^12 - 
+9148664354770805997300632004455208/125*x^11 - 
+33322063084414978297421229443815464/125*x^10 + 
+5243776506077450739958164083253768/125*x^9 + 
+13245918555027600500444705968363008/125*x^8 - 
+3278407038810746234471159396735664/125*x^7 - 
+2497144344969607262068193361207936/125*x^6 + 
+39496310274266844466404762556416/5*x^5 + 
+40116484243581021044185600697472/125*x^4 - 
+43311672193096000634534764121952/125*x^3 - 
+722645549859361619265274394496/125*x^2 + 144584252360439883979066819712/25*x + 
+1766704933822317315151264128/5)/(x^21 + 21/5*x^20 + 693/100*x^19 + 5467/500*x^18
++ 51051/2000*x^17 + 59199/2000*x^16 + 7679/1600*x^15 + 80589/8000*x^14 + 
+179109/8000*x^13 - 4193/64*x^12 - 43197/500*x^11 + 53781/1000*x^10 + 
+11683/1000*x^9 - 24507/250*x^8 + 12279/125*x^7 + 17857/125*x^6 - 14952/125*x^5 -
+11256/125*x^4 + 9352/125*x^3 + 2016/125*x^2 - 2688/125*x + 512/125)*y^4 + 
+(10630101555128213189673138170430832352342016/625*x^28 + 
+3737285247084042767448903274500516157123584/25*x^27 + 
+297328940319270630209098551547181782954392576/625*x^26 + 
+235206330101228347824157295135514544559015424/625*x^25 - 
+870190646038216329404099087702837110007039232/625*x^24 - 
+2072646626074846873987877539512033482550544896/625*x^23 + 
+56856609487616504462726919089379897033823104/625*x^22 + 
+938390992195316034165297766920837143889352704/125*x^21 + 
+3141496566708914212588830675706570326962647296/625*x^20 - 
+5627447327658039777268706733623031934706357376/625*x^19 - 
+6504653098847371960246594977608602897952911872/625*x^18 + 
+853529134520606423910577890775957717755042816/125*x^17 + 
+7168265525573144113878567358078725162741778992/625*x^16 - 
+2395595120789949552821140376517186610346751168/625*x^15 - 
+5119119357079166033759601878773747786899937248/625*x^14 + 
+1272399297521376851640694057794787057690780992/625*x^13 + 
+2440160438646529761659050777377066402151750704/625*x^12 - 
+27562443805871861713466008912631006888987136/25*x^11 - 
+28694002022482495978940333136456198838528512/25*x^10 + 
+281608861969554974143979120741026354961691648/625*x^9 + 
+96560162658331724120961557776967448816881664/625*x^8 - 
+59233932523739916068448949881058994374023552/625*x^7 + 
+1384970130086149659796626224113355357843328/625*x^6 + 
+3007881239720601588505202006814064209219072/625*x^5 - 
+178355613235145251410395837791627576421376/625*x^4 - 
+78420124859511227170771473815580240665088/625*x^3 + 
+1800199782437524371872616815481857695488/625*x^2 + 
+1041592825725049074129714231795436508928/625*x + 
+47727843152470687091880881606321489664/625)/(x^28 + 28/5*x^27 + 329/25*x^26 + 
+2982/125*x^25 + 267043/5000*x^24 + 56406/625*x^23 + 791511/10000*x^22 + 
+364367/5000*x^21 + 18902849/160000*x^20 - 48587/1600*x^19 - 22085469/80000*x^18 
+- 625527/8000*x^17 + 1678257/160000*x^16 - 480697/1000*x^15 - 57289/1250*x^14 + 
+4391359/5000*x^13 - 46977/1250*x^12 - 394758/625*x^11 + 949683/1250*x^10 + 
+37268/125*x^9 - 810712/625*x^8 - 6184/125*x^7 + 657216/625*x^6 - 17472/125*x^5 -
+282352/625*x^4 + 91392/625*x^3 + 46592/625*x^2 - 28672/625*x + 4096/625)*y^3 + 
+(-149729026810379165648114738059432774604830866050543616/3125*x^35 - 
+1645033912647424849294470310779338055277617755013758976/3125*x^34 - 
+7042345102830783314567390890841318975912813011683575808/3125*x^33 - 
+11672915945538048925372529404222262602649282466090110976/3125*x^32 + 
+10561410611127649537020928424575645337209659938939824128/3125*x^31 + 
+71280182902289630416417112187638651312730663857509714944/3125*x^30 + 
+70193977952336893642017537177136460956210380296330156544/3125*x^29 - 
+123139525373062261480945273493115107591645171886188438016/3125*x^28 - 
+59109969786368724936199731977799031798797083960872507392/625*x^27 + 
+17740364305227632459096866233723062119269249103492008192/3125*x^26 + 
+548102560421016061790537261347511442362183229380141591808/3125*x^25 + 
+274091229684983721467923254810135618354209526606555088896/3125*x^24 - 
+629418972324987593209531995157268047594227594778476954048/3125*x^23 - 
+554609360920523376790653588926461497571892651281293880704/3125*x^22 + 
+506393560430640783510221794576371700521588275029922933184/3125*x^21 + 
+618309829256449873328623589679044936578199428608112522848/3125*x^20 - 
+316247446790343765625440743855755564083926892686774343072/3125*x^19 - 
+466669830057879383191905628032699851156773190894772512832/3125*x^18 + 
+173339047203061009710114406402563178486843788425081917248/3125*x^17 + 
+249532564554851350797753109892187915636392049169938982368/3125*x^16 - 
+89374799614885798740265629413164221429211299958704204384/3125*x^15 - 
+91849472325303663634332238401967803503468333424429482112/3125*x^14 + 
+39413244069079295973910515573584937986428905426397465536/3125*x^13 + 
+20503464016183458540649349577915410578714234911137342208/3125*x^12 - 
+12155885897878807922226022438747639189310139644085867264/3125*x^11 - 
+1717112239602350668200745035047275066461478396277471232/3125*x^10 + 
+2026949341231329222656450515563338735990491455243849984/3125*x^9 - 
+181064195973294451599589159978684920684304733483925504/3125*x^8 - 
+21278730379945493450218893711810436580865296022217728/625*x^7 + 
+15531892467480745854881372485013448323233353007778304/3125*x^6 + 
+632890790338019992358743245167468275820691149632512/625*x^5 - 
+85921859197713004407088138812683096069777619987456/625*x^4 - 
+68159778915052268936625700798180653833075032192512/3125*x^3 + 
+3761768266543599573106018885480358800537690481664/3125*x^2 + 
+844154771025342576957537199090003836011390555136/3125*x + 
+30944633918366719920564623738234067408603684864/3125)/(x^35 + 7*x^34 + 
+427/20*x^33 + 4599/100*x^32 + 104013/1000*x^31 + 5232031/25000*x^30 + 
+5686191/20000*x^29 + 6492123/20000*x^28 + 2948253/6400*x^27 + 
+57034747/160000*x^26 - 934892273/3200000*x^25 - 58033633/128000*x^24 - 
+63748307/320000*x^23 - 470313459/320000*x^22 - 1122647313/640000*x^21 + 
+955092999/640000*x^20 + 104595729/80000*x^19 - 164410603/80000*x^18 + 
+196996793/80000*x^17 + 20100717/4000*x^16 - 123108153/25000*x^15 - 
+23136693/5000*x^14 + 4035192/625*x^13 - 336889/625*x^12 - 996331/125*x^11 + 
+16185316/3125*x^10 + 4417756/625*x^9 - 3720948/625*x^8 - 2295456/625*x^7 + 
+2419872/625*x^6 + 2383136/3125*x^5 - 911232/625*x^4 + 21504/125*x^3 + 
+28672/125*x^2 - 57344/625*x + 32768/3125)*y^2 + 
+(1171661293958178551082506488593438793037023906917113287403372544/15625*x^42 + 
+15447285802219993988196924326460363563748866213911603312119840768/15625*x^41 + 
+83100938393948808779253071335594233508539067276485195863754080256/15625*x^40 + 
+205197813179226886449500295927229441639064554501310490456282267648/15625*x^39 + 
+59955783405724301222884301123567034469792668407510151891347361792/15625*x^38 - 
+951327707571942923264908071169262578107194574807866710991236964352/15625*x^37 - 
+2055466849104396981624178096259006071123303687418381035872456880128/15625*x^36 +
+251665700566591906450662768563071047761061601222281696589103321088/15625*x^35 + 
+6627167081651404285190944891852838741232404071617644270873672282112/15625*x^34 +
+1302455061951805209912789490727583370376203566398406277951179257856/3125*x^33 - 
+9281731529865627750058517105164612429841480164512383025619293846528/15625*x^32 -
+20362400560604722676854120865072072629006074880804281794477770278912/15625*x^31 
++ 626720871411381880405036275236242523325130557794625805821131637504/3125*x^30 +
+33966738051922318715211895491477408671549811132122436345832721445888/15625*x^29 
++ 11504915764205178583465603776639501170922665763431031097154799798528/15625*x^\
+28 - 38225468806850764500192790048667793804093090495983018219160897093888/15625\
+*x^27 - 25200493845840098163788672665814305790541684732754639725869341344768/15\
+625*x^26 + 31952592653209204808547592846972538930975889276132921526575425878272\
+/15625*x^25 + 29150652358872840616113591990333412927925607487276608583289394251\
+712/15625*x^24 - 21338837772594542784354175241549285887183800327397757428808424\
+618624/15625*x^23 - 92826895615844909472353343011980796935943605246667599459018\
+0641216/625*x^22 + 122496331109775686244763032989279416513212516210955698394767\
+03581952/15625*x^21 + 135236337012315733820215570323420090857044210967289671131\
+54403483712/15625*x^20 - 507954702699063418182322131155150954012888354533618608\
+27999437952/125*x^19 - 57459971343104183082889452359046517762717153715154943537\
+95166430784/15625*x^18 + 289772093886973676585507021112413035493325537843933428\
+8011299936256/15625*x^17 + 1666877463821734123206548912258670223743518612820431\
+031874529362944/15625*x^16 - 10513875216743369988494995965194451153493186264672\
+00931419052959488/15625*x^15 - 268446350531543660792136998338750227046453108308\
+300861988803860736/15625*x^14 + 26243062729269056131857704535281786735487840869\
+9843427375582906624/15625*x^13 + 2339001941387677458971088547196412203914613773\
+312984155963295488/15625*x^12 - 36561705194703051122030672553811336584136825592\
+429830647854137344/15625*x^11 + 59662177776442280839022648943796949859532561099\
+36111849310524416/15625*x^10 + 182785086990392310234400135184932362869188045949\
+0558569585284096/15625*x^9 - 47931972223990482427950567697983830611790453504811\
+8941438476288/15625*x^8 - 10059069462245053456388054705655887450871224088450036\
+178940928/3125*x^7 + 3456903487836264277127055645333298268413903805483789966754\
+816/3125*x^6 + 1187482768140898477438848173058950127644369212812222910021632/15\
+625*x^5 - 334577914558330383874755540470734432728620961928621505163264/15625*x^\
+4 - 27830780525011436087484941096108255949595473765446358638592/15625*x^3 + 
+524261590056140272994646209115078196116586454071871127552/3125*x^2 + 
+364871101743740208161306328405853268297944475995571601408/15625*x + 
+2229209362094954838366454329382764023601016760540676096/3125)/(x^42 + 42/5*x^41 
++ 63/2*x^40 + 2002/25*x^39 + 381843/2000*x^38 + 10628961/25000*x^37 + 
+22861573/31250*x^36 + 64306419/62500*x^35 + 1195798443/800000*x^34 + 
+3625380899/2000000*x^33 + 7428963339/8000000*x^32 - 476425761/2000000*x^31 - 
+1005173519/2560000*x^30 - 20251762461/6400000*x^29 - 464738608353/64000000*x^28 
+- 40623790263/16000000*x^27 + 147891476103/64000000*x^26 - 
+176881121193/32000000*x^25 + 21638414581/12800000*x^24 + 9171189363/400000*x^23 
++ 567454881/400000*x^22 - 87414597427/4000000*x^21 + 4606180887/250000*x^20 + 
+1328456829/100000*x^19 - 52605129241/1000000*x^18 - 521090913/125000*x^17 + 
+3965563959/62500*x^16 - 141893241/6250*x^15 - 29224929/625*x^14 + 
+901174554/15625*x^13 + 331623271/15625*x^12 - 1080921072/15625*x^11 + 
+858816/15625*x^10 + 157495184/3125*x^9 - 159524736/15625*x^8 - 
+354244224/15625*x^7 + 140743232/15625*x^6 + 82908672/15625*x^5 - 
+11547648/3125*x^4 - 1261568/15625*x^3 + 9289728/15625*x^2 - 2752512/15625*x + 
+262144/15625)*y + (-78587119947342819281379828694423645555161564834221503149127\
+4549953560576/15625*x^49 - 6043913842737446915338409575875369946156037219213755\
+9712328993272065425408/78125*x^48 - 1566176456635850659479900853836202825280052\
+3360842607832681938963797704704/3125*x^47 - 
+1274122659331106306636083149895095957945134652050061101349477738048704741376/78\
+125*x^46 - 29304824898933832792813957232441122152691716453683119436131014097497\
+8678784/15625*x^45 + 3878198199173111839846324235801881032424718369436053157230\
+248368561184210944/78125*x^44 + 32548845114449502975336906663593324676810056397\
+02054522303825925927592820736/15625*x^43 + 
+13861922200812172286171968971581668865374843204337870025661454760733033734144/7\
+8125*x^42 - 7552064363889324173247652974679255124912413489088064013647762317559\
+393878016/15625*x^41 - 18948251319348695187276068058911411145365398334325258120\
+889313487772892110848/15625*x^40 - 42094481619736127651750217102957004666372274\
+54204973981755076271385463988224/78125*x^39 + 
+228904575267423929815911674448166591754997056723699757255533383812536497410048/\
+78125*x^38 + 206834648256717640934175020829159839206882170759028233787300833411\
+815941284864/78125*x^37 - 29366589185108155200549970913399081290895771759981858\
+8712310202217011871281152/78125*x^36 - 1110146756249916934458313525975974129810\
+50314681373279525735411170368073500672/15625*x^35 + 
+154492239001724213025835001106701191918663023685235470643773142224191312579072/\
+78125*x^34 + 174429141625092142886186551615003298788045276016755132005873624247\
+979963794944/15625*x^33 + 16063219577132284200242207994433738372667056952826081\
+7453124167981867757799936/78125*x^32 - 9734415406074016092221710265761432628287\
+39308782613320342435586900883373581056/78125*x^31 - 
+91885232450099079255097685745213214360373947949326394148148710698346505775616/1\
+5625*x^30 + 8370129420653565718449507672590452736281582314675127366503280272824\
+92663045632/78125*x^29 + 570379199777284458615852038360900061556831006144538754\
+947688845281868052031872/78125*x^28 - 58652953086950385847143717378586311953732\
+4715960301412117729999342104264313984/78125*x^27 - 
+481487964745126649850759400870332905143840597277388614078650030658541335348352/\
+78125*x^26 + 351967681903655850331727815879133075293207933184974621264533226799\
+599035143808/78125*x^25 + 30186954711958202319718752970905898311620000570251283\
+8129557407023816446255744/78125*x^24 - 1873381386265855910602545197973737886968\
+16093821288288865529587902373188527488/78125*x^23 - 
+142481908539921473493663600568190834868632460207889934282323306224919290903936/\
+78125*x^22 + 882497079164025347030366238647336411682724132078483216187396793375\
+61064462208/78125*x^21 + 488590583765708489569663798237365108919388737569311674\
+53619591422097020177408/78125*x^20 - 349859285700967767471234284714637536434142\
+87293426843478338959335319403663104/78125*x^19 - 
+10810579931409419885052185746967684365871700567379697684337202183408549545984/7\
+8125*x^18 + 1070129333825126510711124101788973616886557561649408589053541390450\
+2621922304/78125*x^17 + 9117865788401754918109892971262623203304690550633663894\
+86616156286343471104/78125*x^16 - 224161437909148653238755104693249239245309539\
+2622116881779051302423423815168/78125*x^15 + 
+222050366941514044905200372267867353419467907081840877359202213972500381696/781\
+25*x^14 + 265267820573776887693790151656755711618700667955450615201767377351321\
+700352/78125*x^13 - 67626033414429736252140463862446895312802828488134704180246\
+705470530080768/78125*x^12 - 11374294375045121659185915750698091114391332266856\
+961987041143379921672192/78125*x^11 + 52433454241521531239272857465205460475605\
+99040084494748919879519145201664/78125*x^10 + 
+174342261609713871678130513648026666291526753660645730160429027573860352/78125*\
+x^9 - 213617388752544286376017647798097702685983289024572137841643279597850624/\
+78125*x^8 - 1547537235156911645882269503095723511219717570376441705120258828001\
+28/78125*x^7 + 5503612798251142359030916965630845526020853285863394292995891609\
+747456/78125*x^6 + 583863741670116869857407428053138146204315529274507199280901\
+37133056/78125*x^5 - 8902528239458794266007605634612250450525905808057363052902\
+1916151808/78125*x^4 - 40665994508463140520467407360877767393069666269739070175\
+82268547072/78125*x^3 + 6513411331355666641368174537356332750760542502960247004\
+85270175744/78125*x^2 + 1314226253302125748228394213981238386686768571030738538\
+7528421376/15625*x + 6882306701294494111857520136010261850435605685803042159565\
+2096/3125)/(x^49 + 49/5*x^48 + 4361/100*x^47 + 12887/100*x^46 + 663117/2000*x^45
++ 39816077/50000*x^44 + 1595634677/1000000*x^43 + 13250616267/5000000*x^42 + 
+83417698539/20000000*x^41 + 120554823823/20000000*x^40 + 
+499330376503/80000000*x^39 + 340773428289/80000000*x^38 + 
+866337611727/320000000*x^37 - 957602321921/320000000*x^36 - 
+22093259156269/1280000000*x^35 - 26177103552831/1280000000*x^34 - 
+12102595605401/1280000000*x^33 - 27515775409619/1280000000*x^32 - 
+26158583775079/1280000000*x^31 + 62539531181659/1280000000*x^30 + 
+68204899753193/1280000000*x^29 - 45236533355293/1280000000*x^28 + 
+1525118444829/40000000*x^27 + 18008372231213/160000000*x^26 - 
+22336890782521/160000000*x^25 - 6703158768607/40000000*x^24 + 
+4158820436197/20000000*x^23 + 433505727879/20000000*x^22 - 
+836695762469/2500000*x^21 + 558014479351/2500000*x^20 + 
+1009381086539/2500000*x^19 - 259268876489/625000*x^18 - 75038247347/312500*x^17 
++ 32556834653/62500*x^16 - 5324706324/78125*x^15 - 7947869426/15625*x^14 + 
+22546841674/78125*x^13 + 28182497784/78125*x^12 - 24479067984/78125*x^11 - 
+12777747248/78125*x^10 + 16125004672/78125*x^9 + 96695424/3125*x^8 - 
+6786154368/78125*x^7 + 834201088/78125*x^6 + 1595697152/78125*x^5 - 
+610541568/78125*x^4 - 97943552/78125*x^3 + 109182976/78125*x^2 - 
+25690112/78125*x + 2097152/78125).
+Finding maximal order finite in function field extension. This may take a while.
+ring_ext_maximal_order_flags: called with algo_flag: 0
+no algorithm selected
+nothing about algebra-splitting selected
+nothing about reduced-discriminant selected
+nothing about dedekind-test selected
+ring_ext_maximal_order: checking control-devices
+ring_ext_maximal_order_flags: calling ring_ext_maximal_order_flags_sub
+ring_ext_maximal_order_flags_sub: called with algo_flag: 40
+no algorithm selected
+no algebra-splitting selected
+no reduced-discriminant selected
+nothing about dedekind-test selected
+Factorization of discriminant: 
+t^3 + 2*t^2 - t - 1^6
+t^4 + 3/2*t^3 - 9/8*t^2 - 9/4*t + 11/8^3
+t^44 + 3328845526450804/115034750106889*t^43 + 
+    220765108128246217/460139000427556*t^42 + 
+    2480789457641455387/460139000427556*t^41 + 
+    18788785699253367735/460139000427556*t^40 + 
+    46714766901429544547/230069500213778*t^39 + 
+    1130179065497522094411/1840556001710224*t^38 + 
+    1390939709095208304603/1840556001710224*t^37 - 
+    3457730926431125709173/1840556001710224*t^36 - 
+    17940610734085155913201/1840556001710224*t^35 - 
+    12162932493830328029757/920278000855112*t^34 + 
+    60424727654543733221937/3681112003420448*t^33 + 
+    36521650257599124643865/460139000427556*t^32 + 
+    7677873569272200928319/115034750106889*t^31 - 
+    529401698089794026632257/3681112003420448*t^30 - 
+    1285317613539503420742779/3681112003420448*t^29 - 
+    86423594518042508875207/1840556001710224*t^28 + 
+    2493820227115972397886915/3681112003420448*t^27 + 
+    2563402691754805465454351/3681112003420448*t^26 - 
+    512414194416882483559533/920278000855112*t^25 - 
+    5404085265079402802027827/3681112003420448*t^24 - 
+    973176442700715528041807/3681112003420448*t^23 + 
+    6048772538185017673064611/3681112003420448*t^22 + 
+    4649720693055635638414845/3681112003420448*t^21 - 
+    3689396104369685659175205/3681112003420448*t^20 - 
+    190411988368943634352094/115034750106889*t^19 + 
+    15502354339585848708876/115034750106889*t^18 + 
+    4779647090125659431996883/3681112003420448*t^17 + 
+    1165007888117514922992701/3681112003420448*t^16 - 
+    315543162483318345987601/460139000427556*t^15 - 
+    1102426450396170838560767/3681112003420448*t^14 + 
+    940822416569811043542337/3681112003420448*t^13 + 
+    14957262512369203580449/115034750106889*t^12 - 
+    261962265555575588608591/3681112003420448*t^11 - 
+    84953995072913837298463/3681112003420448*t^10 + 
+    60003254875848025625055/3681112003420448*t^9 - 
+    21651370987918440027277/3681112003420448*t^8 - 
+    5717344310489031211603/1840556001710224*t^7 + 
+    2353555279621629491485/460139000427556*t^6 + 
+    603916419339858047549/1840556001710224*t^5 - 
+    1472141466867422244271/920278000855112*t^4 + 
+    26236173710451664365/920278000855112*t^3 + 
+    978016494709453428035/3681112003420448*t^2 - 
+    19031608037573596725/1840556001710224*t - 
+    68713139159705692375/3681112003420448^2
+t^44 + 65739185800174813/2263790617503937*t^43 + 
+    884030251401007754/2263790617503937*t^42 + 
+    14754355274926558683/4527581235007874*t^41 + 
+    43299025219829507779/2263790617503937*t^40 + 
+    191701838714868875099/2263790617503937*t^39 + 
+    1326614367516866430065/4527581235007874*t^38 + 
+    1797382959935539213029/2263790617503937*t^37 + 
+    7369093693088217766637/4527581235007874*t^36 + 
+    10297409132903625831813/4527581235007874*t^35 + 
+    4898520218548287331931/4527581235007874*t^34 - 
+    12990289402394568901560/2263790617503937*t^33 - 
+    57814118048790320877947/2263790617503937*t^32 - 
+    130107657864087723905057/2263790617503937*t^31 - 
+    95839395933979104861523/2263790617503937*t^30 + 
+    337115274332958051985984/2263790617503937*t^29 + 
+    1016031010357356396034970/2263790617503937*t^28 + 
+    1079454556793077602311335/4527581235007874*t^27 - 
+    2126210912607176686527180/2263790617503937*t^26 - 
+    3732890231839516443563679/2263790617503937*t^25 + 
+    948840334718909669653078/2263790617503937*t^24 + 
+    15657371060445764344593753/4527581235007874*t^23 + 
+    7968866940698245864124121/4527581235007874*t^22 - 
+    9122607150564947300329620/2263790617503937*t^21 - 
+    20052844574868215395145105/4527581235007874*t^20 + 
+    6071829228249006244716456/2263790617503937*t^19 + 
+    12722624073161422538762007/2263790617503937*t^18 - 
+    2677599950800205950975883/4527581235007874*t^17 - 
+    21450830798334516460708725/4527581235007874*t^16 - 
+    3207929278170833420460113/4527581235007874*t^15 + 
+    12973960068056047636523151/4527581235007874*t^14 + 
+    3948473511601452484511651/4527581235007874*t^13 - 
+    5799956208954272067422391/4527581235007874*t^12 - 
+    2306373928939476199034525/4527581235007874*t^11 + 
+    1935153417643034123454171/4527581235007874*t^10 + 
+    421764330875586124721030/2263790617503937*t^9 - 
+    479837489665264983447253/4527581235007874*t^8 - 
+    98839789554316003874301/2263790617503937*t^7 + 
+    43229561781067361094164/2263790617503937*t^6 + 
+    13772138141244304627666/2263790617503937*t^5 - 
+    5332170401593490855393/2263790617503937*t^4 - 
+    891005342478376235124/2263790617503937*t^3 + 
+    386738545500441624438/2263790617503937*t^2 + 
+    3632335082531947732/2263790617503937*t - 
+    10400825850277600408/2263790617503937^2
+t^44 + 22526512638697019/596414668632544*t^43 + 
+    398937403808730001/596414668632544*t^42 + 
+    2163055626819592071/298207334316272*t^41 + 
+    31585031288753591229/596414668632544*t^40 + 
+    645393877684766283801/2385658674530176*t^39 + 
+    2309703070130736551061/2385658674530176*t^38 + 
+    2732793015481918797603/1192829337265088*t^37 + 
+    6327151521035570083749/2385658674530176*t^36 - 
+    7843743388623769577927/2385658674530176*t^35 - 
+    49599177181391751294885/2385658674530176*t^34 - 
+    89473828318830931692241/2385658674530176*t^33 - 
+    4773159297795682641029/596414668632544*t^32 + 
+    3842576045926729812127/37275916789534*t^31 + 
+    60622734186800351977725/298207334316272*t^30 + 
+    130372162590035912320811/2385658674530176*t^29 - 
+    971522619223266595287511/2385658674530176*t^28 - 
+    1601233924413405778174077/2385658674530176*t^27 + 
+    15713796124788149227469/2385658674530176*t^26 + 
+    3177658764532409015592041/2385658674530176*t^25 + 
+    1680101893489407161173883/1192829337265088*t^24 - 
+    2452921417896253713092485/2385658674530176*t^23 - 
+    7731323951683273095812885/2385658674530176*t^22 - 
+    1715841163300317495457065/2385658674530176*t^21 + 
+    10194959685010560789286181/2385658674530176*t^20 + 
+    7343268152138561588527505/2385658674530176*t^19 - 
+    1168031043895567321829303/298207334316272*t^18 - 
+    2746057536918287653203009/596414668632544*t^17 + 
+    3202782184747199914709359/1192829337265088*t^16 + 
+    10866116839259407849943577/2385658674530176*t^15 - 
+    3490381159415377011619629/2385658674530176*t^14 - 
+    992851066260937727308885/298207334316272*t^13 + 
+    1653198788825773958972021/2385658674530176*t^12 + 
+    4416072424527721996983777/2385658674530176*t^11 - 
+    749924215247111172993669/2385658674530176*t^10 - 
+    1856128743608852400248331/2385658674530176*t^9 + 
+    322925224718458001964829/2385658674530176*t^8 + 
+    570883975888352328129835/2385658674530176*t^7 - 
+    14385476606925546467177/298207334316272*t^6 - 
+    60251357938828243520599/1192829337265088*t^5 + 
+    14454714352639816589663/1192829337265088*t^4 + 
+    15455120055588103075591/2385658674530176*t^3 - 
+    4333579519478655020173/2385658674530176*t^2 - 
+    224641321761949111851/596414668632544*t + 
+    71414458324702754329/596414668632544^2
+factors with (possibly) not maximal overorder:
+t^3 + 2*t^2 - t - 1^6
+t^4 + 3/2*t^3 - 9/8*t^2 - 9/4*t + 11/8^3
+t^44 + 3328845526450804/115034750106889*t^43 + 
+    220765108128246217/460139000427556*t^42 + 
+    2480789457641455387/460139000427556*t^41 + 
+    18788785699253367735/460139000427556*t^40 + 
+    46714766901429544547/230069500213778*t^39 + 
+    1130179065497522094411/1840556001710224*t^38 + 
+    1390939709095208304603/1840556001710224*t^37 - 
+    3457730926431125709173/1840556001710224*t^36 - 
+    17940610734085155913201/1840556001710224*t^35 - 
+    12162932493830328029757/920278000855112*t^34 + 
+    60424727654543733221937/3681112003420448*t^33 + 
+    36521650257599124643865/460139000427556*t^32 + 
+    7677873569272200928319/115034750106889*t^31 - 
+    529401698089794026632257/3681112003420448*t^30 - 
+    1285317613539503420742779/3681112003420448*t^29 - 
+    86423594518042508875207/1840556001710224*t^28 + 
+    2493820227115972397886915/3681112003420448*t^27 + 
+    2563402691754805465454351/3681112003420448*t^26 - 
+    512414194416882483559533/920278000855112*t^25 - 
+    5404085265079402802027827/3681112003420448*t^24 - 
+    973176442700715528041807/3681112003420448*t^23 + 
+    6048772538185017673064611/3681112003420448*t^22 + 
+    4649720693055635638414845/3681112003420448*t^21 - 
+    3689396104369685659175205/3681112003420448*t^20 - 
+    190411988368943634352094/115034750106889*t^19 + 
+    15502354339585848708876/115034750106889*t^18 + 
+    4779647090125659431996883/3681112003420448*t^17 + 
+    1165007888117514922992701/3681112003420448*t^16 - 
+    315543162483318345987601/460139000427556*t^15 - 
+    1102426450396170838560767/3681112003420448*t^14 + 
+    940822416569811043542337/3681112003420448*t^13 + 
+    14957262512369203580449/115034750106889*t^12 - 
+    261962265555575588608591/3681112003420448*t^11 - 
+    84953995072913837298463/3681112003420448*t^10 + 
+    60003254875848025625055/3681112003420448*t^9 - 
+    21651370987918440027277/3681112003420448*t^8 - 
+    5717344310489031211603/1840556001710224*t^7 + 
+    2353555279621629491485/460139000427556*t^6 + 
+    603916419339858047549/1840556001710224*t^5 - 
+    1472141466867422244271/920278000855112*t^4 + 
+    26236173710451664365/920278000855112*t^3 + 
+    978016494709453428035/3681112003420448*t^2 - 
+    19031608037573596725/1840556001710224*t - 
+    68713139159705692375/3681112003420448^2
+t^44 + 65739185800174813/2263790617503937*t^43 + 
+    884030251401007754/2263790617503937*t^42 + 
+    14754355274926558683/4527581235007874*t^41 + 
+    43299025219829507779/2263790617503937*t^40 + 
+    191701838714868875099/2263790617503937*t^39 + 
+    1326614367516866430065/4527581235007874*t^38 + 
+    1797382959935539213029/2263790617503937*t^37 + 
+    7369093693088217766637/4527581235007874*t^36 + 
+    10297409132903625831813/4527581235007874*t^35 + 
+    4898520218548287331931/4527581235007874*t^34 - 
+    12990289402394568901560/2263790617503937*t^33 - 
+    57814118048790320877947/2263790617503937*t^32 - 
+    130107657864087723905057/2263790617503937*t^31 - 
+    95839395933979104861523/2263790617503937*t^30 + 
+    337115274332958051985984/2263790617503937*t^29 + 
+    1016031010357356396034970/2263790617503937*t^28 + 
+    1079454556793077602311335/4527581235007874*t^27 - 
+    2126210912607176686527180/2263790617503937*t^26 - 
+    3732890231839516443563679/2263790617503937*t^25 + 
+    948840334718909669653078/2263790617503937*t^24 + 
+    15657371060445764344593753/4527581235007874*t^23 + 
+    7968866940698245864124121/4527581235007874*t^22 - 
+    9122607150564947300329620/2263790617503937*t^21 - 
+    20052844574868215395145105/4527581235007874*t^20 + 
+    6071829228249006244716456/2263790617503937*t^19 + 
+    12722624073161422538762007/2263790617503937*t^18 - 
+    2677599950800205950975883/4527581235007874*t^17 - 
+    21450830798334516460708725/4527581235007874*t^16 - 
+    3207929278170833420460113/4527581235007874*t^15 + 
+    12973960068056047636523151/4527581235007874*t^14 + 
+    3948473511601452484511651/4527581235007874*t^13 - 
+    5799956208954272067422391/4527581235007874*t^12 - 
+    2306373928939476199034525/4527581235007874*t^11 + 
+    1935153417643034123454171/4527581235007874*t^10 + 
+    421764330875586124721030/2263790617503937*t^9 - 
+    479837489665264983447253/4527581235007874*t^8 - 
+    98839789554316003874301/2263790617503937*t^7 + 
+    43229561781067361094164/2263790617503937*t^6 + 
+    13772138141244304627666/2263790617503937*t^5 - 
+    5332170401593490855393/2263790617503937*t^4 - 
+    891005342478376235124/2263790617503937*t^3 + 
+    386738545500441624438/2263790617503937*t^2 + 
+    3632335082531947732/2263790617503937*t - 
+    10400825850277600408/2263790617503937^2
+t^44 + 22526512638697019/596414668632544*t^43 + 
+    398937403808730001/596414668632544*t^42 + 
+    2163055626819592071/298207334316272*t^41 + 
+    31585031288753591229/596414668632544*t^40 + 
+    645393877684766283801/2385658674530176*t^39 + 
+    2309703070130736551061/2385658674530176*t^38 + 
+    2732793015481918797603/1192829337265088*t^37 + 
+    6327151521035570083749/2385658674530176*t^36 - 
+    7843743388623769577927/2385658674530176*t^35 - 
+    49599177181391751294885/2385658674530176*t^34 - 
+    89473828318830931692241/2385658674530176*t^33 - 
+    4773159297795682641029/596414668632544*t^32 + 
+    3842576045926729812127/37275916789534*t^31 + 
+    60622734186800351977725/298207334316272*t^30 + 
+    130372162590035912320811/2385658674530176*t^29 - 
+    971522619223266595287511/2385658674530176*t^28 - 
+    1601233924413405778174077/2385658674530176*t^27 + 
+    15713796124788149227469/2385658674530176*t^26 + 
+    3177658764532409015592041/2385658674530176*t^25 + 
+    1680101893489407161173883/1192829337265088*t^24 - 
+    2452921417896253713092485/2385658674530176*t^23 - 
+    7731323951683273095812885/2385658674530176*t^22 - 
+    1715841163300317495457065/2385658674530176*t^21 + 
+    10194959685010560789286181/2385658674530176*t^20 + 
+    7343268152138561588527505/2385658674530176*t^19 - 
+    1168031043895567321829303/298207334316272*t^18 - 
+    2746057536918287653203009/596414668632544*t^17 + 
+    3202782184747199914709359/1192829337265088*t^16 + 
+    10866116839259407849943577/2385658674530176*t^15 - 
+    3490381159415377011619629/2385658674530176*t^14 - 
+    992851066260937727308885/298207334316272*t^13 + 
+    1653198788825773958972021/2385658674530176*t^12 + 
+    4416072424527721996983777/2385658674530176*t^11 - 
+    749924215247111172993669/2385658674530176*t^10 - 
+    1856128743608852400248331/2385658674530176*t^9 + 
+    322925224718458001964829/2385658674530176*t^8 + 
+    570883975888352328129835/2385658674530176*t^7 - 
+    14385476606925546467177/298207334316272*t^6 - 
+    60251357938828243520599/1192829337265088*t^5 + 
+    14454714352639816589663/1192829337265088*t^4 + 
+    15455120055588103075591/2385658674530176*t^3 - 
+    4333579519478655020173/2385658674530176*t^2 - 
+    224641321761949111851/596414668632544*t + 
+    71414458324702754329/596414668632544^2
+-----------------------
+ring_ext_rnd2_max_p_sub called:
+prime: t^3 + 2*t^2 - t - 1, prime_bound: 6, algo_flag: 40
+-----------------------
+no algorithm selected
+no algebra-splitting selected
+nothing about dedekind-test selected
+nothing about pauli selected
+---------------------------
+ring_ext_rnd2_max_p_sub_sub called:
+prime: t^3 + 2*t^2 - t - 1, prime_bound: 6, algo_flag: 169
+---------------------------
+round2 selected
+no algebra-splitting selected
+no dedekind-test selected
+nothing about pauli selected
+No split performed ...
+(due to user advice or impossible) ... 
+standard algorithm.
+----------------------------
+ring_ext_rnd2_max_p_rnd2 called:
+prime: t^3 + 2*t^2 - t - 1, prime_bound: 6, algo_flag: 169
+----------------------------
+no dedekind-test selected
+Order is already t^3 + 2*t^2 - t - 1-maximal.
+-----------------------
+ring_ext_rnd2_max_p_sub called:
+prime: t^4 + 3/2*t^3 - 9/8*t^2 - 9/4*t + 11/8, prime_bound: 3, algo_flag: 40
+-----------------------
+no algorithm selected
+no algebra-splitting selected
+nothing about dedekind-test selected
+nothing about pauli selected
+---------------------------
+ring_ext_rnd2_max_p_sub_sub called:
+prime: t^4 + 3/2*t^3 - 9/8*t^2 - 9/4*t + 11/8, prime_bound: 3, algo_flag: 169
+---------------------------
+round2 selected
+no algebra-splitting selected
+no dedekind-test selected
+nothing about pauli selected
+No split performed ...
+(due to user advice or impossible) ... 
+standard algorithm.
+----------------------------
+ring_ext_rnd2_max_p_rnd2 called:
+prime: t^4 + 3/2*t^3 - 9/8*t^2 - 9/4*t + 11/8, prime_bound: 3, algo_flag: 169
+----------------------------
+no dedekind-test selected
+Order is already t^4 + 3/2*t^3 - 9/8*t^2 - 9/4*t + 11/8-maximal.
+-----------------------
+ring_ext_rnd2_max_p_sub called:
+prime: t^44 + 3328845526450804/115034750106889*t^43 + 
+    220765108128246217/460139000427556*t^42 + 
+    2480789457641455387/460139000427556*t^41 + 
+    18788785699253367735/460139000427556*t^40 + 
+    46714766901429544547/230069500213778*t^39 + 
+    1130179065497522094411/1840556001710224*t^38 + 
+    1390939709095208304603/1840556001710224*t^37 - 
+    3457730926431125709173/1840556001710224*t^36 - 
+    17940610734085155913201/1840556001710224*t^35 - 
+    12162932493830328029757/920278000855112*t^34 + 
+    60424727654543733221937/3681112003420448*t^33 + 
+    36521650257599124643865/460139000427556*t^32 + 
+    7677873569272200928319/115034750106889*t^31 - 
+    529401698089794026632257/3681112003420448*t^30 - 
+    1285317613539503420742779/3681112003420448*t^29 - 
+    86423594518042508875207/1840556001710224*t^28 + 
+    2493820227115972397886915/3681112003420448*t^27 + 
+    2563402691754805465454351/3681112003420448*t^26 - 
+    512414194416882483559533/920278000855112*t^25 - 
+    5404085265079402802027827/3681112003420448*t^24 - 
+    973176442700715528041807/3681112003420448*t^23 + 
+    6048772538185017673064611/3681112003420448*t^22 + 
+    4649720693055635638414845/3681112003420448*t^21 - 
+    3689396104369685659175205/3681112003420448*t^20 - 
+    190411988368943634352094/115034750106889*t^19 + 
+    15502354339585848708876/115034750106889*t^18 + 
+    4779647090125659431996883/3681112003420448*t^17 + 
+    1165007888117514922992701/3681112003420448*t^16 - 
+    315543162483318345987601/460139000427556*t^15 - 
+    1102426450396170838560767/3681112003420448*t^14 + 
+    940822416569811043542337/3681112003420448*t^13 + 
+    14957262512369203580449/115034750106889*t^12 - 
+    261962265555575588608591/3681112003420448*t^11 - 
+    84953995072913837298463/3681112003420448*t^10 + 
+    60003254875848025625055/3681112003420448*t^9 - 
+    21651370987918440027277/3681112003420448*t^8 - 
+    5717344310489031211603/1840556001710224*t^7 + 
+    2353555279621629491485/460139000427556*t^6 + 
+    603916419339858047549/1840556001710224*t^5 - 
+    1472141466867422244271/920278000855112*t^4 + 
+    26236173710451664365/920278000855112*t^3 + 
+    978016494709453428035/3681112003420448*t^2 - 
+    19031608037573596725/1840556001710224*t - 
+    68713139159705692375/3681112003420448, prime_bound: 2, algo_flag: 40
+-----------------------
+no algorithm selected
+no algebra-splitting selected
+nothing about dedekind-test selected
+nothing about pauli selected
+---------------------------
+ring_ext_rnd2_max_p_sub_sub called:
+prime: t^44 + 3328845526450804/115034750106889*t^43 + 
+    220765108128246217/460139000427556*t^42 + 
+    2480789457641455387/460139000427556*t^41 + 
+    18788785699253367735/460139000427556*t^40 + 
+    46714766901429544547/230069500213778*t^39 + 
+    1130179065497522094411/1840556001710224*t^38 + 
+    1390939709095208304603/1840556001710224*t^37 - 
+    3457730926431125709173/1840556001710224*t^36 - 
+    17940610734085155913201/1840556001710224*t^35 - 
+    12162932493830328029757/920278000855112*t^34 + 
+    60424727654543733221937/3681112003420448*t^33 + 
+    36521650257599124643865/460139000427556*t^32 + 
+    7677873569272200928319/115034750106889*t^31 - 
+    529401698089794026632257/3681112003420448*t^30 - 
+    1285317613539503420742779/3681112003420448*t^29 - 
+    86423594518042508875207/1840556001710224*t^28 + 
+    2493820227115972397886915/3681112003420448*t^27 + 
+    2563402691754805465454351/3681112003420448*t^26 - 
+    512414194416882483559533/920278000855112*t^25 - 
+    5404085265079402802027827/3681112003420448*t^24 - 
+    973176442700715528041807/3681112003420448*t^23 + 
+    6048772538185017673064611/3681112003420448*t^22 + 
+    4649720693055635638414845/3681112003420448*t^21 - 
+    3689396104369685659175205/3681112003420448*t^20 - 
+    190411988368943634352094/115034750106889*t^19 + 
+    15502354339585848708876/115034750106889*t^18 + 
+    4779647090125659431996883/3681112003420448*t^17 + 
+    1165007888117514922992701/3681112003420448*t^16 - 
+    315543162483318345987601/460139000427556*t^15 - 
+    1102426450396170838560767/3681112003420448*t^14 + 
+    940822416569811043542337/3681112003420448*t^13 + 
+    14957262512369203580449/115034750106889*t^12 - 
+    261962265555575588608591/3681112003420448*t^11 - 
+    84953995072913837298463/3681112003420448*t^10 + 
+    60003254875848025625055/3681112003420448*t^9 - 
+    21651370987918440027277/3681112003420448*t^8 - 
+    5717344310489031211603/1840556001710224*t^7 + 
+    2353555279621629491485/460139000427556*t^6 + 
+    603916419339858047549/1840556001710224*t^5 - 
+    1472141466867422244271/920278000855112*t^4 + 
+    26236173710451664365/920278000855112*t^3 + 
+    978016494709453428035/3681112003420448*t^2 - 
+    19031608037573596725/1840556001710224*t - 
+    68713139159705692375/3681112003420448, prime_bound: 2, algo_flag: 169
+---------------------------
+round2 selected
+no algebra-splitting selected
+no dedekind-test selected
+nothing about pauli selected
+No split performed ...
+(due to user advice or impossible) ... 
+standard algorithm.
+----------------------------
+ring_ext_rnd2_max_p_rnd2 called:
+prime: t^44 + 3328845526450804/115034750106889*t^43 + 
+    220765108128246217/460139000427556*t^42 + 
+    2480789457641455387/460139000427556*t^41 + 
+    18788785699253367735/460139000427556*t^40 + 
+    46714766901429544547/230069500213778*t^39 + 
+    1130179065497522094411/1840556001710224*t^38 + 
+    1390939709095208304603/1840556001710224*t^37 - 
+    3457730926431125709173/1840556001710224*t^36 - 
+    17940610734085155913201/1840556001710224*t^35 - 
+    12162932493830328029757/920278000855112*t^34 + 
+    60424727654543733221937/3681112003420448*t^33 + 
+    36521650257599124643865/460139000427556*t^32 + 
+    7677873569272200928319/115034750106889*t^31 - 
+    529401698089794026632257/3681112003420448*t^30 - 
+    1285317613539503420742779/3681112003420448*t^29 - 
+    86423594518042508875207/1840556001710224*t^28 + 
+    2493820227115972397886915/3681112003420448*t^27 + 
+    2563402691754805465454351/3681112003420448*t^26 - 
+    512414194416882483559533/920278000855112*t^25 - 
+    5404085265079402802027827/3681112003420448*t^24 - 
+    973176442700715528041807/3681112003420448*t^23 + 
+    6048772538185017673064611/3681112003420448*t^22 + 
+    4649720693055635638414845/3681112003420448*t^21 - 
+    3689396104369685659175205/3681112003420448*t^20 - 
+    190411988368943634352094/115034750106889*t^19 + 
+    15502354339585848708876/115034750106889*t^18 + 
+    4779647090125659431996883/3681112003420448*t^17 + 
+    1165007888117514922992701/3681112003420448*t^16 - 
+    315543162483318345987601/460139000427556*t^15 - 
+    1102426450396170838560767/3681112003420448*t^14 + 
+    940822416569811043542337/3681112003420448*t^13 + 
+    14957262512369203580449/115034750106889*t^12 - 
+    261962265555575588608591/3681112003420448*t^11 - 
+    84953995072913837298463/3681112003420448*t^10 + 
+    60003254875848025625055/3681112003420448*t^9 - 
+    21651370987918440027277/3681112003420448*t^8 - 
+    5717344310489031211603/1840556001710224*t^7 + 
+    2353555279621629491485/460139000427556*t^6 + 
+    603916419339858047549/1840556001710224*t^5 - 
+    1472141466867422244271/920278000855112*t^4 + 
+    26236173710451664365/920278000855112*t^3 + 
+    978016494709453428035/3681112003420448*t^2 - 
+    19031608037573596725/1840556001710224*t - 
+    68713139159705692375/3681112003420448, prime_bound: 2, algo_flag: 169
+----------------------------
+no dedekind-test selected
+transformation for t^44 + 3328845526450804/115034750106889*t^43 + 
+    220765108128246217/460139000427556*t^42 + 
+    2480789457641455387/460139000427556*t^41 + 
+    18788785699253367735/460139000427556*t^40 + 
+    46714766901429544547/230069500213778*t^39 + 
+    1130179065497522094411/1840556001710224*t^38 + 
+    1390939709095208304603/1840556001710224*t^37 - 
+    3457730926431125709173/1840556001710224*t^36 - 
+    17940610734085155913201/1840556001710224*t^35 - 
+    12162932493830328029757/920278000855112*t^34 + 
+    60424727654543733221937/3681112003420448*t^33 + 
+    36521650257599124643865/460139000427556*t^32 + 
+    7677873569272200928319/115034750106889*t^31 - 
+    529401698089794026632257/3681112003420448*t^30 - 
+    1285317613539503420742779/3681112003420448*t^29 - 
+    86423594518042508875207/1840556001710224*t^28 + 
+    2493820227115972397886915/3681112003420448*t^27 + 
+    2563402691754805465454351/3681112003420448*t^26 - 
+    512414194416882483559533/920278000855112*t^25 - 
+    5404085265079402802027827/3681112003420448*t^24 - 
+    973176442700715528041807/3681112003420448*t^23 + 
+    6048772538185017673064611/3681112003420448*t^22 + 
+    4649720693055635638414845/3681112003420448*t^21 - 
+    3689396104369685659175205/3681112003420448*t^20 - 
+    190411988368943634352094/115034750106889*t^19 + 
+    15502354339585848708876/115034750106889*t^18 + 
+    4779647090125659431996883/3681112003420448*t^17 + 
+    1165007888117514922992701/3681112003420448*t^16 - 
+    315543162483318345987601/460139000427556*t^15 - 
+    1102426450396170838560767/3681112003420448*t^14 + 
+    940822416569811043542337/3681112003420448*t^13 + 
+    14957262512369203580449/115034750106889*t^12 - 
+    261962265555575588608591/3681112003420448*t^11 - 
+    84953995072913837298463/3681112003420448*t^10 + 
+    60003254875848025625055/3681112003420448*t^9 - 
+    21651370987918440027277/3681112003420448*t^8 - 
+    5717344310489031211603/1840556001710224*t^7 + 
+    2353555279621629491485/460139000427556*t^6 + 
+    603916419339858047549/1840556001710224*t^5 - 
+    1472141466867422244271/920278000855112*t^4 + 
+    26236173710451664365/920278000855112*t^3 + 
+    978016494709453428035/3681112003420448*t^2 - 
+    19031608037573596725/1840556001710224*t - 
+    68713139159705692375/3681112003420448...
+index of order: t^44 + 3328845526450804/115034750106889*t^43 + 
+    220765108128246217/460139000427556*t^42 + 
+    2480789457641455387/460139000427556*t^41 + 
+    18788785699253367735/460139000427556*t^40 + 
+    46714766901429544547/230069500213778*t^39 + 
+    1130179065497522094411/1840556001710224*t^38 + 
+    1390939709095208304603/1840556001710224*t^37 - 
+    3457730926431125709173/1840556001710224*t^36 - 
+    17940610734085155913201/1840556001710224*t^35 - 
+    12162932493830328029757/920278000855112*t^34 + 
+    60424727654543733221937/3681112003420448*t^33 + 
+    36521650257599124643865/460139000427556*t^32 + 
+    7677873569272200928319/115034750106889*t^31 - 
+    529401698089794026632257/3681112003420448*t^30 - 
+    1285317613539503420742779/3681112003420448*t^29 - 
+    86423594518042508875207/1840556001710224*t^28 + 
+    2493820227115972397886915/3681112003420448*t^27 + 
+    2563402691754805465454351/3681112003420448*t^26 - 
+    512414194416882483559533/920278000855112*t^25 - 
+    5404085265079402802027827/3681112003420448*t^24 - 
+    973176442700715528041807/3681112003420448*t^23 + 
+    6048772538185017673064611/3681112003420448*t^22 + 
+    4649720693055635638414845/3681112003420448*t^21 - 
+    3689396104369685659175205/3681112003420448*t^20 - 
+    190411988368943634352094/115034750106889*t^19 + 
+    15502354339585848708876/115034750106889*t^18 + 
+    4779647090125659431996883/3681112003420448*t^17 + 
+    1165007888117514922992701/3681112003420448*t^16 - 
+    315543162483318345987601/460139000427556*t^15 - 
+    1102426450396170838560767/3681112003420448*t^14 + 
+    940822416569811043542337/3681112003420448*t^13 + 
+    14957262512369203580449/115034750106889*t^12 - 
+    261962265555575588608591/3681112003420448*t^11 - 
+    84953995072913837298463/3681112003420448*t^10 + 
+    60003254875848025625055/3681112003420448*t^9 - 
+    21651370987918440027277/3681112003420448*t^8 - 
+    5717344310489031211603/1840556001710224*t^7 + 
+    2353555279621629491485/460139000427556*t^6 + 
+    603916419339858047549/1840556001710224*t^5 - 
+    1472141466867422244271/920278000855112*t^4 + 
+    26236173710451664365/920278000855112*t^3 + 
+    978016494709453428035/3681112003420448*t^2 - 
+    19031608037573596725/1840556001710224*t - 
+    68713139159705692375/3681112003420448
+-----------------------
+ring_ext_rnd2_max_p_sub called:
+prime: t^44 + 65739185800174813/2263790617503937*t^43 + 
+    884030251401007754/2263790617503937*t^42 + 
+    14754355274926558683/4527581235007874*t^41 + 
+    43299025219829507779/2263790617503937*t^40 + 
+    191701838714868875099/2263790617503937*t^39 + 
+    1326614367516866430065/4527581235007874*t^38 + 
+    1797382959935539213029/2263790617503937*t^37 + 
+    7369093693088217766637/4527581235007874*t^36 + 
+    10297409132903625831813/4527581235007874*t^35 + 
+    4898520218548287331931/4527581235007874*t^34 - 
+    12990289402394568901560/2263790617503937*t^33 - 
+    57814118048790320877947/2263790617503937*t^32 - 
+    130107657864087723905057/2263790617503937*t^31 - 
+    95839395933979104861523/2263790617503937*t^30 + 
+    337115274332958051985984/2263790617503937*t^29 + 
+    1016031010357356396034970/2263790617503937*t^28 + 
+    1079454556793077602311335/4527581235007874*t^27 - 
+    2126210912607176686527180/2263790617503937*t^26 - 
+    3732890231839516443563679/2263790617503937*t^25 + 
+    948840334718909669653078/2263790617503937*t^24 + 
+    15657371060445764344593753/4527581235007874*t^23 + 
+    7968866940698245864124121/4527581235007874*t^22 - 
+    9122607150564947300329620/2263790617503937*t^21 - 
+    20052844574868215395145105/4527581235007874*t^20 + 
+    6071829228249006244716456/2263790617503937*t^19 + 
+    12722624073161422538762007/2263790617503937*t^18 - 
+    2677599950800205950975883/4527581235007874*t^17 - 
+    21450830798334516460708725/4527581235007874*t^16 - 
+    3207929278170833420460113/4527581235007874*t^15 + 
+    12973960068056047636523151/4527581235007874*t^14 + 
+    3948473511601452484511651/4527581235007874*t^13 - 
+    5799956208954272067422391/4527581235007874*t^12 - 
+    2306373928939476199034525/4527581235007874*t^11 + 
+    1935153417643034123454171/4527581235007874*t^10 + 
+    421764330875586124721030/2263790617503937*t^9 - 
+    479837489665264983447253/4527581235007874*t^8 - 
+    98839789554316003874301/2263790617503937*t^7 + 
+    43229561781067361094164/2263790617503937*t^6 + 
+    13772138141244304627666/2263790617503937*t^5 - 
+    5332170401593490855393/2263790617503937*t^4 - 
+    891005342478376235124/2263790617503937*t^3 + 
+    386738545500441624438/2263790617503937*t^2 + 
+    3632335082531947732/2263790617503937*t - 
+    10400825850277600408/2263790617503937, prime_bound: 2, algo_flag: 40
+-----------------------
+no algorithm selected
+no algebra-splitting selected
+nothing about dedekind-test selected
+nothing about pauli selected
+---------------------------
+ring_ext_rnd2_max_p_sub_sub called:
+prime: t^44 + 65739185800174813/2263790617503937*t^43 + 
+    884030251401007754/2263790617503937*t^42 + 
+    14754355274926558683/4527581235007874*t^41 + 
+    43299025219829507779/2263790617503937*t^40 + 
+    191701838714868875099/2263790617503937*t^39 + 
+    1326614367516866430065/4527581235007874*t^38 + 
+    1797382959935539213029/2263790617503937*t^37 + 
+    7369093693088217766637/4527581235007874*t^36 + 
+    10297409132903625831813/4527581235007874*t^35 + 
+    4898520218548287331931/4527581235007874*t^34 - 
+    12990289402394568901560/2263790617503937*t^33 - 
+    57814118048790320877947/2263790617503937*t^32 - 
+    130107657864087723905057/2263790617503937*t^31 - 
+    95839395933979104861523/2263790617503937*t^30 + 
+    337115274332958051985984/2263790617503937*t^29 + 
+    1016031010357356396034970/2263790617503937*t^28 + 
+    1079454556793077602311335/4527581235007874*t^27 - 
+    2126210912607176686527180/2263790617503937*t^26 - 
+    3732890231839516443563679/2263790617503937*t^25 + 
+    948840334718909669653078/2263790617503937*t^24 + 
+    15657371060445764344593753/4527581235007874*t^23 + 
+    7968866940698245864124121/4527581235007874*t^22 - 
+    9122607150564947300329620/2263790617503937*t^21 - 
+    20052844574868215395145105/4527581235007874*t^20 + 
+    6071829228249006244716456/2263790617503937*t^19 + 
+    12722624073161422538762007/2263790617503937*t^18 - 
+    2677599950800205950975883/4527581235007874*t^17 - 
+    21450830798334516460708725/4527581235007874*t^16 - 
+    3207929278170833420460113/4527581235007874*t^15 + 
+    12973960068056047636523151/4527581235007874*t^14 + 
+    3948473511601452484511651/4527581235007874*t^13 - 
+    5799956208954272067422391/4527581235007874*t^12 - 
+    2306373928939476199034525/4527581235007874*t^11 + 
+    1935153417643034123454171/4527581235007874*t^10 + 
+    421764330875586124721030/2263790617503937*t^9 - 
+    479837489665264983447253/4527581235007874*t^8 - 
+    98839789554316003874301/2263790617503937*t^7 + 
+    43229561781067361094164/2263790617503937*t^6 + 
+    13772138141244304627666/2263790617503937*t^5 - 
+    5332170401593490855393/2263790617503937*t^4 - 
+    891005342478376235124/2263790617503937*t^3 + 
+    386738545500441624438/2263790617503937*t^2 + 
+    3632335082531947732/2263790617503937*t - 
+    10400825850277600408/2263790617503937, prime_bound: 2, algo_flag: 169
+---------------------------
+round2 selected
+no algebra-splitting selected
+no dedekind-test selected
+nothing about pauli selected
+No split performed ...
+(due to user advice or impossible) ... 
+standard algorithm.
+----------------------------
+ring_ext_rnd2_max_p_rnd2 called:
+prime: t^44 + 65739185800174813/2263790617503937*t^43 + 
+    884030251401007754/2263790617503937*t^42 + 
+    14754355274926558683/4527581235007874*t^41 + 
+    43299025219829507779/2263790617503937*t^40 + 
+    191701838714868875099/2263790617503937*t^39 + 
+    1326614367516866430065/4527581235007874*t^38 + 
+    1797382959935539213029/2263790617503937*t^37 + 
+    7369093693088217766637/4527581235007874*t^36 + 
+    10297409132903625831813/4527581235007874*t^35 + 
+    4898520218548287331931/4527581235007874*t^34 - 
+    12990289402394568901560/2263790617503937*t^33 - 
+    57814118048790320877947/2263790617503937*t^32 - 
+    130107657864087723905057/2263790617503937*t^31 - 
+    95839395933979104861523/2263790617503937*t^30 + 
+    337115274332958051985984/2263790617503937*t^29 + 
+    1016031010357356396034970/2263790617503937*t^28 + 
+    1079454556793077602311335/4527581235007874*t^27 - 
+    2126210912607176686527180/2263790617503937*t^26 - 
+    3732890231839516443563679/2263790617503937*t^25 + 
+    948840334718909669653078/2263790617503937*t^24 + 
+    15657371060445764344593753/4527581235007874*t^23 + 
+    7968866940698245864124121/4527581235007874*t^22 - 
+    9122607150564947300329620/2263790617503937*t^21 - 
+    20052844574868215395145105/4527581235007874*t^20 + 
+    6071829228249006244716456/2263790617503937*t^19 + 
+    12722624073161422538762007/2263790617503937*t^18 - 
+    2677599950800205950975883/4527581235007874*t^17 - 
+    21450830798334516460708725/4527581235007874*t^16 - 
+    3207929278170833420460113/4527581235007874*t^15 + 
+    12973960068056047636523151/4527581235007874*t^14 + 
+    3948473511601452484511651/4527581235007874*t^13 - 
+    5799956208954272067422391/4527581235007874*t^12 - 
+    2306373928939476199034525/4527581235007874*t^11 + 
+    1935153417643034123454171/4527581235007874*t^10 + 
+    421764330875586124721030/2263790617503937*t^9 - 
+    479837489665264983447253/4527581235007874*t^8 - 
+    98839789554316003874301/2263790617503937*t^7 + 
+    43229561781067361094164/2263790617503937*t^6 + 
+    13772138141244304627666/2263790617503937*t^5 - 
+    5332170401593490855393/2263790617503937*t^4 - 
+    891005342478376235124/2263790617503937*t^3 + 
+    386738545500441624438/2263790617503937*t^2 + 
+    3632335082531947732/2263790617503937*t - 
+    10400825850277600408/2263790617503937, prime_bound: 2, algo_flag: 169
+----------------------------
+no dedekind-test selected
+transformation for t^44 + 65739185800174813/2263790617503937*t^43 + 
+    884030251401007754/2263790617503937*t^42 + 
+    14754355274926558683/4527581235007874*t^41 + 
+    43299025219829507779/2263790617503937*t^40 + 
+    191701838714868875099/2263790617503937*t^39 + 
+    1326614367516866430065/4527581235007874*t^38 + 
+    1797382959935539213029/2263790617503937*t^37 + 
+    7369093693088217766637/4527581235007874*t^36 + 
+    10297409132903625831813/4527581235007874*t^35 + 
+    4898520218548287331931/4527581235007874*t^34 - 
+    12990289402394568901560/2263790617503937*t^33 - 
+    57814118048790320877947/2263790617503937*t^32 - 
+    130107657864087723905057/2263790617503937*t^31 - 
+    95839395933979104861523/2263790617503937*t^30 + 
+    337115274332958051985984/2263790617503937*t^29 + 
+    1016031010357356396034970/2263790617503937*t^28 + 
+    1079454556793077602311335/4527581235007874*t^27 - 
+    2126210912607176686527180/2263790617503937*t^26 - 
+    3732890231839516443563679/2263790617503937*t^25 + 
+    948840334718909669653078/2263790617503937*t^24 + 
+    15657371060445764344593753/4527581235007874*t^23 + 
+    7968866940698245864124121/4527581235007874*t^22 - 
+    9122607150564947300329620/2263790617503937*t^21 - 
+    20052844574868215395145105/4527581235007874*t^20 + 
+    6071829228249006244716456/2263790617503937*t^19 + 
+    12722624073161422538762007/2263790617503937*t^18 - 
+    2677599950800205950975883/4527581235007874*t^17 - 
+    21450830798334516460708725/4527581235007874*t^16 - 
+    3207929278170833420460113/4527581235007874*t^15 + 
+    12973960068056047636523151/4527581235007874*t^14 + 
+    3948473511601452484511651/4527581235007874*t^13 - 
+    5799956208954272067422391/4527581235007874*t^12 - 
+    2306373928939476199034525/4527581235007874*t^11 + 
+    1935153417643034123454171/4527581235007874*t^10 + 
+    421764330875586124721030/2263790617503937*t^9 - 
+    479837489665264983447253/4527581235007874*t^8 - 
+    98839789554316003874301/2263790617503937*t^7 + 
+    43229561781067361094164/2263790617503937*t^6 + 
+    13772138141244304627666/2263790617503937*t^5 - 
+    5332170401593490855393/2263790617503937*t^4 - 
+    891005342478376235124/2263790617503937*t^3 + 
+    386738545500441624438/2263790617503937*t^2 + 
+    3632335082531947732/2263790617503937*t - 
+    10400825850277600408/2263790617503937...
+index of order: t^44 + 65739185800174813/2263790617503937*t^43 + 
+    884030251401007754/2263790617503937*t^42 + 
+    14754355274926558683/4527581235007874*t^41 + 
+    43299025219829507779/2263790617503937*t^40 + 
+    191701838714868875099/2263790617503937*t^39 + 
+    1326614367516866430065/4527581235007874*t^38 + 
+    1797382959935539213029/2263790617503937*t^37 + 
+    7369093693088217766637/4527581235007874*t^36 + 
+    10297409132903625831813/4527581235007874*t^35 + 
+    4898520218548287331931/4527581235007874*t^34 - 
+    12990289402394568901560/2263790617503937*t^33 - 
+    57814118048790320877947/2263790617503937*t^32 - 
+    130107657864087723905057/2263790617503937*t^31 - 
+    95839395933979104861523/2263790617503937*t^30 + 
+    337115274332958051985984/2263790617503937*t^29 + 
+    1016031010357356396034970/2263790617503937*t^28 + 
+    1079454556793077602311335/4527581235007874*t^27 - 
+    2126210912607176686527180/2263790617503937*t^26 - 
+    3732890231839516443563679/2263790617503937*t^25 + 
+    948840334718909669653078/2263790617503937*t^24 + 
+    15657371060445764344593753/4527581235007874*t^23 + 
+    7968866940698245864124121/4527581235007874*t^22 - 
+    9122607150564947300329620/2263790617503937*t^21 - 
+    20052844574868215395145105/4527581235007874*t^20 + 
+    6071829228249006244716456/2263790617503937*t^19 + 
+    12722624073161422538762007/2263790617503937*t^18 - 
+    2677599950800205950975883/4527581235007874*t^17 - 
+    21450830798334516460708725/4527581235007874*t^16 - 
+    3207929278170833420460113/4527581235007874*t^15 + 
+    12973960068056047636523151/4527581235007874*t^14 + 
+    3948473511601452484511651/4527581235007874*t^13 - 
+    5799956208954272067422391/4527581235007874*t^12 - 
+    2306373928939476199034525/4527581235007874*t^11 + 
+    1935153417643034123454171/4527581235007874*t^10 + 
+    421764330875586124721030/2263790617503937*t^9 - 
+    479837489665264983447253/4527581235007874*t^8 - 
+    98839789554316003874301/2263790617503937*t^7 + 
+    43229561781067361094164/2263790617503937*t^6 + 
+    13772138141244304627666/2263790617503937*t^5 - 
+    5332170401593490855393/2263790617503937*t^4 - 
+    891005342478376235124/2263790617503937*t^3 + 
+    386738545500441624438/2263790617503937*t^2 + 
+    3632335082531947732/2263790617503937*t - 
+    10400825850277600408/2263790617503937
+-----------------------
+ring_ext_rnd2_max_p_sub called:
+prime: t^44 + 22526512638697019/596414668632544*t^43 + 
+    398937403808730001/596414668632544*t^42 + 
+    2163055626819592071/298207334316272*t^41 + 
+    31585031288753591229/596414668632544*t^40 + 
+    645393877684766283801/2385658674530176*t^39 + 
+    2309703070130736551061/2385658674530176*t^38 + 
+    2732793015481918797603/1192829337265088*t^37 + 
+    6327151521035570083749/2385658674530176*t^36 - 
+    7843743388623769577927/2385658674530176*t^35 - 
+    49599177181391751294885/2385658674530176*t^34 - 
+    89473828318830931692241/2385658674530176*t^33 - 
+    4773159297795682641029/596414668632544*t^32 + 
+    3842576045926729812127/37275916789534*t^31 + 
+    60622734186800351977725/298207334316272*t^30 + 
+    130372162590035912320811/2385658674530176*t^29 - 
+    971522619223266595287511/2385658674530176*t^28 - 
+    1601233924413405778174077/2385658674530176*t^27 + 
+    15713796124788149227469/2385658674530176*t^26 + 
+    3177658764532409015592041/2385658674530176*t^25 + 
+    1680101893489407161173883/1192829337265088*t^24 - 
+    2452921417896253713092485/2385658674530176*t^23 - 
+    7731323951683273095812885/2385658674530176*t^22 - 
+    1715841163300317495457065/2385658674530176*t^21 + 
+    10194959685010560789286181/2385658674530176*t^20 + 
+    7343268152138561588527505/2385658674530176*t^19 - 
+    1168031043895567321829303/298207334316272*t^18 - 
+    2746057536918287653203009/596414668632544*t^17 + 
+    3202782184747199914709359/1192829337265088*t^16 + 
+    10866116839259407849943577/2385658674530176*t^15 - 
+    3490381159415377011619629/2385658674530176*t^14 - 
+    992851066260937727308885/298207334316272*t^13 + 
+    1653198788825773958972021/2385658674530176*t^12 + 
+    4416072424527721996983777/2385658674530176*t^11 - 
+    749924215247111172993669/2385658674530176*t^10 - 
+    1856128743608852400248331/2385658674530176*t^9 + 
+    322925224718458001964829/2385658674530176*t^8 + 
+    570883975888352328129835/2385658674530176*t^7 - 
+    14385476606925546467177/298207334316272*t^6 - 
+    60251357938828243520599/1192829337265088*t^5 + 
+    14454714352639816589663/1192829337265088*t^4 + 
+    15455120055588103075591/2385658674530176*t^3 - 
+    4333579519478655020173/2385658674530176*t^2 - 
+    224641321761949111851/596414668632544*t + 
+    71414458324702754329/596414668632544, prime_bound: 2, algo_flag: 40
+-----------------------
+no algorithm selected
+no algebra-splitting selected
+nothing about dedekind-test selected
+nothing about pauli selected
+---------------------------
+ring_ext_rnd2_max_p_sub_sub called:
+prime: t^44 + 22526512638697019/596414668632544*t^43 + 
+    398937403808730001/596414668632544*t^42 + 
+    2163055626819592071/298207334316272*t^41 + 
+    31585031288753591229/596414668632544*t^40 + 
+    645393877684766283801/2385658674530176*t^39 + 
+    2309703070130736551061/2385658674530176*t^38 + 
+    2732793015481918797603/1192829337265088*t^37 + 
+    6327151521035570083749/2385658674530176*t^36 - 
+    7843743388623769577927/2385658674530176*t^35 - 
+    49599177181391751294885/2385658674530176*t^34 - 
+    89473828318830931692241/2385658674530176*t^33 - 
+    4773159297795682641029/596414668632544*t^32 + 
+    3842576045926729812127/37275916789534*t^31 + 
+    60622734186800351977725/298207334316272*t^30 + 
+    130372162590035912320811/2385658674530176*t^29 - 
+    971522619223266595287511/2385658674530176*t^28 - 
+    1601233924413405778174077/2385658674530176*t^27 + 
+    15713796124788149227469/2385658674530176*t^26 + 
+    3177658764532409015592041/2385658674530176*t^25 + 
+    1680101893489407161173883/1192829337265088*t^24 - 
+    2452921417896253713092485/2385658674530176*t^23 - 
+    7731323951683273095812885/2385658674530176*t^22 - 
+    1715841163300317495457065/2385658674530176*t^21 + 
+    10194959685010560789286181/2385658674530176*t^20 + 
+    7343268152138561588527505/2385658674530176*t^19 - 
+    1168031043895567321829303/298207334316272*t^18 - 
+    2746057536918287653203009/596414668632544*t^17 + 
+    3202782184747199914709359/1192829337265088*t^16 + 
+    10866116839259407849943577/2385658674530176*t^15 - 
+    3490381159415377011619629/2385658674530176*t^14 - 
+    992851066260937727308885/298207334316272*t^13 + 
+    1653198788825773958972021/2385658674530176*t^12 + 
+    4416072424527721996983777/2385658674530176*t^11 - 
+    749924215247111172993669/2385658674530176*t^10 - 
+    1856128743608852400248331/2385658674530176*t^9 + 
+    322925224718458001964829/2385658674530176*t^8 + 
+    570883975888352328129835/2385658674530176*t^7 - 
+    14385476606925546467177/298207334316272*t^6 - 
+    60251357938828243520599/1192829337265088*t^5 + 
+    14454714352639816589663/1192829337265088*t^4 + 
+    15455120055588103075591/2385658674530176*t^3 - 
+    4333579519478655020173/2385658674530176*t^2 - 
+    224641321761949111851/596414668632544*t + 
+    71414458324702754329/596414668632544, prime_bound: 2, algo_flag: 169
+---------------------------
+round2 selected
+no algebra-splitting selected
+no dedekind-test selected
+nothing about pauli selected
+No split performed ...
+(due to user advice or impossible) ... 
+standard algorithm.
+----------------------------
+ring_ext_rnd2_max_p_rnd2 called:
+prime: t^44 + 22526512638697019/596414668632544*t^43 + 
+    398937403808730001/596414668632544*t^42 + 
+    2163055626819592071/298207334316272*t^41 + 
+    31585031288753591229/596414668632544*t^40 + 
+    645393877684766283801/2385658674530176*t^39 + 
+    2309703070130736551061/2385658674530176*t^38 + 
+    2732793015481918797603/1192829337265088*t^37 + 
+    6327151521035570083749/2385658674530176*t^36 - 
+    7843743388623769577927/2385658674530176*t^35 - 
+    49599177181391751294885/2385658674530176*t^34 - 
+    89473828318830931692241/2385658674530176*t^33 - 
+    4773159297795682641029/596414668632544*t^32 + 
+    3842576045926729812127/37275916789534*t^31 + 
+    60622734186800351977725/298207334316272*t^30 + 
+    130372162590035912320811/2385658674530176*t^29 - 
+    971522619223266595287511/2385658674530176*t^28 - 
+    1601233924413405778174077/2385658674530176*t^27 + 
+    15713796124788149227469/2385658674530176*t^26 + 
+    3177658764532409015592041/2385658674530176*t^25 + 
+    1680101893489407161173883/1192829337265088*t^24 - 
+    2452921417896253713092485/2385658674530176*t^23 - 
+    7731323951683273095812885/2385658674530176*t^22 - 
+    1715841163300317495457065/2385658674530176*t^21 + 
+    10194959685010560789286181/2385658674530176*t^20 + 
+    7343268152138561588527505/2385658674530176*t^19 - 
+    1168031043895567321829303/298207334316272*t^18 - 
+    2746057536918287653203009/596414668632544*t^17 + 
+    3202782184747199914709359/1192829337265088*t^16 + 
+    10866116839259407849943577/2385658674530176*t^15 - 
+    3490381159415377011619629/2385658674530176*t^14 - 
+    992851066260937727308885/298207334316272*t^13 + 
+    1653198788825773958972021/2385658674530176*t^12 + 
+    4416072424527721996983777/2385658674530176*t^11 - 
+    749924215247111172993669/2385658674530176*t^10 - 
+    1856128743608852400248331/2385658674530176*t^9 + 
+    322925224718458001964829/2385658674530176*t^8 + 
+    570883975888352328129835/2385658674530176*t^7 - 
+    14385476606925546467177/298207334316272*t^6 - 
+    60251357938828243520599/1192829337265088*t^5 + 
+    14454714352639816589663/1192829337265088*t^4 + 
+    15455120055588103075591/2385658674530176*t^3 - 
+    4333579519478655020173/2385658674530176*t^2 - 
+    224641321761949111851/596414668632544*t + 
+    71414458324702754329/596414668632544, prime_bound: 2, algo_flag: 169
+----------------------------
+no dedekind-test selected
+transformation for t^44 + 22526512638697019/596414668632544*t^43 + 
+    398937403808730001/596414668632544*t^42 + 
+    2163055626819592071/298207334316272*t^41 + 
+    31585031288753591229/596414668632544*t^40 + 
+    645393877684766283801/2385658674530176*t^39 + 
+    2309703070130736551061/2385658674530176*t^38 + 
+    2732793015481918797603/1192829337265088*t^37 + 
+    6327151521035570083749/2385658674530176*t^36 - 
+    7843743388623769577927/2385658674530176*t^35 - 
+    49599177181391751294885/2385658674530176*t^34 - 
+    89473828318830931692241/2385658674530176*t^33 - 
+    4773159297795682641029/596414668632544*t^32 + 
+    3842576045926729812127/37275916789534*t^31 + 
+    60622734186800351977725/298207334316272*t^30 + 
+    130372162590035912320811/2385658674530176*t^29 - 
+    971522619223266595287511/2385658674530176*t^28 - 
+    1601233924413405778174077/2385658674530176*t^27 + 
+    15713796124788149227469/2385658674530176*t^26 + 
+    3177658764532409015592041/2385658674530176*t^25 + 
+    1680101893489407161173883/1192829337265088*t^24 - 
+    2452921417896253713092485/2385658674530176*t^23 - 
+    7731323951683273095812885/2385658674530176*t^22 - 
+    1715841163300317495457065/2385658674530176*t^21 + 
+    10194959685010560789286181/2385658674530176*t^20 + 
+    7343268152138561588527505/2385658674530176*t^19 - 
+    1168031043895567321829303/298207334316272*t^18 - 
+    2746057536918287653203009/596414668632544*t^17 + 
+    3202782184747199914709359/1192829337265088*t^16 + 
+    10866116839259407849943577/2385658674530176*t^15 - 
+    3490381159415377011619629/2385658674530176*t^14 - 
+    992851066260937727308885/298207334316272*t^13 + 
+    1653198788825773958972021/2385658674530176*t^12 + 
+    4416072424527721996983777/2385658674530176*t^11 - 
+    749924215247111172993669/2385658674530176*t^10 - 
+    1856128743608852400248331/2385658674530176*t^9 + 
+    322925224718458001964829/2385658674530176*t^8 + 
+    570883975888352328129835/2385658674530176*t^7 - 
+    14385476606925546467177/298207334316272*t^6 - 
+    60251357938828243520599/1192829337265088*t^5 + 
+    14454714352639816589663/1192829337265088*t^4 + 
+    15455120055588103075591/2385658674530176*t^3 - 
+    4333579519478655020173/2385658674530176*t^2 - 
+    224641321761949111851/596414668632544*t + 
+    71414458324702754329/596414668632544...
+index of order: t^44 + 22526512638697019/596414668632544*t^43 + 
+    398937403808730001/596414668632544*t^42 + 
+    2163055626819592071/298207334316272*t^41 + 
+    31585031288753591229/596414668632544*t^40 + 
+    645393877684766283801/2385658674530176*t^39 + 
+    2309703070130736551061/2385658674530176*t^38 + 
+    2732793015481918797603/1192829337265088*t^37 + 
+    6327151521035570083749/2385658674530176*t^36 - 
+    7843743388623769577927/2385658674530176*t^35 - 
+    49599177181391751294885/2385658674530176*t^34 - 
+    89473828318830931692241/2385658674530176*t^33 - 
+    4773159297795682641029/596414668632544*t^32 + 
+    3842576045926729812127/37275916789534*t^31 + 
+    60622734186800351977725/298207334316272*t^30 + 
+    130372162590035912320811/2385658674530176*t^29 - 
+    971522619223266595287511/2385658674530176*t^28 - 
+    1601233924413405778174077/2385658674530176*t^27 + 
+    15713796124788149227469/2385658674530176*t^26 + 
+    3177658764532409015592041/2385658674530176*t^25 + 
+    1680101893489407161173883/1192829337265088*t^24 - 
+    2452921417896253713092485/2385658674530176*t^23 - 
+    7731323951683273095812885/2385658674530176*t^22 - 
+    1715841163300317495457065/2385658674530176*t^21 + 
+    10194959685010560789286181/2385658674530176*t^20 + 
+    7343268152138561588527505/2385658674530176*t^19 - 
+    1168031043895567321829303/298207334316272*t^18 - 
+    2746057536918287653203009/596414668632544*t^17 + 
+    3202782184747199914709359/1192829337265088*t^16 + 
+    10866116839259407849943577/2385658674530176*t^15 - 
+    3490381159415377011619629/2385658674530176*t^14 - 
+    992851066260937727308885/298207334316272*t^13 + 
+    1653198788825773958972021/2385658674530176*t^12 + 
+    4416072424527721996983777/2385658674530176*t^11 - 
+    749924215247111172993669/2385658674530176*t^10 - 
+    1856128743608852400248331/2385658674530176*t^9 + 
+    322925224718458001964829/2385658674530176*t^8 + 
+    570883975888352328129835/2385658674530176*t^7 - 
+    14385476606925546467177/298207334316272*t^6 - 
+    60251357938828243520599/1192829337265088*t^5 + 
+    14454714352639816589663/1192829337265088*t^4 + 
+    15455120055588103075591/2385658674530176*t^3 - 
+    4333579519478655020173/2385658674530176*t^2 - 
+    224641321761949111851/596414668632544*t + 
+    71414458324702754329/596414668632544
+Time taken was 312.850.
+Iteration 1.
+mlist = [ 132, 139, 146, 153, 160, 167, 166 ].
+Updating...
+Done.
+Iteration 2.
+mlist = [ 132, 139, 146, 153, 160, 166, 166 ].
+Updating...
+Done.
+Iteration 3.
+mlist = [ 132, 139, 146, 153, 160, 166, 165 ].
+Updating...
+Done.
+Iteration 4.
+mlist = [ 132, 139, 146, 153, 160, 165, 165 ].
+Updating...
+Done.
+Iteration 5.
+mlist = [ 132, 139, 146, 153, 160, 165, 164 ].
+Updating...
+Done.
+Iteration 6.
+mlist = [ 132, 139, 146, 153, 160, 164, 164 ].
+Updating...
+Done.
+Iteration 7.
+mlist = [ 132, 139, 146, 153, 160, 164, 163 ].
+Updating...
+Done.
+Iteration 8.
+mlist = [ 132, 139, 146, 153, 160, 163, 163 ].
+Updating...
+Done.
+Iteration 9.
+mlist = [ 132, 139, 146, 153, 160, 163, 162 ].
+Updating...
+Done.
+Iteration 10.
+mlist = [ 132, 139, 146, 153, 160, 162, 162 ].
+Updating...
+Done.
+Iteration 11.
+mlist = [ 132, 139, 146, 153, 160, 162, 161 ].
+Updating...
+Done.
+Iteration 12.
+mlist = [ 132, 139, 146, 153, 160, 161, 161 ].
+Updating...
+Done.
+Iteration 13.
+mlist = [ 132, 139, 146, 153, 160, 161, 160 ].
+Updating...
+Done.
+Iteration 14.
+mlist = [ 132, 139, 146, 153, 160, 160, 160 ].
+Updating...
+Done.
+Iteration 15.
+mlist = [ 132, 139, 146, 153, 160, 160, 159 ].
+Updating...
+Done.
+Iteration 16.
+mlist = [ 132, 139, 146, 153, 160, 159, 159 ].
+Updating...
+Done.
+Iteration 17.
+mlist = [ 132, 139, 146, 153, 159, 159, 159 ].
+Updating...
+Done.
+Iteration 18.
+mlist = [ 132, 139, 146, 153, 159, 159, 158 ].
+Updating...
+Done.
+Iteration 19.
+mlist = [ 132, 139, 146, 153, 159, 158, 158 ].
+Updating...
+Done.
+Iteration 20.
+mlist = [ 132, 139, 146, 153, 158, 158, 158 ].
+Updating...
+Done.
+Iteration 21.
+mlist = [ 132, 139, 146, 153, 158, 158, 157 ].
+Updating...
+Done.
+Iteration 22.
+mlist = [ 132, 139, 146, 153, 158, 157, 157 ].
+Updating...
+Done.
+Iteration 23.
+mlist = [ 132, 139, 146, 153, 157, 157, 157 ].
+Updating...
+Done.
+Iteration 24.
+mlist = [ 132, 139, 146, 153, 157, 157, 156 ].
+Updating...
+Done.
+Iteration 25.
+mlist = [ 132, 139, 146, 153, 157, 156, 156 ].
+Updating...
+Done.
+Iteration 26.
+mlist = [ 132, 139, 146, 153, 156, 156, 156 ].
+Updating...
+Done.
+Iteration 27.
+mlist = [ 132, 139, 146, 153, 156, 156, 155 ].
+Updating...
+Done.
+Iteration 28.
+mlist = [ 132, 139, 146, 153, 156, 155, 155 ].
+Updating...
+Done.
+Iteration 29.
+mlist = [ 132, 139, 146, 153, 155, 155, 155 ].
+Updating...
+Done.
+Iteration 30.
+mlist = [ 132, 139, 146, 153, 155, 155, 154 ].
+Updating...
+Done.
+Iteration 31.
+mlist = [ 132, 139, 146, 153, 155, 154, 154 ].
+Updating...
+Done.
+Iteration 32.
+mlist = [ 132, 139, 146, 153, 154, 154, 154 ].
+Updating...
+Done.
+Iteration 33.
+mlist = [ 132, 139, 146, 153, 154, 154, 153 ].
+Updating...
+Done.
+Iteration 34.
+mlist = [ 132, 139, 146, 153, 154, 153, 153 ].
+Updating...
+Done.
+Iteration 35.
+mlist = [ 132, 139, 146, 153, 153, 153, 153 ].
+Updating...
+Done.
+Iteration 36.
+mlist = [ 132, 139, 146, 153, 153, 153, 152 ].
+Updating...
+Done.
+Iteration 37.
+mlist = [ 132, 139, 146, 153, 153, 152, 152 ].
+Updating...
+Done.
+Iteration 38.
+mlist = [ 132, 139, 146, 153, 152, 152, 152 ].
+Updating...
+Done.
+Iteration 39.
+mlist = [ 132, 139, 146, 152, 152, 152, 152 ].
+Updating...
+Done.
+Iteration 40.
+mlist = [ 132, 139, 146, 152, 152, 152, 151 ].
+Updating...
+Done.
+Iteration 41.
+mlist = [ 132, 139, 146, 152, 152, 151, 151 ].
+Updating...
+Done.
+Iteration 42.
+mlist = [ 132, 139, 146, 152, 151, 151, 151 ].
+Updating...
+Done.
+Iteration 43.
+mlist = [ 132, 139, 146, 151, 151, 151, 151 ].
+Updating...
+Done.
+Iteration 44.
+mlist = [ 132, 139, 146, 151, 151, 151, 150 ].
+Updating...
+Done.
+Iteration 45.
+mlist = [ 132, 139, 146, 151, 151, 150, 150 ].
+Updating...
+Done.
+Iteration 46.
+mlist = [ 132, 139, 146, 151, 150, 150, 150 ].
+Updating...
+Done.
+Iteration 47.
+mlist = [ 132, 139, 146, 150, 150, 150, 150 ].
+Updating...
+Done.
+Iteration 48.
+mlist = [ 132, 139, 146, 150, 150, 150, 149 ].
+Updating...
+Done.
+Iteration 49.
+mlist = [ 132, 139, 146, 150, 150, 149, 149 ].
+Updating...
+Done.
+Iteration 50.
+mlist = [ 132, 139, 146, 150, 149, 149, 149 ].
+Updating...
+Done.
+Iteration 51.
+mlist = [ 132, 139, 146, 149, 149, 149, 149 ].
+Updating...
+Done.
+Iteration 52.
+mlist = [ 132, 139, 146, 149, 149, 149, 148 ].
+Updating...
+Done.
+Iteration 53.
+mlist = [ 132, 139, 146, 149, 149, 148, 148 ].
+Updating...
+Done.
+Iteration 54.
+mlist = [ 132, 139, 146, 149, 148, 148, 148 ].
+Updating...
+Done.
+Iteration 55.
+mlist = [ 132, 139, 146, 148, 148, 148, 148 ].
+Updating...
+Done.
+Iteration 56.
+mlist = [ 132, 139, 146, 148, 148, 148, 147 ].
+Updating...
+Done.
+Iteration 57.
+mlist = [ 132, 139, 146, 148, 148, 147, 147 ].
+Updating...
+Done.
+Iteration 58.
+mlist = [ 132, 139, 146, 148, 147, 147, 147 ].
+Updating...
+Done.
+Iteration 59.
+mlist = [ 132, 139, 146, 147, 147, 147, 147 ].
+Updating...
+Done.
+Iteration 60.
+mlist = [ 132, 139, 146, 147, 147, 147, 146 ].
+Updating...
+Done.
+Iteration 61.
+mlist = [ 132, 139, 146, 147, 147, 146, 146 ].
+Updating...
+Done.
+Iteration 62.
+mlist = [ 132, 139, 146, 147, 146, 146, 146 ].
+Updating...
+Done.
+Iteration 63.
+mlist = [ 132, 139, 146, 146, 146, 146, 146 ].
+Updating...
+Done.
+Iteration 64.
+mlist = [ 132, 139, 146, 146, 146, 146, 145 ].
+Updating...
+Done.
+Iteration 65.
+mlist = [ 132, 139, 146, 146, 146, 145, 145 ].
+Updating...
+Done.
+Iteration 66.
+mlist = [ 132, 139, 146, 146, 145, 145, 145 ].
+Updating...
+Done.
+Iteration 67.
+mlist = [ 132, 139, 146, 145, 145, 145, 145 ].
+Updating...
+Done.
+Iteration 68.
+mlist = [ 132, 139, 145, 145, 145, 145, 145 ].
+Updating...
+Done.
+Iteration 69.
+mlist = [ 132, 139, 145, 145, 145, 145, 144 ].
+Updating...
+Done.
+Iteration 70.
+mlist = [ 132, 139, 145, 145, 145, 144, 144 ].
+Updating...
+Done.
+Iteration 71.
+mlist = [ 132, 139, 145, 145, 144, 144, 144 ].
+Updating...
+Done.
+Iteration 72.
+mlist = [ 132, 139, 145, 144, 144, 144, 144 ].
+Updating...
+Done.
+Iteration 73.
+mlist = [ 132, 139, 144, 144, 144, 144, 144 ].
+Updating...
+Done.
+Iteration 74.
+mlist = [ 132, 139, 144, 144, 144, 144, 143 ].
+Updating...
+Done.
+Iteration 75.
+mlist = [ 132, 139, 144, 144, 144, 143, 143 ].
+Updating...
+Done.
+Iteration 76.
+mlist = [ 132, 139, 144, 144, 143, 143, 143 ].
+Updating...
+Done.
+Iteration 77.
+mlist = [ 132, 139, 144, 143, 143, 143, 143 ].
+Updating...
+Done.
+Iteration 78.
+mlist = [ 132, 139, 143, 143, 143, 143, 143 ].
+Updating...
+Done.
+Iteration 79.
+mlist = [ 132, 139, 143, 143, 143, 143, 142 ].
+Updating...
+Done.
+Iteration 80.
+mlist = [ 132, 139, 143, 143, 143, 142, 142 ].
+Updating...
+Done.
+Iteration 81.
+mlist = [ 132, 139, 143, 143, 142, 142, 142 ].
+Updating...
+Done.
+Iteration 82.
+mlist = [ 132, 139, 143, 142, 142, 142, 142 ].
+Updating...
+Done.
+Iteration 83.
+mlist = [ 132, 139, 142, 142, 142, 142, 142 ].
+Updating...
+Done.
+Iteration 84.
+mlist = [ 132, 139, 142, 142, 142, 142, 141 ].
+Updating...
+Done.
+Iteration 85.
+mlist = [ 132, 139, 142, 142, 142, 141, 141 ].
+Updating...
+Done.
+Iteration 86.
+mlist = [ 132, 139, 142, 142, 141, 141, 141 ].
+Updating...
+Done.
+Iteration 87.
+mlist = [ 132, 139, 142, 141, 141, 141, 141 ].
+Updating...
+Done.
+Iteration 88.
+mlist = [ 132, 139, 141, 141, 141, 141, 141 ].
+Updating...
+Done.
+Iteration 89.
+mlist = [ 132, 139, 141, 141, 141, 141, 140 ].
+Updating...
+Done.
+Iteration 90.
+mlist = [ 132, 139, 141, 141, 141, 140, 140 ].
+Updating...
+Done.
+Iteration 91.
+mlist = [ 132, 139, 141, 141, 140, 140, 140 ].
+Updating...
+Done.
+Iteration 92.
+mlist = [ 132, 139, 141, 140, 140, 140, 140 ].
+Updating...
+Done.
+Iteration 93.
+mlist = [ 132, 139, 140, 140, 140, 140, 140 ].
+Updating...
+Done.
+Iteration 94.
+mlist = [ 132, 139, 140, 140, 140, 140, 139 ].
+Updating...
+Done.
+Iteration 95.
+mlist = [ 132, 139, 140, 140, 140, 139, 139 ].
+Updating...
+Done.
+Iteration 96.
+mlist = [ 132, 139, 140, 140, 139, 139, 139 ].
+Updating...
+Done.
+Iteration 97.
+mlist = [ 132, 139, 140, 139, 139, 139, 139 ].
+Updating...
+Done.
+Iteration 98.
+mlist = [ 132, 139, 139, 139, 139, 139, 139 ].
+Updating...
+Done.
+Iteration 99.
+mlist = [ 132, 139, 139, 139, 139, 139, 138 ].
+Updating...
+Done.
+Iteration 100.
+mlist = [ 132, 139, 139, 139, 139, 138, 138 ].
+Updating...
+Done.
+Iteration 101.
+mlist = [ 132, 139, 139, 139, 138, 138, 138 ].
+Updating...
+Done.
+Iteration 102.
+mlist = [ 132, 139, 139, 138, 138, 138, 138 ].
+Updating...
+Done.
+Iteration 103.
+mlist = [ 132, 139, 138, 138, 138, 138, 138 ].
+Updating...
+Done.
+Iteration 104.
+mlist = [ 132, 138, 138, 138, 138, 138, 138 ].
+Updating...
+Done.
+Iteration 105.
+mlist = [ 132, 138, 138, 138, 138, 138, 137 ].
+Updating...
+Done.
+Iteration 106.
+mlist = [ 132, 138, 138, 138, 138, 137, 137 ].
+Updating...
+Done.
+Iteration 107.
+mlist = [ 132, 138, 138, 138, 137, 137, 137 ].
+Updating...
+Done.
+Iteration 108.
+mlist = [ 132, 138, 138, 137, 137, 137, 137 ].
+Updating...
+Done.
+Iteration 109.
+mlist = [ 132, 138, 137, 137, 137, 137, 137 ].
+Updating...
+Done.
+Iteration 110.
+mlist = [ 132, 137, 137, 137, 137, 137, 137 ].
+Updating...
+Done.
+Iteration 111.
+mlist = [ 132, 137, 137, 137, 137, 137, 136 ].
+Updating...
+Done.
+Iteration 112.
+mlist = [ 132, 137, 137, 137, 137, 136, 136 ].
+Updating...
+Done.
+Iteration 113.
+mlist = [ 132, 137, 137, 137, 136, 136, 136 ].
+Updating...
+Done.
+Iteration 114.
+mlist = [ 132, 137, 137, 136, 136, 136, 136 ].
+Updating...
+Done.
+Iteration 115.
+mlist = [ 132, 137, 136, 136, 136, 136, 136 ].
+Updating...
+Done.
+Iteration 116.
+mlist = [ 132, 136, 136, 136, 136, 136, 136 ].
+Updating...
+Done.
+Iteration 117.
+mlist = [ 132, 136, 136, 136, 136, 136, 135 ].
+Updating...
+Done.
+Iteration 118.
+mlist = [ 132, 136, 136, 136, 136, 135, 135 ].
+Updating...
+Done.
+Iteration 119.
+mlist = [ 132, 136, 136, 136, 135, 135, 135 ].
+Updating...
+Done.
+Iteration 120.
+mlist = [ 132, 136, 136, 135, 135, 135, 135 ].
+Updating...
+Done.
+Iteration 121.
+mlist = [ 132, 136, 135, 135, 135, 135, 135 ].
+Updating...
+Done.
+Iteration 122.
+mlist = [ 132, 135, 135, 135, 135, 135, 135 ].
+Updating...
+Done.
+Iteration 123.
+mlist = [ 132, 135, 135, 135, 135, 135, 134 ].
+Updating...
+Done.
+Iteration 124.
+mlist = [ 132, 135, 135, 135, 135, 134, 134 ].
+Updating...
+Done.
+Iteration 125.
+mlist = [ 132, 135, 135, 135, 134, 134, 134 ].
+Working with basis of size 13.
+Simplest element defining the field has index 5.
+Using tvals = [ -2, -1, 0, 1, 2, 3, 4 ].
+Computing specialization 1 of 7.
+Computing LLLed maximal order.
+Computing specialization 2 of 7.
+Computing LLLed maximal order.
+Computing specialization 3 of 7.
+Computing LLLed maximal order.
+Computing specialization 4 of 7.
+Computing LLLed maximal order.
+Computing specialization 5 of 7.
+Computing LLLed maximal order.
+Computing specialization 6 of 7.
+Computing LLLed maximal order.
+Computing specialization 7 of 7.
+Computing LLLed maximal order.
+Clearing denominators.
+Saturating.
+LLLing. (Just for fun. It's not real yet.)
+Changing coordinates.
+Changing coordinates.
+Minimal size model has 1092 characters. Index is 12.
+Simplified equation is y^7 + (-21*x^6 + 84*x^5 + 378*x^4 - 7*x^3 - 455*x^2 + 7*x
++ 112)*y^5 + (70*x^9 + 315*x^8 - 343*x^7 - 1883*x^6 + 63*x^5 + 1771*x^4 + 28*x^3
+- 119*x^2 - 77*x - 119)*y^4 + (1316*x^12 + 5740*x^11 - 1330*x^10 - 15190*x^9 + 
+31143*x^8 + 51674*x^7 - 68159*x^6 - 89299*x^5 + 66759*x^4 + 47999*x^3 - 
+22491*x^2 - 8442*x + 1897)*y^3 + (4200*x^15 + 18956*x^14 + 1876*x^13 - 
+80262*x^12 - 66360*x^11 + 59654*x^10 - 43456*x^9 - 221907*x^8 + 237174*x^7 + 
+505771*x^6 - 231084*x^5 - 405370*x^4 + 88949*x^3 + 133693*x^2 - 11690*x - 
+15526)*y^2 + (5600*x^18 - 560*x^17 - 20468*x^16 + 195188*x^15 + 261275*x^14 - 
+571998*x^13 + 539322*x^12 + 3314367*x^11 - 2143617*x^10 - 10108742*x^9 + 
+1376186*x^8 + 13541437*x^7 + 536830*x^6 - 8564283*x^5 - 1085308*x^4 + 
+2560740*x^3 + 492198*x^2 - 293293*x - 73290)*y + 8000*x^21 - 33600*x^20 - 
+216440*x^19 + 660772*x^18 + 3749214*x^17 - 1548785*x^16 - 23986109*x^15 - 
+13145711*x^14 + 58088625*x^13 + 45371207*x^12 - 78844619*x^11 - 59704673*x^10 + 
+64627521*x^9 + 39436943*x^8 - 29221615*x^7 - 11839730*x^6 + 4824309*x^5 - 
+134890*x^4 + 850675*x^3 + 1025654*x^2 - 295785*x - 194675.
+In this equation, Q(x) is the function field of the modular curve with label 
+7.21.0.1.
+And Q(x,y) is the function field of the modular curve with label 49.147.9.1.
+
+Total time: 97433.550 seconds, Total memory usage: 4672.47MB

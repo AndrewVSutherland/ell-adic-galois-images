@@ -1,0 +1,24 @@
+Magma V2.25-8     Fri Apr 16 2021 17:17:23 on weil     [Seed = 1970072452]
+Type ? for help.  Type <Ctrl>-D to quit.
+
+Loading file "todo.m"
+Loading "gl2data.m"
+Groups to do:
+49.1029.69.1
+49.1372.94.1
+49.147.9.1
+49.168.12.1
+49.168.12.2
+49.196.9.1
+49.56.1.1
+7.21.0.1
+7.24.0.1
+7.24.0.2
+7.24.0.3
+7.28.0.1
+7.42.1.1
+7.56.1.1
+7.56.1.2
+7.8.0.1
+
+Total time: 1.570 seconds, Total memory usage: 32.09MB
