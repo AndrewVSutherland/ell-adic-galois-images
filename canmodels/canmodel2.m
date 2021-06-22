@@ -27,9 +27,12 @@ else
   chk, p, levpower := IsPrimePower(N);
   assert chk;
 end if;
-		      
-load "gl2data.m";
-padicdata := GL2Load("gl2_" cat IntegerToString(p) cat "adic.txt");
+
+Attach("../groups/gl2.m");
+load "../groups/gl2data.m";
+
+padicdata := GL2Load("../groups/gl2_" cat IntegerToString(p) cat "adic.txt");
+
 phiN := EulerPhi(N);
 G := GL(2,Integers(N));
 genlist := Generators(padicdata[l]`subgroup);
