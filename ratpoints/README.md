@@ -1,4 +1,4 @@
-This subdirectory contains `Magma` source files which verify the claims about rational points on the modular curves in Sections 8, 9, and 10 of the paper *l-adic images of Galois for elliptic curves over Q*, by Jeremy Rouse, Andrew V. Sutherland, and David Zureick-Brown. 
+This subdirectory contains `Magma` source files which verify the claims about rational points on the modular curves in Sections 8, 9, and 10 of the paper [*l-adic images of Galois for elliptic curves over Q*](https://arxiv.org/abs/2106.11141).
 
 - The files `N.i.g.n.m` contain an analysis of the rational points on the corresponding modular curve.
 - The file `check-for-sporadic-points.m` verifies that the rational points on curves from Section 8 all correspond to cusps of CM elliptic curves.
