@@ -38,7 +38,4 @@ elliptic curve in the Cremona database.
 the scripts mentioned above. Only non-CM curves and curves for which
 `rho_{E,l^{\infty}}` is not surjective are listed.
 
-- `sample.txt`: A text file that lists each l-adic that occurs for an
-elliptic curve in the Cremona database. All l-adic images (with *3 &le; l &le; 11*) that are known to occur do occur within the range of the
-Cremona database. The smallest conductor curve with a given image is
-listed. CM curves are not listed.
+- `sample.txt`: A text file that lists elliptic curves that realize every l-adic image that is known to occur for a non-CM elliptic curve over Q, for *2 &le; l &le; 37*.
