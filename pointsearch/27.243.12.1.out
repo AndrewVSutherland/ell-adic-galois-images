@@ -1,0 +1,10 @@
+Magma V2.26-3     Sun May 23 2021 20:00:53 on weil     [Seed = 3978781042]
+Type ? for help.  Type <Ctrl>-D to quit.
+
+Loading file "27.243.12.1.txt"
+Loading "gl2data.m"
+bound = 1000.
+Testing 1216760 points.
+Total time = 7576.590.
+
+Total time: 7579.069 seconds, Total memory usage: 122.81MB

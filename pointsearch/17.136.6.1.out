@@ -1,0 +1,271 @@
+Magma V2.26-3     Tue May 25 2021 14:17:55 on weil     [Seed = 13459206]
+Type ? for help.  Type <Ctrl>-D to quit.
+
+Loading file "17.136.6.1.txt"
+Starting with N = 360360 and #perm = 1441440.
+The prime p = 13 cuts the number of elts from 1441440 to 540540.
+The prime p = 19 cuts the number of elts from 540540 to 300300.
+The prime p = 23 cuts the number of elts from 300300 to 248820.
+The prime p = 31 cuts the number of elts from 248820 to 154440.
+The prime p = 37 cuts the number of elts from 154440 to 94380.
+The prime p = 43 cuts the number of elts from 94380 to 58630.
+The prime p = 47 cuts the number of elts from 58630 to 50622.
+The prime p = 53 cuts the number of elts from 50622 to 40326.
+Starting with N = 720720 and #perm = 80652.
+The prime p = 239 cuts the number of elts from 80652 to 75504.
+The prime p = 389 cuts the number of elts from 75504 to 47190.
+Starting with N = 12252240 and #perm = 802230.
+The prime p = 71 cuts the number of elts from 802230 to 686400.
+The prime p = 73 cuts the number of elts from 686400 to 489060.
+The prime p = 227 cuts the number of elts from 489060 to 305448.
+The prime p = 311 cuts the number of elts from 305448 to 172744.
+The prime p = 383 cuts the number of elts from 172744 to 127270.
+The prime p = 601 cuts the number of elts from 127270 to 98384.
+The prime p = 617 cuts the number of elts from 98384 to 61490.
+The prime p = 877 cuts the number of elts from 61490 to 40392.
+Starting with N = 232792560 and #perm = 767448.
+The prime p = 233 cuts the number of elts from 767448 to 464904.
+The prime p = 347 cuts the number of elts from 464904 to 319176.
+The prime p = 467 cuts the number of elts from 319176 to 192456.
+The prime p = 569 cuts the number of elts from 192456 to 162492.
+The prime p = 691 cuts the number of elts from 162492 to 111144.
+The prime p = 809 cuts the number of elts from 111144 to 70200.
+The prime p = 881 cuts the number of elts from 70200 to 44052.
+Starting with N = 5354228880 and #perm = 1013196.
+The prime p = 79 cuts the number of elts from 1013196 to 664140.
+The prime p = 349 cuts the number of elts from 664140 to 461904.
+The prime p = 373 cuts the number of elts from 461904 to 337752.
+The prime p = 499 cuts the number of elts from 337752 to 252744.
+The prime p = 683 cuts the number of elts from 252744 to 167068.
+The prime p = 757 cuts the number of elts from 167068 to 125900.
+The prime p = 1109 cuts the number of elts from 125900 to 80110.
+The prime p = 1231 cuts the number of elts from 80110 to 47261.
+Starting with N = 26771144400 and #perm = 236305.
+The prime p = 97 cuts the number of elts from 236305 to 162748.
+The prime p = 113 cuts the number of elts from 162748 to 103349.
+The prime p = 223 cuts the number of elts from 103349 to 73148.
+The prime p = 421 cuts the number of elts from 73148 to 50168.
+The prime p = 773 cuts the number of elts from 50168 to 36998.
+Starting with N = 80313433200 and #perm = 110994.
+The prime p = 433 cuts the number of elts from 110994 to 84944.
+The prime p = 743 cuts the number of elts from 84944 to 55446.
+The prime p = 787 cuts the number of elts from 55446 to 47478.
+Starting with N = 2329089562800 and #perm = 1376862.
+The prime p = 107 cuts the number of elts from 1376862 to 939840.
+The prime p = 109 cuts the number of elts from 939840 to 467448.
+The prime p = 457 cuts the number of elts from 467448 to 347376.
+The prime p = 461 cuts the number of elts from 347376 to 236136.
+The prime p = 937 cuts the number of elts from 236136 to 139356.
+The prime p = 997 cuts the number of elts from 139356 to 100620.
+The prime p = 1013 cuts the number of elts from 100620 to 67662.
+The prime p = 1493 cuts the number of elts from 67662 to 39208.
+Starting with N = 72201776446800 and #perm = 1215448.
+The prime p = 379 cuts the number of elts from 1215448 to 747676.
+The prime p = 853 cuts the number of elts from 747676 to 497008.
+The prime p = 857 cuts the number of elts from 497008 to 333814.
+The prime p = 1399 cuts the number of elts from 333814 to 232226.
+The prime p = 1481 cuts the number of elts from 232226 to 153470.
+The prime p = 1811 cuts the number of elts from 153470 to 134326.
+The prime p = 1901 cuts the number of elts from 134326 to 71372.
+The prime p = 1907 cuts the number of elts from 71372 to 44968.
+Starting with N = 144403552893600 and #perm = 89936.
+The prime p = 239 cuts the number of elts from 89936 to 71626.
+The prime p = 509 cuts the number of elts from 71626 to 46260.
+Starting with N = 5342931457063200 and #perm = 1711620.
+The prime p = 131 cuts the number of elts from 1711620 to 1211388.
+The prime p = 577 cuts the number of elts from 1211388 to 660036.
+The prime p = 2267 cuts the number of elts from 660036 to 399540.
+The prime p = 2671 cuts the number of elts from 399540 to 268464.
+The prime p = 2879 cuts the number of elts from 268464 to 190588.
+The prime p = 2909 cuts the number of elts from 190588 to 136300.
+The prime p = 3089 cuts the number of elts from 136300 to 72614.
+The prime p = 3121 cuts the number of elts from 72614 to 42878.
+Starting with N = 219060189739591200 and #perm = 1757998.
+The prime p = 167 cuts the number of elts from 1757998 to 1172642.
+The prime p = 331 cuts the number of elts from 1172642 to 651318.
+The prime p = 503 cuts the number of elts from 651318 to 476102.
+The prime p = 659 cuts the number of elts from 476102 to 358872.
+The prime p = 971 cuts the number of elts from 358872 to 237026.
+The prime p = 1163 cuts the number of elts from 237026 to 128680.
+The prime p = 1277 cuts the number of elts from 128680 to 104734.
+The prime p = 1327 cuts the number of elts from 104734 to 51622.
+The prime p = 1499 cuts the number of elts from 51622 to 51154.
+The prime p = 1973 cuts the number of elts from 51154 to 32014.
+Starting with N = 9419588158802421600 and #perm = 1376602.
+The prime p = 479 cuts the number of elts from 1376602 to 920882.
+The prime p = 547 cuts the number of elts from 920882 to 625038.
+The prime p = 727 cuts the number of elts from 625038 to 348974.
+The prime p = 839 cuts the number of elts from 348974 to 279132.
+The prime p = 1213 cuts the number of elts from 279132 to 177368.
+The prime p = 1867 cuts the number of elts from 177368 to 114976.
+The prime p = 1873 cuts the number of elts from 114976 to 68116.
+The prime p = 2251 cuts the number of elts from 68116 to 47531.
+Starting with N = 442720643463713815200 and #perm = 2233957.
+The prime p = 163 cuts the number of elts from 2233957 to 1233140.
+The prime p = 907 cuts the number of elts from 1233140 to 718835.
+The prime p = 2333 cuts the number of elts from 718835 to 463614.
+The prime p = 2749 cuts the number of elts from 463614 to 308784.
+The prime p = 2791 cuts the number of elts from 308784 to 214600.
+The prime p = 2861 cuts the number of elts from 214600 to 198861.
+The prime p = 3391 cuts the number of elts from 198861 to 149294.
+The prime p = 3643 cuts the number of elts from 149294 to 101752.
+The prime p = 3697 cuts the number of elts from 101752 to 75658.
+The prime p = 3719 cuts the number of elts from 75658 to 56454.
+The prime p = 5023 cuts the number of elts from 56454 to 38479.
+Starting with N = 3099044504245996706400 and #perm = 269353.
+The prime p = 173 cuts the number of elts from 269353 to 208023.
+The prime p = 193 cuts the number of elts from 208023 to 114208.
+The prime p = 761 cuts the number of elts from 114208 to 84819.
+The prime p = 769 cuts the number of elts from 84819 to 68598.
+The prime p = 947 cuts the number of elts from 68598 to 42252.
+Starting with N = 164249358725037825439200 and #perm = 2239356.
+The prime p = 797 cuts the number of elts from 2239356 to 1522038.
+The prime p = 863 cuts the number of elts from 1522038 to 1104300.
+The prime p = 1051 cuts the number of elts from 1104300 to 757530.
+The prime p = 1753 cuts the number of elts from 757530 to 570330.
+The prime p = 2099 cuts the number of elts from 570330 to 336318.
+The prime p = 2549 cuts the number of elts from 336318 to 183078.
+The prime p = 2833 cuts the number of elts from 183078 to 121244.
+The prime p = 3083 cuts the number of elts from 121244 to 76110.
+The prime p = 4127 cuts the number of elts from 76110 to 61668.
+The prime p = 4229 cuts the number of elts from 61668 to 50904.
+The prime p = 4751 cuts the number of elts from 50904 to 24159.
+Starting with N = 9690712164777231700912800 and #perm = 1425381.
+The prime p = 491 cuts the number of elts from 1425381 to 889200.
+The prime p = 677 cuts the number of elts from 889200 to 505350.
+The prime p = 1447 cuts the number of elts from 505350 to 299718.
+The prime p = 2521 cuts the number of elts from 299718 to 206157.
+The prime p = 2657 cuts the number of elts from 206157 to 158982.
+The prime p = 2801 cuts the number of elts from 158982 to 121494.
+The prime p = 3877 cuts the number of elts from 121494 to 73527.
+The prime p = 4327 cuts the number of elts from 73527 to 58419.
+The prime p = 4423 cuts the number of elts from 58419 to 45708.
+Starting with N = 591133442051411133755680800 and #perm = 2788188.
+The prime p = 953 cuts the number of elts from 2788188 to 1444812.
+The prime p = 1033 cuts the number of elts from 1444812 to 859986.
+The prime p = 1193 cuts the number of elts from 859986 to 563604.
+The prime p = 1229 cuts the number of elts from 563604 to 341448.
+The prime p = 1471 cuts the number of elts from 341448 to 273732.
+The prime p = 2399 cuts the number of elts from 273732 to 135570.
+The prime p = 2903 cuts the number of elts from 135570 to 101706.
+The prime p = 3511 cuts the number of elts from 101706 to 65808.
+The prime p = 4703 cuts the number of elts from 65808 to 60606.
+The prime p = 4909 cuts the number of elts from 60606 to 60546.
+The prime p = 5009 cuts the number of elts from 60546 to 45486.
+Starting with N = 1182266884102822267511361600 and #perm = 90972.
+The prime p = 2609 cuts the number of elts from 90972 to 49994.
+Starting with N = 79211881234889091923261227200 and #perm = 3349598.
+The prime p = 283 cuts the number of elts from 3349598 to 1983966.
+The prime p = 1303 cuts the number of elts from 1983966 to 1280126.
+The prime p = 1583 cuts the number of elts from 1280126 to 774548.
+The prime p = 3049 cuts the number of elts from 774548 to 427822.
+The prime p = 3221 cuts the number of elts from 427822 to 225538.
+The prime p = 3917 cuts the number of elts from 225538 to 165954.
+The prime p = 3989 cuts the number of elts from 165954 to 92766.
+The prime p = 4241 cuts the number of elts from 92766 to 85368.
+The prime p = 5233 cuts the number of elts from 85368 to 55716.
+The prime p = 5419 cuts the number of elts from 55716 to 37582.
+Starting with N = 5624043567677125526551547131200 and #perm = 2668322.
+The prime p = 563 cuts the number of elts from 2668322 to 1630430.
+The prime p = 811 cuts the number of elts from 1630430 to 846078.
+The prime p = 1933 cuts the number of elts from 846078 to 595730.
+The prime p = 2069 cuts the number of elts from 595730 to 412368.
+The prime p = 2803 cuts the number of elts from 412368 to 260166.
+The prime p = 3037 cuts the number of elts from 260166 to 159434.
+The prime p = 4273 cuts the number of elts from 159434 to 136564.
+The prime p = 5051 cuts the number of elts from 136564 to 98068.
+The prime p = 5563 cuts the number of elts from 98068 to 60948.
+The prime p = 7723 cuts the number of elts from 60948 to 38158.
+Starting with N = 410555180440430163438262940577600 and #perm = 2785534.
+The prime p = 269 cuts the number of elts from 2785534 to 1790316.
+The prime p = 277 cuts the number of elts from 1790316 to 933526.
+The prime p = 313 cuts the number of elts from 933526 to 749404.
+The prime p = 587 cuts the number of elts from 749404 to 477202.
+The prime p = 1787 cuts the number of elts from 477202 to 257164.
+The prime p = 1979 cuts the number of elts from 257164 to 194146.
+The prime p = 2063 cuts the number of elts from 194146 to 83650.
+The prime p = 3803 cuts the number of elts from 83650 to 57070.
+The prime p = 3847 cuts the number of elts from 57070 to 31652.
+Starting with N = 32433859254793982911622772305630400 and #perm = 2500508.
+The prime p = 941 cuts the number of elts from 2500508 to 1693852.
+The prime p = 1249 cuts the number of elts from 1693852 to 960388.
+The prime p = 1279 cuts the number of elts from 960388 to 656748.
+The prime p = 2473 cuts the number of elts from 656748 to 488188.
+The prime p = 4789 cuts the number of elts from 488188 to 279632.
+The prime p = 4817 cuts the number of elts from 279632 to 197224.
+The prime p = 4999 cuts the number of elts from 197224 to 184296.
+The prime p = 5099 cuts the number of elts from 184296 to 107588.
+The prime p = 7417 cuts the number of elts from 107588 to 72820.
+The prime p = 7529 cuts the number of elts from 72820 to 58580.
+The prime p = 8563 cuts the number of elts from 58580 to 47432.
+Starting with N = 97301577764381948734868316916891200 and #perm = 142296.
+The prime p = 1627 cuts the number of elts from 142296 to 125152.
+The prime p = 2633 cuts the number of elts from 125152 to 43508.
+Starting with N = 8076030954443701744994070304101969600 and #perm = 3611164.
+The prime p = 983 cuts the number of elts from 3611164 to 2186388.
+The prime p = 1009 cuts the number of elts from 2186388 to 1538276.
+The prime p = 2677 cuts the number of elts from 1538276 to 1011488.
+The prime p = 2687 cuts the number of elts from 1011488 to 758372.
+The prime p = 2719 cuts the number of elts from 758372 to 394444.
+The prime p = 2729 cuts the number of elts from 394444 to 223820.
+The prime p = 3593 cuts the number of elts from 223820 to 138212.
+The prime p = 5003 cuts the number of elts from 138212 to 111444.
+The prime p = 5237 cuts the number of elts from 111444 to 95892.
+The prime p = 6389 cuts the number of elts from 95892 to 92052.
+The prime p = 6959 cuts the number of elts from 92052 to 91412.
+The prime p = 7901 cuts the number of elts from 91412 to 89136.
+The prime p = 9049 cuts the number of elts from 89136 to 88496.
+The prime p = 12037 cuts the number of elts from 88496 to 39056.
+Starting with N = 718766754945489455304472257065075294400 and #perm = 3475984.
+The prime p = 739 cuts the number of elts from 3475984 to 2040784.
+The prime p = 1373 cuts the number of elts from 2040784 to 1440592.
+The prime p = 3169 cuts the number of elts from 1440592 to 914736.
+The prime p = 3301 cuts the number of elts from 914736 to 471776.
+The prime p = 4271 cuts the number of elts from 471776 to 385728.
+The prime p = 5953 cuts the number of elts from 385728 to 269136.
+The prime p = 6343 cuts the number of elts from 269136 to 161296.
+The prime p = 6451 cuts the number of elts from 161296 to 106388.
+The prime p = 8837 cuts the number of elts from 106388 to 78356.
+The prime p = 11321 cuts the number of elts from 78356 to 62548.
+The prime p = 11633 cuts the number of elts from 62548 to 59800.
+The prime p = 11701 cuts the number of elts from 59800 to 36616.
+In the final step, there are 7103504 permissible k.
+The prime p = 61 cuts the number of elts from 7103504 to 5274472.
+The prime p = 67 cuts the number of elts from 5274472 to 5069608.
+The prime p = 139 cuts the number of elts from 5069608 to 4196608.
+The prime p = 191 cuts the number of elts from 4196608 to 3898624.
+The prime p = 397 cuts the number of elts from 3898624 to 2619688.
+The prime p = 401 cuts the number of elts from 2619688 to 2061128.
+The prime p = 419 cuts the number of elts from 2061128 to 1294760.
+The prime p = 443 cuts the number of elts from 1294760 to 1228101.
+The prime p = 449 cuts the number of elts from 1228101 to 685071.
+The prime p = 487 cuts the number of elts from 685071 to 410379.
+The prime p = 521 cuts the number of elts from 410379 to 254739.
+The prime p = 541 cuts the number of elts from 254739 to 149465.
+The prime p = 599 cuts the number of elts from 149465 to 56381.
+The prime p = 607 cuts the number of elts from 56381 to 32278.
+The prime p = 619 cuts the number of elts from 32278 to 31665.
+The prime p = 643 cuts the number of elts from 31665 to 18140.
+The prime p = 647 cuts the number of elts from 18140 to 13416.
+The prime p = 673 cuts the number of elts from 13416 to 8318.
+The prime p = 709 cuts the number of elts from 8318 to 6059.
+The prime p = 719 cuts the number of elts from 6059 to 4183.
+The prime p = 751 cuts the number of elts from 4183 to 2470.
+The prime p = 823 cuts the number of elts from 2470 to 1508.
+The prime p = 859 cuts the number of elts from 1508 to 994.
+The prime p = 911 cuts the number of elts from 994 to 671.
+The prime p = 967 cuts the number of elts from 671 to 460.
+The prime p = 1031 cuts the number of elts from 460 to 439.
+The prime p = 1039 cuts the number of elts from 439 to 357.
+The prime p = 1049 cuts the number of elts from 357 to 218.
+The prime p = 1063 cuts the number of elts from 218 to 132.
+The prime p = 1093 cuts the number of elts from 132 to 80.
+The prime p = 1103 cuts the number of elts from 80 to 54.
+The prime p = 1153 cuts the number of elts from 54 to 44.
+The prime p = 1217 cuts the number of elts from 44 to 25.
+The prime p = 1289 cuts the number of elts from 25 to 15.
+The prime p = 1297 cuts the number of elts from 15 to 13.
+The prime p = 1321 cuts the number of elts from 13 to 10.
+The prime p = 1367 cuts the number of elts from 10 to 7.
+The prime p = 1423 cuts the number of elts from 7 to 5.
+The prime p = 1451 cuts the number of elts from 5 to 4.

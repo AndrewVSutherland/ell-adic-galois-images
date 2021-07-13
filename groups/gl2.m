@@ -48,6 +48,14 @@ function lmset(M)
     return Sort([r cat [Multiplicity(M,r)]:r in Set(M)]);
 end function;
 
+function sqmod(f,g)
+    Fp := GF(257); RFp := PolynomialRing(Fp);
+    fp := RFp!f; gp := RFp!g;
+    A := Factorization(gp);
+    if #[a:a in A|a[2] eq 1 and not IsSquare(quo<RFp|a[1]>!fp)] gt 0 then return false; end if;
+    return IsSquare(quo<PolynomialRing(BaseRing(g))|g>!f);
+end function;
+
 intrinsic PrimitiveDivisionPolynomial (E::CrvEll, n::RngIntElt) -> RngUpolElt
 { The monic polynomial whose roots are the x-coordinates of kbar-points of order n on E/k. }
     f := DivisionPolynomial(E,n);
@@ -56,17 +64,70 @@ intrinsic PrimitiveDivisionPolynomial (E::CrvEll, n::RngIntElt) -> RngUpolElt
     return f;
 end intrinsic;
 
-intrinsic TorsionDegree (E::CrvEll, n::RngIntElt) -> RngIntElt
-{ The minimal degree of an extension over which E have a rational point of order n. }
+intrinsic IsogenyDegree (E::CrvEll, n::RngIntElt) -> RngIntElt
+{ The minimal degree of an extension over which E has a rational cyclic isogeny of degree n (which must be a prime power < 60). }
+    if n eq 1 then return 1; end if;
+    require IsPrimePower(n) and n lt 60: "n must be a prime power less than 60.";
+    R<x> := PolynomialRing(BaseRing(E));
+    m := Min([Degree(a[1]):a in Factorization(Evaluate(ClassicalModularPolynomial(n),[jInvariant(E),x]))]);
+    return m;
+end intrinsic;
+
+intrinsic IsogenyGaloisGroup (E::CrvEll, n::RngIntElt) -> RngIntElt
+{ The Galois group of the minimal extension over which all cyclic n-isogenies from E are defined (n must be a prime power < 60). }
+    if n eq 1 then return CyclicGroup(1); end if;
+    require IsPrimePower(n) and n lt 60: "n must be a prime power less than 60.";
+    R<x> := PolynomialRing(BaseRing(E));
+    return GaloisGroup(Evaluate(ClassicalModularPolynomial(n),[jInvariant(E),x]));
+end intrinsic;
+
+intrinsic TorsionOrbits (E::CrvEll, n::RngIntElt) -> RngIntElt
+{ The multiset of sizes of Galois orbits of E[n] for an elliptic curve E. }
     require n gt 0: "n must be positive.";
     if n eq 1 then return 1; end if;
     E := WeierstrassModel(MinimalModel(E));  f := HyperellipticPolynomials(E);
     psi := PrimitiveDivisionPolynomial(E,n);
     A := Factorization(psi);
-    d := 2*Min([Degree(a[1]):a in A]);
-    R<x> := PolynomialRing(BaseRing(f));
-    for a in A do if Degree(a[1]) lt d and IsSquare(quo<R|a[1]>!f) then d:= Degree(a[1]); end if; end for;
+    R := PolynomialRing(BaseRing(f));
+    return {* sqmod(f,a[1]) select Degree(a[1])^^(2*a[2]) else (2*Degree(a[1]))^^a[2] : a in A *};
+end intrinsic;
+
+intrinsic TorsionDegree (E::CrvEll, n::RngIntElt) -> RngIntElt
+{ The minimal degree of an extension over which E has a rational point of order n. }
+    require n gt 0: "n must be positive.";
+    if n eq 1 then return 1; end if;
+    E := WeierstrassModel(MinimalModel(E));  f := HyperellipticPolynomials(E);
+    A := Factorization(PrimitiveDivisionPolynomial(E,n));
+    // if n is odd and the n-division polynomial is irreducible, then the mod-n image must contain -I
+    if #A eq 1 and A[1][2] eq 1 and IsOdd(n) then return 2*Degree(A[1][1]); end if;
+    d := Min([Degree(a[1]):a in A]);
+    d := Min([(IsSquare(quo<PolynomialRing(BaseRing(E))|a[1]>!f) select 1 else 2)*Degree(a[1]) : a in A | Degree(a[1]) lt 2*d]);
     return d;
+end intrinsic;
+
+intrinsic FullTorsionDegree (E::CrvEll, n::RngIntElt) -> RngIntElt
+{ The degree of the n-torsion field of E (this can be extremely expensive, use with caution). }
+    require n gt 0: "n must be positive.";
+    if n eq 1 then return 1; end if;
+    E := WeierstrassModel(MinimalModel(E));  f := HyperellipticPolynomials(E);
+    R<X,Y> := PolynomialRing(BaseRing(f),2);
+    g := PrimitiveDivisionPolynomial(E,n);             // roots of g are all x-coords of points of order n
+    if IsOdd(n) and IsIrreducible(g) then
+        return 2*#GaloisGroup(PrimitiveDivisionPolynomial(E,n));
+    end if;
+    h := Resultant(Y^2-Evaluate(f,X),Evaluate(g,X),X); // roots of h are all y-coords of points of order n
+    return #GaloisGroup(Evaluate(h,[0,Parent(g).1])*g);
+end intrinsic;
+
+intrinsic TorsionGaloisGroup (E::CrvEll, n::RngIntElt) -> RngIntElt
+{ Galois group of the n-torsion field of E (this can be extremely expensive, use with caution). }
+    require n gt 0: "n must be positive.";
+    if n eq 1 then return 1; end if;
+    E := WeierstrassModel(MinimalModel(E));  f := HyperellipticPolynomials(E);
+    R<X,Y> := PolynomialRing(BaseRing(f),2);
+    g := PrimitiveDivisionPolynomial(E,n);             // roots of g are all x-coords of points of order n
+    h := Resultant(Y^2-Evaluate(f,X),Evaluate(g,X),X); // roots of h are all y-coords of points of order n
+    return GaloisGroup(Evaluate(h,[0,Parent(g).1])*g);
 end intrinsic;
 
 intrinsic TracesToLPolynomial (t::SeqEnum[RngIntElt], q::RngIntElt) -> RngUPolElt
@@ -314,6 +375,12 @@ intrinsic GL1CompareLabels(a::MonStgElt,b::MonStgElt) -> RngIntElt
     return r lt s select -1 else 1;
 end intrinsic;
 
+intrinsic GL1SortLabels(L::SeqEnum[MonStgElt]) -> SeqEnum[MonStgElt]
+{ Sorts the specified list of labels of subgroups of GL(1,Zhat). }
+    L := Sort(L,func<a,b|GL1CompareLabels(a,b)>);
+    return L;
+end intrinsic;
+
 intrinsic GL2Transpose(H::GrpMat) -> GrpMat
 { Given a subgroup H of GL(n,R) for some ring R returns the transposed subgroup. }
     return sub<GL(Degree(H),BaseRing(H))|[Transpose(g):g in Generators(H)]>;
@@ -422,14 +489,9 @@ intrinsic GL2ContainsCC(H::GrpMat) -> BoolElt
 end intrinsic;
 
 intrinsic GL2ContainsNegativeOne(H::GrpMat) -> BoolElt
-{ True if -I list in H. }
+{ True if -I is in H. }
     R := BaseRing(H);  if not IsFinite(R) and #H eq 1 then return true; end if;
     return -Identity(H) in H;
-end intrinsic;
-
-intrinsic GL2ContainsNegId(H::GrpMat) -> BoolElt
-{ True if -I list in H. }
-    return GL2ContainsNegativeOne(H);
 end intrinsic;
 
 intrinsic GL2Level(H::GrpMat) -> RngIntElt, GrpMat
@@ -804,6 +866,7 @@ end intrinsic;
 
 intrinsic GL2SimilaritySet(H::GrpMat) -> SeqEnum[Tup]
 { Set of similarity invariants arising in H. }
+    if Type(BaseRing(H)) ne RngIntRes then return {[]}; end if;
     return { GL2SimilarityInvariant(c[3]): c in ConjugacyClasses(H) };
 end intrinsic;
 
@@ -928,7 +991,7 @@ function IsHCPRoot(D,j)  // returns true if j is a root of H_D(x), attempts to u
     return Degree(GCD(ChangeRing(Denominator(f),F)*j - ChangeRing(Numerator(f),F), ChangeRing(H,F))) gt 0;
 end function;
 
-/* The function below is a test harness for GL2FrobeniusMatrix, use Test(q,func<x|GL2FrobeniusMatrix(E)>) to test it on every elliptic curve E/Q
+/* The function below is a test harness for GL2FrobeniusMatrix, use Test(q,func<x|GL2FrobeniusMatrix(E)>) to test it on every elliptic curve E/Fq
 function Test(q,f)
     sts := true;
     for j in GF(q) do
@@ -1076,10 +1139,10 @@ intrinsic GL2FrobeniusMatrix(E::CrvEll[FldRat], p::RngIntElt) -> AlgMatElt[RngIn
     return GL2FrobeniusMatrix(ChangeRing(E,GF(p)));
 end intrinsic;
 
-intrinsic GL2FrobeniusMatrices(E::CrvEll[FldRat], B::RngIntElt) -> AlgMatElt[RngInt]
+intrinsic GL2FrobeniusMatrices(E::CrvEll[FldRat], B::RngIntElt:B0:=1) -> AlgMatElt[RngInt]
 { Given an elliptic curve E/Q and a bound B returns a list of 2-by-2 integer matrices A of determinant p (for primes p <= B of good reduction) whose reduction modulo any integer N coprime to det(A) gives the action of Frobenius on (E mod p)[N] with respect to some basis. }
     E := MinimalModel(E); D := Integers()!Discriminant(E);
-    return [GL2FrobeniusMatrix(ChangeRing(E,GF(p))) : p in PrimesInInterval(1,B) | D mod p ne 0];
+    return [GL2FrobeniusMatrix(ChangeRing(E,GF(p))) : p in PrimesInInterval(B0,B) | D mod p ne 0];
 end intrinsic;
 
 intrinsic GL2nTorsionFrobenius(E::CrvEll[FldFin], n::RngIntElt) -> AlgMatElt[RngIntRes]
@@ -1098,7 +1161,6 @@ intrinsic GL2nTorsionFrobenius(E::CrvEll[FldRat], p::RngIntElt, n::RngIntElt) ->
     require n gt 1 and GCD(p,n) eq 1: "n must be an integer greater than one that is coprime to the characteristic";
     return GL(2,Integers(n))!GL2FrobeniusMatrix(E,p);
 end intrinsic;
-
 
 forward j1728FM;
 
@@ -1132,7 +1194,7 @@ function j0FM(q)
     return [<FrobMat(u,v,-3),1/3>, <FrobMat((u+3*v) div 2,(u-v) div 2,-3),1/3>, <FrobMat((u-3*v) div 2,(u+v) div 2,-3),1/3>];
 end function;
 
-function j0Points(N,f,q) GL2 := GL(2,Integers(N)); return Integers()! &+[f(GL2!A[1])*A[2]:A in j0FM(q)]; end function;
+function j0PointCount(N,f,q) GL2 := GL(2,Integers(N)); return Integers()! &+[f(GL2!A[1])*A[2]:A in j0FM(q)]; end function;
 
 function j1728FM(q)
     _,p,e := IsPrimePower(q);
@@ -1156,11 +1218,11 @@ function j1728FM(q)
     return [<FrobMat(a,b,b eq 0 select 1 else -4),1/2>,<FrobMat(2*b,a div 2,-4),1/2>];
 end function;
 
-function j1728Points(N,f,q) GL2 := GL(2,Integers(N)); return Integers()! &+[f(GL2!A[1])*A[2]:A in j1728FM(q)]; end function;
+function j1728PointCount(N,f,q) GL2 := GL(2,Integers(N)); return Integers()! &+[f(GL2!A[1])*A[2]:A in j1728FM(q)]; end function;
 
 // Given level N, permutation character f table C indexed by conjugacy class, class map f, class number table htab for -D <= 4q, prime power q coprime to {N
 // returns the number of points on X_H(Fq) above non-cuspidal j!=0,1728
-function jNormalPoints(N,f,htab,q)
+function jNormalPointCount(N,f,htab,q)
     t,p,e := IsPrimePower(q); assert(t);
     GL2 := GL(2,Integers(N));
     assert GCD(q,N) eq 1;
@@ -1197,9 +1259,50 @@ function jNormalPoints(N,f,htab,q)
     return cnt;
 end function;
 
+intrinsic GL2jCounts(H::GrpMat,q::RngIntElt:chi:=0) -> SetEnum[FldFinElt]
+{ A list of counts of the number of Fq-points above each points of Y(1), ordered as GF(q) is ordered. }
+    N,H := GL2Level(H);
+    require IsPrimePower(q) and GCD(q,N) eq 1: "q must be a prime power that is coprime to the level of H";
+    if N eq 1 then return [1:j in GF(q)]; end if;
+    G := GL(2,Integers(N));
+    f := Type(chi) eq RngIntElt select GL2PermutationCharacter(sub<G|H,-Identity(G)>) else chi;
+    J := [];
+    for j in GF(q) do
+        if j eq 0 then Append(~J,j0PointCount(N,f,q)); continue; end if;
+        if j eq 1728 then Append(~J,j1728PointCount(N,f,q)); continue; end if;
+        Append(~J,f(G!GL2FrobeniusMatrix(EllipticCurveFromjInvariant(j))));
+    end for;
+    return J;
+end intrinsic;
+
+intrinsic GL2jCounts(H::GrpMat,Q::SeqEnum) -> SeqEnum[FldFinElt]
+{ A list of lists of  counts of the number of Fq-points above each points of Y(1), ordered as GF(q) is ordered for q in Q. }
+    N,H := GL2Level(H);
+    if N eq 1 then return [[1:j in GF(q)]:q in Q]; end if;
+    G := GL(2,Integers(N));
+    chi := GL2PermutationCharacter(sub<G|H,-Identity(G)>);
+    return [ GL2jCounts(H,q:chi:=chi) : q in Q ];
+end intrinsic;
+
+intrinsic GL2jInvariants(H::GrpMat,q::RngIntElt:chi:=0) -> SetEnum[FldFinElt]
+{ A list of the affine points in the set j(X_H(Fq)). }
+    J := GL2jCounts(H,q:chi:=chi);
+    Fq := [j:j in GF(q)];
+    return [Fq[i]:i in [1..q]|J[i] gt 0];
+end intrinsic;
+
+intrinsic GL2jInvariants(H::GrpMat,Q::SeqEnum) -> SeqEnum[FldFinElt]
+{ A list of lists of the affine points in the set j(X_H(Fq)) for q in Q. }
+    N,H := GL2Level(H);
+    if N eq 1 then return [*[j:j in GF(q)]:q in Q*]; end if;
+    G := GL(2,Integers(N));
+    chi := GL2PermutationCharacter(sub<G|H,-Identity(G)>);
+    return [* GL2jInvariants(H,q:chi:=chi) : q in Q *];
+end intrinsic;
+
 // htab:=ClassNumbers(4*p), f:=GL2PermutationCharacter(H cup -H), C:=GL2RationalCuspCounts(H)
-function XHPoints(N,htab,f,C,q)
-    j := jNormalPoints(N,f,htab,q); j0 := j0Points(N,f,q); j1728 := GCD(q,6) eq 1 select j1728Points(N,f,q) else 0;
+function XHPointCount(N,htab,f,C,q)
+    j := jNormalPointCount(N,f,htab,q); j0 := j0PointCount(N,f,q); j1728 := GCD(q,6) eq 1 select j1728PointCount(N,f,q) else 0;
     return j+j0+j1728+C[q mod N];
 end function;
 
@@ -1216,7 +1319,7 @@ intrinsic GL2PointCounts(H::GrpMat,Q::SeqEnum) -> SeqEnum
     htab := #Q le 100 select ClassNumberTable(4096) else ClassNumberTable(4*m);
     C := (#Q eq 1 and not lists) select [Q[1] mod N eq i select GL2RationalCuspCount(H,Q[1]) else 0:i in [1..N]] else GL2RationalCuspCounts(H);
     f := GL2PermutationCharacter(sub<G|H,-Identity(G)>);
-    pts := dindex gt 1 select func<q|GL1![q] in D select XHPoints(N,htab,f,C,q) else 0> else func<q|XHPoints(N,htab,f,C,q)>;
+    pts := dindex gt 1 select func<q|GL1![q] in D select XHPointCount(N,htab,f,C,q) else 0> else func<q|XHPointCount(N,htab,f,C,q)>;
     return lists select [[pts(q):q in r]:r in Q] else [pts(q):q in Q];
 end intrinsic;
 
@@ -1311,10 +1414,21 @@ intrinsic GL2IsogenyClass(H::GrpMat) -> MonStgElt, RngIntElt
    return c, Rank(EE[1]);
 end intrinsic;
 
-intrinsic GL2QAdmissible(H::GrpMat:RequireNegId:=false) -> BoolElt
+intrinsic GL2QAdmissible(H::GrpMat:MustContainNegativeOne:=false) -> BoolElt
 { True if the specified subgroup of GL2(Z/NZ) has determinant index one and contains an element corresponding to complex conjugation (these are preconditions to having Q-rational points). }
     if not IsFinite(BaseRing(H)) and #H eq 1 then return true; end if;
-    return (not RequireNegId or -Identity(H) in H) and (GL2DeterminantIndex(H) eq 1) and GL2ContainsComplexConjugation(H);
+    return (not MustContainNegativeOne or -Identity(H) in H) and (GL2DeterminantIndex(H) eq 1) and GL2ContainsComplexConjugation(H);
+end intrinsic;
+
+intrinsic GL2QInfinite(H::GrpMat:MustContainNegativeOne:=false) -> BoolElt
+{ True if the j(X_H(Q)) is infinite. }
+    if not IsFinite(BaseRing(H)) and #H eq 1 then return true; end if;
+    if not GL2QAdmissible(H) then return false; end if;
+    g := GL2Genus(H);
+    if g eq 0 then return true; end if;
+    if g gt 1 then return false; end if;
+    _,r := GL2IsogenyClass(H);
+    return r gt 0;
 end intrinsic;
 
 intrinsic GL2QObstructions(H::GrpMat:B:=0) -> SeqEnum[RngIntElt]
@@ -1333,7 +1447,7 @@ intrinsic GL2QObstructions(H::GrpMat:B:=0) -> SeqEnum[RngIntElt]
 end intrinsic;
 
 intrinsic GL2QInfinite(N::RngIntElt) -> SeqEnum[GrpMat]
-{ List of subgroups of GL(2,Z/NZ) for which X_H(Q) is infinite (not all of which will have level N). }
+{ List of subgroups of GL(2,Z/NZ) for which j(X_H(Q)) is infinite (not all of which will have level N). }
     require N gt 0: "N must be a positive integer.";
     if N eq 1 then return [sub<GL(2,Integers())|>]; end if;
     Xkey := func<r|<r[1],r[2],r[3],r[4],r[5]>>;
@@ -1344,7 +1458,7 @@ intrinsic GL2QInfinite(N::RngIntElt) -> SeqEnum[GrpMat]
     X := AssociativeArray(); X[Xkey(r)] := S;
     n := 1;
     while n le #S do
-        L := [H`subgroup: H in MaximalSubgroups(S[n][6]) | GL2QAdmissible(H`subgroup:RequireNegId)];
+        L := [H`subgroup: H in MaximalSubgroups(S[n][6]) | GL2QAdmissible(H`subgroup:MustContainNegativeOne)];
         genus := [GL2Genus(H) : H in L];
         I := [i: i in [1..#L]|genus[i] le 1];
         L := [<level,GL2Index(H),genus[i],GL2OrbitSignature(H:N:=level),GL2ScalarIndex(H),L[i]> where level,H:=GL2Level(L[i]):i in I];
@@ -1389,6 +1503,12 @@ intrinsic GL2CompareLabels(a::MonStgElt,b::MonStgElt) -> RngIntElt
     r := [StringToInteger(x):x in Split(a,".")]; s := [StringToInteger(x):x in Split(b,".")];
     require #r eq 4 and #s eq 4: "Invalid subgroup label";
     return r lt s select -1 else 1;
+end intrinsic;
+
+intrinsic GL2SortLabels(L::SeqEnum[MonStgElt]) -> SeqEnum[MonStgElt]
+{ Sorts the specified list of labels of subgroups of GL(2,Zhat). }
+    L := Sort(L,func<a,b|GL2CompareLabels(a,b)>);
+    return L;
 end intrinsic;
 
 intrinsic GL2CompareLabelLists(a::SeqEnum[MonStgElt],b::SeqEnum[MonStgElt]) -> RngIntElt
@@ -1483,7 +1603,7 @@ intrinsic GL2Lattice(N::RngIntElt, IndexLimit::RngIntElt : DeterminantLabel:="1.
             for i in Y[r] do L[i] := label(k[1],k[2],k[3],n); n +:= 1; end for;
         end for;
     end for;
-    Lsubs := [Sort([L[j]:j in subs(i)],func<a,b|GL2CompareLabels(a,b)>): i in [1..#S]];
+    Lsubs := [GL2SortLabels([L[j]:j in subs(i)]): i in [1..#S]];
     if Verbose then printf "%.3os\nMinimizing generators for %o groups...", Cputime()-s, #L; s:=Cputime(); end if;
     X := AssociativeArray();
     for i:=1 to #L do
@@ -1533,10 +1653,30 @@ intrinsic GL2LookupLabel(X::Assoc, H::GrpMat : g:=-1, NotFound:="?") -> MonStgEl
     assert false;
 end intrinsic;
 
-intrinsic GL2QInfinite(X::Assoc) -> SeqEnum[MonStgElt]
-{ Sorted list of labels in the specified subgroup lattice for which X_H(Q) is infinite. }
+intrinsic GL2Subgroups(k::MonStgElt,X::Assoc) -> SeqEnum[MonStgElt]
+{ Returns a sorted list of labels of groups in X that are conjugate to a subgroup of the group with label k (which will necessarily be the first entry in the list). }
+    require IsDefined(X,k): "k must be the label of a group in X";
+    S := {k}; more := S;
+    repeat more := Set(&cat[X[k]`children : k in more]); S join:= more; until #more eq 0;
+    return GL2SortLabels([k:k in S]);
+end intrinsic;
+
+intrinsic GL2Supergroups(k::MonStgElt,X::Assoc) -> SeqEnum[MonStgElt]
+{ Returns a sorted list of labels of groups in X that contain a subgroup conjugate to the group with label k (which will necessarily be the last entry in the list). }
+    S := {k}; more := S;
+    repeat more := Set(&cat[X[k]`parents : k in more]); S join:= more; until #more eq 0;
+    return GL2SortLabels([k:k in S]);
+end intrinsic;
+
+intrinsic GL2QInfinite(r::Rec:MustContainNegativeOne:=false) -> BoolElt
+{ True if j(X_H(Q)) is infinite, where H = r`subgroup. }
     posrank := func<r|"rank" in Names(r) select r`rank gt 0 else (rank gt 0 where _,rank:=GL2IsogenyClass(r`subgroup))>;
-    S := Sort([k : k in Keys(X) | X[k]`genus le 1 and GL2QAdmissible(X[k]`subgroup) and (X[k]`genus eq 0 or posrank(X[k]))],func<a,b|GL2CompareLabels(a,b)>);
+    return r`genus le 1 and GL2QAdmissible(r`subgroup:MustContainNegativeOne:=MustContainNegativeOne) and (r`genus eq 0 or posrank(r));
+end intrinsic;
+
+intrinsic GL2QInfinite(X::Assoc:MustContainNegativeOne:=false) -> SeqEnum[MonStgElt]
+{ Sorted list of labels in the specified subgroup lattice for which X_H(Q) is infinite. }
+    S := Sort([k : k in Keys(X) |GL2QInfinite(X[k]:MustContainNegativeOne:=MustContainNegativeOne)],func<a,b|GL2CompareLabels(a,b)>);
     return S;
 end intrinsic;
 
@@ -1547,27 +1687,94 @@ intrinsic GL2ArithmeticallyMaximal(X) -> SeqEnum[MonStgElt]
     return S;
 end intrinsic;
 
-intrinsic GL2EllAdicImageCandidates(E::CrvEll,A::SeqEnum,X::Assoc:Fast:=false) -> SeqEnum[MonStgElt]
-{ Given a non-CM elliptic curve E/Q, a list of Frobenius matrices A for E, and a lattice of ell-adic subgroups X, returns a label a list of lables of all the groups in X that could be the ell-adic image of E. }
+/*
+  The precomputed lists Xn below contain sets of similarity-invariants of elements of GL(2,Integers(n)) that do not appear in maximal subgroups with det-index 1
+  Computed using:
+    G := GL(2,Integers(n)); S := GL2SimilaritySet(G);
+    X := [S diff GL2SimilaritySet(H`subgroup) : H in MaximalSubgroups(G) | GL2DeterminantIndex(H`subgroup) eq 1];
+*/
+X8 := [{[[8,7,6,0,0,0,0]],[[8,1,2,1,1,2,0]],[[8,5,2,1,1,1,0]],[[8,5,2,1,1,3,0]],[[8,1,6,1,1,1,2]],[[8,1,2,0,0,0,0]],[[8,3,6,0,0,0,0]],[[8,1,6,0,0,0,0]],[[8,7,2,0,0,0,0]],[[8,1,2,1,1,0,0]],[[8,3,2,0,0,0,0]],[[8,7,0,1,1,0,3]],[[8,3,4,1,1,2,1]],[[8,5,2,0,0,0,0]],[[8,3,4,1,1,0,1]],[[8,7,0,1,1,2,3]],[[8,1,6,1,1,3,2]],[[8,5,6,1,1,2,2]],[[8,5,6,1,1,0,2]],[[8,5,6,0,0,0,0]]},{[[8,7,5,0,0,0,0]],[[8,1,1,0,0,0,0]],[[8,7,3,0,0,0,0]],[[8,7,7,0,0,0,0]],[[8,7,1,0,0,0,0]],[[8,5,3,0,0,0,0]],[[8,5,7,0,0,0,0]],[[8,3,3,0,0,0,0]],[[8,5,5,0,0,0,0]],[[8,3,5,0,0,0,0]],[[8,1,7,0,0,0,0]],[[8,3,7,0,0,0,0]],[[8,1,3,0,0,0,0]],[[8,5,1,0,0,0,0]],[[8,1,5,0,0,0,0]],[[8,3,1,0,0,0,0]]},{[[8,7,1,0,0,0,0]],[[8,1,4,0,0,0,0]],[[8,1,0,0,0,0,0]],[[8,3,4,1,1,2,1]],[[8,5,2,0,0,0,0]],[[8,7,0,1,1,2,3]],[[8,3,4,1,1,0,1]],[[8,3,3,0,0,0,0]],[[8,3,7,0,0,0,0]],[[8,3,1,0,0,0,0]],[[8,3,0,1,1,1,3]],[[8,1,6,0,0,0,0]],[[8,7,5,0,0,0,0]],[[8,3,0,1,1,3,3]],[[8,5,4,0,0,0,0]],[[8,3,5,0,0,0,0]],[[8,7,0,1,1,0,3]],[[8,7,7,0,0,0,0]],[[8,7,4,1,1,1,1]],[[8,5,0,0,0,0,0]],[[8,5,6,0,0,0,0]],[[8,7,4,1,1,3,1]],[[8,7,3,0,0,0,0]],[[8,1,2,0,0,0,0]]},{[[8,3,4,0,0,0,0]],[[8,7,6,0,0,0,0]],[[8,7,4,0,0,0,0]],[[8,3,0,0,0,0,0]],[[8,1,2,0,0,0,0]],[[8,5,0,0,0,0,0]],[[8,3,6,0,0,0,0]],[[8,1,6,0,0,0,0]],[[8,7,2,0,0,0,0]],[[8,1,0,0,0,0,0]],[[8,5,4,0,0,0,0]],[[8,3,2,0,0,0,0]],[[8,1,4,0,0,0,0]],[[8,5,2,0,0,0,0]],[[8,7,0,0,0,0,0]],[[8,5,6,0,0,0,0]]},{[[8,7,1,0,0,0,0]],[[8,5,2,2,3,0,1]],[[8,3,6,0,0,0,0]],[[8,5,6,1,1,2,2]],[[8,1,4,0,0,0,0]],[[8,1,0,0,0,0,0]],[[8,3,0,0,0,0,0]],[[8,5,1,0,0,0,0]],[[8,5,2,1,1,3,0]],[[8,7,0,1,1,2,3]],[[8,5,2,2,3,1,1]],[[8,5,6,1,1,0,2]],[[8,5,3,0,0,0,0]],[[8,3,2,0,0,0,0]],[[8,1,6,0,0,0,0]],[[8,7,5,0,0,0,0]],[[8,7,0,1,1,0,3]],[[8,3,4,0,0,0,0]],[[8,7,7,0,0,0,0]],[[8,5,2,1,1,1,0]],[[8,7,4,1,1,1,1]],[[8,5,5,0,0,0,0]],[[8,7,4,1,1,3,1]],[[8,5,6,2,1,1,1]],[[8,7,3,0,0,0,0]],[[8,5,7,0,0,0,0]],[[8,1,2,0,0,0,0]],[[8,5,6,2,1,0,1]]},{[[8,5,2,2,3,0,1]],[[8,5,6,1,1,2,2]],[[8,1,4,0,0,0,0]],[[8,1,0,0,0,0,0]],[[8,7,6,0,0,0,0]],[[8,3,4,1,1,2,1]],[[8,5,1,0,0,0,0]],[[8,5,2,1,1,3,0]],[[8,7,2,0,0,0,0]],[[8,3,4,1,1,0,1]],[[8,3,3,0,0,0,0]],[[8,3,7,0,0,0,0]],[[8,5,2,2,3,1,1]],[[8,5,6,1,1,0,2]],[[8,3,1,0,0,0,0]],[[8,3,0,1,1,1,3]],[[8,5,3,0,0,0,0]],[[8,1,6,0,0,0,0]],[[8,3,0,1,1,3,3]],[[8,3,5,0,0,0,0]],[[8,5,2,1,1,1,0]],[[8,7,0,0,0,0,0]],[[8,5,5,0,0,0,0]],[[8,5,6,2,1,1,1]],[[8,5,7,0,0,0,0]],[[8,1,2,0,0,0,0]],[[8,7,4,0,0,0,0]],[[8,5,6,2,1,0,1]]}];
+X9 := [{[[9,7,2,0,0,0,0]],[[9,8,2,0,0,0,0]],[[9,5,5,0,0,0,0]],[[9,1,7,0,0,0,0]],[[9,8,3,0,0,0,0]],[[9,4,5,1,1,0,1]],[[9,1,5,0,0,0,0]],[[9,1,2,1,1,1,0]],[[9,5,7,0,0,0,0]],[[9,5,4,0,0,0,0]],[[9,8,1,0,0,0,0]],[[9,4,4,1,2,0,0]],[[9,4,8,0,0,0,0]],[[9,1,7,1,2,2,1]],[[9,8,7,0,0,0,0]],[[9,4,5,1,1,2,1]],[[9,1,2,0,0,0,0]],[[9,1,6,0,0,0,0]],[[9,4,4,1,2,2,0]],[[9,7,1,1,2,2,2]],[[9,4,5,0,0,0,0]],[[9,1,7,1,2,1,1]],[[9,8,6,0,0,0,0]],[[9,2,3,0,0,0,0]],[[9,2,1,0,0,0,0]],[[9,4,1,0,0,0,0]],[[9,4,6,0,0,0,0]],[[9,7,1,1,2,1,2]],[[9,2,8,0,0,0,0]],[[9,5,6,0,0,0,0]],[[9,7,1,0,0,0,0]],[[9,1,7,1,2,0,1]],[[9,7,6,0,0,0,0]],[[9,7,8,1,1,1,2]],[[9,2,4,0,0,0,0]],[[9,4,3,0,0,0,0]],[[9,2,6,0,0,0,0]],[[9,1,2,1,1,0,0]],[[9,2,5,0,0,0,0]],[[9,1,3,0,0,0,0]],[[9,7,8,1,1,2,2]],[[9,4,4,0,0,0,0]],[[9,4,5,1,1,1,1]],[[9,7,3,0,0,0,0]],[[9,7,1,1,2,0,2]],[[9,5,2,0,0,0,0]],[[9,1,2,1,1,2,0]],[[9,5,3,0,0,0,0]],[[9,1,4,0,0,0,0]],[[9,7,7,0,0,0,0]],[[9,4,4,1,2,1,0]],[[9,7,8,0,0,0,0]],[[9,8,8,0,0,0,0]],[[9,7,8,1,1,0,2]]},{[[9,8,7,0,0,0,0]],[[9,2,5,0,0,0,0]],[[9,5,4,0,0,0,0]],[[9,2,4,0,0,0,0]],[[9,5,5,0,0,0,0]],[[9,1,6,0,0,0,0]],[[9,8,4,0,0,0,0]],[[9,1,0,0,0,0,0]],[[9,7,6,0,0,0,0]],[[9,1,3,0,0,0,0]],[[9,5,2,0,0,0,0]],[[9,8,2,0,0,0,0]],[[9,4,3,0,0,0,0]],[[9,2,1,0,0,0,0]],[[9,5,8,0,0,0,0]],[[9,2,7,0,0,0,0]],[[9,2,8,0,0,0,0]],[[9,2,2,0,0,0,0]],[[9,4,0,0,0,0,0]],[[9,8,8,0,0,0,0]],[[9,4,6,0,0,0,0]],[[9,8,5,0,0,0,0]],[[9,7,3,0,0,0,0]],[[9,8,1,0,0,0,0]],[[9,7,0,0,0,0,0]],[[9,5,7,0,0,0,0]],[[9,5,1,0,0,0,0]]},{[[9,1,7,0,0,0,0]],[[9,1,8,0,0,0,0]],[[9,1,5,0,0,0,0]],[[9,1,1,0,0,0,0]],[[9,7,5,0,0,0,0]],[[9,4,1,0,0,0,0]],[[9,1,4,0,0,0,0]],[[9,4,2,0,0,0,0]],[[9,7,2,0,0,0,0]],[[9,7,1,0,0,0,0]],[[9,1,2,0,0,0,0]],[[9,7,7,0,0,0,0]],[[9,7,8,0,0,0,0]],[[9,7,4,0,0,0,0]],[[9,4,5,0,0,0,0]],[[9,4,4,0,0,0,0]],[[9,4,8,0,0,0,0]],[[9,4,7,0,0,0,0]]}];
+X5 := [{[[5,1,2,0,0,0,0]],[[5,4,4,0,0,0,0]],[[5,2,2,0,0,0,0]],[[5,1,3,0,0,0,0]],[[5,4,1,0,0,0,0]],[[5,2,3,0,0,0,0]],[[5,3,1,0,0,0,0]],[[5,3,4,0,0,0,0]]},{[[5,1,1,0,0,0,0]],[[5,4,2,0,0,0,0]],[[5,2,4,0,0,0,0]],[[5,1,4,0,0,0,0]],[[5,3,0,0,0,0,0]],[[5,2,1,0,0,0,0]],[[5,4,3,0,0,0,0]],[[5,3,2,0,0,0,0]],[[5,3,3,0,0,0,0]],[[5,2,0,0,0,0,0]]},{[[5,1,2,0,0,0,0]],[[5,2,1,0,0,0,0]],[[5,4,4,0,0,0,0]],[[5,1,3,0,0,0,0]],[[5,4,1,0,0,0,0]],[[5,2,4,0,0,0,0]],[[5,3,2,0,0,0,0]],[[5,3,3,0,0,0,0]]}];
+X7 := [{[[7,4,3,0,0,0,0]],[[7,6,1,0,0,0,0]],[[7,3,1,0,0,0,0]],[[7,1,4,0,0,0,0]],[[7,4,6,0,0,0,0]],[[7,3,6,0,0,0,0]],[[7,2,6,0,0,0,0]],[[7,2,2,0,0,0,0]],[[7,6,6,0,0,0,0]],[[7,2,5,0,0,0,0]],[[7,6,3,0,0,0,0]],[[7,4,1,0,0,0,0]],[[7,6,4,0,0,0,0]],[[7,3,5,0,0,0,0]],[[7,5,2,0,0,0,0]],[[7,1,5,0,0,0,0]],[[7,5,3,0,0,0,0]],[[7,4,4,0,0,0,0]],[[7,3,2,0,0,0,0]],[[7,2,1,0,0,0,0]],[[7,1,3,0,0,0,0]],[[7,5,4,0,0,0,0]],[[7,1,2,0,0,0,0]],[[7,5,5,0,0,0,0]]},{[[7,2,2,0,0,0,0]],[[7,1,0,0,0,0,0]],[[7,3,6,0,0,0,0]],[[7,3,2,0,0,0,0]],[[7,6,3,0,0,0,0]],[[7,1,3,0,0,0,0]],[[7,5,4,0,0,0,0]],[[7,3,1,0,0,0,0]],[[7,5,5,0,0,0,0]],[[7,2,5,0,0,0,0]],[[7,5,2,0,0,0,0]],[[7,4,0,0,0,0,0]],[[7,6,4,0,0,0,0]],[[7,6,6,0,0,0,0]],[[7,5,3,0,0,0,0]],[[7,6,1,0,0,0,0]],[[7,1,4,0,0,0,0]],[[7,4,1,0,0,0,0]],[[7,4,6,0,0,0,0]],[[7,3,5,0,0,0,0]],[[7,2,0,0,0,0,0]]},{[[7,3,3,0,0,0,0]],[[7,4,3,0,0,0,0]],[[7,1,5,0,0,0,0]],[[7,3,4,0,0,0,0]],[[7,2,6,0,0,0,0]],[[7,1,6,0,0,0,0]],[[7,5,1,0,0,0,0]],[[7,5,6,0,0,0,0]],[[7,4,5,0,0,0,0]],[[7,6,5,0,0,0,0]],[[7,6,2,0,0,0,0]],[[7,1,1,0,0,0,0]],[[7,1,2,0,0,0,0]],[[7,4,2,0,0,0,0]],[[7,4,4,0,0,0,0]],[[7,2,3,0,0,0,0]],[[7,2,1,0,0,0,0]],[[7,2,4,0,0,0,0]]}];
+X13 := [{[[13,2,2,0,0,0,0]],[[13,2,10,0,0,0,0]],[[13,9,1,0,0,0,0]],[[13,1,9,0,0,0,0]],[[13,7,9,0,0,0,0]],[[13,7,4,0,0,0,0]],[[13,10,1,0,0,0,0]],[[13,8,7,0,0,0,0]],[[13,12,3,0,0,0,0]],[[13,11,10,0,0,0,0]],[[13,3,9,0,0,0,0]],[[13,1,2,0,0,0,0]],[[13,12,5,0,0,0,0]],[[13,5,2,0,0,0,0]],[[13,1,4,0,0,0,0]],[[13,7,12,0,0,0,0]],[[13,1,12,0,0,0,0]],[[13,10,11,0,0,0,0]],[[13,12,10,0,0,0,0]],[[13,2,3,0,0,0,0]],[[13,9,10,0,0,0,0]],[[13,10,12,0,0,0,0]],[[13,4,9,0,0,0,0]],[[13,7,8,0,0,0,0]],[[13,12,6,0,0,0,0]],[[13,3,10,0,0,0,0]],[[13,5,4,0,0,0,0]],[[13,4,2,0,0,0,0]],[[13,5,9,0,0,0,0]],[[13,9,3,0,0,0,0]],[[13,11,1,0,0,0,0]],[[13,5,7,0,0,0,0]],[[13,1,11,0,0,0,0]],[[13,10,2,0,0,0,0]],[[13,9,12,0,0,0,0]],[[13,3,5,0,0,0,0]],[[13,4,8,0,0,0,0]],[[13,10,7,0,0,0,0]],[[13,2,8,0,0,0,0]],[[13,8,4,0,0,0,0]],[[13,11,12,0,0,0,0]],[[13,9,7,0,0,0,0]],[[13,11,2,0,0,0,0]],[[13,10,6,0,0,0,0]],[[13,6,12,0,0,0,0]],[[13,6,6,0,0,0,0]],[[13,2,11,0,0,0,0]],[[13,12,7,0,0,0,0]],[[13,4,4,0,0,0,0]],[[13,6,1,0,0,0,0]],[[13,4,11,0,0,0,0]],[[13,3,8,0,0,0,0]],[[13,4,5,0,0,0,0]],[[13,5,6,0,0,0,0]],[[13,3,4,0,0,0,0]],[[13,8,3,0,0,0,0]],[[13,2,5,0,0,0,0]],[[13,11,11,0,0,0,0]],[[13,7,1,0,0,0,0]],[[13,12,8,0,0,0,0]],[[13,9,6,0,0,0,0]],[[13,1,1,0,0,0,0]],[[13,8,6,0,0,0,0]],[[13,7,5,0,0,0,0]],[[13,3,3,0,0,0,0]],[[13,6,5,0,0,0,0]],[[13,8,9,0,0,0,0]],[[13,5,11,0,0,0,0]],[[13,6,7,0,0,0,0]],[[13,11,3,0,0,0,0]],[[13,6,8,0,0,0,0]],[[13,8,10,0,0,0,0]]},{[[13,9,12,0,0,0,0]],[[13,12,4,0,0,0,0]],[[13,6,9,0,0,0,0]],[[13,11,4,0,0,0,0]],[[13,5,8,0,0,0,0]],[[13,5,3,0,0,0,0]],[[13,3,11,0,0,0,0]],[[13,8,11,0,0,0,0]],[[13,6,1,0,0,0,0]],[[13,9,7,0,0,0,0]],[[13,7,7,0,0,0,0]],[[13,1,11,0,0,0,0]],[[13,1,10,0,0,0,0]],[[13,6,4,0,0,0,0]],[[13,3,8,0,0,0,0]],[[13,9,4,0,0,0,0]],[[13,1,3,0,0,0,0]],[[13,6,7,0,0,0,0]],[[13,7,5,0,0,0,0]],[[13,9,1,0,0,0,0]],[[13,11,1,0,0,0,0]],[[13,9,2,0,0,0,0]],[[13,9,6,0,0,0,0]],[[13,4,9,0,0,0,0]],[[13,10,10,0,0,0,0]],[[13,5,1,0,0,0,0]],[[13,6,6,0,0,0,0]],[[13,4,8,0,0,0,0]],[[13,5,9,0,0,0,0]],[[13,2,6,0,0,0,0]],[[13,6,2,0,0,0,0]],[[13,2,7,0,0,0,0]],[[13,11,6,0,0,0,0]],[[13,5,2,0,0,0,0]],[[13,4,7,0,0,0,0]],[[13,2,4,0,0,0,0]],[[13,5,5,0,0,0,0]],[[13,5,12,0,0,0,0]],[[13,7,10,0,0,0,0]],[[13,11,11,0,0,0,0]],[[13,10,1,0,0,0,0]],[[13,4,5,0,0,0,0]],[[13,4,12,0,0,0,0]],[[13,11,9,0,0,0,0]],[[13,7,11,0,0,0,0]],[[13,4,10,0,0,0,0]],[[13,11,8,0,0,0,0]],[[13,2,9,0,0,0,0]],[[13,2,12,0,0,0,0]],[[13,4,3,0,0,0,0]],[[13,6,12,0,0,0,0]],[[13,10,8,0,0,0,0]],[[13,3,7,0,0,0,0]],[[13,1,9,0,0,0,0]],[[13,3,2,0,0,0,0]],[[13,9,11,0,0,0,0]],[[13,5,4,0,0,0,0]],[[13,10,5,0,0,0,0]],[[13,8,3,0,0,0,0]],[[13,7,2,0,0,0,0]],[[13,8,8,0,0,0,0]],[[13,8,6,0,0,0,0]],[[13,1,4,0,0,0,0]],[[13,6,11,0,0,0,0]],[[13,5,11,0,0,0,0]],[[13,12,12,0,0,0,0]],[[13,8,5,0,0,0,0]],[[13,11,12,0,0,0,0]],[[13,12,10,0,0,0,0]],[[13,6,10,0,0,0,0]],[[13,1,7,0,0,0,0]],[[13,8,2,0,0,0,0]],[[13,7,3,0,0,0,0]],[[13,2,5,0,0,0,0]],[[13,12,9,0,0,0,0]],[[13,12,7,0,0,0,0]],[[13,5,10,0,0,0,0]],[[13,11,2,0,0,0,0]],[[13,3,1,0,0,0,0]],[[13,2,1,0,0,0,0]],[[13,1,8,0,0,0,0]],[[13,1,6,0,0,0,0]],[[13,6,3,0,0,0,0]],[[13,10,11,0,0,0,0]],[[13,10,3,0,0,0,0]],[[13,4,6,0,0,0,0]],[[13,8,7,0,0,0,0]],[[13,7,4,0,0,0,0]],[[13,2,10,0,0,0,0]],[[13,11,5,0,0,0,0]],[[13,8,1,0,0,0,0]],[[13,3,5,0,0,0,0]],[[13,10,2,0,0,0,0]],[[13,8,12,0,0,0,0]],[[13,3,12,0,0,0,0]],[[13,11,7,0,0,0,0]],[[13,10,9,0,0,0,0]],[[13,4,4,0,0,0,0]],[[13,12,11,0,0,0,0]],[[13,3,3,0,0,0,0]],[[13,1,5,0,0,0,0]],[[13,9,9,0,0,0,0]],[[13,1,2,0,0,0,0]],[[13,2,3,0,0,0,0]],[[13,10,12,0,0,0,0]],[[13,7,6,0,0,0,0]],[[13,12,1,0,0,0,0]],[[13,12,3,0,0,0,0]],[[13,9,8,0,0,0,0]],[[13,9,5,0,0,0,0]],[[13,7,8,0,0,0,0]],[[13,3,6,0,0,0,0]],[[13,8,10,0,0,0,0]],[[13,2,8,0,0,0,0]],[[13,12,2,0,0,0,0]],[[13,4,1,0,0,0,0]],[[13,3,10,0,0,0,0]],[[13,10,4,0,0,0,0]],[[13,7,9,0,0,0,0]],[[13,12,6,0,0,0,0]]},{[[13,11,6,0,0,0,0]],[[13,5,1,0,0,0,0]],[[13,9,4,0,0,0,0]],[[13,6,3,0,0,0,0]],[[13,2,7,0,0,0,0]],[[13,9,7,0,0,0,0]],[[13,3,8,0,0,0,0]],[[13,7,10,0,0,0,0]],[[13,9,2,0,0,0,0]],[[13,10,4,0,0,0,0]],[[13,3,12,0,0,0,0]],[[13,8,5,0,0,0,0]],[[13,9,5,0,0,0,0]],[[13,3,5,0,0,0,0]],[[13,10,8,0,0,0,0]],[[13,12,4,0,0,0,0]],[[13,12,3,0,0,0,0]],[[13,5,3,0,0,0,0]],[[13,4,12,0,0,0,0]],[[13,6,10,0,0,0,0]],[[13,8,8,0,0,0,0]],[[13,7,7,0,0,0,0]],[[13,5,12,0,0,0,0]],[[13,4,4,0,0,0,0]],[[13,1,8,0,0,0,0]],[[13,4,9,0,0,0,0]],[[13,10,3,0,0,0,0]],[[13,12,9,0,0,0,0]],[[13,7,11,0,0,0,0]],[[13,12,10,0,0,0,0]],[[13,3,1,0,0,0,0]],[[13,4,3,0,0,0,0]],[[13,1,3,0,0,0,0]],[[13,4,7,0,0,0,0]],[[13,4,1,0,0,0,0]],[[13,5,8,0,0,0,0]],[[13,4,10,0,0,0,0]],[[13,2,6,0,0,0,0]],[[13,2,12,0,0,0,0]],[[13,5,10,0,0,0,0]],[[13,10,10,0,0,0,0]],[[13,7,3,0,0,0,0]],[[13,12,1,0,0,0,0]],[[13,2,9,0,0,0,0]],[[13,3,11,0,0,0,0]],[[13,12,11,0,0,0,0]],[[13,6,2,0,0,0,0]],[[13,3,7,0,0,0,0]],[[13,1,7,0,0,0,0]],[[13,9,9,0,0,0,0]],[[13,1,5,0,0,0,0]],[[13,5,5,0,0,0,0]],[[13,10,9,0,0,0,0]],[[13,7,2,0,0,0,0]],[[13,9,11,0,0,0,0]],[[13,2,1,0,0,0,0]],[[13,8,1,0,0,0,0]],[[13,11,8,0,0,0,0]],[[13,10,5,0,0,0,0]],[[13,3,2,0,0,0,0]],[[13,3,6,0,0,0,0]],[[13,9,6,0,0,0,0]],[[13,1,11,0,0,0,0]],[[13,6,11,0,0,0,0]],[[13,11,7,0,0,0,0]],[[13,7,6,0,0,0,0]],[[13,1,10,0,0,0,0]],[[13,6,9,0,0,0,0]],[[13,4,6,0,0,0,0]],[[13,8,2,0,0,0,0]],[[13,11,9,0,0,0,0]],[[13,2,4,0,0,0,0]],[[13,8,12,0,0,0,0]],[[13,12,12,0,0,0,0]],[[13,8,11,0,0,0,0]],[[13,11,5,0,0,0,0]],[[13,1,2,0,0,0,0]],[[13,9,8,0,0,0,0]],[[13,12,2,0,0,0,0]],[[13,10,1,0,0,0,0]],[[13,1,6,0,0,0,0]],[[13,10,12,0,0,0,0]],[[13,11,4,0,0,0,0]],[[13,6,4,0,0,0,0]]},{[[13,11,6,0,0,0,0]],[[13,5,1,0,0,0,0]],[[13,9,4,0,0,0,0]],[[13,6,3,0,0,0,0]],[[13,2,7,0,0,0,0]],[[13,7,10,0,0,0,0]],[[13,9,2,0,0,0,0]],[[13,10,4,0,0,0,0]],[[13,3,12,0,0,0,0]],[[13,8,5,0,0,0,0]],[[13,9,5,0,0,0,0]],[[13,11,0,0,0,0,0]],[[13,10,8,0,0,0,0]],[[13,12,4,0,0,0,0]],[[13,5,3,0,0,0,0]],[[13,4,12,0,0,0,0]],[[13,6,10,0,0,0,0]],[[13,8,8,0,0,0,0]],[[13,7,7,0,0,0,0]],[[13,5,12,0,0,0,0]],[[13,1,8,0,0,0,0]],[[13,10,3,0,0,0,0]],[[13,12,9,0,0,0,0]],[[13,7,11,0,0,0,0]],[[13,3,1,0,0,0,0]],[[13,1,3,0,0,0,0]],[[13,4,3,0,0,0,0]],[[13,4,7,0,0,0,0]],[[13,4,1,0,0,0,0]],[[13,5,0,0,0,0,0]],[[13,5,8,0,0,0,0]],[[13,2,0,0,0,0,0]],[[13,4,10,0,0,0,0]],[[13,2,6,0,0,0,0]],[[13,2,12,0,0,0,0]],[[13,5,10,0,0,0,0]],[[13,10,10,0,0,0,0]],[[13,7,3,0,0,0,0]],[[13,12,1,0,0,0,0]],[[13,2,9,0,0,0,0]],[[13,3,11,0,0,0,0]],[[13,12,11,0,0,0,0]],[[13,6,2,0,0,0,0]],[[13,3,7,0,0,0,0]],[[13,1,7,0,0,0,0]],[[13,9,9,0,0,0,0]],[[13,7,0,0,0,0,0]],[[13,1,5,0,0,0,0]],[[13,5,5,0,0,0,0]],[[13,10,9,0,0,0,0]],[[13,7,2,0,0,0,0]],[[13,9,11,0,0,0,0]],[[13,2,1,0,0,0,0]],[[13,8,1,0,0,0,0]],[[13,11,8,0,0,0,0]],[[13,10,5,0,0,0,0]],[[13,3,2,0,0,0,0]],[[13,3,6,0,0,0,0]],[[13,6,11,0,0,0,0]],[[13,8,0,0,0,0,0]],[[13,11,7,0,0,0,0]],[[13,7,6,0,0,0,0]],[[13,1,10,0,0,0,0]],[[13,6,9,0,0,0,0]],[[13,4,6,0,0,0,0]],[[13,8,2,0,0,0,0]],[[13,11,9,0,0,0,0]],[[13,2,4,0,0,0,0]],[[13,8,12,0,0,0,0]],[[13,12,12,0,0,0,0]],[[13,8,11,0,0,0,0]],[[13,11,5,0,0,0,0]],[[13,9,8,0,0,0,0]],[[13,6,0,0,0,0,0]],[[13,12,2,0,0,0,0]],[[13,1,6,0,0,0,0]],[[13,11,4,0,0,0,0]],[[13,6,4,0,0,0,0]]}];
+
+// This function implements an augmented version of Zywina's ExceptionalPrimes algorithm in https://arxiv.org/abs/1508.07661
+intrinsic NonSurjectivePrimes(E::CrvEll[FldRat]:A:=[]) -> SeqEnum
+{ Given an elliptic curve E/Q, returns a list of primes ell for which the ell-adic representation attached to E could be non-surjective. This list provably contains all such primes and usually contains no others. }
+    require BaseRing(E) eq Rationals()and not HasComplexMultiplication(E): "E must be a non-CM elliptic curve over Q";
+    E := MinimalModel(E); D := Integers()!Discriminant(E);
+    j := jInvariant(E); den := Denominator(j);
+    S := {2,3,5,7,13};
+    if j in {-11^2,-11*131^3} then Include(~S,11); end if;
+    if j in {-297756989/2, -882216989/131072} then Include(~S,17); end if;
+    if j in {-9317, -162677523113838677} then Include(~S,37); end if;
+    if den ne 1 then
+        ispow,b,e:=IsPower(den);
+        if ispow then
+            P := {p : p in PrimeDivisors(e) | p ge 11};
+            if P ne {} then                
+                S join:= { ell : ell in PrimeDivisors(g) | ell ge 11 } where g := GCD({&*P} join {p^2-1 : p in PrimeDivisors(b)});
+            end if;
+        end if;
+    else
+        Q := PrimeDivisors(GCD(Numerator(j-1728),Numerator(D)*Denominator(D)));
+        Q := [q: q in Q | q ne 2 and IsOdd(Valuation(j-1728,q))];
+        if Valuation(j,2) in {3,6,9} then Q cat:= [2]; end if;
+        p:=2; alpha:=[]; beta:=[];
+        repeat
+            a:=0;
+            while a eq 0 do
+                p:=NextPrime(p); K:=KodairaSymbol(E,p);
+                a := K eq KodairaSymbol("I0") select TraceOfFrobenius(E,p) else (K eq KodairaSymbol("I0*") select TraceOfFrobenius(QuadraticTwist(E,p),p) else 0);
+            end while;
+            S join:= { ell : ell in PrimeDivisors(a) | ell gt 13 };
+            alpha cat:= [[(1-KroneckerSymbol(q,p)) div 2 : q in Q]];  beta cat:= [[(1-KroneckerSymbol(-1,p)) div 2]];
+            M := Matrix(GF(2),alpha); b:=Matrix(GF(2),beta);
+        until IsConsistent(Transpose(M),Transpose(b)) eq false;
+    end if;
+    if #A eq 0 then A := GL2FrobeniusMatrices(E,64); end if;
+    n := #[s:s in X8|#(t meet s) eq 0] where t:={GL2SimilarityInvariant(GL(2,Integers(8))!a):a in A|Determinant(a) ne 2}; if n eq 0 then Exclude(~S,2); end if;
+    n := #[s:s in X9|#(t meet s) eq 0] where t:={GL2SimilarityInvariant(GL(2,Integers(9))!a):a in A|Determinant(a) ne 3}; if n eq 0 then Exclude(~S,3); end if;
+    n := #[s:s in X5|#(t meet s) eq 0] where t:={GL2SimilarityInvariant(GL(2,Integers(5))!a):a in A|Determinant(a) ne 5}; if n eq 0 then Exclude(~S,5); end if;
+    n := #[s:s in X7|#(t meet s) eq 0] where t:={GL2SimilarityInvariant(GL(2,Integers(7))!a):a in A|Determinant(a) ne 7}; if n eq 0 then Exclude(~S,7); end if;
+    n := #[s:s in X13|#(t meet s) eq 0] where t:={GL2SimilarityInvariant(GL(2,Integers(13))!a):a in A|Determinant(a) ne 13}; if n eq 0 then Exclude(~S,13); end if;
+    S := Sort([p:p in S]);
+    return S;
+end intrinsic;
+
+intrinsic GL2SimilaritySet(X::Assoc,k::MonStgElt) -> SetEnum
+{ Returns the set of similarity invariants identifying the GL2-conjugacy classes in the group with label, using cached result if available. }
+    if not "sset" in Names(X[k]) then GL2SimilaritySet(X[k]`subgroup); end if;
+    return assigned X[k]`sset select X[k]`sset else GL2SimilaritySet(X[k]`subgroup);
+end intrinsic;
+
+intrinsic GL2HeuristicEllAdicImage(E::CrvEll,ell::RngIntElt,A::SeqEnum,X::Assoc:Fast:=false,Proof:=true,MaxTorsion:=9) -> SeqEnum[MonStgElt], BoolElt
+{ Given a non-CM elliptic curve E/Q, a list of Frobenius matrices A for E, and a lattice of ell-adic subgroups X, returns a list of labels of groups in X that are most likely to be the ell-adic image of E.  If the second return value is true, the list includes all groups in X that could be the ell-adic image of E. }
     require BaseRing(E) eq Rationals() and not HasComplexMultiplication(E): "E should be a non-CM elliptic curve over Q.";
     require #A ge 3: "You need to provide at least 3 Frobenius matrices.";
     require IsDefined(X,"1.1.0.1"): "Subgroup lattice X needs to contain the trivial group.";
     E := WeierstrassModel(MinimalModel(E));  D := Integers()!Discriminant(E);
     L := [["1.1.0.1"]];
-    N := Max([r`level:r in X]);
+    if ell eq 2 then N := 32; elif ell eq 3 then N := 27; elif ell le 11 then N := ell^2; else N := ell; end if;
     Z := AssociativeArray();
     for n in Divisors(N) do if n gt 1 then G := GL(2,Integers(n)); Z[n] := {GL2SimilarityInvariant(G!a):a in A|GCD(Determinant(a),n) eq 1}; end if; end for;
     while true do
-        LL := [k:k in {k : k in Set(&cat[X[k]`children:k in L[#L]]) | X[k]`dlabel eq "1.1.1" and X[k]`level gt 1 and Z[X[k]`level] subset GL2SimilaritySet(X[k]`subgroup)}];
+        LL := [k:k in {k : k in Set(&cat[X[k]`children:k in L[#L]]) | X[k]`dlabel eq "1.1.1" and N mod X[k]`level eq 0 and Z[X[k]`level] subset GL2SimilaritySet(X,k)}];
         if #LL eq 0 then break; end if;
         Append(~L,LL);
     end while;
     L := Sort([k:k in Set(&cat L)],func<a,b|GL2CompareLabels(a,b)>);
-    if Fast or #L eq 1 then return L; end if;
+    if Fast or #L eq 1 then return L, true; end if;
     N := Max([X[k]`level:k in L]);
-    iorb := func<k,n|[r:r in X[k]`level ge n select X[k]`iorbits else GL2IsogenySignature(GL2Lift(X[k]`subgroup,n)) | r[1] eq n]>;
-    korb := func<k,n|[r:r in X[k]`level ge n select X[k]`korbits else GL2KummerSignature(GL2Lift(X[k]`subgroup,n)) | r[1] eq n]>;
-    tdeg := func<k,n|Min([r[2]:r in X[k]`level ge n select X[k]`orbits else GL2OrbitSignature(GL2Lift(X[k]`subgroup,n)) | r[1] eq n])>;
+
+    iorb := func<k,n|[r:r in X[k]`level ge n select X[k]`iorbits else GL2IsogenySignature(GL2Lift(X[k]`subgroup,n):N:=n) | r[1] eq n]>;
+    korb := func<k,n|[r:r in X[k]`level ge n select X[k]`korbits else GL2KummerSignature(GL2Lift(X[k]`subgroup,n):N:=n) | r[1] eq n]>;
+    tdeg := func<k,n|Min([r[2]:r in X[k]`level ge n select X[k]`orbits else GL2OrbitSignature(GL2Lift(X[k]`subgroup,n):N:=n) | r[1] eq n])>;
+    torb := func<k,n|[r:r in X[k]`level ge n select X[k]`orbits else GL2OrbitSignature(GL2Lift(X[k]`subgroup,n):N:=n) | r[1] eq n]>;
+    igrp := func<k,n|pi(GL2Project(X[k]`subgroup,n)) where _,pi:=quo<G|Center(G)> where G:=GL(2,Integers(n))>;
+    tgrp := func<k,n|GL2Project(X[k]`subgroup,n)>;
+
     R<x>:=PolynomialRing(Rationals());
     for n in Divisors(N) do
         if n eq 1 then continue; end if;
@@ -1575,22 +1782,58 @@ intrinsic GL2EllAdicImageCandidates(E::CrvEll,A::SeqEnum,X::Assoc:Fast:=false) -
         if #Set(I) gt 1 and n lt 60 then
             s := lmset({* [n,Degree(a[1])]^^a[2] : a in Factorization(Evaluate(ClassicalModularPolynomial(n),[x,jInvariant(E)])) *});
             L := [L[i]:i in [1..#I]|I[i] eq s];
-            if #L eq 1 then return L[1]; end if;
+            if #L eq 1 then return L, true; end if;
         end if;
         I := [korb(k,n):k in L];
         if #Set(I) gt 1 then
             s := lmset({* [n,Degree(a[1])]^^a[2] : a in Factorization(PrimitiveDivisionPolynomial(E,n)) *});
             L := [L[i]:i in [1..#I]|I[i] eq s];
-            if #L eq 1 then return L[1]; end if;
+            if #L eq 1 then return L, true; end if;
         end if;
         I := [tdeg(k,n):k in L];
         if #Set(I) gt 1 then
             d := TorsionDegree(E,n);
             L := [L[i]:i in [1..#I]|I[i] eq d];
-            if #L eq 1 then return L[1]; end if;
+            if #L eq 1 then return L, true; end if;
+        end if;
+        I := [torb(k,n):k in L];
+        if #Set(I) gt 1 then
+            s := lmset({* [n,d]^^Multiplicity(S,d) : d in Set(S) *}) where S:=TorsionOrbits(E,n);
+            L := [L[i]:i in [1..#I]|I[i] eq s];
+            if #L eq 1 then return L, true; end if;
         end if;
     end for;
-    return L;
+    for n in Divisors(N) do
+        if n eq 1 or n gt MaxTorsion then continue; end if;
+        I := [igrp(k,n):k in L];
+        if #{IdentifyGroup(H) : H in I} gt 1 then
+            G := IsogenyGaloisGroup(E,n);
+            L := [L[i]:i in [1..#I]|IsIsomorphic(I[i],G)];
+            if #L eq 1 then return L, true; end if;
+        end if;
+        I := [tgrp(k,n):k in L];
+        if #{IdentifyGroup(H) : H in I} gt 1 then
+            G := TorsionGaloisGroup(E,n);
+            L := [L[i]:i in [1..#I]|IsIsomorphic(I[i],G)];
+            if #L eq 1 then return L, true; end if;
+        end if;
+    end for;
+    B := Max([Determinant(a):a in A]);
+    if B lt 4096 then
+        N := Max([X[k]`level:k in L]);  G := GL(2,Integers(N));
+        S := AssociativeArray(); for k in L do S[k] := GL2SimilaritySet(GL2Lift(X[k]`subgroup,N)); end for;
+        if #Set([S[k]:k in Keys(S)]) eq 1 then return L, true; end if;
+        A cat:= GL2FrobeniusMatrices(E,4096:B0:=B+1);
+        Z := {GL2SimilarityInvariant(G!a):a in A|GCD(Determinant(a),N) eq 1};
+        L := [k:k in L|Z subset S[k]];
+        if #L eq 1 then return L, true; end if;
+        if Proof then return L, true; end if;
+        Z := &meet[S[k]:k in L];
+        m := #L;
+        L := [k:k in L|S[k] eq Z];
+        return L, #L eq m;
+    end if;
+    return L,true;
 end intrinsic;
 
 /*

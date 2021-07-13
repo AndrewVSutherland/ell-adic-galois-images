@@ -1,0 +1,8 @@
+Magma V2.26-3     Mon May 24 2021 06:17:16 on weil     [Seed = 197137950]
+Type ? for help.  Type <Ctrl>-D to quit.
+
+Loading file "49.196.9.1.txt"
+Point searching to bound 10000000 took 6199.560 sec.
+Found 4 points: [ (-1 : -7 : 1), (0 : 1 : 0), (-1 : 0 : 1), (-1 : 7 : 1) ].
+Point (-1 : -7 : 1) is non-singular.
+Image on the j-line is (0 : 1).

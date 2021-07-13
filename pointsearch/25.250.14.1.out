@@ -1,0 +1,21 @@
+Magma V2.26-3     Sun May 23 2021 20:01:24 on weil     [Seed = 3473228593]
+Type ? for help.  Type <Ctrl>-D to quit.
+
+Loading file "25.250.14.1.txt"
+Loading "gl2data.m"
+There are 320 <tr,det> pairs mod 25 in 5.10.0.1.
+There are 280 <tr,det> pairs mod 25 in 25.250.14.1.
+Bound = 1000.
+Testing 1216767 points.
+t = 0 gives rise to j = 8000, which is CM with D = -8.
+t = 1/2 gives rise to j = 0, which is CM with D = -3.
+t = 1/4 gives rise to j = -884736000, which is CM with D = -43.
+t = 1/6 gives rise to j = 16581375, which is CM with D = -28.
+t = -1/6 gives rise to j = 54000, which is CM with D = -12.
+t = -1/4 gives rise to j = -12288000, which is CM with D = -27.
+t = -1/2 gives rise to j = -3375, which is CM with D = -7.
+t = 13/58 gives rise to j = -262537412640768000, which is CM with D = -163.
+t = -5/22 gives rise to j = -147197952000, which is CM with D = -67.
+Total time = 21441.170.
+
+Total time: 21443.520 seconds, Total memory usage: 104.09MB

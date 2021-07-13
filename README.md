@@ -1,4 +1,4 @@
-This repository contains code and data associated to the paper [*l-adic images of Galois for elliptic curves over Q*](https://arxiv.org/abs/2106.11141), by Jeremy Rouse, Andrew V. Sutherland, and David Zureick-Brown, and an appendix with John Voight, arXiv:2106.11141 (2021).
+This repository contains code and data associated to the paper [*l-adic images of Galois for elliptic curves over Q*](https://arxiv.org/abs/2106.11141), by Jeremy Rouse, Andrew V. Sutherland, and David Zureick-Brown, arXiv:2106.11141 (2021).
 
 The directories are organized as follows:
 
@@ -9,6 +9,8 @@ The directories are organized as follows:
 - `matchmf` contains `Magma` scripts that verify that the Jacobian of the modular curve associated to the group 121.605.41.1 is isogenous to the product of the modular abelian varieties associated to the Galois orbits of the newforms `121.2.a.b`, `14641.2.a.a`, `14641.2.a.c`, as described in Section 6 of paper.
 
 - `models` contains `Magma` code and data for computing models of modular curves as covers of other modular curves, as described in Section 7 of the paper.
+
+- `pointsearch' contains `Magma` code and data for point searching on modular curves whose rational points we were not able to provably determine.
 
 - `ratpoints` contains `Magma` scripts that verify the claims about rational points on modular curves made in Sections 8, 9, and 10 of the paper.
 

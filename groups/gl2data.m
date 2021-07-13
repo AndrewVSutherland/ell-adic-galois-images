@@ -46,16 +46,23 @@ gl2rec := recformat<
     gclass:SeqEnum,         // list of labels of Gassmann equivalent subgroups K (those that induce isomorphic permutation modules)
     CPlabel:MonStgElt,      // Cummins-Pauli label of H cap SL_2(Z) (as defined in [CP03a,CP03b], available for g <= 24)
     Slabel:MonStgElt,       // Sutherland label of prime level H (as defined in [Sut16] and used in the LMFDB)
+    SZlabel:MonStgElt,      // Sutherland-Zywina label for group containing -I that correspond to curves with infinitely many rational points
     RZBlabel:MonStgElt,     // Rouse and Zureick-Brown label of 2-adic H (as defined in [RZB15] and used in the LMFDB)
     newforms:SeqEnum,       // list of LMFDB labels of newform orbits [f] st J_H ~ prod_f A_f (each f may occur with multiplicity)
     dims:SeqEnum,           // list of dimension of the newform orbits [f] in newforms (in matching order)
-    rank:RngIntElt          // analytic rank of J_H
+    rank:RngIntElt,         // analytic rank of J_H
+    model:MonStgElt,        // for genus one curves whose Jacobian has positive rank this is the Cremona label of an elliptic curve isomorphic to X_H
+    jmap:RngElt,            // for H containing -I if X_H(Q) is infinite jmap:X_H->X(1) is an element of Q(t) (genus 0) or of Q(y)(x) (genus 1)
+    fmap:SeqEnum,           // for genus zero H not containing -I with X_H(Q) infinite a pair [A(t),B(t)] defining the universal E:y^2=x^3+A(t)x+B(t).
+    sset:SetEnum            // set of similarity invariants identifying the conjugacy classes in H (only set when requested)
 >;
 
+/* parsing functions that are faster and safer than using eval */
+function strip(s) return Join(Split(Join(Split(s," "),""),"\n"),""); end function;
 function atoi(s) return StringToInteger(s); end function;
-
-function strip(s)
-    return Join(Split(Join(Split(s," "),""),"\n"),"");
+function atoii(s) return [Integers()|StringToInteger(n):n in Split(t[2..#t-1],",")] where t:=strip(s); end function;
+function atoiii(s)
+    return [[Integers()|StringToInteger(n):n in Split(a[1] eq "]" select "" else Split(a,"]")[1],",")]:a in r] where r := Split(t[2..#t-1],"[") where t:= strip(s);
 end function;
 
 function sprint(X)
@@ -74,15 +81,20 @@ function index(S,f:Project:=func<x|x>,Unique:=false)
 end function;
 
 function GL2RecClean(r)
-    if r`genus eq 0 then delete r`rank; end if;
-    if r`genus gt 24 then delete r`CPlabel; end if;
-    if r`RZBlabel eq "" or r`RZBlabel eq "-" then delete r`RZBlabel; end if;
+    if r`CPlabel eq "-" then delete r`CPlabel; end if;
+    if r`SZlabel eq "-" then delete r`SZlabel; end if;
+    if r`model eq "-" then delete r`model; delete r`jmap; end if;
+    if r`fmap eq [] then delete r`fmap; end if;
+    if r`RZBlabel eq "-" then delete r`RZBlabel; end if;
     if r`genus ne 1 then delete r`iclass; end if;
+    if r`genus eq 0 then delete r`rank; end if;
     return r;
 end function;
 
 function GL2RecFill(r)
     if r`genus gt 24 then r`CPlabel:="-"; else assert r`CPlabel ne ""; end if;
+    if not GL2QInfinite(r:MustContainNegativeOne) then r`SZlabel := "-"; r`model := "-"; r`jmap:= 0; else assert r`SZlabel ne ""; end if;
+    if not GL2QInfinite(r) or GL2ContainsNegativeOne(r`subgroup) then r`fmap := []; end if;
     if not assigned r`RZBlabel then r`RZBlabel:="-"; end if;
     if r`RZBlabel eq "" or PrimeDivisors(r`level) ne [2] then r`RZBlabel:="-"; end if;
     if r`genus ne 1 then r`iclass:="-"; end if;
@@ -94,18 +106,21 @@ function GL2RecToString(r)
     r := GL2RecFill(r);
     return Join([r`label,sprint(r`level),sprint(r`index),sprint(r`genus),r`dlabel,r`zlabel,sprint(GL2Generators(r`subgroup)),
                  sprint(r`children),r`allchildren select "1" else "0", sprint(r`parents),sprint(r`reductions),sprint(r`orbits),sprint(r`korbits),sprint(r`iorbits),
-                 sprint(r`qtwists),sprint(r`obstructions),sprint(r`cusps),sprint(r`ratcusps),r`iclass,sprint(r`gclass),r`CPlabel,r`Slabel,r`RZBlabel,
-                 sprint(r`newforms),sprint(r`dims),sprint(r`rank)],":");
+                 sprint(r`qtwists),sprint(r`obstructions),sprint(r`cusps),sprint(r`ratcusps),r`iclass,sprint(r`gclass),r`CPlabel,r`Slabel,r`SZlabel,r`RZBlabel,
+                 sprint(r`newforms),sprint(r`dims),sprint(r`rank),r`model,sprint(r`jmap),sprint(r`fmap)],":");
 end function;
 
-function GL2RecFromString(s)
+function GL2RecFromString(s:sset:=false)
     function labels(s) return Split(s[2..#s-1],","); end function;
     s := Split(s,":");
-    N := atoi(s[2]); H := GL2FromGenerators(N,eval(s[7]));
+    N := atoi(s[2]); H := GL2FromGenerators(N,atoiii(s[7]));
+    Ft<t> := FunctionField(Rationals());  Fx<x> := FunctionField(Rationals());  Fy<y> := FunctionField(Fx);
     r := rec<gl2rec|label:=s[1],level:=N,index:=atoi(s[3]),genus:=atoi(s[4]),dlabel:=s[5],zlabel:=s[6],subgroup:=H,children:=labels(s[8]),allchildren:=s[9] eq "1",
-                    parents:=labels(s[10]),reductions:=labels(s[11]),orbits:=eval(s[12]),korbits:=eval(s[13]),iorbits:=eval(s[14]),qtwists:=labels(s[15]),
-                    obstructions:=eval(s[16]),cusps:=atoi(s[17]),ratcusps:=atoi(s[18]),iclass:=s[19],gclass:=labels(s[20]),CPlabel:=s[21],Slabel:=s[22],
-                    RZBlabel:=s[23],newforms:=labels(s[24]),dims:=eval(s[25]),rank:=atoi(s[26])>;
+                    parents:=labels(s[10]),reductions:=labels(s[11]),orbits:=atoiii(s[12]),korbits:=atoiii(s[13]),iorbits:=atoiii(s[14]),qtwists:=labels(s[15]),
+                    obstructions:=atoii(s[16]),cusps:=atoi(s[17]),ratcusps:=atoi(s[18]),iclass:=s[19],gclass:=labels(s[20]),CPlabel:=s[21],Slabel:=s[22],
+                    SZlabel:=s[23],RZBlabel:=s[24],newforms:=labels(s[25]),dims:=atoii(s[26]),rank:=atoi(s[27]),model:=s[28],jmap:=eval(s[29]),fmap:=eval(s[30])>;
+    if r`genus eq 1 then r`jmap := Fy!r`jmap; end if;
+    if sset then r`sset := GL2SimilaritySet(r`subgroup); end if;
     return GL2RecClean(r);
 end function;
 
@@ -151,11 +166,29 @@ function RZBLoad(p,maxN,maxI:rzbdatafile:="rzbdata.txt")
     return [r : r in S|GL2Index(r[2]) le maxI];
 end function;
 
-// file format is SZlabel:level:gens
-function SZLoad(p,maxN,maxI:szdatafile:="szdata.txt")
+// file format is SZlabel:level:gens:curve:map
+function SZLoad(p:szdatafile:="szdata.txt")
+    Ft<t> := FunctionField(Rationals());  Fx<x> := FunctionField(Rationals()); Fy<y> := FunctionField(Fx);
     S := [Split(s,":") : s in Split(Read(szdatafile))];
-    S := [<r[1],GL2FromGenerators(atoi(r[2]),eval(r[3]))> : r in S | atoi(r[2]) le maxN];
-    return [r : r in S|GL2Index(r[2]) le maxI];
+    X := AssociativeArray();
+    for r in S do
+        if p gt 0 and atoi(r[2]) ne 1 and atoi(r[2]) mod p ne 0 then continue; end if;
+        X[r[1]]:= <GL2FromGenerators(atoi(r[2]),eval(r[3])),r[4],eval(r[5])>;
+    end for;
+    return X;
+end function;
+
+// file format is SZlabel:level:gens:curve:map
+function FMLoad(p:fmdatafile:="fmdata.txt")
+    S := [Split(s,":") : s in Split(Read(fmdatafile))];
+    X := AssociativeArray();
+    R := PolynomialRing(Rationals()); F<t> := FunctionField(Rationals());
+    for r in S do
+        if p gt 0 then N := atoi(Split(r[1],".")[1]); if N mod p ne 0 then continue; end if; end if;
+        ab := eval(r[2]);
+        X[r[1]]:= [F!R!ab[1],F!R!ab[2]];
+    end for;
+    return X;
 end function;
 
 function bound(X,N,g)
@@ -215,7 +248,7 @@ end function;
 
 // Output file format is label:gens:children:parents:orbits:iorbits:ccsig:sl2twists:qtwists:obstructions:cusps:ratcusps:iclass:rank:cplabel:forms:dims
 // Currently we only fill in iclass:forms:dims:rank for genus 1
-function GL2Data(p:cmfdatafile:="cmfdata.txt",cpdatafile:="cpdata.txt",rzbdatafile:="rzbdata.txt",szdatafile:="szdata.txt",outfile:="",Cheat:=false)
+function GL2Data(p:cmfdatafile:="cmfdata.txt",cpdatafile:="cpdata.txt",rzbdatafile:="rzbdata.txt",szdatafile:="szdata.txt",fmdatafile:="fmdata.txt",outfile:="",Cheat:=false)
     assert IsPrime(p);
     t := Cputime(); s:=t;
     if Cheat and p eq 2 then
@@ -229,26 +262,26 @@ function GL2Data(p:cmfdatafile:="cmfdata.txt",cpdatafile:="cpdata.txt",rzbdatafi
         maxN,maxI := GL2ArithmeticallyMaximalBounds(p);
         printf "Computed arithmetically maximal level bound %o and index bound %o in %.3os\n", maxN, maxI, Cputime()-s; s:=Cputime();
     end if;
-    try cpdata := CPLoad(p,maxN:cpdatafile:=cpdatafile); catch e; cpdata:=[]; printf "Unable to find/read file '%o', CP labels will not be set (use cpdatafile to specify an alternate location)\n", cpdatafile; end try;
-    try rzbdata := RZBLoad(p,maxN,maxI:rzbdatafile:=rzbdatafile); catch e; printf "Unable to find/read file '%o', RZB labels will not be set (use rzbdatafile to specify an alternate location)\n", rzbdatafile; end try;
-    try szdata := SZLoad(p,maxN,maxI:szdatafile:=szdatafile); catch e; printf "Unable to find/read file '%o', SZ labels will not be set (use szdatafile to specify an alternate location)\n", szdatafile; end try;
     try cmfdata := CMFLoad(p,maxN:cmfdatafile:=cmfdatafile); catch e; cmfdata:=[]; printf "Unable to find/read file '%o', newform decompositions will not be computed (use cmfdatafile to specify an alternate location)\n", cmfdatafile; end try;
+    try cpdata := CPLoad(p,maxN:cpdatafile:=cpdatafile); catch e; cpdata:=[]; printf "Unable to find/read file '%o', CP labels will not be set (use cpdatafile to specify an alternate location)\n", cpdatafile; end try;
+    try rzbdata := RZBLoad(p,maxN,maxI:rzbdatafile:=rzbdatafile); catch e; rzbdata:=[]; printf "Unable to find/read file '%o', RZB labels will not be set (use rzbdatafile to specify an alternate location)\n", rzbdatafile; end try;
+    try szdata := SZLoad(p:szdatafile:=szdatafile); catch e; szdata:=AssociativeArray(); printf "Unable to find/read file '%o', SZ labels and jmaps will not be set (use szdatafile to specify an alternate location)\n", szdatafile; end try;
+    try fmdata := FMLoad(p:fmdatafile:=fmdatafile); catch e; fmdata:=AssociativeArray(); printf "Unable to find/read file '%o', fine maps will not be set (use fmdatafile to specify an alternate location)\n", fmdatafile; end try;
     X := GL2Lattice(maxN,maxI:Verbose);
-    L := Sort([k:k in Keys(X)],func<a,b|GL2CompareLabels(a,b)>);
+    L := GL2SortLabels([k:k in Keys(X)]);
     T := [X[k]:k in L];
-    lcmp := func<a,b|GL2CompareLabels(a,b)>;
     printf "Computed subgroup lattice and labels for %o groups in %.3os\n", #L, Cputime()-s; s:=Cputime();
     allchildren := [k eq "1.1.0.1" select true else #[H:H in MaximalSubgroups(X[k]`subgroup)|H`order * maxI lt GL2Size(X[k]`level)] eq 0 : k in L];
     printf "Computed maximal subgroups of %o groups in %.3os\n", #L, Cputime()-s; s:=Cputime();
-    reductions := [Sort([GL2LookupLabel(X,ChangeRing(T[i]`subgroup,Integers(T[i]`level div p^e))) :e in [1..Valuation(T[i]`level,p)-1]],lcmp):i in [1..#T]];
+    reductions := [GL2SortLabels([GL2LookupLabel(X,ChangeRing(T[i]`subgroup,Integers(T[i]`level div p^e))) :e in [1..Valuation(T[i]`level,p)-1]]):i in [1..#T]];
     printf "Computed reduction labels for %o groups in %.3os\n", #T, Cputime()-s; s:=Cputime();
     for i:=1 to #T do if T[i]`level gt 1 then T[i]`subgroup := GL2Standardize(T[i]`subgroup); end if; end for;
     printf "Standardized generators for %o groups in %.3os\n", #T, Cputime()-s; s:=Cputime();
     qtwists := [GL2LookupLabel(X,GL2GenericQuadraticTwist(T[i]`subgroup):g:=T[i]`genus) : i in [1..#T]];
     Z := index([1..#L],func<i|qtwists[i]>);
-    qtwists := [Sort([L[j] : j in Z[qtwists[i]]],lcmp) : i in [1..#qtwists]];
+    qtwists := [GL2SortLabels([L[j] : j in Z[qtwists[i]]]) : i in [1..#qtwists]];
     printf "Computed %o quadratic twists of %o subgroups in %.3os\n", &+[#r:r in qtwists], #T, Cputime()-s; s:=Cputime();
-    cplabels := ["?":i in [1..#T]];
+    cplabels := ["":i in [1..#T]];
     if #cpdata gt 0 then
         Z := index(cpdata,func<r|<SL2Level(r[2]),SL2Index(r[2]),GL2Genus(r[2]),GL2OrbitSignature(r[2])>>);
         function cplabel(H,genus)
@@ -262,7 +295,6 @@ function GL2Data(p:cmfdatafile:="cmfdata.txt",cpdatafile:="cpdata.txt",rzbdatafi
             return #I eq 0 select "" else I[1][1];
         end function;
         cplabels := [cplabel(T[i]`subgroup,T[i]`genus):i in [1..#T]];
-        assert not "?" in cplabels;
         printf "Computed %o CPlabels in %.3os\n", #[s:s in cplabels|s ne ""], Cputime()-s; s:=Cputime();
     end if;
     if #rzbdata gt 0 then
@@ -272,8 +304,9 @@ function GL2Data(p:cmfdatafile:="cmfdata.txt",cpdatafile:="cpdata.txt",rzbdatafi
     end if;
     slabels := [GL2SLabel(X[k]`subgroup,p) : k in L];
     printf "Computed %o Slabels in %.3os\n", #[x:x in slabels|x ne ""], Cputime()-s; s:=Cputime();
+    szlabels := ["": k in L];
     if #szdata gt 0 then
-        Z := index(szdata,func<r|GL2LookupLabel(X,r[2])>:Project:=func<r|r[1]>,Unique);
+        Z := index([k:k in Keys(szdata)],func<k|GL2LookupLabel(X,szdata[k][1])>:Unique);
         szlabels := [IsDefined(Z,k) select Z[k] else "" : k in L];
         printf "Computed %o SZlabels in %.3os\n", #[x:x in szlabels|x ne ""], Cputime()-s; s:=Cputime();
     end if;
@@ -307,12 +340,15 @@ function GL2Data(p:cmfdatafile:="cmfdata.txt",cpdatafile:="cpdata.txt",rzbdatafi
         end for;
         printf "Computed newform decompositions in %.3os\n", Cputime()-s; s:=Cputime();
     end if;
-    recs := Sort([GL2RecClean(rec<gl2rec|label:=L[i],level:=T[i]`level,index:=T[i]`index,genus:=T[i]`genus,dlabel:=T[i]`dlabel,zlabel:=T[i]`zlabel,subgroup:=T[i]`subgroup,
-                             children:=T[i]`children,parents:=T[i]`parents,allchildren:=allchildren[i],reductions:=reductions[i],orbits:=T[i]`orbits,
-                             korbits:=korbits[i],iorbits:=iorbits[i],qtwists:=qtwists[i],obstructions:=obs[i],cusps:=cusps[i],ratcusps:=ratcusps[i],
-                             iclass:=iclasses[i],gclass:=gclasses[i],CPlabel:=cplabels[i],Slabel:=slabels[i],RZBlabel:=p eq 2 select rzblabels[i] else "",
-                             newforms:=newforms[i],dims:=dims[i],rank:=ranks[i]>):i in [1..#T]],
-                 func<a,b|GL2CompareLabels(a`label,b`label)>);
+    recs := Sort([GL2RecClean(rec<gl2rec|
+        label:=L[i],level:=T[i]`level,index:=T[i]`index,genus:=T[i]`genus,dlabel:=T[i]`dlabel,zlabel:=T[i]`zlabel,subgroup:=T[i]`subgroup,
+        children:=T[i]`children,parents:=T[i]`parents,allchildren:=allchildren[i],reductions:=reductions[i],orbits:=T[i]`orbits,
+        korbits:=korbits[i],iorbits:=iorbits[i],qtwists:=qtwists[i],obstructions:=obs[i],cusps:=cusps[i],ratcusps:=ratcusps[i],
+        iclass:=iclasses[i],gclass:=gclasses[i],CPlabel:=cplabels[i],Slabel:=slabels[i],SZlabel:=szlabels[i],
+        RZBlabel:=p eq 2 select rzblabels[i] else "",newforms:=newforms[i],dims:=dims[i],rank:=ranks[i],
+        model:=IsDefined(szdata,szlabels[i]) select szdata[szlabels[i]][2] else "",
+        jmap:=IsDefined(szdata,szlabels[i]) select szdata[szlabels[i]][3] else 0,
+        fmap:=IsDefined(fmdata,L[i]) select fmdata[L[i]] else []>):i in [1..#T]],func<a,b|GL2CompareLabels(a`label,b`label)>);
     if #outfile gt 0 then
         fp := Open(outfile, "w");
         for r in recs do Puts(fp,GL2RecToString(r)); end for;
@@ -324,9 +360,161 @@ function GL2Data(p:cmfdatafile:="cmfdata.txt",cpdatafile:="cpdata.txt",rzbdatafi
 end function;
 
 function GL2Load(p)
-    if Type(p) eq RngIntElt then assert IsPrime(p); filename := Sprintf("gl2_%oadic.txt",p); else filename:= p; end if;
-    return index([GL2RecFromString(s):s in Split(Read(filename))],func<r|r`label>:Unique);
+    if Type(p) eq RngIntElt then
+        if p eq 0 then filename := "gl2_Qcheck.txt"; sset := true; else assert IsPrime(p); filename := Sprintf("gl2_%oadic.txt",p); sset := false; end if;
+    else
+        filename:= p; sset := false;
+    end if;
+    if sset then print "Performing precomputation for GL2EllAdicImages (this should take about 10 secs)..."; end if;
+    return index([GL2RecFromString(s:sset:=sset):s in Split(Read(filename))],func<r|r`label>:Unique);
 end function;
+
+function GL2LoadExamples(:file:="examples.txt")
+    S := [Split(r,":"):r in Split(Read(file))];
+    E := AssociativeArray();
+    for r in S do E[r[1]] := EllipticCurve(atoii(r[2])); end for;
+    return E;
+end function;
+
+function ExceptionalGroup(E,p)
+    exceptionaljs := [
+    <2, -2^18*3*5^3*13^3*41^3*107^3/17^16, "16.64.2.1">,
+    <2, -2^21*3^3*5^3*7*13^3*23^3*41^3*179^3*409^3/79^16, "16.64.2.1">,
+    <2, 257^3/2^8, "16.96.3.335">,
+    <2, 17^3*241^3/2^4, "16.96.3.343">,
+    <2, 2^4*17^3, "16.96.3.346">,
+    <2, 2^11, "16.96.3.338">,
+    <2, -3^3*5^3*47^3*1217^3/(2^8*31^8), "32.96.3.230">,
+    <2, 3^3*5^6*13^3*23^3*41^3/(2^16*31^4), "32.96.3.82">,
+    <5, 2^4*3^2*5^7*23^3, "25.50.2.1">,
+    <5, 2^12*3^3*5^7*29^3/7^5, "25.75.2.1">,
+    <7, 3^3*5*7^5/2^7, "7.56.1.2">,
+    <11, -11*131^3, "11.60.1.3">,
+    <11, -11^2, "11.60.1.4">,
+    <13, 2^4*5*13^4*17^3/3^13, "13.91.3.2">,
+    <13, -2^12*5^3*11*13^4/3^13, "13.91.3.2">,
+    <13, 2^18*3^3*13^4*127^3*139^3*157^3*283^3*929/(5^13*61^13), "13.91.3.2">,
+    <17, -17*373^3/2^17, "17.72.1.2">,
+    <17, -17^2*101^3/2, "17.72.1.4">,
+    <37, -7*11^3, "37.114.4.1">,
+    <37, -7*137^3*2083^3, "37.114.4.2">
+    ];
+
+    exceptionaltwists := [
+    <7, 3^3*5*7^5/2^7, [1,-1,1,-2680, -50053], "7.112.1.2">,
+    <7, 3^3*5*7^5/2^7, [1,-1,1,-131305,17430697], "7.112.1.2">,
+    <11, -11^2, [1,1,1,-305,7888], "11.120.1.4">,
+    <11, -11^2, [1,1,0,-2,-7], "11.120.1.9">,
+    <11, -11*131^3, [1,1,0,-3632,82757], "11.120.1.3">,
+    <11, -11*131^3, [1,1,1,-30,-76], "11.120.1.8">
+    ];
+    j := jInvariant(E);
+    S := [r : r in exceptionaljs | r[1] eq p and r[2] eq j];
+    if #S eq 0 then return ""; end if;
+    assert #S eq 1;
+    T := [r : r in exceptionaltwists | r[1] eq p and r[2] eq j and IsIsomorphic(E,EllipticCurve(r[3]))];
+    if #T eq 0 then return S[1][3]; end if;
+    assert #T eq 1;
+    return T[1][4];
+end function;
+
+// jmap is an element of Q(t), j is an element of Q
+function OnGenusZeroCurve(jmap,j)
+    n := Numerator(jmap); d := Denominator(jmap);
+    return #Roots(n-j*d) gt 0 or (Degree(n) le Degree(d) and Coefficient(n,Degree(d)) eq j*LeadingCoefficient(d));  // check j=jmap(infty)
+end function;
+
+// U=[Coeffs(A),Coeffs(B)] defines the universal elliptic curve y^2=x^3+A(t)*x+B(t), where A and B are polynomials
+function OnGenusZeroCurveTwist(U,E)
+    E := WeierstrassModel(E);  j := jInvariant(E);
+    F<t> := FunctionField(Rationals());
+    A := F!U[1]; B := F!U[2]; J := 1728*4*A^3 / (4*A^3+27*B^2); n := Numerator(J); d := Denominator(J);
+    // Check point at infty
+    if Degree(n) le Degree(d) and Coefficient(n,Degree(d)) eq LeadingCoefficient(d)*j then
+        e := Max(Ceiling(Degree(A)/4),Ceiling(Degree(B)/6));
+        a := 4*e gt Degree(A) select 0 else LeadingCoefficient(Numerator(A));
+        b := 6*e gt Degree(B) select 0 else LeadingCoefficient(Numerator(B));
+        if IsIsomorphic(E,EllipticCurve([a,b])) then return true; end if;
+    end if;
+    rr := Roots(n-j*d);
+    return #[r:r in rr |IsIsomorphic(E,EllipticCurve([Evaluate(A,r[1]),Evaluate(B,r[1])]))] gt 0;
+end function;
+
+// X is an elliptic curve, map is an element of Q(y)(x) and j is an element of Q
+function OnGenusOneCurve(X,map,j)
+    // map should be an element of Q(y)(x)
+    Rx := Universe(Coefficients(Numerator(map)));
+    Rz<z> := PolynomialRing(Rx);
+    f,h := HyperellipticPolynomials(X);
+    g := z^2+h*z-f;
+    if Degree(map) eq 0 then
+        m := Evaluate(map,0);
+        f := Numerator(m)-j*Denominator(m);
+    else
+        a := (Evaluate(Numerator(map),z)-j*Evaluate(Denominator(map),z)) mod g;
+        r := Roots(a);
+        if #r eq 0 then return false; end if; assert #r eq 1;
+        f := Numerator(Evaluate(g,r[1][1]));
+    end if;
+    return #[r:r in Roots(f)|#[s:s in Roots(Rz![Evaluate(c,r[1]):c in Coefficients(g)]) | Evaluate(Evaluate(map,s[1]),r[1]) eq j] gt 0] gt 0;
+end function;
+
+MaxB := 2^16;
+
+function GL2EllAdicImages(E,X)
+    assert BaseRing(E) eq Rationals() and not HasComplexMultiplication(E);
+    E := WeierstrassModel(MinimalModel(E));  D := Integers()!Discriminant(E);
+    B := 128; A := GL2FrobeniusMatrices(E,B);
+    P := NonSurjectivePrimes(E:A:=A);
+    while #P gt 0 and Max(P) gt 37 and B lt MaxB do
+        A cat:= GL2FrobeniusMatrices(E,2*B:B0:=B+1); B *:= 2; 
+        P := NonSurjectivePrimes(E:A:=A);
+    end while;
+    if #P eq 0 then return []; end if;
+    if Max(P) gt 37 then
+        printf "Congratulations, you appear to have found a non-CM E/Q with non-surjective mod-ell image for a prime ell > 37!", E, P;
+        assert false;
+    end if;
+    results := [];
+    j := jInvariant(E);
+    for p in P do
+        L,b := GL2HeuristicEllAdicImage(E,p,A,X:Fast); assert b;
+        if #L eq 1 then Append(~results,L[1]); continue; end if;
+        s := ExceptionalGroup(E,p);
+        if s ne "" then assert s in L; Append(~results,s); continue; end if;
+        // At this point we should only be seeing groups that occur infinitely often
+        while #L gt 1 and #[k:k in L|X[k]`genus gt 1 or X[k]`genus eq 1 and X[k]`rank eq 0] gt 0 and B lt MaxB do
+            A := GL2FrobeniusMatrices(E,2*B:B0:=B+1); B *:= 2; L := GL2HeuristicEllAdicImage(E,p,A,X:Proof,MaxTorsion:=5);
+        end while;
+        if #L eq 1 then Append(~results,L[1]); continue; end if;
+        if B eq MaxB then
+            printf "Congratulations, you may have found a new exceptional j-invariant: %o, L = %o\n", jInvariant(E), L;
+            assert #L eq 1;
+            Append(~results,L[1]); continue;
+        end if;
+        while true do
+            s := [k:k in L|X[k]`genus le 1 and GL2ContainsNegativeOne(X[k]`subgroup)];
+            if #s le 1 then break; end if;
+            k := s[#s];
+            if (X[k]`genus eq 0 select OnGenusZeroCurve(X[k]`jmap,j) else OnGenusOneCurve(EllipticCurve(X[k]`model),X[k]`jmap,j)) then
+                S := GL2Subgroups(k,X); // print "in", S;
+                L := [t:t in L|t in S];
+            else
+                S := GL2Subgroups(k,X); // print "out", S;
+                L := [t:t in L|not t in S];
+            end if;
+        end while;
+        if #L eq 1 then Append(~results,L[1]); continue; end if;
+        assert &and[X[k]`genus eq 0:k in L];
+        // Note that we need to handle three 3-adic cases where there is more than one fine model (the other is a quadratic twist by -3)
+        t := [k:k in L|not k in s and OnGenusZeroCurveTwist(X[k]`fmap,E)];
+        if #t eq 0 then t := s; end if;
+        assert #t eq 1;
+        Append(~results,t[1]);
+    end for;
+    return [k:k in results|k ne "1.1.0.1"];
+end function;
+
 
 // The functions below were used to generate Tables 6-12 in the paper
 

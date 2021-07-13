@@ -68,7 +68,7 @@ end function;
 
 // Load all the fine models from files.
 
-finelabels := [ l : l in GL2QInfinite(subdat) | not GL2ContainsNegId(subdat[l]`subgroup) ];
+finelabels := [ l : l in GL2QInfinite(subdat) | not GL2ContainsNegativeOne(subdat[l]`subgroup) ];
 finelist := [];
 for i in [1..#finelabels] do
   Append(~finelist,eval Read("eqf" cat finelabels[i] cat ".txt"));
