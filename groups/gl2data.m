@@ -5,8 +5,12 @@
                       Set the optional parameter "outfile" to write the results to a file
         GL2Load(l) -- loads subgroup data created by GL2Data, returning an associative array X indexed by label.
                       The input parameter can be either a prime l (indicating the file gl2_ladic.txt) or a filename.
+                      Specify l=0 (indicating the file gl2_Qcheck.txt) to load data for all ell-adic images known to occur for non-CM E/Q
+        GL2LoadExamples() -- loads a list of elliptic curves that realize each non-trivial ell-adic image known to occur for non-CM E/Q
+        GL2EllAdicImages(E,X) -- computes a list of the non-trivial ell-adic images for a non-CM E/Q (for all primes ell),
+                                 given the associative array X returned by GL2Load(0);
 
-    Precomputed files available to GL2Load include gl2_*adic.txt for * in 2,3,5,7,...,37, and also gl2_big2adic.txt.
+    Precomputed files available to GL2Load include gl2_*adic.txt for * in 2,3,5,7,...,37, gl2_big2adic.txt, and gl2_Qcheck.txt.
 
     Subgroups of GL_2(Zhat) with determinant index 1 are identified by labels of the form N.i.g.n,
     where N is the level, i is the index, g is the genus, and n is a (deterministic) tie-breaker.

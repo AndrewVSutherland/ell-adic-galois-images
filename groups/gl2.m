@@ -21,7 +21,6 @@
                              n-torsion subgroup of the given elliptic curve E over a finite field
     GL2nTorsionFrobenius(E,n) -- the reduction of GL2FrobeniusMatrix(E) modulo n
     GL2FrobeniusMatrices(E,B) -- given E/Q returns the list of Frobenius matrices of E mod p for primes p <= B of good reduction
-    GL2EllAdicImage(E,A,X) -- the label (or labels) of the subgroups in the subgroup lattice X compatible with E and the Frobenius matrices in A
 
     After attaching this file you can type GL2<tab> (or GL1<tab>) to see all available functions.
 
