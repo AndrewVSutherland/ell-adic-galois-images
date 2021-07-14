@@ -363,18 +363,33 @@ function GL2Data(p:cmfdatafile:="cmfdata.txt",cpdatafile:="cpdata.txt",rzbdatafi
     return index(recs,func<r|r`label>:Unique);
 end function;
 
+function checkfile(filename)
+    if OpenTest(filename,"r") then return filename; end if;
+    s := Split(GetCurrentDirectory(),"/");
+    for dir in ["ell-adic-galois-images", "code"] do
+        n := Index(s, dir);
+        if n gt 0 then 
+            filename := "/" cat Join(s[1..n] cat ["groups",filename], "/");
+            if OpenTest(filename,"r") then return filename; end if;
+        end if;
+    end for;
+    error "Unable to find file " cat filename;
+end function;
+
 function GL2Load(p)
     if Type(p) eq RngIntElt then
         if p eq 0 then filename := "gl2_Qcheck.txt"; sset := true; else assert IsPrime(p); filename := Sprintf("gl2_%oadic.txt",p); sset := false; end if;
     else
         filename:= p; sset := false;
     end if;
+    filename := checkfile(filename);
     if sset then print "Performing precomputation for GL2EllAdicImages (this should take about 10 secs)..."; end if;
     return index([GL2RecFromString(s:sset:=sset):s in Split(Read(filename))],func<r|r`label>:Unique);
 end function;
 
-function GL2LoadExamples(:file:="examples.txt")
-    S := [Split(r,":"):r in Split(Read(file))];
+function GL2LoadExamples(:filename:="examples.txt")
+    filename := checkfile(filename);
+    S := [Split(r,":"):r in Split(Read(filename))];
     E := AssociativeArray();
     for r in S do E[r[1]] := EllipticCurve(atoii(r[2])); end for;
     return E;
@@ -469,10 +484,10 @@ function GL2EllAdicImages(E,X)
     assert BaseRing(E) eq Rationals() and not HasComplexMultiplication(E);
     E := WeierstrassModel(MinimalModel(E));  D := Integers()!Discriminant(E);
     B := 128; A := GL2FrobeniusMatrices(E,B);
-    P := NonSurjectivePrimes(E:A:=A);
+    P := PossiblyNonsurjectivePrimes(E:A:=A);
     while #P gt 0 and Max(P) gt 37 and B lt MaxB do
         A cat:= GL2FrobeniusMatrices(E,2*B:B0:=B+1); B *:= 2; 
-        P := NonSurjectivePrimes(E:A:=A);
+        P := PossiblyNonsurjectivePrimes(E:A:=A);
     end while;
     if #P eq 0 then return []; end if;
     if Max(P) gt 37 then
