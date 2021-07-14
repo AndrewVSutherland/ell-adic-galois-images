@@ -365,13 +365,13 @@ end function;
 
 function checkfile(filename)
     if OpenTest(filename,"r") then return filename; end if;
-    s := Split(GetCurrentDirectory(),"/");
-    for dir in ["ell-adic-galois-images", "code"] do
-        n := Index(s, dir);
-        if n gt 0 then 
-            filename := "/" cat Join(s[1..n] cat ["groups",filename], "/");
-            if OpenTest(filename,"r") then return filename; end if;
-        end if;
+    for s in ["groups/", "ell-adic-galois-images/groups/"] do
+        u := "";
+        for i:=0 to 9 do
+            test := u cat s cat filename;
+            if OpenTest(test,"r") then return test; end if;
+            u cat:= "../";
+        end for;
     end for;
     error "Unable to find file " cat filename;
 end function;
