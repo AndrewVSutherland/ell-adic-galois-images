@@ -55,6 +55,14 @@ function sqmod(f,g)
     return IsSquare(quo<PolynomialRing(BaseRing(g))|g>!f);
 end function;
 
+// This is often slower than &+[r[2]:r in Roots(f)] but faster when f has lots of roots, e.g. splits completely
+intrinsic NumberOfRoots(f::RngUPolElt[FldFin]) -> RngIntElt
+{ The number of rational roots of the polynomial f. }
+    a := SquareFreeFactorization(f);
+    b := [DistinctDegreeFactorization(r[1]:Degree:=1):r in a];
+    return &+[a[i][2]*(#b[i] gt 0 select Degree(b[i][1][2]) else 0):i in [1..#a]];
+end intrinsic;
+
 intrinsic PrimitiveDivisionPolynomial (E::CrvEll, n::RngIntElt) -> RngUpolElt
 { The monic polynomial whose roots are the x-coordinates of kbar-points of order n on E/k. }
     f := DivisionPolynomial(E,n);
@@ -290,7 +298,7 @@ intrinsic GLLift(H::GrpMat,M::RngIntElt) -> GrpMat
     require IsDivisibleBy(M,N): "M must be divisible by N for H in GL(n,Z/NZ)";
     GLn:=GL(Degree(H),Integers(M));
     _,pi:=ChangeRing(GLn,R);
-    return sub<GLn|Kernel(pi),Inverse(pi)(H)>;
+    return sub<GLn|Kernel(pi),H @@ pi>; // Note: H @@ pi does not compute the full preimage!
 end intrinsic;
 
 intrinsic GL1Lift(H::GrpMat,M::RngIntElt) -> GrpMat
@@ -1011,8 +1019,8 @@ function Test(q,f)
 end function;
 */
 
-/* From Section 4.1 of Kohel's thesis, complexity is O(M(ell^2*log(q))*log(q)) but slower in the range of interest than using Atkin modular polynomials
-function OnFloorSlow(E,t,v,D0,ell)
+/* Based on Lemma 25 of David Kohel's thesis, complexity is O(M(ell^2*log(q))*log(q)) but slower in the range of interest than using Atkin modular polynomials
+function OnFloorKohel(E,t,v,D0,ell)
     if v mod ell ne 0 then return true; end if;
     if ell eq 2 then return #TwoTorsionSubgroup(E) lt 4; end if;
     a := D0 mod 4 eq 1 select (t+v) div 2 else t div 2;
@@ -1030,7 +1038,7 @@ end function;
 
 function OnFloor(E,ell)
     if ell eq 2 then return #TwoTorsionSubgroup(E) lt 4; end if;
-    return &+[r[2]:r in Roots(Evaluate(AtkinModularPolynomial(ell),[PolynomialRing(BaseRing(E)).1,jInvariant(E)]))] le ell;
+    return NumberOfRoots(Evaluate(AtkinModularPolynomial(ell),[PolynomialRing(BaseRing(E)).1,jInvariant(E)])) le ell;
 end function;
 
 function HeightAboveFloor(E,t,v,D0,ell,h)
@@ -1095,42 +1103,55 @@ function ClimbToSurface(j,ell,h)
 end function;
 
 intrinsic EndomorphismRingData(E::CrvEll[FldFin]) -> RngIntElt, RngIntElt
-{ Given an elliptic curve E/Fq returns integers t, D, where t is the trace of the Frobenius endomorphism pi, D is the discriminant of the ring End(E) cap Q(pi). }
+{ Given an elliptic curve E/Fq returns integers a, b, D, with 4*q=a^2-b^2*D, where a is the trace of the Frobenius endomorphism pi, D is the discriminant of the ring End(E) cap Q(pi). }
     q := #BaseRing(E);  _,p,e := IsPrimePower(q);
-    t := TraceOfFrobenius(E);
+    a := TraceOfFrobenius(E);
     j := jInvariant(E);
     if j eq 0 and p ne 2 then
-        return t, [-4*p,-4,t^2 eq 4*q select 1 else -3,0,0,1][#AutomorphismGroup(E) div 2];
+        D := [-4*p,-4,a^2 eq 4*q select 1 else -3,0,0,1][#AutomorphismGroup(E) div 2];
+        b := D eq 1 select 0 else (bb where _,bb := IsSquare((a^2 - 4*q) div D));
+        return a, b, D;
     elif j eq 1728 then
-        return t, [#TwoTorsionSubgroup(E) eq 4 select -p else -4*p,t^2 eq 4*q select 1 else -4,-3,0,0,0,0,0,0,0,0,1][#AutomorphismGroup(E) div 2];
-    elif t mod p eq 0 then
-        return t, t^2 eq 4*q select 1 else (#TwoTorsionSubgroup(E) eq 4 select -p else -4*p);
+        D := [#TwoTorsionSubgroup(E) eq 4 select -p else -4*p,a^2 eq 4*q select 1 else -4,-3,0,0,0,0,0,0,0,0,1][#AutomorphismGroup(E) div 2];
+        b := D eq 1 select 0 else (bb where _,bb := IsSquare((a^2 - 4*q) div D));
+        return a, b, D;
+    elif a mod p eq 0 then
+        r2 := #TwoTorsionSubgroup(E) eq 4;
+        D := a^2 eq 4*q select 1 else (r2 select -p else -4*p);
+        b := D eq 1 select 0 else (r2 select 2 else 1)*p^((e-1) div 2);
+        return a, b, D;
     end if;
     // If we get here E is ordinary and j(E) != 0,1728 
-    D := t^2 - 4*q;  D0 := FundamentalDiscriminant(D); _,v := IsSquare(D div D0);
-    if v eq 1 then return t, D; end if;
-    if IsPrime(v) then return t, v gt 400 or 16*v gt Abs(D0) select (IsHCPRoot(D0,j) select D0 else D) else (OnFloor(E,v) select D else D0); end if;
+    D := a^2 - 4*q;  D0 := FundamentalDiscriminant(D); _,v := IsSquare(D div D0);
+    if v eq 1 then return a,1,D; end if;
+    if IsPrime(v) then
+       if v gt 400 or v*v gt 8*Abs(D0) then
+            if IsHCPRoot(D0,j) then return a,v,D0; else return a, 1, D; end if;
+        else
+            if OnFloor(E,v) then return a, 1, D; else return a, v, D0; end if;
+        end if;
+    end if;
     L := Factorization(v);
-    if &and[ell[2] le 1 : ell in L | ell[1] gt 60] and L[#L][1] le 400 then
-        return t, D div (b*b) where b := &*[ell[1]^HeightAboveFloor(E,t,v,D0,ell[1],ell[2]) : ell in L];
+    if &and[ell[2] le 1 : ell in L | ell[1] gt 60] and L[#L][1] lt 400 and (#L eq 1 or L[#L][1] lt 4*Abs(D) div L[#L][1]^2) then
+        b := &*[ell[1]^HeightAboveFloor(E,a,v,D0,ell[1],ell[2]) : ell in L];
+        return a, b, D div (b*b);
     end if;
     u := 1; w := v;
     for ell in L do if ell[1] lt 60 then j,d := ClimbToSurface(j,ell[1],ell[2]); u *:= ell[1]^d; w div:=ell[1]^ell[2]; end if; end for;
-    for uu in Prune(Divisors(w)) do if IsHCPRoot(uu^2*D0,j) then return t, uu^2*u^2*D0; end if; end for;
-    return t, u^2*w^2*D0;
+    for uu in Prune(Divisors(w)) do if IsHCPRoot(uu^2*D0,j) then return a, (v div (u*uu)), uu^2*u^2*D0; end if; end for;
+    return a, (v div (u*w)), u^2*w^2*D0;
 end intrinsic;
 
 intrinsic GL2FrobeniusMatrix(E::CrvEll[FldFin]) -> AlgMatElt[RngInt]
 { Given an elliptic curve E/Fq returns a 2-by-2 integer matrix whose reduction modulo any integer N coprime to q gives the action of Frobenius on E[N] with respect to some basis. }
-    a, D := EndomorphismRingData(E);
-    M := MatrixRing(Integers(),2);
-    if D eq 1 then return M!FrobMat(a,0,1); end if;
-    return M!FrobMat(a,b,D) where _,b := IsSquare((a^2-4*#BaseRing(E)) div D);
+    a, b, D := EndomorphismRingData(E);
+    return Matrix([[(a+b*d) div 2, b], [b*(D-d) div 4, (a-b*d) div 2]]) where d := D mod 2;
 end intrinsic;
 
 intrinsic FrobeniusMatrix(E::CrvEll[FldFin]) -> AlgMatElt[RngInt]
 { Given an elliptic curve E/Fq returns a 2-by-2 integer matrix whose reduction modulo any integer N coprime to q gives the action of Frobenius on E[N] with respect to some basis. }
-    return GL2FrobeniusMatrix(E);
+    a, b, D := EndomorphismRingData(E);
+    return Matrix([[(a+b*d) div 2, b], [b*(D-d) div 4, (a-b*d) div 2]]) where d := D mod 2;
 end intrinsic;
 
 intrinsic GL2FrobeniusMatrix(E::CrvEll[FldRat], p::RngIntElt) -> AlgMatElt[RngInt]
@@ -1138,7 +1159,13 @@ intrinsic GL2FrobeniusMatrix(E::CrvEll[FldRat], p::RngIntElt) -> AlgMatElt[RngIn
     return GL2FrobeniusMatrix(ChangeRing(E,GF(p)));
 end intrinsic;
 
-intrinsic GL2FrobeniusMatrices(E::CrvEll[FldRat], B::RngIntElt:B0:=1) -> AlgMatElt[RngInt]
+intrinsic GL2FrobeniusMatrices(E::CrvEll[FldRat], B::RngIntElt:B0:=1) -> SeqEnum[AlgMatElt[RngInt]]
+{ Given an elliptic curve E/Q and a bound B returns a list of 2-by-2 integer matrices A of determinant p (for primes p <= B of good reduction) whose reduction modulo any integer N coprime to det(A) gives the action of Frobenius on (E mod p)[N] with respect to some basis. }
+    E := MinimalModel(E); D := Integers()!Discriminant(E);
+    return [GL2FrobeniusMatrix(ChangeRing(E,GF(p))) : p in PrimesInInterval(B0,B) | D mod p ne 0];
+end intrinsic;
+
+intrinsic FrobeniusMatrices(E::CrvEll[FldRat], B::RngIntElt:B0:=1) -> SeqEnum[AlgMatElt[RngInt]]
 { Given an elliptic curve E/Q and a bound B returns a list of 2-by-2 integer matrices A of determinant p (for primes p <= B of good reduction) whose reduction modulo any integer N coprime to det(A) gives the action of Frobenius on (E mod p)[N] with respect to some basis. }
     E := MinimalModel(E); D := Integers()!Discriminant(E);
     return [GL2FrobeniusMatrix(ChangeRing(E,GF(p))) : p in PrimesInInterval(B0,B) | D mod p ne 0];
@@ -1616,7 +1643,7 @@ end intrinsic;
 
 intrinsic GL2Label(H::GrpMat: Verbose:=false) -> MonStgElt
 { The label of H (this requires computing the sublattice up to the level/index/genus of H -- an expensive way to get a single label). }
-    N := GL2Level(H); if N eq 1 then return "1.1.1"; end if;
+    N,H := GL2Level(H); if N eq 1 then return "1.1.1"; end if;
     i := GL2Index(H); g := GL2Genus(H); 
     X := GL2Lattice(N, i : GenusLimit:=g,DeterminantLabel:=GL2DeterminantLabel(H),Verbose:=Verbose,IndexDivides);
     o := GL2OrbitSignature(H); z:=GL2ScalarLabel(H);

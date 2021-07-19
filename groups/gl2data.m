@@ -26,6 +26,7 @@
         rzbdata.txt -- Rouse-Zureick-Brown labels for 2-adic subgroups
 */
 
+
 // this record format extends that of the record form gl2node defined in gl2.m (names need to be compatible!)
 gl2rec := recformat<
     label:MonStgElt,        // label of the form N.i.g.n or N.i.g.d.n
@@ -36,7 +37,7 @@ gl2rec := recformat<
     zlabel:MonStgElt,       // label of scalar subgroup of H as a subgroup of GL(1,Zhat)
     subgroup:GrpMat,        // subgroup of GL(2,N)
     children:SeqEnum,       // labels of maximal subgroups up to index bound
-    allchildren:BoolElt,    // true if all maximal subgroups are listed in children (those not listed have index greater than the index bound)
+    missing:BoolElt,        // true if not every maximal subgroup with the same determinant is listed in children
     parents:SeqEnum,        // labels of groups of which this is a maximal subgroup
     reductions:SeqEnum,     // labels of reductions modulo proper divisors of N (in order)
     orbits:SeqEnum,         // orbit signature: sorted list of triples (e,s,m) where e=exponent, s=size, m=multiplicity of H-orbits of (Z/NZ)^2
@@ -46,7 +47,6 @@ gl2rec := recformat<
     obstructions:SeqEnum,   // sorted list of places p for which X_H(Q_p) has no local points, with p=0 for R (only set for full determinant)
     cusps:RngIntElt,        // number of cusp orbits
     ratcusps:RngIntElt,     // number of Q-rational cusp orbits
-    iclass:MonStgElt,       // isogeny class of J_H, set to Cremona label for genus 1 groups with full determinant, currently left blank otherwise
     gclass:SeqEnum,         // list of labels of Gassmann equivalent subgroups K (those that induce isomorphic permutation modules)
     CPlabel:MonStgElt,      // Cummins-Pauli label of H cap SL_2(Z) (as defined in [CP03a,CP03b], available for g <= 24)
     Slabel:MonStgElt,       // Sutherland label of prime level H (as defined in [Sut16] and used in the LMFDB)
@@ -57,7 +57,7 @@ gl2rec := recformat<
     rank:RngIntElt,         // analytic rank of J_H
     model:MonStgElt,        // for genus one curves whose Jacobian has positive rank this is the Cremona label of an elliptic curve isomorphic to X_H
     jmap:RngElt,            // for H containing -I if X_H(Q) is infinite jmap:X_H->X(1) is an element of Q(t) (genus 0) or of Q(y)(x) (genus 1)
-    fmap:SeqEnum,           // for genus zero H not containing -I with X_H(Q) infinite a pair [A(t),B(t)] defining the universal E:y^2=x^3+A(t)x+B(t).
+    Emap:SeqEnum,           // for genus zero H not containing -I with X_H(Q) infinite a pair [A(t),B(t)] defining the universal E:y^2=x^3+A(t)x+B(t).
     sset:SetEnum            // set of similarity invariants identifying the conjugacy classes in H (only set when requested)
 >;
 
@@ -67,6 +67,14 @@ function atoi(s) return StringToInteger(s); end function;
 function atoii(s) return [Integers()|StringToInteger(n):n in Split(t[2..#t-1],",")] where t:=strip(s); end function;
 function atoiii(s)
     return [[Integers()|StringToInteger(n):n in Split(a[1] eq "]" select "" else Split(a,"]")[1],",")]:a in r] where r := Split(t[2..#t-1],"[") where t:= strip(s);
+end function;
+
+function curly(s) 
+    // Split omits the last field if it is empty even when IncludeEmpty is set (which makes no sense!), so we work around this by padding if needed
+    t := Join(Split(Join(Split(s,"[":IncludeEmpty),"{"),"]":IncludeEmpty),"}");
+    if #t lt #s and s[#s] eq "]" then t cat:="}";  end if; // don't check for trailing [, this shouldn't happen, and if it does assert below will fail
+    assert #s eq #t;
+    return t;
 end function;
 
 function sprint(X)
@@ -84,34 +92,34 @@ function index(S,f:Project:=func<x|x>,Unique:=false)
     return A;
 end function;
 
-function GL2RecClean(r)
-    if r`CPlabel eq "-" then delete r`CPlabel; end if;
-    if r`SZlabel eq "-" then delete r`SZlabel; end if;
-    if r`model eq "-" then delete r`model; delete r`jmap; end if;
-    if r`fmap eq [] then delete r`fmap; end if;
-    if r`RZBlabel eq "-" then delete r`RZBlabel; end if;
-    if r`genus ne 1 then delete r`iclass; end if;
+function GL2RecClean(r:blank:=false)
+    empty := blank select "" else "-";    
+    if r`CPlabel eq empty then delete r`CPlabel; end if;
+    if r`SZlabel eq empty then delete r`SZlabel; end if;
+    if r`model eq empty then delete r`model; delete r`jmap; end if;
+    if r`Emap eq [] then delete r`Emap; end if;
+    if r`RZBlabel eq empty then delete r`RZBlabel; end if;
     if r`genus eq 0 then delete r`rank; end if;
     return r;
 end function;
 
-function GL2RecFill(r)
-    if r`genus gt 24 then r`CPlabel:="-"; else assert r`CPlabel ne ""; end if;
-    if not GL2QInfinite(r:MustContainNegativeOne) then r`SZlabel := "-"; r`model := "-"; r`jmap:= 0; else assert r`SZlabel ne ""; end if;
-    if not GL2QInfinite(r) or GL2ContainsNegativeOne(r`subgroup) then r`fmap := []; end if;
-    if not assigned r`RZBlabel then r`RZBlabel:="-"; end if;
-    if r`RZBlabel eq "" or PrimeDivisors(r`level) ne [2] then r`RZBlabel:="-"; end if;
-    if r`genus ne 1 then r`iclass:="-"; end if;
-    if r`genus eq 0 then r`rank:=-1; end if;
+function GL2RecFill(r:blank:=false)
+    empty := blank select "" else "-";
+    if r`genus gt 24 then r`CPlabel:=empty; else assert r`CPlabel ne ""; end if;
+    if not GL2QInfinite(r:MustContainNegativeOne) then r`SZlabel := empty; r`model := empty; r`jmap:= 0; else assert r`SZlabel ne ""; end if;
+    if not GL2QInfinite(r) or GL2ContainsNegativeOne(r`subgroup) then r`Emap := []; end if;
+    if not assigned r`RZBlabel then r`RZBlabel := empty; end if;
+    if r`RZBlabel eq "" or PrimeDivisors(r`level) ne [2] then r`RZBlabel := empty; end if;
+    if r`genus eq 0 then r`rank:=-1; r`newforms:=[]; end if;
     return r;
 end function;
 
 function GL2RecToString(r)
     r := GL2RecFill(r);
     return Join([r`label,sprint(r`level),sprint(r`index),sprint(r`genus),r`dlabel,r`zlabel,sprint(GL2Generators(r`subgroup)),
-                 sprint(r`children),r`allchildren select "1" else "0", sprint(r`parents),sprint(r`reductions),sprint(r`orbits),sprint(r`korbits),sprint(r`iorbits),
-                 sprint(r`qtwists),sprint(r`obstructions),sprint(r`cusps),sprint(r`ratcusps),r`iclass,sprint(r`gclass),r`CPlabel,r`Slabel,r`SZlabel,r`RZBlabel,
-                 sprint(r`newforms),sprint(r`dims),sprint(r`rank),r`model,sprint(r`jmap),sprint(r`fmap)],":");
+                 sprint(r`children),r`missing select "1" else "0", sprint(r`parents),sprint(r`reductions),sprint(r`orbits),sprint(r`korbits),sprint(r`iorbits),
+                 sprint(r`qtwists),sprint(r`obstructions),sprint(r`cusps),sprint(r`ratcusps),sprint(r`gclass),r`CPlabel,r`Slabel,r`SZlabel,r`RZBlabel,
+                 sprint(r`newforms),sprint(r`dims),sprint(r`rank),r`model,sprint(r`jmap),sprint(r`Emap)],":");
 end function;
 
 function GL2RecFromString(s:sset:=false)
@@ -119,14 +127,32 @@ function GL2RecFromString(s:sset:=false)
     s := Split(s,":");
     N := atoi(s[2]); H := GL2FromGenerators(N,atoiii(s[7]));
     Ft<t> := FunctionField(Rationals());  Fx<x> := FunctionField(Rationals());  Fy<y> := FunctionField(Fx);
-    r := rec<gl2rec|label:=s[1],level:=N,index:=atoi(s[3]),genus:=atoi(s[4]),dlabel:=s[5],zlabel:=s[6],subgroup:=H,children:=labels(s[8]),allchildren:=s[9] eq "1",
+    r := rec<gl2rec|label:=s[1],level:=N,index:=atoi(s[3]),genus:=atoi(s[4]),dlabel:=s[5],zlabel:=s[6],subgroup:=H,children:=labels(s[8]),missing:=s[9] eq "1",
                     parents:=labels(s[10]),reductions:=labels(s[11]),orbits:=atoiii(s[12]),korbits:=atoiii(s[13]),iorbits:=atoiii(s[14]),qtwists:=labels(s[15]),
-                    obstructions:=atoii(s[16]),cusps:=atoi(s[17]),ratcusps:=atoi(s[18]),iclass:=s[19],gclass:=labels(s[20]),CPlabel:=s[21],Slabel:=s[22],
-                    SZlabel:=s[23],RZBlabel:=s[24],newforms:=labels(s[25]),dims:=atoii(s[26]),rank:=atoi(s[27]),model:=s[28],jmap:=eval(s[29]),fmap:=eval(s[30])>;
+                    obstructions:=atoii(s[16]),cusps:=atoi(s[17]),ratcusps:=atoi(s[18]),gclass:=labels(s[19]),CPlabel:=s[20],Slabel:=s[21],
+                    SZlabel:=s[22],RZBlabel:=s[23],newforms:=labels(s[24]),dims:=atoii(s[25]),rank:=atoi(s[26]),model:=s[27],jmap:=eval(s[28]),Emap:=eval(s[29])>;
     if r`genus eq 1 then r`jmap := Fy!r`jmap; end if;
     if sset then r`sset := GL2SimilaritySet(r`subgroup); end if;
     return GL2RecClean(r);
 end function;
+
+procedure GL2LMFDBDump(filename,X)
+    function strings(r) return sprint(["\"" cat k cat "\"":k in r]); end function;
+    fp := Open(filename,"w");
+    Puts(fp,"label:level:index:genus:determinant_label:scalar_label:generators:children:missing_children:parents:reductions:orbits:kummer_orbits:isogeny_orbits:quadratic_twists:obstructions:cusps:rational_cusps:gassmann_class:CPlabel:Slabel:SZlabel:RZBlabel:newforms:dims:rank:model:jmap:Emap");
+    Puts(fp,"text:integer:integer:integer:text:text:integer[]:text[]:boolean:text[]:text[]:integer[]:integer[]:integer[]:text[]:integer[]:integer:integer:text[]:text:text:text:text:text[]:integer[]:integer:text:text:text[]");
+    Puts(fp,"");
+    F<t> := FunctionField(Rationals());
+    for k in GL2SortLabels([k:k in Keys(X)]) do
+        r := GL2RecFill(X[k]:blank:=true);
+        s := curly(Join([r`label,sprint(r`level),sprint(r`index),sprint(r`genus),r`dlabel,r`zlabel,sprint(GL2Generators(r`subgroup)),
+                 strings(r`children),r`missing select "1" else "0", strings(r`parents),strings(r`reductions),sprint(r`orbits),sprint(r`korbits),
+                 sprint(r`iorbits),sprint(r`qtwists),sprint(r`obstructions),sprint(r`cusps),sprint(r`ratcusps),sprint(r`gclass),r`CPlabel,r`Slabel,
+                 r`SZlabel,r`RZBlabel,strings(r`newforms),sprint(r`dims),sprint(r`rank),r`model,sprint(r`jmap),strings([sprint(c):c in r`Emap])],":"));
+        Puts(fp,s);
+    end for;
+    Flush(fp);
+end procedure;
 
 cmfrec := recformat<
     label:MonStgElt,
@@ -275,7 +301,7 @@ function GL2Data(p:cmfdatafile:="cmfdata.txt",cpdatafile:="cpdata.txt",rzbdatafi
     L := GL2SortLabels([k:k in Keys(X)]);
     T := [X[k]:k in L];
     printf "Computed subgroup lattice and labels for %o groups in %.3os\n", #L, Cputime()-s; s:=Cputime();
-    allchildren := [k eq "1.1.0.1" select true else #[H:H in MaximalSubgroups(X[k]`subgroup)|H`order * maxI lt GL2Size(X[k]`level)] eq 0 : k in L];
+    missing := [k eq "1.1.0.1" select false else #[H:H in MaximalSubgroups(X[k]`subgroup)|H`order * maxI lt GL2Size(X[k]`level)] gt 0 : k in L];
     printf "Computed maximal subgroups of %o groups in %.3os\n", #L, Cputime()-s; s:=Cputime();
     reductions := [GL2SortLabels([GL2LookupLabel(X,ChangeRing(T[i]`subgroup,Integers(T[i]`level div p^e))) :e in [1..Valuation(T[i]`level,p)-1]]):i in [1..#T]];
     printf "Computed reduction labels for %o groups in %.3os\n", #T, Cputime()-s; s:=Cputime();
@@ -346,13 +372,13 @@ function GL2Data(p:cmfdatafile:="cmfdata.txt",cpdatafile:="cpdata.txt",rzbdatafi
     end if;
     recs := Sort([GL2RecClean(rec<gl2rec|
         label:=L[i],level:=T[i]`level,index:=T[i]`index,genus:=T[i]`genus,dlabel:=T[i]`dlabel,zlabel:=T[i]`zlabel,subgroup:=T[i]`subgroup,
-        children:=T[i]`children,parents:=T[i]`parents,allchildren:=allchildren[i],reductions:=reductions[i],orbits:=T[i]`orbits,
+        children:=T[i]`children,parents:=T[i]`parents,missing:=missing[i],reductions:=reductions[i],orbits:=T[i]`orbits,
         korbits:=korbits[i],iorbits:=iorbits[i],qtwists:=qtwists[i],obstructions:=obs[i],cusps:=cusps[i],ratcusps:=ratcusps[i],
-        iclass:=iclasses[i],gclass:=gclasses[i],CPlabel:=cplabels[i],Slabel:=slabels[i],SZlabel:=szlabels[i],
+        gclass:=gclasses[i],CPlabel:=cplabels[i],Slabel:=slabels[i],SZlabel:=szlabels[i],
         RZBlabel:=p eq 2 select rzblabels[i] else "",newforms:=newforms[i],dims:=dims[i],rank:=ranks[i],
         model:=IsDefined(szdata,szlabels[i]) select szdata[szlabels[i]][2] else "",
         jmap:=IsDefined(szdata,szlabels[i]) select szdata[szlabels[i]][3] else 0,
-        fmap:=IsDefined(fmdata,L[i]) select fmdata[L[i]] else []>):i in [1..#T]],func<a,b|GL2CompareLabels(a`label,b`label)>);
+        Emap:=IsDefined(fmdata,L[i]) select fmdata[L[i]] else []>):i in [1..#T]],func<a,b|GL2CompareLabels(a`label,b`label)>);
     if #outfile gt 0 then
         fp := Open(outfile, "w");
         for r in recs do Puts(fp,GL2RecToString(r)); end for;
@@ -526,7 +552,7 @@ function GL2EllAdicImages(E,X)
         if #L eq 1 then Append(~results,L[1]); continue; end if;
         assert &and[X[k]`genus eq 0:k in L];
         // Note that we need to handle three 3-adic cases where there is more than one fine model (the other is a quadratic twist by -3)
-        t := [k:k in L|not k in s and OnGenusZeroCurveTwist(X[k]`fmap,E)];
+        t := [k:k in L|not k in s and OnGenusZeroCurveTwist(X[k]`Emap,E)];
         if #t eq 0 then t := s; end if;
         assert #t eq 1;
         Append(~results,t[1]);
@@ -561,27 +587,26 @@ function texmflabels(newforms)
 end function;
 
 procedure textable(X)
-    S := GL2ArithmeticallyMaximal(X);
     top := "\\begin{table}\n\\begin{center}\\small\n\\begin{tabular}{lllrrrrl}\nlabel & generators & CP & \\hspace{-12pt}$\\#X_H^\\infty(\\Qbar)$ & \\hspace{-4pt}$\\#X_H^\\infty(\\Q)$ & $r$ & $g$ & dimensions\\\\\\toprule";
     bottom := "\\end{tabular}\n\\end{center}\n\\end{table}";
-    if #S ge 22 then print top; end if;
-    for i:=1 to #S do
-        r := X[S[i]];
-        s := Sprintf("\\texttt{%o}",r`label);
+    if #X ge 22 then print top; end if;
+    for i:=1 to #X do
+        r := X[i];
+        s := Sprintf("\\gtarget{%o}",r`label);
         s cat:= " & $" cat Join([Sprintf("\\smallmat{%o}{%o}{%o}{%o}",g[1][1],g[1][2],g[2][1],g[2][2]):g in Generators(r`subgroup)],", ") cat "$";
-        s cat:= " & " cat texcplabel(r`cplabel);
+        s cat:= " & " cat texcplabel(r`CPlabel);
         s cat:= Sprintf(" & %o & %o", r`cusps, r`ratcusps);
         s cat:= Sprintf(" & %o & %o", r`rank, r`genus);
         M := Multiset(r`dims);  D := Sort([d:d in Set(r`dims)]);
         s cat:= " & $" cat Join([texdim(d,Multiplicity(M,d)):d in D], ", ") cat "$";
-        s cat:= "\\\\[0.5pt]\n& \\multicolumn{7}{l}{\\parbox[l]{13.0cm}{\\raggedright";
+        s cat:= "\\\\[2pt]\n& \\multicolumn{7}{l}{\\parbox[l]{12.5cm}{\\raggedright";
         s cat:= texmflabels(r`newforms);
-        s cat:= "}}\\\\[-1pt]";
-        if i lt #S then s cat:= "\\hline\\noalign{\\vskip 2pt}"; end if;
+        s cat:= "}}\\\\";
+        if i lt #X then s cat:= "\\hline\\noalign{\\vskip 3pt}"; end if;
         print s;        
         if i mod 22 eq 0 then print bottom; print top; end if;
     end for;
-    if #S ge 22 then print bottom; end if;
+    if #X ge 22 then print bottom; end if;
 end procedure;
 
 procedure texobstable(dir,P)
