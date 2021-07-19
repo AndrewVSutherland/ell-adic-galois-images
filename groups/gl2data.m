@@ -391,7 +391,7 @@ end function;
 
 function checkfile(filename)
     if OpenTest(filename,"r") then return filename; end if;
-    for s in ["groups/", "ell-adic-galois-images/groups/"] do
+    for s in ["groups/", "ell-adic-galois-images/groups/", "ell-adic-galois-images-main/groups/"] do
         u := "";
         for i:=0 to 9 do
             test := u cat s cat filename;
