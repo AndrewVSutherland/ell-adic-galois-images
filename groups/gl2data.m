@@ -58,7 +58,7 @@ gl2rec := recformat<
     model:MonStgElt,        // for genus one curves whose Jacobian has positive rank this is the Cremona label of an elliptic curve isomorphic to X_H
     jmap:RngElt,            // for H containing -I if X_H(Q) is infinite jmap:X_H->X(1) is an element of Q(t) (genus 0) or of Q(y)(x) (genus 1)
     Emap:SeqEnum,           // for genus zero H not containing -I with X_H(Q) infinite a pair [A(t),B(t)] defining the universal E:y^2=x^3+A(t)x+B(t).
-    sset:SetEnum            // set of similarity invariants identifying the conjugacy classes in H (only set when requested)
+    sset:Assoc              // set of similarity invariants identifying the conjugacy classes in H (only set when requested)
 >;
 
 /* parsing functions that are faster and safer than using eval */
@@ -132,7 +132,7 @@ function GL2RecFromString(s:sset:=false)
                     obstructions:=atoii(s[16]),cusps:=atoi(s[17]),ratcusps:=atoi(s[18]),gclass:=labels(s[19]),CPlabel:=s[20],Slabel:=s[21],
                     SZlabel:=s[22],RZBlabel:=s[23],newforms:=labels(s[24]),dims:=atoii(s[25]),rank:=atoi(s[26]),model:=s[27],jmap:=eval(s[28]),Emap:=eval(s[29])>;
     if r`genus eq 1 then r`jmap := Fy!r`jmap; end if;
-    if sset then r`sset := GL2SimilaritySet(r`subgroup); end if;
+    if sset then r`sset := AssociativeArray(); r`sset["cache"] := GL2SimilaritySet(r`subgroup); end if;
     return GL2RecClean(r);
 end function;
 
@@ -414,10 +414,11 @@ function GL2Load(p)
 end function;
 
 function GL2LoadExamples(:filename:="examples.txt")
+    function labels(s) return Split(s[2..#s-1],","); end function;
     filename := checkfile(filename);
     S := [Split(r,":"):r in Split(Read(filename))];
     E := AssociativeArray();
-    for r in S do E[r[1]] := EllipticCurve(atoii(r[2])); end for;
+    for r in S do E[labels(r[1])] := EllipticCurve(atoii(r[2])); end for;
     return E;
 end function;
 

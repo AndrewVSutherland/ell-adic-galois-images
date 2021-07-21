@@ -1773,7 +1773,8 @@ end intrinsic;
 intrinsic GL2SimilaritySet(X::Assoc,k::MonStgElt) -> SetEnum
 { Returns the set of similarity invariants identifying the GL2-conjugacy classes in the group with label, using cached result if available. }
     if not "sset" in Names(X[k]) then GL2SimilaritySet(X[k]`subgroup); end if;
-    return assigned X[k]`sset select X[k]`sset else GL2SimilaritySet(X[k]`subgroup);
+    if not assigned X[k]`sset then return GL2SimilaritySet(X[k]`subgroup); end if;
+    return X[k]`sset["cache"];
 end intrinsic;
 
 intrinsic GL2HeuristicEllAdicImage(E::CrvEll,ell::RngIntElt,A::SeqEnum,X::Assoc:Fast:=false,Proof:=true,MaxTorsion:=9) -> SeqEnum[MonStgElt], BoolElt
