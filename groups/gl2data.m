@@ -347,7 +347,9 @@ function GL2Data(p:cmfdatafile:="cmfdata.txt",cpdatafile:="cpdata.txt",rzbdatafi
     for i in [1..#T] do ratcusps[i] := GL2RationalCuspCount(T[i]`subgroup); end for;
     printf "Counted rational cusps in %.3os\n", Cputime()-s; s:=Cputime();
     obs := [[]:i in [1..#T]];
-    for i in [1..#T] do if ratcusps[i] eq 0 then obs[i] := GL2QObstructions(T[i]`subgroup:B:=100); end if; end for;
+    // We know a posteriori that there are no arithmetic obstructions with p > 1000 among the groups summarized in Table 4
+    // If we only care about arithmetically maximal groups we could use B=100, but this doesn't really save any time
+    for i in [1..#T] do if ratcusps[i] eq 0 then obs[i] := GL2QObstructions(T[i]`subgroup:B:=1000); end if; end for;
     printf "Identified local obstructions in %.3os\n", Cputime()-s; s:=Cputime();
     iclasses := ["":i in [1..#T]];  ranks := [-1:i in [1..#T]]; n:=0;
     for i in [1..#T] do if T[i]`genus eq 1 then e,r := GL2IsogenyClass(T[i]`subgroup); iclasses[i]:= e; ranks[i]:=r; n+:=1; end if; end for;
@@ -505,14 +507,12 @@ function OnGenusOneCurve(X,map,j)
     return #[r:r in Roots(f)|#[s:s in Roots(Rz![Evaluate(c,r[1]):c in Coefficients(g)]) | Evaluate(Evaluate(map,s[1]),r[1]) eq j] gt 0] gt 0;
 end function;
 
-MaxB := 2^16;
-
-function GL2EllAdicImages(E,X)
+function GL2EllAdicImages(E,X:Bmin:=64,Bmax:=1048576)
     assert BaseRing(E) eq Rationals() and not HasComplexMultiplication(E);
     E := WeierstrassModel(MinimalModel(E));  D := Integers()!Discriminant(E);
-    B := 128; A := GL2FrobeniusMatrices(E,B);
+    B := Bmin; A := GL2FrobeniusMatrices(E,B);
     P := PossiblyNonsurjectivePrimes(E:A:=A);
-    while #P gt 0 and Max(P) gt 37 and B lt MaxB do
+    while #P gt 0 and Max(P) gt 37 and B lt Bmax do
         A cat:= GL2FrobeniusMatrices(E,2*B:B0:=B+1); B *:= 2; 
         P := PossiblyNonsurjectivePrimes(E:A:=A);
     end while;
@@ -529,11 +529,11 @@ function GL2EllAdicImages(E,X)
         s := ExceptionalGroup(E,p);
         if s ne "" then assert s in L; Append(~results,s); continue; end if;
         // At this point we should only be seeing groups that occur infinitely often
-        while #L gt 1 and #[k:k in L|X[k]`genus gt 1 or X[k]`genus eq 1 and X[k]`rank eq 0] gt 0 and B lt MaxB do
+        while #L gt 1 and #[k:k in L|X[k]`genus gt 1 or X[k]`genus eq 1 and X[k]`rank eq 0] gt 0 and B lt Bmax do
             A := GL2FrobeniusMatrices(E,2*B:B0:=B+1); B *:= 2; L := GL2HeuristicEllAdicImage(E,p,A,X:Proof,MaxTorsion:=5);
         end while;
         if #L eq 1 then Append(~results,L[1]); continue; end if;
-        if B eq MaxB then
+        if B eq Bmax then
             printf "Congratulations, you may have found a new exceptional j-invariant: %o, L = %o\n", jInvariant(E), L;
             assert #L eq 1;
             Append(~results,L[1]); continue;
