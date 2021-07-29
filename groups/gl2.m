@@ -97,6 +97,14 @@ intrinsic IsogenyGaloisGroup (E::CrvEll, n::RngIntElt) -> RngIntElt
     return GaloisGroup(Evaluate(ClassicalModularPolynomial(n),[jInvariant(E),x]));
 end intrinsic;
 
+intrinsic KummerOrbits (E::CrvEll, n::RngIntElt) -> RngIntElt
+{ The multiset of sizes of Galois orbits of E[n] for an elliptic curve E. }
+    require n gt 0: "n must be positive.";
+    if n eq 1 then return 1; end if;
+    A := Factorization(PrimitiveDivisionPolynomial(E,n));
+    return {* Degree(a[1])^^a[2] : a in A *};
+end intrinsic;
+
 intrinsic TorsionOrbits (E::CrvEll, n::RngIntElt) -> RngIntElt
 { The multiset of sizes of Galois orbits of E[n] for an elliptic curve E. }
     require n gt 0: "n must be positive.";
@@ -104,6 +112,7 @@ intrinsic TorsionOrbits (E::CrvEll, n::RngIntElt) -> RngIntElt
     E := WeierstrassModel(MinimalModel(E));  f := HyperellipticPolynomials(E);
     psi := PrimitiveDivisionPolynomial(E,n);
     A := Factorization(psi);
+    if n eq 2 then return {* Degree(a[1])^^a[2] : a in A *}; end if;
     R := PolynomialRing(BaseRing(f));
     return {* sqmod(f,a[1]) select Degree(a[1])^^(2*a[2]) else (2*Degree(a[1]))^^a[2] : a in A *};
 end intrinsic;
@@ -121,41 +130,26 @@ intrinsic TorsionDegree (E::CrvEll, n::RngIntElt) -> RngIntElt
     return d;
 end intrinsic;
 
-intrinsic FullTorsionDegree (E::CrvEll, n::RngIntElt) -> RngIntElt
-{ The degree of the n-torsion field of E (this can be extremely expensive, use with caution). }
+intrinsic PrimitiveTorsionPolynomial (E::CrvEll, n::RngIntElt) -> RngIntElt
+{ Polynomial whose splitting field is the n-torsion field of E. }
     require n gt 0: "n must be positive.";
     if n eq 1 then return 1; end if;
-    E := WeierstrassModel(MinimalModel(E));  f := HyperellipticPolynomials(E);
+    E := WeierstrassModel(E);  f := HyperellipticPolynomials(E);
+    if n eq 2 then return f; end if;
     R<X,Y> := PolynomialRing(BaseRing(f),2);
-    g := PrimitiveDivisionPolynomial(E,n);             // roots of g are all x-coords of points of order n
-    if IsOdd(n) and IsIrreducible(g) then
-        return 2*#GaloisGroup(PrimitiveDivisionPolynomial(E,n));
-    end if;
-    h := Resultant(Y^2-Evaluate(f,X),Evaluate(g,X),X); // roots of h are all y-coords of points of order n
-    return #GaloisGroup(Evaluate(h,[0,Parent(g).1])*g);
+    g := PrimitiveDivisionPolynomial(E,n);               // roots of g are all x-coords of points of order n
+    h := Resultant(Y^2-Evaluate(f,X),Evaluate(g,X),X);   // roots of h are all y-coords of points of order n
+    return Evaluate(h,[0,Parent(f).1]);
 end intrinsic;
 
 intrinsic TorsionGaloisGroup (E::CrvEll, n::RngIntElt) -> RngIntElt
 { Galois group of the n-torsion field of E (this can be extremely expensive, use with caution). }
-    require n gt 0: "n must be positive.";
-    if n eq 1 then return 1; end if;
-    E := WeierstrassModel(MinimalModel(E));  f := HyperellipticPolynomials(E);
-    R<X,Y> := PolynomialRing(BaseRing(f),2);
-    g := PrimitiveDivisionPolynomial(E,n);             // roots of g are all x-coords of points of order n
-    h := Resultant(Y^2-Evaluate(f,X),Evaluate(g,X),X); // roots of h are all y-coords of points of order n
-    return GaloisGroup(Evaluate(h,[0,Parent(g).1])*g);
+    return GaloisGroup(PrimitiveTorsionPolynomial(E,n));
 end intrinsic;
 
 intrinsic TorsionField (E::CrvEll, n::RngIntElt) -> RngIntElt
 { The n-torsion field of E/K, where K is a number field (this can be extremely expensive, use with caution). }
-    require n gt 0: "n must be positive.";
-    if n eq 1 then return 1; end if;
-    E := WeierstrassModel(MinimalModel(E));  f := HyperellipticPolynomials(E);
-    R<X,Y> := PolynomialRing(BaseRing(f),2);
-    g := PrimitiveDivisionPolynomial(E,n);             // roots of g are all x-coords of points of order n
-    h := Resultant(Y^2-Evaluate(f,X),Evaluate(g,X),X); // roots of h are all y-coords of points of order n
-    K := SplittingField(Evaluate(h,[0,Parent(g).1])*g);
-    return K;
+    return SplittingField(PrimitiveTorsionPolynomial(E,n));
 end intrinsic;
 
 intrinsic TracesToLPolynomial (t::SeqEnum[RngIntElt], q::RngIntElt) -> RngUPolElt
@@ -885,9 +879,9 @@ intrinsic M2SimilarityInvariant(M::AlgMatElt[RngIntRes]) -> SeqEnum[SeqEnum[RngI
         j := Max([0] cat [j:j in [1..e] | scalar(ChangeRing(A,Integers(p^j)))]);
         if j eq 0 then S cat:= [[Integers()|p^e,Determinant(A),Trace(A),0,0,0,0]]; continue; end if;
         if j eq e then S cat:= [[Integers()|p^e,Determinant(A),Trace(A),e,A[1][1],0,0]]; continue; end if;
-        q := p^j; M := MatrixRing(Integers(p^(e-j)),2);
+        q := p^j; MR := MatrixRing(Integers(p^(e-j)),2);
         d := (Z!A[1][1]) mod q;
-        B := M![(Z!A[1][1]-d) div q, Z!A[1][2] div q, Z!A[2][1] div q, (Z!A[2][2]-d) div q];
+        B := MR![(Z!A[1][1]-d) div q, Z!A[1][2] div q, Z!A[2][1] div q, (Z!A[2][2]-d) div q];
         S cat:= [[Integers()|p^e,Determinant(A),Trace(A),j,d,Determinant(B),Trace(B)]];
     end for;
     return S;
@@ -901,12 +895,14 @@ end intrinsic;
 intrinsic GL2SimilaritySet(H::GrpMat) -> SeqEnum[Tup]
 { Set of similarity invariants arising in H. }
     if Type(BaseRing(H)) ne RngIntRes then return {[]}; end if;
-    return { GL2SimilarityInvariant(c[3]): c in ConjugacyClasses(H) };
+    M := MatrixRing(BaseRing(H),Degree(H));
+    return { M2SimilarityInvariant(M!c[3]): c in ConjugacyClasses(H) };
 end intrinsic;
 
 intrinsic GL2SimilarityMultiset(H::GrpMat) -> SeqEnum[Tup]
 { Set of similarity invariants arising in H. }
-    return {* GL2SimilarityInvariant(c[3])^^c[2]: c in ConjugacyClasses(H) *};
+    M := MatrixRing(BaseRing(H),Degree(H));
+    return {* M2SimilarityInvariant(M!c[3])^^c[2]: c in ConjugacyClasses(H) *};
 end intrinsic;
 
 intrinsic GL2ClassSignature(H::GrpMat:N:=0) -> SeqEnum[Tup]
@@ -923,7 +919,7 @@ intrinsic GL2GassmannSignature(H::GrpMat:N:=0) -> SeqEnum[Tup]
 { Sorted list of pairs <r,m> where r is a similarity invariant of GL_2(N) and m > 0 is its multiplicity in H; this uniquely identifies the Gassmann equivalence class of H as a subgroup of GL_2(N). }
     if N eq 0 then N,H := GL2Level(H); else require N eq 1 or #BaseRing(H) eq N: "N must be equal to the cardinality of the base ring of H"; end if;
     if N eq 1 then return []; end if;
-    S := {* GL2SimilarityInvariant(c[3])^^c[2] : c in ConjugacyClasses(H) *};
+    S := GL2SimilarityMultiset(H);
     return Sort([<r,Multiplicity(S,r)>:r in Set(S)]);
 end intrinsic;
 
@@ -1877,14 +1873,14 @@ intrinsic GL2HeuristicEllAdicImage(E::CrvEll,ell::RngIntElt,A::SeqEnum,X::Assoc:
         if not jInvariant(E) in [0,1728] then
             I := [iorb(k,n):k in L];
             if #Set(I) gt 1 and n lt 60 then
-                s := lmset({* [n,Degree(a[1])]^^a[2] : a in Factorization(Evaluate(ClassicalModularPolynomial(n),[x,jInvariant(E)])) *});
+                s := lmset({* [n,d]^^Multiplicity(S,d) : d in Set(S) *}) where S:=IsogenyOrbits(E,n);
                 L := [L[i]:i in [1..#I]|I[i] eq s];
                 if #L eq 1 then return L, true; end if;
             end if;
         end if;
         I := [korb(k,n):k in L];
         if #Set(I) gt 1 then
-            s := lmset({* [n,Degree(a[1])]^^a[2] : a in Factorization(PrimitiveDivisionPolynomial(E,n)) *});
+            s := lmset({* [n,d]^^Multiplicity(S,d) : d in Set(S) *}) where S:=KummerOrbits(E,n);
             L := [L[i]:i in [1..#I]|I[i] eq s];
             if #L eq 1 then return L, true; end if;
         end if;
@@ -1920,22 +1916,16 @@ intrinsic GL2HeuristicEllAdicImage(E::CrvEll,ell::RngIntElt,A::SeqEnum,X::Assoc:
         end if;
     end for;
     assert #L gt 1;
+    N := Max([X[k]`level:k in L]);  G := GL(2,Integers(N));
+    S := AssociativeArray(); for k in L do S[k] := GL2SimilaritySet(GL2Lift(X[k]`subgroup,N)); end for;
+    if #Set([S[k]:k in Keys(S)]) eq 1 then return L, true; end if;
     B := Max([Determinant(a):a in A]);
-    if B lt 4096 then
-        N := Max([X[k]`level:k in L]);  G := GL(2,Integers(N));
-        S := AssociativeArray(); for k in L do S[k] := GL2SimilaritySet(GL2Lift(X[k]`subgroup,N)); end for;
-        if #Set([S[k]:k in Keys(S)]) eq 1 then return L, true; end if;
-        A cat:= GL2FrobeniusMatrices(E,4096:B0:=B+1);
-        Z := {GL2SimilarityInvariant(G!a):a in A|GCD(Determinant(a),N) eq 1};
-        L := [k:k in L|Z subset S[k]];
-        if #L eq 1 then return L, true; end if;
-        if Proof then return L, true; end if;
-        Z := &meet[S[k]:k in L];
-        m := #L;
-        L := [k:k in L|S[k] eq Z];
-        return L, #L eq m;
-    end if;
-    return L,true;
+    if B lt 4096 then A cat:= GL2FrobeniusMatrices(E,4096:B0:=B+1); Z[N] := {GL2SimilarityInvariant(G!a):a in A|GCD(Determinant(a),N) eq 1}; end if;
+    L := [k:k in L|Z[N] subset S[k]];
+    if #L eq 1 or Proof then return L, true; end if;
+    Z := &meet[S[k]:k in L];
+    m := #L; L := [k:k in L|S[k] eq Z];
+    return L, #L eq m;
 end intrinsic;
 
 /*
