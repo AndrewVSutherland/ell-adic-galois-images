@@ -65,12 +65,27 @@ intrinsic NumberOfRoots(f::RngUPolElt[FldFin]) -> RngIntElt
 end intrinsic;
 
 intrinsic PrimitiveDivisionPolynomial (E::CrvEll, n::RngIntElt) -> RngUpolElt
-{ The monic polynomial whose roots are the x-coordinates of kbar-points of order n on E/k. }
+{ The divisor of the n-division polynomial whose roots are the x-coordinates of kbar-points of order n on E/k. }
     f := DivisionPolynomial(E,n);
     if IsPrime(n) then return f; end if;
     for p in PrimeDivisors(n) do f := ExactQuotient(f,GCD(f,DivisionPolynomial(E,ExactQuotient(n,p)))); end for;
     return f;
 end intrinsic;
+
+intrinsic PrimitiveDivisionPolynomial2 (E::CrvEll, n::RngIntElt) -> RngUpolElt
+{ The divisor of the n-division polynomial whose roots are the x-coordinates of kbar-points of order n on E/k. }
+    require jInvariant(E) eq 1728: "E must have jInvariant 1728";
+    f := PrimitiveDivisionPolynomial(E,n);
+    return Parent(f)![Coefficient(f,m):m in [0..Degree(f)]|IsEven(m)];
+end intrinsic;
+
+intrinsic PrimitiveDivisionPolynomial3 (E::CrvEll, n::RngIntElt) -> RngUpolElt
+{ The divisor of the n-division polynomial whose roots are the x-coordinates of kbar-points of order n on E/k. }
+    require jInvariant(E) eq 0: "E must have jInvariant 1728";
+    f := PrimitiveDivisionPolynomial(E,n);
+    return Parent(f)![Coefficient(f,m):m in [0..Degree(f)]|m mod 3 eq 0];
+end intrinsic;
+
 
 intrinsic IsogenyOrbits (E::CrvEll, n::RngIntElt) -> RngIntElt
 { The multiset of sizes of Galois orbits of cyclic isogenies of degree n (which must be a prime power < 60). }
@@ -109,7 +124,7 @@ intrinsic TorsionOrbits (E::CrvEll, n::RngIntElt) -> RngIntElt
 { The multiset of sizes of Galois orbits of E[n] for an elliptic curve E. }
     require n gt 0: "n must be positive.";
     if n eq 1 then return 1; end if;
-    E := WeierstrassModel(MinimalModel(E));  f := HyperellipticPolynomials(E);
+    E := WeierstrassModel(E);  f := HyperellipticPolynomials(E);
     psi := PrimitiveDivisionPolynomial(E,n);
     A := Factorization(psi);
     if n eq 2 then return {* Degree(a[1])^^a[2] : a in A *}; end if;
@@ -121,7 +136,7 @@ intrinsic TorsionDegree (E::CrvEll, n::RngIntElt) -> RngIntElt
 { The minimal degree of an extension over which E has a rational point of order n. }
     require n gt 0: "n must be positive.";
     if n eq 1 then return 1; end if;
-    E := WeierstrassModel(MinimalModel(E));  f := HyperellipticPolynomials(E);
+    E := WeierstrassModel(E);  f := HyperellipticPolynomials(E);
     A := Factorization(PrimitiveDivisionPolynomial(E,n));
     // if n is odd and the n-division polynomial is irreducible, then the mod-n image must contain -I
     if #A eq 1 and A[1][2] eq 1 and IsOdd(n) then return 2*Degree(A[1][1]); end if;
@@ -139,12 +154,17 @@ intrinsic PrimitiveTorsionPolynomial (E::CrvEll, n::RngIntElt) -> RngIntElt
     R<X,Y> := PolynomialRing(BaseRing(f),2);
     g := PrimitiveDivisionPolynomial(E,n);               // roots of g are all x-coords of points of order n
     h := Resultant(Y^2-Evaluate(f,X),Evaluate(g,X),X);   // roots of h are all y-coords of points of order n
-    return Evaluate(h,[0,Parent(f).1]);
+    return Evaluate(h,[0,Parent(g).1])*g;
 end intrinsic;
 
 intrinsic TorsionGaloisGroup (E::CrvEll, n::RngIntElt) -> RngIntElt
 { Galois group of the n-torsion field of E (this can be extremely expensive, use with caution). }
     return GaloisGroup(PrimitiveTorsionPolynomial(E,n));
+end intrinsic;
+
+intrinsic FullTorsionDegree (E::CrvEll, n::RngIntElt) -> RngIntElt
+{ The degree of the n-torsion field of E. }
+    return #TorsionGaloisGroup(E,n);
 end intrinsic;
 
 intrinsic TorsionField (E::CrvEll, n::RngIntElt) -> RngIntElt
@@ -1262,6 +1282,7 @@ function j0FM(q)
 end function;
 
 function j0PointCount(N,f,q) GL2 := GL(2,Integers(N)); return Integers()! &+[f(GL2!FrobMat(r[1],r[2],r[3]))*r[4] : r in j0FM(q)]; end function;
+function j0FrobeniusMatrices(q) return [FrobMat(r[1],r[2],r[3]):r in j0FM(q)] cat [FrobMat(r[1],-r[2],r[3]):r in j0FM(q)|r[2] ne 0]; end function;
 
 function j1728FM(q)
     _,p,e := IsPrimePower(q);
@@ -1286,6 +1307,7 @@ function j1728FM(q)
 end function;
 
 function j1728PointCount(N,f,q) GL2 := GL(2,Integers(N)); return Integers()! &+[f(GL2!FrobMat(r[1],r[2],r[3]))*r[4] : r in j1728FM(q)]; end function;
+function j1728FrobeniusMatrices(q) return [FrobMat(r[1],r[2],r[3]):r in j1728FM(q)] cat [FrobMat(r[1],-r[2],r[3]):r in j1728FM(q)|r[2] ne 0]; end function;
 
 // Given level N, permutation character f table C indexed by conjugacy class, class map f, class number table htab for -D <= 4q, prime power q coprime to {N
 // returns the number of points on X_H(Fq) above non-cuspidal j!=0,1728
@@ -1329,8 +1351,8 @@ end function;
 intrinsic GL2FrobeniusMatrices(q::RngIntElt) -> SetEnum[AlgMatElt[RngInt]]
 { The set of Frobenius matrices that arise for elliptic curves E/Fq. }
     b,p,e := IsPrimePower(q); assert(b);
-    S := [[r[1],r[2],r[3]]:r in j0] cat [[-r[1],r[2],r[3]]:r in j0|r[1] gt 0] where j0 := j0FM(q);
-    S cat:= [[r[1],r[2],r[3]]:r in j1728] cat [[-r[1],r[2],r[3]]:r in j1728|r[1] gt 0] where j1728 := j1728FM(q);
+    S := [[r[1],r[2],r[3]]:r in j0] cat [[-r[1],r[2],r[3]]:r in j0|r[1] ne 0] where j0 := j0FM(q);
+    S cat:= [[r[1],r[2],r[3]]:r in j1728] cat [[-r[1],r[2],r[3]]:r in j1728|r[1] ne 0] where j1728 := j1728FM(q);
     for a in [1..Floor(2*Sqrt(q))] do  // iterate over positive traces not divisible by p
         if a mod p eq 0 then continue; end if; // supersingular cases handled below
         D1 := a^2-4*q; // discriminant of Z[pi] for trace a
@@ -1392,6 +1414,45 @@ intrinsic GL2jInvariants(H::GrpMat,Q::SeqEnum) -> SeqEnum[FldFinElt]
     chi := GL2PermutationCharacter(sub<G|H,-Identity(G)>);
     return [* GL2jInvariants(H,q:chi:=chi) : q in Q *];
 end intrinsic;
+
+intrinsic GL2jInvariantTest(H::GrpMat,j::FldFinElt) -> BoolElt
+{ True if j is an element of j(X_H(F_q)). }
+    q := #Parent(j);
+    N,H := GL2Level(H);  G := GL(2,Integers(N));
+    S := GL2SimilaritySet(H);
+    if j eq 0 then return &or[GL2SimilarityInvariant(G!A) in S : A in j0FrobeniusMatrices(q)]; end if;
+    if j eq 1728 then return &or[GL2SimilarityInvariant(G!A) in S : A in j1728FrobeniusMatrices(q)]; end if;
+    a, b, D := EndomorphismRingData(EllipticCurveFromjInvariant(j));
+    A := Matrix([[(a+b*d) div 2, b], [b*(D-d) div 4, (a-b*d) div 2]]) where d := D mod 2;
+    if GL2SimilarityInvariant(G!A) in S then return true; end if;
+    if a ne 0 then
+        A := Matrix([[(-a+b*d) div 2, b], [b*(D-d) div 4, (-a-b*d) div 2]]) where d := D mod 2;
+        if GL2SimilarityInvariant(G!A) in S then return true; end if;
+    end if;
+    return false;
+end intrinsic;
+
+
+intrinsic GL2jInvariantTest(H::GrpMat,j::RngIntElt,B::RngIntElt) -> BoolElt
+{ True if j is an element of j(X_H(F_q)). }
+    q := #Parent(j);
+    N,H := GL2Level(H);  G := GL(2,Integers(N));
+    S := GL2SimilaritySet(H);
+    if j eq 0 then return &and[&or[GL2SimilarityInvariant(G!A) in S : A in j0FrobeniusMatrices(p)] : p in PrimesInInterval(1,B)|N mod p ne 0]; end if;
+    if j eq 1728 then return &and[&or[GL2SimilarityInvariant(G!A) in S : A in j1728FrobeniusMatrices(p)] : p in PrimesInInterval(1,B)|N mod p ne 0]; end if;
+    for p in PrimesInInterval(1,B) do
+        if N mod p eq 0 then continue; end if;
+        a, b, D := EndomorphismRingData(EllipticCurveFromjInvariant(GF(p)!j));
+        A := Matrix([[(a+b*d) div 2, b], [b*(D-d) div 4, (a-b*d) div 2]]) where d := D mod 2;
+        if not GL2SimilarityInvariant(G!A) in S then return false; end if;
+        if a ne 0 then
+            A := Matrix([[(-a+b*d) div 2, b], [b*(D-d) div 4, (-a-b*d) div 2]]) where d := D mod 2;
+            if not GL2SimilarityInvariant(G!A) in S then return false; end if;
+        end if;
+    end for;
+    return true;
+end intrinsic;
+
 
 // htab:=ClassNumbers(4*p), f:=GL2PermutationCharacter(H cup -H), C:=GL2RationalCuspCounts(H)
 function XHPointCount(N,htab,f,C,q)
@@ -1646,7 +1707,7 @@ intrinsic GL2Lattice(N::RngIntElt, IndexLimit::RngIntElt : G:=GL(2,Integers(N)),
         printf "found %o subgroups in %.3os\n", #S, Cputime()-s;
         printf "Computing index, level, genus, orbit signature, scalar index for %o groups...", #S; s := Cputime();
     end if;
-    T := [<level,Index(G,H),GL2Genus(H),GL2OrbitSignature(H:N:=level),GL2ScalarLabel(H)> where level,H:=GL2Level(K) : K in S];
+    T := [<level,GL2Index(H),GL2Genus(H),GL2OrbitSignature(H:N:=level),GL2ScalarLabel(H)> where level,H:=GL2Level(K) : K in S];
     X := index([1..#T],func<i|<T[i][1],T[i][2],T[i][4],T[i][5]>>);
     if Verbose then printf "%.3os\nComputing lattice edges for %o groups...", Cputime()-s, #T; s:=Cputime(); end if;
     M := {};
@@ -1655,7 +1716,7 @@ intrinsic GL2Lattice(N::RngIntElt, IndexLimit::RngIntElt : G:=GL(2,Integers(N)),
         m := [H`subgroup:H in MaximalSubgroups(S[i] : IndexLimit:=IndexLimit div T[i][2], OrderMultipleOf:=O) | filter(H`subgroup)];
         for H in m do
             level,K := GL2Level(H);
-            J := X[<level,Index(G,K),GL2OrbitSignature(K:N:=level),GL2ScalarLabel(K)>]; j := 1;
+            J := X[<level,GL2Index(K),GL2OrbitSignature(K:N:=level),GL2ScalarLabel(K)>]; j := 1;
             if #J gt 1 then
                 GL2:=GL(2,Integers(level));
                 while j lt #J do if IsConjugate(GL2,ChangeRing(S[J[j]],Integers(level)),K) then break; end if; j+:=1; end while;
@@ -1725,23 +1786,14 @@ intrinsic GL2LookupLabel(X::Assoc, H::GrpMat : g:=-1, NotFound:="?") -> MonStgEl
     N,H := GL2Level(H);
     if N eq 1 then return "1.1.0.1"; end if;
     i := GL2Index(H);  g := g lt 0 select GL2Genus(H) else g;  d := GL2DeterminantLabelIndex(H);
-    prefix := d eq 1 select Sprintf("%o.%o.%o",N,i,g) else Sprintf("%o.%o.%o.%o",N,i,g,d);
-    if not IsDefined(X,prefix cat ".1") then return NotFound; end if;
-    o := GL2OrbitSignature(H:N:=N); z := GL2ScalarLabel(H);
-    S := []; n:=1;
-    while true do
-        k := prefix cat Sprintf(".%o",n); if not IsDefined(X,k) then break; end if;
-        if X[k]`orbits eq o and X[k]`zlabel eq z then Append(~S,k); end if;
-        n +:= 1;
-    end while;
-    assert #S ne 0; // we assume X is complete, so if H has level,index,genus matching any element of X it must be in X
-    if #S eq 1 then return S[1]; end if;
-    csig := GL2ClassSignature(H:N:=N);
-    S:=[k:k in S|csig eq GL2ClassSignature(X[k]`subgroup)]; assert #S ne 0;
-    if #S eq 1 then return S[1]; end if;
+    prefix := d eq 1 select Sprintf("%o.%o.%o.",N,i,g) else Sprintf("%o.%o.%o.%o.",N,i,g,d);
     G := GL(2,Integers(N));
+    S := [k:k in Keys(X)|#k ge #prefix and k[1..#prefix] eq prefix];
+    if #S eq 0 then return NotFound; end if;
+    o := GL2OrbitSignature(H:N:=N); z := GL2ScalarLabel(H);
+    S := [k:k in S|X[k]`orbits eq o and X[k]`zlabel eq z];
     for k in S do if IsConjugate(G,H,X[k]`subgroup) then return k; end if; end for;
-    assert false;
+    return NotFound;
 end intrinsic;
 
 intrinsic GL2Subgroups(k::MonStgElt,X::Assoc) -> SeqEnum[MonStgElt]
