@@ -7,7 +7,8 @@
                       The input parameter can be either a prime l (indicating the file gl2_ladic.txt) or a filename.
                       Specify l=0 (indicating the file gl2_Qcheck.txt) to load data for all ell-adic images known to occur for non-CM E/Q
         GL2LoadExamples() -- loads a list of elliptic curves that realize each non-trivial ell-adic image known to occur for non-CM E/Q
-        GL2EllAdicImages(E,X) -- computes a list of the non-trivial ell-adic images for a non-CM E/Q (for all primes ell),
+        GL2LoadCMExamples() -- loads a list of elliptic curves that realize each non-trivial ell-adic image known to occur for CM E/Q
+        GL2EllAdicImages(E,X) -- computes a list of the non-maximal ell-adic images for a given E/Q (for all primes ell),
                                  given the associative array X returned by GL2Load(0);
 
     Precomputed files available to GL2Load include gl2_*adic.txt for * in 2,3,5,7,...,37, gl2_big2adic.txt, and gl2_Qcheck.txt.
@@ -68,6 +69,7 @@ function atoii(s) return [Integers()|StringToInteger(n):n in Split(t[2..#t-1],",
 function atoiii(s)
     return [[Integers()|StringToInteger(n):n in Split(a[1] eq "]" select "" else Split(a,"]")[1],",")]:a in r] where r := Split(t[2..#t-1],"[") where t:= strip(s);
 end function;
+function labels(s) return Split(s[2..#s-1],","); end function;
 
 function curly(s) 
     // Split omits the last field if it is empty even when IncludeEmpty is set (which makes no sense!), so we work around this by padding if needed
@@ -122,8 +124,7 @@ function GL2RecToString(r)
                  sprint(r`newforms),sprint(r`dims),sprint(r`rank),r`model,sprint(r`jmap),sprint(r`Emap)],":");
 end function;
 
-function GL2RecFromString(s:sset:=false)
-    function labels(s) return Split(s[2..#s-1],","); end function;
+function GL2RecFromString(s:sset:=false,slevel:=37)
     s := Split(s,":");
     N := atoi(s[2]); H := GL2FromGenerators(N,atoiii(s[7]));
     Ft<t> := FunctionField(Rationals());  Fx<x> := FunctionField(Rationals());  Fy<y> := FunctionField(Fx);
@@ -132,7 +133,7 @@ function GL2RecFromString(s:sset:=false)
                     obstructions:=atoii(s[16]),cusps:=atoi(s[17]),ratcusps:=atoi(s[18]),gclass:=labels(s[19]),CPlabel:=s[20],Slabel:=s[21],
                     SZlabel:=s[22],RZBlabel:=s[23],newforms:=labels(s[24]),dims:=atoii(s[25]),rank:=atoi(s[26]),model:=s[27],jmap:=eval(s[28]),Emap:=eval(s[29])>;
     if r`genus eq 1 then r`jmap := Fy!r`jmap; end if;
-    if sset then r`sset := AssociativeArray(); r`sset["cache"] := GL2SimilaritySet(r`subgroup); end if;
+    if sset and N gt 1 and PrimeDivisors(N)[1] le slevel then r`sset := AssociativeArray(); r`sset["cache"] := GL2SimilaritySet(r`subgroup); end if;
     return GL2RecClean(r);
 end function;
 
@@ -258,12 +259,13 @@ function GL2NewformDecomposition(X,H:g:=-1)
     maxi := Ceiling(2*#Z+10);  B0:=1;
     t := [g]; P := [];
     while true do
+        if maxi gt #I then maxi := #I; end if;
         maxp := NthPrime(maxi);
         Q := [p : p in PrimesInInterval(B0,maxp)|N mod p ne 0];  B0 := maxp+1;
         P cat:= Q; t cat:= GL2Traces(H,Q);
         b := Vector(t);
         A := Matrix([[r`dim] cat [r`traces[I[p]]:p in P]:r in Z]);
-        try x,K := Solution(A,b); catch e; return [],[], -1; end try;
+        try x,K := Solution(A,b); catch e; return [],[], -2; end try;
         // printf "Using %o columns, dimension %o\n", Degree(b), Dimension(K);
         if Dimension(K) eq 0 then
             forms := Sort([s:s in {* Z[i]`label^^x[i]:i in [1..Degree(x)] *}], CMFLabelCompare);
@@ -272,13 +274,16 @@ function GL2NewformDecomposition(X,H:g:=-1)
             rank := &+[X[f]`rank:f in forms]; // note that cmfdata.txt stores the rank of the Galois orbit
             return forms, dims, rank;
         end if;
+        if maxi eq #I then return [],[],-3; end if;
         maxi := Ceiling(1.5*maxi);
     end while;
 end function;
 
+CMIndexBounds := [<2,384>,<3,1944>,<5,30>,<7,84>,<11,165>,<13,273>,<17,153>,<19,360>,<23,759>,<29,1218>,<31,1488>,<37,703>];
+
 // Output file format is label:gens:children:parents:orbits:iorbits:ccsig:sl2twists:qtwists:obstructions:cusps:ratcusps:iclass:rank:cplabel:forms:dims
 // Currently we only fill in iclass:forms:dims:rank for genus 1
-function GL2Data(p:cmfdatafile:="cmfdata.txt",cpdatafile:="cpdata.txt",rzbdatafile:="rzbdata.txt",szdatafile:="szdata.txt",fmdatafile:="fmdata.txt",outfile:="",Cheat:=false)
+function GL2Data(p:cmfdatafile:="cmfdata.txt",cpdatafile:="cpdata.txt",rzbdatafile:="rzbdata.txt",szdatafile:="szdata.txt",fmdatafile:="fmdata.txt",outfile:="",Cheat:=false,CM:=false)
     assert IsPrime(p);
     t := Cputime(); s:=t;
     if Cheat and p eq 2 then
@@ -291,6 +296,14 @@ function GL2Data(p:cmfdatafile:="cmfdata.txt",cpdatafile:="cpdata.txt",rzbdatafi
         if Cheat then print "Not cheating (there is no real advantage to doing so)."; end if;
         maxN,maxI := GL2ArithmeticallyMaximalBounds(p);
         printf "Computed arithmetically maximal level bound %o and index bound %o in %.3os\n", maxN, maxI, Cputime()-s; s:=Cputime();
+    end if;
+    if CM then
+        if p le 37 then
+            I := [r[2]:r in CMIndexBounds|r[1] eq p][1];
+        else
+            I := Max([GL2Index(H):H in GL2CMTwists(p)]);
+        end if;
+        if I gt maxI then printf "Increasing index bound from %o to %o to handle CM cases\n", maxI, I; maxI := I; end if;
     end if;
     try cmfdata := CMFLoad(p,maxN:cmfdatafile:=cmfdatafile); catch e; cmfdata:=[]; printf "Unable to find/read file '%o', newform decompositions will not be computed (use cmfdatafile to specify an alternate location)\n", cmfdatafile; end try;
     try cpdata := CPLoad(p,maxN:cpdatafile:=cpdatafile); catch e; cpdata:=[]; printf "Unable to find/read file '%o', CP labels will not be set (use cpdatafile to specify an alternate location)\n", cpdatafile; end try;
@@ -367,10 +380,18 @@ function GL2Data(p:cmfdatafile:="cmfdata.txt",cpdatafile:="cpdata.txt",rzbdatafi
                 f, d, r := GL2NewformDecomposition(cmfdata,T[i]`subgroup:g:=T[i]`genus);
                 if T[i]`genus eq 1 then assert r eq ranks[i]; end if;
                 newforms[i] := f; dims[i] := d; ranks[i] := r;
-                if #newforms eq 0 then printf "Missing newforms in decomposition of J_H for %o\n", L[i]; end if;
+                if #newforms[i] eq 0 then
+                    if r eq -2 then
+                        printf "Missing newforms in decomposition of J_H for %o\n", L[i];
+                    else
+                        printf "Not enough traces to distinguish all newforms in the decomposition of J_H for %o\n", L[i];
+                    end if;
+                end if;
             end if;
         end for;
         printf "Computed newform decompositions in %.3os\n", Cputime()-s; s:=Cputime();
+    else
+        printf "Not computing newform decompositions or ranks (CMF data not available for %o)\n", p;
     end if;
     recs := Sort([GL2RecClean(rec<gl2rec|
         label:=L[i],level:=T[i]`level,index:=T[i]`index,genus:=T[i]`genus,dlabel:=T[i]`dlabel,zlabel:=T[i]`zlabel,subgroup:=T[i]`subgroup,
@@ -411,7 +432,7 @@ function GL2Load(p)
         filename:= p; sset := false;
     end if;
     filename := checkfile(filename);
-    if sset then print "Performing precomputation for GL2EllAdicImages (this should take about 10 secs)..."; end if;
+    if sset then print "Performing precomputation for GL2EllAdicImages (this should take 10-20 secs)..."; end if;
     return index([GL2RecFromString(s:sset:=sset):s in Split(Read(filename))],func<r|r`label>:Unique);
 end function;
 
@@ -422,6 +443,10 @@ function GL2LoadExamples(:filename:="examples.txt")
     E := AssociativeArray();
     for r in S do E[labels(r[1])] := EllipticCurve(atoii(r[2])); end for;
     return E;
+end function;
+
+function GL2LoadCMExamples(:filename:="cm_examples.txt")
+    return GL2LoadExamples(:filename:=filename);
 end function;
 
 function ExceptionalGroup(E,p)
@@ -508,8 +533,13 @@ function OnGenusOneCurve(X,map,j)
 end function;
 
 function GL2EllAdicImages(E,X:Bmin:=64,Bmax:=1048576)
-    assert BaseRing(E) eq Rationals() and not HasComplexMultiplication(E);
+    assert BaseRing(E) eq Rationals();
     E := WeierstrassModel(MinimalModel(E));  D := Integers()!Discriminant(E);
+    b,cmD := HasComplexMultiplication(E);
+    if b then
+        L := GL2CMEllAdicImages(E,GL2FrobeniusMatrices(E,1024):cmD:=cmD);
+        return [GL2LookupLabel(X,H):H in L];
+    end if;
     B := Bmin; A := GL2FrobeniusMatrices(E,B);
     P := PossiblyNonsurjectivePrimes(E:A:=A);
     while #P gt 0 and Max(P) gt 37 and B lt Bmax do
