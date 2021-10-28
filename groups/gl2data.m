@@ -537,8 +537,21 @@ function GL2EllAdicImages(E,X:Bmin:=64,Bmax:=1048576)
     E := WeierstrassModel(MinimalModel(E));  D := Integers()!Discriminant(E);
     b,cmD := HasComplexMultiplication(E);
     if b then
-        L := GL2CMEllAdicImages(E,GL2FrobeniusMatrices(E,1024):cmD:=cmD);
-        return [GL2LookupLabel(X,H):H in L];
+        L := GL2CMEllAdicImages(E,GL2FrobeniusMatrices(E,256):cmD:=cmD);
+        if jInvariant(E) eq 0 then
+            // for j(E)=0 we can get non-maximal images of arbitrarily large level, so we compute the labels of these by hand.
+            label := function(H)
+                N := GL2Level(H);
+                if N le 37 then return GL2LookupLabel(X,H); end if;
+                assert IsPrime(N);
+                g := N mod 3 eq 1 select GL2SplitCartanNormalizerGenus(N) else GL2NonsplitCartanNormalizerGenus(N);
+                g := 3*g-3+(N-KroneckerSymbol(-1,N))/4+2;
+                return Sprintf("%o.%o.%o.1", N, GL2Index(H), g);
+            end function;
+            return [label(H):H in L];
+        else
+            return [GL2LookupLabel(X,H):H in L];
+        end if;
     end if;
     B := Bmin; A := GL2FrobeniusMatrices(E,B);
     P := PossiblyNonsurjectivePrimes(E:A:=A);

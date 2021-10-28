@@ -47,12 +47,42 @@ function lmset(M)
     return Sort([r cat [Multiplicity(M,r)]:r in Set(M)]);
 end function;
 
-function sqmod(f,g)
-    Fp := GF(257); RFp := PolynomialRing(Fp);
-    fp := RFp!f; gp := RFp!g;
-    A := Factorization(gp);
-    if #[a:a in A|a[2] eq 1 and not IsSquare(quo<RFp|a[1]>!fp)] gt 0 then return false; end if;
+function sqmodtest(f,g,n)
+    // check modulo a bunch of small primes first, square testing in char zero is expensive
+    K := BaseRing(g);  if K eq Rationals() then K := RationalsAsNumberField(); end if;
+    c := 0;
+    for p in PrimesInInterval(K,1,50) do
+        F,phi := ResidueClassField(p); R := PolynomialRing(F);
+        if phi(n) eq 0 then continue; end if;
+        fp := ChangeRing(f,phi); gp := ChangeRing(g,phi);
+        if Degree(GCD(fp,Derivative(fp))) gt 1 or Degree(GCD(gp,Derivative(gp))) gt 1 then continue; end if;
+        A := Factorization(gp);
+        if #[a:a in A|not IsSquare(quo<R|a[1]>!fp)] gt 0 then return false; end if;
+        c +:= 1;
+        if c gt 10 then break; end if;
+    end for;
+    return true;
+end function;
+
+function sqmod(f,g,n)
+    if not sqmodtest(f,g,n) then return false; end if;
     return IsSquare(quo<PolynomialRing(BaseRing(g))|g>!f);
+end function;
+
+function fsqmod(f,g,n)
+    if not sqmodtest(f,g,n) then return false; end if;
+    R<x> := PolynomialRing(BaseRing(f));
+    R<X,Y> := PolynomialRing(BaseRing(f),2);
+    B := Factorization(Resultant(Y^2-Evaluate(f,X),Evaluate(g,X),X));
+    if #B eq 1 and B[1][2] eq 1 then return false; end if;
+    // if resultant h is square free then f is a square mod g precisely when h = (-1)^deg(x)*u(x)u(-x) for some u
+    if &and[a[2] eq 1:a in B] then
+        S:= [Evaluate(a[1],[0,x]):a in B];
+        if &and[(-1)^Degree(g)*Evaluate(g,-x) ne g:g in S] then
+            return &and[(-1)^Degree(g)*Evaluate(g,-x) in S:g in S];
+        end if;
+    end if;
+    return sqmod(f,g,n);
 end function;
 
 function reps (S,E)
@@ -67,6 +97,12 @@ function reps (S,E)
     end for;
     return T;
 end function;
+
+intrinsic PrimesInInterval(K::FldNum,min::RngIntElt,max::RngIntElt:coprime_to:=1) -> SeqEnum
+{ Primes of K with norm in [min,max]. }
+    S := PrimesUpTo(max,K:coprime_to:=coprime_to); 
+    return max lt 2 select S else [p:p in S|Norm(p) ge min];
+end intrinsic;
 
 // This is often slower than &+[r[2]:r in Roots(f)] but faster when f has lots of roots, e.g. splits completely
 intrinsic NumberOfRoots(f::RngUPolElt[FldFin]) -> RngIntElt
@@ -138,9 +174,23 @@ intrinsic TorsionOrbits (E::CrvEll, n::RngIntElt) -> RngIntElt
     E := WeierstrassModel(E);  f := HyperellipticPolynomials(E);
     psi := PrimitiveDivisionPolynomial(E,n);
     A := Factorization(psi);
+    // if n is odd and the primitive n-division polynomial is irreducible, so is primitive torsion polynomial
+    if #A eq 1 and A[1][2] eq 1 and IsOdd(n) then return {* 2*Degree(A[1][1]) *}; end if;
     if n eq 2 then return {* Degree(a[1])^^a[2] : a in A *}; end if;
-    R := PolynomialRing(BaseRing(f));
-    return {* sqmod(f,a[1]) select Degree(a[1])^^(2*a[2]) else (2*Degree(a[1]))^^a[2] : a in A *};
+    return {* fsqmod(f,a[1],n) select Degree(a[1])^^(2*a[2]) else (2*Degree(a[1]))^^a[2] : a in A *};
+end intrinsic;
+
+intrinsic SlowTorsionOrbits (E::CrvEll, n::RngIntElt) -> RngIntElt
+{ The multiset of sizes of Galois orbits of E[n] for an elliptic curve E. }
+    require n gt 0: "n must be positive.";
+    if n eq 1 then return 1; end if;
+    E := WeierstrassModel(E);  f := HyperellipticPolynomials(E);
+    psi := PrimitiveDivisionPolynomial(E,n);
+    A := Factorization(psi);
+    // if n is odd and the primitive n-division polynomial is irreducible, so is primitive torsion polynomial
+    if #A eq 1 and A[1][2] eq 1 and IsOdd(n) then return {* 2*Degree(A[1][1]) *}; end if;
+    if n eq 2 then return {* Degree(a[1])^^a[2] : a in A *}; end if;
+    return {* sqmod(f,a[1],n) select Degree(a[1])^^(2*a[2]) else (2*Degree(a[1]))^^a[2] : a in A *};
 end intrinsic;
 
 intrinsic TorsionDegree (E::CrvEll, n::RngIntElt) -> RngIntElt
@@ -149,10 +199,10 @@ intrinsic TorsionDegree (E::CrvEll, n::RngIntElt) -> RngIntElt
     if n eq 1 then return 1; end if;
     E := WeierstrassModel(E);  f := HyperellipticPolynomials(E);
     A := Factorization(PrimitiveDivisionPolynomial(E,n));
-    // if n is odd and the n-division polynomial is irreducible, then the mod-n image must contain -I
+    // if n is odd and the primitive n-division polynomial is irreducible, so is primitive torsion polynomial
     if #A eq 1 and A[1][2] eq 1 and IsOdd(n) then return 2*Degree(A[1][1]); end if;
     d := Min([Degree(a[1]):a in A]);
-    d := Min([(IsSquare(quo<PolynomialRing(BaseRing(E))|a[1]>!f) select 1 else 2)*Degree(a[1]) : a in A | Degree(a[1]) lt 2*d]);
+    d := Min([(sqmod(f,a[1],n) select 1 else 2)*Degree(a[1]) : a in A | Degree(a[1]) lt 2*d]);
     return d;
 end intrinsic;
 
@@ -519,20 +569,21 @@ intrinsic GL2ScalarLabelIndex(H::GrpMat) -> RngIntElt
     return Index(GL1Labels(#BaseRing(H)),s);
 end intrinsic;
 
-intrinsic GL2ContainsComplexConjugation(H::GrpMat) -> BoolElt
+intrinsic GL2ContainsComplexConjugation(H::GrpMat) -> BoolElt, GrpMatElt
 { True if H contains an element corresponding to complex conjugation (any GL_2-conjugate of [1,0,0,-1] or [1,1,0,-1]). }
-    R := BaseRing(H);  if not IsFinite(R) and #H eq 1 then return 1; end if;
+    R := BaseRing(H);  if not IsFinite(R) and #H eq 1 then return true,_; end if;
     require Degree(H) eq 2 and Type(R) eq RngIntRes: "H must be a sugroup of GL(2,Z/NZ) for some positive integer N.";
     cc := [[1,0,0,-1],[-1,0,0,1],[1,-1,0,-1],[1,1,0,-1],[-1,0,1,1],[-1,1,0,1],[-1,0,-1,1],[1,0,1,-1],[-1,-1,0,1],[1,0,-1,-1],[0,-1,-1,0],[0,1,1,0]];
     GL2 := GL(2,R);
-    if &or[GL2!c in H:c in cc] then return true; end if;
-    if #R ne 2 and not IsEven(#GL(1,R) div GL2DeterminantIndex(H)) then return false; end if;
+    cc := [c:c in cc|GL2!c in H];
+    if #cc gt 0 then return true,cc[1]; end if;
+    if #R ne 2 and not IsEven(#GL(1,R) div GL2DeterminantIndex(H)) then return false,_; end if;
     Z := Conjugates(GL2,GL2![1,0,0,-1]);
-    for z in Z do if z in H then return true; end if; end for;
+    for z in Z do if z in H then return true,z; end if; end for;
     if IsOdd(#R) then return false; end if;
     Z := Conjugates(GL2,GL2![1,1,0,-1]);
-    for z in Z do if z in H then return true; end if; end for;
-    return false;
+    for z in Z do if z in H then return true,z; end if; end for;
+    return false,_;
 end intrinsic;
 
 intrinsic GL2ContainsCC(H::GrpMat) -> BoolElt
@@ -649,22 +700,31 @@ intrinsic GL2Genus(H::GrpMat) -> RngIntElt
     return Integers()!(1 + Index(SL2,H)/12 - n2/4  - n3/3 - c/2);
 end intrinsic;
 
+intrinsic GL2CartanSize(D::RngIntElt,N::RngIntElt) -> RngIntElt
+{ The cardinality of (O/NO)* where O is the imaginary quadratic order of discriminant D. }
+    P := PrimeDivisors(N);
+    return (N div &*P)^2 * &*[(p-1)*(p-KroneckerSymbol(D,p)):p in P];
+end intrinsic;
+
 // Based on Theorem 1.1 in Lozano-Robledo https://arxiv.org/abs/1809.02584
 intrinsic GL2Cartan(D::RngIntElt,N::RngIntElt) -> GrpMat
-{ The Cartan subgroup of GL(2,Z/NZ) isomorphic to (OK/N*OK)* where OK is the imaginary quadratic order of discriminant D. }
+{ The Cartan subgroup of GL(2,Z/NZ) isomorphic to (O/NO)* where O is the imaginary quadratic order of discriminant D. }
     require N gt 0: "N must be a positive integer";
     if N eq 1 then return sub<GL(2,Integers())|>; end if;
     require D lt 0 and IsDiscriminant(D): "D must be the discriminant of an imaginary quadartic order";
     R := Integers(N); G := GL(2,R);
     DK := FundamentalDiscriminant(D); _,f := IsSquare(D div DK);
-    if D mod 4 eq 0 or IsOdd(N) then
+    if D mod 4 eq 0 then
         delta := D mod 4 eq 0 select R!ExactQuotient(D,4) else R!D/4; phi := R!0;
     else
-        delta := R!((DK-1) div 4)*f^2;  phi := R!f;
+        delta := R!((D-f^2) div 4);  phi := R!f;
     end if;
-    e := [G![a+b*phi,b,delta*b,a]:a,b in R|GCD(a^2+a*b*phi-delta*b^2,N) eq 1];  m := #e;
-    gens := [Random(e)];
-    while #sub<G|gens> lt m do Append(~gens,Random(e)); end while;
+    m := GL2CartanSize(D,N); gens := [];
+    repeat
+        a := Random(R); b := Random(R);
+        if GCD(a^2+a*b*phi-delta*b^2,N) ne 1 then continue; end if;
+        Append(~gens,G![a+b*phi,b,delta*b,a]);
+    until #sub<G|gens> eq m;
     H,pi := AbelianGroup(sub<G|gens>); B := AbelianBasis(H);
     H := sub<G|[Inverse(pi)(h):h in B]>;
     assert #H eq m;
@@ -676,7 +736,7 @@ intrinsic GL2CartanNormalizer(D::RngIntElt,N::RngIntElt) -> GrpMat
     require N gt 0: "N must be a positive integer";
     if N eq 1 then return sub<GL(2,Integers())|>; end if;
     H := GL2Cartan(D,N);  G := GL(2,BaseRing(H));
-    if D mod 4 eq 0 or IsOdd(N) then phi:=0; else _,phi := IsSquare(D div FundamentalDiscriminant(D)); end if;
+    if D mod 4 eq 0 then phi:=0; else _,phi := IsSquare(D div FundamentalDiscriminant(D)); end if;
     return sub<G|H,G![-1,0,phi,1]>;
 end intrinsic;
 
@@ -699,6 +759,18 @@ end intrinsic;
 intrinsic GL2SplitCartanNormalizer(N::RngIntElt) -> GrpMat
 {  The normalizer of the (algebraic) split Cartan reduced modulo N (this group contains the split Cartan with index 2 and is equal to the normalizer in GL(2,Z/NZ) only when N is a prime power). }
     return GL2NormalizerSplitCartan(N);
+end intrinsic;
+
+intrinsic GL2NormalizerSplitCartanGenus(p::RngIntElt) -> RngIntElt
+{ The genus of the normalizer of the split Cartan of prime level p. }
+    require IsPrime(p): "Level must be prime";
+    if p le 5 then return 0; end if;
+    return (11 + (p-8)*p-4*KroneckerSymbol(-3,p))/24; // p. 117 in https://link.springer.com/chapter/10.1007/BFb0063947
+end intrinsic;
+
+intrinsic GL2SplitCartanNormalizerGenus(p::RngIntElt) -> RngIntElt
+{ The genus of the normalizer of the split Cartan of prime level p. }
+    return GL2NormalizerSplitCartanGenus(p);
 end intrinsic;
 
 // Non-split Cartan -- isomorphic to (OK/N*OK)* where OK is a quadratic order of discriminant prime to N with every p|N inert in OK
@@ -730,6 +802,18 @@ end intrinsic;
 intrinsic GL2NonsplitCartanNormalizer(N::RngIntElt) -> GrpMat
 { The normalizer of the (algebraic) non-split Cartan reduced modulo N (this group contains the non-split Cartan with index 2 and is equal to the normalizer in GL(2,Z/NZ) only when N is a prime power). }
     return GL2NormalizerNonsplitCartan(N);
+end intrinsic;
+
+intrinsic GL2NormalizerNonsplitCartanGenus(p::RngIntElt) -> RngIntElt
+{ The genus of the normalizer of the nonsplit Cartan of prime level p. }
+    require IsPrime(p): "Level must be prime";
+    if p le 5 then return 0; end if;
+    return (23+(p-10)*p+6*KroneckerSymbol(-1,p)+4*KroneckerSymbol(-3,p))/24; // p. 117 in https://link.springer.com/chapter/10.1007/BFb0063947
+end intrinsic;
+
+intrinsic GL2NonsplitCartanNormalizerGenus(p::RngIntElt) -> RngIntElt
+{ The genus of the normalizer of the nonsplit Cartan of prime level p. }
+    return GL2NormalizerNonsplitCartanGenus(p);
 end intrinsic;
 
 intrinsic GL2Borel(N::RngIntElt) -> GrpMat
@@ -871,6 +955,16 @@ intrinsic GL2OrbitSignature(H::GrpMat:N:=0) -> SeqEnum[SeqEnum[RngIntElt]]
     D := Divisors(N);
     function ord(v) return Min([n:n in D|n*v eq 0*v]); end function;
     return lmset({*[ord(o[1]),#o]:o in Orbits(H)|o ne {RSpace(H)!0}*});
+end intrinsic;
+
+intrinsic GL2Orbits(H::GrpMat,N::RngIntElt) -> SeqEnum[SeqEnum[RngIntElt]]
+{ The multiset of orbits of H acting on points of order N. }
+    if N eq 0 then N,H := GL2Level(H); else H := GL2Project(H,N); end if;
+    if N eq 1 then return [Universe([[1]])|]; end if;
+    H := GL2Transpose(H);
+    D := Divisors(N);
+    function ord(v) return Min([n:n in D|n*v eq 0*v]); end function;
+    return {* #o:o in Orbits(H)|ord(o[1]) eq N*};
 end intrinsic;
 
 intrinsic GL2KummerSignature(H::GrpMat:N:=0) -> SeqEnum[SeqEnum[RngIntElt]]
@@ -1027,7 +1121,7 @@ intrinsic GL2GenericQuarticTwist(H::GrpMat) -> GrpMat, GrpMat
     require #G/#H in [1,2,4]: "H must be a twist of the Cartan subgroup for Z(i) or its normalizer.";
     b, a := IsConjugateSubgroup(GL(2,Integers(N)),G,H);
     require b: "H must be a twist of the Cartan subgroup for Z(i) or its normalizer.";
-    H := Conjugate(H,a);
+    H := H^a;
     z := G![0,1,-1,0];
     G := sub<G|H,z>;
     assert IsDivisibleBy(4,Index(G,H));
@@ -1040,7 +1134,8 @@ intrinsic GL2QuarticTwists(H::GrpMat) -> SeqEnum[GrpMat]
     require Degree(H) eq 2 and Type(R) eq RngIntRes: "H must be a sugroup of GL(2,Z/NZ) for some positive integer N.";
     G,H := GL2GenericQuarticTwist(H);  N := #R;
     z := G![0,1,-1,0];
-    return reps([K`subgroup:K in Subgroups(G:IndexLimit:=4)|sub<G|K`subgroup,z> eq G],func<K1,K2|IsConjugate(GL(2,Integers(N)),K1,K2)>);
+    L := Sort(reps([K`subgroup:K in Subgroups(G:IndexLimit:=4)|sub<G|K`subgroup,z> eq G],func<K1,K2|IsConjugate(GL(2,Integers(N)),K1,K2)>),func<a,b|#b-#a>);
+    return L;
 end intrinsic;
 
 intrinsic GL2GenericSexticTwist(H::GrpMat) -> GrpMat, GrpMat
@@ -1052,7 +1147,7 @@ intrinsic GL2GenericSexticTwist(H::GrpMat) -> GrpMat, GrpMat
     b, a := IsConjugateSubgroup(GL(2,Integers(N)),G,H);
     require b: "H must be contained in the Cartan subgroup for Z[zeta_6] or its normalizer.";
     H := Conjugate(H,a);
-    z := G!(IsOdd(N) select [1/2,1,-3/4,1/2] else [1,1,-1,0]);
+    z := G![1,1,-1,0];//(IsOdd(N) select [1/2,1,-3/4,1/2] else [1,1,-1,0]);
     G := sub<G|H,z>;
     assert IsDivisibleBy(6,Index(G,H));
     return G, H;
@@ -1063,8 +1158,9 @@ intrinsic GL2SexticTwists(H::GrpMat) -> SeqEnum[GrpMat]
     R := BaseRing(H);  if not IsFinite(R) and #H eq 1 then return [H]; end if;
     require Degree(H) eq 2 and Type(R) eq RngIntRes: "H must be a sugroup of GL(2,Z/NZ) for some positive integer N.";
     G,H := GL2GenericSexticTwist(H);  N := #R;
-    z := G!(IsOdd(N) select [1/2,1,-3/4,1/2] else [1,1,-1,0]);
-    return reps([K`subgroup:K in Subgroups(G:IndexLimit:=6)|sub<G|K`subgroup,z> eq G],func<K1,K2|IsConjugate(GL(2,Integers(N)),K1,K2)>);
+    z := G![1,1,-1,0];//(IsOdd(N) select [1/2,1,-3/4,1/2] else [1,1,-1,0]);
+    L := Sort(reps([K`subgroup:K in Subgroups(G:IndexLimit:=6)|sub<G|K`subgroup,z> eq G],func<K1,K2|IsConjugate(GL(2,Integers(N)),K1,K2)>),func<a,b|#b-#a>);
+    return L;
 end intrinsic;
 
 intrinsic GL2MinimalConjugate(H::GrpMat) -> GrpMat
@@ -1330,10 +1426,10 @@ intrinsic GL2FrobeniusMatrices(E::CrvEll[FldRat], B::RngIntElt:B0:=1) -> SeqEnum
     return [GL2FrobeniusMatrix(ChangeRing(E,GF(p))) : p in PrimesInInterval(B0,B) | D mod p ne 0];
 end intrinsic;
 
-intrinsic FrobeniusMatrices(E::CrvEll[FldRat], B::RngIntElt:B0:=1) -> SeqEnum[AlgMatElt[RngInt]]
+intrinsic GL2FrobeniusMatrices(E::CrvEll[FldNum], B::RngIntElt:B0:=1) -> SeqEnum[AlgMatElt[RngInt]]
 { Given an elliptic curve E/Q and a bound B returns a list of 2-by-2 integer matrices A of determinant p (for primes p <= B of good reduction) whose reduction modulo any integer N coprime to det(A) gives the action of Frobenius on (E mod p)[N] with respect to some basis. }
-    E := MinimalModel(E); D := Integers()!Discriminant(E);
-    return [GL2FrobeniusMatrix(ChangeRing(E,GF(p))) : p in PrimesInInterval(B0,B) | D mod p ne 0];
+    E := MinimalModel(E); K := BaseRing(E); D := RingOfIntegers(BaseRing(E))!Discriminant(E);
+    return [GL2FrobeniusMatrix(Reduction(E,p)) : p in PrimesInInterval(K,B0,B:coprime_to:=D)];
 end intrinsic;
 
 intrinsic GL2nTorsionFrobenius(E::CrvEll[FldFin], n::RngIntElt) -> AlgMatElt[RngIntRes]
@@ -1582,6 +1678,28 @@ intrinsic GL2PointCounts(H::GrpMat,Q::SeqEnum) -> SeqEnum
     f := GL2PermutationCharacter(sub<G|H,-Identity(G)>);
     pts := dindex gt 1 select func<q|GL1![q] in D select XHPointCount(N,htab,f,C,q) else 0> else func<q|XHPointCount(N,htab,f,C,q)>;
     return lists select [[pts(q):q in r]:r in Q] else [pts(q):q in Q];
+end intrinsic;
+
+intrinsic GL2GonalityBound(H::GrpMat) -> RngIntElt
+{ Lower bound on the geometric gonality of X_H. }
+    N,H := GL2Level(H);  if N eq 1 then return 1; end if;
+    g := GL2Genus(H); if g le 2 then return g eq 0 select 1 else 2; end if;
+    GL1 := GL(1,Integers(N));
+    D := GL2DeterminantImage(H);  dindex := Index(GL1,D);
+    G := GL(2,Integers(N));
+    if dindex gt 1 then G:=sub<G|[G|g:g in Generators(SL(2,Integers(N)))] cat [G|[d[1][1],0,0,1]:d in Generators(D)]>; end if;
+    B := g^2; b:= 2;
+    htab := B le 100 select ClassNumberTable(4096) else ClassNumberTable(4*B);
+    C := GL2RationalCuspCounts(H);
+    f := GL2PermutationCharacter(sub<G|H,-Identity(G)>);
+    pts := dindex gt 1 select func<q|GL1![q] in D select XHPointCount(N,htab,f,C,q) else 0> else func<q|XHPointCount(N,htab,f,C,q)>;
+    for q in [2..B] do
+        if b*(q+1) gt q+1+2*g*Sqrt(q) then break; end if;
+        if not IsPrimePower(q) or GCD(q,N) ne 1 then continue; end if;
+        n := pts(q);
+        if n gt b*(q+1) then b := Ceiling(n/(q+1)); end if;
+    end for;
+    return b;
 end intrinsic;
 
 intrinsic GL2Traces(H::GrpMat,Q::SeqEnum) -> SeqEnum
@@ -1882,7 +2000,7 @@ end intrinsic;
 
 intrinsic GL2Label(H::GrpMat: Verbose:=false) -> MonStgElt
 { The label of H (this requires computing the sublattice up to the level/index/genus of H -- an expensive way to get a single label). }
-    N,H := GL2Level(H); if N eq 1 then return "1.1.1"; end if;
+    N,H := GL2Level(H); if N eq 1 then return "1.1.0.1"; end if;
     i := GL2Index(H); g := GL2Genus(H); 
     X := GL2Lattice(N, i : GenusLimit:=g,DeterminantLabel:=GL2DeterminantLabel(H),Verbose:=Verbose,IndexDivides);
     o := GL2OrbitSignature(H); z:=GL2ScalarLabel(H);
@@ -1898,11 +2016,11 @@ intrinsic GL2LookupLabel(X::Assoc, H::GrpMat : g:=-1, NotFound:="?") -> MonStgEl
     if Type(BaseRing(H)) eq FldFin and IsPrime(#BaseRing(H)) then H := ChangeRing(H,Integers(#BaseRing(H))); end if;
     N,H := GL2Level(H);
     if N eq 1 then return "1.1.0.1"; end if;
-    i := GL2Index(H);  g := g lt 0 select GL2Genus(H) else g;  d := GL2DeterminantLabelIndex(H);
-    prefix := d eq 1 select Sprintf("%o.%o.%o.",N,i,g) else Sprintf("%o.%o.%o.%o.",N,i,g,d);
+    i := GL2Index(H);  g := g lt 0 select GL2Genus(H) else g;  d := GL2DeterminantLabel(H);
+    prefix := d eq "1.1.1" select Sprintf("%o.%o.%o.",N,i,g) else Sprintf("%o-%o.%o.%o.",d,N,i div GL2DeterminantIndex(H),g);
     G := GL(2,Integers(N));
     S := [k:k in Keys(X)|#k ge #prefix and k[1..#prefix] eq prefix];
-    if #S eq 0 then return NotFound; end if;
+    if #S eq 0 then return prefix cat NotFound; end if;
     o := GL2OrbitSignature(H:N:=N); z := GL2ScalarLabel(H);
     S := [k:k in S|X[k]`orbits eq o and X[k]`zlabel eq z];
     for k in S do if IsConjugate(G,H,X[k]`subgroup) then return k; end if; end for;
@@ -2124,14 +2242,22 @@ CMDiscriminants := [-3,-4,-7,-8,-11,-12,-16,-19,-27,-28,-43,-67,-163];
 
 intrinsic GL2CMTwists(D::RngIntElt,N::RngIntElt) -> SeqEnum[GrpMat]
 { List of subgroups that are quadratic (resp. quartic, sextic) twists of the generic mod-N image of an elliptic curve over Q with CM by the order of discriminant D < -4 (resp. -4, -3). }
+    if D lt -3 and IsOdd(N) and GCD(D,N) eq 1 and IsPrimePower(N) then return [GL2CartanNormalizer(D,N)]; end if; // by (4) of Theorem 1.2 of https://arxiv.org/abs/1809.02584
+    if D eq -3 and N gt 2 and IsPrime(N) then
+        // apply Proposition 1.16 of https://arxiv.org/abs/1508.07660
+        if N mod 9 in [1,8] then return [GL2CartanNormalizer(D,N)]; end if;
+        G := GL2CartanNormalizer(D,N);
+        H := [H`subgroup:H in Subgroups(G:IndexEqual:=3)|GL2DeterminantIndex(H`subgroup) eq 1][1];
+        return [G,H];
+    end if;
     L := D eq -3 select GL2SexticTwists(H) else (D eq -4 select GL2QuarticTwists(H) else GL2QuadraticTwists(H)) where H := GL2CartanNormalizer(D,N);
     return Sort(L,func<a,b|#b-#a>);
 end intrinsic;
 
-intrinsic GL2CMTwists(N::RngIntElt) -> SeqEnum[GrpMat]
+intrinsic GL2CMTwists(N::RngIntElt:Ds:=CMDiscriminants) -> SeqEnum[GrpMat]
 { List of subgroups (up to conjugacy in GL(2,N)) that are quadratic (resp. quartic, sextic) twists of the generic mod-N image of an elliptic curve over Q with CM by the order of discriminant D < -4 (resp. -4, -3) for some D of class number one. }
     G := GL(2,Integers(N));
-    L := reps(&cat[GL2CMTwists(D,N) : D in CMDiscriminants],func<H1,H2|IsConjugate(G,H1,H2)>);
+    L := reps(&cat[GL2CMTwists(D,N) : D in Ds],func<H1,H2|IsConjugate(G,H1,H2)>);
     return Sort(L,func<a,b|#b-#a>);
 end intrinsic;
 
@@ -2151,12 +2277,12 @@ intrinsic GL2CMCandidates(D::RngIntElt,N::RngIntElt:B:=100) -> SeqEnum[GrpMat]
     return &cat S;
 end intrinsic;
 
-intrinsic GL2CMEllAdicImage(E::CrvEll[FldRat],ell::RngIntElt,A::SeqEnum) -> GrpMat, BoolElt
+intrinsic GL2CMEllAdicImage(E::CrvEll,ell::RngIntElt,A::SeqEnum) -> GrpMat, BoolElt
 { Given a CM elliptic curve E/Q and a list of Frobenius matrices A for E, returns the projection of the ell-adic image of E to GL(2,ell^e) where e=4,3,1 for ell=2,3,>3, along with a flag indicating whether the image is maximal. }
     b, cmD := HasComplexMultiplication(E);
-    require BaseRing(E) eq Rationals() and b: "E should be a CM elliptic curve over Q.";
+    //require BaseRing(E) eq Rationals() and b: "E should be a CM elliptic curve over Q.";
     require #A ge 3: "You need to provide at least 3 Frobenius matrices.";
-    E := WeierstrassModel(MinimalModel(E));  D := Integers()!Discriminant(E);
+    E := WeierstrassModel(MinimalModel(E));  D := RingOfIntegers(BaseRing(E))!Discriminant(E);
     n := ell eq 2 select 4 else (ell eq 3 select 3 else 1);
     N := ell^n;  G := GL(2,Integers(N));
     Z := { GL2SimilarityInvariant(G!a):a in A|Determinant(a) mod ell ne 0 };
@@ -2186,6 +2312,11 @@ intrinsic GL2CMEllAdicImage(E::CrvEll[FldRat],ell::RngIntElt,A::SeqEnum) -> GrpM
     assert false;
 end intrinsic;
 
+intrinsic GL2CMEllAdicImage(E::CrvEll,ell::RngIntElt) -> GrpMat, BoolElt
+{ Given a CM elliptic curve E/Q and a list of Frobenius matrices A for E, returns the projection of the ell-adic image of E to GL(2,ell^e) where e=4,3,1 for ell=2,3,>3. }
+    return GL2CMEllAdicImage(E,ell,GL2FrobeniusMatrices(E,256));
+end intrinsic;
+
 intrinsic GL2CMEllAdicImages(E::CrvEll[FldRat],A::SeqEnum:cmD:=0) -> Any
 { Given a CM elliptic curve E/Q, a list of Frobenius matrices A for E, returns a list of non-maximal ell-adic images (as subgroups of GL(2,Z/ell^eZ) where e=4,3,1 for ell=2,3,>3. }
     if cmD eq 0 then b, cmD := HasComplexMultiplication(E); else b:=true; end if;
@@ -2202,6 +2333,8 @@ intrinsic GL2CMEllAdicImages(E::CrvEll[FldRat],A::SeqEnum:cmD:=0) -> Any
             if IsQuadraticTwist(E,minE) then Append(~L,GL2CMTwists(-3,ell)[2]); end if;
         end for;
     else
+        // Here we are relying on E being defined over Q, so cmD has at most one prime divisor greater than 3
+        // It would be easy to remove this assumption, but then we would need to compute the twists rather than using precomputed data
         ell := Max(PrimeDivisors(cmD));
         if ell gt 3 then
             EE := [r:r in CMCurves|r[1] eq cmD][1][3];
@@ -2216,8 +2349,11 @@ intrinsic GL2CMEllAdicImages(E::CrvEll[FldRat],A::SeqEnum:cmD:=0) -> Any
 end intrinsic;
 
 /*
-    The code below has been copied from the file https://math.mit.edu/~drew/galrep/subgroups.m associated to [Sut16] to provide the intrinsic GL2SLabel,
-    which for subgroups of prime level computes the label under the system proposed in [Sut16] https://doi.org/10.1017/fms.2015.33.
+    The code below has been copied from the file https://math.mit.edu/~drew/galrep/subgroups.m associated to [Sut16] to provide the
+    intrinsics GL2SLabel, and GL2SubgroupFromSLabel, which for subgroups of prime level provides a mapping between canonical labels
+    and subgroups of GL(2,Z/pZ) under the system proposed in [Sut16] https://doi.org/10.1017/fms.2015.33.  Unlike the labelling
+    system for subgroups of GL(2,Zhat) used her, this scheme does not require computing all subgroups of a given label and can
+    readily handle 
 */ 
 
 dets:=function(H) return IsTrivial(H) select 1 else LCM([Order(Determinant(h)):h in Generators(H)]); end function;
@@ -2536,8 +2672,188 @@ GL2SubgroupID := function(H:PH:=[],M:=[])
     if c gt 0 then return [p,d,5,a,b,c]; else return [p,d,5,a,b]; end if;
 end function;
 
+//. Implements Algorithm 1 of the paper based on Thm 5.5 of Flannery-O'Brien (Linear groups of small degree over finite fields, Internat. J. Algebra Comput.  15 (2005), 467--502),
+// d indicates the index of det(H) in (Z/pZ)* and a = [det(H):det(Z(H))] (slightly different inputs than in the paper)
+ConstructA4Subgroup := function(p,d,a:verify:=false)
+    local F,G,w,s,t,z,H,v,Z,PG,pi;
+    assert p ge 5;  // we don't consider H with pi(H)=A4 an exceptional subgroup of GL(2,3) because in this case H is equal to SL(2,3)
+    assert a eq 1 or ((p mod 3 eq 1) and a eq 3);
+    assert IsDivisibleBy(p-1,a*d);
+    if p mod 4 eq 1 then
+        F:=GF(p);
+    else
+        F:=GF(p^2);
+    end if;
+    G:=GL(2,F);
+    w:=RootOfUnity(4,F);
+    s:=G![(w-1)/2,(w-1)/2,(w+1)/2,-(w+1)/2];
+    t:=G![w,0,0,-w];
+    z:=F!PrimitiveRoot(p);
+    if d mod 2 eq 0 then e:=ExactQuotient(d,2); else e:=d; end if;   // forces -1 into Z(H)
+    if a eq 1 then
+        H:=ConjugateToRationalSubgroup(sub<G|s,t,[z^e,0,0,z^e]>);
+    else
+        v:=z^e;
+        v := G![v,0,0,v];
+        H:=ConjugateToRationalSubgroup(sub<G|v*s,t>);
+    end if;
+    // the isomorphism test below is slow so only do it when asked to
+    if verify then
+        Z:=Center(GL(2,p));
+        PG,pi:=quo<GL(2,p)|Z>;
+        assert IsIsomorphic(pi(H),AlternatingGroup(4)) and ExactQuotient(p-1,dets(H)) eq d and a*dets(H meet Z) eq dets(H);
+    end if;
+    return H;
+end function;
+
+//. Implements Thm 5.8 of Flannery-O'Brien
+// d indicates the index of det(H) in (Z/pZ)* and a = [det(H):det(Z(H))] (slightly different inputs than in the paper)
+ConstructS4Subgroup := function(p,d,a:verify:=false)
+    local F,G,w,s,c,t,z,zzmH,u,uz,Z,PG,pi;
+    assert p ge 5;  // we don't consider H with pi(H)=A4 an exceptional subgroup of GL(2,3) because in this case H is equal to GL(2,3)
+    assert IsDivisibleBy(p-1,a*d);
+    if a eq 1 then assert p mod 8 eq 1 or p mod 8 eq 7; else assert a eq 2; end if;
+    if p mod 8 eq 1 or p mod 8 eq 7 then assert d mod 2 eq 0; end if;
+    if p mod 8 eq 5 then assert ExactQuotient(p-1,d) mod 4 eq 0; end if;
+    F:=GF(p^2);
+    G:=GL(2,F);
+    w:=RootOfUnity(4,F);
+    s:=G![(w-1)/2,(w-1)/2,(w+1)/2,-(w+1)/2];
+    c:=Sqrt(F!2);
+    t:=G![(1+w)/c,0,0,(1-w)/c];
+    z:=F!PrimitiveRoot(p);
+    if d mod 2 eq 0 then e:=ExactQuotient(d,2); else e:=d; end if;   // forces -1 into Z(H)
+    zz:= G![z^e,0,0,z^e];
+    if a eq 1 then
+        H:=ConjugateToRationalSubgroup(sub<G|s,t,zz>);
+    else
+        if p mod 8 eq 1 then zz := zz^2; e:=d; end if;
+        u := Sqrt(z^e);
+        uz:= G![u,0,0,u];
+        H:=ConjugateToRationalSubgroup(sub<G|s,uz*t,zz>);
+    end if;
+    // the isomorphism test below is slow so only do it when asked to
+    if verify then
+        Z:=Center(GL(2,p));
+        PG,pi:=quo<GL(2,p)|Z>;
+        assert IsIsomorphic(pi(H),SymmetricGroup(4)) and ExactQuotient(p-1,dets(H)) eq d and a*dets(H meet Z) eq dets(H);
+    end if;
+    return H;
+end function;
+
+//. Implements Thm 5.11 of Flannery-O'Brien
+// d indicates the index of det(H) in (Z/pZ)* and a = [det(H):det(Z(H))], which must be 1 (slightly different inputs than in the paper)
+ConstructA5Subgroup := function(p,d,a:verify:=false)
+    local e,s,t,z,w,F,G,H,Z;
+    assert IsDivisibleBy(p-1,a*d);
+    assert p^2 mod 5 eq 1 and d mod 2 eq 0 and a eq 1;
+    F:=GF(p^2);
+    G:=GL(2,F);
+    w:=RootOfUnity(4,F);
+    b := Sqrt(F!5);
+    s:=G![(w-1)/2,(w-1)/2,(w+1)/2,-(w+1)/2];
+    t:=G![w,0,0,-w];
+    v:=G![w/2,(1-b)/4-w*(1+b)/4,(-1+b)/4-w*(1+b)/4,-w/2];
+    z:=F!PrimitiveRoot(p);
+    if d mod 2 eq 0 then e:=ExactQuotient(d,2); else e:=d; end if;   // forces -1 into Z(H)
+     H:=ConjugateToRationalSubgroup(sub<G|s,t,v,[z^e,0,0,z^e]>);
+    // the isomorphism test below is slow so only do it when asked to
+    if verify then
+        Z:=Center(GL(2,p));
+        PG,pi:=quo<GL(2,p)|Z>;
+        assert IsIsomorphic(pi(H),AlternatingGroup(5)) and ExactQuotient(p-1,dets(H)) eq d and a*dets(H meet Z) eq dets(H);
+    end if;
+    return H;
+end function;
+
+GroupIdFromLabel:=function(label)
+    local j,p,B,C,d,A,id;
+    for i:=1 to #GroupLetters do
+        j:=Position(label,GroupLetters[i]);
+        if j eq 0 then continue; end if;
+        p:=StringToInteger(Substring(label,1,j-1));
+        B:=Split(label,"[");
+        if #B gt 1 then
+            C:=Split(B[2],"]")[1];
+            d:=StringToInteger(C);
+        else
+            d:=1;
+        end if;
+        A:=Split(B[1],".");
+        id:=[p,d,i-1] cat [StringToInteger(A[k]):k in [2..#A]];
+        return id;
+    end for;
+    print "Invalid subgroup label", label;
+    assert false;
+end function;
+
 intrinsic GL2SLabel(H::GrpMat,p::RngIntElt) -> MonStgElt
 { The label of H in GL(2,p) under the system defined by Sutherland in "Computing images of Galois representations attached to elliptic curves, Forum. Math. Sigma 4(2016) e4, https://doi.org/10.1017/fms.2015.33". }
     require IsPrime(p): "p must be prime.";
     return GroupLabelFromId(GL2SubgroupID(GL2Project(H,p)));
+end intrinsic;
+
+intrinsic GL2SLabel(H::GrpMat) -> MonStgElt
+{ The label of H in GL(2,p) under the system defined by Sutherland in "Computing images of Galois representations attached to elliptic curves, Forum. Math. Sigma 4(2016) e4, https://doi.org/10.1017/fms.2015.33". }
+    N := GL2Level(H); if N gt 1 then b,p := IsPrimePower(N); else b:= false; end if;
+    require b: "level must be a prime power.";
+    return GroupLabelFromId(GL2SubgroupID(GL2Project(H,p)));
+end intrinsic;
+
+SubgroupFromLabel := function(id:M:=[])
+    local p,x,y,s,a,b,c,G;
+    if Type(id) eq MonStgElt then id := GroupIdFromLabel(id); end if;
+    p:=id[1]; d:=id[2];
+    if #M ne p-1 then M:=MinReps(p); end if;
+    r:=Integers(p)!M[ExactQuotient(p-1,d)];
+    e:=Integers(p)!M[p-1];
+    G:=GL(2,p);
+    if id[3] eq 0 then return sub<G|[1,1,0,1],[1,0,1,1],[1,0,0,r]>; end if;
+    if id[3] eq 1 then
+        if #id eq 3 then a:= e; b:=1; else assert #id eq 5; a:=id[4]; b:=id[5]; end if;
+        return sub<G|[a,0,0,1/a],[b,0,0,r/b],[1,1,0,1]>;
+    end if;
+    if id[3] eq 2 then
+        if #id eq 3 then a:= e; b:=1; else assert #id eq 5; a:=id[4]; b:=id[5]; end if;
+        return sub<G|[a,0,0,1/a],[b,0,0,r/b]>;
+    end if;
+    if id[3] eq 3 then
+        if p eq 2 then assert #id eq 3; return sub<G|[0,1,1,1]>; end if;
+        if #id eq 3 then
+            return sub<G|NonSplitCartan(p).1^d>;
+        else
+            assert #id eq 5;
+            return sub<G|[id[4],id[5]*e,id[5],id[4]]>;
+        end if;
+    end if;
+    if id[3] eq 4 then
+        if #id eq 3 then return  sub<G|[e,0,0,1/e],[1,0,0,r/1],[0,-1,1,0]>; end if;
+        assert #id ge 5;
+        if #id eq 5 then return sub<G|[id[4],0,0,1/id[4]],[0,id[5],-r/id[5],0]>; end if;
+        return sub<G|[id[4],0,0,1/id[4]],[0,id[5],-1/id[5],0],[0,id[6],-r/id[6],0]>;
+    end if;
+    if id[3] eq 5 then 
+        if #id eq 3 then 
+            if d eq 1 then
+                return NormalizerNonSplitCartan(p);
+            else
+                h:=NonSplitCartan(p).1;  n:=Log(Determinant(h),GF(p)!-1);
+                return  sub<G|h^d,h^n*G![1,0,0,-1]>;
+            end if;
+        end if;
+        assert #id ge 5;
+        if #id eq 5 then return sub<G|[id[4],e*id[5],id[5],id[4]],[1,0,0,-1]>; end if;
+        d:=NonSplitCartan(p).1;
+        return sub<G|[id[4],e*id[5],id[5],id[4]],G![1,0,0,-1]*d^id[6]>;
+    end if;
+    if id[3] eq 6 then return ConstructA4Subgroup(p,d,id[4]); end if;
+    if id[3] eq 7 then if #id lt 4 then c:=2; else c:=id[4]; end if; return ConstructS4Subgroup(p,d,c); end if;
+    if id[3] eq 8 then return ConstructA5Subgroup(p,d,1); end if;
+    assert false;
+end function;
+
+intrinsic GL2SubgroupFromSLabel(id::MonStgElt:M:=[]) -> GrpMat
+{ Subgroup of GL(2,p) idenitied by the label id. }
+    H := SubgroupFromLabel(id:M:=M);
+    return ChangeRing(H,Integers(#BaseRing(H)));
 end intrinsic;
