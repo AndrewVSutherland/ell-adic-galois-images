@@ -283,19 +283,21 @@ CMIndexBounds := [<2,384>,<3,1944>,<5,30>,<7,84>,<11,165>,<13,273>,<17,153>,<19,
 
 // Output file format is label:gens:children:parents:orbits:iorbits:ccsig:sl2twists:qtwists:obstructions:cusps:ratcusps:iclass:rank:cplabel:forms:dims
 // Currently we only fill in iclass:forms:dims:rank for genus 1
-function GL2Data(p:cmfdatafile:="cmfdata.txt",cpdatafile:="cpdata.txt",rzbdatafile:="rzbdata.txt",szdatafile:="szdata.txt",fmdatafile:="fmdata.txt",outfile:="",Cheat:=false,CM:=false)
+function GL2Data(p:cmfdatafile:="cmfdata.txt",cpdatafile:="cpdata.txt",rzbdatafile:="rzbdata.txt",szdatafile:="szdata.txt",fmdatafile:="fmdata.txt",outfile:="",Cheat:=false,CM:=false,DeterminantLabel:="1.1.1",maxN:=0,maxI:=0)
     assert IsPrime(p);
     t := Cputime(); s:=t;
-    if Cheat and p eq 2 then
-        maxN := 32;  maxI := 96;
-        printf "Cheating by using previously computed arithmetically maximal level bound %o and index bound %o\n", maxN, maxI;
-    elif Cheat and p eq 3 then
-        maxN := 27;  maxI := 729;
-        printf "Cheating by using previously computed arithmetically maximal level bound %o and index bound %o\n", maxN, maxI;
-    else
-        if Cheat then print "Not cheating (there is no real advantage to doing so)."; end if;
-        maxN,maxI := GL2ArithmeticallyMaximalBounds(p);
-        printf "Computed arithmetically maximal level bound %o and index bound %o in %.3os\n", maxN, maxI, Cputime()-s; s:=Cputime();
+    if maxN eq 0 or maxI eq 0 then
+        if Cheat and p eq 2 then
+            maxN := 32;  maxI := 96;
+            printf "Cheating by using previously computed arithmetically maximal level bound %o and index bound %o\n", maxN, maxI;
+        elif Cheat and p eq 3 then
+            maxN := 27;  maxI := 729;
+            printf "Cheating by using previously computed arithmetically maximal level bound %o and index bound %o\n", maxN, maxI;
+        else
+            if Cheat then print "Not cheating (there is no real advantage to doing so)."; end if;
+            maxN,maxI := GL2ArithmeticallyMaximalBounds(p);
+            printf "Computed arithmetically maximal level bound %o and index bound %o in %.3os\n", maxN, maxI, Cputime()-s; s:=Cputime();
+        end if;
     end if;
     if CM then
         if p le 37 then
@@ -310,13 +312,13 @@ function GL2Data(p:cmfdatafile:="cmfdata.txt",cpdatafile:="cpdata.txt",rzbdatafi
     try rzbdata := RZBLoad(p,maxN,maxI:rzbdatafile:=rzbdatafile); catch e; rzbdata:=[]; printf "Unable to find/read file '%o', RZB labels will not be set (use rzbdatafile to specify an alternate location)\n", rzbdatafile; end try;
     try szdata := SZLoad(p:szdatafile:=szdatafile); catch e; szdata:=AssociativeArray(); printf "Unable to find/read file '%o', SZ labels and jmaps will not be set (use szdatafile to specify an alternate location)\n", szdatafile; end try;
     try fmdata := FMLoad(p:fmdatafile:=fmdatafile); catch e; fmdata:=AssociativeArray(); printf "Unable to find/read file '%o', fine maps will not be set (use fmdatafile to specify an alternate location)\n", fmdatafile; end try;
-    X := GL2Lattice(maxN,maxI:Verbose);
+    X := GL2Lattice(maxN,maxI:DeterminantLabel:=DeterminantLabel,Verbose);
     L := GL2SortLabels([k:k in Keys(X)]);
     T := [X[k]:k in L];
     printf "Computed subgroup lattice and labels for %o groups in %.3os\n", #L, Cputime()-s; s:=Cputime();
     missing := [k eq "1.1.0.1" select false else #[H:H in MaximalSubgroups(X[k]`subgroup)|H`order * maxI lt GL2Size(X[k]`level)] gt 0 : k in L];
     printf "Computed maximal subgroups of %o groups in %.3os\n", #L, Cputime()-s; s:=Cputime();
-    reductions := [GL2SortLabels([GL2LookupLabel(X,ChangeRing(T[i]`subgroup,Integers(T[i]`level div p^e))) :e in [1..Valuation(T[i]`level,p)-1]]):i in [1..#T]];
+    reductions := [GL2SortLabels([GL2LookupLabel(X,GL2RelativeProject(T[i]`subgroup,T[i]`level div p^e)) :e in [1..Valuation(T[i]`level,p)-1]]):i in [1..#T]];
     printf "Computed reduction labels for %o groups in %.3os\n", #T, Cputime()-s; s:=Cputime();
     for i:=1 to #T do if T[i]`level gt 1 then T[i]`subgroup := GL2Standardize(T[i]`subgroup); end if; end for;
     printf "Standardized generators for %o groups in %.3os\n", #T, Cputime()-s; s:=Cputime();
@@ -360,12 +362,14 @@ function GL2Data(p:cmfdatafile:="cmfdata.txt",cpdatafile:="cpdata.txt",rzbdatafi
     for i in [1..#T] do ratcusps[i] := GL2RationalCuspCount(T[i]`subgroup); end for;
     printf "Counted rational cusps in %.3os\n", Cputime()-s; s:=Cputime();
     obs := [[]:i in [1..#T]];
+    iclasses := ["":i in [1..#T]];  ranks := [-1:i in [1..#T]]; n:=0;
     // We know a posteriori that there are no arithmetic obstructions with p > 1000 among the groups summarized in Table 4
     // If we only care about arithmetically maximal groups we could use B=100, but this doesn't really save any time
-    for i in [1..#T] do if ratcusps[i] eq 0 then obs[i] := GL2QObstructions(T[i]`subgroup:B:=1000); end if; end for;
-    printf "Identified local obstructions in %.3os\n", Cputime()-s; s:=Cputime();
-    iclasses := ["":i in [1..#T]];  ranks := [-1:i in [1..#T]]; n:=0;
-    for i in [1..#T] do if T[i]`genus eq 1 then e,r := GL2IsogenyClass(T[i]`subgroup); iclasses[i]:= e; ranks[i]:=r; n+:=1; end if; end for;
+    if DeterminantLabel eq "1.1.1" then
+        for i in [1..#T] do if ratcusps[i] eq 0 then obs[i] := GL2QObstructions(T[i]`subgroup:B:=1000); end if; end for;
+        printf "Identified local obstructions in %.3os\n", Cputime()-s; s:=Cputime();
+        for i in [1..#T] do if T[i]`genus eq 1 then e,r := GL2IsogenyClass(T[i]`subgroup); iclasses[i]:= e; ranks[i]:=r; n+:=1; end if; end for;
+    end if;
     printf "Computed isogeny class of %o genus 1 subgroups in %.3os\n", n, Cputime()-s; s:=Cputime();
     C := [GL2GassmannSignature(T[i]`subgroup):i in [1..#T]];
     gclasses := [Z[C[i]] : i in [1..#T]] where Z := index([1..#T],func<i|C[i]>:Project:=func<i|L[i]>);
@@ -378,7 +382,7 @@ function GL2Data(p:cmfdatafile:="cmfdata.txt",cpdatafile:="cpdata.txt",rzbdatafi
         for i in [1..#T] do
             if T[i]`genus gt 0 then
                 f, d, r := GL2NewformDecomposition(cmfdata,T[i]`subgroup:g:=T[i]`genus);
-                if T[i]`genus eq 1 then assert r eq ranks[i]; end if;
+                if T[i]`genus eq 1 and ranks[i] ge 0 then assert r eq ranks[i]; end if;
                 newforms[i] := f; dims[i] := d; ranks[i] := r;
                 if #newforms[i] eq 0 then
                     if r eq -2 then
