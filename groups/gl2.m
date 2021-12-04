@@ -664,6 +664,14 @@ intrinsic GL2Level(H::GrpMat) -> RngIntElt, GrpMat
     return N,ChangeRing(H,Integers(N));
 end intrinsic;
 
+intrinsic GL2RelativeLevel(G::GrpMat,H::GrpMat) -> RngIntElt
+{ Given a subgroup H of G in GL2(N) returns the least M|N such that [G(M):H(M)] = [G(N):H(N)]. }
+    i := Index(G,H);
+    if i eq 1 then return 1; end if;
+    N := #BaseRing(H);  GL2 := GL(2,Integers(N));
+    return Min([M:M in Divisors(N)|M gt 1 and (&and[IsConjugate(GL2,H,sub<G|Kernel(pi), K @@ pi>):K in Conjugates(GL(2,I),pi(H))|K subset pi(G)] where _,pi:=ChangeRing(G,I)) where I:=Integers(M)]);
+end intrinsic;
+
 intrinsic GL2RelativeLevel(H::GrpMat) -> RngIntElt
 { The least integer N such that H is the full inverse image of its reduction modulo N in the subgroup of matrices with the same determinant image. }
     R := BaseRing(H);  if not IsFinite(R) and #H eq 1 then return 1; end if;
@@ -2319,6 +2327,7 @@ CMDiscriminants := [-3,-4,-7,-8,-11,-12,-16,-19,-27,-28,-43,-67,-163];
 
 intrinsic GL2CMTwists(D::RngIntElt,N::RngIntElt) -> SeqEnum[GrpMat]
 { List of the subgroups of GL(2,Z/NZ) that arise as mod-N image of an elliptic curve E/Q(j(E)) with CM by the imaginary quadratic order of discriminant D. }
+    require D lt 0 and IsDiscriminant(D): "D must be the discriminant of an imaginary quadratic order";
     if D lt -3 and IsOdd(N) and GCD(D,N) eq 1 and IsPrimePower(N) then return [GL2CartanNormalizer(D,N)]; end if; // by (4) of Theorem 1.2 of https://arxiv.org/abs/1809.02584
     if D eq -3 and N gt 2 and IsPrime(N) then
         // usse Proposition 1.16 of https://arxiv.org/abs/1508.07660 to speed up this case
@@ -2332,15 +2341,67 @@ intrinsic GL2CMTwists(D::RngIntElt,N::RngIntElt) -> SeqEnum[GrpMat]
     return Sort(L,func<a,b|#b-#a>);
 end intrinsic;
 
+intrinsic GL2CMEllAdicLabels(D::RngIntElt,N::RngIntElt) -> SeqEnum
+{ Labels of twists of N_O as subgroups of N_O(Z_ell), where O is the imaginary quadratic order of discriminant D. }
+    require D lt 0 and IsDiscriminant(D): "D must be the discriminant of an imaginary quadratic order";
+    b,ell := IsPrimePower(N);
+    require b: "N must be a prime power.";
+    M := ell eq 2 select 16 else (ell eq 3 select 27 else ell);
+    require N eq M: Sprintf("Expected N = %o",M);
+    S := GL2CMTwists(D,N);
+    T := Sort([<GL2RelativeLevel(S[1],K),Index(S[1],K),GL2OrbitSignature(K),GL2ClassSignature(K),i> where K:=S[i]:i in [1..#S]]);
+    U := []; n := 0;
+    for i:=1 to #T do
+        if i eq 1 or T[i][1] ne T[i-1][1] or T[i][2] ne T[i-1][2] then n:=1; else n +:= 1; end if;
+        U[i] := <T[i][1],T[i][2],n,T[i][5]>;
+    end for;
+    v := Valuation(D,ell);
+    u := D div ell^v; s := KroneckerSymbol(u,ell) eq 1 select "s" else "ns";
+    if ell eq 2 then s := u mod 8 eq 1 select "s" else Sprintf("ns%o",u mod 8); end if;
+    return [<Sprintf("%o.%o.%o-%o.%o.%o",ell,v,s,r[1],r[2],r[3]),S[r[4]]>: r in U];
+end intrinsic;
+
+intrinsic GL2CMEllAdicLabel(D::RngIntElt,H::GrpMat) -> MonStgElt
+{ Label of the specified group of ell-power level  as a subgroup of N_O(Z_ell), where O is the imaginary quadratic order of discriminant D. }
+    require D lt 0 and IsDiscriminant(D): "D must be the discriminant of an imaginary quadratic order";
+    N :=  #BaseRing(H);
+    b,ell := IsPrimePower(N);
+    require b: "Group must have prime-power level.";
+    M := ell eq 2 select 16 else (ell eq 3 select 27 else ell);
+    require IsDivisibleBy(N,M): Sprint("Expected subgroup of GL(2,Z/%oZ)",M);
+    if N ne M then H := ChangeRing(H,M); N:=M; end if;
+    S := GL2CMEllAdicLabels(D,N);
+    o := GL2OrbitSignature(H); c := GL2ClassSignature(H);
+    for r in S do if o eq GL2OrbitSignature(r[2]) and c eq GL2ClassSignature(r[2]) then return r[1]; end if; end for;
+    error "Specific group H is not a twist of the N_O for the specified discriminant D";
+end intrinsic;
+
 intrinsic CMDiscriminantRepresentatives(N::RngIntElt:Qonly:=false) -> SeqEnum[RngIntElt]
-{ A list of CM discriminants representating every posssible value mod N or 4*N (those congruent to 0 or 1 mod N), depending on whether N is odd or even; if Qonly is set, only D of class number 1 are considered. }
+{ A list of CM discriminants representating every posssible value mod N or 4*N (those congruent to 0 or 1 mod N), depending on whether N is odd or even, inluding -3,-4; if Qonly is set, only D of class number 1 are considered. }
     require N gt 1: "N must be greater than 1";
     if Qonly then return reps(CMDiscriminants,func<D1,D2|IsDivisibleBy(D1-D2,IsEven(N) select 4*N else N)>); end if;
     if IsEven(N) then
         return [-i:i in [3..4*N]|IsDiscriminant(-i)];
     else
-        return [Max([D: D in [-i,-i-N,-i-2*N]|IsDiscriminant(D)]):i in [1..N]];
+        return [Max([D: D in [-i,-i-N,-i-2*N]|IsDiscriminant(D)]):i in [1..Max(N,4)]];
     end if;
+end intrinsic;
+
+intrinsic GL2CMEllAdicLabels(N::RngIntElt:GL2Labels:=false,X:=[]) -> SeqEnum
+{ Labels of twists of N_O as subgroups of N_O(Z_ell), where O ranges over a set of pepresentative imaginary quadratic orders sufficient to realize every possible CM image mod N (for CM curves over their minimal field of definition). }
+    DD := CMDiscriminantRepresentatives(N);
+    S := &cat [GL2CMEllAdicLabels(D,N):D in DD];
+    S := Sort(reps(S,func<a,b|a[1] eq b[1]>),func<a,b|a[1] lt b[1] select -1 else (a[1] gt b[1] select 1 else 0)>);
+    if GL2Labels or #X gt 0 then
+        I := Max([GL2Index(r[2]):r in S]);
+        if #X eq 0 then
+            X := GL2Lattice(N,I);
+            Z := {GL2DeterminantLabel(r[2]):r in S};
+            for s in Z do if s ne "1.1.1" then Y := GL2Lattice(N,I:DeterminantLabel:=s); for k in Keys(Y) do X[k]:=Y[k]; end for; end if; end for;
+        end if;
+        return [[r[1],GL2LookupLabel(X,r[2])]:r in S];
+    end if;
+    return S;
 end intrinsic;
 
 intrinsic GL2CMMaximalTwists(N::RngIntElt:Qonly:=false) -> SeqEnum[GrpMat]
