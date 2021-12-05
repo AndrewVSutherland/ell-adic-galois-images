@@ -10,7 +10,7 @@ The directories are organized as follows:
 
 - `models` contains `Magma` code and data for computing models of modular curves as covers of other modular curves, as described in Section 7 of the paper.
 
-- `pointsearc` contains `Magma` code and data for point searching on modular curves whose rational points we were not able to provably determine, as discussed in Section 9 of the paper.
+- `pointsearch` contains `Magma` code and data for point searching on modular curves whose rational points we were not able to provably determine, as discussed in Section 9 of the paper.
 
 - `ratpoints` contains `Magma` scripts that verify the claims about rational points on modular curves made in Sections 8, 9, and 10 of the paper.
 
