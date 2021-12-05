@@ -47,6 +47,11 @@ function lmset(M)
     return Sort([r cat [Multiplicity(M,r)]:r in Set(M)]);
 end function;
 
+intrinsic ChangeRing(f::RngUPolElt, pi::Map) -> RngUPolElt
+{ Given f = sum a_i*x^i returns sum pi(a_i)*x^i }
+    return PolynomialRing(Codomain(pi))![pi(c):c in Coefficients(f)];
+end intrinsic;
+
 function sqmodtest(f,g,n)
     // check modulo a bunch of small primes first, square testing in char zero is expensive
     K := BaseRing(g);  if K eq Rationals() then K := RationalsAsNumberField(); end if;
