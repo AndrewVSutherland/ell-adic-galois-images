@@ -2501,8 +2501,8 @@ end intrinsic;
     The code below has been copied from the file https://math.mit.edu/~drew/galrep/subgroups.m associated to [Sut16] to provide the
     intrinsics GL2SLabel, and GL2SubgroupFromSLabel, which for subgroups of prime level provides a mapping between canonical labels
     and subgroups of GL(2,Z/pZ) under the system proposed in [Sut16] https://doi.org/10.1017/fms.2015.33.  Unlike the labelling
-    system for subgroups of GL(2,Zhat) used her, this scheme does not require computing all subgroups of a given label and can
-    readily handle 
+    system for subgroups of GL(2,Zhat) used here, computing the SLabel does not require computing all subgroups of a given level
+    and can readily handle p in the thousands (even up to a million if one is patient, see Table 2 in [Sut16] for examples).
 */ 
 
 dets:=function(H) return IsTrivial(H) select 1 else LCM([Order(Determinant(h)):h in Generators(H)]); end function;
