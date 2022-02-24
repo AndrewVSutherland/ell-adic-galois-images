@@ -209,7 +209,7 @@ function SZLoad(p:szdatafile:="szdata.txt")
     return X;
 end function;
 
-// file format is SZlabel:level:gens:curve:map
+// file format is label:[[numerator-coeffs],[denominator-coeffs]]
 function FMLoad(p:fmdatafile:="fmdata.txt")
     S := [Split(s,":") : s in Split(Read(fmdatafile))];
     X := AssociativeArray();
@@ -538,6 +538,7 @@ end function;
 
 function GL2EllAdicImages(E,X:Bmin:=64,Bmax:=1048576)
     assert BaseRing(E) eq Rationals();
+    assert Type(X) eq Assoc;
     E := WeierstrassModel(MinimalModel(E));  D := Integers()!Discriminant(E);
     b,cmD := HasComplexMultiplication(E);
     if b then
