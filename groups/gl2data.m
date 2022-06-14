@@ -17,8 +17,8 @@
     where N is the level, i is the index, g is the genus, and n is a (deterministic) tie-breaker.
     These labels are computed by GL2Data.  See gl2rec for details on the data available for each subgroup.
 
-    The total time to compute GL2Data(p) for p in 3,5,7,11,...,37 is arouond an hour.
-    GL2Data(2) takes aroound 6 hours, but only about 1 if you set Cheat:=true (this will make it use level=32, index=96 as bounds rather than level=64, index=192).
+    The total time to compute GL2Data(p) for p in 3,5,7,11,...,37 is around an hour.
+    GL2Data(2) takes around 6 hours, but only about 1 if you set Cheat:=true (this will make it use level=32, index=96 as bounds rather than level=64, index=192).
 
     This code relies on three external datafiles:
 
