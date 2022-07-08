@@ -673,8 +673,8 @@ intrinsic GL2RelativeLevel(G::GrpMat,H::GrpMat) -> RngIntElt
 { Given a subgroup H of G in GL2(N) returns the least M|N such that [G(M):H(M)] = [G(N):H(N)]. }
     i := Index(G,H);
     if i eq 1 then return 1; end if;
-    N := #BaseRing(H);  GL2 := GL(2,Integers(N));
-    return Min([M:M in Divisors(N)|M gt 1 and (&and[IsConjugate(GL2,H,sub<G|Kernel(pi), K @@ pi>):K in Conjugates(GL(2,I),pi(H))|K subset pi(G)] where _,pi:=ChangeRing(G,I)) where I:=Integers(M)]);
+    N := #BaseRing(H);  GL2 := GL(2,Integers(N)); Ms := [M:M in Divisors(N)|M gt 1];
+    return Min([M:M in Ms|Index(pi(G),pi(H)) eq i where _,pi:=ChangeRing(G,Integers(M))]);
 end intrinsic;
 
 intrinsic GL2RelativeLevel(H::GrpMat) -> RngIntElt
