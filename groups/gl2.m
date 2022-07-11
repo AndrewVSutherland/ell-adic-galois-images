@@ -2334,7 +2334,7 @@ intrinsic GL2CMTwists(D::RngIntElt,N::RngIntElt) -> SeqEnum[GrpMat]
 { List of the subgroups of GL(2,Z/NZ) that arise as mod-N image of an elliptic curve E/Q(j(E)) with CM by the imaginary quadratic order of discriminant D. }
     require D lt 0 and IsDiscriminant(D): "D must be the discriminant of an imaginary quadratic order";
     if D lt -3 and IsOdd(N) and GCD(D,N) eq 1 and IsPrimePower(N) then return [GL2CartanNormalizer(D,N)]; end if; // by (4) of Theorem 1.2 of https://arxiv.org/abs/1809.02584
-    if D eq -3 and N gt 2 and IsPrime(N) then
+    if D eq -3 and N gt 3 and IsPrime(N) then
         // usse Proposition 1.16 of https://arxiv.org/abs/1508.07660 to speed up this case
         if N mod 9 in [1,8] then return [GL2CartanNormalizer(D,N)]; end if;
         G := GL2CartanNormalizer(D,N);
