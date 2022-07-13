@@ -1229,7 +1229,7 @@ intrinsic GL2QuadraticTwists(H::GrpMat:GL2Conjugacy:=true) -> SeqEnum[GrpMat]
 { Given a subgroup H of GL(2,Z/NZ), returns the list of subgroups K of <H,-I> := G for which <K,-I> = G (including H), up to conjugacy in GL2 (or in G if GL2Conjugacy is set to false). }
     R := BaseRing(H);  if not IsFinite(R) and #H eq 1 then return [H]; end if;
     require Degree(H) eq 2 and Type(R) eq RngIntRes: "H must be a sugroup of GL(2,Z/NZ) for some positive integer N.";
-    if #R mod 4 eq 2 then H:=GL2Lift(H,4*#R); R:=BaseRing(H); end if; // need to lift level 2*m to 8*m to be sure to see all quadratic twists
+    // caller should deal with this, if #R mod 4 eq 2 then H:=GL2Lift(H,4*#R); R:=BaseRing(H); end if; // need to lift level 2*m to 8*m to be sure to see all quadratic twists
     I := Identity(H);  nI := -I;
     if I eq nI then return [H]; end if;
     G := nI in H select H else sub<GL(2,R)|H,nI>;
@@ -2165,13 +2165,6 @@ intrinsic GL2Lattice(N::RngIntElt, IndexLimit::RngIntElt : G:=GL(2,Integers(N)),
     end for;
     if Verbose then printf "%.3os\n", Cputime()-s; end if;
     return X;
-end intrinsic;
-
-intrinsic GL2Dump(filename::MonStgElt,X::Assoc) -> RngIntElt
-{ Writes subgroup lattice records to the specified file with record format label:gens:parents. }
-    L := GL2SortLabels([k:k in Keys(X)]);
-    S := [[k,sprint([Eltseq(g):g in Generators(X[k]`subgroup)]),sprint(X[k]`parents)]:k in L];
-    return putrecs(filename,S);
 end intrinsic;
 
 intrinsic GL2Label(H::GrpMat: Verbose:=false) -> MonStgElt
