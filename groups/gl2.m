@@ -2456,15 +2456,15 @@ intrinsic GL2CMEllAdicLabels(D::RngIntElt,N::RngIntElt:GL2Conjugacy:=true) -> Se
     require N eq M: Sprintf("Expected N = %o",M);
     S := GL2CMTwists(D,N:GL2Conjugacy:=GL2Conjugacy);
     L := [1] cat [N:i in [2..#S]];
+    GL2 := GL(2,Integers(N));
+    G := GL2Conjugacy select GL2 else S[1];
     if N ne ell then
         todo := {2..#L};
         for i := e-1 to 1 by -1 do
-            T := GL2CMTwists(D,ell^i:GL2Conjugacy:=GL2Conjugacy);
-            Tc := [Conjugates(T[1],T[j]):j in [1..#T]];
-            _,pi := ChangeRing(S[1],Integers(ell^i)); assert pi(S[1]) eq T[1];
+            _,pi := ChangeRing(G,Integers(ell^i));
             m := ExactQuotient(#S[1],#pi(S[1]));
-            // check if relative index is stable *and* that the reduction is a twist
-            for j in todo do if ExactQuotient(#S[j],#pi(S[j])) eq m and Conjugates(T[1],pi(S[j])) in Tc then L[j] := ell^i; end if; end for;
+            // check if relative index is stable *and* that there are no collisions up to conjugacy
+            for j in todo do if ExactQuotient(#S[j],#pi(S[j])) eq m and #[H:H in S|IsConjugate(pi(G),pi(S[j]),pi(H))] eq 1 then L[j] := ell^i; end if; end for;
             todo := {j:j in todo|L[j] eq ell^i};
             if #todo eq 0 then break; end if;
         end for;
