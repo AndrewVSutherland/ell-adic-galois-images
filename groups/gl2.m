@@ -235,7 +235,8 @@ end intrinsic;
 
 intrinsic TorsionField (E::CrvEll, n::RngIntElt) -> RngIntElt
 { The n-torsion field of E/K, where K is a number field (this can be extremely expensive, use with caution). }
-    return SplittingField(PrimitiveTorsionPolynomial(E,n));
+    K,_ := SplittingField(PrimitiveTorsionPolynomial(E,n));
+    return K;
 end intrinsic;
 
 intrinsic TracesToLPolynomial (t::SeqEnum[RngIntElt], q::RngIntElt) -> RngUPolElt
@@ -669,14 +670,6 @@ intrinsic GL2Level(H::GrpMat) -> RngIntElt, GrpMat
     return N,ChangeRing(H,Integers(N));
 end intrinsic;
 
-intrinsic GL2RelativeLevel(G::GrpMat,H::GrpMat) -> RngIntElt
-{ Given a subgroup H of G in GL2(N) returns the least M|N such that [G(M):H(M)] = [G(N):H(N)]. }
-    i := Index(G,H);
-    if i eq 1 then return 1; end if;
-    N := #BaseRing(H);  GL2 := GL(2,Integers(N)); Ms := [M:M in Divisors(N)|M gt 1];
-    return Min([M:M in Ms|Index(pi(G),pi(H)) eq i where _,pi:=ChangeRing(G,Integers(M))]);
-end intrinsic;
-
 intrinsic GL2RelativeLevel(H::GrpMat) -> RngIntElt
 { The least integer N such that H is the full inverse image of its reduction modulo N in the subgroup of matrices with the same determinant image. }
     R := BaseRing(H);  if not IsFinite(R) and #H eq 1 then return 1; end if;
@@ -781,17 +774,54 @@ intrinsic GL2EllipticPoints(H::GrpMat) -> RngIntElt, RngIntElt
     return n2,n3;
 end intrinsic;
 
-intrinsic GL2Genus(H::GrpMat) -> RngIntElt
-{ The genus of the modular curve X_H for H in GL(2,Z/NZ). }
+intrinsic GL2Genus(H::GrpMat) -> RngIntElt, SeqEnum[RngIntElt]
+{ The genus of the modular curve X_H for H in GL(2,Z/NZ), along with the data used to computed it [i,n2,n3,c,N] where i is the index in PSL(2,Z), n2, and n3 count elliptic points of order 2 and 3, c is the number of cusps, so g = 1 + i/12 - n2/4 - n3/3 - c/2, and N is the SL2-level of H. }
     N,H := SL2Level(H);
-    if N le 5 then return 0; end if;
+    if N eq 1 then return 0, [1,1,1,1,1]; end if;
     SL2 := SL(2,Integers(N));
     if not -Identity(H) in H then H := sub<SL2|H,-Identity(H)>; end if;
     pi := CosetAction(SL2,H);
     n2 := #Fix(pi(SL2![0,1,-1,0]));
     n3 := #Fix(pi(SL2![0,1,-1,-1]));
     c := #Orbits(pi(sub<SL2|[1,1,0,1]>));
-    return Integers()!(1 + Index(SL2,H)/12 - n2/4  - n3/3 - c/2);
+    i := Index(SL2,H);
+    g := Integers()!(1 + i/12 - n2/4  - n3/3 - c/2);
+    return g, [i,n2,n3,c,N];
+end intrinsic;
+
+intrinsic GL2Ambient(N::RngIntElt) -> GrpMat
+{ Returns the subgroup of GL(2,Z/NZ) with the specific determinant label. }
+    require N ge 1: "N must be positive.";
+    if N eq 1 then return sub<GL(2,Integers())|>; end if;
+    return GL(2,Integers(N));
+end intrinsic;
+
+intrinsic GL2Ambient(DeterminantImage::GrpMat) -> GrpMat
+{ Returns the subgroup of GL(2,Z/NZ) with the specific determinant label. }
+    require Degree(DeterminantImage) eq 1: "DeterminantImage must a be a subgorup of GL1.";
+    R := BaseRing(DeterminantImage); GL2 := GL(2,R);
+    return sub<GL2|[g:g in Generators(SL(2,R))] cat [GL2![g[1][1],0,0,1]:g in Generators(DeterminantImage)]> where R:=BaseRing(DeterminantImage);
+end intrinsic;
+
+intrinsic GL2Ambient(N::RngIntElt,DeterminantLabel::MonStgElt) -> GrpMat
+{ Returns the subgroup of GL(2,Z/NZ) with the specific determinant label. }
+    require N gt 0: "N most be positive";
+    if N eq 1 then return sub<GL(2,Integers())|>; end if;
+    return GL2Ambient(GL1SubgroupFromLabel(DeterminantLabel));
+end intrinsic;
+
+intrinsic GL2ChangeDeterminant(H::GrpMat,DeterminantImage::GrpMat) -> GrpMat
+{ Projects/lifts H to maximal subgoup with the specified determinant image that project/lifts to H. }
+    D := GL2DeterminantImage(H);
+    if D eq DeterminantImage then return H; end if;
+    if DeterminantImage subset D then return H meet GL2Ambient(DeterminantImage); end if;
+    if D subset DeterminantImage then return sub<GL2|[g:g in Generators(H)] cat [GL2![g[1][1],0,0,1]:g in Generators(DeterminantImage)]> where GL2 := GL(2,BaseRing(DeterminantImage)); end if;
+    require false: "DeterminantImage must contain or be contained in det(H).";
+end intrinsic;
+
+intrinsic GL2ChangeDeterminant(H::GrpMat,DeterminantImage::MonStgElt) -> GrpMat
+{ Projects/lifts H to maximal subgoup with the specified determinant image that project/lifts to H. }
+    return GL2ChangeDeterminant(H,GL2DeterminantImage(H));
 end intrinsic;
 
 intrinsic GL2CartanSize(D::RngIntElt,N::RngIntElt) -> RngIntElt
@@ -1164,6 +1194,12 @@ intrinsic GL2ConjugacyClasses(N) -> SeqEnum[Tup]
     return [<r[1],r[2],r[4],r[3]>:r in S];
 end intrinsic;
 
+intrinsic GL2ConjugacyClassCount(N) -> RngIntElt
+{ Returns the number of conjugacy/similarity classes of elements of GL(2,Z/NZ). }
+    require N gt 0: "N must be positive";
+    return &*[Integers()|a[1]^(2*a[2])-a[1]^(a[2]-1):a in A] where A:=Factorization(N);
+end intrinsic;
+
 intrinsic GL2ClassSignature(H::GrpMat:N:=0) -> SeqEnum[Tup]
 { The class signature of H (the ordered list of 5-tuples (o,d,t,s,m) where m is the number of conjugacy classes of elements of H of size s, order o, determinant d, trace t. }
     if N eq 0 then N,H := GL2Level(H); else require N eq 1 or #BaseRing(H) eq N: "N must be equal to the cardinality of the base ring of H"; end if;
@@ -1182,23 +1218,6 @@ intrinsic GL2GassmannSignature(H::GrpMat:N:=0) -> SeqEnum[Tup]
     return Sort([<r,Multiplicity(S,r)>:r in Set(S)]);
 end intrinsic;
 
-intrinsic GL2QuadraticTwists(H::GrpMat) -> SeqEnum[GrpMat]
-{ Given a subgroup H of GL(2,Z/NZ), returns the list of subgroups K of GL(2,Z/NZ) for which <H,-I> = <K,-I> (including H). }
-    R := BaseRing(H);  if not IsFinite(R) and #H eq 1 then return [H]; end if;
-    require Degree(H) eq 2 and Type(R) eq RngIntRes: "H must be a sugroup of GL(2,Z/NZ) for some positive integer N.";
-    I := Identity(H);  nI := -I;
-    if I eq nI then return [H]; end if;
-    G := nI in H select H else sub<GL(2,R)|H,nI>;
-    S := [K`subgroup:K in Subgroups(H:IndexEqual:=2)|not nI in K`subgroup];
-    if #S gt 1 then
-        GL2 := GL(2,R);
-        X := index(S,func<H|GL2OrbitSignature(H)>);
-        for k in Keys(X) do X[k] := [X[k][i]:i in [1..#X[k]]|&and[not IsConjugate(GL2,X[k][i],X[k][j]):j in [1..i-1]]]; end for;
-        S := &cat[X[k]:k in Keys(X)];
-    end if;
-    return [G] cat S;
-end intrinsic;
-
 intrinsic GL2GenericQuadraticTwist(H::GrpMat) -> GrpMat
 { Returns the group <H,-I>. }
     R := BaseRing(H);  if not IsFinite(R) and #H eq 1 then return H; end if;
@@ -1206,54 +1225,86 @@ intrinsic GL2GenericQuadraticTwist(H::GrpMat) -> GrpMat
     return sub<GL(2,BaseRing(H))|H,-Identity(H)>;
 end intrinsic;
 
-intrinsic GL2GenericQuarticTwist(H::GrpMat) -> GrpMat, GrpMat
-{ For H conjugate to a subgroup of G = the Cartan group Z[i] or its normalizer, such that G=<H,i>, returns G. }
-    R := BaseRing(H);  if not IsFinite(R) and #H eq 1 then return H; end if;
+intrinsic GL2QuadraticTwists(H::GrpMat:GL2Conjugacy:=true) -> SeqEnum[GrpMat]
+{ Given a subgroup H of GL(2,Z/NZ), returns the list of subgroups K of <H,-I> := G for which <K,-I> = G (including H), up to conjugacy in GL2 (or in G if GL2Conjugacy is set to false). }
+    R := BaseRing(H);  if not IsFinite(R) and #H eq 1 then return [H]; end if;
     require Degree(H) eq 2 and Type(R) eq RngIntRes: "H must be a sugroup of GL(2,Z/NZ) for some positive integer N.";
-    N := #R;
-    G := GL2ContainsComplexConjugation(H) select GL2CartanNormalizer(-4,N) else GL2Cartan(-4,N);
-    require #G/#H in [1,2,4]: "H must be a twist of the Cartan subgroup for Z(i) or its normalizer.";
-    b, a := IsConjugateSubgroup(GL(2,Integers(N)),G,H);
-    require b: "H must be a twist of the Cartan subgroup for Z(i) or its normalizer.";
-    H := H^a;
-    z := G![0,1,-1,0];
-    G := sub<G|H,z>;
-    assert IsDivisibleBy(4,Index(G,H));
-    return G, H;
+    if #R mod 4 eq 2 then H:=GL2Lift(H,4*#R); R:=BaseRing(H); end if; // need to lift level 2*m to 8*m to be sure to see all quadratic twists
+    I := Identity(H);  nI := -I;
+    if I eq nI then return [H]; end if;
+    G := nI in H select H else sub<GL(2,R)|H,nI>;
+    S := [K`subgroup:K in Subgroups(G:IndexEqual:=2)|not nI in K`subgroup];
+    if #S gt 1 then
+        GL2 := GL(2,R);
+        conj := GL2Conjugacy select func<K1,K2|IsConjugate(GL2,K1,K2)> else func<K1,K2|IsConjugate(G,K1,K2)>;
+        X := index(S,func<H|GL2OrbitSignature(H)>); // partition by orbit signature to reduce the number of conjugacy tests
+        for k in Keys(X) do X[k] := [X[k][i]:i in [1..#X[k]]|&and[not IsConjugate(GL2,X[k][i],X[k][j]):j in [1..i-1]]]; end for;
+        S := &cat[X[k]:k in Keys(X)];
+    end if;
+    return [G] cat S;
 end intrinsic;
 
-intrinsic GL2QuarticTwists(H::GrpMat) -> SeqEnum[GrpMat]
-{ Given a subgroup H of GL(2,Z/NZ), returns the list of subgroups K of GL(2,Z/NZ) for which <H,-I> = <K,-I>. }
+intrinsic GL2IsQuarticTwist(H::GrpMat) -> BoolElt, GrpMat, GrpMat
+{ Determines if H conjugate to a subgroup K of G = the Cartan group for Z[zeta_4] (or its normalizer if H contains complex conjugation), for which G = <K,zeta_4>, returns true, G, K if so, and false otherwise. }
+    R := BaseRing(H);  if not IsFinite(R) and #H eq 1 then return true, H, H; end if;
+    require Degree(H) eq 2 and Type(R) eq RngIntRes: "H must be a sugroup of GL(2,Z/NZ) for some positive integer N.";
+    N := #R; G := GL2ContainsComplexConjugation(H) select GL2CartanNormalizer(-4,N) else GL2Cartan(-4,N);
+    if not #G/#H in [1,2,4] then return false, _, _; end if;
+    b, a := IsConjugateSubgroup(GL(2,R),G,H); if not b then return false,_; end if;
+    H := H^a; z4 := G![0,1,-1,0];
+    if sub<G|H,z4> eq G then return true, G, H; end if;
+    L:=[K:K in Conjugates(G,H)|sub<G|K,z4> eq G];
+    if #L eq 0 then return false, _, _; end if;
+    return true, G, L[1];
+end intrinsic;
+
+intrinsic GL2GenericQuarticTwist(H::GrpMat) -> GrpMat, GrpMat
+{ For H conjugate to a subgroup K of G = the Cartan group for Z[zeta_4] (or its normalizer if H contains complex conjugaction), such that G = <K,zeta_4>, returns G and K. }
+    b,G,K := GL2IsQuarticTwist(H);
+    require b: "H must be a twist of the Cartan subgroup for Z[zeta_4] or its normalizer.";
+    return G, K;
+end intrinsic;
+
+intrinsic GL2QuarticTwists(H::GrpMat:GL2Conjugacy:=true) -> SeqEnum[GrpMat]
+{ Given H conjugate to a subgroup K of G = the Cartan group for Z[zeta_4] (or its normalizer if H contains complex conjugation), for which G = <K,zeta_4>, returns all such subgroups K of G, up to conjugacy in GL2 (or up to conjugacy in G, if GL2Conjugacy is false). }
     R := BaseRing(H);  if not IsFinite(R) and #H eq 1 then return [H]; end if;
     require Degree(H) eq 2 and Type(R) eq RngIntRes: "H must be a sugroup of GL(2,Z/NZ) for some positive integer N.";
     G,H := GL2GenericQuarticTwist(H);  N := #R;
-    z := G![0,1,-1,0];
-    L := Sort(reps([K`subgroup:K in Subgroups(G:IndexLimit:=4)|sub<G|K`subgroup,z> eq G],func<K1,K2|IsConjugate(GL(2,Integers(N)),K1,K2)>),func<a,b|#b-#a>);
+    z4 := G![0,1,-1,0];
+    conj := GL2Conjugacy select func<K1,K2|IsConjugate(GL(2,Integers(N)),K1,K2)> else func<K1,K2|IsConjugate(G,K1,K2)>;
+    L := Sort(reps([K : K in [K`subgroup:K in Subgroups(G:IndexLimit:=4)]|Index(G,K) in [1,2,4] and sub<G|K,z4> eq G],conj),func<a,b|#b-#a>);
     return L;
 end intrinsic;
 
-intrinsic GL2GenericSexticTwist(H::GrpMat) -> GrpMat, GrpMat
-{ For H conjugate to a subgroup of G = the Cartan group for Z(zeta_6) or its normalizer, such that G=<H,i>, returns G. }
-    R := BaseRing(H);  if not IsFinite(R) and #H eq 1 then return H; end if;
+intrinsic GL2IsSexticTwist(H::GrpMat) -> BoolElt, GrpMat
+{ Determines if H conjugate to a subgroup K of G = the Cartan group for Z[zeta_6] (or its normalizer if H contains complex conjugation), for which G = <K,zeta_6>, returns true, G, K if so, and false otherwise. }
+    R := BaseRing(H);  if not IsFinite(R) and #H eq 1 then return true, H, H; end if;
     require Degree(H) eq 2 and Type(R) eq RngIntRes: "H must be a sugroup of GL(2,Z/NZ) for some positive integer N.";
-    N := #R;
-    G := GL2ContainsComplexConjugation(H) select GL2CartanNormalizer(-3,N) else GL2Cartan(-3,N);
-    b, a := IsConjugateSubgroup(GL(2,Integers(N)),G,H);
-    require b: "H must be contained in the Cartan subgroup for Z[zeta_6] or its normalizer.";
-    H := Conjugate(H,a);
-    z := G![1,1,-1,0];//(IsOdd(N) select [1/2,1,-3/4,1/2] else [1,1,-1,0]);
-    G := sub<G|H,z>;
-    assert IsDivisibleBy(6,Index(G,H));
-    return G, H;
+    N := #R; G := GL2ContainsComplexConjugation(H) select GL2CartanNormalizer(-3,N) else GL2Cartan(-3,N);
+    if not #G/#H in [1,2,3,6] then return false, _, _; end if;
+    b, a := IsConjugateSubgroup(GL(2,R),G,H); if not b then return false,_; end if;
+    H := H^a; z6 := G![1,1,-1,0];
+    if sub<G|H,z6> eq G then return true, G, H; end if;
+    L:=[K:K in Conjugates(G,H)|sub<G|K,z6> eq G];
+    if #L eq 0 then return false, _, _; end if;
+    return true, G, L[1];
 end intrinsic;
 
-intrinsic GL2SexticTwists(H::GrpMat) -> SeqEnum[GrpMat]
-{ Given a subgroup H of GL(2,Z/NZ), returns the list of subgroups K of GL(2,Z/NZ) for which <H,-I> = <K,-I> (H is not included unless IncludeSelf is set to true). }
+intrinsic GL2GenericSexticTwist(H::GrpMat) -> GrpMat, GrpMat
+{ For H conjugate to a subgroup K of G = the Cartan group for Z[zeta_6] (or its normalizer if H contains complex conjugaction), such that G = <K,zeta_4>, returns G and K. }
+    b,G,K := GL2IsSexticTwist(H);
+    require b: "H must be a twist of the Cartan subgroup for Z[zeta_6] or its normalizer.";
+    return G, K;
+end intrinsic;
+
+intrinsic GL2SexticTwists(H::GrpMat:GL2Conjugacy:=true) -> SeqEnum[GrpMat]
+{ Given H conjugate to a subgroup K of G = the Cartan group for Z[zeta_6] (or its normalizer if H contains complex conjugation), for which G = <K,zeta_6>, returns all such subgroups K of G, up to conjugacy in GL2 (or up to conjugacy in G, if GL2Conjugacy is false). }
     R := BaseRing(H);  if not IsFinite(R) and #H eq 1 then return [H]; end if;
     require Degree(H) eq 2 and Type(R) eq RngIntRes: "H must be a sugroup of GL(2,Z/NZ) for some positive integer N.";
     G,H := GL2GenericSexticTwist(H);  N := #R;
-    z := G![1,1,-1,0];//(IsOdd(N) select [1/2,1,-3/4,1/2] else [1,1,-1,0]);
-    L := Sort(reps([K`subgroup:K in Subgroups(G:IndexLimit:=6)|sub<G|K`subgroup,z> eq G],func<K1,K2|IsConjugate(GL(2,Integers(N)),K1,K2)>),func<a,b|#b-#a>);
+    z6 := G![1,1,-1,0]; //(IsOdd(N) select [1/2,1,-3/4,1/2] else [1,1,-1,0]);
+    conj := GL2Conjugacy select func<K1,K2|IsConjugate(GL(2,Integers(N)),K1,K2)> else func<K1,K2|IsConjugate(G,K1,K2)>;
+    L := Sort(reps([K : K in [K`subgroup:K in Subgroups(G:IndexLimit:=6)]|Index(G,K) in [1,2,3,6] and sub<G|K,z6> eq G],conj),func<a,b|#b-#a>);
     return L;
 end intrinsic;
 
@@ -1771,29 +1822,40 @@ intrinsic GL2PointCounts(H::GrpMat,Q::SeqEnum) -> SeqEnum
     C := (#Q eq 1 and not lists) select [Q[1] mod N eq i select GL2RationalCuspCount(H,Q[1]) else 0:i in [1..N]] else GL2RationalCuspCounts(H);
     f := GL2PermutationCharacter(sub<G|H,-Identity(G)>);
     pts := dindex gt 1 select func<q|GL1![q] in D select XHPointCount(N,htab,f,C,q) else 0> else func<q|XHPointCount(N,htab,f,C,q)>;
-    return lists select [[pts(q):q in r]:r in Q] else [pts(q):q in Q];
+    P := lists select [[pts(q):q in r]:r in Q] else [pts(q):q in Q];
+    return P;
 end intrinsic;
 
-intrinsic GL2GonalityBound(H::GrpMat) -> RngIntElt
-{ Lower bound on the geometric gonality of X_H. }
-    N,H := GL2Level(H);  if N eq 1 then return 1; end if;
-    g := GL2Genus(H); if g le 2 then return g eq 0 select 1 else 2; end if;
+intrinsic GL2GonalityBounds(H::GrpMat:B:=0,gdata:=[],ratpts:=-1) -> RngIntElt, RngIntElt
+{ Returns a lower bound and on upper bound on the K-gonality of X_H (valid for any number field K).  B is an optional upper bound on q for point-counting over Fq. }
+    N,H := GL2Level(H);  if N eq 1 then return [1,1]; end if;
+    if #gdata eq 0 then g,gdata := GL2Genus(H); else g := Integers()!(1+gdata[1]/12-gdata[2]/4-gdata[3]/3-gdata[4]/2); end if;
+    if g eq 0 then return [ratpts eq 0 select 2 else 1,ratpts gt 0 select 1 else 2]; end if;
+    if g eq 1 and ratpts gt 0 then return [2,2]; end if;
+    if g eq 2 then return [2,2]; end if;
+    lb := Max(2,Ceiling(325*gdata[1]/32768)); // Abramovich bound using index and Kim-Sarnak bound of 975/4096 for Selberg eigenvalue bound
     GL1 := GL(1,Integers(N));
     D := GL2DeterminantImage(H);  dindex := Index(GL1,D);
     G := GL(2,Integers(N));
     if dindex gt 1 then G:=sub<G|[G|g:g in Generators(SL(2,Integers(N)))] cat [G|[d[1][1],0,0,1]:d in Generators(D)]>; end if;
-    B := g^2; b:= 2;
+    ub := Index(G,H);
+    if ratpts gt 0 then ub := Min(ub,g gt 1 select g else g+1); elif g gt 1 then ub := Min(ub,2*g-2); end if;
+    if lb eq ub then return [lb,ub]; end if;
     htab := B le 100 select ClassNumberTable(4096) else ClassNumberTable(4*B);
     C := GL2RationalCuspCounts(H);
     f := GL2PermutationCharacter(sub<G|H,-Identity(G)>);
     pts := dindex gt 1 select func<q|GL1![q] in D select XHPointCount(N,htab,f,C,q) else 0> else func<q|XHPointCount(N,htab,f,C,q)>;
-    for q in [2..B] do
-        if b*(q+1) gt q+1+2*g*Sqrt(q) then break; end if;
-        if not IsPrimePower(q) or GCD(q,N) ne 1 then continue; end if;
+    B := B eq 0 select 4*g*g else Min(B,4*g*g);
+    q := 2;
+    while true do
+        if lb*(q+1) gt q+1+2*g*Sqrt(q) then break; end if;
+        if not IsPrimePower(q) or GCD(q,N) ne 1 then q +:= 1; continue; end if;
         n := pts(q);
-        if n gt b*(q+1) then b := Ceiling(n/(q+1)); end if;
-    end for;
-    return b;
+        if n gt lb*(q+1) then lb := Ceiling(n/(q+1)); end if;
+        q +:= 1;
+        if q gt B then break; end if;
+    end while;
+    return [lb,ub];
 end intrinsic;
 
 intrinsic GL2Traces(H::GrpMat,Q::SeqEnum) -> SeqEnum
@@ -1904,13 +1966,18 @@ intrinsic GL2QInfinite(H::GrpMat:MustContainNegativeOne:=false) -> BoolElt
     return r gt 0;
 end intrinsic;
 
-intrinsic GL2QObstructions(H::GrpMat:B:=0) -> SeqEnum[RngIntElt]
-{ List of good places p where X_H has no Qp-points (p=0 is used for the real place). }
+intrinsic GL2QObstructions(H::GrpMat:B:=0,traces:=[]) -> SeqEnum[RngIntElt]
+{ List of good places p where X_H has no Qp-points (p=0 is used for the real place).  If traces is specified it should contain an entry for every prime (entries at bad primes will be ignored). }
     require GL2DeterminantIndex(H) eq 1: "H must have determinant index 1.";
     N,H := GL2Level(H);
     if N eq 1 then return [Integers()|]; end if;
     if GL2RationalCuspCount(H) gt 0 then return [Integers()|]; end if;
     X := GL2ContainsComplexConjugation(H) select [Integers()|] else [Integers()|0];
+    badp := Set(PrimeDivisors(N));
+    if #traces gt 0 then
+        P := PrimesInInterval(1,NthPrime(#traces));
+        return X cat [P[i]:i in [1..#P]|not P[i] in badp and P[i]+1-traces[i] le 0];
+    end if;
     g := GL2Genus(H);  if g eq 0 then return X; end if;
     maxp := B gt 0 select B else 4*g^2;
     badp := Set(PrimeDivisors(N));
@@ -2007,6 +2074,7 @@ gl2node := recformat<
     level:RngIntElt,
     index:RngIntElt,
     genus:RngIntElt,
+    gdata:SeqEnum, // i, n2, n3, c so that g = 1 + i/12 + n2/4 + n3/3 + c/2
     dlabel:MonStgElt,
     zlabel:MonStgElt,
     orbits:SeqEnum,
@@ -2014,7 +2082,7 @@ gl2node := recformat<
     parents:SeqEnum,
     subgroup:GrpMat>;
 
-intrinsic GL2Lattice(N::RngIntElt, IndexLimit::RngIntElt : G:=GL(2,Integers(N)), DeterminantLabel:="1.1.1", Verbose:=false, IndexDivides:=false, GenusLimit:=-1) -> Assoc
+intrinsic GL2Lattice(N::RngIntElt, IndexLimit::RngIntElt : G:=GL(2,Integers(N)), DeterminantLabel:="1.1.1", Verbose:=false, IndexDivides:=false, L:=[]) -> Assoc
 { Lattice of subgroups of GL(2,Z/NZ) of index bounded by IndexLimit with specified determinant image.  Returns a list of records with attributes level, index, genus, orbits, dlabel, zlabel, children, parents, subgroup, where children and parents are indices into this list that identify maximal subgroups and minimal supergroups. }
     require N gt 1 and IndexLimit gt 1: "Level and Index limit must be integers greater than 1";
     if DeterminantLabel ne "1.1.1" then
@@ -2023,22 +2091,33 @@ intrinsic GL2Lattice(N::RngIntElt, IndexLimit::RngIntElt : G:=GL(2,Integers(N)),
     else
         D := GL(1,Integers(N));
     end if;
+    if GL2DeterminantLabel(G) ne DeterminantLabel then
+        GL2 := GL(2,Integers(N));
+        S := sub<GL2|[g:g in Generators(SL(2,Integers(N)))] cat [GL2![g[1][1],0,0,1]:g in Generators(D)]>;
+        G := G meet S;
+        assert GL2DeterminantLabel(G) eq DeterminantLabel;
+    end if;
     dindex := GL1Index(D);
-    filter := GenusLimit lt 0 select func<H|GL2DeterminantImage(H) eq D> else func<H|GL2DeterminantImage(H) eq D and GL2Genus(H) le GenusLimit>;
-    if Verbose then printf "Enumerating determinant %o subgroups of GL(2,Z/%oZ) of index %o %o%o...", DeterminantLabel, N, IndexDivides select "dividing" else "at most", IndexLimit, GenusLimit ge 0 select Sprintf(" and genus at most %o",GenusLimit) else ""; s := Cputime(); end if;
+    if Verbose then printf "Enumerating determinant %o subgroups of GL(2,Z/%oZ) of index %o %o...", DeterminantLabel, N, IndexDivides select "dividing" else "at most", IndexLimit; s := Cputime(); end if;
     O := IndexDivides select ExactQuotient(GL2Size(N),IndexLimit) else 1;
-    S := [H`subgroup: H in Subgroups(G : IndexLimit:=IndexLimit, OrderMultipleOf:=O) | filter (H`subgroup)];
+    if #L eq 0 then
+        S := [H`subgroup: H in Subgroups(G : IndexLimit:=IndexLimit, OrderMultipleOf:=O) | GL2DeterminantImage(H`subgroup) eq D ];
+    else
+        S := L;
+    end if;
     if Verbose then
         printf "found %o subgroups in %.3os\n", #S, Cputime()-s;
         printf "Computing index, level, genus, orbit signature, scalar index for %o groups...", #S; s := Cputime();
     end if;
-    T := [<level,GL2Index(H),GL2Genus(H),GL2OrbitSignature(H:N:=level),GL2ScalarLabel(H)> where level,H:=GL2Level(K) : K in S];
-    X := index([1..#T],func<i|<T[i][1],T[i][2],T[i][4],T[i][5]>>);
-    if Verbose then printf "%.3os\nComputing lattice edges for %o groups...", Cputime()-s, #T; s:=Cputime(); end if;
+    T := [<level,GL2Index(H),g,gdata,GL2OrbitSignature(H:N:=level),GL2ScalarLabel(H)> where g,gdata := GL2Genus(H) where level,H:=GL2Level(K) : K in S];
+    X := index([1..#T],func<i|<T[i][1],T[i][2],T[i][5],T[i][6]>>);
+    if Verbose then printf "%.3os\nComputing lattice edges for %o groups...", Cputime()-s, #T; s:=Cputime(); ss:=s; end if;
     M := {};
     for i:= 1 to #T do
-        if 2*T[i][2] gt IndexLimit then continue; end if;
-        m := [H`subgroup:H in MaximalSubgroups(S[i] : IndexLimit:=IndexLimit div T[i][2], OrderMultipleOf:=O) | filter(H`subgroup)];
+        if Verbose and i mod 100 eq 0 then if i eq 100 then printf "\n"; end if; printf "%o (%.3os)\n", i, Cputime()-ss; ss:=Cputime(); end if;
+        n := IndexLimit div T[i][2];
+        if n le 1 then continue; end if;
+        m := [H`subgroup:H in MaximalSubgroups(S[i] : IndexLimit:=n, OrderMultipleOf:=O) | GL2DeterminantImage(H`subgroup) eq D];
         for H in m do
             level,K := GL2Level(H);
             J := X[<level,GL2Index(K),GL2OrbitSignature(K:N:=level),GL2ScalarLabel(K)>]; j := 1;
@@ -2069,10 +2148,10 @@ intrinsic GL2Lattice(N::RngIntElt, IndexLimit::RngIntElt : G:=GL(2,Integers(N)),
         for i in X[k] do Lsups[i] := Sort([L[j]:j in sups(i)],func<a,b|GL2CompareLabels(a,b)>); end for;
         n := 1;
         if #X[k] eq 1 then i:=X[k][1]; L[i] := label(k[1],k[2],k[3],n); continue; end if;
-        Y := index(X[k],func<i|<Lsups[i],T[i][4],GL2ClassSignature(S[i]:N:=T[i][1])>>);
+        Y := index(X[k],func<i|<Lsups[i],T[i][5],GL2ClassSignature(S[i]:N:=T[i][1])>>);
         Z := Sort([r:r in Keys(Y)],cmpkeys);
         for r in Z do
-            if #Y[r] gt 1 then Y[r] := [a[2]:a in A] where A := Sort([<GL2MinimalConjugate(S[i]),i>:i in Y[r]]); end if;
+            if #Y[r] gt 1 then print "Minconj",GL2Index(S[i]); time Y[r] := [a[2]:a in A] where A := Sort([<GL2MinimalConjugate(S[i]),i>:i in Y[r]]); end if;
             for i in Y[r] do L[i] := label(k[1],k[2],k[3],n); n +:= 1; end for;
         end for;
     end for;
@@ -2081,18 +2160,25 @@ intrinsic GL2Lattice(N::RngIntElt, IndexLimit::RngIntElt : G:=GL(2,Integers(N)),
     X := AssociativeArray();
     for i:=1 to #L do
         H := T[i][1] eq 1 select sub<GL(2,Integers())|> else GL2MinimizeGenerators(S[i]);
-        X[L[i]]:= rec<gl2node|label:=L[i],level:=T[i][1],index:=T[i][2],genus:=T[i][3],dlabel:=DeterminantLabel,
-                              zlabel:=T[i][5],orbits:=T[i][4],children:=Lsubs[i],parents:=Lsups[i],subgroup:=H>;
+        X[L[i]]:= rec<gl2node|label:=L[i],level:=T[i][1],index:=T[i][2],genus:=T[i][3],gdata:=T[i][4],dlabel:=DeterminantLabel,
+                              zlabel:=T[i][6],orbits:=T[i][5],children:=Lsubs[i],parents:=Lsups[i],subgroup:=H>;
     end for;
     if Verbose then printf "%.3os\n", Cputime()-s; end if;
     return X;
+end intrinsic;
+
+intrinsic GL2Dump(filename::MonStgElt,X::Assoc) -> RngIntElt
+{ Writes subgroup lattice records to the specified file with record format label:gens:parents. }
+    L := GL2SortLabels([k:k in Keys(X)]);
+    S := [[k,sprint([Eltseq(g):g in Generators(X[k]`subgroup)]),sprint(X[k]`parents)]:k in L];
+    return putrecs(filename,S);
 end intrinsic;
 
 intrinsic GL2Label(H::GrpMat: Verbose:=false) -> MonStgElt
 { The label of H (this requires computing the sublattice up to the level/index/genus of H -- an expensive way to get a single label). }
     N,H := GL2Level(H); if N eq 1 then return "1.1.0.1"; end if;
     i := GL2Index(H); g := GL2Genus(H); 
-    X := GL2Lattice(N, i : GenusLimit:=g,DeterminantLabel:=GL2DeterminantLabel(H),Verbose:=Verbose,IndexDivides);
+    X := GL2Lattice(N,i:DeterminantLabel:=GL2DeterminantLabel(H),Verbose:=Verbose,IndexDivides);
     o := GL2OrbitSignature(H); z:=GL2ScalarLabel(H);
     K := [k:k in Keys(X)|X[k]`level eq N and X[k]`index eq i and X[k]`genus eq g and X[k]`orbits eq o and X[k]`zlabel eq z];
     if #K eq 1 then return K[1]; end if;
@@ -2330,7 +2416,7 @@ CMCurves := [<-3,0,["27a1","27a3"]>,
 CMDiscriminants := [-3,-4,-7,-8,-11,-12,-16,-19,-27,-28,-43,-67,-163];
 
 
-intrinsic GL2CMTwists(D::RngIntElt,N::RngIntElt) -> SeqEnum[GrpMat]
+intrinsic GL2CMTwists(D::RngIntElt,N::RngIntElt:GL2Conjugacy:=true) -> SeqEnum[GrpMat]
 { List of the subgroups of GL(2,Z/NZ) that arise as mod-N image of an elliptic curve E/Q(j(E)) with CM by the imaginary quadratic order of discriminant D. }
     require D lt 0 and IsDiscriminant(D): "D must be the discriminant of an imaginary quadratic order";
     if D lt -3 and IsOdd(N) and GCD(D,N) eq 1 and IsPrimePower(N) then return [GL2CartanNormalizer(D,N)]; end if; // by (4) of Theorem 1.2 of https://arxiv.org/abs/1809.02584
@@ -2342,19 +2428,55 @@ intrinsic GL2CMTwists(D::RngIntElt,N::RngIntElt) -> SeqEnum[GrpMat]
         assert #S eq 1;
         return [G,S[1]];
     end if;
-    L := D eq -3 select GL2SexticTwists(H) else (D eq -4 select GL2QuarticTwists(H) else GL2QuadraticTwists(H)) where H := GL2CartanNormalizer(D,N);
+    L := D eq -3 select GL2SexticTwists(H:GL2Conjugacy:=GL2Conjugacy) else (D eq -4 select GL2QuarticTwists(H:GL2Conjugacy:=GL2Conjugacy) else GL2QuadraticTwists(H:GL2Conjugacy:=GL2Conjugacy)) where H := GL2CartanNormalizer(D,N);
     return Sort(L,func<a,b|#b-#a>);
 end intrinsic;
 
-intrinsic GL2CMEllAdicLabels(D::RngIntElt,N::RngIntElt) -> SeqEnum
+intrinsic GL2QCMTwists(N::RngIntElt) -> SeqEnum[SeqEnum[GrpMat]]
+{ Returns GL2CMTwists(D,N) for D in [-3,-4,-7,-8,-11,-12,-16,-19,-27,-28,-43,-67,-163]. }
+    return [GL2CMTwists(D,N) : D in CMDiscriminants];
+end intrinsic;
+
+intrinsic GL2QCMPoints(H::GrpMat:CMtwists:=[]) -> SeqEnum[RngIntElt]
+{ List of CM discriminants of CM elliptic curves corresponding to Q-points on X_H (if CMtwists is set it should contain GL2QCMTwists(level(H))). }
+    if GL2Level(H) eq 1 then return CMDiscriminants; end if;
+    require GL2DeterminantIndex(H) eq 1: "Subgroup must have determininant index 1 (parametrizing E/Q).";
+    N,H := GL2Level(H);
+    if #CMtwists eq 0 then CMtwists := GL2QCMTwists(N); end if;
+    assert #CMDiscriminants eq #CMtwists;
+    G := GL(2,Integers(N));
+    Ds := [CMDiscriminants[i]:i in [1..2]|&or[IsConjugateSubgroup(G,H,GL2Project(K,N)):K in CMtwists[i]]];
+    if GL2ContainsNegativeOne(H) then
+        Ds cat:= [CMDiscriminants[i]:i in [3..#CMDiscriminants]|IsConjugateSubgroup(G,H,GL2Project(CMtwists[i][1],N))];
+    else
+        Ds cat:= [CMDiscriminants[i]:i in [3..#CMDiscriminants]|&or[IsConjugateSubgroup(G,H,GL2Project(K,N)):K in CMtwists[i]]];
+    end if;
+    return Ds;
+end intrinsic;
+
+intrinsic GL2CMEllAdicLabels(D::RngIntElt,N::RngIntElt:GL2Conjugacy:=true) -> SeqEnum
 { Labels of twists of N_O as subgroups of N_O(Z_ell), where O is the imaginary quadratic order of discriminant D. }
     require D lt 0 and IsDiscriminant(D): "D must be the discriminant of an imaginary quadratic order";
-    b,ell := IsPrimePower(N);
+    b,ell,e := IsPrimePower(N);
     require b: "N must be a prime power.";
     M := ell eq 2 select 16 else (ell eq 3 select 27 else ell);
     require N eq M: Sprintf("Expected N = %o",M);
-    S := GL2CMTwists(D,N);
-    T := Sort([<GL2RelativeLevel(S[1],K),Index(S[1],K),GL2OrbitSignature(K),GL2ClassSignature(K),i> where K:=S[i]:i in [1..#S]]);
+    S := GL2CMTwists(D,N:GL2Conjugacy:=GL2Conjugacy);
+    L := [1] cat [N:i in [2..#S]];
+    if N ne ell then
+        todo := {2..#L};
+        for i := e-1 to 1 by -1 do
+            T := GL2CMTwists(D,ell^i:GL2Conjugacy:=GL2Conjugacy);
+            Tc := [Conjugates(T[1],T[j]):j in [1..#T]];
+            _,pi := ChangeRing(S[1],Integers(ell^i)); assert pi(S[1]) eq T[1];
+            m := ExactQuotient(#S[1],#pi(S[1]));
+            // check if relative index is stable *and* that the reduction is a twist
+            for j in todo do if ExactQuotient(#S[j],#pi(S[j])) eq m and Conjugates(T[1],pi(S[j])) in Tc then L[j] := ell^i; end if; end for;
+            todo := {j:j in todo|L[j] eq ell^i};
+            if #todo eq 0 then break; end if;
+        end for;
+    end if;
+    T := Sort([<L[i],Index(S[1],K),GL2OrbitSignature(K),GL2ClassSignature(K),i> where K:=S[i]:i in [1..#S]]);
     U := []; n := 0;
     for i:=1 to #T do
         if i eq 1 or T[i][1] ne T[i-1][1] or T[i][2] ne T[i-1][2] then n:=1; else n +:= 1; end if;
@@ -2366,7 +2488,7 @@ intrinsic GL2CMEllAdicLabels(D::RngIntElt,N::RngIntElt) -> SeqEnum
     return [<Sprintf("%o.%o.%o-%o.%o.%o",ell,v,s,r[1],r[2],r[3]),S[r[4]]>: r in U];
 end intrinsic;
 
-intrinsic GL2CMEllAdicLabel(D::RngIntElt,H::GrpMat) -> MonStgElt
+intrinsic GL2CMEllAdicLabel(D::RngIntElt,H::GrpMat:GL2Conjugacy:=true) -> MonStgElt
 { Label of the specified group of ell-power level  as a subgroup of N_O(Z_ell), where O is the imaginary quadratic order of discriminant D. }
     require D lt 0 and IsDiscriminant(D): "D must be the discriminant of an imaginary quadratic order";
     N :=  #BaseRing(H);
@@ -2375,7 +2497,7 @@ intrinsic GL2CMEllAdicLabel(D::RngIntElt,H::GrpMat) -> MonStgElt
     M := ell eq 2 select 16 else (ell eq 3 select 27 else ell);
     require IsDivisibleBy(N,M): Sprint("Expected subgroup of GL(2,Z/%oZ)",M);
     if N ne M then H := ChangeRing(H,M); N:=M; end if;
-    S := GL2CMEllAdicLabels(D,N);
+    S := GL2CMEllAdicLabels(D,N:GL2Conjugacy:=GL2Conjugacy);
     o := GL2OrbitSignature(H); c := GL2ClassSignature(H);
     for r in S do if o eq GL2OrbitSignature(r[2]) and c eq GL2ClassSignature(r[2]) then return r[1]; end if; end for;
     error "Specific group H is not a twist of the N_O for the specified discriminant D";
@@ -2943,8 +3065,8 @@ intrinsic GL2SLabel(H::GrpMat,p::RngIntElt) -> MonStgElt
 end intrinsic;
 
 intrinsic GL2SLabel(H::GrpMat) -> MonStgElt
-{ The label of H in GL(2,p) under the system defined by Sutherland in "Computing images of Galois representations attached to elliptic curves, Forum. Math. Sigma 4(2016) e4, https://doi.org/10.1017/fms.2015.33". }
-    N := GL2Level(H); if N gt 1 then b,p := IsPrimePower(N); else b:= false; end if;
+{ The label of the proejction of H to GL(2,p) under the system defined by in "Computing images of Galois representations attached to elliptic curves, Forum. Math. Sigma 4(2016) e4, https://doi.org/10.1017/fms.2015.33". }
+    b,p := IsPrimePower(#BaseRing(H));
     require b: "level must be a prime power.";
     return GroupLabelFromId(GL2SubgroupID(GL2Project(H,p)));
 end intrinsic;
