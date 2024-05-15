@@ -1826,9 +1826,15 @@ intrinsic GL2PointCounts(H::GrpMat,Q::SeqEnum) -> SeqEnum
     return P;
 end intrinsic;
 
+intrinsic GL2IncludeNegativeOne(H::GrpMat) -> GrpMat
+{ returns <H,-I>; }
+    if not IsFinite(BaseRing(H)) then return H; end if;
+    return nI in H select H else sub<GL(2,BaseRing(H))|H,nI> where nI := -Identity(H);
+end intrinsic;
+
 intrinsic GL2GonalityBounds(H::GrpMat:B:=0,gdata:=[],ratpts:=-1) -> RngIntElt, RngIntElt
 { Returns a lower bound and on upper bound on the K-gonality of X_H (valid for any number field K).  B is an optional upper bound on q for point-counting over Fq. }
-    N,H := GL2Level(H);  if N eq 1 then return [1,1]; end if;
+    N,H := GL2Level(GL2IncludeNegativeOne(H));  if N eq 1 then return [1,1]; end if;
     if #gdata eq 0 then g,gdata := GL2Genus(H); else g := Integers()!(1+gdata[1]/12-gdata[2]/4-gdata[3]/3-gdata[4]/2); end if;
     if g eq 0 then return [ratpts eq 0 select 2 else 1,ratpts gt 0 select 1 else 2]; end if;
     if g eq 1 and ratpts gt 0 then return [2,2]; end if;
